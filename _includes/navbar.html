@@ -1,0 +1,54 @@
+<!-- Navigation - Navbar principal -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Menu principal">
+    <div class="container px-5">
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">
+            <img src="{{ '/images/logo.png' | relative_url }}" width="150" alt="Logomarca do PcD na Escola" />
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Menu de opções.">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/' | relative_url }}">
+                        Página inicial
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/artigos' | relative_url }}">
+                        Artigos
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownDocs" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Documentações
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDropdownDocs">
+                        <li>
+                            <a class="dropdown-item text-white" href="https://developer.mozilla.org/pt-BR/docs/Web/Accessibility/ARIA" 
+                                target="_blank" rel="noopener">
+                                Acessibilidade com ARIA
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item text-white" href="https://guia-wcag.com/" 
+                                target="_blank" rel="noopener">
+                                Guia WCAG
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item text-white" href="https://www.nvaccess.org/files/nvda/releases/stable/documentation/pt_BR/userGuide.html"
+                                target="_blank" rel="noopener">
+                                Manual do NVDA
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

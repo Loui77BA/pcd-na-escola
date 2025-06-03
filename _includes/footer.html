@@ -1,0 +1,19 @@
+<!-- Footer - Rodapé principal -->
+<footer class="bg-dark text-white text-center py-4 mt-auto" role="contentinfo">
+    <div class="container">
+        <div class="col-auto">
+            <div class="small m-0 text-white" role="text">
+                &copy; {{ site.time | date: '%Y' }} - 
+                <a class="link-light" href="{{ '/' | relative_url }}">{{ site.title }}</a> - 
+                Todos os direitos reservados.
+            </div>
+        </div>
+        <div class="col-auto">
+            <a class="link-light small" href="{{ '/termos' | relative_url }}">Termos</a>
+            <span class="text-white mx-1" aria-hidden="true">&middot;</span>
+            <a class="link-light small" href="{{ '/privacidade' | relative_url }}">Privacidade</a>
+            <span class="text-white mx-1" aria-hidden="true">&middot;</span>
+            <a class="link-light small" href="{{ '/louise' | relative_url }}">Louise Suelen</a>
+        </div>
+    </div>
+</footer>

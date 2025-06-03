@@ -1,0 +1,49 @@
+# Site settings
+title: PcD na Escola
+description: O PcD na Escola é um projeto que visa promover a educação e tecnologia para todas as pessoas, com foco na acessibilidade e inclusão de pessoas com deficiência.
+author: Louise Suelen
+email: louise.suelen-reis@outlook.com.br
+
+# Site URL
+baseurl: "/pcd-na-escola" # Nome do seu repositório GitHub
+url: "https://loui77ba.github.io" # Seu domínio do GitHub Pages
+
+# Keywords para SEO
+keywords:
+  - PcD na Escola
+  - educação
+  - tecnologia
+  - acessibilidade
+  - inclusão
+  - deficiência
+  - educação inclusiva
+  - pessoa com deficiência no mercado de trabalho
+  - inclusão no mercado de trabalho
+  - capacitação profissional de pessoas com deficiência
+
+# Github
+github_username: "Loui77BA"
+
+# Tema - mantendo null para usar templates personalizados
+theme: null
+
+# Plugins suportados pelo GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing.
+# Mantendo os comentários padrão do Jekyll
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
