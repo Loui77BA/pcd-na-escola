@@ -17,13 +17,13 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
     </div>
 </header>
 
-<hr class="my-5">
+<hr>
 
-<section class="video-section my-5" aria-labelledby="video-presentation">
+<section class="video-section" aria-labelledby="video-presentation">
     <h2 id="video-presentation" class="visually-hidden">Vídeo de apresentação do projeto</h2>
     <div class="container px-4">
         <div class="row justify-content-center">
-            <div class="col-lg-8">
+            <div class="col-lg-10">
                 <div class="video-container rounded shadow" style="position:relative;padding-top:56.25%;">
                     <iframe
                         id="panda-7c9d8bd5-13eb-4732-b47d-6886351f4593"
@@ -42,7 +42,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
     </div>
 </section>
 
-<hr class="my-5">
+<hr>
 
 <section class="target-audiences py-5" aria-labelledby="publicos-titulo">
     <div class="container px-4">
@@ -54,7 +54,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
             <div class="col-md-6 col-lg-3">
                 <article class="card h-100 bg-dark border-0 shadow-sm">
                     <div class="card-body text-center">
-                        <span class="material-symbols-outlined d-block mb-3 display-4 text-white">location_on</span>
+                        <span class="material-symbols-outlined d-block mb-3 display-4 text-white" aria-hidden="true">location_on</span>
                         <h3 class="h5 text-white">Nordeste</h3>
                         <p class="text-white">Há mais pessoas com deficiência fora da escola do que a média nacional.</p>
                     </div>  
@@ -64,7 +64,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
             <div class="col-md-6 col-lg-3">
                 <article class="card h-100 bg-dark border-0 shadow-sm">
                     <div class="card-body text-center">
-                        <span class="material-symbols-outlined d-block mb-3 display-4 text-white">location_city</span>
+                        <span class="material-symbols-outlined d-block mb-3 display-4 text-white" aria-hidden="true">location_city</span>
                         <h3 class="h5 text-white">Interior</h3>
                         <p class="text-white">É difícil acessar informações especializadas porque fica longe dos grandes centros.</p>
                     </div>
@@ -74,7 +74,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
             <div class="col-md-6 col-lg-3">
                 <article class="card h-100 bg-dark border-0 shadow-sm">
                     <div class="card-body text-center">
-                        <span class="material-symbols-outlined d-block mb-3 display-4 text-white">diversity_1</span>
+                        <span class="material-symbols-outlined d-block mb-3 display-4 text-white" aria-hidden="true">diversity_1</span>
                         <h3 class="h5 text-white">Comunidade</h3>
                         <p class="text-white">O capacitismo acontece em todos os lugares e combater isso precisa de ações conjuntas.</p>
                     </div>
@@ -84,7 +84,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
             <div class="col-md-6 col-lg-3">
                 <article class="card h-100 bg-dark border-0 shadow-sm">
                     <div class="card-body text-center">
-                        <span class="material-symbols-outlined d-block mb-3 display-4 text-white">school</span>
+                        <span class="material-symbols-outlined d-block mb-3 display-4 text-white" aria-hidden="true">school</span>
                         <h3 class="h5 text-white">Escolas</h3>
                         <p class="text-white">Para colaborar com a comunidade escolar, docentes, estudantes e familiares.</p>
                     </div>
@@ -94,7 +94,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
     </div>
 </section>
 
-<hr class="my-5">
+<hr>
 
 <section class="mission-vision py-5">
     <div class="container px-4">
@@ -142,12 +142,12 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
     </div>
 </section>
 
-<hr class="my-5">
+<hr>
 
 <section class="testimonial py-5" aria-label="Depoimento">
     <div class="container px-4">
         <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
+            <div class="col-lg-9 text-center">
                 <figure class="mb-4">
                     <img class="rounded-circle shadow-sm" src="images/louise.webp" 
                         alt="Louise Suelen abraçando um labrador caramelo" 
