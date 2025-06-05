@@ -1,10 +1,83 @@
-<blockquote class="blockquote border-start border-4 border-light ps-4 my-5">
-    <div class="bg-dark bg-opacity-25 p-4 rounded-3 shadow-sm">
-        <p class="lead text-white fst-italic mb-3">
-            {{ include.quote }}
+<div class="custom-blockquote my-5" role="region" aria-label="Citação em destaque">
+  <div class="card bg-dark border-0 shadow-lg position-relative" style="border-radius: 16px; overflow: hidden;">
+    <!-- Borda gradiente lateral -->
+    <div class="position-absolute top-0 start-0 h-100" style="width: 4px; background: linear-gradient(to bottom, #0d6efd, #6610f2); z-index: 3;"></div>
+    
+    <!-- Padrão de fundo sutil -->
+    <div class="position-absolute top-0 end-0" style="width: 100px; height: 100px; background: radial-gradient(circle, rgba(13,110,253,0.1) 0%, transparent 70%); z-index: 1;"></div>
+    
+    <div class="card-body p-5 position-relative" style="z-index: 2;">
+      <!-- Ícone de aspas -->
+      <div class="quote-header mb-4">
+        <div class="bg-secondary bg-opacity-15 rounded-3 p-3 d-inline-flex">
+          <i class="material-icons fs-2 text-white" aria-hidden="true">format_quote</i>
+          <span class="visually-hidden">Início da citação</span>
+        </div>
+      </div>
+
+      <!-- Texto da citação -->
+      <blockquote class="blockquote mb-0">
+        <p class="lead text-light mb-4 lh-lg" style="font-style: italic; position: relative;">
+          {{ include.quote }}
         </p>
-        <footer class="blockquote-footer text-white-50 mt-4">
-            <cite>{{ include.author }}</cite>
+        
+        <!-- Linha decorativa -->
+        <div class="quote-decoration mb-3" aria-hidden="true">
+          <div style="width: 40px; height: 2px; background: linear-gradient(to right, #0d6efd, #6610f2);"></div>
+        </div>
+        
+        <!-- Footer com autor -->
+        <footer class="blockquote-footer border-0 ps-0">
+          <div class="d-flex align-items-center">
+            <cite class="text-white fw-medium">{{ include.author }}</cite>
+          </div>
         </footer>
+      </blockquote>
     </div>
-</blockquote>
+  </div>
+  
+<style>
+.custom-blockquote .card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.custom-blockquote .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4) !important;
+  border-color: rgba(13,110,253,0.3);
+}
+
+.custom-blockquote .quote-decoration {
+  position: relative;
+}
+
+.custom-blockquote .quote-decoration::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  width: 20px;
+  height: 1px;
+  background: rgba(13,110,253,0.3);
+}
+
+/* Classe auxiliar para esconder elementos visualmente mas mantê-los acessíveis para leitores de tela */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Melhorar foco para navegação por teclado */
+.custom-blockquote:focus-within {
+  outline: 3px solid #0d6efd;
+  border-radius: 16px;
+}
+</style>

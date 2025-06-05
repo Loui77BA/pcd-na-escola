@@ -1,15 +1,223 @@
-<div class="row g-4 mt-4 mb-4">
-  {% for card in include.cards %}
-    <div class="col-md-6">
-      <div class="card bg-dark h-100">
-        <div class="card-body">
-          <span class="material-symbols-outlined display-1" aria-hidden="true">
-            counter_{{ forloop.index }}
-          </span>
-          <h3 class="card-title mt-3">{{ card.title }}</h3>
-          <p class="card-text">{{ card.description }}</p>
-        </div>
+<div class="custom-cards my-5" role="region" aria-label="Cartões informativos">
+  <div class="row g-4">
+    {% for card in include.cards %}
+      <div class="col-12">
+        <article class="card bg-dark text-light border-0 h-100 shadow-lg card-hover" 
+                 style="border-radius: 15px; transition: all 0.3s ease;"
+                 role="article" 
+                 aria-labelledby="card-title-{{ forloop.index }}"
+                 aria-describedby="card-desc-{{ forloop.index }}"
+                 tabindex="0">
+          
+          <!-- Borda sutil -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 rounded-3" 
+               style="border: 1px solid rgba(255,255,255,0.15); pointer-events: none; transition: all 0.3s ease;"
+               aria-hidden="true"></div>
+          
+          <!-- Header do card -->
+          <div class="card-header bg-transparent border-0 p-4 pb-0">
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- Ícone principal -->
+              <div class="icon-wrapper" role="img" aria-label="{% if card.icon_alt %}{{ card.icon_alt }}{% else %}Ícone do cartão {{ forloop.index }}{% endif %}">
+                <div class="icon-background rounded-circle p-3" 
+                     style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                  {% if card.icon %}
+                    <i class="material-icons icon-high-contrast fs-4" aria-hidden="true">{{ card.icon }}</i>
+                  {% else %}
+                    <span class="icon-high-contrast fw-bold fs-5" aria-hidden="true">{{ forloop.index }}</span>
+                  {% endif %}
+                </div>
+              </div>            
+
+            </div>
+          </div>
+
+          <!-- Conteúdo do card -->
+          <div class="card-body p-4">
+            <h3 class="card-title text-light mb-3 fw-bold h5" 
+                id="card-title-{{ forloop.index }}">{{ card.title }}</h3>
+            <p class="card-text text-high-contrast lh-base" 
+               id="card-desc-{{ forloop.index }}">{{ card.description }}</p>
+            
+            <!-- Indicador de progresso decorativo -->
+            <div class="progress-indicator mt-4" 
+                 role="presentation" 
+                 aria-hidden="true">
+              <div class="progress-bar rounded-pill" 
+                   style="width: 30px; height: 3px; transition: all 0.3s ease;"></div>
+            </div>
+          </div>
+
+          <!-- Elemento focável para navegação por teclado -->
+          <div class="sr-only">
+            Pressione Enter ou Espaço para interagir com este cartão
+          </div>
+        </article>
       </div>
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>
+
+<style>
+/* Melhorias de acessibilidade e contraste */
+.custom-cards .card-hover {
+  background: linear-gradient(145deg, #1e1e1e, #2a2a2a) !important;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Estados de foco para navegação por teclado */
+.custom-cards .card-hover:focus {
+  outline: 3px solid #0d6efd;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(13,110,253,0.3);
+}
+
+.custom-cards .card-hover:focus-visible {
+  outline: 3px solid #0d6efd;
+  outline-offset: 2px;
+}
+
+/* Estados hover e focus */
+.custom-cards .card-hover:hover,
+.custom-cards .card-hover:focus {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4) !important;
+}
+
+.custom-cards .card-hover:hover .position-absolute,
+.custom-cards .card-hover:focus .position-absolute {
+  border-color: rgba(13,110,253,0.5);
+}
+
+/* Ícones com alto contraste */
+.icon-high-contrast {
+  color: #4dabf7 !important; /* Azul mais claro para melhor contraste */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.icon-background {
+  background: rgba(77,171,247,0.2) !important; /* Fundo mais visível */
+  border: 1px solid rgba(77,171,247,0.3);
+}
+
+.custom-cards .card-hover:hover .icon-background,
+.custom-cards .card-hover:focus .icon-background {
+  background: rgba(77,171,247,0.3) !important;
+  transform: scale(1.05);
+  border-color: rgba(77,171,247,0.5);
+}
+
+/* Badge com alto contraste */
+.badge-high-contrast {
+  background: rgba(255,255,255,0.15) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255,255,255,0.2);
+  font-weight: 600;
+}
+
+/* Texto com alto contraste */
+.text-high-contrast {
+  color: rgba(255,255,255,0.9) !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Barra de progresso com melhor visibilidade */
+.progress-bar {
+  background: linear-gradient(90deg, #4dabf7, #339af0) !important;
+  opacity: 0.8;
+  box-shadow: 0 1px 3px rgba(77,171,247,0.3);
+}
+
+.custom-cards .card-hover:hover .progress-bar,
+.custom-cards .card-hover:focus .progress-bar {
+  width: 50px;
+  opacity: 1;
+  box-shadow: 0 2px 6px rgba(77,171,247,0.5);
+}
+
+/* Animação respeitando preferências do usuário */
+@media (prefers-reduced-motion: reduce) {
+  .custom-cards .card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  
+  .custom-cards .card-hover {
+    transition: none;
+  }
+}
+
+/* Animação padrão */
+@media (prefers-reduced-motion: no-preference) {
+  .custom-cards .card {
+    animation: cardSlideUp 0.6s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .custom-cards .col-12:nth-child(1) .card { animation-delay: 0.1s; }
+  .custom-cards .col-12:nth-child(2) .card { animation-delay: 0.2s; }
+  .custom-cards .col-12:nth-child(3) .card { animation-delay: 0.3s; }
+  .custom-cards .col-12:nth-child(4) .card { animation-delay: 0.4s; }
+  .custom-cards .col-12:nth-child(5) .card { animation-delay: 0.5s; }
+  .custom-cards .col-12:nth-child(6) .card { animation-delay: 0.6s; }
+}
+
+@keyframes cardSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Suporte para temas de alto contraste do sistema */
+@media (prefers-contrast: high) {
+  .custom-cards .card-hover {
+    border: 2px solid #ffffff;
+  }
+  
+  .icon-high-contrast {
+    color: #ffffff !important;
+  }
+  
+  .text-high-contrast {
+    color: #ffffff !important;
+  }
+  
+  .badge-high-contrast {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 2px solid #ffffff;
+  }
+}
+
+/* Responsividade com melhor acessibilidade */
+@media (max-width: 768px) {
+  .custom-cards .card-body {
+    padding: 1.5rem;
+  }
+  
+  .custom-cards .card-header {
+    padding: 1.5rem 1.5rem 0;
+  }
+  
+  /* Tamanho mínimo de toque para dispositivos móveis */
+  .custom-cards .card-hover {
+    min-height: 44px;
+  }
+}
+
+/* Classe para leitores de tela */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+</style>

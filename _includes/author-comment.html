@@ -1,13 +1,68 @@
-<blockquote class="blockquote border-start border-4 border-light ps-4 my-5">
-    <div class="bg-dark bg-opacity-25 p-4 rounded-3 shadow-sm">
-        <span class="material-symbols-outlined display-1" style="font-size: 5.0rem;"
-            aria-hidden="true">format_quote</span>
-        <h3 class="mb-4">{{ include.title }}</h3>
-        <p class="lead text-white fst-italic mb-3">
+<section class="author-comment my-5" aria-labelledby="comment-title">
+  <div class="card bg-dark border-0 shadow-lg position-relative overflow-hidden" style="border-radius: 20px;">
+    <!-- Gradiente de fundo sutil -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(13,110,253,0.1), rgba(102,16,242,0.1)); z-index: 1;" aria-hidden="true"></div>
+    
+    <div class="card-body p-5 position-relative" style="z-index: 2;">
+      <!-- Ícone de aspas decorativo -->
+      <div class="quote-icon-wrapper mb-4">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <div class="bg-secondary rounded-circle p-3 me-3 shadow-sm" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;" aria-hidden="true">
+              <i class="material-icons text-white fs-4">format_quote</i>
+            </div>
+            <h3 id="comment-title" class="text-primary mb-0 fw-bold">{{ include.title }}</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conteúdo do comentário -->
+      <div class="comment-content">
+        <blockquote class="border-start border-5 border-primary ps-4 mb-4">
+          <p class="lead text-light mb-0 lh-lg" style="font-style: italic;">
             {{ include.content }}
-        </p>
-        <footer class="blockquote-footer text-white-50 mt-4">
-            <cite>{{ include.author }}</cite>
+          </p>
+        </blockquote>
+        
+        <!-- Footer com autor -->
+        <footer class="d-flex align-items-center justify-content-between">
+          <cite class="text-primary fw-semibold">— {{ include.author }}</cite>
+          <div class="comment-decoration" aria-hidden="true">
+            <div class="d-flex gap-1">
+              <div class="bg-primary rounded-circle" style="width: 6px; height: 6px; opacity: 0.7;"></div>
+              <div class="bg-primary rounded-circle" style="width: 6px; height: 6px; opacity: 0.5;"></div>
+              <div class="bg-primary rounded-circle" style="width: 6px; height: 6px; opacity: 0.3;"></div>
+            </div>
+          </div>
         </footer>
+      </div>
     </div>
-</blockquote>
+  </div>
+</section>
+
+<style>
+.author-comment .card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(13,110,253,0.2);
+}
+
+.author-comment .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3) !important;
+  border-color: rgba(13,110,253,0.4);
+}
+
+.author-comment .quote-icon-wrapper {
+  position: relative;
+}
+
+.author-comment .quote-icon-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(to right, #0d6efd, transparent);
+}
+</style>
