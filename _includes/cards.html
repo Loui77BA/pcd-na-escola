@@ -1,13 +1,14 @@
-<div class="custom-cards my-5" aria-label="{{ include.title }}">
+<div class="custom-cards my-5" role="region" aria-label="{{ include.title }}">
   <div class="card bg-dark text-light border-0 shadow-lg card-hover"
        style="border-radius: 15px; transition: all 0.3s ease;"
-       role="text"
+       role="article"
        aria-labelledby="card-title"
        aria-describedby="card-desc"
        tabindex="0">
-    <div class="card-body p-4">
+    <div class="card-body p-4 position-relative">
       <!-- Ícone ilustrativo -->
       <div class="mb-3" aria-hidden="true">
+        <span class="visually-hidden">Início do ícone</span>
         <span class="rounded-circle p-3 d-inline-flex align-items-center justify-content-center text-light" 
               style="width: 60px; height: 60px; font-size: 2.5rem; background: rgba(77,171,247,0.1);">
           {{ include.number }}
@@ -25,6 +26,19 @@
 </div>
 
 <style>
+/* Use a classe de utilidade para esconder texto visualmente mas mantê-lo acessível */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Melhorias de acessibilidade e contraste */
 .custom-cards .card-hover {
   background: linear-gradient(145deg, #1e1e1e, #2a2a2a) !important;
@@ -172,18 +186,5 @@
   .custom-cards .card-hover {
     min-height: 44px;
   }
-}
-
-/* Classe para leitores de tela */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
 }
 </style>
