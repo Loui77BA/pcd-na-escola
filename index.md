@@ -4,7 +4,7 @@ title: "Página Inicial"
 permalink: /
 description: "O PcD na Escola é um projeto que visa promover a educação e tecnologia para todas as pessoas, com foco na acessibilidade e inclusão de pessoas com deficiência."
 ---
-<header class="py-5" role="banner" style="background: linear-gradient(145deg, #1a1a1a, #121212); border-bottom: 3px solid rgba(13,110,253,0.2);">
+<header class="py-5" role="banner" style="background: linear-gradient(145deg, #121215, #121215); border-bottom: 3px solid rgba(13,110,253,0.2);">
     <div class="container px-5">
         <div class="row gx-5 align-items-center justify-content-center">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
