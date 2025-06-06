@@ -1,60 +1,26 @@
-<div class="custom-cards my-5" role="text" aria-label="Cartões informativos">
-  <div class="row g-4">
-    {% for card in include.cards %}
-      <div class="col-12">
-        <article class="card bg-dark text-light border-0 h-100 shadow-lg card-hover" 
-                 style="border-radius: 15px; transition: all 0.3s ease;"
-                 role="article" 
-                 aria-labelledby="card-title-{{ forloop.index }}"
-                 aria-describedby="card-desc-{{ forloop.index }}"
-                 tabindex="0">
-          
-          <!-- Borda sutil -->
-          <div class="position-absolute top-0 start-0 w-100 h-100 rounded-3" 
-               style="border: 1px solid rgba(255,255,255,0.15); pointer-events: none; transition: all 0.3s ease;"
-               aria-hidden="true"></div>
-          
-          <!-- Header do card -->
-          <div class="card-header bg-transparent border-0 p-4 pb-0">
-            <div class="d-flex justify-content-between align-items-center">
-              <!-- Ícone principal -->
-              <div class="icon-wrapper" role="img" aria-label="{% if card.icon_alt %}{{ card.icon_alt }}{% else %}Ícone do cartão {{ forloop.index }}{% endif %}">
-                <div class="icon-background rounded-circle p-3" 
-                     style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
-                  {% if card.icon %}
-                    <i class="material-icons icon-high-contrast fs-4" aria-hidden="true">{{ card.icon }}</i>
-                  {% else %}
-                    <span class="icon-high-contrast fw-bold fs-5" aria-hidden="true">{{ forloop.index }}</span>
-                  {% endif %}
-                </div>
-              </div>            
-
-            </div>
-          </div>
-
-          <!-- Conteúdo do card -->
-          <div class="card-body p-4">
-            <h3 class="card-title text-light mb-3 fw-bold h5" 
-                id="card-title-{{ forloop.index }}">{{ card.title }}</h3>
-            <p class="card-text text-high-contrast lh-base" 
-               id="card-desc-{{ forloop.index }}">{{ card.description }}</p>
-            
-            <!-- Indicador de progresso decorativo -->
-            <div class="progress-indicator mt-4" 
-                 role="presentation" 
-                 aria-hidden="true">
-              <div class="progress-bar rounded-pill" 
-                   style="width: 30px; height: 3px; transition: all 0.3s ease;"></div>
-            </div>
-          </div>
-
-          <!-- Elemento focável para navegação por teclado -->
-          <div class="sr-only">
-            Pressione Enter ou Espaço para interagir com este cartão
-          </div>
-        </article>
+<div class="custom-cards my-5" role="text" aria-label="{{ include.title }}">
+  <div class="card bg-dark text-light border-0 shadow-lg card-hover"
+       style="border-radius: 15px; transition: all 0.3s ease;"
+       role="article"
+       aria-labelledby="card-title"
+       aria-describedby="card-desc"
+       tabindex="0">
+    <div class="card-body p-4">
+      <!-- Ícone ilustrativo -->
+      <div class="mb-3" aria-hidden="true">
+        <span class="rounded-circle p-3 d-inline-flex align-items-center justify-content-center text-light" 
+              style="width: 60px; height: 60px; font-size: 2.5rem; background: rgba(77,171,247,0.1);">
+          {{ include.number }}
+        </span>
       </div>
-    {% endfor %}
+
+      <h3 class="card-title text-light mb-3 fw-bold h5" id="card-title">
+        {{ include.title }}
+      </h3>
+      <p class="card-text text-high-contrast lh-base" id="card-desc">
+        {{ include.content }}
+      </p>
+    </div>
   </div>
 </div>
 

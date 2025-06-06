@@ -109,20 +109,6 @@ sumario: |
             </a>
         </li>
     </ul>
-cards:
-    - title: "Pessoa sem contato com a deficiência"
-      description: "Aqueles que não possuem nenhum contato com a deficiência partem do referencial de observação do estereótipo de incapacidade, inferioridade e sofrimento constante."
-    - title: "Mãe de pessoa com deficiência isolada"
-      description: " A mãe de uma pessoa com deficiência, sem contexto de pesquisa e isolada, parte do referencial de observação do luto, da superproteção, da preocupação e dificuldades constantes de todos os tipos."
-    - title: "Pessoa com deficiência"
-      description: "Uma pessoa com deficiência, baseando-se apenas nas suas vivências e sem o conhecimento histórico da sua condição, parte do referencial de observação do estigma, da falta de acessos e da violência social."
-    - title: " Profissionais da educação"
-      description: "Profissionais da educação, sem formação em educação inclusiva, partem, muitas vezes, do referencial de observação das crenças na eficácia de “escolas especiais” e terceirização da docência para o serviço de atendimento educacional especializado."
-    - title: " Pessoas pesquisadoras"
-      description: "Pessoas pesquisadoras partem do referencial de observação do estudo de caso, da análise de documentos e da comparação de dados. Mas, muitas vezes, sem a vivência da deficiência ou o contato íntimo com uma pessoa com deficiência, não conseguem se aprofundar na complexidade do cotidiano, onde a deficiência se relaciona com o contexto social e outras condições de vida."
-    - title: "O mercado de trabalho"
-      description: "O mercado de trabalho, que parte do referencial de observação da produtividade, da eficiência e da competitividade, muitas vezes não consegue enxergar a pessoa com deficiência como um ser humano completo, com potencialidades e limitações como qualquer outro ser humano se atendo apenas ao cumprimento de cotas e leis."
-
 ---
 
  O objetivo é refletir sobre o significado da palavra deficiência sob um viés histórico-social, fundamentado em pesquisa e ciência, com uma leve pitada de desabafos pessoais e humor.
@@ -146,7 +132,41 @@ Esses são assuntos que em uma visão simplista da realidade “são fáceis” 
 
  Segundo o autor o efeito Dunning-Kruger se manifesta através de uma análise equivocada e superestimada sobre seu nível de conhecimento em relação a algum assunto, a consequência disso é que alguém quando sabe pouco sobre algo pode ter tendências a uma falsa sensação de superioridade. Isso ocorre porque a falta de conhecimento impede a correta identificação da complexidade de um tema. O presente trabalho defende a hipótese de que a deficiência é um assunto que sofre severamente com o efeito Dunning-Kruger, parte-se do pressuposto de que o referencial do qual se observa essa característica não somente altera, mas produz interpretações opostas sobre o significado da palavra deficiência. 
 
-{% include cards.html cards=page.cards %}
+{% include cards.html
+    number="1"
+    title="Pessoa sem contato com a deficiência"
+    content="Aqueles que não possuem nenhum contato com a deficiência partem do referencial de observação do estereótipo de incapacidade, inferioridade e sofrimento constante."
+%}
+
+{% include cards.html
+    number="2"
+    title="Mãe de pessoa com deficiência isolada"
+    content="A mãe de uma pessoa com deficiência, sem contexto de pesquisa e isolada, parte do referencial de observação do luto, da superproteção, da preocupação e dificuldades constantes de todos os tipos."
+%}
+
+{% include cards.html 
+    number="3"
+    title="Pessoa com deficiência"
+    content="Uma pessoa com deficiência, baseando-se apenas nas suas vivências e sem o conhecimento histórico da sua condição, parte do referencial de observação do estigma, da falta de acessos e da violência social."
+%}
+
+{% include cards.html
+    number="4"
+    title="Profissionais da educação"
+    content="Profissionais da educação, sem formação em educação inclusiva, partem, muitas vezes, do referencial de observação das crenças na eficácia de 'escolas especiais' e terceirização da docência para o serviço de atendimento educacional especializado."
+%}
+
+{% include cards.html
+    number="5"
+    title="Pessoas pesquisadoras"
+    content="Pessoas pesquisadoras partem do referencial de observação do estudo de caso, da análise de documentos e da comparação de dados. Mas, muitas vezes, sem a vivência da deficiência ou o contato íntimo com uma pessoa com deficiência, não conseguem se aprofundar na complexidade do cotidiano, onde a deficiência se relaciona com o contexto social e outras condições de vida."
+%}
+
+{% include cards.html
+    number="6"
+    title="O mercado de trabalho"
+    content="O mercado de trabalho, que parte do referencial de observação da produtividade, da eficiência e da competitividade, muitas vezes não consegue enxergar a pessoa com deficiência como um ser humano completo, com potencialidades e limitações como qualquer outro ser humano se atendo apenas ao cumprimento de cotas e leis."
+%}
 
 Existem muitas maneiras diferentes de entender a deficiência, pois cada pessoa a observa a partir de sua própria experiência de vida. Isso inclui fatores como:
 
