@@ -58,10 +58,10 @@ layout: default
       <div class="row">
         <div class="col-md-6 mb-3 mb-md-0">
           {% if page.previous %}
-          <a class="card text-decoration-none h-100 shadow-sm hover-shadow transition" href="{{ page.previous.url | relative_url }}"
+          <a class="card bg-dark text-white text-decoration-none h-100 shadow-sm hover-shadow transition" href="{{ page.previous.url | relative_url }}"
             aria-label="Post anterior: {{ page.previous.title }}">
             <div class="card-body">
-              <p class="text-muted mb-1"><span class="material-symbols-outlined align-middle me-1" aria-hidden="true">arrow_back</span> Post anterior</p>
+              <p class="text-light mb-1"><span class="material-symbols-outlined align-middle me-1" aria-hidden="true">arrow_back</span> Post anterior</p>
               <h5 class="card-title mb-0">{{ page.previous.title }}</h5>
             </div>
           </a>
@@ -69,10 +69,10 @@ layout: default
         </div>
         <div class="col-md-6">
           {% if page.next %}
-          <a class="card text-decoration-none h-100 shadow-sm hover-shadow transition text-md-end" href="{{ page.next.url | relative_url }}"
+          <a class="card bg-dark text-white text-decoration-none h-100 shadow-sm hover-shadow transition text-md-end" href="{{ page.next.url | relative_url }}"
             aria-label="Próximo post: {{ page.next.title }}">
             <div class="card-body">
-              <p class="text-muted mb-1">Próximo post <span class="material-symbols-outlined align-middle ms-1" aria-hidden="true">arrow_forward</span></p>
+              <p class="text-light mb-1">Próximo post <span class="material-symbols-outlined align-middle ms-1" aria-hidden="true">arrow_forward</span></p>
               <h5 class="card-title mb-0">{{ page.next.title }}</h5>
             </div>
           </a>
