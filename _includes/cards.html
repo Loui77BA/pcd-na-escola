@@ -1,14 +1,13 @@
-<div class="custom-cards my-5" role="region" aria-label="{{ include.title }}">
-  <div class="card bg-dark text-light border-0 shadow-lg card-hover"
-       style="border-radius: 15px; transition: all 0.3s ease;"
-       role="article"
-       aria-labelledby="card-title"
-       aria-describedby="card-desc"
-       tabindex="0">
+<section class="custom-cards my-5" aria-labelledby="card-section-title">
+  <h2 id="card-section-title" class="visually-hidden">Card informativo</h2>
+  <article class="card bg-dark text-light border-0 shadow-lg card-hover"
+           style="border-radius: 15px; transition: all 0.3s ease;"
+           aria-labelledby="card-title"
+           aria-describedby="card-desc"
+           tabindex="0">
     <div class="card-body p-4 position-relative">
       <!-- Ícone ilustrativo -->
       <div class="mb-3" aria-hidden="true">
-        <span class="visually-hidden">Início do ícone</span>
         <span class="rounded-circle p-3 d-inline-flex align-items-center justify-content-center text-light" 
               style="width: 60px; height: 60px; font-size: 2.5rem; background: rgba(77,171,247,0.1);">
           {{ include.number }}
@@ -18,25 +17,25 @@
       <h3 class="card-title text-light mb-3 fw-bold h5" id="card-title">
         {{ include.title }}
       </h3>
-      <p class="card-text text-high-contrast lh-base" id="card-desc">
+      <div class="card-text text-high-contrast lh-base" id="card-desc">
         {{ include.content }}
-      </p>
+      </div>
     </div>
-  </div>
-</div>
+  </article>
+</section>
 
 <style>
-/* Use a classe de utilidade para esconder texto visualmente mas mantê-lo acessível */
+/* Classe para esconder elementos visualmente mas mantê-los acessíveis */
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
 /* Melhorias de acessibilidade e contraste */
@@ -47,13 +46,13 @@
 
 /* Estados de foco para navegação por teclado */
 .custom-cards .card-hover:focus {
-  outline: 3px solid #0d6efd;
+  outline: 3px solid #0d6efd !important;
   outline-offset: 2px;
-  box-shadow: 0 0 0 3px rgba(13,110,253,0.3);
+  box-shadow: 0 0 0 3px rgba(13,110,253,0.3) !important;
 }
 
 .custom-cards .card-hover:focus-visible {
-  outline: 3px solid #0d6efd;
+  outline: 3px solid #0d6efd !important;
   outline-offset: 2px;
 }
 
@@ -64,111 +63,28 @@
   box-shadow: 0 15px 35px rgba(0,0,0,0.4) !important;
 }
 
-.custom-cards .card-hover:hover .position-absolute,
-.custom-cards .card-hover:focus .position-absolute {
-  border-color: rgba(13,110,253,0.5);
-}
-
-/* Ícones com alto contraste */
-.icon-high-contrast {
-  color: #4dabf7 !important; /* Azul mais claro para melhor contraste */
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-}
-
-.icon-background {
-  background: rgba(77,171,247,0.2) !important; /* Fundo mais visível */
-  border: 1px solid rgba(77,171,247,0.3);
-}
-
-.custom-cards .card-hover:hover .icon-background,
-.custom-cards .card-hover:focus .icon-background {
-  background: rgba(77,171,247,0.3) !important;
-  transform: scale(1.05);
-  border-color: rgba(77,171,247,0.5);
-}
-
-/* Badge com alto contraste */
-.badge-high-contrast {
-  background: rgba(255,255,255,0.15) !important;
-  color: #ffffff !important;
-  border: 1px solid rgba(255,255,255,0.2);
-  font-weight: 600;
-}
-
 /* Texto com alto contraste */
 .text-high-contrast {
-  color: rgba(255,255,255,0.9) !important;
+  color: rgba(255,255,255,0.95) !important;
   text-shadow: 0 1px 2px rgba(0,0,0,0.1);
-}
-
-/* Barra de progresso com melhor visibilidade */
-.progress-bar {
-  background: linear-gradient(90deg, #4dabf7, #339af0) !important;
-  opacity: 0.8;
-  box-shadow: 0 1px 3px rgba(77,171,247,0.3);
-}
-
-.custom-cards .card-hover:hover .progress-bar,
-.custom-cards .card-hover:focus .progress-bar {
-  width: 50px;
-  opacity: 1;
-  box-shadow: 0 2px 6px rgba(77,171,247,0.5);
 }
 
 /* Animação respeitando preferências do usuário */
 @media (prefers-reduced-motion: reduce) {
-  .custom-cards .card {
-    animation: none;
-    opacity: 1;
-    transform: none;
-  }
-  
   .custom-cards .card-hover {
     transition: none;
-  }
-}
-
-/* Animação padrão */
-@media (prefers-reduced-motion: no-preference) {
-  .custom-cards .card {
-    animation: cardSlideUp 0.6s ease forwards;
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  
-  .custom-cards .col-12:nth-child(1) .card { animation-delay: 0.1s; }
-  .custom-cards .col-12:nth-child(2) .card { animation-delay: 0.2s; }
-  .custom-cards .col-12:nth-child(3) .card { animation-delay: 0.3s; }
-  .custom-cards .col-12:nth-child(4) .card { animation-delay: 0.4s; }
-  .custom-cards .col-12:nth-child(5) .card { animation-delay: 0.5s; }
-  .custom-cards .col-12:nth-child(6) .card { animation-delay: 0.6s; }
-}
-
-@keyframes cardSlideUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
 /* Suporte para temas de alto contraste do sistema */
 @media (prefers-contrast: high) {
   .custom-cards .card-hover {
-    border: 2px solid #ffffff;
-  }
-  
-  .icon-high-contrast {
-    color: #ffffff !important;
+    border: 2px solid #ffffff !important;
+    background: #000000 !important;
   }
   
   .text-high-contrast {
     color: #ffffff !important;
-  }
-  
-  .badge-high-contrast {
-    background: #000000 !important;
-    color: #ffffff !important;
-    border: 2px solid #ffffff;
   }
 }
 
@@ -176,10 +92,6 @@
 @media (max-width: 768px) {
   .custom-cards .card-body {
     padding: 1.5rem;
-  }
-  
-  .custom-cards .card-header {
-    padding: 1.5rem 1.5rem 0;
   }
   
   /* Tamanho mínimo de toque para dispositivos móveis */
