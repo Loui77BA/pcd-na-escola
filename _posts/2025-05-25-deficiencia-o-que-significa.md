@@ -1046,7 +1046,6 @@ Não é só sobre se aceitar é sobre se fazer entender em suas nuances particul
 <h2 id="referencias">Referências</h2>
 
 <hr>
-
 <ul class="references-list text-light">
     <li class="mb-3">
         ALVES, M. A.; GALEÃO-SILVA, L. G. A crítica da gestão da diversidade nas organizações. <strong>Revista de Administração de Empresas</strong>, v. 44, n. 3, p. 20-29, jul./set. 2004.
@@ -1077,7 +1076,12 @@ Não é só sobre se aceitar é sobre se fazer entender em suas nuances particul
     </li>
     
     <li class="mb-3">
-        BRASIL. Constituição Política do Império do Brasil, de 25 de março de 1824. Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/Constituicao/Constituicao24.htm" class="link-light" target="_blank" rel="noopener">https://www.planalto.gov.br/ccivil_03/Constituicao/Constituicao24.htm</a>. Acesso em: 28 de setembro de 2023.
+        BRASIL. Constituição Política do Império do Brasil, de 25 de março de 1824. Disponível em: 
+        <a href="https://www.planalto.gov.br/ccivil_03/Constituicao/Constituicao24.htm" 
+           class="link-light text-break" 
+           target="_blank" 
+           rel="noopener">www.planalto.gov.br/ccivil_03/Constituicao/Constituicao24.htm</a>. 
+        Acesso em: 28 de setembro de 2023.
     </li>
     
     <li class="mb-3">
@@ -1085,7 +1089,12 @@ Não é só sobre se aceitar é sobre se fazer entender em suas nuances particul
     </li>
     
     <li class="mb-3">
-        BRASIL. Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da Pessoa com Deficiência), n. 13.146, de 6 de julho de 2015. Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm" class="link-light" target="_blank" rel="noopener">https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm</a>. Acesso em: 28 de setembro de 2023.
+        BRASIL. Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da Pessoa com Deficiência), n. 13.146, de 6 de julho de 2015. Disponível em: 
+        <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm" 
+           class="link-light text-break" 
+           target="_blank" 
+           rel="noopener">www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm</a>. 
+        Acesso em: 28 de setembro de 2023.
     </li>
     
     <li class="mb-3">
@@ -1153,7 +1162,12 @@ Não é só sobre se aceitar é sobre se fazer entender em suas nuances particul
     </li>
     
     <li class="mb-3">
-        ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). A Carta das Nações Unidas, 1945. Disponível em: <a href="https://brasil.un.org/sites/default/files/2022-05/Carta-ONU.pdf" class="link-light" target="_blank" rel="noopener">https://brasil.un.org/sites/default/files/2022-05/Carta-ONU.pdf</a>. Acesso em: 28 de setembro de 2023.
+        ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). A Carta das Nações Unidas, 1945. Disponível em: 
+        <a href="https://brasil.un.org/sites/default/files/2022-05/Carta-ONU.pdf" 
+           class="link-light text-break" 
+           target="_blank" 
+           rel="noopener">brasil.un.org/sites/default/files/2022-05/Carta-ONU.pdf</a>. 
+        Acesso em: 28 de setembro de 2023.
     </li>
     
     <li class="mb-3">
