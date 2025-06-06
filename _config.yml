@@ -4,9 +4,9 @@ description: O PcD na Escola é um projeto que visa promover a educação e tecn
 author: Louise Suelen
 email: louise.suelen-reis@outlook.com.br
 
-# Site URL
-baseurl: "/pcd-na-escola" # Nome do seu repositório GitHub
-url: "https://loui77ba.github.io" # Seu domínio do GitHub Pages
+# Site URL (ajustado para domínio personalizado)
+baseurl: ""  # vazio porque o site agora está na raiz do domínio
+url: "https://pcdnaescola.com.br"  # domínio personalizado em uso no GitHub Pages
 
 # Keywords para SEO
 keywords:
@@ -34,7 +34,6 @@ plugins:
   - jekyll-seo-tag
 
 # Exclude from processing.
-# Mantendo os comentários padrão do Jekyll
 exclude:
   - .sass-cache/
   - .jekyll-cache/
