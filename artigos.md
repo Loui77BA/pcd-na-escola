@@ -41,12 +41,12 @@ description: "Artigos sobre educação, tecnologia e acessibilidade no PCD na Es
                 <a href="{{ post.url | relative_url }}" class="text-decoration-none text-warning" style="text-shadow: 0 1px 3px rgba(0,0,0,0.3);">{{ post.title }}</a>
               </h3>
               <p class="text-light-50 small">
-                <i class="bi bi-calendar3 me-1"></i>
+                <i class="bi bi-calendar3 me-1" aria-hidden="true"></i>
                 <time datetime="{{ post.date | date: '%Y-%m-%d' }}">
                   {{ post.date | date: "%d de %B de %Y" }}
                 </time>
                 <br>
-                <i class="bi bi-folder2 me-1"></i> {{ post.categories | join: ", " }}
+                <i class="bi bi-folder2 me-1" aria-hidden="true"></i> {{ post.categories | join: ", " }}
               </p>
               <p class="card-text">{{ post.excerpt }}</p>
             </div>
