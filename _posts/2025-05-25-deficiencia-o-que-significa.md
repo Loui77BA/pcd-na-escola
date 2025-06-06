@@ -110,7 +110,7 @@ sumario: |
         </li>
     </ul>
 cards:
-    - title: "Pessoa sem contado com a deficiência"
+    - title: "Pessoa sem contato com a deficiência"
       description: "Aqueles que não possuem nenhum contato com a deficiência partem do referencial de observação do estereótipo de incapacidade, inferioridade e sofrimento constante."
     - title: "Mãe de pessoa com deficiência isolada"
       description: " A mãe de uma pessoa com deficiência, sem contexto de pesquisa e isolada, parte do referencial de observação do luto, da superproteção, da preocupação e dificuldades constantes de todos os tipos."
@@ -137,7 +137,7 @@ cards:
 <hr>
 
 Existem determinados assuntos que afastam as pessoas sem conhecimento, astrofísica, engenharia elétrica, matemática, cardiologia e afins costumam receber o rótulo de “complicados” e isso gera intimidação, as pessoas não comentam por medo. Por outro lado, existem aqueles assuntos que a maioria das pessoas também não tem conhecimento, só que elas acreditam ter e esse é justamente o problema. Culinária, música, política, método científico e educação física são exemplos de assuntos que todo mundo acredita não apenas que entende, mas que domina, inclusive muitos afirmam que especialistas nessas áreas não são necessários.
- 
+
 Esses são assuntos que em uma visão simplista da realidade “são fáceis” e “qualquer pessoa” mesmo sem base acadêmica pode estudar, aplicar para si e ensinar a terceiros “sem risco nenhum” porque não existem riscos se tratando desses temas. Ou seja, nessas questões alguém acha que sabe muito, porém sabe pouco, existe um nome para isso efeito Dunning-Kruger que é chamado assim por conta dos psicólogos que o demonstraram em 1999 David Alan Dunning e Justin Kruger.
 
  {% include blockquote.html 
@@ -149,20 +149,25 @@ Esses são assuntos que em uma visão simplista da realidade “são fáceis” 
 {% include cards.html cards=page.cards %}
 
 Existem muitas maneiras diferentes de entender a deficiência, pois cada pessoa a observa a partir de sua própria experiência de vida. Isso inclui fatores como:
-- O gênero da pessoa
-- Sua etnia
-- Sua orientação sexual
-- Sua cultura
-- Sua religião
-- Sua condição financeira
+
+<ul>
+    <li>O gênero da pessoa</li>
+    <li>Sua etnia</li>
+    <li>Sua orientação sexual</li>
+    <li>Sua cultura</li>
+    <li>Sua religião</li>
+    <li>Sua condição financeira</li>
+</ul>
 
 É como olhar para um objeto de diferentes ângulos: cada posição mostra uma visão diferente do mesmo objeto. Da mesma forma, a maneira como alguém vê a deficiência muda dependendo de sua posição na sociedade e suas experiências pessoais.
 
+<br class="mb-4" />
+
 Por isso é importante ser transparente sobre o ponto de vista de quem escreve. Convidamos você, leitor, a pensar sobre o que será apresentado aqui, evitando achar que já sabe tudo sobre o assunto. Este trabalho pode trazer novos conhecimentos, independente da sua experiência prévia com a deficiência.
 
-Este texto foi escrito com base em pesquisas de livros e documentos, usando conhecimentos de várias áreas como história, sociologia e leis. É um texto laico e honesto, sempre deixando claro o que são opiniões pessoais e o que vem de pesquisas, com todas as fontes indicadas.
+<br class="mb-4" />
 
----
+Este texto foi escrito com base em pesquisas de livros e documentos, usando conhecimentos de várias áreas como história, sociologia e leis. É um texto laico e honesto, sempre deixando claro o que são opiniões pessoais e o que vem de pesquisas, com todas as fontes indicadas.
 
 {% include figure.html 
     src="https://disabilityhorizons.com/wp-content/uploads/2016/07/Disabled-vetrans-from-the-First-World-War.jpg"
@@ -339,13 +344,23 @@ Avançando um pouco mais na história, houve o fim do Império Romano, que é ma
 
 Entre os séculos V e XV, período que chamamos de Idade Média, a Europa passou por transformações profundas que moldaram sua organização social, econômica e cultural. Durante esse longo intervalo, o sistema feudal se consolidou, estabelecendo relações baseadas na posse da terra, na servidão e na descentralização do poder. Os senhores feudais exerciam autoridade sobre grandes extensões de terra, enquanto os camponeses, obrigados a prestar serviços, cultivavam essas propriedades, criando uma estrutura social que permaneceu dominante por séculos.
 
+<br class="mb-4" />
+
 Nesse mesmo período, os burgos—núcleos urbanos que tiveram origem em vilas e centros de comércio—começaram a se desenvolver, marcando o surgimento das primeiras cidades medievais. Esses centros urbanos tornaram-se polos para o intercâmbio de bens, serviços e ideias, impulsionando o surgimento de novas formas de organização econômica e social, como as guildas e corporações de ofícios.
+
+<br class="mb-4" />
 
 No campo intelectual, destaca-se o surgimento da escolástica, método que procurava harmonizar a fé com a razão por meio da análise crítica dos textos clássicos e religiosos. Esse pensamento se desenvolveu intensamente nas primeiras universidades ocidentais, como a Universidade de Bolonha (fundada em 1088), a Universidade de Paris e, posteriormente, a Universidade de Oxford. Essas instituições se tornaram centros de ensino e produção de conhecimento, consolidando o papel da educação na Europa medieval.
 
+<br class="mb-4" />
+
 Além desses aspectos, a Idade Média foi marcada pela predominância da Igreja Católica, que não apenas influenciou a espiritualidade e a moral, mas também teve um papel central na organização política e cultural. As Cruzadas, por exemplo, evidenciam como a religião mobilizou e interagiu com outras culturas, afetando tanto as relações comerciais quanto os intercâmbios culturais entre o Oriente e o Ocidente.
 
+<br class="mb-4" />
+
 Durante a Idade Média, as pessoas com deficiência eram tratadas de maneiras muito diferentes e contraditórias. Nessa época, a Igreja Católica tinha muito poder e controlava praticamente todo o conhecimento. Por isso, apenas pessoas da nobreza e religiosos tinham acesso à educação e à cultura. A grande maioria das pessoas, especialmente aquelas consideradas "incapazes" (como eram chamadas as pessoas com deficiência nos documentos antigos), ficava sem acesso.
+
+<br class="mb-4" />
 
 Com a ideia de que todos eram filhos de Deus, as pessoas com deficiência passaram a ser vistas, pelo menos em teoria, como seres humanos dignos, como explica Cambi:
 
@@ -355,15 +370,27 @@ Com a ideia de que todos eram filhos de Deus, as pessoas com deficiência passar
 
 Porém, havia uma grande contradição: enquanto a Igreja pregava misericórdia e inclusão, ela mesma, através da Inquisição, condenava e às vezes executava pessoas com deficiência. A situação era ainda mais confusa porque a deficiência era vista ora como uma bênção divina, ora como uma maldição demoníaca. No século V, segundo Pessotti (1984), a deficiência podia ser considerada tanto um "desígnio especial de Deus" quanto um sinal de possessão demoníaca.
 
+<br class="mb-4" />
+
 As leis da época também refletiam essa discriminação. No século XIV, a lei "praerogativa regis" permitia que o governo ou tutores controlassem os bens de pessoas consideradas "lunáticas" até que elas "recuperassem a sanidade". Se alguém fosse acusado de possessão demoníaca, podia ser executado e ter seus bens tomados, mostrando que havia também interesses econômicos por trás dessas perseguições.
+
+<br class="mb-4" />
 
 Um exemplo importante da época é a **roda dos expostos**. Era uma abertura nas paredes de instituições de caridade onde as mães podiam deixar seus bebês sem serem identificadas. Embora não fosse feita só para crianças com deficiência, muitos bebês que tinham alguma deficiência eram deixados lá porque a sociedade não aceitava pessoas que fossem diferentes do que considerava "normal". 
 
+<br class="mb-4" />
+
 Isso mostra bem como era a Idade Média: mesmo que a Igreja Católica ensinasse que todas as pessoas eram importantes por serem filhas de Deus, na prática, quem era diferente acabava sendo excluído da sociedade. Esse tipo de discriminação continuou influenciando o tratamento das pessoas com deficiência por muito tempo. 
+
+<br class="mb-4" />
 
 Com o enfraquecimento do feudalismo e o crescimento da burguesia, o poder absoluto da Igreja começou a ser questionado. Estudiosos como Paracelso e Cardano começaram a estudar a deficiência de forma mais científica, menos religiosa. Mais tarde, John Locke, em seu livro "Ensaio sobre o entendimento humano" (1689), defendeu que todos nascemos como uma "página em branco" que é preenchida pelas experiências de vida.
 
+<br class="mb-4" />
+
 Essas ideias influenciaram Denis Diderot a escrever a "Carta sobre os cegos para uso daqueles que enxergam" (1749), que destacava a capacidade de aprendizagem das pessoas cegas. Este trabalho acabou levando à criação do Instituto Nacional dos Jovens Cegos no ano de 1784, em Paris, por Valentin Haüy. Esse instituto foi um marco importante na história da educação para pessoas com deficiência, pois foi o primeiro a oferecer ensino sistemático e especializado para pessoas cegas, desafiando a visão tradicional de que essas pessoas eram incapazes de aprender.
+
+<br class="mb-4" />
 
 A transição para uma visão mais científica e racional da deficiência começou a surgir com o Renascimento, que trouxe novas ideias e questionamentos sobre a natureza humana.
 
@@ -376,6 +403,8 @@ A transição para uma visão mais científica e racional da deficiência começ
 <hr>
 
 Entre os séculos XV e XVII com a queda do feudalismo iniciou-se um período histórico conhecido como Renascimento, ele foi marcado por mudanças econômicas, políticas e sociais que oportunizaram um cenário favorável para o desenvolvimento do sistema capitalista. Houve também a retomada do comércio, a substituição da mão-de-obra servil pelo trabalho assalariado, o declínio da influência do clero sobre o Estado e a ascensão da famosa burguesia. 
+
+<br class="mb-4" />
 
 O fervilhar desse caldeirão de mudanças acarretou uma luta de interesses no seio da sociedade, essa luta originou consequências nos valores, nas normas e nas leis elaboradas e aplicadas neste período. Durante o Renascimento, houve uma mudança de perspectiva, deixando de lado a visão teocêntrica (centrada em Deus) e passando a valorizar mais o ser humano e aspectos das culturas greco-romanas. Com isso, surgiram visões mais humanísticas sobre a deficiência. 
 
