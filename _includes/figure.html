@@ -1,10 +1,12 @@
-<figure class="custom-figure text-center my-5">
+<figure class="custom-figure text-center my-5" role="figure" aria-label="{% if include.caption %}{{ include.caption }}{% else %}{% if include.alt %}{{ include.alt }}{% endif %}{% endif %}">
   <div class="figure-container position-relative d-inline-block">
     <!-- Container da imagem com efeitos -->
     <div class="image-wrapper position-relative overflow-hidden shadow-lg" style="border-radius: 16px;">
       <img class="img-fluid" 
            src="{{ include.src }}" 
-           alt="{{ include.alt }}" 
+           alt="{% if include.alt %}{{ include.alt }}{% else %}{{ include.caption }}{% endif %}"
+           aria-label="{% if include.alt %}{{ include.alt }}{% else %}{{ include.caption }}{% endif %}"
+           role="img"
            loading="lazy"
            style="transition: all 0.3s ease; display: block; width: 100%; height: auto; object-fit: cover;">
       
