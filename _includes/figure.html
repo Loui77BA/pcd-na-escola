@@ -1,16 +1,12 @@
-<figure class="custom-figure text-center my-5" role="figure" aria-label="{% if include.caption %}{{ include.caption }}{% else %}{% if include.alt %}{{ include.alt }}{% endif %}{% endif %}">
+<figure class="custom-figure text-center my-5" role="figure" {% if include.caption %}aria-labelledby="figcaption-{{ include.src | slugify }}"{% endif %}>
   <div class="figure-container position-relative d-inline-block">
-    <!-- Container da imagem com efeitos -->
     <div class="image-wrapper position-relative overflow-hidden shadow-lg" style="border-radius: 16px;">
-      <img class="img-fluid" 
-           src="{{ include.src }}" 
+      <img class="img-fluid"
+           src="{{ include.src }}"
            alt="{% if include.alt %}{{ include.alt }}{% else %}{{ include.caption }}{% endif %}"
-           aria-label="{% if include.alt %}{{ include.alt }}{% else %}{{ include.caption }}{% endif %}"
            role="img"
            loading="lazy"
            style="transition: all 0.3s ease; display: block; width: 100%; height: auto; object-fit: cover;">
-      
-      <!-- Overlay sutil no hover -->
       <div class="image-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" 
            style="background: rgba(0,0,0,0.7); opacity: 0; transition: all 0.3s ease; border-radius: 16px;">
         <div class="text-center">
@@ -19,57 +15,17 @@
         </div>
       </div>
     </div>
-    
-    <!-- Decoração inferior -->
+
     <div class="figure-decoration position-absolute bottom-0 start-50 translate-middle-x" style="bottom: -10px;">
       <div class="bg-primary rounded-pill shadow-sm" style="width: 60px; height: 4px; opacity: 0.6;"></div>
     </div>
   </div>
 
-  <!-- Caption se fornecida -->
   {% if include.caption %}
-  <figcaption class="figure-caption text-center mt-4">
+  <figcaption id="figcaption-{{ include.src | slugify }}" class="figure-caption text-center mt-4">
     <div class="d-inline-flex align-items-center bg-dark bg-opacity-50 rounded-pill px-4 py-2">
       <span class="text-light small" style="padding: 2%;">{{ include.caption }}</span>
     </div>
   </figcaption>
   {% endif %}
 </figure>
-
-<style>
-.custom-figure .image-wrapper {
-  border: 2px solid rgba(13,110,253,0.2);
-  transition: all 0.3s ease;
-  line-height: 0; /* Remove espaço em branco */
-  font-size: 0; /* Remove espaço em branco */
-}
-
-.custom-figure .image-wrapper img {
-  margin: 0; /* Remove margens */
-  padding: 0; /* Remove padding */
-  vertical-align: middle; /* Alinha a imagem corretamente */
-}
-
-.custom-figure .image-wrapper:hover {
-  transform: translateY(-5px);
-  border-color: rgba(13,110,253,0.4);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3) !important;
-}
-
-.custom-figure .image-wrapper:hover .image-overlay {
-  opacity: 1;
-}
-
-.custom-figure .image-wrapper:hover img {
-  transform: scale(1.05);
-}
-
-.custom-figure .figure-decoration {
-  transition: all 0.3s ease;
-}
-
-.custom-figure:hover .figure-decoration div {
-  width: 80px;
-  opacity: 1;
-}
-</style>
