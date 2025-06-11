@@ -5,9 +5,11 @@
            src="{{ include.src }}"
            alt="{% if include.alt %}{{ include.alt }}{% elsif include.caption %}{{ include.caption }}{% else %}Imagem{% endif %}"
            loading="lazy"
-           style="transition: all 0.3s ease; display: block; width: 100%; height: auto; object-fit: cover;">
+           role="img"
+           style="transition: all 0.3s ease; display: block; width: 100%; height: auto; object-fit: cover;" />
       <div class="image-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" 
-           style="background: rgba(0,0,0,0.7); opacity: 0; transition: all 0.3s ease; border-radius: 16px;">
+           style="background: rgba(0,0,0,0.7); opacity: 0; transition: all 0.3s ease; border-radius: 16px;"
+           aria-hidden="true">
         <div class="text-center">
           <i class="material-icons text-white fs-1 mb-2" aria-hidden="true">zoom_in</i>
           <p class="text-white small mb-0">Clique para ampliar</p>
