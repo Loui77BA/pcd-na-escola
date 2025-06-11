@@ -77,7 +77,7 @@ sumario: |
 ---
 
 <p>
-    Até mesmo o nome do preconceito contra a pessoa com deficiência (o capacitismo) é desconhecido, conheça a forma da discriminação que une todas as outras.
+    Até mesmo o nome do preconceito contra a pessoa com deficiência (o capacitismo) é desconhecido, conheça a força da discriminação que une todas as outras.
 </p>
 
 {% include figure.html 
