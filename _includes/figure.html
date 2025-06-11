@@ -3,7 +3,8 @@
     <div class="image-wrapper position-relative overflow-hidden shadow-lg" style="border-radius: 16px;">
       <img class="img-fluid"
            src="{{ include.src }}"
-           alt="{{ include.alt | escape }}"
+           alt=""
+           aria-hidden="true"
            loading="lazy"
            style="transition: all 0.3s ease; display: block; width: 100%; height: auto; object-fit: cover;" />
       <div class="image-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
@@ -14,6 +15,10 @@
           <p class="text-white small mb-0">Clique para ampliar</p>
         </div>
       </div>
+    </div>
+
+    <div class="sr-only">
+      {{ include.alt }}
     </div>
 
     <div class="figure-decoration position-absolute bottom-0 start-50 translate-middle-x" style="bottom: -10px;" aria-hidden="true">

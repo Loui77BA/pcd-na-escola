@@ -12,7 +12,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                     <h1 class="display-3 fw-bold text-white mb-4" style="text-shadow: 0 1px 3px rgba(0,0,0,0.3);">
                         <span style="color: #2e8cff; display: block;">Educação e tecnologia para todas as pessoas</span>
                     </h1>
-                    <p class="lead fw-normal text-white-50 mb-4" style="font-style: italic; border-left: 3px solid rgba(13,110,253,0.5); padding-left: 15px; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">
+                    <p class="lead fw-normal text-white-50 mb-4" style="font-style: italic; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">
                         "Para as pessoas sem deficiência, a tecnologia torna as coisas mais fáceis. Para as pessoas com deficiência, a tecnologia torna as coisas possíveis" — Mary Pat Rabanaugh
                     </p>
                 </div>
