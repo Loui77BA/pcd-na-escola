@@ -1,11 +1,12 @@
 <div class="custom-figure text-center my-5" {% if include.caption %}aria-labelledby="figcaption-{{ include.src | slugify }}"{% endif %}>
   <div class="figure-container position-relative d-inline-block">
     <div class="image-wrapper position-relative overflow-hidden shadow-lg" style="border-radius: 16px;">
+      <!-- Remova tabindex da imagem e use title além de alt -->
       <img class="img-fluid"
            src="{{ include.src }}"
            alt="{% if include.alt %}{{ include.alt }}{% elsif include.caption %}{{ include.caption }}{% else %}Imagem{% endif %}"
+           title="{% if include.alt %}{{ include.alt }}{% elsif include.caption %}{{ include.caption }}{% else %}Imagem{% endif %}"
            loading="lazy"
-           tabindex="0"
            style="transition: all 0.3s ease; display: block; width: 100%; height: auto; object-fit: cover;" />
       <div class="image-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" 
            style="background: rgba(0,0,0,0.7); opacity: 0; transition: all 0.3s ease; border-radius: 16px; pointer-events: none;"
