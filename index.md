@@ -4,17 +4,21 @@ title: "Página Inicial"
 permalink: /
 description: "O PcD na Escola é um projeto que visa promover a educação e tecnologia para todas as pessoas, com foco na acessibilidade e inclusão de pessoas com deficiência."
 ---
-<header class="py-5" role="banner" style="background: linear-gradient(145deg, #121215, #121215); border-bottom: 3px solid rgba(13,110,253,0.2);">
+<header class="py-3" role="banner" style="background: linear-gradient(145deg, #121215, #121215); border-bottom: 3px solid rgba(13,110,253,0.2);">
     <div class="container px-5">
         <div class="row gx-5 align-items-center justify-content-center">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
-                <div class="my-5 text-center text-xl-start">
-                    <h1 class="display-3 fw-bold text-white mb-4" style="text-shadow: 0 1px 3px rgba(0,0,0,0.3);">
+                <div class="my-3 text-center text-xl-start">
+                    <h1 class="display-2 fw-bold text-white mb-4" style="text-shadow: 0 1px 3px rgba(0,0,0,0.3);">
                         <span style="color: #2e8cff; display: block;">Educação e tecnologia para todas as pessoas</span>
                     </h1>
-                    <p class="lead fw-normal text-white-50 mb-4" style="font-style: italic; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">
+                    <p class="lead fw-normal text-white-50 mb-4" style="font-style: italic; text-shadow: 0 1px 2px rgba(0,0,0,0.3);  border-left: 3px solid rgba(13,110,253,0.3); padding-left: 15px;">
                         "Para as pessoas sem deficiência, a tecnologia torna as coisas mais fáceis. Para as pessoas com deficiência, a tecnologia torna as coisas possíveis" — Mary Pat Rabanaugh
                     </p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                        <a class="btn btn-outline-light btn-lg px-4 me-sm-3" href="#target-audiences" role="button" style="border-color: rgba(255,255,255,0.2);">Saiba mais</a>
+                        <a class="btn btn-outline-light btn-lg px-4" href="/contato" role="button" style="border-color: rgba(255,255,255,0.2);">Contato</a>
+                    </div>
                 </div>
             </div>
             <div class="col-xl-5 col-xxl-6 text-center" title="video">            
