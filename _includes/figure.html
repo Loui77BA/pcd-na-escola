@@ -1,11 +1,10 @@
-<figure class="custom-figure text-center my-5" role="figure" {% if include.caption %}aria-labelledby="figcaption-{{ include.src | slugify }}"{% endif %}>
+<div class="custom-figure text-center my-5" {% if include.caption %}aria-labelledby="figcaption-{{ include.src | slugify }}"{% endif %}>
   <div class="figure-container position-relative d-inline-block">
     <div class="image-wrapper position-relative overflow-hidden shadow-lg" style="border-radius: 16px;">
       <img class="img-fluid"
            src="{{ include.src }}"
            alt="{% if include.alt %}{{ include.alt }}{% elsif include.caption %}{{ include.caption }}{% else %}Imagem{% endif %}"
            loading="lazy"
-           role="img"
            style="transition: all 0.3s ease; display: block; width: 100%; height: auto; object-fit: cover;" />
       <div class="image-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" 
            style="background: rgba(0,0,0,0.7); opacity: 0; transition: all 0.3s ease; border-radius: 16px;"
@@ -17,16 +16,16 @@
       </div>
     </div>
 
-    <div class="figure-decoration position-absolute bottom-0 start-50 translate-middle-x" style="bottom: -10px;">
+    <div class="figure-decoration position-absolute bottom-0 start-50 translate-middle-x" style="bottom: -10px;" aria-hidden="true">
       <div class="bg-primary rounded-pill shadow-sm" style="width: 60px; height: 4px; opacity: 0.6;"></div>
     </div>
   </div>
 
   {% if include.caption %}
-  <figcaption id="figcaption-{{ include.src | slugify }}" class="figure-caption text-center mt-4">
+  <div id="figcaption-{{ include.src | slugify }}" class="figure-caption text-center mt-4">
     <div class="d-inline-flex align-items-center bg-dark bg-opacity-50 rounded-pill px-4 py-2">
       <span class="text-light small" style="padding: 2%;">{{ include.caption }}</span>
     </div>
-  </figcaption>
+  </div>
   {% endif %}
-</figure>
+</div>
