@@ -45,7 +45,6 @@ description: "Artigos sobre educação, tecnologia e acessibilidade no PCD na Es
               <h3 class="h5 card-title">
                 <a href="{{ post.url | relative_url }}" class="text-decoration-none text-warning" style="text-shadow: 0 1px 3px rgba(0,0,0,0.3);">
                   {{ post.title }}
-                  <span class="visually-hidden"> - Categoria: {{ post.categories | join: ", " }}</span>
                 </a>
               </h3>
               <p class="text-light-50 small">
