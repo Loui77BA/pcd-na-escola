@@ -3,8 +3,7 @@
     <div class="image-wrapper position-relative overflow-hidden shadow-lg" style="border-radius: 16px;">
       <img class="img-fluid"
            src="{{ include.src }}"
-           alt="{% if include.alt %}{{ include.alt }}{% else %}{{ include.caption }}{% endif %}"
-           role="img"
+           alt="{% if include.alt %}{{ include.alt }}{% elsif include.caption %}{{ include.caption }}{% else %}Imagem{% endif %}"
            loading="lazy"
            style="transition: all 0.3s ease; display: block; width: 100%; height: auto; object-fit: cover;">
       <div class="image-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" 
