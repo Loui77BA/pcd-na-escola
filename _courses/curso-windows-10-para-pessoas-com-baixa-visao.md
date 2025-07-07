@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Configurações do Windows 10 para Pessoas com Baixa Visão"
+permalink: /cursos/curso-windows-10-para-pessoas-com-baixa-visao/
 category: "Acessibilidade Digital"
 date: 2025-07-02
 author: "Louise Suelen"
@@ -45,7 +46,7 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
     <div style="position:relative;padding-top:56.25%;">
         <iframe id="panda-db9e664f-b0bb-4bed-9112-999b8bdc4278" 
                 src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=db9e664f-b0bb-4bed-9112-999b8bdc4278" 
-                style="border:none;position:absolute;top:0;left:0;" 
+                style="border:none;position:absolute;top:0;left:0;border-radius:15px;box-shadow:0 15px 25px rgba(0,0,0,0.4); border: 3px solid rgba(13,110,253,0.3);"
                 allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
                 allowfullscreen=true 
                 width="100%" 
@@ -111,7 +112,7 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
     <div style="position:relative;padding-top:56.25%;">
         <iframe id="panda-a4b9eff5-9c4b-4726-83f3-79968b4f6812" 
                 src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=a4b9eff5-9c4b-4726-83f3-79968b4f6812" 
-                style="border:none;position:absolute;top:0;left:0;" 
+                style="border:none;position:absolute;top:0;left:0;border-radius:15px;box-shadow:0 15px 25px rgba(0,0,0,0.4); border: 3px solid rgba(13,110,253,0.3);"
                 allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
                 allowfullscreen=true 
                 width="100%" 
@@ -279,7 +280,7 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
     <div style="position:relative;padding-top:56.25%;">
         <iframe id="panda-e57d0a0f-5694-4faa-bd53-a1cad9e23a9d" 
                 src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=e57d0a0f-5694-4faa-bd53-a1cad9e23a9d" 
-                style="border:none;position:absolute;top:0;left:0;" 
+                style="border:none;position:absolute;top:0;left:0;border-radius:15px;box-shadow:0 15px 25px rgba(0,0,0,0.4); border: 3px solid rgba(13,110,253,0.3);"
                 allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
                 allowfullscreen=true 
                 width="100%" 
@@ -301,7 +302,7 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
     <div style="position:relative;padding-top:56.25%;">
         <iframe id="panda-2f37c960-9453-467e-b4cc-dbf45c0de9b8" 
                 src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=2f37c960-9453-467e-b4cc-dbf45c0de9b8" 
-                style="border:none;position:absolute;top:0;left:0;" 
+                style="border:none;position:absolute;top:0;left:0;border-radius:15px;box-shadow:0 15px 25px rgba(0,0,0,0.4); border: 3px solid rgba(13,110,253,0.3);"
                 allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
                 allowfullscreen=true 
                 width="100%" 
@@ -323,7 +324,7 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
     <div style="position:relative;padding-top:56.25%;">
         <iframe id="panda-55f3dc5c-cc13-4e28-8f06-f91757d04f91" 
                 src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=55f3dc5c-cc13-4e28-8f06-f91757d04f91" 
-                style="border:none;position:absolute;top:0;left:0;" 
+                style="border:none;position:absolute;top:0;left:0;border-radius:15px;box-shadow:0 15px 25px rgba(0,0,0,0.4); border: 3px solid rgba(13,110,253,0.3);"
                 allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
                 allowfullscreen=true 
                 width="100%" 
@@ -345,7 +346,7 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
     <div style="position:relative;padding-top:56.25%;">
         <iframe id="panda-480fe5ff-1753-47a4-9910-23dd992e8304" 
                 src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=480fe5ff-1753-47a4-9910-23dd992e8304" 
-                style="border:none;position:absolute;top:0;left:0;" 
+                style="border:none;position:absolute;top:0;left:0;border-radius:15px;box-shadow:0 15px 25px rgba(0,0,0,0.4); border: 3px solid rgba(13,110,253,0.3);"
                 allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
                 allowfullscreen=true 
                 width="100%" 
