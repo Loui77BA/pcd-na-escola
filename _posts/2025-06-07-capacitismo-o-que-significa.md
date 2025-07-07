@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Capacitismo: o que significa?"
+title: "Capacitismo: O que significa?"
 description: "Até mesmo o nome do preconceito contra a pessoa com deficiência é desconhecido, conheça a forma da discriminação que une todas as outras."
 date: 2025-06-07 12:00:00 +0000
 author: Louise Suelen

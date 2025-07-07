@@ -100,7 +100,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                 <div class="position-relative mb-5">
                     <h2 id="vision" class="fw-bolder mb-3 display-6" style="color: #0d6efd; text-shadow: 0 2px 5px rgba(0,0,0,0.3);">Visão</h2>
                     <p class="lead fw-normal text-muted mb-4" style="line-height: 1.8; font-size: 1.1rem; border-bottom: 1px solid rgba(13,110,253,0.2); padding-bottom: 1.5rem;">
-                        Queremos ser um lugar excelente para compartilhar conteúdo sobre educação, tecnologia e acessibilidade, ajudando na formação crítica e histórica de pessoas com deficiência.
+                        Queremos ser um lugar excelente para compartilhar conteúdo sobre educação, tecnologia e acessibilidade, ajudando na formação crítica de pessoas com deficiência.
                     </p>
                     <img class="img-fluid rounded-3" 
                          src="https://media.istockphoto.com/id/474967218/photo/portrait-of-boy-sitting-in-wheelchair-at-library.jpg?s=612x612&w=0&k=20&c=-awiQc39xdn0XlMrOgfWhyjBcNnYh-I8HnEIf3cvnwg=" 
