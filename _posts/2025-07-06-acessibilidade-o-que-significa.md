@@ -1394,193 +1394,494 @@ sumario: |
     As tecnologias assistivas são organizadas em cerca de doze categorias distintas, conforme detalhado a seguir:
 </p>
 
-<div class="table-responsive">
-    <table class="table table-dark table-striped table-bordered table-hover table-sm">
-        <caption class="text-white"><strong>Fonte:</strong> Classificações de Tecnologia Assistiva (BERSCH, 2013).</caption>
-        <thead>
-            <tr>
-                <th scope="col">Número</th>
-                <th scope="col">Categoria</th>
-                <th scope="col">Descrição</th>
-                <th scope="col">Exemplos</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Auxílios para a vida diária e vida prática</td>
-                <td>Recursos que colaboram com a execução de maneira autônoma das atividades do dia a dia.</td>
-                <td>
-                    <ul>
-                        <li>Engrossador de lápis</li>
-                        <li>Utensílios culinários adaptados</li>
-                        <li>Cadernos com pauta grossa</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Comunicação Aumentativa e Alternativa (CAA)</td>
-                <td>Estratégias e ferramentas para pessoas cuja comunicação oral ou escrita é divergente da usada pela maioria das pessoas.</td>
-                <td>
-                    <ul>
-                        <li>Pranchas de comunicação</li>
-                        <li>Intérpretes virtuais de LIBRAS</li>
-                        <li>Vocalizadores para a fala</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Recursos de acessibilidade ao computador</td>
-                <td>Hardwares ou softwares que permitam o uso do computador com autonomia por pessoas com deficiência.</td>
-                <td>
-                    <ul>
-                        <li>Teclados adaptados</li>
-                        <li>Leitores de tela</li>
-                        <li>Comandos de voz</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td>Sistemas de controle de ambiente</td>
-                <td>Ferramentas de controle do ambiente que funcionam através de gatilhos acionadores.</td>
-                <td>
-                    <ul>
-                        <li>Sistema de luz controlado por voz</li>
-                        <li>Torneiras com sensores de proximidade</li>
-                        <li>Amazon Alexa, Google Home</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">5</th>
-                <td>Projetos arquitetônicos para acessibilidade</td>
-                <td>Projetos que reduzam as barreiras físicas na arquitetura de construções.</td>
-                <td>
-                    <ul>
-                        <li>Rampas</li>
-                        <li>Pistas táteis</li>
-                        <li>Banheiros acessíveis</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">6</th>
-                <td>Órteses e próteses</td>
-                <td>Recursos que colaborem com a postura corporal (órteses) ou que se integrem ao corpo (próteses).</td>
-                <td>
-                    <ul>
-                        <li>Próteses de braço e perna</li>
-                        <li>Posicionadores de coluna</li>
-                        <li>Aparelhos ortodônticos</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">7</th>
-                <td>Adequação postural</td>
-                <td>Ferramentas para o ajuste e conforto postural.</td>
-                <td>
-                    <ul>
-                        <li>Almofadas posturais</li>
-                        <li>Plano inclinado para baixa visão</li>
-                        <li>Encostos anatômicos para cadeiras de rodas</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">8</th>
-                <td>Auxílios de mobilidade</td>
-                <td>Instrumentos que colaboram com a locomoção autônoma.</td>
-                <td>
-                    <ul>
-                        <li>Cadeiras de rodas</li>
-                        <li>Bengalas para pessoas cegas</li>
-                        <li>Andadores</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">9</th>
-                <td>Auxílios para qualificação da habilidade visual e recursos que ampliam a informação a pessoas com baixa visão ou cegas</td>
-                <td>Instrumentos para potencializar a informação visual a quem tem baixa visão ou alternativas através de outros sentidos para pessoas cegas.</td>
-                <td>
-                    <ul>
-                        <li>Lupas e ampliadores</li>
-                        <li>Sistema de escrita Braille</li>
-                        <li>Aparelhos com voz (relógios, medidores de pressão etc.)</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">10</th>
-                <td>Auxílios para pessoas com surdez ou com baixa audição</td>
-                <td>Instrumentos visuais, vibrantes, dentre outros, para diversificar a informação tornando-a acessível para pessoas surdas e com baixa audição.</td>
-                <td>
-                    <ul>
-                        <li>Sistemas de vibração em celulares</li>
-                        <li>LIBRAS e legendas</li>
-                        <li>Sistemas de alertas visuais</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">11</th>
-                <td>Mobilidade em veículos</td>
-                <td>Adaptações em veículos para pessoas com deficiência.</td>
-                <td>
-                    <ul>
-                        <li>Elevadores para cadeirantes em ônibus</li>
-                        <li>Carros acessíveis para pessoas usuárias de cadeira de rodas</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">12</th>
-                <td>Esportes e lazer</td>
-                <td>Instrumentos que possibilitem a inclusão de pessoas com deficiência no esporte e lazer.</td>
-                <td>
-                    <ul>
-                        <li>Bolas com guizo</li>
-                        <li>Dominó em alto-relevo</li>
-                        <li>Baralho em Braille</li>
-                    </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+<ol>
+    <li>
+        <strong>Auxílios para a vida diária e vida prática</strong>
+        <p>
+            <strong>Descrição:</strong> Recursos que colaboram com a execução de maneira autônoma das atividades do dia a dia.
+        </p>
+        <p>
+            <strong>Exemplos:</strong>
+        </p>
+        <ul>
+            <li>Engrossador de lápis</li>
+            <li>Utensílios culinários adaptados</li>
+            <li>Cadernos com pauta grossa</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Comunicação Aumentativa e Alternativa (CAA)</strong>
+        <p>
+            <strong>Descrição:</strong> Estratégias e ferramentas para pessoas cuja comunicação oral ou escrita é divergente da usada pela maioria das pessoas.
+        </p>
+        <p>
+            <strong>Exemplos:</strong>
+        </p>
+        <ul>
+            <li>Pranchas de comunicação</li>
+            <li>Intérpretes virtuais de LIBRAS</li>
+            <li>Vocalizadores para a fala</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Recursos de acessibilidade ao computador</strong>
+        <p>
+            <strong>Descrição:</strong> Hardwares ou softwares que permitam o uso do computador com autonomia por pessoas com deficiência.
+        </p>
+        <p>
+            <strong>Exemplos:</strong>
+        </p>
+        <ul>
+            <li>Teclados adaptados</li>
+            <li>Leitores de tela</li>
+            <li>Comandos de voz</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Sistemas de controle de ambiente</strong>
+        <p>
+            <strong>Descrição:</strong> Ferramentas de controle do ambiente que funcionam através de gatilhos acionadores.
+        </p>
+        <p>
+            <strong>Exemplos:</strong>
+        </p>
+        <ul>
+            <li>Sistema de luz controlado por voz</li>
+            <li>Torneiras com sensores de proximidade</li>
+            <li>Amazon Alexa, Google Home</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Projetos arquitetônicos para acessibilidade</strong>
+        <p>
+            <strong>Descrição:</strong> Projetos que reduzam as barreiras físicas na arquitetura de construções.
+        </p>
+        <p>
+            <strong>Exemplos:</strong>
+        </p>
+        <ul>
+            <li>Rampas</li>
+            <li>Pistas táteis</li>
+            <li>Banheiros acessíveis</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Órteses e próteses</strong>
+        <p>
+            <strong>Descrição:</strong> Recursos que colaborem com a postura corporal (órteses) ou que se integrem ao corpo (próteses).
+        </p>
+        <p>
+            <strong>Exemplos:</strong>
+        </p>
+        <ul>
+            <li>Próteses de braço e perna</li>
+            <li>Posicionadores de coluna</li>
+            <li>Aparelhos ortodônticos</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Adequação postural</strong>
+        <p>
+            <strong>Descrição:</strong> Ferramentas para o ajuste e conforto postural.
+        </p>
+        <p>
+            <strong>Exemplos:</strong>
+        </p>
+        <ul>
+            <li>Almofadas posturais</li>
+            <li>Plano inclinado para baixa visão</li>
+            <li>Encostos anatômicos para cadeiras de rodas</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Auxílios de mobilidade</strong>
+        <p>
+            <strong>Descrição:</strong> Instrumentos que colaboram com a locomoção autônoma.
+        </p>
+        <p>
+            <strong>Exemplos:</strong>
+        </p>
+        <ul>
+            <li>Cadeiras de rodas</li>
+            <li>Bengalas para pessoas cegas</li>
+            <li>Andadores</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Auxílios para qualificação da habilidade visual e recursos que ampliam a informação a pessoas com baixa visão ou cegas</strong>
+        <p>
+            <strong>Descrição:</strong> Instrumentos para potencializar a informação visual a quem tem baixa visão ou alternativas através de outros sentidos para pessoas cegas.
+        </p>
+        <p>
+            <strong>Exemplos:</strong>
+        </p>
+        <ul>
+            <li>Lupas e ampliadores</li>
+            <li>Sistema de escrita Braille</li>
+            <li>Aparelhos com voz (relógios, medidores de pressão etc.)</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Auxílios para pessoas com surdez ou com baixa audição</strong>
+        <p>
+            <strong>Descrição:</strong> Instrumentos visuais, vibrantes, dentre outros, para diversificar a informação tornando-a acessível para pessoas surdas e com baixa audição.
+        </p>
+        <p>
+            <strong>Exemplos:</strong>
+        </p>
+        <ul>
+            <li>Sistemas de vibração em celulares</li>
+            <li>LIBRAS e legendas</li>
+            <li>Sistemas de alertas visuais</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Mobilidade em veículos</strong>
+        <p>
+            <strong>Descrição:</strong> Adaptações em veículos para pessoas com deficiência.
+        </p>
+        <p>
+            <strong>Exemplos:</strong>
+        </p>
+        <ul>
+            <li>Elevadores para cadeirantes em ônibus</li>
+            <li>Carros acessíveis para pessoas usuárias de cadeira de rodas</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Esportes e lazer</strong>
+        <p>
+            <strong>Descrição:</strong> Instrumentos que possibilitem a inclusão de pessoas com deficiência no esporte e lazer.
+        </p>
+        <p>
+            <strong>Exemplos:</strong>
+        </p>
+        <ul>
+            <li>Bolas com guizo</li>
+            <li>Dominó em alto-relevo</li>
+            <li>Baralho em Braille</li>
+        </ul>
+    </li>
+</ol>
+
+<p>
+    <strong>Fonte:</strong> Classificações de Tecnologia Assistiva (BERSCH, 2013).
+</p>
 
 <!-- 5 -->
 <h2 id="acessibilidade-digital">Acessibilidade digital</h2>
 <hr />
 <h3 id="conceito-e-relevancia-da-acessibilidade-digital">Conceito e relevância da acessibilidade digital</h3>
 <hr />
+
+<p>
+    A acessibilidade digital é uma dimensão crítica da cidadania na era da informação, trata-se do conjunto de práticas, normas, tecnologias e legislações que garantem o acesso equitativo de todas as pessoas, incluindo aquelas com deficiência, a conteúdos e serviços digitais. Sua trajetória histórica acompanha o desenvolvimento da própria Web, bem como os avanços tecnológicos em sistemas operacionais, navegadores, softwares assistivos e dispositivos móveis.
+</p>
+
 <h3 id="inicio-da-web-e-primeiros-debates-sobre-acessibilidade-digital">Início da Web e primeiros debates sobre acessibilidade digital</h3>
 <hr />
+
+<p>
+    A Web foi criada em 1989 por Tim Berners-Lee no CERN — Centro Europeu de Pesquisa Nuclear — com o objetivo de facilitar a troca de informações científicas por meio de hipertextos interligados. Essa inovação se baseia em uma proposta anterior de Ted Nelson, que, na década de 1960, criou o termo "hiperlink" ao idealizar uma rede de documentos interconectados. A primeira página web, encontrada em <a href="http://info.cern.ch" target="_blank">http://info.cern.ch</a>, trazia basicamente textos e links, ilustrando bem a simplicidade da Web em seus primórdios.
+</p>
+<p>
+    Com o lançamento do navegador Mosaic, em 1993, a Web ganhou tração e passou a incorporar imagens e outras mídias. Naquele mesmo ano, iniciou-se um debate técnico em listas de discussão sobre como tornar esses novos elementos gráficos acessíveis. Foi nesse contexto que se propôs o atributo alt para imagens, oficializado no HTML 2.0 em 1995. Esse recurso exibe uma descrição textual quando a imagem não pode ser carregada, além de ser essencial para leitores de tela interpretarem conteúdos visuais para pessoas com deficiência visual.
+</p>
+
 <h3 id="leitores-de-tela-e-acessibilidade-nos-sistemas-operacionais">Leitores de tela e acessibilidade nos sistemas operacionais</h3>
 <hr />
+
+<p>
+    Em 1986, antes mesmo da chegada da Web, a IBM apresentou o Screen Reader, reconhecido como o primeiro leitor de telas para o sistema DOS. Criado por Jim Thatcher, esse programa transformava o conteúdo textual da tela em áudio sintetizado.
+</p>
+<p>
+    Mais tarde, Thatcher também liderou a criação do Screen Reader/2, versão voltada para ambientes gráficos. Esses desenvolvimentos foram essenciais para garantir que pessoas cegas pudessem utilizar computadores em uma era marcada principalmente por interfaces textuais.
+</p>
+
 <h3 id="dosvox-referencia-nacional-em-acessibilidade-digital">DOSVOX: referência nacional em acessibilidade digital</h3>
 <hr />
+
+<p>
+    Enquanto isso no Brasil, o surgimento do sistema DOSVOX marcou uma importante evolução. Criado em 1993 no Instituto Tércio Pacitti de Aplicações e Pesquisas Computacionais (NCE) da Universidade Federal do Rio de Janeiro (UFRJ), sob a liderança do professor Marcelo Pimentel, o projeto nasceu com o objetivo de reduzir as dificuldades de acesso ao computador enfrentadas por pessoas cegas, especialmente diante do contexto de exclusão digital vivido no início dos anos 1990.
+</p>
+<p>
+    Funcionando inicialmente sobre o sistema DOS, e mais tarde migrado para Windows, o DOSVOX oferecia uma interface vocal simplificada com leitor de tela, editor de textos, calculadora, agenda, jogos educativos e até ferramentas de navegação básica na internet. Sua arquitetura buscava ser leve, acessível e funcional mesmo em máquinas de baixo custo. Por ter sido desenvolvido em português e com distribuição gratuita, o DOSVOX teve enorme impacto social, democratizando o acesso à computação para milhares de pessoas cegas no Brasil.
+</p>
+<p>
+    Mais do que um software, o DOSVOX tornou-se também um movimento de inclusão digital, com forte capilarização em escolas, institutos e organizações da sociedade civil. Ele contribuiu diretamente para a educação inclusiva, alfabetização digital e inserção no mundo do trabalho, funcionando como um precursor do conceito de acessibilidade digital no Brasil, anos antes da regulamentação do tema no país. 
+</p>
+<p>
+    Em reconhecimento à sua relevância, o projeto DOSVOX foi citado em documentos de políticas públicas, projetos de extensão universitária e artigos científicos, consolidando-se como referência nacional em acessibilidade computacional.
+</p>
+
 <h3 id="padronizacao-internacional-wai-section-508-e-inicio-das-wcag">Padronização internacional: WAI, Section 508 e início das WCAG</h3>
 <hr />
+
+<p>
+    Em 1997, o World Wide Web Consortium (W3C) instituiu a Iniciativa de Acessibilidade na Web (WAI), dedicada à elaboração de padrões e diretrizes técnicas para assegurar a acessibilidade da Web a todas as pessoas. Desde então, todos os padrões oficiais do W3C são submetidos à revisão da WAI antes de sua publicação.
+</p>
+<p>
+    Em 1998, a Seção 508 da Lei de Reabilitação dos Estados Unidos foi revisada, estabelecendo a obrigatoriedade de acessibilidade em sites e sistemas eletrônicos utilizados pelo governo federal, antecipando futuras normatizações internacionais.
+</p>
+
 <h3 id="evolucao-das-wcag">Evolução das WCAG</h3>
 <hr />
+
+<p>
+    Em 1999, o W3C publicou a primeira versão das Web Content Accessibility Guidelines (WCAG 1.0), composta por 14 diretrizes organizadas por níveis de prioridade (A, AA e AAA). Posteriormente, em 2008, foi lançada a WCAG 2.0, que reestruturou os critérios com base em quatro princípios fundamentais: Perceptível, Operável, Compreensível e Robusto (POUR), adotando uma abordagem neutra em relação à tecnologia. Esse modelo tornou-se referência global.
+</p>
+<p>
+    O avanço da tecnologia móvel e o crescimento das demandas por acessibilidade levaram o W3C a lançar, em 2018, a WCAG 2.1. Essa versão trouxe critérios específicos para pessoas com baixa visão, deficiências cognitivas e usuários de dispositivos móveis, mantendo compatibilidade com seu antecessor. Mais tarde, em outubro de 2023, foi publicada a WCAG 2.2, que incluiu exigências referentes à navegação por toque, foco visível, métodos de autenticação sem memorização e à acessibilidade cognitiva, reafirmando o compromisso permanente com uma Web progressivamente mais inclusiva.
+</p>
+
 <h3 id="outras-diretrizes-do-w3c-wai-aria-atag-e-uaag">Outras diretrizes do W3C: WAI-ARIA, ATAG e UAAG</h3>
 <hr />
+
+<p>
+    Ao mesmo tempo, o W3C publicou novas diretrizes que ampliaram o alcance da acessibilidade digital: 
+</p>
+
+<ul>
+    <li>
+        <strong>WAI-ARIA (Accessible Rich Internet Applications)</strong>, em suas versões 1.0 (2014) e 1.1 (2017), introduziu atributos semânticos adicionais com o objetivo de viabilizar a interpretação de componentes dinâmicos, como menus, sliders e modais, por leitores de tela.
+    </li>
+    <li>
+        <strong>Authoring Tool Accessibility Guidelines (ATAG)</strong>, estabelecidas nas versões 1.0 (2000) e 2.0 (2015), têm como objetivo assegurar que ferramentas de autoria, como editores de sites, IDEs e CMSs, sejam acessíveis e promovam a criação de conteúdos compatíveis com os princípios de acessibilidade.
+    </li>
+    <li>
+        <strong>Diretrizes de Acessibilidade para Agentes do Usuário (UAAG)</strong> foram criadas para garantir que navegadores e reprodutores multimídia sejam acessíveis. A versão 1.0 dessas diretrizes foi lançada em 2002, enquanto a versão 2.0 ainda está em fase de elaboração.
+    </li>
+</ul>
+
 <h3 id="avancos-em-tecnologias-assistivas">Avanços em tecnologias assistivas</h3>
 <hr />
+
+<p>
+    No que diz respeito às tecnologias assistivas, houve também uma notável evolução:
+</p>
+
+<ul>
+    <li>O leitor de telas JAWS (Job Access With Speech) se consolidou nos anos 2000 como o mais utilizado no ambiente Windows.</li>
+    <li>Em 2005, a Apple lançou o VoiceOver no Mac OS X Tiger, tornando-se o primeiro sistema operacional com leitor de telas nativo, sem necessidade de instalação de software adicional.</li>
+    <li>Em 2006, foi criado o NVDA (NonVisual Desktop Access), por Michael Curran e James Teh, um leitor de telas gratuito e de código aberto que revolucionou o acesso digital em países com menos recursos.</li>
+    <li>Em 2009, o VoiceOver foi incorporado ao iPhone 3GS, tornando-o o primeiro smartphone acessível de fábrica a pessoas com deficiência visual. O Android passou a incluir o TalkBack, leitor de telas integrado, a partir de versões lançadas oficialmente em 2011.</li>
+</ul>
+
 <h3 id="normas-e-leis-internacionais">Normas e leis internacionais</h3>
 <hr />
+
+<p>
+    A partir de 2010, o debate acerca da acessibilidade digital passou a abranger temas como design universal, educação online e inclusão em plataformas sociais. Nos Estados Unidos, a aprovação do Twenty-First Century Communications and Video Accessibility Act (CVAA) exigiu que serviços de comunicação digital, aparelhos móveis, legendas e audiodescrição fossem projetados desde a origem para serem acessíveis.
+</p>
+
+<p>
+    A legislação determinou que a Federal Communications Commission (FCC) promulgasse regulamentos que, de maneira inédita, ampliaram os requisitos de acessibilidade para serviços de streaming, VoIP e conteúdos sob demanda, antecipando desafios que se tornariam mais relevantes na década seguinte.
+</p>
+
+<p>
+    Em 2012, a WCAG 2.0 foi adotada como norma internacional sob o código ISO/IEC 40500. Esse reconhecimento conferiu aos critérios do W3C o status de norma internacional, facilitando a sua incorporação em legislações e contratos por parte de governos e empresas. Dessa forma, desde 2012, a expressão "em conformidade com a WCAG" possui equivalência jurídica nos países que adotam o corpo normativo da ISO.
+</p>
+
+<p>
+    Adicionalmente, a publicação das recomendações WAI-ARIA 1.0 (2014) e, em especial, da versão 1.1 (14 de dezembro de 2017), pelo W3C, definiu papéis, estados e propriedades semânticas essenciais para a correta interpretação de componentes interativos contemporâneos, tais como menus do tipo "hambúrguer", carrosséis e modais, por navegadores e leitores de tela. Essa especificação viabilizou a incorporação de camadas nativas de acessibilidade em frameworks JavaScript.
+</p>
+
+<p>
+    No Brasil, o Estatuto da Pessoa com Deficiência (Lei 13.146/2015) determina, em seu artigo 63, a obrigatoriedade de acessibilidade em todos os sites mantidos por órgãos públicos e empresas com representação comercial no país, exigindo a observância das melhores práticas e diretrizes internacionais. Já a União Europeia instituiu a Diretiva 2016/2102, que estabelece que os sites e aplicativos do setor público devem atender a padrões de acessibilidade unificados. Essa norma definiu prazos progressivos para implementação entre 2019 e 2021 e incentivou a utilização de declarações de acessibilidade padronizadas em todos os países membros.
+</p>
+
 <h3 id="acessibilidade-digital-cenario-atual-e-futuro">Acessibilidade digital: cenário atual e futuro</h3>
 <hr />
 
-<!-- 6 -->
+<p>
+    Hoje, a sociedade passa por grandes mudanças relacionadas à acessibilidade digital devido aos avanços da tecnologia, ao fortalecimento de normas internacionais e à criação de políticas públicas voltadas para a inclusão digital de pessoas com deficiência. Há uma crescente compreensão técnica, jurídica e social sobre o assunto, o que faz da acessibilidade não só uma prática recomendada, mas também um requisito obrigatório em muitos setores.
+</p>
+
+<p>
+    Um acontecimento importante desse período foi a publicação da WCAG 2.2 pelo W3C em outubro de 2023, que trouxe atualizações nos critérios de acessibilidade na web, ampliando a inclusão de pessoas com deficiência cognitiva, usuários de dispositivos móveis e pessoas com baixa visão. Essa versão acrescentou critérios relacionados à autenticação acessível sem depender de memorização, melhorias na visibilidade do foco e facilitação da navegação por toque — fatores fundamentais para a usabilidade nos ambientes digitais atuais. A WCAG 2.2 manteve compatibilidade com versões anteriores, facilitando sua adoção tanto por organizações públicas quanto privadas.
+</p>
+
+<p>
+    Um fator relevante no contexto atual é a expansão das diretrizes de acessibilidade além da web convencional. O W3C publicou documentos como "Accessibility Requirements for People with Low Vision" e "XR Accessibility User Requirements (XAUR)", que abordam as necessidades de acessibilidade em ambientes de realidade aumentada, virtual e mista. A publicação desses documentos demonstra que a acessibilidade digital está se direcionando para incluir outras formas inovadoras de interação entre humanos e máquinas.
+</p>
+
+<p>
+    Ao mesmo tempo, observa-se um crescimento expressivo da consciência social sobre a importância da acessibilidade digital. Grandes empresas e plataformas têm colocado a acessibilidade no centro do desenvolvimento de seus produtos, motivadas não só por exigências legais, mas também pela crescente demanda das pessoas e pelo reconhecimento do papel social da inclusão. Companhias como Microsoft, Google, Apple e Meta expandiram seus departamentos de acessibilidade, divulgaram orientações para quem desenvolve software e aumentaram investimentos em testes envolvendo pessoas com deficiência. Além disso, cursos, certificações e treinamentos voltados à acessibilidade se tornaram mais frequentes, sendo integrados até mesmo os currículos de design e engenharia de software.
+</p>
+
+<p>
+    Nos próximos anos, espera-se que haja maior integração entre acessibilidade e inteligência artificial, além do fortalecimento de políticas públicas que assegurem o cumprimento das normas por meio de fiscalização rigorosa e do envolvimento efetivo da sociedade civil. A acessibilidade digital deixou de ser vista apenas como um diferencial ou escolha opcional e tornou-se um requisito essencial do ponto de vista ético, legal e técnico, sendo indispensável para garantir uma sociedade digital mais inclusiva e justa.
+</p>
+
+<!-- 7 -->
 <h2 id="consideracoes-finais">Considerações finais</h2>
 <hr />
 
-<!-- 7 -->
+<p>
+    A trajetória histórica, jurídica, conceitual e técnica apresentada ao longo deste artigo evidencia que a acessibilidade é, antes de tudo, um direito humano inalienável, que não deve ser confundido com concessões caritativas ou favores pontuais. Seu significado ultrapassa a simples adaptação de espaços físicos, abrangendo dimensões fundamentais da vida em sociedade, como comunicação, mobilidade, educação, cultura, tecnologia, atitude e participação cidadã. O que se compreende hoje como acessibilidade é resultado de décadas — ou mesmo séculos — de lutas, avanços e disputas discursivas travadas por pessoas com deficiência e seus aliados em diversos campos sociais.
+</p>
+<p>
+    O texto mostra como o entendimento da acessibilidade passou por uma profunda transformação: do paradigma religioso e excludente da Antiguidade e Idade Média, passando pelo modelo médico que patologiza o corpo e limita a autonomia, até alcançar o modelo social e o reconhecimento legal da deficiência como fenômeno relacional, que emerge da interação entre indivíduos e as barreiras impostas por ambientes físicos e simbólicos. Essa mudança de perspectiva permitiu a construção de um arcabouço normativo robusto, nacional e internacional, com destaque para a Convenção da ONU sobre os Direitos das Pessoas com Deficiência (2006) e a Lei Brasileira de Inclusão (2015), que consolidam juridicamente o princípio da acessibilidade universal.
+</p>
+<p>
+    Ao tipificar a acessibilidade em suas múltiplas dimensões — arquitetônica, urbanística, comunicacional, digital, metodológica, atitudinal, entre outras — o artigo reafirma que sua efetivação exige abordagens sistêmicas, intersetoriais e contínuas. A promoção da acessibilidade deve estar presente desde o planejamento de políticas públicas até o design de produtos, serviços e interfaces digitais, sendo responsabilidade conjunta do Estado, do setor privado, da sociedade civil e de todas as áreas do conhecimento.
+</p>
+<p>
+    Além disso, a análise das tecnologias assistivas e dos marcos legais mais recentes, como a ABNT NBR 17225:2025 sobre acessibilidade digital na Web, reforça que o Brasil possui instrumentos normativos adequados para garantir a inclusão plena. No entanto, ainda há um longo caminho a ser percorrido para que esses direitos sejam efetivamente respeitados e implementados, superando práticas capacitistas arraigadas e resistências institucionais.
+</p>
+<p>
+    A acessibilidade, portanto, não pode ser tratada como um custo adicional ou um detalhe técnico: trata-se de um pilar estruturante para a democracia, a equidade e a justiça social. É preciso reconhecer que sua ausência não marginaliza apenas indivíduos com deficiência, mas empobrece toda a sociedade, ao negar a diversidade humana como um valor essencial da vida coletiva.
+</p>
+<p>
+    Assim, que este artigo possa contribuir para a construção de uma nova consciência, crítica e engajada, capaz de promover transformações reais nas práticas cotidianas e nas estruturas sociais. A luta pela acessibilidade é uma luta por dignidade, por pertencimento e por uma sociedade onde todas as pessoas possam exercer seus direitos em condições de igualdade.
+</p>
+
+<!-- 8 -->
 <h2 id="referencias">Referências</h2>
 <hr />
+
+<ul class="references-list text-light">
+    <li class="mb-3">
+        BIANCHETTI, Tizuko Morchida. <em>A exclusão da pessoa com deficiência e o modelo médico de reabilitação</em>. [S.l.: s.n.], 2001.
+    </li>
+
+    <li class="mb-3">
+        COUTO, M. <em>História da deficiência na Antiguidade: o caso espartano</em>. 2016.
+    </li>
+
+    <li class="mb-3">
+        ENCYCLOPAEDIA BRITANNICA. “Louis Braille”. <em>Encyclopaedia Britannica Online</em>, edição de 2025.
+    </li>
+
+    <li class="mb-3">
+        GALVÃO FILHO, Teófilo Alves. <em>Ajudas técnicas: tecnologia assistiva e inclusão</em>. [S.l.: s.n.], 2002. 
+    </li>
+
+    <li class="mb-3">
+        INGE, Katherine; TARGETT, Pamela. <em>Assistive Technology and Universal Design</em>. Richmond (VA): Virginia Commonwealth University, Rehabilitation Research & Training Center, 2005. 
+    </li>
+
+    <li class="mb-3">
+        MACE, Ronald L. <em>The principles of universal design</em>. Raleigh (NC): Center for Universal Design, North Carolina State University, 1985.
+    </li>
+
+    <li class="mb-3">
+        NATIONAL COUNCIL ON DISABILITY. <em>The Impact of the Americans with Disabilities Act: Assessing the Progress Toward Achieving the Goals of the ADA</em>. Washington, D.C., 26 jul. 2007.
+    </li>
+
+    <li class="mb-3">
+        PESSOTTI, Isaías. <em>Deficiência mental: da superstição à ciência</em>. São Paulo: T. A. Queiroz / EDUSP, 1984.
+    </li>
+
+    <li class="mb-3">
+        SASSAKI, Romeu Kazumi. <em>Inclusão: construindo uma sociedade para todos</em>. 4. ed. Rio de Janeiro: WVA, 2002.
+    </li>
+
+    <li class="mb-3">
+        SONZA, Andréa P.; SANTAROSA, Lucila M. C. “Ambientes digitais virtuais: acessibilidade aos deficientes visuais”. <em>RENOTE – Revista Novas Tecnologias na Educação</em>, Porto Alegre, v. 1, n. 1, p. 1-11, 2003.
+    </li>
+
+    <li class="mb-3">
+        SILVA, Otto Marques da. <em>A epopéia ignorada: a pessoa deficiente na história do mundo de ontem e de hoje</em>. São Paulo: CEDAS – Centro São Camilo de Desenvolvimento em Administração da Saúde, 1987. 
+    </li>
+
+    <li class="mb-3">
+        UNITED NATIONS. <em>World Programme of Action Concerning Disabled Persons</em>. Nova York: United Nations, 1981 (adotado pela Resolução 37/52 da Assembleia Geral em 3 dez. 1982).
+    </li>
+
+    <li class="mb-3">
+        U.S. DEPARTMENT OF JUSTICE. <em>Section 504 of the Rehabilitation Act – Overview</em>. Washington, D.C.: Disability Rights Section, 2021.
+    </li>
+
+    <li class="mb-3">
+        BERSCH, R. <em>Classificações de Tecnologia Assistiva</em>. Porto Alegre: Acessibilidade Brasil, 2013. 
+    </li>
+    <li class="mb-3">
+        WORLD HEALTH ORGANIZATION. <em>International Classification of Functioning, Disability and Health (ICF)</em>. Geneva: WHO, 2001.
+    </li>
+    <li class="mb-3">
+        WORLD WIDE WEB CONSORTIUM (W3C). <em>Web Content Accessibility Guidelines (WCAG) 2.2</em>. 5 out. 2023. 
+    </li>
+        <li class="mb-3">
+            BRASIL. Constituição da República Federativa do Brasil de 1988. Promulgada em 5 de outubro de 1988. Disponível em: <https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Lei nº 7.853, de 24 de outubro de 1989. Dispõe sobre o apoio às pessoas com deficiência, sua integração social e institui a Coordenadoria Nacional para Integração da Pessoa Portadora de Deficiência (CORDE). Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/l7853.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Lei nº 8.160, de 8 de janeiro de 1991. Dispõe sobre a caracterização de símbolo que permita a identificação de pessoas com deficiência auditiva. Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/L8160.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Lei nº 9.394, de 20 de dezembro de 1996. Estabelece as diretrizes e bases da educação nacional (LDB). Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/l9394.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Lei nº 9.610, de 19 de fevereiro de 1998. Altera, atualiza e consolida a legislação sobre direitos autorais. Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/l9610.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Portaria MEC nº 319, de 23 de fevereiro de 1999. Institui a Comissão Brasileira do Braille. Disponível em: <https://inclusao.mec.gov.br/images/pdf/portaria_319_1999.pdf>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Decreto nº 3.298, de 20 de dezembro de 1999. Regulamenta a Lei nº 7.853/1989, que dispõe sobre a Política Nacional para a Integração da Pessoa com Deficiência. Disponível em: <https://www.planalto.gov.br/ccivil_03/decreto/D3298.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Lei nº 10.048, de 8 de novembro de 2000. Dá prioridade de atendimento às pessoas com deficiência, aos idosos, às gestantes, às lactantes e às pessoas com crianças de colo. Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/L10048.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Lei nº 10.098, de 19 de dezembro de 2000. Estabelece normas gerais e critérios básicos para a promoção da acessibilidade das pessoas com deficiência ou com mobilidade reduzida. Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/L10098.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Resolução CNE/CEB nº 2, de 11 de setembro de 2001. Institui Diretrizes Nacionais para a Educação Especial na Educação Básica. Disponível em: <http://portal.mec.gov.br/seesp/arquivos/pdf/res2_ceb.pdf>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Lei nº 10.436, de 24 de abril de 2002. Dispõe sobre a Língua Brasileira de Sinais – Libras. Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/2002/L10436.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Portaria MEC nº 2.678, de 24 de setembro de 2002. Institui a grafia Braille da Língua Portuguesa. Disponível em: <https://inclusao.mec.gov.br/images/pdf/portaria_2678_2002.pdf>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Decreto nº 5.296, de 2 de dezembro de 2004. Regulamenta as Leis nº 10.048/2000 e 10.098/2000, que tratam da acessibilidade e do atendimento prioritário. Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/decreto/d5296.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Lei nº 11.126, de 27 de junho de 2005. Garante à pessoa com deficiência visual o direito de ingressar e permanecer em ambientes públicos e privados de uso coletivo acompanhado de cão-guia. Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/L11126.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Decreto nº 5.626, de 22 de dezembro de 2005. Regulamenta a Lei nº 10.436/2002, que dispõe sobre a Libras. Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/decreto/d5626.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Política Nacional de Educação Especial na Perspectiva da Educação Inclusiva. Brasília: MEC, SEESP, 2007. Disponível em: <https://portal.mec.gov.br/arquivos/pdf/politicaeducespecial.pdf>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Modelo de Acessibilidade em Governo Eletrônico (e-MAG). Brasília: Governo Federal, 2007. Disponível em: <https://www.gov.br/governodigital/pt-br/estrategia-de-governanca-digital/governanca-de-ti/acessibilidade-digital/emag>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Decreto nº 6.949, de 25 de agosto de 2009. Promulga a Convenção Internacional sobre os Direitos das Pessoas com Deficiência e seu Protocolo Facultativo. Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/decreto/d6949.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Lei nº 12.527, de 18 de novembro de 2011. Regula o acesso a informações previsto na Constituição Federal. Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Decreto nº 7.724, de 16 de maio de 2012. Regulamenta a Lei nº 12.527/2011 (Lei de Acesso à Informação). Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/decreto/d7724.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Lei nº 12.764, de 27 de dezembro de 2012. Institui a Política Nacional de Proteção dos Direitos da Pessoa com Transtorno do Espectro Autista. Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12764.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Lei nº 13.146, de 6 de julho de 2015. Institui a Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da Pessoa com Deficiência). Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Lei nº 13.409, de 28 de dezembro de 2016. Altera a Lei nº 12.711/2012 para assegurar às pessoas com deficiência o acesso às vagas reservadas nas instituições federais de ensino superior. Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/L13409.htm>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Portaria MEC nº 1.117, de 1º de novembro de 2018. Dispõe sobre os parâmetros estatísticos para aplicação das cotas para pessoas com deficiência no ensino superior. Disponível em: <https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/46023393>.
+        </li>
+        <li class="mb-3">
+            BRASIL. Lei nº 13.979, de 6 de fevereiro de 2020. Dispõe sobre medidas para enfrentamento da emergência de saúde pública decorrente do coronavírus (COVID-19). Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/L13979.htm>.
+        </li>
+        <li class="mb-3">
+            ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS – ABNT. <em>NBR 9050:2020 — Acessibilidade a edificações, mobiliário, espaços e equipamentos urbanos</em>. Rio de Janeiro: ABNT, 2020.
+        </li>
+        <li class="mb-3">
+            ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS – ABNT. <em>NBR 17225:2025 — Acessibilidade Digital para Web</em>. Rio de Janeiro: ABNT, 2025.
+        </li>
+
+</ul>
