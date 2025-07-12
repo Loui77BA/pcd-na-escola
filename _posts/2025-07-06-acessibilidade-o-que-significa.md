@@ -1740,147 +1740,209 @@ sumario: |
 <h2 id="referencias">Referências</h2>
 <hr />
 
-<ul class="references-list text-light">
-    <li class="mb-3">
-        BIANCHETTI, Tizuko Morchida. <em>A exclusão da pessoa com deficiência e o modelo médico de reabilitação</em>. [S.l.: s.n.], 2001.
-    </li>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-12">
+            <ul class="references-list text-light text-break ps-lg-4">
 
-    <li class="mb-3">
-        COUTO, M. <em>História da deficiência na Antiguidade: o caso espartano</em>. 2016.
-    </li>
+                <li class="mb-3">
+                    BIANCHETTI, Tizuko Morchida. <em>A exclusão da pessoa com deficiência e o modelo médico de reabilitação</em>. [S.l.: s.n.], 2001.
+                </li>
 
-    <li class="mb-3">
-        ENCYCLOPAEDIA BRITANNICA. “Louis Braille”. <em>Encyclopaedia Britannica Online</em>, edição de 2025.
-    </li>
+                <li class="mb-3">
+                    COUTO, M. <em>História da deficiência na Antiguidade: o caso espartano</em>. 2016.
+                </li>
 
-    <li class="mb-3">
-        GALVÃO FILHO, Teófilo Alves. <em>Ajudas técnicas: tecnologia assistiva e inclusão</em>. [S.l.: s.n.], 2002. 
-    </li>
+                <li class="mb-3">
+                    ENCYCLOPAEDIA BRITANNICA. "Louis Braille". <em>Encyclopaedia Britannica Online</em>, edição de 2025.
+                </li>
 
-    <li class="mb-3">
-        INGE, Katherine; TARGETT, Pamela. <em>Assistive Technology and Universal Design</em>. Richmond (VA): Virginia Commonwealth University, Rehabilitation Research & Training Center, 2005. 
-    </li>
+                <li class="mb-3">
+                    GALVÃO FILHO, Teófilo Alves. <em>Ajudas técnicas: tecnologia assistiva e inclusão</em>. [S.l.: s.n.], 2002.
+                </li>
 
-    <li class="mb-3">
-        MACE, Ronald L. <em>The principles of universal design</em>. Raleigh (NC): Center for Universal Design, North Carolina State University, 1985.
-    </li>
+                <li class="mb-3">
+                    INGE, Katherine; TARGETT, Pamela. <em>Assistive Technology and Universal Design</em>. Richmond (VA): Virginia Commonwealth University, Rehabilitation Research & Training Center, 2005.
+                </li>
 
-    <li class="mb-3">
-        NATIONAL COUNCIL ON DISABILITY. <em>The Impact of the Americans with Disabilities Act: Assessing the Progress Toward Achieving the Goals of the ADA</em>. Washington, D.C., 26 jul. 2007.
-    </li>
+                <li class="mb-3">
+                    MACE, Ronald L. <em>The principles of universal design</em>. Raleigh (NC): Center for Universal Design, North Carolina State University, 1985.
+                </li>
 
-    <li class="mb-3">
-        PESSOTTI, Isaías. <em>Deficiência mental: da superstição à ciência</em>. São Paulo: T. A. Queiroz / EDUSP, 1984.
-    </li>
+                <li class="mb-3">
+                    NATIONAL COUNCIL ON DISABILITY. <em>The Impact of the Americans with Disabilities Act: Assessing the Progress Toward Achieving the Goals of the ADA</em>. Washington, D.C., 26 jul. 2007.
+                </li>
 
-    <li class="mb-3">
-        SASSAKI, Romeu Kazumi. <em>Inclusão: construindo uma sociedade para todos</em>. 4. ed. Rio de Janeiro: WVA, 2002.
-    </li>
+                <li class="mb-3">
+                    PESSOTTI, Isaías. <em>Deficiência mental: da superstição à ciência</em>. São Paulo: T. A. Queiroz / EDUSP, 1984.
+                </li>
 
-    <li class="mb-3">
-        SONZA, Andréa P.; SANTAROSA, Lucila M. C. “Ambientes digitais virtuais: acessibilidade aos deficientes visuais”. <em>RENOTE – Revista Novas Tecnologias na Educação</em>, Porto Alegre, v. 1, n. 1, p. 1-11, 2003.
-    </li>
+                <li class="mb-3">
+                    SASSAKI, Romeu Kazumi. <em>Inclusão: construindo uma sociedade para todos</em>. 4. ed. Rio de Janeiro: WVA, 2002.
+                </li>
 
-    <li class="mb-3">
-        SILVA, Otto Marques da. <em>A epopéia ignorada: a pessoa deficiente na história do mundo de ontem e de hoje</em>. São Paulo: CEDAS – Centro São Camilo de Desenvolvimento em Administração da Saúde, 1987. 
-    </li>
+                <li class="mb-3">
+                    SONZA, Andréa P.; SANTAROSA, Lucila M. C. "Ambientes digitais virtuais: acessibilidade aos deficientes visuais". <em>RENOTE – Revista Novas Tecnologias na Educação</em>, Porto Alegre, v. 1, n. 1, p. 1-11, 2003.
+                </li>
 
-    <li class="mb-3">
-        UNITED NATIONS. <em>World Programme of Action Concerning Disabled Persons</em>. Nova York: United Nations, 1981 (adotado pela Resolução 37/52 da Assembleia Geral em 3 dez. 1982).
-    </li>
+                <li class="mb-3">
+                    SILVA, Otto Marques da. <em>A epopéia ignorada: a pessoa deficiente na história do mundo de ontem e de hoje</em>. São Paulo: CEDAS – Centro São Camilo de Desenvolvimento em Administração da Saúde, 1987.
+                </li>
 
-    <li class="mb-3">
-        U.S. DEPARTMENT OF JUSTICE. <em>Section 504 of the Rehabilitation Act – Overview</em>. Washington, D.C.: Disability Rights Section, 2021.
-    </li>
+                <li class="mb-3">
+                    UNITED NATIONS. <em>World Programme of Action Concerning Disabled Persons</em>. Nova York: United Nations, 1981 (adotado pela Resolução 37/52 da Assembleia Geral em 3 dez. 1982).
+                </li>
 
-    <li class="mb-3">
-        BERSCH, R. <em>Classificações de Tecnologia Assistiva</em>. Porto Alegre: Acessibilidade Brasil, 2013. 
-    </li>
-    <li class="mb-3">
-        WORLD HEALTH ORGANIZATION. <em>International Classification of Functioning, Disability and Health (ICF)</em>. Geneva: WHO, 2001.
-    </li>
-    <li class="mb-3">
-        WORLD WIDE WEB CONSORTIUM (W3C). <em>Web Content Accessibility Guidelines (WCAG) 2.2</em>. 5 out. 2023. 
-    </li>
-        <li class="mb-3">
-            BRASIL. Constituição da República Federativa do Brasil de 1988. Promulgada em 5 de outubro de 1988. Disponível em: <https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Lei nº 7.853, de 24 de outubro de 1989. Dispõe sobre o apoio às pessoas com deficiência, sua integração social e institui a Coordenadoria Nacional para Integração da Pessoa Portadora de Deficiência (CORDE). Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/l7853.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Lei nº 8.160, de 8 de janeiro de 1991. Dispõe sobre a caracterização de símbolo que permita a identificação de pessoas com deficiência auditiva. Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/L8160.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Lei nº 9.394, de 20 de dezembro de 1996. Estabelece as diretrizes e bases da educação nacional (LDB). Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/l9394.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Lei nº 9.610, de 19 de fevereiro de 1998. Altera, atualiza e consolida a legislação sobre direitos autorais. Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/l9610.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Portaria MEC nº 319, de 23 de fevereiro de 1999. Institui a Comissão Brasileira do Braille. Disponível em: <https://inclusao.mec.gov.br/images/pdf/portaria_319_1999.pdf>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Decreto nº 3.298, de 20 de dezembro de 1999. Regulamenta a Lei nº 7.853/1989, que dispõe sobre a Política Nacional para a Integração da Pessoa com Deficiência. Disponível em: <https://www.planalto.gov.br/ccivil_03/decreto/D3298.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Lei nº 10.048, de 8 de novembro de 2000. Dá prioridade de atendimento às pessoas com deficiência, aos idosos, às gestantes, às lactantes e às pessoas com crianças de colo. Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/L10048.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Lei nº 10.098, de 19 de dezembro de 2000. Estabelece normas gerais e critérios básicos para a promoção da acessibilidade das pessoas com deficiência ou com mobilidade reduzida. Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/L10098.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Resolução CNE/CEB nº 2, de 11 de setembro de 2001. Institui Diretrizes Nacionais para a Educação Especial na Educação Básica. Disponível em: <http://portal.mec.gov.br/seesp/arquivos/pdf/res2_ceb.pdf>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Lei nº 10.436, de 24 de abril de 2002. Dispõe sobre a Língua Brasileira de Sinais – Libras. Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/2002/L10436.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Portaria MEC nº 2.678, de 24 de setembro de 2002. Institui a grafia Braille da Língua Portuguesa. Disponível em: <https://inclusao.mec.gov.br/images/pdf/portaria_2678_2002.pdf>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Decreto nº 5.296, de 2 de dezembro de 2004. Regulamenta as Leis nº 10.048/2000 e 10.098/2000, que tratam da acessibilidade e do atendimento prioritário. Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/decreto/d5296.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Lei nº 11.126, de 27 de junho de 2005. Garante à pessoa com deficiência visual o direito de ingressar e permanecer em ambientes públicos e privados de uso coletivo acompanhado de cão-guia. Disponível em: <https://www.planalto.gov.br/ccivil_03/leis/L11126.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Decreto nº 5.626, de 22 de dezembro de 2005. Regulamenta a Lei nº 10.436/2002, que dispõe sobre a Libras. Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/decreto/d5626.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Política Nacional de Educação Especial na Perspectiva da Educação Inclusiva. Brasília: MEC, SEESP, 2007. Disponível em: <https://portal.mec.gov.br/arquivos/pdf/politicaeducespecial.pdf>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Modelo de Acessibilidade em Governo Eletrônico (e-MAG). Brasília: Governo Federal, 2007. Disponível em: <https://www.gov.br/governodigital/pt-br/estrategia-de-governanca-digital/governanca-de-ti/acessibilidade-digital/emag>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Decreto nº 6.949, de 25 de agosto de 2009. Promulga a Convenção Internacional sobre os Direitos das Pessoas com Deficiência e seu Protocolo Facultativo. Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/decreto/d6949.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Lei nº 12.527, de 18 de novembro de 2011. Regula o acesso a informações previsto na Constituição Federal. Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Decreto nº 7.724, de 16 de maio de 2012. Regulamenta a Lei nº 12.527/2011 (Lei de Acesso à Informação). Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/decreto/d7724.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Lei nº 12.764, de 27 de dezembro de 2012. Institui a Política Nacional de Proteção dos Direitos da Pessoa com Transtorno do Espectro Autista. Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12764.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Lei nº 13.146, de 6 de julho de 2015. Institui a Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da Pessoa com Deficiência). Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Lei nº 13.409, de 28 de dezembro de 2016. Altera a Lei nº 12.711/2012 para assegurar às pessoas com deficiência o acesso às vagas reservadas nas instituições federais de ensino superior. Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/L13409.htm>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Portaria MEC nº 1.117, de 1º de novembro de 2018. Dispõe sobre os parâmetros estatísticos para aplicação das cotas para pessoas com deficiência no ensino superior. Disponível em: <https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/46023393>.
-        </li>
-        <li class="mb-3">
-            BRASIL. Lei nº 13.979, de 6 de fevereiro de 2020. Dispõe sobre medidas para enfrentamento da emergência de saúde pública decorrente do coronavírus (COVID-19). Disponível em: <https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/L13979.htm>.
-        </li>
-        <li class="mb-3">
-            ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS – ABNT. <em>NBR 9050:2020 — Acessibilidade a edificações, mobiliário, espaços e equipamentos urbanos</em>. Rio de Janeiro: ABNT, 2020.
-        </li>
-        <li class="mb-3">
-            ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS – ABNT. <em>NBR 17225:2025 — Acessibilidade Digital para Web</em>. Rio de Janeiro: ABNT, 2025.
-        </li>
-</ul>
+                <li class="mb-3">
+                    U.S. DEPARTMENT OF JUSTICE. <em>Section 504 of the Rehabilitation Act – Overview</em>. Washington, D.C.: Disability Rights Section, 2021.
+                </li>
+
+                <li class="mb-3">
+                    BERSCH, R. <em>Classificações de Tecnologia Assistiva</em>. Porto Alegre: Acessibilidade Brasil, 2013.
+                </li>
+
+                <li class="mb-3">
+                    WORLD HEALTH ORGANIZATION. <em>International Classification of Functioning, Disability and Health (ICF)</em>. Geneva: WHO, 2001.
+                </li>
+
+                <li class="mb-3">
+                    WORLD WIDE WEB CONSORTIUM (W3C). <em>Web Content Accessibility Guidelines (WCAG) 2.2</em>. 5 out. 2023.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Constituição da República Federativa do Brasil de 1988. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm">https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Lei nº 7.853, de 24 de outubro de 1989. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/leis/l7853.htm">https://www.planalto.gov.br/ccivil_03/leis/l7853.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Lei nº 8.160, de 8 de janeiro de 1991. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/leis/L8160.htm">https://www.planalto.gov.br/ccivil_03/leis/L8160.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Lei nº 9.394, de 20 de dezembro de 1996. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/leis/l9394.htm">https://www.planalto.gov.br/ccivil_03/leis/l9394.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Lei nº 9.610, de 19 de fevereiro de 1998. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/leis/l9610.htm">https://www.planalto.gov.br/ccivil_03/leis/l9610.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Portaria MEC nº 319, de 23 de fevereiro de 1999. Disponível em:
+                    <a class="text-break" href="https://inclusao.mec.gov.br/images/pdf/portaria_319_1999.pdf">https://inclusao.mec.gov.br/images/pdf/portaria_319_1999.pdf</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Decreto nº 3.298, de 20 de dezembro de 1999. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/decreto/D3298.htm">https://www.planalto.gov.br/ccivil_03/decreto/D3298.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Lei nº 10.048, de 8 de novembro de 2000. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/leis/L10048.htm">https://www.planalto.gov.br/ccivil_03/leis/L10048.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Lei nº 10.098, de 19 de dezembro de 2000. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/leis/L10098.htm">https://www.planalto.gov.br/ccivil_03/leis/L10098.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Resolução CNE/CEB nº 2, de 11 de setembro de 2001. Disponível em:
+                    <a class="text-break" href="http://portal.mec.gov.br/seesp/arquivos/pdf/res2_ceb.pdf">http://portal.mec.gov.br/seesp/arquivos/pdf/res2_ceb.pdf</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Lei nº 10.436, de 24 de abril de 2002. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/leis/2002/L10436.htm">https://www.planalto.gov.br/ccivil_03/leis/2002/L10436.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Portaria MEC nº 2.678, de 24 de setembro de 2002. Disponível em:
+                    <a class="text-break" href="https://inclusao.mec.gov.br/images/pdf/portaria_2678_2002.pdf">https://inclusao.mec.gov.br/images/pdf/portaria_2678_2002.pdf</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Decreto nº 5.296, de 2 de dezembro de 2004. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/decreto/d5296.htm">https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/decreto/d5296.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Lei nº 11.126, de 27 de junho de 2005. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/leis/L11126.htm">https://www.planalto.gov.br/ccivil_03/leis/L11126.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Decreto nº 5.626, de 22 de dezembro de 2005. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/decreto/d5626.htm">https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/decreto/d5626.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Política Nacional de Educação Especial na Perspectiva da Educação Inclusiva. Brasília: MEC, SEESP, 2007. Disponível em:
+                    <a class="text-break" href="https://portal.mec.gov.br/arquivos/pdf/politicaeducespecial.pdf">https://portal.mec.gov.br/arquivos/pdf/politicaeducespecial.pdf</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Modelo de Acessibilidade em Governo Eletrônico (e-MAG). Brasília: Governo Federal, 2007. Disponível em:
+                    <a class="text-break" href="https://www.gov.br/governodigital/pt-br/estrategia-de-governanca-digital/governanca-de-ti/acessibilidade-digital/emag">https://www.gov.br/governodigital/pt-br/estrategia-de-governanca-digital/governanca-de-ti/acessibilidade-digital/emag</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Decreto nº 6.949, de 25 de agosto de 2009. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/decreto/d6949.htm">https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/decreto/d6949.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Lei nº 12.527, de 18 de novembro de 2011. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm">https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Decreto nº 7.724, de 16 de maio de 2012. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/decreto/d7724.htm">https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/decreto/d7724.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Lei nº 12.764, de 27 de dezembro de 2012. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12764.htm">https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12764.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Lei nº 13.146, de 6 de julho de 2015. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm">https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Lei nº 13.409, de 28 de dezembro de 2016. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/L13409.htm">https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/L13409.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Portaria MEC nº 1.117, de 1º de novembro de 2018. Disponível em:
+                    <a class="text-break" href="https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/46023393">https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/46023393</a>.
+                </li>
+
+                <li class="mb-3">
+                    BRASIL. Lei nº 13.979, de 6 de fevereiro de 2020. Disponível em:
+                    <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/L13979.htm">https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/L13979.htm</a>.
+                </li>
+
+                <li class="mb-3">
+                    ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS – ABNT. <em>NBR 9050:2020 — Acessibilidade a edificações, mobiliário, espaços e equipamentos urbanos</em>. Rio de Janeiro: ABNT, 2020.
+                </li>
+
+                <li class="mb-3">
+                    ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS – ABNT. <em>NBR 17225:2025 — Acessibilidade Digital para Web</em>. Rio de Janeiro: ABNT, 2025.
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
