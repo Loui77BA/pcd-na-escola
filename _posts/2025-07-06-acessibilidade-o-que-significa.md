@@ -1883,5 +1883,4 @@ sumario: |
         <li class="mb-3">
             ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS – ABNT. <em>NBR 17225:2025 — Acessibilidade Digital para Web</em>. Rio de Janeiro: ABNT, 2025.
         </li>
-
 </ul>
