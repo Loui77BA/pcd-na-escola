@@ -368,7 +368,7 @@ sumario: |
 ---
 
 <p>
-    Este artigo analisa criticamente o conceito de acessibilidade, abordando sua evolução histórica, principais marcos legais e transformações conceituais que a consolidam como um direito humano.
+    Este artigo analisa criticamente o conceito de acessibilidade, abordando sua evolução histórica, principais marcos legais e transformações conceituais.
 </p>
 
 {% include figure.html 
