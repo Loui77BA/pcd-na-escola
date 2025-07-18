@@ -17,6 +17,8 @@ lang: pt-BR
 
 ## **Apresentação**
 
+---
+
 Olá, mundo!
 
 Eu sou a Louise Suelen e estou aqui para comentar sobre três assuntos muito importantes e, muitas vezes, mal compreendidos que estão nos artigos:
@@ -28,6 +30,8 @@ Eu sou a Louise Suelen e estou aqui para comentar sobre três assuntos muito imp
 Nestes artigos, a minha intenção foi explicar cada termo com calma, com base em estudos, leis, ciência e com reflexões pessoais. Eu tentei deixar claro quando algo era opinião minha e quando era informação retirada de fontes confiáveis. Já aqui, se trata de um artigo de opinião, então compartilharei predominantemente minhas perspectivas pessoais.
 
 ## **Por que eu comecei os artigos pela história?**
+
+---
 
 Imagine que uma equipe de desenvolvimento resolveu “consertar” a humanidade. O primeiro ticket aberto (tarefa aberta) no sistema seria:
 
@@ -41,6 +45,8 @@ Brincadeiras à parte, quando a gente fala em deficiência, muita gente ainda pe
 
 ### **Um passeio pela história: o que já pensaram sobre a deficiência**
 
+---
+
 - **Na Antiguidade**, se alguém nascia com alguma diferença física ou comportamental, muitas vezes era escondido, excluído ou até morto. Isso porque o valor da pessoa estava ligado à força e à aparência.
 - **Na Idade Média**, a explicação era religiosa: a deficiência era vista como castigo de Deus ou uma forma de sofrimento sagrado.
 - **No Renascimento** veio a curiosidade científica…, mas infelizmente muita gente com deficiência foi tratada como espetáculo, sendo colocada em exposições e feiras.
@@ -53,6 +59,8 @@ Brincadeiras à parte, quando a gente fala em deficiência, muita gente ainda pe
 
 ### **Qual é a relação disso com capacitismo e acessibilidade?**
 
+---
+
 Entender o conceito de deficiência é a base para entender dois assuntos muito importantes:
 
 - **Capacitismo**: é o preconceito contra pessoas com deficiência. É quando se acha que elas são “menos capazes”, “um peso” ou “coitadinhas”. Isso acontece o tempo todo: desde não contratar uma pessoa, até tratá-la como um exemplo só por existir.
@@ -61,6 +69,8 @@ Entender o conceito de deficiência é a base para entender dois assuntos muito 
 Se a gente entende mal o que é deficiência, acaba criando soluções ruins: como rampas malfeitas, sites “meio acessíveis” ou políticas que não funcionam. E pior: continua tratando a pessoa como “o problema”, quando na verdade o problema está na interação com as barreiras.
 
 ### **Por que contar essa história importa?**
+
+---
 
 Analisar a deficiência apenas a partir de uma perspectiva pessoal pode levar a interpretações que não necessariamente correspondem à compreensão real da questão.
 
@@ -80,6 +90,8 @@ Quando a gente entende isso, a vida em sociedade funciona muito melhor — tipo 
 
 ### **O passado não é desculpa, mas é explicação**
 
+---
+
 Antes de tudo, um lembrete necessário: não dá para julgar o passado com as lentes de hoje. Aquilo que a gente hoje considera preconceituoso ou cruel, em muitos momentos da história era simplesmente… a regra.
 
 Mas calma! Isso não quer dizer que devemos passar pano (ignorar ou minimizar problemas). Significa que o passado funciona como um retrovisor: ele mostra por onde a gente veio, os erros que já cometemos como sociedade e o quanto precisamos ficar vigilantes para não repetir certos caminhos.
@@ -87,6 +99,8 @@ Mas calma! Isso não quer dizer que devemos passar pano (ignorar ou minimizar pr
 E aqui vai um ponto muito sério: precisamos **sempre** começar pela história, para entender como chegamos até aqui e quais lutas ainda precisamos travar. Além disso, o passado serve como alerta para nos mostrar que, direitos não são permanentes. Eles podem avançar, sim, mas também podem regredir e se a gente piscar, o capacitismo ganha terreno de novo — seja nas leis, nas instituições, ou nas conversas de corredor.
 
 ### **A lei é conquista, mas ainda é sonho incompleto**
+
+---
 
 Dito isto, é importante reconhecer que a história também reflete como as legislações foram sendo construídas e desconstruídas ao longo do tempo. Neste sentido, podemos dizer que o Brasil tem um conjunto de leis importante quando falamos em deficiência e acessibilidade: a Lei Brasileira de Inclusão (LBI), a Constituição de 1988, tratados internacionais como a Convenção da ONU, e uma série de decretos e portarias.
 
@@ -113,6 +127,8 @@ Pelo contrário, eu sei que ela não me assegura permanência na empresa, promo�
 Por isso digo mais uma vez: a lei é uma conquista, mas ainda é um sonho incompleto. Ela precisa ser efetivamente aplicada, fiscalizada e respeitada por toda a sociedade. Isso só acontece com as nossas lutas, denúncias e cobranças constantes. Porém, quando aplicada sem desvio de finalidade, a lei pode realmente transformar vidas e garantir direitos de toda uma população.
 
 ## **Acessibilidade não é uma solução única**
+
+---
 
 Você já deve ter ouvido que acessibilidade é um “princípio transversal”. Parece complicado, né? Mas é simples: acessibilidade precisa existir em todas as áreas da vida — na educação, na saúde, na tecnologia, na mobilidade urbana, no lazer, na cultura, no trabalho, na comunicação…
 
@@ -167,9 +183,13 @@ Diante dessas situações, e muitas outras que eu não mencionei, quais foram os
 
 ### **1. capacitismo da própria pessoa com deficiência**
 
+---
+
 Sim, é isso mesmo. Às vezes, nós, pessoas com deficiência (e também quem caminha junto com a gente), acabamos entrando num jogo estranho, que eu apelidei carinhosamente de:
 
 **A dança do “pior de todos!”**
+
+---
 
 Sabe aquela brincadeira da dança das cadeiras? Então. Aqui, em vez de uma música animada e cadeiras disputadas, o que rola é uma competição invisível pra ver quem tem a deficiência mais difícil, mais sofrida, mais merecedora de atenção e acessibilidade.
 
@@ -201,6 +221,8 @@ Então, se você já se pegou dançando essa “dança do pior de todos”, não
 
 ### **2. A falta de "metacessibilidade"**
 
+---
+
 Em computação, temos um conceito chamado de metadados, que são dados sobre dados. Por exemplo, uma foto pode ter metadados como data, hora, localização e até informações sobre a câmera usada para tirá-la. Ou seja, o dado é a foto, e os metadados são as informações que descrevem essa foto.
 
 Eu uso a palavra "metacessibilidade", que eu nem sei se existe ou não, para descrever um conceito semelhante ao de metadados, mas aplicado à acessibilidade.
@@ -212,6 +234,7 @@ Ou seja, metacessibilidade é aplicar os princípios do desenho universal e da a
 - É produzir materiais sobre conscientização a respeito do Transtorno do Espectro Autista (TEA), mais que sejam acessíveis para pessoas com deficiência visual, por exemplo.
 - É quando pessoas cegas procuram aprender sobre necessidades de pessoas surdas, para quando construírem um site, por exemplo, não colocar vídeos sem legendas ou áudios que reproduzam automaticamente e estrondosamente após o carregamento da página.
 - É uma pessoa usuária de cadeira de rodas não usar termos como "retardado", "mongoloide" ou qualquer outro termo pejorativo para se referir a pessoas com deficiência intelectual.
+- É evitar termos como "parece autista" ou "meio autista", já vi muitos amigos meus, pessoas cegas, usando esses termos ou frases como "Aí parece que tem down, 'mongolou' igual a fulano", e isso é capacitismo, igual ao capacitismo que a gente combate na sociedade em geral, sem diferença nenhuma.
 - É uma comunidade aprender a fazer acessibilidade para outras comunidades, sem sentir isso como um "peso", mas como uma oportunidade de aprendizado e crescimento mútuo no tema da acessibilidade.
 
 A gente — pessoas com deficiência — aprendeu a cobrar. E com razão! A sociedade como um todo ainda é excludente, omissa e bastante habilidosa em praticar capacitismo coletivo como se fosse esporte olímpico.
@@ -243,6 +266,8 @@ Não se trata de se responsabilizar pelo todo, mas de reconhecer que a luta é c
 Ser pessoa com deficiência não nos isenta de revisar nossos próprios comportamentos, muito pelo contrário: nos convida a sermos mais empáticas, mais atentas e mais dispostas a escutar outras vivências diferentes da nossa. A acessibilidade não é só um recurso, ela é uma prática humana que deve ser constante, por isso a gente precisa exercê-la entre nós, com nós e por nós.
 
 ### **Para concluir**
+
+---
 
 Como expliquei na minha [página de apresentação](https://pcdnaescola.com.br/louise/), o primeiro artigo do site foi o "Deficiência: O que significa?". Ele foi construído antes mesmo do site existir.
 
