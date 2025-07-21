@@ -37,233 +37,183 @@ Imagine que uma equipe de desenvolvimento resolveu “consertar” a humanidade.
 
 **“Deficiência: comportamento inesperado”.**
 
-Aí, claro, começaria a discussão: **“Mas será que isso é mesmo um bug (erro), ou é só uma característica que ninguém documentou direito?”**
+E, como em todo projeto de software, surgiria a pergunta: **“Mas será que isso é mesmo um bug (erro), ou só uma característica que ninguém documentou direito?”**
 
-Brincadeiras à parte, quando a gente fala em deficiência, muita gente ainda pensa só no que o corpo da pessoa não consegue fazer — como se a pessoa tivesse algo “errado”. Só que esse pensamento ignora um monte de coisa: a história, a cultura, a ciência e, principalmente, como o mundo trata essa pessoa.
+Brincadeiras à parte, a analogia não é à toa. Quando falamos em deficiência, o que aparece primeiro para muita gente é o que o corpo da pessoa “não consegue fazer”. É como se a deficiência fosse uma falha de sistema — algo que precisa ser corrigido, adaptado, “ajeitado”. Mas essa visão é profundamente limitada, porque ignora tudo o que está ao redor: história, cultura, ciência, sociedade. E, principalmente, ignora a forma como o mundo reage ao corpo diferente.
 
-É por isso que é tão importante olhar para trás e entender como o conceito de deficiência foi sendo construído ao longo do tempo. Porque, acredite: essa palavra já significou coisas muito diferentes, dependendo da época e do olhar de quem estava definindo.
+Por isso comecei justamente pela história, não por saudosismo, nem para justificar erros do passado — mas porque é impossível entender o presente sem olhar com atenção para os caminhos que nos trouxeram até aqui.
 
-### **Um passeio pela história: o que já pensaram sobre a deficiência**
-
----
-
-- **Na Antiguidade**, se alguém nascia com alguma diferença física ou comportamental, muitas vezes era escondido, excluído ou até morto. Isso porque o valor da pessoa estava ligado à força e à aparência.
-- **Na Idade Média**, a explicação era religiosa: a deficiência era vista como castigo de Deus ou uma forma de sofrimento sagrado.
-- **No Renascimento** veio a curiosidade científica…, mas infelizmente muita gente com deficiência foi tratada como espetáculo, sendo colocada em exposições e feiras.
-- **Na Revolução Industrial**, a cobrança por produtividade aumentou consideravelmente. Se alguém não conseguia acompanhar o ritmo das outras pessoas e das máquinas, era visto como “incapaz” ou “inútil”, reforçando a ideia de que a deficiência era uma falha que precisava ser corrigida. Assim, surgiu a noção de que o corpo diferente devia ser “consertado”, como se fosse uma máquina quebrada a ser ajustada para o trabalho.
-- **No pós-Segunda Guerra Mundial**, no decorrer do século XX, observaram-se transformações significativas na percepção sobre a deficiência. Indivíduos com deficiência passaram a reivindicar seus direitos, o que resultou no surgimento do denominado modelo social da deficiência.
-  - Esse modelo sustenta que as limitações enfrentadas não decorrem exclusivamente de condições corporais, mas são intensificadas pelas barreiras impostas pelo ambiente e pela sociedade. O retorno de veteranos de guerra, a presença de pessoas usuárias de cadeiras de rodas em instituições universitárias e o declínio do eugenismo contribuíram para consolidar essa abordagem, destacando que os desafios das pessoas com deficiência envolvem aspectos ambientais e sociais, além das questões físicas.
-  - O modelo binário “tem deficiência / não tem” é substituído por uma matriz que relaciona estruturas corporais, atividades e fatores contextuais. De um lado estão os aspectos biológicos; do outro, barreiras arquitetônicas, comunicação e atitude. A definição passa a ser compreendida como um sistema distribuído, levando em conta diferentes elementos e pessoas.
-  - Por exemplo: antes, quando uma pessoa que utilizava cadeira de rodas visitava um prédio sem rampas, elevadores ou calçadas rebaixadas, o entendimento comum era de que a responsabilidade era dela. Ela tinha que “se virar” para acessar o prédio.
-- **Hoje**, há um reconhecimento de que a ausência dessas adaptações pode indicar limitações na infraestrutura do edifício, considerando que diferentes pessoas, como usuárias de cadeiras de rodas, andadores, bengalas, muletas, mães com carrinhos de bebê e outras condições, podem precisar dessas adequações.
-
-### **Qual é a relação disso com capacitismo e acessibilidade?**
+### **Um passeio necessário pela história**
 
 ---
 
-Entender o conceito de deficiência é a base para entender dois assuntos muito importantes:
+Não dá para aprofundar aqui todos os detalhes, mas é importante lembrar que o modo como as sociedades enxergaram a deficiência mudou bastante ao longo dos séculos. Em alguns períodos, pessoas com deficiência foram tratadas como aberração. Em outros, como castigo divino. Em outros, como máquinas quebradas que deveriam ser consertadas para voltarem à produção.
 
-- **Capacitismo**: é o preconceito contra pessoas com deficiência. É quando se acha que elas são “menos capazes”, “um peso” ou “coitadinhas”. Isso acontece o tempo todo: desde não contratar uma pessoa, até tratá-la como um exemplo só por existir.
-- **Acessibilidade**: é quando o mundo é pensado para todas as pessoas. Inclui rampas, legendas, leitores de tela, linguagem simples, comunicação alternativa, sinalização tátil, entre outros recursos. Mas não é só infraestrutura — é atitude também.
+E, finalmente, mais recentemente, como pessoa sujeita de direitos.
 
-Se a gente entende mal o que é deficiência, acaba criando soluções ruins: como rampas malfeitas, sites “meio acessíveis” ou políticas que não funcionam. E pior: continua tratando a pessoa como “o problema”, quando na verdade o problema está na interação com as barreiras.
+O chamado **modelo social da deficiência**, que ganhou força no pós-Segunda Guerra Mundial, começou a mudar o foco: **a deficiência não está no corpo, mas na relação entre o corpo e as barreiras sociais e ambientais**.
 
-### **Por que contar essa história importa?**
+Isso muda tudo. Antes, se uma pessoa usuária de cadeira de rodas chegasse a um prédio sem rampas ou elevadores, o "problema" era dela — “ela que dê um jeito”. Hoje, começamos a entender que a restrição está na arquitetura do prédio, e não na pessoa que não consegue entrar.
 
----
+Eu não vou listar aqui cada momento histórico, mas quero enfatizar: o que antes era visto como problema individual, hoje é cada vez mais entendido como questão coletiva.
 
-Analisar a deficiência apenas a partir de uma perspectiva pessoal pode levar a interpretações que não necessariamente correspondem à compreensão real da questão.
+Voltanddo ao exemplo do prédio, se antes a sociedade dizia “ela que se vire”, hoje a pergunta é: “como podemos tornar esse espaço acessível para todas as pessoas? Já que muitas pessoas com diferentes necessidades podem precisar de adaptações diferentes para acessar esse prédio!" Quanto mais acessível, mais pessoas podem entrar — e isso é bom para todo mundo.
 
-É necessário considerar três perspectivas:
-
-- O histórico e social, que mostra como o conceito de deficiência foi sendo moldado pela cultura.
-- O científico e técnico, que ajuda a entender as questões de saúde e do corpo.
-- O legal, que garante os direitos das pessoas com deficiência e define como o Estado deve agir.
-
-A integração dessas três perspectivas contribui para a elaboração de uma análise mais equitativa, abrangente e precisa.
-
-Se você chegou até aqui, já percebeu:
-
-**Deficiência é uma condição humana, faz parte da diversidade como a cor da pele, gênero e orientação afetivo-sexual; o problema é o capacitismo e acessibilidade, a solução.**
-
-Quando a gente entende isso, a vida em sociedade funciona muito melhor — tipo um sistema bem testado, sem erros. E quem não quer viver num mundo onde todo mundo é bem-vindo, né?
-
-### **O passado não é desculpa, mas é explicação**
+### **A história não justifica, mas explica**
 
 ---
 
-Antes de tudo, um lembrete necessário: não dá para julgar o passado com as lentes de hoje. Aquilo que a gente hoje considera preconceituoso ou cruel, em muitos momentos da história era simplesmente… a regra.
+É sempre bom lembrar: o passado não pode ser julgado com os critérios do presente. Muitas atitudes hoje vistas como cruéis eram, em suas épocas, o padrão. Mas isso não significa que devamos perdoar ou esquecer. Significa que precisamos entender como essas ideias surgiram e se consolidaram — para evitarmos repetir os mesmos erros.
 
-Mas calma! Isso não quer dizer que devemos passar pano (ignorar ou minimizar problemas). Significa que o passado funciona como um retrovisor: ele mostra por onde a gente veio, os erros que já cometemos como sociedade e o quanto precisamos ficar vigilantes para não repetir certos caminhos.
+A história é retrovisor. Não serve para dirigir, mas mostra por onde a gente veio. E mostra também que **direitos não são dados, são conquistados**. Eles não vêm de graça — e, pior, podem ir embora se a gente se distrair.
 
-E aqui vai um ponto muito sério: precisamos **sempre** começar pela história, para entender como chegamos até aqui e quais lutas ainda precisamos travar. Além disso, o passado serve como alerta para nos mostrar que, direitos não são permanentes. Eles podem avançar, sim, mas também podem regredir e se a gente piscar, o capacitismo ganha terreno de novo — seja nas leis, nas instituições, ou nas conversas de corredor.
+Por isso, quando alguém diz que “já está bom”, que “não precisa de mais luta”, que “a sociedade já mudou bastante”, eu acendo todos os alertas. Porque sei que todo direito pode ser desfeito. E que toda conquista corre o risco de ser desmontada, uma portaria de cada vez.
 
-### **A lei é conquista, mas ainda é sonho incompleto**
+## **O capacitismo está em todo lugar**
 
 ---
 
-Dito isto, é importante reconhecer que a história também reflete como as legislações foram sendo construídas e desconstruídas ao longo do tempo. Neste sentido, podemos dizer que o Brasil tem um conjunto de leis importante quando falamos em deficiência e acessibilidade: a Lei Brasileira de Inclusão (LBI), a Constituição de 1988, tratados internacionais como a Convenção da ONU, e uma série de decretos e portarias.
+Quando a gente não entende bem o que é deficiência, acaba naturalizando o capacitismo — o preconceito contra pessoas com deficiência. E ele está em tudo: na piada que parece “inofensiva”, na exclusão disfarçada de “falta de perfil”, na infantilização constante. É o famoso “tadinha”, “exemplo de superação”, “isso é pra mostrar que tudo é possível”.
 
-Mas... (e aqui vai um suspiro)...
+A verdade é que ninguém quer ser tratado como um símbolo, muito menos como um peso. A gente quer viver, trabalhar, participar, ser ouvida, disputar espaços reais com as mesmas condições, tendo as nossas necessidades respeitadas, mas sem ser vista como “beneficiada” ou “coitadinha”. 
 
-ter lei não é o mesmo que ver ela acontecer.
+E aí entra a **acessibilidade**. Que não é favor. É direito. E não se resume a uma rampa ou a um site “meio acessível”. Acessibilidade é planejamento, é política, é atitude. É pensar o mundo desde o início para que todas as pessoas possam acessá-lo — e não tentar “remendar” depois.
 
-Na prática, muitas dessas normas viram letra morta (sem aplicação prática). Falta fiscalização, falta denúncia, falta formação, falta vontade política e, infelizmente, sobra descaso. Parece até que a sociedade deu um “alvará” pra ser capacitista impunemente — como se fosse permitido desrespeitar, excluir, ignorar.
+## **A lei importa (e muito)**
 
-E quando alguém com deficiência precisa brigar por um direito, o caminho costuma ser longo, desgastante e solitário.
+---
 
-Ainda assim, as leis são uma grande conquista. Porque mesmo que lentas e muitas vezes ignoradas, elas são o nosso lugar pra onde correr quando algo grave acontece. Um abuso, uma exclusão, uma violência. Antes, isso tudo era tolerado — hoje, é crime e apesar de não ser perfeito, isso faz toda a diferença.
+Tem gente que diz que a lei é só um pedaço de papel, mas, para quem teve a vida marcada pela exclusão, a existência da lei é um marco. É o começo de uma mudança de rota, é o mínimo de dignidade possível.
 
-Há quem diga que a lei é apenas um papel, que ela nunca, em hipótese alguma, vai mudar a realidade das pessoas com deficiência. Mas isso não é verdade. Mesmo com todos os problemas e dificuldades de implementação, a lei é um instrumento poderoso de transformação social, ela pode não resolver tudo, mas é um passo fundamental na luta por direitos e dignidade.
+Eu falo com propriedade: como pessoa cega, **eu não acredito que teria um emprego formal no Brasil se não fosse a existência da lei nº 8.213/91**, que obriga empresas com mais de 100 funcionários a reservarem vagas para pessoas com deficiência.
 
-Eu, particularmente, não acredito que como pessoa cega eu teria um emprego no Brasil, de maneira formal e com carteira assinada, se não fosse a lei nº 8.213/91, que garante a reserva de vagas para pessoas com deficiência em empresas com mais de 100 funcionários. A lei é um reflexo de que a sociedade reconhece a necessidade de incluir pessoas com deficiência em espaços onde efetivamente elas eram excluídas, como o mercado de trabalho.
+Não, ela não me garantiu estabilidade no emprego com base na minha deficiência, nem promoção automática, nem salários maiores do que os salários de pessoas sem deficiência. Ela me garantiu **a chance de tentar** — e era isso que eu precisava. Antes da lei, muitas pessoas com deficiência eram eliminadas da seleção antes mesmo de começarem. Hoje, apesar de todos os desafios, o cenário é diferente, não perfeito, porém "menos pior" do que antes.
 
-As estatísticas já demonstravam que a pessoa com deficiência não conseguia, na grande maioria dos casos, nem mesmo a chance de concorrer a uma vaga de emprego, ela já era "desclassificada" antes mesmo de entrar na disputa com base simplesmente na sua condição. Hoje, com a lei, essa empregabilidade já não é muito alta (porque fatores como qualificação, impossibilidades de acesso escolar, locomocional, entre outros, ainda são barreiras), mas já é maior do que era antes da lei e cresce a cada dia, o que sim é um grande avanço.
+Respeito quem pensa diferente, inclusive pessoas com deficiência que não concordam com cotas, acham que elas "tiram o mérito", que "basta ter competência" ou "se esforçar mais" para conseguir um emprego e que a lei "não serve para nada". Eu respeito, mas não concordo! Eu não compartilho desse pensamento, porque estatísticas mostram que as pessoas com deficiência ainda enfrentam barreiras enormes no mercado de trabalho, e a lei é uma forma de garantir que essas barreiras sejam minimizadas.
 
-Então eu respeito outras pessoas com deficiência que discordam da importância da lei, que acham que "basta se capacitar" e "provar seu valor" que "não precisa de cota, que isso tira o mérito", mas eu não consigo concordar com elas. A lei é um passo importante, mesmo que ainda haja muito a ser feito, ela trouxe sim dignidade e oportunidades a minha vida, por exemplo, não me sinto de modo algum inferior a ninguém por ter conseguido um emprego por meio de uma cota.
+Se a situação já é complexa hoje, com a lei, como era antes dela? Sou o reflexo de que a lei faz diferença e me dignifica como pessoa no mercado de trabalho, não me sinto menos capaz por causa disso, pelo contrário, me sinto mais capaz e com mais oportunidades que eu sei que não teria se não fosse a lei, porque com ela eu já "ralei" (trabalhei duro) para conseguir um emprego, sem ela eu não teria nem começado.
 
-Pelo contrário, eu sei que ela não me assegura permanência na empresa, promoções para cargos de liderança ou salários mais altos que os das pessoas sem deficiência, ela me assegura a oportunidade de tentar e era só disso que eu (e outras pessoas com deficiência) precisávamos.
+Em outro momento, provavelmente, eu vou escrever um artigo sobre as minhas experiências tentando conseguir um emprego em Ilhéus - BA. Como assisti meus colegas sem deficiência conseguirem empregos, mesmo sem serem "super esforçados", enquanto eu não conseguia nem ser chamada para entrevistas.
 
-Por isso digo mais uma vez: a lei é uma conquista, mas ainda é um sonho incompleto. Ela precisa ser efetivamente aplicada, fiscalizada e respeitada por toda a sociedade. Isso só acontece com as nossas lutas, denúncias e cobranças constantes. Porém, quando aplicada sem desvio de finalidade, a lei pode realmente transformar vidas e garantir direitos de toda uma população.
+Muitos deles conseguiram sua primeira oportunidade de trabalho por meio de convites, de um professor da nossa universidade (UESC) que dava aulas no curso de Ciência da Computação, professor esse que, inclusive, dava aulas 100% visuais na minha turma, deliberadamente (sem considerar a minha condição). Nem comigo ele falava, estava empenhado em demonstrar que eu era um "desperdício de vaga".
+
+Esse cara deu estágio e emprego para vários colegas meus, mas nunca me chamou para nada, de antemão ele assumiu que eu não conseguiria fazer nada, porque eu era cega. Imagina um cara desses como chefe de uma empresa, com mais de 100 funcionários, e eu tentando uma vaga lá. Sem a lei, sabe quando ele me contrataria? Nunca!
+
+E, eu sei que não é pessoal, ele não contrataria nem eu nem ninguém com deficiência se pudesse evitar, porque ele não acredita que pessoas com deficiência possam ser tão capazes quanto as pessoas sem deficiência. Daí a importância da lei, que tira da esfera do "achismo" e coloca na esfera do "direito".
+
+As empresas não podem mais assumir que candidatos com deficiência não são capazes, porque a lei diz que elas devem considerar essas pessoas como candidatas reais. Ou seja, pelo menos, elas têm que dar uma chance de tentar.
+
+Este é só um exemplo, para demonstrar que sim, a lei importa. Ela não é perfeita, precisa ser efetivada, fiscalizada, aprimorada, mas é um passo fundamental para garantir que pessoas com deficiência tenham acesso a oportunidades que antes eram negadas.
 
 ## **Acessibilidade não é uma solução única**
 
 ---
 
-Você já deve ter ouvido que acessibilidade é um “princípio transversal”. Parece complicado, né? Mas é simples: acessibilidade precisa existir em todas as áreas da vida — na educação, na saúde, na tecnologia, na mobilidade urbana, no lazer, na cultura, no trabalho, na comunicação…
+Você já deve ter ouvido por aí que acessibilidade é um “princípio transversal”. À primeira vista, isso pode parecer uma expressão complicada, meio teórica. Mas, na prática, é simples: acessibilidade precisa estar **em tudo** — na escola, no hospital, na calçada, no aplicativo, no cinema, no emprego, na página da internet, no modo como a gente trata as pessoas.
 
-E cada área tem suas próprias necessidades, por isso, a acessibilidade não pode ser genérica. Ela deve ser adaptada e personalizada para atender às demandas específicas de cada contexto.
+E por isso mesmo **não existe uma acessibilidade genérica que sirva para todo mundo**. A acessibilidade precisa ser pensada conforme o contexto, a situação, o ambiente, a tecnologia, o momento — e, principalmente, conforme as pessoas envolvidas.
 
-Ela precisa ser organizada em tipos e categorias:
+Não adianta querer resolver tudo com uma única rampa, um único formato, uma única solução.
 
-- **Acessibilidade Arquitetônica**:
-  - Rampas, elevadores, banheiros adaptados, sinalização tátil, entre outros.
-- **Acessibilidade em Ambientes Públicos**:
-  - Calçadas, praças, parques, edifícios públicos, entre outros.
-- **Acessibilidade no Transporte**:
-  - Transporte público adaptado, sinalização acessível, entre outros.
-- **Acessibilidade Informacional e Comunicacional**:
-  - Materiais em formatos acessíveis, intérpretes de Libras, entre outros.
-- **Acessibilidade Atitudinal**:
-  - Sensibilização e capacitação de profissionais, combate a preconceitos, entre outros.
-- **Acessibilidade Legal e Institucional**:
-  - Políticas públicas, leis de inclusão, entre outros.
-- **Acessibilidade Pedagógica**:
-  - Adaptação de currículos, formação de professores, entre outros.
-- **Acessibilidade de Produtos, Equipamentos e Assistivas**:
-  - Fornecimento de ferramentas, utensílios e equipamentos físicos e assistivos, entre outros.
-- **Acessibilidade Digital**:
-  - Sites e aplicativos acessíveis, conteúdos em formatos alternativos, entre outros.
-- **Acessibilidade Cultural**:
-  - Acesso a eventos culturais, adaptações de obras, entre outros.
+Existem diversos tipos de acessibilidade — e todos são importantes. Eles não competem entre si e não formam uma hierarquia. Cada um tem sua função. Veja algumas categorias básicas:
 
-Cada tipo tem seus requisitos específicos e é fundamental entender que todos esses tipos de acessibilidade são interdependentes.
+- **Arquitetônica**: rampas, elevadores, banheiros adaptados, piso tátil.
+- **Digital**: sites e aplicativos acessíveis, leitores de tela, descrições de imagem.
+- **Informacional e comunicacional**: Libras, legendas, materiais em braile ou áudio.
+- **Atitudinal**: acolhimento, empatia, combate a preconceitos.
+- **Pedagógica**: currículo adaptado, metodologias inclusivas.
+- **Cultural**: acesso à arte, teatro, exposições, livros.
+- **Transporte**: ônibus adaptados, sinalização em estações, transporte público acessível.
 
-Não há hierarquia entre as modalidades de acessibilidade, pois todas desempenham um papel para permitir a participação de pessoas com deficiência na sociedade. Dependendo do tipo de deficiência, algumas pessoas podem demandar certos recursos de acessibilidade mais do que outras, conforme suas necessidades específicas. 
+É muita coisa. E é exatamente por isso que **a acessibilidade não pode ser pensada com base apenas na nossa própria experiência**.
 
-Dessa forma, a pessoa com deficiência pode sim priorizar os recursos de acessibilidade que considera essenciais para sua condição. No entanto, ao estabelecer uma hierarquia de modalidades de acessibilidade considerando exclusivamente suas necessidades pessoais, essa conduta pode evidenciar uma perspectiva capacitista.
-
-As nossas necessidades, enquanto pessoas com deficiência, são reais e precisam ser discutidas, mas o erro é achar que elas são mais importantes do que as necessidades de outras pessoas com deficiência. Pois, a acessibilidade é justamente juntar e considerar todas essas necessidades, pensadas por pessoas com deficiência e suas redes de apoio, e deve estar presente em toda a sociedade para que a inclusão de todos aconteça de verdade.
-
-E por que falo isso? Porque, muitas vezes, parece que a sociedade está mais coesa para oprimir e discriminar do que nós, pessoas com deficiência e aliados, estamos unidos para enfrentar e combater o capacitismo.
-
-Pessoas com deficiência geralmente percebem bem as próprias necessidades e dificuldades, o que pode influenciar como enxergam a acessibilidade. Por isso é fundamental reconhecer que lutar por acessibilidade exige aprendizado contínuo, pois conviver com a deficiência não garante pleno conhecimento sobre o tema. 
-
-Essa situação também se aplica às nossas próprias deficiências. Por exemplo, eu como pessoa cega, reconheço que já publiquei diversos vídeos sem audiodescrição e, igualmente, tive acesso a fotos e vídeos produzidos por outras pessoas cegas, também sem esse recurso, sendo todo o conteúdo direcionado exclusivamente para quem enxerga.
-
-Porque será que isso acontece? Porque muitas vezes, quando pedimos por acessibilidade, esquecemos que também temos a responsabilidade de criar acessibilidade para outras pessoas que precisam dela, assim como nós. 
-
-Tive experiências que me fizeram perceber dois problemas raramente debatidos:
-
-1. Quando era criança, estudei com cinco colegas surdos, uma colega surdocega, duas pessoas com baixa visão e uma com deficiência intelectual. Eu via que as pessoas surdas se juntavam em grupo, faziam atividades e lutavam por seus direitos, mas não incluíam muito a colega surdocega, mesmo ela também sabendo LIBRAS. Ela acabava ficando de fora, não por causa da língua, mas pelas dificuldades ligadas ao não enxergar. Isso aconteceu no oitavo ano do ensino fundamental, numa época em que quase ninguém falava sobre capacitismo ou sobre como entender melhor diferentes tipos de deficiência.
-2. Uma vez, em Barreiras – BA (minha cidade natal), fui chamada para participar de uma reunião para criar uma associação de pessoas cegas. Lá, algumas pessoas disseram que só quem fosse cego deveria fazer parte, excluindo quem tinha baixa visão ou outras deficiências. Teve também um participante cego que não queria que pessoas usuárias de cadeira de rodas entrassem, dizendo que, para ele, essas pessoas tinham menos dificuldades porque conseguiam dirigir e usar celular e computador sem precisar de leitor de telas. Naquele momento, achei aquilo muito errado, só porque uma pessoa que usa cadeira de rodas consegue mexer no celular sem precisar de leitor de telas ou dirigir, não quer dizer que ela enfrenta menos dificuldades. São desafios diferentes, mas todos são difíceis de lidar. Ou seja, o participante cego acabou sendo bastante capacitista e demonstrou ignorância sobre as dificuldades dos outros.
-3. Essa situação já aconteceu diretamente comigo, certa vez entrei em um grupo do Discord relacionado a movimentos sociais, ao pedir descrição de imagens e tentar explicar o que era audiodescrição para uma pessoa que está dentro do espectro autista (TEA) tive uma surpresa negativa. Mostrei a ela um vídeo com audiodescrição para exemplificar do que eu precisava, a pessoa me perguntou "Tá, mas e as pessoas que não precisam disso? Elas precisam ficar ouvindo essa narração o tempo todo? Não tem outro jeito? Sobre as imagens, não é melhor você só pular elas com o seu leitor de telas? Porque o pessoal não vai saber descrever." E eu fiquei pensando: "Ué, mas e as pessoas que precisam disso? Elas não têm direito de entender o que está acontecendo com o conteúdo visual? Não é melhor a gente tentar explicar do que simplesmente ignorar?"
-
-Diante dessas situações, e muitas outras que eu não mencionei, quais foram os dois problemas raramente debatidos que eu percebi?
-
-### **1. capacitismo da própria pessoa com deficiência**
-
+### **Mas e quando a acessibilidade entra em disputa entre nós?**
 ---
 
-Sim, é isso mesmo. Às vezes, nós, pessoas com deficiência (e também quem caminha junto com a gente), acabamos entrando num jogo estranho, que eu apelidei carinhosamente de:
+Ser pessoa com deficiência não quer dizer que você entende tudo sobre acessibilidade. Isso pode parecer contraditório, mas é a realidade. Conviver com deficiência não garante, automaticamente, um entendimento profundo e coletivo sobre o tema.
 
-**A dança do “pior de todos!”**
+Eu mesma, como pessoa cega, já publiquei vídeos sem audiodescrição e acessei conteúdos de outras pessoas cegas igualmente inacessíveis. Às vezes, a gente pede por acessibilidade para si, mas esquece que também deve criar acessibilidade para outras pessoas com deficiência que precisam de recursos diferentes dos nossos.
 
+E esse esquecimento revela dois problemas profundos e, muitas vezes, pouco falados.
+
+### **1. O capacitismo entre pessoas com deficiência**
 ---
 
-Sabe aquela brincadeira da dança das cadeiras? Então. Aqui, em vez de uma música animada e cadeiras disputadas, o que rola é uma competição invisível pra ver quem tem a deficiência mais difícil, mais sofrida, mais merecedora de atenção e acessibilidade.
+Sim, ele existe. E eu dei a esse fenômeno um apelido simbólico:
 
-**Como assim, Louise?** Vou descrever a lógica por trás disso...
+**A dança do “pior de todos”.**
 
-Alguém vira e diz:
+É como se estivéssemos disputando quem sofre mais, quem enfrenta mais barreiras, quem “merece” mais acessibilidade. Já ouvi coisas do tipo:
 
-> “Minha deficiência é muito mais limitante que a sua, então eu mereço mais acessibilidade do que você.”
+> “Minha deficiência é mais severa, então eu preciso mais do que você.”
 
-Ou então:
+> “Fulano já é ‘inaproveitável’, então nem vale o esforço de tornar o mundo acessível pra ele.”
 
-> “Fulano tem uma deficiência muito severa, ele não pode fazer nada, então nem precisa de acessibilidade, porque já ‘não adianta’.”
+Essa lógica é perversa. Ela transforma a luta por inclusão em uma competição de miséria. E, o que é pior, **reproduz entre nós o mesmo capacitismo que a sociedade nos impõe**.
 
-É como se o argumento fosse:
+Já vivi isso em Barreiras, minha cidade natal. Em uma reunião para criar uma associação de pessoas com deficiência, algumas pessoas queriam excluir quem tinha baixa visão ou outras deficiências. Um participante cego chegou a dizer que quem usava cadeira de rodas tinha menos dificuldade que ele, porque conseguia dirigir ou usar o celular sem leitor de telas.
 
-**“Eu ainda sou produtivo, eu ainda consigo fazer algumas coisas, então façam acessibilidade pra mim. O outro, coitado, já é ‘o pior de todos’, então nem vale o esforço.”**
+Aquilo me doeu. Porque desafios diferentes não são menos desafiadores. São só diferentes.
 
-Essa lógica é perversa! Ela hierarquiza o sofrimento, desumaniza e ainda reproduz a mesma opressão que a gente tanto combate.
+Já vi isso acontecer em outros contextos também, quando era criança estudava com cinco colegas surdos e uma colega surdocega, ela não era incluída no grupo deles, não pela questão da língua (porque ela também se comunicava em Libras), mas pelas questões ligadas ao não enxergar. Ou seja, a colega surdocega não era incluída porque não enxergava, e os colegas surdos não a consideravam como parte do grupo deles, mesmo ela não tendo barreiras de comunicação com a língua de sinais.
 
-O capacitismo entre as pessoas com deficiência existe sim, infelizmente... Às vezes por falta de informação. Às vezes por dor acumulada. Às vezes por disputa por recursos que já são escassos, mas é capacitismo do mesmo jeito. Negar isso é como dizer que as pessoas com deficiência não são pessoas, pois elas também reproduzem preconceitos e discriminações, porque nascem e se desenvolvem dentro de uma sociedade capacitista como todas as outras pessoas.
+Outra situação aconteceu comigo, eu estava em um grupo (de movimentos sociais) e pedi a uma pessoa, que está dentro do espectro autista (TEA), para me ajudar a pedir o restante do grupo para colocar descrição nas imagens que mandavam. A resposta que eu tive foi "Ah, mas assim... Não dá só para você pular as imagens com o seu leitor ou pedir alguém da sua casa para te ajudar? É que eu acho que o pessoal não consegue fazer isso não". 
+
+Detalhe: eu tinha mandado um vídeo e materiais mostrando como fazer descrição de imagens, e essa pessoa tinha visto os materiais, mas não quis fazer.
+
+Em outras palavras, o capacitismo entre as pessoas com deficiência existe sim, infelizmente... Às vezes por falta de informação. Às vezes por dor acumulada. Às vezes por disputa por recursos que já são escassos, mas é capacitismo do mesmo jeito. Negar isso é como dizer que as pessoas com deficiência não são pessoas, pois elas também reproduzem preconceitos e discriminações, porque nascem e se desenvolvem dentro de uma sociedade capacitista como todas as outras pessoas.
 
 Esse capacitismo interno é capacitismo do mesmo jeito porque é quando a gente se apega à lógica da escassez, como se só houvesse acessibilidade suficiente pra uma ou duas deficiências de cada vez. É quando a gente também mede o valor da pessoa pelo corpo ou pela mente, igual as pessoas capacitistas sem deficiência fazem, de acordo com a sua própria régua.
 
 Mas a verdade é que acessibilidade não é uma competição, ela é um direito. E nenhum direito precisa ser arrancado do outro pra existir. A acessibilidade pode — e deve — ser diversa, simultânea, interseccional.
 
+Cada pessoa com deficiência tem necessidades únicas. A acessibilidade não deve ser pensada como escassa ou exclusiva. Ela **é um direito coletivo e plural**.
+
 A luta por direitos é coletiva, não dá pra construir um mundo acessível se a gente repete entre nós o mesmo tipo de exclusão que a sociedade já nos impõe. Cada pessoa com deficiência tem necessidades específicas, experiências únicas, formas diferentes de estar no mundo e todas merecem respeito, escuta, representatividade e — claro — acessibilidade sob medida.
 
 Então, se você já se pegou dançando essa “dança do pior de todos”, não se culpe. Mas também não permaneça nela, porque a verdadeira revolução acessível não vem de quem disputa lugar — vem de quem constrói pontes.
 
-### **2. A falta de "metacessibilidade"**
-
+### **2. A falta de metacessibilidade**
 ---
 
 Em computação, temos um conceito chamado de metadados, que são dados sobre dados. Por exemplo, uma foto pode ter metadados como data, hora, localização e até informações sobre a câmera usada para tirá-la. Ou seja, o dado é a foto, e os metadados são as informações que descrevem essa foto.
 
-Eu uso a palavra "metacessibilidade", que eu nem sei se existe ou não, para descrever um conceito semelhante ao de metadados, mas aplicado à acessibilidade.
+Pois bem, eu uso a palavra **"metacessibilidade"**, que eu nem sei se existe ou não, para descrever um conceito semelhante ao de metadados, mas aplicado à acessibilidade. É a acessibilidade sobre a acessibilidade.
 
-Que conceito é esse? É munir quem já luta por acessibilidade com informações sobre acessibilidades diferentes, nada mais é que um diálogo retroalimentado entre as diversas comunidades de pessoas com deficiência e suas necessidades. Mas, ao invés da informação partir das comunidades para a sociedade em geral, ela parte de quem já está dentro da luta por acessibilidade para outras pessoas que também estão. 
+É quando a gente, dentro da própria comunidade de pessoas com deficiência, aprende sobre as acessibilidades que outras pessoas precisam — mesmo que não seja a nossa.
 
-Ou seja, metacessibilidade é aplicar os princípios do desenho universal e da acessibilidade de dentro para fora, é aproximar comunidades PcDs e promover diálogos entre as pautas e necessidades de cada uma delas. 
+- É uma pessoa cega que aprende sobre surdez e não publica vídeos sem legenda.
+- É uma pessoa usuária de cadeira de rodas que evita termos ofensivos sobre deficiência intelectual.
+- É uma pessoa autista que compreende que uma pessoa cega precisa de descrição de imagem.
+- É uma pessoa com baixa visão que entende o impacto da poluição sonora ou visual para quem é neurodivergente.
 
-- É produzir materiais sobre conscientização a respeito do Transtorno do Espectro Autista (TEA), mais que sejam acessíveis para pessoas com deficiência visual, por exemplo.
-- É quando pessoas cegas procuram aprender sobre necessidades de pessoas surdas, para quando construírem um site, por exemplo, não colocar vídeos sem legendas ou áudios que reproduzam automaticamente e estrondosamente após o carregamento da página.
-- É uma pessoa usuária de cadeira de rodas não usar termos como "retardado", "mongoloide" ou qualquer outro termo pejorativo para se referir a pessoas com deficiência intelectual.
-- É evitar termos como "parece autista" ou "meio autista", já vi muitos amigos meus, pessoas cegas, usando esses termos ou frases como "Aí parece que tem down, 'mongolou' igual a fulano", e isso é capacitismo, igual ao capacitismo que a gente combate na sociedade em geral, sem diferença nenhuma.
-- É uma comunidade aprender a fazer acessibilidade para outras comunidades, sem sentir isso como um "peso", mas como uma oportunidade de aprendizado e crescimento mútuo no tema da acessibilidade.
+A metacessibilidade é o exercício de promover a acessibilidade dentro da própria comunidade. É parar de agir como se apenas o outro devesse criar acessibilidade para nós. É **assumir que nós também temos responsabilidade nessa construção.**
 
-A gente — pessoas com deficiência — aprendeu a cobrar. E com razão! A sociedade como um todo ainda é excludente, omissa e bastante habilidosa em praticar capacitismo coletivo como se fosse esporte olímpico.
+Afinal, se eu exijo que um site seja acessível ao meu leitor de telas, eu também devo me importar se ele tem legendas ou intérprete de Libras para outras pessoas com deficiência. Não basta cobrar acessibilidade vinda de fora — **ela também precisa vir de dentro pra dentro.**
 
-Mas, enquanto a sociedade sem deficiência opera em bloco para oprimir, muitas vezes nós, como comunidade PcD, não conseguimos nos unir para acolher, escutar e garantir acessibilidade umas às outras.
-
-Estamos acostumadas a pensar para fora da bolha:
+Estamos acostumadas a pensar para fora da bolha (sociedade em geral):
 
 - "A prefeitura precisa fazer isso."
 - "A empresa precisa adaptar aquilo."
 - "A escola precisa se preparar."
 
-Mas e quando a pessoa com deficiência do lado precisa de algo diferente de você? E quando a deficiência dela demanda um outro tipo de acessibilidade que você nunca precisou pensar?
+Mas... **e quando é uma pessoa com deficiência do nosso lado que precisa de algo diferente?**
 
-A verdade é que a gente não é ensinada a olhar de PcD para PcD. A gente é ensinada a cobrar acessibilidade do “mundo lá fora”, mas raramente a gente para pra pensar que nós também somos parte da sociedade da qual cobramos mudanças.
+Será que acolhemos? Será que adaptamos nossas ações, criações, eventos e espaços?
 
-E mais: pra outras PcDs, nós somos o mundo lá fora.
+A verdade é que, para outras pessoas com deficiência, **nós também somos o mundo lá fora**. E isso exige uma revisão contínua dos nossos comportamentos.
 
-Se no meu trabalho como pessoa desenvolvedora, eu encontro outra pessoa com deficiência que precisa de acessibilidade — eu não posso cruzar os braços e esperar o time de pessoas resolver, ou dizer “ah, mas eu já luto pelas minhas demandas, não tenho como pensar nas dos outros”.
+Construir um mundo acessível **não é só lutar por mim. É lutar com você, por você, com todas as pessoas com deficiência.**
 
-A gente precisa estar disposta a fazer por outras pessoas com deficiência aquilo que exigimos que façam por nós.
+A acessibilidade **não é uma competição**. Ela não deve ser pensada como uma moeda escassa ou um privilégio disputado. Ela é um **direito fundamental**. E um direito só é pleno quando é estendido a todas as pessoas, independentemente de sua condição, grau de dependência ou tipo de deficiência.
 
-Se eu exijo que um site tenha texto alternativo e estrutura acessível, mas ignoro que minha colega surda precisa de intérprete de Libras, então tem algo errado. Se eu luto por um aplicativo que funcione com leitor de telas, mas desconsidero quem usa comunicação alternativa, falta coerência.
+Se queremos um mundo mais justo, acessível e inclusivo, **precisamos fazer por outras pessoas com deficiência aquilo que exigimos que façam por nós.**
 
-Sim, o capacitismo estrutural vem da sociedade em geral. Sim, precisamos continuar cobrando o Estado, as empresas, as instituições, mas se a gente quiser mesmo construir um mundo acessível, ele não pode ser feito só pra gente — tem que ser feito também com a gente, entre a gente, e por a gente para todas as pessoas com deficiência.
+Sim, o capacitismo estrutural é uma força enorme que vem da sociedade em geral. Mas a nossa resposta a ele **precisa ser unida, coerente e empática**. A verdadeira inclusão não nasce da competição por atenção, e sim da escuta e do compromisso mútuo.
 
-Não se trata de se responsabilizar pelo todo, mas de reconhecer que a luta é coletiva e que acessibilidade é uma via de mão dupla.  Que não basta a acessibilidade vir de fora pra dentro — ela também precisa vir de dentro pra dentro.
+Porque a acessibilidade que transforma o mundo **é aquela construída com muitas vivências e corpos diversos.**
 
-Ser pessoa com deficiência não nos isenta de revisar nossos próprios comportamentos, muito pelo contrário: nos convida a sermos mais empáticas, mais atentas e mais dispostas a escutar outras vivências diferentes da nossa. A acessibilidade não é só um recurso, ela é uma prática humana que deve ser constante, por isso a gente precisa exercê-la entre nós, com nós e por nós.
+E isso, para mim, é o verdadeiro significado de **comunidade** — um espaço onde cada necessidade é respeitada, e onde a luta por direitos é coletiva, não individual. Esse é o sentido de estar junto e lutar por um mundo mais acessível para todas as pessoas.
 
 ### **Para concluir**
 
