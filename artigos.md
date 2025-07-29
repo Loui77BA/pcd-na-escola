@@ -38,7 +38,8 @@ description: "Artigos sobre educação, tecnologia e acessibilidade no PCD na Es
       <h2 class="h3 pb-2 text-light" style="border-bottom: 2px solid #ffc107; text-shadow: 0 2px 5px rgba(0,0,0,0.3);">{{ category[0] | capitalize }}</h2>
 
       <div class="article-list row g-4 mt-3">
-      {% for post in category[1] %}
+      {% assign sorted_posts = category[1] | sort: 'date' %}
+      {% for post in sorted_posts %}
         <article class="col-md-6 col-lg-4">
           <div class="card h-100 bg-dark text-light border-0 shadow hover-card" style="border-radius: 15px; background: linear-gradient(135deg, #242729, #101214);">
             <div class="card-body p-4">
