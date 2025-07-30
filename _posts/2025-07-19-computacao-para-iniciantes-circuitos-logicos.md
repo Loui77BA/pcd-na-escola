@@ -95,11 +95,8 @@ sumario: |
 
 <p>Este artigo aborda os circuitos lógicos, as portas lógicas e suas aplicações. Eles são fundamentais na computação, pois são usados para processar informações e tomar decisões.</p>
 
-{% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSkSjtjDN8ES4cJ8NDgWIJdAdyvXWSo8ouQZl8HyWyDq1w"
-    alt="Uma rede de circuitos lógicos digitais interconectados com portas AND, OR, XOR e NOR, ilustrando o fluxo de dados."
-    caption="Circuitos lógicos digitais com portas AND, OR, XOR e NOR interconectadas."
-%}
+<img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSkSjtjDN8ES4cJ8NDgWIJdAdyvXWSo8ouQZl8HyWyDq1w" alt="Uma rede de circuitos lógicos digitais interconectados com portas AND, OR, XOR e NOR, ilustrando o fluxo de dados." />
+<p>Circuitos lógicos digitais com portas AND, OR, XOR e NOR interconectadas.</p>
 
 <h2 id="apresentacao">Apresentação</h2>
 <hr>
@@ -393,9 +390,7 @@ sumario: |
 {% include expressao-logica.html 
    expr_simbolo="A E (B OU C)" 
    descricao="A e, abre parênteses, B ou C, fecha parênteses." %}
-
-<p>Ela pode parecer complicada no começo, mas vamos por partes:</p>
-
+<p><strong>A E (B OU C)</strong>: A e, abre parênteses, B ou C, fecha parênteses.</p>
 <h3>Como interpretar a expressão?</h3>
 <p>Pense nessa expressão como duas etapas:</p>
 <ol>
