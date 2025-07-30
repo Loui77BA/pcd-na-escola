@@ -242,12 +242,12 @@ sumario: |
 <p>Isso mostra a diferença fundamental entre os sistemas: enquanto no decimal cada posição é uma potência de 
   <span class="math-formula" aria-label="10 elevado a n" data-math-text="10^n">
     <em>10<sup>n</sup></em>
-    <span class="visually-hidden">10 elevado à potência n</span>
+    <span class="visually-hidden">(10 elevado a n)</span>
   </span>, 
   no sistema binário é potência de 
   <span class="math-formula" aria-label="2 elevado a n" data-math-text="2^n">
     <em>2<sup>n</sup></em>
-    <span class="visually-hidden">2 elevado à potência n</span>
+    <span class="visually-hidden">(2 elevado a n)</span>
   </span>.
 </p>
 
