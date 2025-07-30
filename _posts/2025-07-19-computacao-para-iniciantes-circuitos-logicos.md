@@ -106,7 +106,7 @@ sumario: |
 
 <p>Depois de entender como funcionam os transistores, podemos dar mais um passo e falar sobre os circuitos lógicos. Eles são os blocos fundamentais do processamento de dados em computadores e outros aparelhos eletrônicos.</p>
 
-<p>Os circuitos lógicos nada mais são do que grupos de transistores trabalhando juntos para realizar operações lógicas, como somar, subtrair, comparar valores e tomar decisões. Em outras palavras, eles (circuitos lógicos) são responsáveis por processar informações e executar tarefas dentro de um dispositivo eletrônico.</p>
+<p>Os circuitos lógicos nada mais são do que grupos de transistores trabalhando juntos para realizar operações como somar, comparar valores e tomar decisões — por meio da combinação de portas lógicas simples em circuitos mais complexos, como somadores e comparadores. Em outras palavras, eles (circuitos lógicos) são responsáveis por processar informações e executar tarefas dentro de um dispositivo eletrônico.</p>
 
 {% include figure.html 
     src="https://1drv.ms/i/c/bf6f4302973a9faf/IQR_zGjqSRdIQqofjsf1RXEhAeKaGO11-fF5UtflZa7gKvY"
@@ -132,8 +132,8 @@ sumario: |
 <p>A lógica booleana trabalha com apenas dois valores possíveis:</p>
 
 <ul>
-    <li><strong>✅ Verdadeiro (1)</strong>: representa uma afirmação que é verdadeira.</li>
-    <li><strong>❌ Falso (0)</strong>: representa uma afirmação que é falsa.</li>
+    <li><strong>Verdadeiro (1)</strong>: representa uma afirmação que é verdadeira.</li>
+    <li><strong>Falso (0)</strong>: representa uma afirmação que é falsa.</li>
 </ul>
 
 {% include figure.html 
@@ -282,11 +282,11 @@ sumario: |
 
 <p>Aqui (na operação OU Exclusivo - XOR) o resultado só é verdadeiro se apenas uma das condições for verdadeira. Se as duas (condições) forem verdadeiras (ou as duas falsas), o resultado é falso.</p>
 
-<p>Exemplo: Você está com frio e vai vestir roupas quentes e bem grossas, ou você está com calor e vai vestir roupas leves e frescas.</p>
+<p>Exemplo: Você tem duas opções de roupas sobre a cama, uma roupa quente e uma roupa leve. Você só pode vestir uma delas. Se qualquer uma delas for escolhida, a situação está correta (XOR = verdadeiro). Mas você não pode escolher as duas ao mesmo tempo, ou não escolher nenhuma delas. Se isso acontecer, a situação está incorreta (XOR = falso).</p>
 
 <div class="table-responsive">
-    <table class="table table-bordered table-dark" role="table" aria-label="Tabela de exemplo da operação lógica OU Exclusivo (XOR) com roupas para frio ou calor">
-        <caption class="text-white">Tabela para a operação lógica OU Exclusivo (XOR) com roupas para frio ou calor</caption>
+    <table class="table table-bordered table-dark" role="table" aria-label="Tabela de exemplo da operação lógica OU Exclusivo (XOR) com roupas">
+        <caption class="text-white">Tabela para a operação lógica OU Exclusivo (XOR) com roupas</caption>
         <thead>
             <tr>
                 <th scope="col">Roupas quentes</th>
@@ -327,22 +327,22 @@ sumario: |
     caption="Símbolo da porta lógica OU Exclusivo (XOR) e sua tabela de possibilidades de saída."
 %}
 
-<p>Como você pode observar, a saída é verdadeira (1) quando apenas uma das condições é verdadeira (1). Se as duas condições forem verdadeiras (1) ou as duas forem falsas (0), a saída será falsa (0). Assim como no exemplo das roupas, onde você só veste roupas quentes para o frio ou leves para o calor, mas não as duas ao mesmo tempo.</p>
+<p>Como você pode observar, a saída é verdadeira (1) quando apenas uma das condições é verdadeira (1). Se as duas condições forem verdadeiras (1) ou as duas forem falsas (0), a saída será falsa (0). Assim como no exemplo das roupas, onde você só veste roupas quentes ou leves, mas não as duas ao mesmo tempo.</p>
 
 <h2 id="operacao-nao-not"><strong>Operação NÃO (NOT)</strong></h2>
 <hr>
 
 <p>Essa operação inverte o valor de uma condição. Se era verdadeiro, vira falso; se era falso, vira verdadeiro.</p>
 
-<p>Exemplo: Se você tem dinheiro e decide gastar tudo então você não tem mais dinheiro.</p>
+<p>Exemplo: Se a luz está acesa, a operação NÃO (NOT) fará com que consideremos que a luz está apagada.</p>
 
 <div class="table-responsive">
-    <table class="table table-bordered table-dark" role="table" aria-label="Tabela de exemplo da operação lógica NÃO (NOT) com dinheiro">
-        <caption class="text-white">Tabela para a operação lógica NÃO (NOT) com dinheiro</caption>
+    <table class="table table-bordered table-dark" role="table" aria-label="Tabela de exemplo da operação lógica NÃO (NOT) a luz">
+        <caption class="text-white">Tabela para a operação lógica NÃO (NOT) com luz</caption>
         <thead>
             <tr>
-                <th scope="col">Tem dinheiro</th>
-                <th scope="col">Resultado da operação NÃO (NOT) para não ter dinheiro</th>
+                <th scope="col">Luz acesa</th>
+                <th scope="col">Resultado da operação NÃO (NOT) para luz apagada</th>
             </tr>
         </thead>
         <tbody>
@@ -366,7 +366,7 @@ sumario: |
     caption="Símbolo da porta lógica NÃO (NOT) e sua tabela de possibilidades de saída."
 %}
 
-<p>Como você pode observar, a saída é o inverso (o contrário) da entrada. Se a entrada é verdadeira (1), a saída será falsa (0). Se a entrada é falsa (0), a saída será verdadeira (1). Assim como no exemplo do dinheiro, onde se você tem dinheiro e decide gastar tudo, então você não tem mais dinheiro.</p>
+<p>Como você pode observar, a saída é o inverso (o contrário) da entrada. Se a entrada é verdadeira (1), a saída será falsa (0). Se a entrada é falsa (0), a saída será verdadeira (1). Assim como no exemplo da luz, onde a operação NÃO (NOT) inverte o estado da luz (se a luz está acesa, a operação a considera apagada e vice-versa).</p>
 
 <h2 id="tabela-verdade">Tabela Verdade</h2>
 <hr>
@@ -390,7 +390,9 @@ sumario: |
 
 <p>Agora vamos entender uma situação onde esses três interruptores se combinam de uma forma especial. A expressão que usaremos é:</p>
 
-<p><span aria-label="A E abre parênteses B OU C fecha parênteses"><strong>A E (B OU C)</strong></span></p>
+{% include expressao-logica.html 
+   expr_simbolo="A E (B OU C)" 
+   descricao="A e abre parênteses B ou C fecha parênteses" %}
 
 <p>Ela pode parecer complicada no começo, mas vamos por partes:</p>
 
@@ -536,6 +538,24 @@ sumario: |
 
 <p>Se A estiver desligado, o resultado será sempre falso, não importa o estado de B ou C. Neste caso, isso acontece porque precisamos fazer uma operação E (AND) entre A e o resultado de (B OU C), como se trata de uma operação E (AND) já sabemos que o resultado final será falso sempre que uma das entradas for falsa.</p>
 
+<h3>Atenção a precedência (ordem de execução) para resolver as operações lógicas)</h3>
+<hr>
+
+<p><strong>Observação:</strong> Assim como acontece nas operações matemáticas, as operações lógicas também seguem uma ordem de execução chamada de <strong>precedência</strong> (ordem de execução das etapas para resolver as operações lógicas). Isso significa que, ao interpretar uma expressão lógica, é preciso resolver primeiro as operações que têm maior prioridade, a menos que existam parênteses indicando outra ordem (se tiver parênteses as operações dentro deles devem ser resolvidas primeiro assim como acontece na matemática).</p>
+
+<p>Por exemplo, na expressão <code>A E (B OU C)</code>, a operação dentro dos parênteses (<code>B OU C</code>) deve ser resolvida primeiro, e em seguida, o resultado é combinado com A usando a operação E (AND).</p>
+
+<p>A ordem de precedência (da mais alta para a mais baixa) das principais operações lógicas é:</p>
+
+<ul>
+    <li><strong>NOT</strong> (NÃO) – inverte o valor lógico. É a operação com maior prioridade.</li>
+    <li><strong>AND</strong> (E) – retorna verdadeiro se ambas as condições forem verdadeiras.</li>
+    <li><strong>OR</strong> (OU) – retorna verdadeiro se pelo menos uma das condições for verdadeira.</li>
+    <li><strong>XOR</strong> (OU Exclusivo) – retorna verdadeiro se exatamente uma das condições for verdadeira (valores diferentes).</li>
+</ul>
+
+<p><strong>Dica:</strong> Para evitar erros de interpretação, use parênteses sempre que possível para deixar claro qual parte da expressão deve ser resolvida primeiro.</p>
+
 <h2 id="exemplo-tabela-verdade-combinando-ou-or-e-xor">Exemplo de tabela-verdade combinando OU (OR) e OU Exclusivo (XOR)</h2>
 <hr>
 
@@ -611,21 +631,22 @@ sumario: |
         <strong>Possibilidade 4:</strong><br>
         A = ligado, B = desligado, C = ligado<br>
         então A OU B = verdadeiro (porque A está ligado)<br>
-        então (A OU B) XOR C = verdadeiro (porque C está ligado)
+        então (A OU B) XOR C = <strong>falso</strong> (porque os dois são verdadeiros)
     </li>
     <li>
         <strong>Possibilidade 5:</strong><br>
         A = desligado, B = ligado, C = ligado<br>
         então A OU B = verdadeiro (porque B está ligado)<br>
-        então (A OU B) XOR C = verdadeiro (porque C está ligado)
+        então (A OU B) XOR C = <strong>falso</strong> (porque os dois são verdadeiros)
     </li>
 </ul>
 
-<p>Com esses exemplos, já dá para perceber um padrão: o resultado final será verdadeiro se:</p>
+<p>Com esses exemplos, podemos perceber o padrão correto:</p>
 
 <ul>
-    <li>O resultado de A OU B for verdadeiro e C for desligado.</li>
-    <li>O resultado de A OU B for falso e C for ligado.</li>
+    <li>O resultado será <strong>verdadeiro</strong> quando o resultado de A OU B for <strong>verdadeiro</strong> e C estiver <strong>desligado</strong>.</li>
+    <li>O resultado será <strong>verdadeiro</strong> quando o resultado de A OU B for <strong>falso</strong> e C estiver <strong>ligado</strong>.</li>
+    <li>Nos demais casos — ou seja, quando os dois forem iguais — o resultado será <strong>falso</strong>.</li>
 </ul>
 
 <h3>Tabela verdade completa de (A OU B) XOR C</h3>
