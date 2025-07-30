@@ -239,15 +239,7 @@ sumario: |
     </table>
 </div>
 
-<p>Isso mostra a diferença fundamental entre os sistemas: enquanto no decimal cada posição é uma potência de 
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-    <msup><mn>10</mn><mi>n</mi></msup>
-  </math>,
-  no sistema binário é potência de
-  <math xmlns="http://www.w3.org/1998/Math/MathML">
-    <msup><mn>2</mn><mi>n</mi></msup>
-  </math>.
-</p>
+<p>Isso mostra a diferença fundamental entre os sistemas: enquanto no decimal cada posição é uma potência de <span role="math" aria-label="10 elevado a n"><em>10<sup>n</sup></em></span>, no sistema binário é potência de <span role="math" aria-label="2 elevado a n"><em>2<sup>n</sup></em></span>.</p>
 
 <h2 id="transformar-decimal-binario">Como transformar um número decimal em binário?</h2>
 <hr>
