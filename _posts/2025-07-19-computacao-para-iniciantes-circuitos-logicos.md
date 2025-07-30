@@ -95,8 +95,10 @@ sumario: |
 
 <p>Este artigo aborda os circuitos lógicos, as portas lógicas e suas aplicações. Eles são fundamentais na computação, pois são usados para processar informações e tomar decisões.</p>
 
-<img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSkSjtjDN8ES4cJ8NDgWIJdAdyvXWSo8ouQZl8HyWyDq1w" alt="Uma rede de circuitos lógicos digitais interconectados com portas AND, OR, XOR e NOR, ilustrando o fluxo de dados." />
-<p>Circuitos lógicos digitais com portas AND, OR, XOR e NOR interconectadas.</p>
+{% include figure.html 
+    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSkSjtjDN8ES4cJ8NDgWIJdAdyvXWSo8ouQZl8HyWyDq1w"
+    alt="Uma rede de circuitos lógicos digitais interconectados com portas AND, OR, XOR e NOR, ilustrando o fluxo de dados."
+%}
 
 <h2 id="apresentacao">Apresentação</h2>
 <hr>
@@ -539,7 +541,7 @@ sumario: |
 
 <p>Se A estiver desligado, o resultado será sempre falso, não importa o estado de B ou C. Neste caso, isso acontece porque precisamos fazer uma operação E (AND) entre A e o resultado de (B OU C), como se trata de uma operação E (AND) já sabemos que o resultado final será falso sempre que uma das entradas for falsa.</p>
 
-<h3>Atenção a precedência (ordem de execução) para resolver as operações lógicas)</h3>
+<h3>Atenção a precedência (ordem de execução) para resolver as operações lógicas</h3>
 <hr>
 
 <p><strong>Observação:</strong> Assim como acontece nas operações matemáticas, as operações lógicas também seguem uma ordem de execução chamada de <strong>precedência</strong> (ordem de execução das etapas para resolver as operações lógicas). Isso significa que, ao interpretar uma expressão lógica, é preciso resolver primeiro as operações que têm maior prioridade, a menos que existam parênteses indicando outra ordem (se tiver parênteses as operações dentro deles devem ser resolvidas primeiro assim como acontece na matemática).</p>

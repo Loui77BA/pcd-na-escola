@@ -239,7 +239,15 @@ sumario: |
     </table>
 </div>
 
-<p>Isso mostra a diferença fundamental entre os sistemas: enquanto no decimal cada posição é uma potência de 10 (<span aria-label="10 elevado a algum outro número">10<sup>n</sup></span>), no binário cada posição é uma potência de 2 (<span aria-label="2 elevado a algum outro número">2<sup>n</sup></span>).</p>
+<p>Isso mostra a diferença fundamental entre os sistemas: enquanto no decimal cada posição é uma potência de 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+    <msup><mn>10</mn><mi>n</mi></msup>
+  </math>,
+  no sistema binário é potência de
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <msup><mn>2</mn><mi>n</mi></msup>
+  </math>.
+</p>
 
 <h2 id="transformar-decimal-binario">Como transformar um número decimal em binário?</h2>
 <hr>
@@ -260,19 +268,29 @@ sumario: |
          Elas sempre dobram. Anote essa sequência:
         <ul>
             <li>
-                <span aria-label="2 elevado a 0">2<sup>0</sup></span> = 1
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msup><mn>2</mn><mn>0</mn></msup>
+                </math> = 1
             </li>
             <li>
-                <span aria-label="2 elevado a 1">2<sup>1</sup></span> = 2
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msup><mn>2</mn><mn>1</mn></msup>
+                </math> = 2
             </li>
             <li>
-                <span aria-label="2 elevado a 2">2<sup>2</sup></span> = 4
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msup><mn>2</mn><mn>2</mn></msup>
+                </math> = 4
             </li>
             <li>
-                <span aria-label="2 elevado a 3">2<sup>3</sup></span> = 8
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msup><mn>2</mn><mn>3</mn></msup>
+                </math> = 8
             </li>
             <li>
-                <span aria-label="2 elevado a 4">2<sup>4</sup></span> = 16
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msup><mn>2</mn><mn>4</mn></msup>
+                </math> = 16
             </li>
         </ul>
         <p>
@@ -286,7 +304,7 @@ sumario: |
     </li>
     <li>
         <p>
-            Faça a conta de menos desse valor: <br /> <span aria-label="13 menos 8">13 - 8</span> = 5.
+            Faça a conta de menos desse valor: <br /> <span aria-label="13 menos 8">13 &minus; 8</span> = 5.
         </p>
     </li>
     <li>
@@ -295,7 +313,9 @@ sumario: |
         </p>
         <ul>
             <li>
-                <span aria-label="2 elevado a 3">2<sup>3</sup></span> = 8 &rarr; <strong>1</strong>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msup><mn>2</mn><mn>3</mn></msup>
+                </math> = 8 &rarr; <strong>1</strong>
             </li>
         </ul>
     </li>
@@ -306,7 +326,7 @@ sumario: |
     </li>
     <li>
         <p>
-            Faça a conta de menos: <br /> <span aria-label="5 menos 4">5 - 4</span> = 1.
+            Faça a conta de menos: <br /> <span aria-label="5 menos 4">5 &minus; 4</span> = 1.
         </p>
     </li>
     <li>
@@ -315,7 +335,9 @@ sumario: |
         </p>
         <ul>
             <li>
-                <span aria-label="2 elevado a 2">2<sup>2</sup></span> = 4 &rarr; <strong>1</strong>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msup><mn>2</mn><mn>2</mn></msup>
+                </math> = 4 &rarr; <strong>1</strong>
             </li>
         </ul>
     </li>
@@ -325,13 +347,15 @@ sumario: |
         </p>
         <ul>
             <li>
-                <span aria-label="2 elevado a 1">2<sup>1</sup></span> = 2 &rarr; <strong>0</strong>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msup><mn>2</mn><mn>1</mn></msup>
+                </math> = 2 &rarr; <strong>0</strong>
             </li>
         </ul>
     </li>
     <li>
         <p>
-            O próximo valor é 1. O número 1 é menor ou igual a 1? Sim, então fazemos a conta de menos: <br /> <span aria-label="1 menos 1">1 - 1</span> = 0.
+            O próximo valor é 1. O número 1 é menor ou igual a 1? Sim, então fazemos a conta de menos: <br /> <span aria-label="1 menos 1">1 &minus; 1</span> = 0.
         </p>
     </li>
     <li>
@@ -340,7 +364,9 @@ sumario: |
        </p>
         <ul>
             <li>
-                <span aria-label="2 elevado a 0">2<sup>0</sup></span> = 1 &rarr; <strong>1</strong>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msup><mn>2</mn><mn>0</mn></msup>
+                </math> = 1 &rarr; <strong>1</strong>
             </li>
         </ul>
     </li>
