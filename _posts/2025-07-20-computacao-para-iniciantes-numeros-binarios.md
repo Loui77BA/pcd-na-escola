@@ -400,57 +400,91 @@ sumario: |
         Primeiro, pense nas potências de 2 — são os valores que cada "casinha" que o número binário pode ter.
         Elas sempre dobram. Anote essa sequência:
         <ul>
-            <li><span aria-label="2 elevado a 0">2<sup>0</sup></span> = 1</li>
-            <li><span aria-label="2 elevado a 1">2<sup>1</sup></span> = 2</li>
-            <li><span aria-label="2 elevado a 2">2<sup>2</sup></span> = 4</li>
-            <li><span aria-label="2 elevado a 3">2<sup>3</sup></span> = 8</li>
-            <li><span aria-label="2 elevado a 4">2<sup>4</sup></span> = 16</li>
-            <li><span aria-label="2 elevado a 5">2<sup>5</sup></span> = 32</li>
+            <li>
+
+                <span class="math-formula" aria-hidden="true" data-math-text="2^0"><em>2<sup>0</sup></em></span>
+                <span class="visually-hidden">2 elevado à 0</span> = 1
+            </li>
+            <li>
+                <span class="math-formula" aria-hidden="true" data-math-text="2^1"><em>2<sup>1</sup></em></span>
+                <span class="visually-hidden">2 elevado à 1</span> = 2
+            </li>
+            <li>
+                <span class="math-formula" aria-hidden="true" data-math-text="2^2"><em>2<sup>2</sup></em></span>
+                <span class="visually-hidden">2 elevado à 2</span> = 4
+            </li>
+            <li>
+                <span class="math-formula" aria-hidden="true" data-math-text="2^3"><em>2<sup>3</sup></em></span>
+                <span class="visually-hidden">2 elevado à 3</span> = 8
+            </li>
+            <li>
+                <span class="math-formula" aria-hidden="true" data-math-text="2^4"><em>2<sup>4</sup></em></span>
+                <span class="visually-hidden">2 elevado à 4</span> = 16
+            </li>
+            <li>
+                <span class="math-formula" aria-hidden="true" data-math-text="2^5"><em>2<sup>5</sup></em></span>
+                <span class="visually-hidden">2 elevado à 5</span> = 32
+            </li>
         </ul>
     </li>
     <li>
         Qual é o maior número da lista que ainda é menor ou igual a 25? É o 16.
     </li>
     <li>
-        Faça a conta de menos: <br /> <span aria-label="25 menos 16">25 - 16</span> = 9.
+        Faça a conta de menos: <br /> <span aria-label="25 &minus; 16">25 - 16</span> = 9.
     </li>
     <li>
         Vamos usar a casinha do 16, então escrevemos 1 do lado do 16.
         <ul>
-            <li><span aria-label="2 elevado a 4">2<sup>4</sup></span> = 16 &rarr; <strong>1</strong></li>
+            <li>
+                <span class="math-formula" aria-hidden="true" data-math-text="2^4"><em>2<sup>4</sup></em></span>
+                <span class="visually-hidden">2 elevado à 4</span> = 16 &rarr; <strong>1</strong>
+            </li>
         </ul>
     </li>
     <li>
         Agora vamos repetir o processo com o número 9: qual é o maior número da lista que ainda é menor ou igual a 9? É o número 8.
     </li>
     <li>
-        Faça a conta de menos: <br /> <span aria-label="9 menos 8">9 - 8</span> = 1.
+        Faça a conta de menos: <br /> <span aria-label="9 menos 8">9 &minus; 8</span> = 1.
     </li>
     <li>
         Vamos usar a casinha do 8, então escrevemos 1 do lado do 8.
         <ul>
-            <li><span aria-label="2 elevado a 3">2<sup>3</sup></span> = 8 &rarr; <strong>1</strong></li>
+            <li>
+                <span class="math-formula" aria-hidden="true" data-math-text="2^3"><em>2<sup>3</sup></em></span>
+                <span class="visually-hidden">2 elevado à 3</span> = 8 &rarr; <strong>1</strong>
+            </li>
         </ul>
     </li>
     <li>
         O próximo valor é 4. O número 4 é menor ou igual a 1? Não, então escrevemos 0 do lado do 4 (0 significa que não usamos esse valor).
         <ul>
-            <li><span aria-label="2 elevado a 2">2<sup>2</sup></span> = 4 &rarr; <strong>0</strong></li>
+            <li>
+                <span class="math-formula" aria-hidden="true" data-math-text="2^2"><em>2<sup>2</sup></em></span>
+                <span class="visually-hidden">2 elevado à 2</span> = 4 &rarr; <strong>0</strong>
+            </li>
         </ul>
     </li>
     <li>
         O próximo valor é 2. O número 2 é menor ou igual a 1? Não, então escrevemos 0 do lado do 2 (0 significa que não usamos esse valor).
         <ul>
-            <li><span aria-label="2 elevado a 1">2<sup>1</sup></span> = 2 &rarr; <strong>0</strong></li>
+            <li>
+                <span class="math-formula" aria-hidden="true" data-math-text="2^1"><em>2<sup>1</sup></em></span>
+                <span class="visually-hidden">2 elevado à 1</span> = 2 &rarr; <strong>0</strong>
+            </li>
         </ul>
     </li>
     <li>
-        O próximo valor é 1. O número 1 é menor ou igual a 1? Sim, então fazemos a conta de menos: <br /> <span aria-label="1 menos 1">1 - 1</span> = 0.
+        O próximo valor é 1. O número 1 é menor ou igual a 1? Sim, então fazemos a conta de menos: <br /> <span aria-label="1 menos 1">1 &minus; 1</span> = 0.
     </li>
     <li>
         Vamos usar a casinha do 1, então escrevemos 1 do lado do 1.
         <ul>
-            <li><span aria-label="2 elevado a 0">2<sup>0</sup></span> = 1 &rarr; <strong>1</strong></li>
+            <li>
+                <span class="math-formula" aria-hidden="true" data-math-text="2^0"><em>2<sup>0</sup></em></span>
+                <span class="visually-hidden">2 elevado à 0</span> = 1 &rarr; <strong>1</strong>
+            </li>
         </ul>
     </li>
     <li>
