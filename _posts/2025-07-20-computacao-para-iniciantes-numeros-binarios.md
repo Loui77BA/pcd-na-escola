@@ -244,12 +244,12 @@ sumario: |
     <span class="math-formula" aria-hidden="true" data-math-text="10^n">
         <em>10<sup>n</sup></em>
     </span>
-    <span role="math" class="visually-hidden">10 elevado à n</span>,
+    <span class="visually-hidden">10 elevado à n</span>,
     no sistema binário é potência de
     <span class="math-formula" aria-hidden="true" data-math-text="2^n">
         <em>2<sup>n</sup></em>
     </span>
-    <span role="math" class="visually-hidden">2 elevado à n</span>.
+    <span class="visually-hidden">2 elevado à n</span>.
 </p>
 
 <h2 id="transformar-decimal-binario">Como transformar um número decimal em binário?</h2>
