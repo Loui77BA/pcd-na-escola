@@ -392,7 +392,7 @@ sumario: |
 
 {% include expressao-logica.html 
    expr_simbolo="A E (B OU C)" 
-   descricao="A e abre parênteses B ou C fecha parênteses" %}
+   descricao="A e, abre parênteses, B ou C, fecha parênteses." %}
 
 <p>Ela pode parecer complicada no começo, mas vamos por partes:</p>
 
@@ -425,31 +425,47 @@ sumario: |
     <li>
         <strong>Possibilidade 1:</strong><br>
         A = ligado, B = ligado, C = desligado<br>
-        então B OU C = verdadeiro (porque B está ligado)<br>
-        então A E (B OU C) = verdadeiro (porque A também está ligado)
+        então <br>
+        B OU C = verdadeiro (porque B está ligado)<br>
+        então <br>
+        {% include expressao-logica.html 
+           expr_simbolo="A E (B OU C)" 
+           descricao="A e, abre parênteses, B ou C, fecha parênteses." %} = verdadeiro (porque A também está ligado)
     </li>
     <li>
         <strong>Possibilidade 2:</strong><br>
         A = ligado, B = desligado, C = desligado<br>
-        então B OU C = falso (os dois estão desligados)<br>
-        então A E (B OU C) = falso (porque A está ligado, mas B OU C é falso está desligado)
+        então <br>
+        B OU C = falso (os dois estão desligados)<br>
+        então <br>
+        {% include expressao-logica.html 
+           expr_simbolo="A E (B OU C)" 
+           descricao="A e, abre parênteses, B ou C, fecha parênteses." %} = falso (porque A está ligado, mas B OU C é falso está desligado)
     </li>
     <li>
         <strong>Possibilidade 3:</strong><br>
         A = desligado, B = ligado, C = ligado<br>
-        então B OU C = verdadeiro (porque tanto B quanto C estão ligados)<br>
-        então A E (B OU C) = falso (porque A está desligado)
+        então <br>
+        B OU C = verdadeiro (porque tanto B quanto C estão ligados)<br>
+        então <br>
+        {% include expressao-logica.html 
+           expr_simbolo="A E (B OU C)" 
+           descricao="A e, abre parênteses, B ou C, fecha parênteses." %} = falso (porque A está desligado)
     </li>
     <li><strong>Possibilidade 4:</strong><br>
         A = desligado, B = desligado, C = desligado<br>
-        então B OU C = falso (os dois estão desligados)<br>
-        então A E (B OU C) = falso (porque A está desligado também)
+        então <br>
+        B OU C = falso (os dois estão desligados)<br>
+        então <br>
+        {% include expressao-logica.html 
+           expr_simbolo="A E (B OU C)" 
+           descricao="A e, abre parênteses, B ou C, fecha parênteses." %} = falso (porque A está desligado também)
     </li>
 </ul>
 
 <p>Com esses exemplos, já dá para perceber um padrão: para que o resultado final seja verdadeiro, <strong>A precisa estar ligado</strong> e <strong>pelo menos B ou C também precisam estar ligados</strong>.</p>
 
-<h3>Tabela verdade completa de A E (B OU C)</h3>
+<h3>Tabela verdade completa de {% include expressao-logica.html expr_simbolo="A E (B OU C)" descricao="A e, abre parênteses, B ou C, fecha parênteses." %}</h3>
 <hr>
 
 <p>Agora que compreendemos a lógica passo a passo, vamos montar a tabela com todas as combinações possíveis de A, B e C:</p>
@@ -463,7 +479,7 @@ sumario: |
                 <th scope="col">B está ligado?</th>
                 <th scope="col">C está ligado?</th>
                 <th scope="col">Resultado de B OU C</th>
-                <th scope="col">Resultado final A E (B OU C)</th>
+                <th scope="col">Resultado final de {% include expressao-logica.html expr_simbolo="A E (B OU C)" descricao="A e, abre parênteses, B ou C, fecha parênteses." %}</th>
             </tr>
         </thead>
         <tbody>
@@ -529,7 +545,7 @@ sumario: |
 
 <h3>Recapitulando (revisão)</h3>
 
-<p>Para que o resultado de A E (B OU C) seja verdadeiro:</p>
+<p>Para que o resultado de {% include expressao-logica.html expr_simbolo="A E (B OU C)" descricao="A e, abre parênteses, B ou C, fecha parênteses." %} seja verdadeiro:</p>
 
 <ul>
     <li><strong>A</strong> precisa estar ligado (1);</li>
@@ -543,7 +559,7 @@ sumario: |
 
 <p><strong>Observação:</strong> Assim como acontece nas operações matemáticas, as operações lógicas também seguem uma ordem de execução chamada de <strong>precedência</strong> (ordem de execução das etapas para resolver as operações lógicas). Isso significa que, ao interpretar uma expressão lógica, é preciso resolver primeiro as operações que têm maior prioridade, a menos que existam parênteses indicando outra ordem (se tiver parênteses as operações dentro deles devem ser resolvidas primeiro assim como acontece na matemática).</p>
 
-<p>Por exemplo, na expressão <code>A E (B OU C)</code>, a operação dentro dos parênteses (<code>B OU C</code>) deve ser resolvida primeiro, e em seguida, o resultado é combinado com A usando a operação E (AND).</p>
+<p>Por exemplo, na expressão {% include expressao-logica.html expr_simbolo="A E (B OU C)" descricao="A e, abre parênteses, B ou C, fecha parênteses." %}, a operação dentro dos parênteses (B OU C) deve ser resolvida primeiro, e em seguida, o resultado é combinado com a entrada A usando a operação E (AND).</p>
 
 <p>A ordem de precedência (da mais alta para a mais baixa) das principais operações lógicas é:</p>
 
@@ -556,7 +572,7 @@ sumario: |
 
 <p><strong>Dica:</strong> Para evitar erros de interpretação, use parênteses sempre que possível para deixar claro qual parte da expressão deve ser resolvida primeiro.</p>
 
-<h2 id="exemplo-tabela-verdade-combinando-ou-or-e-xor">Exemplo de tabela-verdade combinando OU (OR) e OU Exclusivo (XOR)</h2>
+<h2 id="exemplo-tabela-verdade-combinando-ou-or-e-xor">Exemplo de tabela-verdade combinando OU (OR) com OU Exclusivo (XOR)</h2>
 <hr>
 
 <p>Vamos imaginar novamente que temos três interruptores: A, B e C. Cada um pode estar em dois estados:</p>
@@ -568,7 +584,11 @@ sumario: |
 
 <p>Desta vez, vamos analisar uma nova expressão lógica envolvendo duas operações:</p>
 
-<p><span aria-label="abre parênteses A OU B fecha parênteses XOR C"><strong>(A OU B) XOR C</strong></span></p>
+<p>
+   {% include expressao-logica.html 
+   expr_simbolo="(A OU B) XOR C" 
+   descricao="Abre parênteses, A ou B, fecha parênteses, XOR C." %}
+</p>
 
 <p>Ou seja: primeiro usamos uma porta OU (OR) entre A e B, e depois usamos o resultado disso com C, em uma porta OU EXCLUSIVO (XOR).</p>
 
@@ -613,31 +633,51 @@ sumario: |
     <li>
         <strong>Possibilidade 1:</strong><br>
         A = ligado, B = ligado, C = desligado<br>
-        então A OU B = verdadeiro (porque A e B estão ligados)<br>
-        então (A OU B) XOR C = verdadeiro (porque C está desligado)
+        então <br>
+        A OU B = verdadeiro (porque A e B estão ligados)<br>
+        então <br>
+        {% include expressao-logica.html 
+   expr_simbolo="(A OU B) XOR C" 
+   descricao="Abre parênteses, A ou B, fecha parênteses, XOR C." %} = verdadeiro (porque C está desligado)
     </li>
     <li><strong>Possibilidade 2:</strong><br>
         A = desligado, B = desligado, C = desligado<br>
-        então A OU B = falso (os dois estão desligados)<br>
-        então (A OU B) XOR C = falso (porque C também está desligado)
+        então <br>
+        A OU B = falso (os dois estão desligados)<br>
+        então <br>
+        {% include expressao-logica.html 
+   expr_simbolo="(A OU B) XOR C" 
+   descricao="Abre parênteses, A ou B, fecha parênteses, XOR C." %} = falso (porque C também está desligado)
     </li>
     <li>
         <strong>Possibilidade 3:</strong><br>
         A = ligado, B = ligado, C = ligado<br>
-        então A OU B = verdadeiro (porque A e B estão ligados)<br>
-        então (A OU B) XOR C = falso (porque C também está ligado)
+        então <br>
+        A OU B = verdadeiro (porque A e B estão ligados)<br>
+        então <br>
+        {% include expressao-logica.html 
+   expr_simbolo="(A OU B) XOR C" 
+   descricao="Abre parênteses, A ou B, fecha parênteses, XOR C." %} = falso (porque C também está ligado)
     </li>
     <li>
         <strong>Possibilidade 4:</strong><br>
         A = ligado, B = desligado, C = ligado<br>
-        então A OU B = verdadeiro (porque A está ligado)<br>
-        então (A OU B) XOR C = <strong>falso</strong> (porque os dois são verdadeiros)
+        então <br>
+        A OU B = verdadeiro (porque A está ligado)<br>
+        então <br>
+        {% include expressao-logica.html 
+   expr_simbolo="(A OU B) XOR C" 
+   descricao="Abre parênteses, A ou B, fecha parênteses, XOR C." %} = falso (porque os dois são verdadeiros)
     </li>
     <li>
         <strong>Possibilidade 5:</strong><br>
         A = desligado, B = ligado, C = ligado<br>
-        então A OU B = verdadeiro (porque B está ligado)<br>
-        então (A OU B) XOR C = <strong>falso</strong> (porque os dois são verdadeiros)
+        então <br>
+        A OU B = verdadeiro (porque B está ligado)<br>
+        então <br>
+        {% include expressao-logica.html 
+   expr_simbolo="(A OU B) XOR C" 
+   descricao="Abre parênteses, A ou B, fecha parênteses, XOR C." %} = falso (porque os dois são verdadeiros)
     </li>
 </ul>
 
@@ -649,21 +689,21 @@ sumario: |
     <li>Nos demais casos — ou seja, quando os dois forem iguais — o resultado será <strong>falso</strong>.</li>
 </ul>
 
-<h3>Tabela verdade completa de (A OU B) XOR C</h3>
+<h3>Tabela verdade completa de {% include expressao-logica.html expr_simbolo="(A OU B) XOR C" descricao="Abre parênteses, A ou B, fecha parênteses, XOR C." %}</h3>
 <hr>
 
 <p>Agora que compreendemos a lógica passo a passo, vamos montar a tabela com todas as combinações possíveis de A, B e C:</p>
 
 <div class="table-responsive">
     <table class="table table-bordered table-dark" role="table" aria-label="Tabela verdade de (A OU B) XOR C">
-        <caption class="text-white">Tabela verdade de (A OU B) XOR C</caption>
+        <caption class="text-white">Tabela verdade de {% include expressao-logica.html expr_simbolo="(A OU B) XOR C" descricao="Abre parênteses, A ou B, fecha parênteses, XOR C." %}</caption>
         <thead>
             <tr>
                 <th scope="col">A está ligado?</th>
                 <th scope="col">B está ligado?</th>
                 <th scope="col">C está ligado?</th>
                 <th scope="col">Resultado de A OU B</th>
-                <th scope="col">Resultado final (A OU B) XOR C</th>
+                <th scope="col">Resultado final de {% include expressao-logica.html expr_simbolo="(A OU B) XOR C" descricao="Abre parênteses, A ou B, fecha parênteses, XOR C." %}</th>
             </tr>
         </thead>
         <tbody>
@@ -728,7 +768,7 @@ sumario: |
 </div>
 
 <h3>Recapitulando (revisão)</h3>
-<p>Vamos revisar os principais pontos que aprendemos sobre a operação (A OU B) XOR C:</p>
+<p>Vamos revisar os principais pontos que aprendemos sobre a operação {% include expressao-logica.html expr_simbolo="(A OU B) XOR C" descricao="Abre parênteses, A ou B, fecha parênteses, XOR C." %}:</p>
 <ul>
     <li>O operador XOR (ou exclusivo) retorna verdadeiro se apenas uma das entradas for verdadeira.</li>
     <li>A operação A OU B é avaliada primeiro, e seu resultado é combinado com C usando o operador XOR.</li>
