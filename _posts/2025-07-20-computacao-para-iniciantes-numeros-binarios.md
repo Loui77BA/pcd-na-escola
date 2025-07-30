@@ -271,29 +271,24 @@ sumario: |
          Elas sempre dobram. Anote essa sequência:
         <ul>
             <li>
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <msup><mn>2</mn><mn>0</mn></msup>
-                </math> = 1
+                <span class="math-formula" aria-hidden="true" data-math-text="2^0"><em>2<sup>0</sup></em></span>
+                <span class="visually-hidden">2 elevado à 0</span> = 1
             </li>
             <li>
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <msup><mn>2</mn><mn>1</mn></msup>
-                </math> = 2
+                <span class="math-formula" aria-hidden="true" data-math-text="2^1"><em>2<sup>1</sup></em></span>
+                <span class="visually-hidden">2 elevado à 1</span> = 2
             </li>
             <li>
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <msup><mn>2</mn><mn>2</mn></msup>
-                </math> = 4
+                <span class="math-formula" aria-hidden="true" data-math-text="2^2"><em>2<sup>2</sup></em></span>
+                <span class="visually-hidden">2 elevado à 2</span> = 4
             </li>
             <li>
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <msup><mn>2</mn><mn>3</mn></msup>
-                </math> = 8
+                <span class="math-formula" aria-hidden="true" data-math-text="2^3"><em>2<sup>3</sup></em></span>
+                <span class="visually-hidden">2 elevado à 3</span> = 8
             </li>
             <li>
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <msup><mn>2</mn><mn>4</mn></msup>
-                </math> = 16
+                <span class="math-formula" aria-hidden="true" data-math-text="2^4"><em>2<sup>4</sup></em></span>
+                <span class="visually-hidden">2 elevado à 4</span> = 16
             </li>
         </ul>
         <p>
@@ -316,9 +311,8 @@ sumario: |
         </p>
         <ul>
             <li>
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <msup><mn>2</mn><mn>3</mn></msup>
-                </math> = 8 &rarr; <strong>1</strong>
+                <span class="math-formula" aria-hidden="true" data-math-text="2^3"><em>2<sup>3</sup></em></span>
+                <span class="visually-hidden">2 elevado à 3</span> = 8 &rarr; <strong>1</strong>
             </li>
         </ul>
     </li>
@@ -338,9 +332,8 @@ sumario: |
         </p>
         <ul>
             <li>
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <msup><mn>2</mn><mn>2</mn></msup>
-                </math> = 4 &rarr; <strong>1</strong>
+                <span class="math-formula" aria-hidden="true" data-math-text="2^2"><em>2<sup>2</sup></em></span>
+                <span class="visually-hidden">2 elevado à 2</span> = 4 &rarr; <strong>1</strong>
             </li>
         </ul>
     </li>
@@ -350,9 +343,8 @@ sumario: |
         </p>
         <ul>
             <li>
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <msup><mn>2</mn><mn>1</mn></msup>
-                </math> = 2 &rarr; <strong>0</strong>
+                <span class="math-formula" aria-hidden="true" data-math-text="2^1"><em>2<sup>1</sup></em></span>
+                <span class="visually-hidden">2 elevado à 1</span> = 2 &rarr; <strong>0</strong>
             </li>
         </ul>
     </li>
@@ -367,9 +359,8 @@ sumario: |
        </p>
         <ul>
             <li>
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <msup><mn>2</mn><mn>0</mn></msup>
-                </math> = 1 &rarr; <strong>1</strong>
+                <span class="math-formula" aria-hidden="true" data-math-text="2^0"><em>2<sup>0</sup></em></span>
+                <span class="visually-hidden">2 elevado à 0</span> = 1 &rarr; <strong>1</strong>
             </li>
         </ul>
     </li>
