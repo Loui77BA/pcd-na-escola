@@ -5,7 +5,7 @@ description: "Entenda o sistema binário, sua importância na computação e com
 date: 2025-07-20 12:00:00 -0300
 author: "Louise Suelen"
 categories: [Computação para Iniciantes]
-tags: [computação, tecnologia, números binários]
+tags: [computação, tecnologia]
 permalink: /computacao-para-iniciantes-numeros-binarios/
 lang: pt-BR
 sumario: |
