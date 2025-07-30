@@ -159,7 +159,7 @@ sumario: |
 
 <p>Essas operações são usadas para construir circuitos lógicos que podem realizar tarefas complexas, como somar números, comparar valores e tomar decisões com base em condições.</p>
 
-<p>Vamos ver como cada uma dessas operações com exemplos.</p>
+<p>Vamos ver como cada uma dessas operações funciona com exemplos.</p>
 
 <h2 id="operacao-e-and"><strong>Operação E (AND)</strong></h2>
 <hr>
