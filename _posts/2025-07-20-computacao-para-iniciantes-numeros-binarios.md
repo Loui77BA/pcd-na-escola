@@ -108,7 +108,7 @@ sumario: |
 
 {% include figure.html 
     src="https://1drv.ms/i/c/bf6f4302973a9faf/IQT-pHJgBGEKS6uXZzFhCEDzAWrfyClaGuTLrU4AvpuAaqI"
-    alt="Uma ilustração colorida que apresenta o SISTEMA DECIMA, mostrando os dígitos de 0 a 9 em diferentes cores dentro de um grande círculo amarelo."
+    alt="Uma ilustração colorida que apresenta o SISTEMA DECIMAL, mostrando os dígitos de 0 a 9 em diferentes cores dentro de um grande círculo amarelo."
     caption="Dígitos do sistema decimal (base 10) de 0 a 9."
 %}
 
@@ -431,7 +431,7 @@ sumario: |
         Qual é o maior número da lista que ainda é menor ou igual a 25? É o 16.
     </li>
     <li>
-        Faça a conta de menos: <br /> <span aria-label="25 &minus; 16">25 - 16</span> = 9.
+        Faça a conta de menos: <br /> <span aria-label="25 &minus; 16">25 &minus; 16</span> = 9.
     </li>
     <li>
         Vamos usar a casinha do 16, então escrevemos 1 do lado do 16.
