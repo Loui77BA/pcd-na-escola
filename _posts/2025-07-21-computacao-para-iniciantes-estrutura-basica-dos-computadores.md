@@ -202,7 +202,7 @@ sumario: |
     alt="Ilustração que mostra as partes principais de um computador e como elas estão ligadas a CPU que é a unidade central de processamento.  No centro, há um círculo laranja com a palavra CPU e uma imagem de um chip de processador. Mais detalhes na descrição completa a seguir."
 %}
 
-<figcaption class="figure-caption">
+<figcaption>
   <p>Na imagem, quatro componentes (componentes são as partes do computador) estão conectados à CPU (Unidade Central de Processamento). São eles: </p>
     <ol>
         <li><strong>Entrada:</strong> Representada por um teclado, localizado no canto superior esquerdo.</li>

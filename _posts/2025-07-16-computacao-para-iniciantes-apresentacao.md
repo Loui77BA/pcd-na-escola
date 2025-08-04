@@ -32,6 +32,13 @@ sumario: |
                 Para quem é essa série?
             </a>
         </li>
+        <li class="list-group-item bg-dark text-white border-0">
+            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+               href="#resumo">
+                <span class="badge bg-secondary">4</span>
+                Resumo
+            </a>
+        </li>
     </ul>
 ---
 
@@ -48,77 +55,56 @@ sumario: |
 
 A tecnologia está sempre mudando e crescendo, como se fosse um universo em constante expansão. Isso abre muitas portas para quem quer aprender mais sobre esse mundo. Diferente de profissões como Direito e Medicina, que costumam seguir um caminho mais direto, a área da tecnologia é bem mais flexível e recebe pessoas com os mais diversos perfis e formações.
 
-Por isso eu decidi criar essa série de posts. A ideia é explicar os conceitos básicos da computação de forma simples, para que qualquer pessoa possa entender e se interessar pelo assunto. Não importa se você nunca programou ou se já tem alguma experiência, aqui você vai encontrar informações úteis e acessíveis.
+Na minha opinião, esse tipo de conhecimento não está disponível para todo mundo. Na verdade, acho até bem difícil de acessar, seja porque a linguagem é complicada demais ou porque muitos materiais de computação não explicam de um jeito fácil. Além disso, sou uma pessoa com deficiência visual que usa leitor de tela, então posso dizer por experiência própria que a maioria dos conteúdos não é acessível de verdade para quem depende desse tipo de tecnologia.
 
-É importante lembrar que a tecnologia nunca para. Sempre estão surgindo novas ferramentas, novas linguagens e novas formas de resolver problemas. Por isso, quem trabalha nessa área precisa estar sempre aprendendo e se atualizando. Estudar continuamente é parte essencial da carreira.
+Isso é muito ruim, porque computação é uma área muito interessante, belíssima na minha perspectiva e pode ajudar bastante as pessoas. Para quem tem deficiência, como eu, saber sobre computação pode abrir portas para empregos ou ajudar a criar soluções para as nossas necessidades. Seria ótimo se esse conhecimento fosse mais fácil de encontrar e entender para todo mundo.
 
-Esse também foi outro motivo para criar essa série. Meu objetivo é apresentar uma visão geral da computação, explicando de forma simples temas como a estrutura do computador, programas, sistemas operacionais, redes, internet e desenvolvimento de sites. 
+Por isso, durante um momento difícil, pensei em começar essa série. Eu senti falta de algo assim quando comecei a estudar, algo fácil de entender, então resolvi criar para ajudar outras pessoas que também estão começando.
 
-A verdade é que o mundo da tecnologia oferece muitas possibilidades. Cada pessoa pode seguir um caminho diferente, de acordo com seus interesses. E, mesmo que esta série seja apenas uma introdução, ela serve como o primeiro passo para quem quer descobrir e aprender mais sobre esse universo tão amplo e empolgante.
+Começar o quê? Qualquer coisa! Não precisa ser expert em tecnologia para aproveitar o que está aqui. Essa série foi feita justamente para apresentar o básico da computação de um jeito simples e direto.
 
 ## Objetivos da série {#objetivos-da-serie}
 
 ---
 
-Essa série tem o objetivo de criar uma visão integrada (um quadro geral) da computação, ligando os pontos desde a física dos transistores até as tecnologias web que dão vida aos sites e aplicativos que usamos diariamente. Você vai encontrar:
+Essa série quer mostrar, de um jeito fácil de entender, como tudo na computação está ligado — desde como funcionam os componentes mais simples dos computadores até as tecnologias que fazem sites e aplicativos que usamos todos os dias. Aqui, você vai encontrar conteúdos sobre:
 
-1. **Panorama da Área de Tecnologia:**
-   - Mercados (áreas onde a tecnologia é aplicada)
-   - carreiras (profissões possíveis)
-   - perfis profissionais (características e habilidades que podem ser desenvolvidas)
-2. Fundamentos Físicos:
-   - Materiais condutores, isolantes e semicondutores (bases químicas da computação)
-   - Silício (material mais usado na fabricação de chips)
-   - junção PN (estrutura básica dos transistores)
-   - transistores (componentes fundamentais dos circuitos eletrônicos)
-3. Circuitos Lógicos:
-   - Álgebra Booleana (base matemática para circuitos digitais)
-   - Portas lógicas (AND, OR, XOR, NOT) e tabelas-verdade (ferramentas para entender como os circuitos funcionam)
-4. Numeração Binária:
-   - Sistema decimal (base 10, usado no dia a dia)
-   - Sistema binário (base 2, usado pelos computadores)
-   - Conversão entre os dois sistemas (como transformar números de um sistema para o outro)
-   - Importância da numeração binária na computação
-5. Estrutura do Computador:
-   - CPU (O "cérebro" do computador, responsável por processar informações)
-   - Memórias (onde os dados são armazenados temporariamente ou permanentemente)
-   - Dispositivos de Entrada e Saída (como interagimos com o computador)
-6. Softwares (programas):
-   - Conceitos básicos (o que são, tipos e funções)
-   - Como os softwares são desenvolvidos (processo de criação e manutenção)
-7. Sistemas Operacionais:
-   - Conceitos gerais (o que são e para que servem)
-   - Principais sistemas operacionais (Windows, Linux, macOS)
-   - Funções e responsabilidades (como gerenciam a parte física do computador e os softwares)
-8. Redes de Computadores:
-   - Conceitos, equipamentos e protocolos essenciais (como os computadores se comunicam entre si)
-9. Internet:
-   - Contexto histórico (como a internet surgiu e evoluiu)
-   - Infraestrutura global (como a internet é estruturada e funciona)
-   - WWW (World Wide Web, a parte da internet que usamos para navegar)
-   - HTML, CSS e JavaScript (as linguagens fundamentais para criar sites e aplicativos web)
-10. Encerramento da série:
-    - Recapitulação dos principais conceitos abordados
-    - Sugestões de caminhos para aprofundamento e especialização
+1. **Visão geral da área de tecnologia**
+2. **Fundamentos Físicos do Computador**
+3. **Circuitos Lógicos**
+4. **Numeração Binária**
+5. **Estrutura do Computador**
+6. **Softwares (programas)**
+7. **Sistemas Operacionais**
+8. **Redes de Computadores**
+9. **Internet**
+10. **Encerramento da série**
 
-Ao final da jornada, você terá uma visão geral da computação que lhe permitirá dialogar com outras pessoas da área, entender conceitos técnicos em conteúdos que encontrar pela internet, e quem sabe até decidir qual caminho seguir dentro desse ecossistema tão fascinante.
+Esta é uma lista de assuntos básicos que acho importantes para começar, cada um desses temas tem outros temas menores dentro dele, então cada um acaba virando um texto separado (um artigo). O que vale aqui é que, depois de passar por tudo isso, dá para ter uma boa ideia do que é computação e pensar no que dá para fazer com esse conhecimento.
+
+A partir daí, cada pessoa pode escolher o caminho que quiser seguir e se quiser seguir né? Porque pode ser que você não queira seguir nenhum caminho, e tudo bem também! O importante é que você aprenda algo novo e se sinta mais confortável com o mundo da tecnologia.
 
 ## Para quem é essa série? {#para-quem-e-essa-serie}
 
 ---
 
-Essa série é para qualquer pessoa interessada em aprender mais sobre computação, independentemente de sua formação ou experiência prévia.
+Quando pensei nessa série, logo imaginei que seria útil para pessoas com deficiência, principalmente quem tem deficiência visual e usa leitores de tela. Mas tentei escrever de um jeito bem claro e direto, usando palavras simples e exemplos, para que qualquer pessoa, incluindo quem tem outros tipos de deficiência ou é neurodivergente, possa entender facilmente.
 
-Se você é:
+Quis também alcançar quem trabalha no serviço de atendimento educacional especializado (SAEE), porque vejo o quanto isso é importante. Tem muita gente nesses cargos que precisa adaptar materiais e conteúdos de computação para estudantes com deficiência, tanto em cursos superiores quanto técnicos, e não sabe por onde começar. O desafio é adaptar sem perder o significado do conteúdo.
 
-- **Estudante (em geral não só de tecnologia):** Quer entender como a tecnologia funciona "por baixo do capô" (nos bastidores internamente) e como ela pode ser aplicada em diferentes áreas.
-- **Profissional de outra área:** Busca compreender como a computação pode ser integrada ao seu campo de atuação, ou deseja explorar novas oportunidades de carreira.
-- **Pessoa que já atua na área de tecnologia:** Quer revisitar conceitos, ou revisar por um novo ângulo, ou simplesmente se atualizar.
-- **Profissionais do Serviço de Atendimento Educacional Especializado (SAEE):** Caso tenham a necessidade de promover adaptações e acessibilidade para estudantes da área de computação, seja em nível superior ou técnico. A série pode servir para dar contexto e embasamento para essas adaptações de conteúdo preservando a semântica (sentido) e a essência dos conceitos.
-- **Pessoa curiosa:** Tem interesse em entender melhor o mundo digital e como ele afeta nossas vidas diárias.
+Para quem trabalha nessa área do serviço de atendimento educacional especializado (SAEE), acredito que a série vai explicar os termos técnicos de um jeito mais fácil, usando exemplos e comparações. Os artigos, com todos os seus elementos, incluindo imagens e tabelas, funcionam bem com leitores de tela como o NVDA.
 
-A série foi pensada para ser acessível e didática, com uma linguagem simples e exemplos práticos. Não é necessário ter conhecimentos técnicos avançados para acompanhar os posts, o objetivo é que todo mundo possa aprender e se sentir confortável com os conceitos apresentados.
+Assim, qualquer pessoa pode testar, ver se as adaptações que fiz estão boas e copiar nos próprios materiais, se quiser deixar tudo mais acessível também.
 
-Esta jornada vai te levar desde os fundamentos físicos dos computadores até as tecnologias que usamos todos os dias na web. Do silício ao navegador, da corrente elétrica ao código. Vamos entender como tudo isso realmente funciona.
+Isso não é só para pessoas com deficiência ou profissionais do serviço de atendimento educacional especializado, eu pensei na série para qualquer estudante, seja da área de tecnologia ou não. É para pessoas curiosas, professores, enfim, quem quiser consumir o conteúdo.
 
-Vamos lá!
+Aliás, se tiver professores de cursos técnicos ou universidades com “coragem” (risos) de usar esses textos como material nas aulas, como por exemplo em matérias de introdução à computação, eu ia ficar muito feliz.
+
+## Resumo {#resumo}
+---
+
+Depois dessa série, como diria a Dori do filme "Procurando Nemo", "Continue a nadar, continue a nadar". A ideia é que você saia daqui com uma base sólida para seguir aprendendo mais sobre computação, seja por conta própria ou em cursos formais. Para nós, pessoas com deficiência, não é simples, os materiais não são acessíveis, e muitas vezes não temos apoio para aprender.
+
+Mas, fique à vontade para buscar ajuda e compartilhar suas dificuldades, inclusive aqui na [página de contato do PcD Na Escola](https://pcdnaescola.com.br/contato/). Eu não sou a pessoa mais veloz do mundo para responder, mas, na medida do possível, vou tentar colaborar com o que eu conseguir.
+
+Bom, é isso! Recebam as boas-vindas à série de computação para iniciantes. Espero que o conteúdo seja útil, acessível e contribua para sua jornada de introdução a ciência da computação. Meu objetivo é compartilhar de forma clara aquilo que estudo ou gostaria de estudar, tornando o conhecimento mais próximo de um maior número de pessoas.
