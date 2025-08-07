@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Acessibilidade: o que significa?"
+title: "Acessibilidade: O que significa?"
 description: "Este artigo analisa criticamente o conceito de acessibilidade, abordando sua evolução histórica, principais marcos legais e transformações conceituais que a consolidam como um direito humano."
 date: 2025-07-06
 author: Louise Suelen
