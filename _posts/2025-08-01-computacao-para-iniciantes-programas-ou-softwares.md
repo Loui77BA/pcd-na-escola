@@ -127,7 +127,7 @@ sumario: |
   </ul>
 ---
 
-<p>Você já se perguntou o que é um programa de computador? Na prática, o termo mais utilizado é "software". Mas o que isso significa? Vamos explorar esses conceitos de forma simples e direta.</p>
+<p>Você já se perguntou o que é um programa de computador? Na prática, o termo mais utilizado é "software". Mas o que isso significa? Vamos explorar esses conceitos de forma simples.</p>
 
 {% include figure.html 
     src="https://st4.depositphotos.com/12981370/24312/i/450/depositphotos_243120806-stock-photo-programmer-working-software-development-coding.jpg"

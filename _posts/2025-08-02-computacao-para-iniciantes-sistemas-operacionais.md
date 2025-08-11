@@ -561,9 +561,9 @@ Os gerenciadores de arquivos funcionam como o “centro de controle” do dia a 
 
 No Linux, existem opções como Nautilus, Nemo e Caja, cada um com seu jeito, mas todos conseguem acessar vários tipos de arquivos diferentes. Para quem trabalha com programação ou usa muito o teclado, saber usar os atalhos, etiquetas, pré-visualizações e acesso a arquivos pela rede ajuda muito, deixando tudo mais rápido, fácil e seguro. 
 
-**Observação**: Muitas coisas ainda estão um pouco confusas, por exemplo, como assim existem vários exploradores de arquivos para Linux? O que são GNOME, KDE, Cinnamon e MATE? E Ubuntu, Linux Mint? Esses pontos serão explicados mais para frente no texto.
+**Observação**: Muitas coisas ainda estão um pouco confusas, por exemplo, como assim existem vários exploradores de arquivos para Linux? O que são GNOME, KDE, Cinnamon e MATE? E Ubuntu, Linux Mint? Esses pontos serão explicados mais para frente no próximo artigo.
 
-Siga na leitura para entender mais sobre esses assuntos que ainda precisam de mais detalhes, pois só será possível ter uma perspectiva (visão geral) completa do sistema operacional quando todos esses pontos estiverem explicados ao final do texto.
+Siga na leitura para entender mais sobre esses assuntos que ainda precisam de mais detalhes, pois só será possível ter uma perspectiva (visão geral) completa do sistema operacional quando todos esses pontos estiverem explicados ao final desse e do próximo artigo. Aqui o foco é entender como sistemas operacionais funcionam de forma geral (ou seja, como eles gerenciam recursos, interagem com o hardware e oferecem uma interface para quem usa o computador).
 
 ### <a id="sistema-de-arquivos"></a> Sistema de arquivos: onde os dados ficam guardados
 ---
