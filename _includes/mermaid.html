@@ -1,0 +1,26 @@
+<!-- _includes/mermaid.html -->
+<script type="module">
+  // Carrega Mermaid (ESM) direto do CDN
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+  // Se você usa tema escuro/claro, ajuste dinamicamente:
+  const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+  mermaid.initialize({
+    startOnLoad: false,
+    theme: prefersDark ? 'dark' : 'default'
+  });
+
+  // Opcional: permite usar blocos markdown ```mermaid
+  // (Jekyll gera <pre><code class="language-mermaid">)
+  document.querySelectorAll('pre > code.language-mermaid').forEach((code) => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'mermaid';
+    // Mantém o texto puro do diagrama
+    wrapper.textContent = code.textContent;
+    // Substitui o <pre><code> pelo contêiner esperado pelo Mermaid
+    code.parentElement.replaceWith(wrapper);
+  });
+
+  // Renderiza tudo que tiver class="mermaid"
+  await mermaid.run();
+</script>

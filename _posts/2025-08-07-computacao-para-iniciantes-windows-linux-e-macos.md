@@ -130,7 +130,6 @@ sumario: |
             </a>
         </li>
     </ul>
-
 ---
 
 <p>Vamos explorar três dos mais populares sistemas operacionais: Windows, Linux e macOS. Todos eles têm suas características únicas, interfaces e diferentes formas de interação.</p>
