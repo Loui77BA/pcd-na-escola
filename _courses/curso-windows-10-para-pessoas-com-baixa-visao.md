@@ -288,6 +288,106 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
                 fetchpriority="high">
         </iframe>
     </div>
+
+    <h3>O que é?</h3>
+<p>
+    A opção "Tornar tudo maior na tela" é uma ferramenta de acessibilidade do Windows que permite aumentar o tamanho de todos os elementos da interface, como ícones, textos, janelas e menus.
+</p>
+
+<h3>
+    Acessar Configurações de Facilidade de Acesso
+</h3>
+<ul>
+    <li>
+        <strong>Abrir Configurações de Acessibilidade</strong>
+        <ul>
+            <li>
+                Pressione a tecla <kbd>Windows</kbd> no teclado.
+            </li>
+            <li>
+                Na caixa de pesquisa que aparecerá, digite "acessibilidade".
+            </li>
+            <li>
+                Encontre a opção "Configurações de Facilidade de Acesso" e pressione a tecla <kbd>Enter</kbd>.
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<h3>
+    Ajustar o Tamanho do Texto
+</h3>
+<ul>
+    <li>
+        <strong>Localizar a barra de rolagem de texto</strong>
+        <ul>
+            <li>
+                Na janela de Configurações de Facilidade de Acesso, o foco do leitor de telas será direcionado automaticamente para a barra que define o "Tamanho do texto".
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Ajustar o texto</strong>
+        <ul>
+            <li>
+                Essa opção permite aumentar ou diminuir o tamanho do texto em todos os aplicativos e janelas do Windows.
+            </li>
+            <li>
+                Para aumentar o texto, pressione a tecla de seta para a direita ou use o botão esquerdo do mouse.
+            </li>
+            <li>
+                Para diminuir, pressione a tecla de seta para a esquerda ou use novamente o botão do mouse.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Aplicar alterações</strong>
+        <ul>
+            <li>
+                Após ajustar o tamanho, pressione a tecla <kbd>Tab</kbd> até chegar ao botão "Aplicar".
+            </li>
+            <li>
+                Pressione a tecla <kbd>Enter</kbd> para confirmar.
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<h3>
+    Tornar tudo maior
+</h3>
+<ol>
+    <li>
+        <strong>Abrir a opção de escala</strong>
+        <ul>
+            <li>
+                Logo abaixo da configuração de "Tamanho do texto", existe a opção "Tornar tudo maior".
+            </li>
+            <li>
+                Essa configuração ajusta o tamanho de todos os elementos da tela, não apenas o texto.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Configurar a ampliação</strong>
+        <ul>
+            <li>
+                Pressione <kbd>Enter</kbd> na caixa de combinação da opção "Tornar tudo maior".
+            </li>
+            <li>
+                Use as teclas de seta para cima ou para baixo para escolher entre 100% (padrão), 125%, 150% ou 175%.
+            </li>
+            <li>
+                Pressione <kbd>Enter</kbd> novamente na opção desejada para aplicar a mudança.
+            </li>
+        </ul>
+    </li>
+</ol>
+
+<p>
+    <strong>Dica:</strong> Para pessoas com baixa visão que precisam de ampliação adicional, é possível combinar o aumento do tamanho do texto, a opção "Tornar tudo maior" e ainda usar a lupa. Essa combinação reduz o cansaço visual e melhora a experiência de leitura e navegação no Windows.
+</p>
+
 </div>
 
 <button class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula04" aria-expanded="false" aria-controls="aula04">
@@ -310,6 +410,81 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
                 fetchpriority="high">
         </iframe>
     </div>
+
+    <h3>
+    O que é?
+</h3>
+
+<p>
+    O Windows permite desativar a exibição da imagem de fundo da área de trabalho. Essa opção é útil para pessoas com baixa visão, pois reduz o cansaço visual e melhora a navegação ao deixar o fundo em uma cor neutra.
+</p>
+
+<h3>
+    Acessar Configurações de Facilidade de Acesso
+</h3>
+<ul>
+    <li>
+        <strong>Abrir Configurações de Acessibilidade</strong>
+        <ul>
+            <li>
+                Pressione a tecla <kbd>Windows</kbd> no teclado.
+            </li>
+            <li>
+                Na caixa de pesquisa que aparecerá, digite "acessibilidade".
+            </li>
+            <li>
+                Encontre a opção "Configurações de Facilidade de Acesso" e pressione a tecla <kbd>Enter</kbd>.
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<h3>
+    Localizar a opção de papel de parede
+</h3>
+<ul>
+    <li>
+        <strong>Ir até a opção correta</strong>
+        <ul>
+            <li>
+                Na janela de Configurações de Facilidade de Acesso, navegue até a configuração chamada <em>"Mostrar a imagem de tela de fundo da área de trabalho"</em>.
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<h3>
+    Desativar a opção
+</h3>
+<ol>
+    <li>
+        <strong>Usando o mouse ou touchpad</strong>
+        <ul>
+            <li>
+                Clique no botão de alternância que está marcado como "Ativado" para desativá-lo.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Usando o teclado</strong>
+        <ul>
+            <li>
+                Quando o leitor de telas anunciar o nome da opção, pressione a tecla <kbd>Barra de espaço</kbd> para desativar.
+            </li>
+            <li>
+                O leitor de telas informará "não pressionado" ao confirmar que a opção foi desativada.
+            </li>
+        </ul>
+    </li>
+</ol>
+
+<p>
+    <strong>Observação:</strong> Ao desativar a opção “Mostrar a imagem de tela de fundo da área de trabalho”, a área de trabalho ficará com um fundo neutro. 
+</p>
+<p>
+    Caso também esteja ativado o tema de alto contraste, o fundo será exibido em preto ou na cor predominante do tema de alto contraste escolhido.
+</p>
+
 </div>
 
 <button class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula05" aria-expanded="false" aria-controls="aula05">
@@ -332,6 +507,141 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
                 fetchpriority="high">
         </iframe>
     </div>
+
+    <h3>
+    O que é?
+</h3>
+
+<p>
+    O Windows permite alterar o tamanho e a cor do ponteiro do mouse para facilitar a navegação na tela. Essas opções são especialmente úteis para pessoas com baixa visão, pois aumentam a visibilidade e reduzem o cansaço visual.
+</p>
+
+<h3>
+    Acessar Configurações de Facilidade de Acesso
+</h3>
+<ul>
+    <li>
+        <strong>Abrir Configurações de Acessibilidade</strong>
+        <ul>
+            <li>
+                Pressione a tecla <kbd>Windows</kbd> no teclado.
+            </li>
+            <li>
+                Na barra de pesquisa, digite "acessibilidade".
+            </li>
+            <li>
+                Pressione <kbd>Enter</kbd> na opção "Configurações de Facilidade de Acesso".
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<h3>
+    Navegar até Configurações do Ponteiro do Mouse
+</h3>
+<ul>
+    <li>
+        <strong>Acessar a opção correta</strong>
+        <ul>
+            <li>
+                Na janela de Configurações, a primeira opção é "Configurações da tela".
+            </li>
+            <li>
+                Para ir até "Ponteiro do mouse", pressione <kbd>Shift</kbd> + <kbd>Tab</kbd> e depois use a tecla <kbd>Seta para baixo</kbd> até ouvir o leitor de telas anunciar: <em>"ponteiro do mouse, não selecionado"</em>.
+            </li>
+            <li>
+                Pressione <kbd>Enter</kbd> para abrir a configuração.
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<h3>
+    Alterar o tamanho e a cor do ponteiro
+</h3>
+<ol>
+    <li>
+        <strong>Alterar o tamanho do ponteiro</strong>
+        <ul>
+            <li>
+                Pressione <kbd>Tab</kbd> até chegar na opção "Alterar o tamanho do ponteiro".
+            </li>
+            <li>
+                Use a barra deslizante para ajustar o tamanho do ponteiro movendo-a para a esquerda (menor) ou para a direita (maior).
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Alterar a cor do ponteiro</strong>
+        <ul>
+            <li>
+                Pressione <kbd>Tab</kbd> até chegar em "Alterar a cor do ponteiro".
+            </li>
+            <li>
+                As opções disponíveis são: branco, preto, invertida e personalizado.
+            </li>
+            <li>
+                Use a tecla <kbd>Seta para a direita</kbd> para navegar e pressione <kbd>Enter</kbd> para selecionar uma cor.
+            </li>
+        </ul>
+    </li>
+</ol>
+
+<h3>
+    Personalizar a cor do ponteiro
+</h3>
+<ol>
+    <li>
+        <strong>Selecionar personalizado</strong>
+        <ul>
+            <li>
+                Escolha a opção "Personalizado" e pressione <kbd>Enter</kbd>.
+            </li>
+            <li>
+                Pressione <kbd>Tab</kbd> até chegar em "Cores de ponteiro sugeridas".
+            </li>
+            <li>
+                Use as setas para navegar pelas cores sugeridas e selecione uma com <kbd>Enter</kbd>.
+            </li>
+            <li>
+                Após a última cor sugerida, pressione <kbd>Tab</kbd> até encontrar o botão "Escolher uma cor de ponteiro personalizada" e pressione <kbd>Enter</kbd>.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Definir uma cor personalizada</strong>
+        <ul>
+            <li>
+                Uma janela pop-up chamada <em>"Escolher uma cor de ponteiro personalizada"</em> será exibida.
+            </li>
+            <li>
+                Para quem não usa mouse, navegue com <kbd>Tab</kbd> até "Modelo de cores" e depois pelas opções de valores RGB.
+            </li>
+            <li>
+                Ao chegar em "RGB edição hexa número", digite um código hexadecimal da cor desejada (por exemplo, <code class="text-white-50">#121218</code> para um azul escuro profundo).
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Aplicar a cor escolhida</strong>
+        <ul>
+            <li>
+                Apague o valor existente com <kbd>Backspace</kbd>.
+            </li>
+            <li>
+                Digite o código hexadecimal desejado.
+            </li>
+            <li>
+                Pressione <kbd>Tab</kbd> até o botão "Concluído" e pressione <kbd>Enter</kbd> para aplicar.
+            </li>
+        </ul>
+    </li>
+</ol>
+
+<p>
+    <strong>Dica:</strong> Alterar o tamanho e a cor do ponteiro pode tornar sua navegação mais confortável. Combine essa personalização com outras opções de acessibilidade, como a lupa e o contraste elevado, para maximizar a visibilidade e reduzir o esforço visual.
+</p>
+
 </div>
 
 <button class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula06" aria-expanded="false" aria-controls="aula06">
@@ -354,4 +664,166 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
                 fetchpriority="high">
         </iframe>
     </div>
+
+    <h3>
+    Ferramentas de acessibilidade no Microsoft Edge
+</h3>
+
+<p>
+    O navegador Microsoft Edge oferece recursos de acessibilidade que ajudam pessoas com baixa visão a ler e interagir com páginas da web. Entre os principais estão a leitura em voz alta e a leitura avançada.
+</p>
+
+<h3>
+    Ler texto em voz alta
+</h3>
+
+<p>
+    Esse recurso permite ouvir o conteúdo exibido na tela diretamente no navegador.
+</p>
+
+<ol>
+    <li>
+        <strong>Ativar leitura em voz alta</strong>
+        <ul>
+            <li>
+                Para quem enxerga, basta clicar na opção localizada próximo ao lado direito da barra de endereços.
+            </li>
+            <li>
+                Pelo teclado, pressione <kbd>Alt</kbd> + <kbd>D</kbd> para focar na barra de endereços.
+            </li>
+            <li>
+                Pressione <kbd>Tab</kbd> até ouvir "ler em voz alta esta página (Ctrl + Shift + U) botão de alternância não pressionado".
+            </li>
+            <li>
+                Pressione <kbd>Enter</kbd> para iniciar a leitura em voz alta.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Controlar a leitura</strong>
+        <ul>
+            <li>
+                Uma barra de controle aparecerá na parte superior do navegador, com botões para pausar, reproduzir ou avançar a leitura.
+            </li>
+            <li>
+                Para acessar as opções de voz, pressione <kbd>Tab</kbd> até "opções de voz botão" e pressione <kbd>Enter</kbd>.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Ajustar velocidade e voz</strong>
+        <ul>
+            <li>
+                Velocidade: use a barra deslizante. <kbd>Seta para a esquerda</kbd> diminui e <kbd>Seta para a direita</kbd> aumenta.
+            </li>
+            <li>
+                Escolher uma voz: vá até "escolher uma voz caixa de combinação" e pressione <kbd>Enter</kbd>. Use as setas para escolher e confirme com <kbd>Enter</kbd>.
+            </li>
+        </ul>
+    </li>
+</ol>
+
+<h3>
+    Leitura avançada
+</h3>
+
+<p>
+    O modo de leitura avançada simplifica a página, destacando apenas o conteúdo principal e ocultando elementos desnecessários.
+</p>
+
+<ol>
+    <li>
+        <strong>Ativar leitura avançada</strong>
+        <ul>
+            <li>
+                Pressione <kbd>Alt</kbd> + <kbd>D</kbd> para ir até a barra de endereços.
+            </li>
+            <li>
+                Pressione <kbd>Tab</kbd> quatro vezes até ouvir "entrar na leitura avançada (F9) botão recolhido".
+            </li>
+            <li>
+                Pressione <kbd>Enter</kbd> para ativar.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Funcionalidades</strong>
+        <ul>
+            <li>
+                <em>Modo de leitor:</em> simplifica a página, escondendo pop-ups e botões, e exibindo apenas texto e imagens relevantes.
+            </li>
+            <li>
+                <em>Preferências de texto:</em> pressione <kbd>Tab</kbd> até "preferências de texto botão" e pressione <kbd>Enter</kbd> para ajustar tamanho de texto, espaçamento e temas de página.
+            </li>
+            <li>
+                <em>Foco de linha:</em> permite destacar uma, três ou cinco linhas durante a leitura.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Ajustar preferências de leitura</strong>
+        <ul>
+            <li>
+                Pressione <kbd>Tab</kbd> até "preferências de leitura botão" e pressione <kbd>Enter</kbd>.
+            </li>
+            <li>
+                Use <kbd>Tab</kbd> para navegar pelas opções disponíveis.
+            </li>
+            <li>
+                Para fechar qualquer caixa de opções, pressione <kbd>Esc</kbd>.
+            </li>
+        </ul>
+    </li>
+</ol>
+
+<h3>
+    Vantagens dos recursos de acessibilidade
+</h3>
+
+<ul>
+    <li>
+        <strong>Curva de aprendizado menor:</strong> ferramentas prontas para uso, sem necessidade de aprender a operar um leitor de telas completo.
+    </li>
+    <li>
+        <strong>Destaque visual:</strong> as palavras sendo lidas são destacadas, facilitando acompanhar a leitura.
+    </li>
+    <li>
+        <strong>Redução de fadiga visual:</strong> ouvir a leitura pode ajudar em sessões longas, diminuindo o esforço de leitura visual.
+    </li>
+</ul>
+
+<h3>
+    Observações
+</h3>
+
+<ul>
+    <li>
+        <strong>Limitações conhecidas:</strong> o recurso pode não ler corretamente ícones embutidos em tags <code class="text-white-50">&lt;span&gt;</code> e pode ignorar imagens mesmo com texto alternativo no atributo <code class="text-white-50">alt</code>.
+    </li>
+    <li>
+        <strong>Recomendação para baixa visão:</strong> se a acuidade visual for extremamente baixa, recomenda-se o uso de um leitor de telas completo. Ele melhora a produtividade e reduz riscos de fadiga e dores de cabeça pelo esforço visual.
+    </li>
+</ul>
+
+</div>
+
+<button class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula07" aria-expanded="false" aria-controls="aula07">
+    Fim do Curso
+</button>
+
+<div class="collapse mb-4" id="aula07">
+    <h2>
+        Fim do Curso
+    </h2>
+
+    <p>
+        Neste curso, exploramos diversas ferramentas e configurações do Windows 10 que ajudam a melhorar a acessibilidade para pessoas com baixa visão. Desde o tema escuro e alto contraste até a lupa e as opções de personalização do ponteiro do mouse, cada recurso foi projetado para tornar a experiência do usuário mais confortável e eficiente.
+    </p>
+    <p>
+        Esperamos que este curso tenha sido útil e que você possa aplicar essas dicas no seu dia a dia para uma navegação mais fácil e agradável no Windows 10.
+    </p>
+
+    <a class="btn btn-outline-light w-100 mt-2 mb-2" href="https://pcdnaescola.com.br/cursos/" role="button">
+        Voltar para Cursos
+    </a>
 </div>
