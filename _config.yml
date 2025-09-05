@@ -38,6 +38,9 @@ collections:
   courses:
     output: true
     permalink: /cursos/:title/
+  ferramentas:
+    output: true
+    permalink: /:title/
 
 # Exclusões
 exclude:
