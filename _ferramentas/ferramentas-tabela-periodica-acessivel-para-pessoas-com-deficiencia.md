@@ -68,7 +68,6 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
   /*            Header             */
   /* ============================= */
   header[role="banner"] {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     padding: 4rem 1rem;
     border-bottom: 1px solid rgba(255,255,255,0.18);
     text-align: center;
@@ -129,14 +128,12 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
   /*     Seção da Tabela (UI)      */
   /* ============================= */
   section#secao-periodos { padding: 2rem 0; position: relative; }
-  /* ponte visual com o header */
-  .section-bridge { position: absolute; inset: 0 0 auto 0; height: 70px; translate: 0 -70px; background: linear-gradient(180deg, rgba(33,37,41,0) 0%, rgba(33,37,41,.9) 70%, rgba(14,14,20,1) 100%); pointer-events: none; }
+  /* Removido código morto da ponte visual com o header */
 
   /* container de elementos (mais legível) */
   #tabela-container {
     position: relative;
     border: 1px solid rgba(255,255,255,.12);
-    background: linear-gradient(180deg, rgba(21,21,32,.6), rgba(16,16,24,.7));
     border-radius: 1rem;
     padding: 1.5rem;
     min-height: 280px;
@@ -147,7 +144,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
 <!-- Link "Pular para o conteúdo" -->
 <a id="skip-link" class="btn btn-primary" href="#secao-periodos">Pular para o conteúdo principal</a>
 
-<header class="bg-dark text-white py-5 position-relative overflow-hidden" role="banner">
+<header class="text-white py-5 position-relative overflow-hidden" role="banner">
   <!-- Partículas (decorativas) -->
   <div class="header-particles decorative-overlay" aria-hidden="true" role="presentation">
     <span class="particle" style="width: 15px; height: 15px; left: 10%; top: 20%; animation: float 12s ease-in-out infinite;"></span>
@@ -159,8 +156,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
     <span class="particle" style="width: 20px; height: 20px; left: 70%; top: 50%; animation: float 12s ease-in-out infinite;"></span>
   </div>
 
-  <!-- Gradiente animado (decorativo) -->
-  <div class="decorative-overlay" style="background: linear-gradient(135deg, #1e3c72, #2a5298, #2c3e50, #4b6cb7); background-size: 300% 300%; animation: gradientBackground 15s ease infinite;" aria-hidden="true" role="presentation"></div>
+  <!-- Espaço para gradiente animado removido (código morto) -->
 
   <div class="container position-relative" style="z-index:1;">
     <div class="row align-items-center py-4">
@@ -184,50 +180,55 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
           Uma ferramenta interativa desenvolvida para tornar o aprendizado de química mais acessível para todas as pessoas.
         </p>
 
-        <!-- Cards de recursos -->
+        <!-- Cards de recursos (conteúdo descritivo NÃO interativo) -->
         <div class="row justify-content-center mt-5 mb-4">
           <div class="col-md-4 mb-4">
-            <div class="feature-card h-100" tabindex="0" aria-label="Acessibilidade: compatível com tecnologias assistivas">
+            <section class="feature-card h-100" role="region" aria-labelledby="feat-a11y-title" aria-describedby="feat-a11y-desc">
               <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">accessibility_new</span>
-              <h5 class="mb-1">Acessibilidade</h5>
-              <p class="small mb-0">Compatível com tecnologias assistivas e leitores de tela</p>
-            </div>
+              <h5 id="feat-a11y-title" class="mb-1">Acessibilidade</h5>
+              <p id="feat-a11y-desc" class="small mb-0">Compatível com tecnologias assistivas e leitores de tela</p>
+            </section>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="feature-card h-100" tabindex="0" aria-label="Interatividade: exploração dinâmica dos elementos">
+            <section class="feature-card h-100" role="region" aria-labelledby="feat-inter-title" aria-describedby="feat-inter-desc">
               <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">science</span>
-              <h5 class="mb-1">Interatividade</h5>
-              <p class="small mb-0">Explore os elementos químicos de maneira dinâmica e educativa</p>
-            </div>
+              <h5 id="feat-inter-title" class="mb-1">Interatividade</h5>
+              <p id="feat-inter-desc" class="small mb-0">Explore os elementos químicos de maneira dinâmica e educativa</p>
+            </section>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="feature-card h-100" tabindex="0" aria-label="Educacional: informações científicas precisas">
+            <section class="feature-card h-100" role="region" aria-labelledby="feat-edu-title" aria-describedby="feat-edu-desc">
               <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">school</span>
-              <h5 class="mb-1">Educacional</h5>
-              <p class="small mb-0">Informações científicas precisas para aprendizado eficiente</p>
-            </div>
+              <h5 id="feat-edu-title" class="mb-1">Educacional</h5>
+              <p id="feat-edu-desc" class="small mb-0">Informações científicas precisas para aprendizado eficiente</p>
+            </section>
           </div>
-        </div>
-
-        <!-- Ações principais -->
-        <div class="d-flex justify-content-center gap-3 position-relative mb-5">
-          <a href="#secao-periodos" class="btn btn-primary px-4 py-2 rounded-pill d-flex align-items-center" role="button" aria-label="Ver tabela periódica" title="Ir para a tabela periódica">
-            <span class="material-symbols-outlined me-2" aria-hidden="true">table_chart</span>
-            <span>Ver tabela</span>
-          </a>
-          <button id="btn-saiba-mais" type="button" class="btn btn-outline-light px-4 py-2 rounded-pill d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#modal-sobre" aria-haspopup="dialog" aria-expanded="false" aria-label="Saiba mais sobre a tabela periódica acessível" title="Abrir informações detalhadas">
-            <span class="material-symbols-outlined me-2" aria-hidden="true">info</span>
-            <span>Saiba mais</span>
-          </button>
         </div>
 
         <!-- Painel de Controle -->
         <div class="mt-4 mb-2">
           <div class="position-relative rounded-4 bg-dark bg-opacity-50 p-4 border border-light border-opacity-10">
             <h2 id="titulo-painel" class="h4 text-center mb-4 fw-bold position-relative">
-              <span class="material-symbols-outlined d-inline-block align-middle me-2" aria-hidden="true">tune</span>
               Painel de Controle
             </h2>
+
+            <!-- Ações rápidas -->
+            <div class="bg-dark bg-opacity-50 p-3 rounded-4 mb-4">
+              <div class="d-flex align-items-center mb-3">
+                <span class="material-symbols-outlined me-2" aria-hidden="true" role="presentation">touch_app</span>
+                <h3 id="acoes-rapidas-label" class="fw-semibold text-white mb-0 fs-6">Ações rápidas:</h3>
+              </div>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <a href="#secao-periodos" class="btn btn-primary px-4 py-2 rounded-pill d-flex align-items-center" aria-label="Ver tabela periódica" title="Ir para a tabela periódica">
+                  <span class="material-symbols-outlined me-2" aria-hidden="true">table_chart</span>
+                  <span>Ver tabela</span>
+                </a>
+                <button id="btn-saiba-mais" type="button" class="btn btn-outline-light px-4 py-2 rounded-pill d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#modal-sobre" aria-haspopup="dialog" aria-expanded="false" aria-label="Saiba mais sobre a tabela periódica acessível" title="Abrir informações detalhadas">
+                  <span class="material-symbols-outlined me-2" aria-hidden="true">info</span>
+                  <span>Saiba mais</span>
+                </button>
+              </div>
+            </div>
 
             <!-- Configuração visual -->
             <div class="bg-dark bg-opacity-50 p-3 rounded-4 mb-4">
@@ -237,7 +238,6 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
                   <span class="fw-semibold text-white" id="config-visual-label">Configuração visual</span>
                 </div>
                 <button id="toggle-cores" class="btn btn-outline-light btn-sm rounded-pill px-3" type="button" aria-pressed="false" aria-labelledby="config-visual-label" aria-describedby="toggle-cores-desc" title="Alternar visualização por cores nas famílias químicas">
-                  <span class="material-symbols-outlined me-1 align-middle" aria-hidden="true">color_lens</span>
                   <span>Ativar cores</span>
                 </button>
                 <span id="toggle-cores-desc" class="visually-hidden">Alterna a visualização por cores nas famílias químicas.</span>
@@ -271,9 +271,9 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
 </header>
 
 <!-- Modal “Saiba mais” -->
-<div class="modal fade" id="modal-sobre" tabindex="-1" aria-labelledby="modalSobreLabel" aria-hidden="true" role="dialog" aria-modal="true">
+<div class="modal fade" id="modal-sobre" aria-labelledby="modalSobreLabel" aria-hidden="true" role="dialog" aria-modal="true">
   <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
-    <div class="modal-content bg-dark text-white border-light">
+    <div class="modal-content bg-dark text-white p-3">
       <div class="modal-header border-light border-opacity-25">
         <h2 class="modal-title fs-4" id="modalSobreLabel">
           <span class="material-symbols-outlined align-middle me-2" aria-hidden="true">science</span>
@@ -300,25 +300,25 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
         <h3 class="h5 mb-3" id="principais-recursos-titulo">Principais recursos</h3>
         <div class="row g-4 mb-4" aria-labelledby="principais-recursos-titulo">
           <div class="col-md-4">
-            <div class="text-center" tabindex="0" aria-label="Acessibilidade total: compatível com leitores de tela">
+            <section class="text-center" role="region" aria-labelledby="modal-a11y-title" aria-describedby="modal-a11y-desc">
               <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">accessibility</span>
-              <h4 class="h6">Acessibilidade Total</h4>
-              <p class="small">Compatível com leitores de tela e tecnologias assistivas</p>
-            </div>
+              <h4 id="modal-a11y-title" class="h6">Acessibilidade Total</h4>
+              <p id="modal-a11y-desc" class="small">Compatível com leitores de tela e tecnologias assistivas</p>
+            </section>
           </div>
           <div class="col-md-4">
-            <div class="text-center" tabindex="0" aria-label="Interatividade: informações detalhadas por elemento">
+            <section class="text-center" role="region" aria-labelledby="modal-inter-title" aria-describedby="modal-inter-desc">
               <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">touch_app</span>
-              <h4 class="h6">Interatividade</h4>
-              <p class="small">Informações detalhadas sobre cada elemento químico</p>
-            </div>
+              <h4 id="modal-inter-title" class="h6">Interatividade</h4>
+              <p id="modal-inter-desc" class="small">Informações detalhadas sobre cada elemento químico</p>
+            </section>
           </div>
           <div class="col-md-4">
-            <div class="text-center" tabindex="0" aria-label="Responsividade: funciona em vários dispositivos">
+            <section class="text-center" role="region" aria-labelledby="modal-resp-title" aria-describedby="modal-resp-desc">
               <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">devices</span>
-              <h4 class="h6">Responsividade</h4>
-              <p class="small">Funciona em diversos dispositivos e tamanhos de tela</p>
-            </div>
+              <h4 id="modal-resp-title" class="h6">Responsividade</h4>
+              <p id="modal-resp-desc" class="small">Funciona em diversos dispositivos e tamanhos de tela</p>
+            </section>
           </div>
         </div>
       </div>
@@ -333,11 +333,9 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
 </div>
 
 <!-- Seção da tabela -->
-<section id="secao-periodos" class="text-white pt-5 position-relative" aria-labelledby="tabela-titulo">
-
-  <div class="container px-4 my-4" style="background: linear-gradient(180deg, rgba(21,21,32,.6), rgba(16,16,24,.7)); border: 1px solid rgba(255,255,255,.12); border-radius: 1rem; padding: 1.5rem; min-height: 280px; position: relative;">
-    <!-- Ponte visual com o header -->
-    <div class="section-bridge" aria-hidden="true" role="presentation"></div>
+<section id="secao-periodos" class="text-white pt-2 position-relative" aria-labelledby="tabela-titulo">
+  <div class="container px-4 my-2">
+  <!-- Os elementos serão colocados aqui -->
   </div>
 </section>
 
