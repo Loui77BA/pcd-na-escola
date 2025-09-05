@@ -39,7 +39,7 @@
     </a>
 
     <!-- VLibras -->
-    <div vw class="enabled" aria-hidden="true">
+    <div vw class="enabled" aria-hidden="true" style="z-index: 2147483645;">
       <div vw-access-button class="active" aria-hidden="true"></div>
       <div vw-plugin-wrapper>
         <div class="vw-plugin-top-wrapper" aria-hidden="true"></div>
@@ -66,5 +66,326 @@
       });
     </script>
     
+    <!-- A11y Toolbar – começo -->
+    <style>
+      .a11y-toolbar {
+        position: fixed;
+        right: 15px;
+        top: 25%;
+        z-index: 2147483646;
+        background: #0b0b0b;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0,0,0,.35);
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        padding: .8rem;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(100%);
+      }
+      .a11y-toolbar.active {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: all;
+        transform: translateX(0);
+      }
+      .a11y-toolbar button {
+        border: 0;
+        border-radius: .5rem;
+        padding: .6rem .8rem;
+        background: #151515;
+        color: #e8e8e8;
+        font: 600 15px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        cursor: pointer;
+        text-align: left;
+        min-width: 14rem;
+        transition: all 0.2s ease;
+      }
+      .a11y-toolbar button:hover {
+        background: #2c2c2c;
+        transform: translateX(-3px);
+      }
+      .a11y-toolbar button:focus {
+        outline: 3px solid #77b2ff;
+        outline-offset: 2px;
+      }
+      .a11y-toolbar button[aria-pressed="true"] {
+        background: #1a237e;
+        color: #ffffff;
+      }
+      .a11y-toolbar .a11y-title {
+        font-weight: 700;
+        color: #fff;
+        margin: .25rem .25rem .7rem .25rem;
+        font-size: 16px;
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        .a11y-toolbar {
+          transition: all .3s ease;
+        }
+      }
+      
+      /* Ajustes responsivos para a toolbar */
+      @media (max-width: 767px) {
+        .a11y-toolbar {
+          top: 40%;
+          max-width: 85vw;
+        }
+        .a11y-toolbar button {
+          min-width: unset;
+          width: 100%;
+          max-width: 260px;
+        }
+      }
+      /* Estados aplicados no documento */
+      html[data-a11y-fontscale] {
+        font-size: calc(100% * var(--a11y-fontscale, 1));
+      }
+      html.a11y-grayscale {
+        filter: grayscale(1);
+      }
+      html.a11y-negative {
+        filter: invert(1) hue-rotate(180deg);
+      }
+      /* Alto contraste (preto/branco) – tentativa ampla e segura */
+      body.a11y-contrast, body.a11y-contrast *:not(svg,svg *) {
+        background-color: #000 !important;
+        color: #fff !important;
+        border-color: #fff !important;
+      }
+      body.a11y-contrast a {
+        color: #0ff !important;
+        text-decoration: underline !important;
+      }
+      /* Links sublinhados */
+      body.a11y-underline a {
+        text-decoration: underline !important;
+      }
+      /* Fonte legível (ajuste aqui a fonte preferida do seu projeto) */
+      body.a11y-readable {
+        font-family: Arial, Helvetica, "Segoe UI", system-ui, -apple-system, sans-serif !important;
+      }
+      /* Botão dobrar/abrir */
+      .a11y-toggle {
+        position: fixed;
+        right: 15px;
+        /* top definido via JavaScript para alinhar abaixo do VLibras */
+        z-index: 2147483647;
+        background: #041d47; /* Cor ainda mais escura para maior contraste */
+        color: #ffffff;
+        border: 1.5px solid #ffffff;
+        border-radius: 10px;
+        padding: .45rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+        transition: all 0.3s ease;
+      }
+      .a11y-toggle:hover {
+        background: #062e66;
+        transform: translateX(-5px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+        border: 1.5px solid #ffffff;
+      }
+      .a11y-toggle:focus {
+        outline: 3px solid #77b2ff;
+        outline-offset: 2px;
+      }
+      .a11y-toggle .material-symbols-outlined {
+        font-size: 21px;
+        transition: transform 0.3s ease;
+      }
+      .a11y-toggle:hover .material-symbols-outlined {
+        transform: scale(1.1);
+      }
+      
+      /* Ajuste de posicionamento responsivo */
+      @media (max-width: 767px) {
+        .a11y-toggle {
+          /* top definido via JavaScript para alinhar abaixo do VLibras */
+          right: 15px;
+          width: 36px;
+          height: 36px;
+        }
+        .a11y-toggle .material-symbols-outlined {
+          font-size: 19px;
+        }
+      }
+      /* Região só para leitores de tela */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        white-space: nowrap;
+        border: 0;
+      }
+    </style>
+
+    <button id="a11yToggle" class="a11y-toggle" aria-controls="a11yToolbar" aria-expanded="false" aria-hidden="true">
+      <span class="material-symbols-outlined" aria-hidden="true">accessibility_new</span>
+      <span class="sr-only">Opções de acessibilidade</span>
+    </button>
+
+    <nav id="a11yToolbar" class="a11y-toolbar" role="region" aria-label="Ferramentas de acessibilidade" aria-hidden="true">
+      <div class="a11y-title">Ferramentas</div>
+      <button type="button" id="a11yInc" aria-label="Aumentar tamanho do texto">🔍 Aumentar texto</button>
+      <button type="button" id="a11yDec" aria-label="Diminuir tamanho do texto">🔎 Diminuir texto</button>
+      <button type="button" id="a11yHC" aria-pressed="false" aria-label="Ativar alto contraste">🎯 Alto contraste</button>
+      <button type="button" id="a11yNeg" aria-pressed="false" aria-label="Ativar contraste negativo (inverter cores)">🌓 Contraste negativo</button>
+      <button type="button" id="a11yGray" aria-pressed="false" aria-label="Ativar escala de cinza">⚪ Escala de cinza</button>
+      <button type="button" id="a11yUnder" aria-pressed="false" aria-label="Sublinhar links">🔗 Links sublinhados</button>
+      <button type="button" id="a11yRead" aria-pressed="false" aria-label="Fonte legível">🅰️ Fonte legível</button>
+      <button type="button" id="a11yReset" aria-label="Redefinir ajustes">↩️ Redefinir</button>
+    </nav>
+
+    <div id="a11yLive" class="sr-only" aria-live="polite"></div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const html = document.documentElement;
+        const body = document.body;
+        const $ = (id) => document.getElementById(id);
+        const live = $('a11yLive');
+  
+        // Ajusta posicionamento com base no VLibras
+        function adjustAccessibilityPosition() {
+          const vlibrasBtnRect = document.querySelector('[vw-access-button]')?.getBoundingClientRect();
+          const a11yBtn = document.getElementById('a11yToggle');
+          
+          if (vlibrasBtnRect && a11yBtn) {
+            // Posiciona abaixo do botão do VLibras com espaço suficiente
+            const vlibrasBottom = vlibrasBtnRect.bottom;
+            // Adiciona espaçamento de 20px para evitar sobreposição visual e de interação
+            a11yBtn.style.top = (vlibrasBottom + 20) + 'px';
+            
+            // Posiciona mais próximo da borda direita (15px da borda)
+            a11yBtn.style.right = '15px';
+          }
+        }
+        
+        // Executa no carregamento e quando a janela for redimensionada
+        window.addEventListener('resize', adjustAccessibilityPosition);
+        // Executa várias vezes após o carregamento para garantir que o VLibras esteja inicializado
+        setTimeout(adjustAccessibilityPosition, 300);
+        setTimeout(adjustAccessibilityPosition, 800);
+        setTimeout(adjustAccessibilityPosition, 1500);
+
+        const state = {
+          fontScale: 1,
+          contrast: false,
+          negative: false,
+          grayscale: false,
+          underline: false,
+          readable: false
+        };
+
+        // Persistência
+        const load = () => {
+          try {
+            const saved = JSON.parse(localStorage.getItem('a11yPrefs')||'{}');
+            Object.assign(state, saved);
+          } catch {}
+        };
+        const save = () => localStorage.setItem('a11yPrefs', JSON.stringify(state));
+
+        // Aplicação de estados
+        const apply = () => {
+          html.style.setProperty('--a11y-fontscale', state.fontScale);
+          if (state.fontScale !== 1) html.setAttribute('data-a11y-fontscale','');
+          else html.removeAttribute('data-a11y-fontscale');
+
+          body.classList.toggle('a11y-contrast', state.contrast);
+          html.classList.toggle('a11y-negative', state.negative);
+          html.classList.toggle('a11y-grayscale', state.grayscale);
+          body.classList.toggle('a11y-underline', state.underline);
+          body.classList.toggle('a11y-readable', state.readable);
+
+          // Atualiza aria-pressed
+          $('a11yHC').setAttribute('aria-pressed', String(state.contrast));
+          $('a11yNeg').setAttribute('aria-pressed', String(state.negative));
+          $('a11yGray').setAttribute('aria-pressed', String(state.grayscale));
+          $('a11yUnder').setAttribute('aria-pressed', String(state.underline));
+          $('a11yRead').setAttribute('aria-pressed', String(state.readable));
+        };
+
+        const announce = (msg) => { live.textContent = ''; setTimeout(()=> live.textContent = msg, 0); };
+
+        // Controles
+        $('a11yInc').addEventListener('click', () => {
+          state.fontScale = Math.min(2.0, +(state.fontScale + 0.1).toFixed(2));
+          apply(); save(); announce('Texto aumentado');
+        });
+        $('a11yDec').addEventListener('click', () => {
+          state.fontScale = Math.max(0.75, +(state.fontScale - 0.1).toFixed(2));
+          apply(); save(); announce('Texto diminuído');
+        });
+        $('a11yHC').addEventListener('click', () => {
+          state.contrast = !state.contrast;
+          // Evita conflito visual entre alto contraste e negativo
+          if (state.contrast) state.negative = false;
+          apply(); save(); announce(state.contrast ? 'Alto contraste ativado' : 'Alto contraste desativado');
+        });
+        $('a11yNeg').addEventListener('click', () => {
+          state.negative = !state.negative;
+          if (state.negative) state.contrast = false;
+          apply(); save(); announce(state.negative ? 'Contraste negativo ativado' : 'Contraste negativo desativado');
+        });
+        $('a11yGray').addEventListener('click', () => {
+          state.grayscale = !state.grayscale;
+          apply(); save(); announce(state.grayscale ? 'Escala de cinza ativada' : 'Escala de cinza desativada');
+        });
+        $('a11yUnder').addEventListener('click', () => {
+          state.underline = !state.underline;
+          apply(); save(); announce(state.underline ? 'Links sublinhados' : 'Links sem sublinhado');
+        });
+        $('a11yRead').addEventListener('click', () => {
+          state.readable = !state.readable;
+          apply(); save(); announce(state.readable ? 'Fonte legível ativada' : 'Fonte padrão restaurada');
+        });
+        $('a11yReset').addEventListener('click', () => {
+          Object.assign(state, {fontScale:1, contrast:false, negative:false, grayscale:false, underline:false, readable:false});
+          apply(); save(); announce('Ajustes redefinidos');
+        });
+
+        // Botão de acessibilidade
+        const toggle = $('a11yToggle');
+        const toolbar = $('a11yToolbar');
+        
+        // Garantir que o event listener seja adicionado depois que os elementos existam
+        toggle.addEventListener('click', function(event) {
+          event.stopPropagation(); // Impede que o clique seja propagado para o documento
+          toolbar.classList.toggle('active');
+          const isActive = toolbar.classList.contains('active');
+          toggle.setAttribute('aria-expanded', String(isActive));
+          console.log("Botão clicado, estado da toolbar:", isActive ? "ativo" : "inativo");
+        });
+
+        // Fechar ao clicar fora
+        document.addEventListener('click', (event) => {
+          // Verifica se o clique foi fora da toolbar e fora do botão
+          if (toolbar.classList.contains('active') && 
+              !toolbar.contains(event.target) && 
+              event.target !== toggle &&
+              !toggle.contains(event.target)) {
+            toolbar.classList.remove('active');
+            toggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        // Inicializa
+        load(); apply();
+      });
+    </script>
+    <!-- A11y Toolbar – fim -->
   </body>
 </html>
