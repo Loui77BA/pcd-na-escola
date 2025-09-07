@@ -2053,7 +2053,7 @@ const periodicElements = [
         atomicNumber: 89,
         atomicMass: "(227)",
         groupName: "Actinídeo",
-        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/89-actinio-MED.jpg",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/89-actinio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2086,7 +2086,7 @@ const periodicElements = [
         atomicNumber: 90,
         atomicMass: "232,04",
         groupName: "Actinídeo",
-        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/90-torio-MED.jpg",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/90-torio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2118,7 +2118,7 @@ const periodicElements = [
         atomicNumber: 91,
         atomicMass: "231,04",
         groupName: "Actinídeo",
-        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/91-protactinio-MED.jpg",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/91-protactinio-corrigido.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2151,7 +2151,7 @@ const periodicElements = [
         atomicNumber: 92,
         atomicMass: "238,03",
         groupName: "Actinídeo",
-        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/92-uranio-MED.jpg",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/92-uranio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2184,7 +2184,7 @@ const periodicElements = [
         atomicNumber: 93,
         atomicMass: "(237)",
         groupName: "Actinídeo",
-        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/93-neptunio-MED.jpg",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/93-neptunio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2217,7 +2217,7 @@ const periodicElements = [
         atomicNumber: 94,
         atomicMass: "(244)",
         groupName: "Actinídeo",
-        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/94-plutonio-MED.jpg",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/94-plutonio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2249,7 +2249,7 @@ const periodicElements = [
         atomicNumber: 95,
         atomicMass: "(243)",
         groupName: "Actinídeo",
-        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/95-americio-MED.jpg",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/95-americio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2281,7 +2281,7 @@ const periodicElements = [
         atomicNumber: 96,
         atomicMass: "(247)",
         groupName: "Actinídeo",
-        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/96-curio-MED.jpg",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/96-curio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2314,7 +2314,7 @@ const periodicElements = [
         atomicNumber: 97,
         atomicMass: "(247)",
         groupName: "Actinídeo",
-        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/97-berquelio-MED.jpg",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/97-berquelio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2346,7 +2346,7 @@ const periodicElements = [
         atomicNumber: 98,
         atomicMass: "(251)",
         groupName: "Actinídeo",
-        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/98-californio-MED.jpg",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/98-californio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },

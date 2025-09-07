@@ -417,6 +417,30 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
         }
       });
     });
+    
+    // Adiciona um listener para depurar o carregamento das imagens dos modais
+    document.addEventListener('show.bs.modal', function(event) {
+      const modal = event.target;
+      const symbol = modal.getAttribute('data-element-symbol');
+      const images = modal.querySelectorAll('img');
+      
+      if (images.length === 0) {
+        console.log(`Modal do elemento ${symbol}: Nenhuma imagem encontrada`);
+      } else {
+        images.forEach((img, index) => {
+          console.log(`Modal do elemento ${symbol}: Imagem ${index+1} - URL: ${img.src}`);
+          
+          // Adiciona listener para verificar o carregamento da imagem
+          img.addEventListener('load', () => {
+            console.log(`Modal do elemento ${symbol}: Imagem ${index+1} carregada com sucesso`);
+          });
+          
+          img.addEventListener('error', () => {
+            console.log(`Modal do elemento ${symbol}: ERRO ao carregar imagem ${index+1} - URL: ${img.src}`);
+          });
+        });
+      }
+    });
   });
 </script>
 
