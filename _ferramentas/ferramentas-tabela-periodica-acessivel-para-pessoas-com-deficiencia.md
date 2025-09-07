@@ -212,17 +212,17 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
               Painel de Controle
             </h2>
 
-            <!-- Ações rápidas -->
+            <!-- Informações sobre a tabela -->
             <div class="bg-dark bg-opacity-50 p-3 rounded-4 mb-4">
               <div class="d-flex align-items-center mb-3">
-                <span class="material-symbols-outlined me-2" aria-hidden="true" role="presentation">touch_app</span>
-                <h3 id="acoes-rapidas-label" class="fw-semibold text-white mb-0 fs-6">Ações rápidas:</h3>
+                <span class="material-symbols-outlined me-2" aria-hidden="true" role="presentation">info</span>
+                <h3 id="acoes-rapidas-label" class="fw-semibold text-white mb-0 fs-6">Informações sobre a tabela:</h3>
               </div>
               <div class="d-flex flex-wrap gap-2 justify-content-center">
-                <a href="#secao-periodos" class="btn btn-primary px-4 py-2 rounded-pill d-flex align-items-center" aria-label="Ver tabela periódica" title="Ir para a tabela periódica">
-                  <span class="material-symbols-outlined me-2" aria-hidden="true">table_chart</span>
-                  <span>Ver tabela</span>
-                </a>
+                <button id="btn-como-funciona" type="button" class="btn btn-primary px-4 py-2 rounded-pill d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#modal-como-funciona" aria-haspopup="dialog" aria-expanded="false" aria-label="Como funciona a tabela periódica" title="Instruções de uso">
+                  <span class="material-symbols-outlined me-2" aria-hidden="true">help_outline</span>
+                  <span>Como funciona</span>
+                </button>
                 <button id="btn-saiba-mais" type="button" class="btn btn-outline-light px-4 py-2 rounded-pill d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#modal-sobre" aria-haspopup="dialog" aria-expanded="false" aria-label="Saiba mais sobre a tabela periódica acessível" title="Abrir informações detalhadas">
                   <span class="material-symbols-outlined me-2" aria-hidden="true">info</span>
                   <span>Saiba mais</span>
@@ -332,6 +332,60 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
   </div>
 </div>
 
+<!-- Modal Como Funciona -->
+<div class="modal fade" id="modal-como-funciona" aria-labelledby="modalComoFuncionaLabel" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+    <div class="modal-content bg-dark text-white p-3">
+      <div class="modal-header border-light border-opacity-25">
+        <h2 class="modal-title fs-4" id="modalComoFuncionaLabel">
+          <span class="material-symbols-outlined align-middle me-2" aria-hidden="true">help_outline</span>
+          Como usar a Tabela Periódica
+        </h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar modal" title="Fechar modal">
+          <span class="visually-hidden">Fechar</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4 mb-4">
+          <div class="col-lg-6">
+            <figure>
+              <img src="https://placekitten.com/600/400" class="img-fluid modal-about-image" alt="Ilustração mostrando como utilizar a tabela periódica">
+              <figcaption class="visually-hidden">Imagem representativa do uso da tabela periódica</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="h5 mb-3 pb-2 border-bottom border-light border-opacity-25">Navegação básica</h3>
+            <p>Para utilizar a Tabela Periódica Acessível, basta clicar ou tocar em qualquer elemento químico para abrir uma janela com informações detalhadas sobre ele.</p>
+            <p>Use os botões de navegação rápida para saltar entre os diferentes períodos e grupos de elementos.</p>
+          </div>
+        </div>
+
+        <h3 class="h5 mb-3 pb-2 border-bottom border-light border-opacity-25">Recursos de acessibilidade</h3>
+        <ul class="list-unstyled">
+          <li class="mb-2"><span class="material-symbols-outlined me-2 align-middle" aria-hidden="true">screen_reader</span> <strong>Leitores de tela:</strong> Toda a tabela é compatível com tecnologias assistivas.</li>
+          <li class="mb-2"><span class="material-symbols-outlined me-2 align-middle" aria-hidden="true">keyboard</span> <strong>Navegação por teclado:</strong> Use Tab para navegar entre elementos e Enter para selecionar.</li>
+          <li class="mb-2"><span class="material-symbols-outlined me-2 align-middle" aria-hidden="true">palette</span> <strong>Modo de cores:</strong> Ative/desative as cores para melhor contraste visual.</li>
+        </ul>
+
+        <h3 class="h5 mb-3 pb-2 border-bottom border-light border-opacity-25">Dicas de uso</h3>
+        <ul>
+          <li>Clique no botão "Ativar cores" para visualizar os elementos agrupados por categorias.</li>
+          <li>Use os filtros de grupo para encontrar elementos específicos.</li>
+          <li>As informações detalhadas incluem número atômico, massa atômica e distribuição eletrônica.</li>
+        </ul>
+
+        <div class="alert alert-info mt-4">
+          <span class="material-symbols-outlined me-2 align-middle" aria-hidden="true">lightbulb</span>
+          <strong>Dica:</strong> Para uma experiência ainda melhor, utilize um dispositivo com tela grande ou gire seu dispositivo móvel na horizontal.
+        </div>
+      </div>
+      <div class="modal-footer border-light border-opacity-25">
+        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Seção da tabela -->
 <section id="secao-periodos" class="text-white pt-2 position-relative" aria-labelledby="tabela-titulo">
   <div class="container px-4 my-2">
@@ -390,6 +444,21 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
       modalSobre.addEventListener('hidden.bs.modal', function () {
         btnSaibaMais.setAttribute('aria-expanded', 'false');
         btnSaibaMais.focus();
+      });
+    }
+    
+    // Modal "Como funciona": atualizar aria-expanded e devolver foco
+    const modalComoFunciona = document.getElementById('modal-como-funciona');
+    const btnComoFunciona = document.getElementById('btn-como-funciona');
+    if (modalComoFunciona && btnComoFunciona) {
+      modalComoFunciona.addEventListener('shown.bs.modal', function () {
+        btnComoFunciona.setAttribute('aria-expanded', 'true');
+        const primeiro = modalComoFunciona.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+        if (primeiro) primeiro.focus();
+      });
+      modalComoFunciona.addEventListener('hidden.bs.modal', function () {
+        btnComoFunciona.setAttribute('aria-expanded', 'false');
+        btnComoFunciona.focus();
       });
     }
 
