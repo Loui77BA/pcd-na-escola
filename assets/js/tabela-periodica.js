@@ -1151,6 +1151,7 @@ const periodicElements = [
         atomicNumber: 57,
         atomicMass: "138,91",
         groupName: "Lantanídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/57-lantanio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1177,6 +1178,7 @@ const periodicElements = [
         atomicNumber: 58,
         atomicMass: "140,12",
         groupName: "Lantanídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/58-cerio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1204,6 +1206,7 @@ const periodicElements = [
         atomicNumber: 59,
         atomicMass: "140,91",
         groupName: "Lantanídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/59-praseodimio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1230,6 +1233,7 @@ const periodicElements = [
         atomicNumber: 60,
         atomicMass: "144,24",
         groupName: "Lantanídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/60-neodimio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1256,6 +1260,7 @@ const periodicElements = [
         atomicNumber: 61,
         atomicMass: "(145)",
         groupName: "Lantanídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/61-promecio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1282,6 +1287,7 @@ const periodicElements = [
         atomicNumber: 62,
         atomicMass: "150,36",
         groupName: "Lantanídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/62-samario-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1308,6 +1314,7 @@ const periodicElements = [
         atomicNumber: 63,
         atomicMass: "151,96",
         groupName: "Lantanídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/63-europio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1334,6 +1341,7 @@ const periodicElements = [
         atomicNumber: 64,
         atomicMass: "157,25",
         groupName: "Lantanídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/64-gadolinio-MED.jpg",
         distribution: [
             // até Xe (54 elétrons):
             { camada: 1, subnivel: "1 s", eletrons: 2 },
@@ -1364,6 +1372,7 @@ const periodicElements = [
         atomicNumber: 65,
         atomicMass: "158,93",
         groupName: "Lantanídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/65-terbio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1390,6 +1399,7 @@ const periodicElements = [
         atomicNumber: 66,
         atomicMass: "162,50",
         groupName: "Lantanídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/66-disprosio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1416,6 +1426,7 @@ const periodicElements = [
         atomicNumber: 67,
         atomicMass: "164,93",
         groupName: "Lantanídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/67-holmio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1442,6 +1453,7 @@ const periodicElements = [
         atomicNumber: 68,
         atomicMass: "167,26",
         groupName: "Lantanídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/68-erbio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1468,6 +1480,7 @@ const periodicElements = [
         atomicNumber: 69,
         atomicMass: "168,93",
         groupName: "Lantanídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/69-tulio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1494,6 +1507,7 @@ const periodicElements = [
         atomicNumber: 70,
         atomicMass: "173,05",
         groupName: "Lantanídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/70-iterbio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1520,6 +1534,7 @@ const periodicElements = [
         atomicNumber: 71,
         atomicMass: "174,97",
         groupName: "Lantanídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/71-lutecio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1977,6 +1992,7 @@ const periodicElements = [
         atomicNumber: 87,
         atomicMass: "(223)",
         groupName: "Metal alcalino",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/87-francio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2006,6 +2022,7 @@ const periodicElements = [
         atomicNumber: 88,
         atomicMass: "(226)",
         groupName: "Metal alcalino-terroso",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/88-radio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2036,6 +2053,7 @@ const periodicElements = [
         atomicNumber: 89,
         atomicMass: "(227)",
         groupName: "Actinídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/89-actinio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2068,6 +2086,7 @@ const periodicElements = [
         atomicNumber: 90,
         atomicMass: "232,04",
         groupName: "Actinídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/90-torio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2099,6 +2118,7 @@ const periodicElements = [
         atomicNumber: 91,
         atomicMass: "231,04",
         groupName: "Actinídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/91-protactinio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2131,6 +2151,7 @@ const periodicElements = [
         atomicNumber: 92,
         atomicMass: "238,03",
         groupName: "Actinídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/92-uranio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2163,6 +2184,7 @@ const periodicElements = [
         atomicNumber: 93,
         atomicMass: "(237)",
         groupName: "Actinídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/93-neptunio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2195,6 +2217,7 @@ const periodicElements = [
         atomicNumber: 94,
         atomicMass: "(244)",
         groupName: "Actinídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/94-plutonio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2226,6 +2249,7 @@ const periodicElements = [
         atomicNumber: 95,
         atomicMass: "(243)",
         groupName: "Actinídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/95-americio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2257,6 +2281,7 @@ const periodicElements = [
         atomicNumber: 96,
         atomicMass: "(247)",
         groupName: "Actinídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/96-curio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2289,6 +2314,7 @@ const periodicElements = [
         atomicNumber: 97,
         atomicMass: "(247)",
         groupName: "Actinídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/97-berquelio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -2320,6 +2346,7 @@ const periodicElements = [
         atomicNumber: 98,
         atomicMass: "(251)",
         groupName: "Actinídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/98-californio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
