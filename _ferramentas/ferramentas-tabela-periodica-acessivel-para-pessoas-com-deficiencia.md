@@ -360,12 +360,6 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
       el.setAttribute('role', 'presentation');
     });
 
-    // Foco no título da página (após breve delay para não "brigar" com a animação do header)
-    setTimeout(function () {
-      const pageTitle = document.getElementById('page-title');
-      if (pageTitle) pageTitle.focus();
-    }, 800);
-
     // Alternância de cores das famílias químicas
     const btnToggleCores = document.getElementById('toggle-cores');
     if (btnToggleCores) {
