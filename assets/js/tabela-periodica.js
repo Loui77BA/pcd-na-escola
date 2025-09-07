@@ -14,7 +14,7 @@ const periodicElements = [
         atomicMass: "1,007",
         groupName: "Não metal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/09/1-hidrogenio.jpg",
-        distribution: [{ camada: 1, subnivel: "1s", eletrons: 1 }],
+        distribution: [{ camada: 1, subnivel: "1 s", eletrons: 1 }],
     },
     {
         period: 1,
@@ -1099,6 +1099,7 @@ const periodicElements = [
         atomicNumber: 55,
         atomicMass: "132,91",
         groupName: "Metal alcalino",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/55-cesio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1123,6 +1124,7 @@ const periodicElements = [
         atomicNumber: 56,
         atomicMass: "137,33",
         groupName: "Metal alcalino-terroso",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/56-bario-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1546,6 +1548,7 @@ const periodicElements = [
         atomicNumber: 72,
         atomicMass: "178,49",
         groupName: "Metal de transição",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/72-hafnio-MED.jpg",
         distribution: [
             // +1 e– em 5d em relação ao Lu
             { camada: 1, subnivel: "1 s", eletrons: 2 },
@@ -1574,6 +1577,7 @@ const periodicElements = [
         atomicNumber: 73,
         atomicMass: "180,95",
         groupName: "Metal de transição",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/73-tantalo-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1601,6 +1605,7 @@ const periodicElements = [
         atomicNumber: 74,
         atomicMass: "183,84",
         groupName: "Metal de transição",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/74-tungstenio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1628,6 +1633,7 @@ const periodicElements = [
         atomicNumber: 75,
         atomicMass: "186,21",
         groupName: "Metal de transição",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/75-renio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1655,6 +1661,7 @@ const periodicElements = [
         atomicNumber: 76,
         atomicMass: "190,23",
         groupName: "Metal de transição",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/76-osmio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1682,6 +1689,7 @@ const periodicElements = [
         atomicNumber: 77,
         atomicMass: "192,22",
         groupName: "Metal de transição",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/77-iridio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1709,6 +1717,7 @@ const periodicElements = [
         atomicNumber: 78,
         atomicMass: "195,08",
         groupName: "Metal de transição",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/78-platina-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1737,6 +1746,7 @@ const periodicElements = [
         atomicNumber: 79,
         atomicMass: "196,97",
         groupName: "Metal de transição",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/79-ouro-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1765,6 +1775,7 @@ const periodicElements = [
         atomicNumber: 80,
         atomicMass: "200,59",
         groupName: "Metal de transição",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/80-mercurio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1792,6 +1803,7 @@ const periodicElements = [
         atomicNumber: 81,
         atomicMass: "204,38",
         groupName: "Metal pobre",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/81-talio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1820,6 +1832,7 @@ const periodicElements = [
         atomicNumber: 82,
         atomicMass: "207,2",
         groupName: "Metal pobre",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/82-chumbo-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1848,6 +1861,7 @@ const periodicElements = [
         atomicNumber: 83,
         atomicMass: "208,98",
         groupName: "Metal pobre",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/83-bismuto-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1876,6 +1890,7 @@ const periodicElements = [
         atomicNumber: 84,
         atomicMass: "(209)",
         groupName: "Semimetal",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/84-polonio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1904,6 +1919,7 @@ const periodicElements = [
         atomicNumber: 85,
         atomicMass: "(210)",
         groupName: "Halogênio",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/85-astato-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
@@ -1932,6 +1948,7 @@ const periodicElements = [
         atomicNumber: 86,
         atomicMass: "(222)",
         groupName: "Gás nobre",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/86-radonio-MED.jpg",
         distribution: [
             { camada: 1, subnivel: "1 s", eletrons: 2 },
             { camada: 2, subnivel: "2 s", eletrons: 2 },
