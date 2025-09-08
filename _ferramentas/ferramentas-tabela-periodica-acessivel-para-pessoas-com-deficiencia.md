@@ -113,8 +113,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
   }
   .btn-elemento:hover { transform: translateY(-4px); border-color: var(--focus); box-shadow: 0 10px 24px rgba(0,0,0,.35); }
   .btn-elemento:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
-  body.colors-active .btn-elemento { background: #f3f3f3 !important; color: #000 !important; }
-  body.colors-active .btn-elemento * { color: #000 !important; }
+  /* Estilos relacionados à funcionalidade de cores foram removidos */
 
   /* ============================= */
   /*              Modal            */
@@ -207,7 +206,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
 
         <!-- Painel de Controle -->
         <div class="mt-4 mb-2">
-          <div class="position-relative rounded-4 bg-dark bg-opacity-50 p-4 border border-light border-opacity-10">
+          <div class="position-relative rounded-4 bg-dark bg-opacity-10 p-3 border border-light border-opacity-10">
             <h2 id="titulo-painel" class="h4 text-center mb-4 fw-bold position-relative">
               Painel de Controle
             </h2>
@@ -232,20 +231,29 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
 
             <!-- Configuração visual -->
             <div class="bg-dark bg-opacity-50 p-3 rounded-4 mb-4">
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center">
-                  <span class="material-symbols-outlined me-2" aria-hidden="true" role="presentation">palette</span>
-                  <span class="fw-semibold text-white" id="config-visual-label">Configuração visual</span>
-                </div>
-                <button id="toggle-cores" class="btn btn-outline-light btn-sm rounded-pill px-3" type="button" aria-pressed="false" aria-labelledby="config-visual-label" aria-describedby="toggle-cores-desc" title="Alternar visualização por cores nas famílias químicas">
-                  <span>Ativar cores</span>
+              <!-- Seção de configuração visual removida -->
+            </div>
+
+            <!-- Opções de visualização da tabela -->
+            <div class="bg-dark bg-opacity-50 p-3 rounded-4 mb-4">
+              <div class="d-flex align-items-center mb-3">
+                <span class="material-symbols-outlined me-2" aria-hidden="true" role="presentation">view_week</span>
+                <h3 id="modo-visualizacao-label" class="fw-semibold text-white mb-0 fs-6">Modo de visualização:</h3>
+              </div>
+              <div class="d-flex justify-content-center mb-2 gap-2">
+                <button id="btn-view-by-period" class="btn btn-primary rounded-pill text-nowrap active" aria-pressed="true" aria-label="Visualizar por períodos">
+                  <span class="material-symbols-outlined me-1" aria-hidden="true">table_rows</span>
+                  Por períodos
                 </button>
-                <span id="toggle-cores-desc" class="visually-hidden">Alterna a visualização por cores nas famílias químicas.</span>
+                <button id="btn-view-by-group" class="btn btn-outline-light rounded-pill text-nowrap" aria-pressed="false" aria-label="Visualizar por grupos/colunas">
+                  <span class="material-symbols-outlined me-1" aria-hidden="true">table_chart</span>
+                  Por grupos
+                </button>
               </div>
             </div>
 
             <!-- Navegação por períodos (links âncora) -->
-            <div class="bg-dark bg-opacity-50 p-3 rounded-4">
+            <div id="periodo-nav-container" class="bg-dark bg-opacity-50 p-3 rounded-4 mb-4">
               <div class="d-flex align-items-center mb-3">
                 <span class="material-symbols-outlined me-2" aria-hidden="true" role="presentation">table_rows</span>
                 <h3 id="periodos-nav-label" class="fw-semibold text-white mb-0 fs-6">Navegue pelos períodos da tabela:</h3>
@@ -260,6 +268,36 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
                 <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#periodo-7" title="Ir para o 7º Período" aria-label="Navegar para o sétimo período">7º Período</a>
                 <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#periodo-lantanideos" title="Ir para os Lantanídeos" aria-label="Navegar para os elementos lantanídeos">Lantanídeos</a>
                 <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#periodo-actinideos" title="Ir para os Actinídeos" aria-label="Navegar para os elementos actinídeos">Actinídeos</a>
+              </nav>
+            </div>
+            
+            <!-- Navegação por grupos/colunas (links âncora) -->
+            <div id="grupo-nav-container" class="bg-dark bg-opacity-50 p-3 rounded-4" style="display: none;">
+              <div class="d-flex align-items-center mb-3">
+                <span class="material-symbols-outlined me-2" aria-hidden="true" role="presentation">table_chart</span>
+                <h3 id="grupos-nav-label" class="fw-semibold text-white mb-0 fs-6">Navegue pelos grupos da tabela:</h3>
+              </div>
+              <nav aria-labelledby="grupos-nav-label" class="d-flex flex-wrap gap-2 justify-content-center">
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-1" title="Ir para o Grupo 1" aria-label="Navegar para o grupo 1">Grupo 1</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-2" title="Ir para o Grupo 2" aria-label="Navegar para o grupo 2">Grupo 2</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-3" title="Ir para o Grupo 3" aria-label="Navegar para o grupo 3">Grupo 3</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-4" title="Ir para o Grupo 4" aria-label="Navegar para o grupo 4">Grupo 4</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-5" title="Ir para o Grupo 5" aria-label="Navegar para o grupo 5">Grupo 5</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-6" title="Ir para o Grupo 6" aria-label="Navegar para o grupo 6">Grupo 6</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-7" title="Ir para o Grupo 7" aria-label="Navegar para o grupo 7">Grupo 7</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-8" title="Ir para o Grupo 8" aria-label="Navegar para o grupo 8">Grupo 8</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-9" title="Ir para o Grupo 9" aria-label="Navegar para o grupo 9">Grupo 9</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-10" title="Ir para o Grupo 10" aria-label="Navegar para o grupo 10">Grupo 10</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-11" title="Ir para o Grupo 11" aria-label="Navegar para o grupo 11">Grupo 11</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-12" title="Ir para o Grupo 12" aria-label="Navegar para o grupo 12">Grupo 12</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-13" title="Ir para o Grupo 13" aria-label="Navegar para o grupo 13">Grupo 13</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-14" title="Ir para o Grupo 14" aria-label="Navegar para o grupo 14">Grupo 14</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-15" title="Ir para o Grupo 15" aria-label="Navegar para o grupo 15">Grupo 15</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-16" title="Ir para o Grupo 16" aria-label="Navegar para o grupo 16">Grupo 16</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-17" title="Ir para o Grupo 17" aria-label="Navegar para o grupo 17">Grupo 17</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-18" title="Ir para o Grupo 18" aria-label="Navegar para o grupo 18">Grupo 18</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-lantanideos" title="Ir para os Lantanídeos" aria-label="Navegar para os elementos lantanídeos">Lantanídeos</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-actinideos" title="Ir para os Actinídeos" aria-label="Navegar para os elementos actinídeos">Actinídeos</a>
               </nav>
             </div>
           </div>
@@ -414,22 +452,14 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
       el.setAttribute('role', 'presentation');
     });
 
-    // Alternância de cores das famílias químicas
-    const btnToggleCores = document.getElementById('toggle-cores');
-    if (btnToggleCores) {
-      const announcer = document.createElement('div');
+        // Configuramos um announcer para acessibilidade
+    let announcer = document.getElementById('a11y-announcer');
+    if (!announcer) {
+      announcer = document.createElement('div');
       announcer.id = 'a11y-announcer';
       announcer.className = 'visually-hidden';
       announcer.setAttribute('aria-live', 'assertive');
       document.body.appendChild(announcer);
-
-      btnToggleCores.addEventListener('click', function () {
-        const ativo = document.body.classList.toggle('colors-active');
-        btnToggleCores.setAttribute('aria-pressed', ativo ? 'true' : 'false');
-        btnToggleCores.querySelector('span:last-child').textContent = ativo ? 'Desativar cores' : 'Ativar cores';
-        announcer.textContent = ativo ? 'Cores ativadas.' : 'Cores desativadas.';
-        setTimeout(() => announcer.textContent = '', 2000);
-      });
     }
 
     // Modal "Saiba mais": atualizar aria-expanded e devolver foco
@@ -462,28 +492,36 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
       });
     }
 
-    // Corrige a navegação para Lantanídeos e Actinídeos
+    // Corrige a navegação para Lantanídeos e Actinídeos nos links de períodos
     document.querySelectorAll('a[href="#periodo-lantanideos"], a[href="#periodo-actinideos"]').forEach(link => {
       link.addEventListener('click', function(e) {
         e.preventDefault();
         
-        // Mapeia os links sem acento para os IDs com acento
-        const idMap = {
-          '#periodo-lantanideos': '#periodo-Lantanídeos',
-          '#periodo-actinideos': '#periodo-Actinídeos'
-        };
+        // Primeiro verificamos se estamos no modo de visualização por períodos
+        const isPeriodView = document.getElementById('btn-view-by-period').getAttribute('aria-pressed') === 'true';
         
-        const targetId = idMap[this.getAttribute('href')];
-        const targetElement = document.querySelector(targetId);
-        
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
-          // Define o foco no elemento para acessibilidade
-          setTimeout(() => {
-            targetElement.setAttribute('tabindex', '-1');
-            targetElement.focus();
-          }, 500);
+        // Se não estamos no modo de visualização por períodos, ativamos esse modo primeiro
+        if (!isPeriodView) {
+          document.getElementById('btn-view-by-period').click();
         }
+        
+        // Esperamos um momento para garantir que a DOM foi atualizada
+        setTimeout(() => {
+          // Obtém o ID diretamente do href
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+          
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+            // Define o foco no elemento para acessibilidade
+            setTimeout(() => {
+              targetElement.setAttribute('tabindex', '-1');
+              targetElement.focus();
+            }, 500);
+          } else {
+            console.warn('Elemento alvo não encontrado:', targetId);
+          }
+        }, 100); // Pequeno atraso para garantir que a DOM foi atualizada
       });
     });
     
@@ -515,3 +553,106 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
 
 <!-- Script da Tabela Periódica (injetará os elementos no #tabela-container) -->
 <script src="/assets/js/tabela-periodica.js"></script>
+<script src="/assets/js/tabela-periodica-grupos.js"></script>
+
+<!-- Script de alternância entre visualizações -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Alternar entre visualização por períodos e por grupos
+    const btnViewByPeriod = document.getElementById('btn-view-by-period');
+    const btnViewByGroup = document.getElementById('btn-view-by-group');
+    const periodoNavContainer = document.getElementById('periodo-nav-container');
+    const grupoNavContainer = document.getElementById('grupo-nav-container');
+    
+    // Criamos um elemento para anúncios de acessibilidade
+    const visualAnnouncer = document.createElement('div');
+    visualAnnouncer.setAttribute('aria-live', 'polite');
+    visualAnnouncer.classList.add('visually-hidden');
+    document.body.appendChild(visualAnnouncer);
+    
+    // Função para mostrar visualização por períodos
+    function showPeriodView() {
+      btnViewByPeriod.classList.add('btn-primary');
+      btnViewByPeriod.classList.remove('btn-outline-light');
+      btnViewByPeriod.setAttribute('aria-pressed', 'true');
+      
+      btnViewByGroup.classList.remove('btn-primary');
+      btnViewByGroup.classList.add('btn-outline-light');
+      btnViewByGroup.setAttribute('aria-pressed', 'false');
+      
+      periodoNavContainer.style.display = 'block';
+      grupoNavContainer.style.display = 'none';
+      
+      // Anunciar para leitores de tela
+      visualAnnouncer.textContent = 'Visualização por períodos ativada';
+      
+      // Garantir que o container esteja limpo antes de gerar a visualização
+      const container = document.querySelector("#secao-periodos .container");
+      if (container) {
+        container.innerHTML = '';
+      }
+      
+      // Gerar a visualização por períodos
+      generatePeriodSections();
+    }
+    
+    // Função para mostrar visualização por grupos
+    function showGroupView() {
+      btnViewByGroup.classList.add('btn-primary');
+      btnViewByGroup.classList.remove('btn-outline-light');
+      btnViewByGroup.setAttribute('aria-pressed', 'true');
+      
+      btnViewByPeriod.classList.remove('btn-primary');
+      btnViewByPeriod.classList.add('btn-outline-light');
+      btnViewByPeriod.setAttribute('aria-pressed', 'false');
+      
+      periodoNavContainer.style.display = 'none';
+      grupoNavContainer.style.display = 'block';
+      
+      // Anunciar para leitores de tela
+      visualAnnouncer.textContent = 'Visualização por grupos ativada';
+      
+      // Garantir que o container esteja limpo antes de gerar a visualização
+      const container = document.querySelector("#secao-grupos .container");
+      if (container) {
+        container.innerHTML = '';
+      }
+      
+      // Gerar a visualização por grupos
+      generateColumnSections();
+    }
+    
+    // Adicionar event listeners para os botões de alternância de visualização
+    if (btnViewByPeriod && btnViewByGroup) {
+      btnViewByPeriod.addEventListener('click', showPeriodView);
+      btnViewByGroup.addEventListener('click', showGroupView);
+    }
+    
+    // Corrige a navegação para Lantanídeos e Actinídeos nos links de grupo
+    document.querySelectorAll('a[href="#grupo-lantanideos"], a[href="#grupo-actinideos"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Primeiro verificamos se estamos no modo de visualização por grupos
+        const isGroupView = document.getElementById('btn-view-by-group').getAttribute('aria-pressed') === 'true';
+        
+        // Se não estamos no modo de visualização por grupos, ativamos esse modo primeiro
+        if (!isGroupView) {
+          document.getElementById('btn-view-by-group').click();
+        }
+        
+        // Esperamos um momento para garantir que a DOM foi atualizada
+        setTimeout(() => {
+          const targetId = link.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+            targetElement.focus();
+          } else {
+            console.warn('Elemento alvo não encontrado:', targetId);
+          }
+        }, 100); // Pequeno atraso para garantir que a DOM foi atualizada
+      });
+    });
+  });
+</script>

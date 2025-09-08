@@ -3021,7 +3021,7 @@ periodicElements.forEach((el) => {
 // Variável global indicando se o modo colorido está ativo ou não.  
 // Esta flag será utilizada nas funções de controle de cor e para
 // ajustar o visual das modais quando necessário.
-let colorModeActive = false;
+// Variável relacionada às cores removida
 
 function generatePeriodSections() {
     // Agrupa os elementos pelo número/string do período
@@ -3034,6 +3034,7 @@ function generatePeriodSections() {
     });
 
     const container = document.querySelector("#secao-periodos .container");
+    container.innerHTML = ''; // Limpa o container antes de adicionar novos elementos
 
     // Definimos a ordem desejada dos períodos
     // 1..7 e depois a "série" dos Lantanídeos (e Actinídeos, se houver).
@@ -3086,8 +3087,18 @@ function generatePeriodSections() {
                 "col-lg-10",
                 "container"
             );
+            // Definir ID específico para Lantanídeos e Actinídeos para corresponder aos links sem acentos
+            let sectionId;
+            if (period === "Lantanídeos") {
+                sectionId = "periodo-lantanideos";
+            } else if (period === "Actinídeos") {
+                sectionId = "periodo-actinideos";
+            } else {
+                sectionId = `periodo-${period}`;
+            }
+            
             periodTitle.innerHTML = `
-          <h2 id="periodo-${period}" class="titulo-linha mb-4">${tituloLinha}</h2>
+          <h2 id="${sectionId}" class="titulo-linha mb-4">${tituloLinha}</h2>
         `;
             container.appendChild(periodTitle);
 
@@ -3230,247 +3241,10 @@ function createDistribution(distArray) {
     return result;
 }
 
-// Função para ativar ou desativar as cores dos elementos
-function setupColorToggle() {
-    const toggleButton = document.getElementById('toggle-cores');
-    if (!toggleButton) return; // Sai da função se o botão não existir
-    
-    // Usaremos a variável global colorModeActive para controlar o estado.
-    // Remove a definição local para garantir que a mesma flag seja utilizada
-    // em todas as funções.
-    
-    toggleButton.addEventListener('click', () => {
-      // Alterna o estado global de cores
-      colorModeActive = !colorModeActive;
-      
-      // Seleciona todos os botões de elementos
-      const elementButtons = document.querySelectorAll('.btn-elemento');
-      
-      if (colorModeActive) {
-        // Ativa as cores
-        toggleButton.textContent = 'Desativar cores';
-        toggleButton.setAttribute('aria-label', 'Desativar cores da tabela periódica');
-        
-        // Primeiro adiciona a classe global ao body
-        document.body.classList.add('colors-active');
-        
-        elementButtons.forEach(button => {
-          // Extrai o símbolo do elemento do botão
-          const symbolElement = button.querySelector('.fw-bolder.fs-1');
-          if (!symbolElement) return;
-          
-          const symbol = symbolElement.textContent.trim();
-          const color = getElementColor(symbol);
-          
-          // Adiciona a classe de colorido ao botão
-          button.classList.add('colored-element');
-          
-          // Método mais direto para forçar a cor de fundo
-          button.style.backgroundColor = color;
-          button.style.background = color;
-          button.style.borderColor = darkenColor(color, 20);
-          
-          // Técnica extra específica para Chrome/Edge
-          button.setAttribute('style', 
-            `background: ${color} !important; 
-             background-color: ${color} !important; 
-             background-image: none !important; 
-             color: #000000 !important; 
-             border-color: ${darkenColor(color, 20)} !important;`
-          );
-          
-          // Forçar a cor preta em TODOS os elementos internos (textos)
-          const allTexts = button.querySelectorAll('*');
-          allTexts.forEach(text => {
-            text.style.color = '#000000';
-            text.setAttribute('style', 'color: #000000 !important');
-          });
-        });
-        
-      } else {
-        // Desativa as cores (volta ao padrão dark)
-        toggleButton.textContent = 'Ativar cores';
-        toggleButton.setAttribute('aria-label', 'Ativar cores da tabela periódica');
-        
-        // Remove classe do body primeiro
-        document.body.classList.remove('colors-active');
-        
-        elementButtons.forEach(button => {
-          // Remove todas as modificações de estilo
-          button.classList.remove('colored-element');
-          
-          // Limpar completamente os estilos inline
-          button.removeAttribute('style');
-          
-          // Restaurar estilos originais do elemento
-          button.style = '';
-          
-          // Restaurar estilos dos filhos 
-          const allTexts = button.querySelectorAll('*');
-          allTexts.forEach(text => {
-            text.removeAttribute('style');
-            text.style = '';
-          });
-        });
-      }
-      // Após tratar os botões de elementos, ajusta também as modais
-      updateModalColors(colorModeActive);
-    });
-  }
-
-  // Função para determinar a cor do elemento com base em seu símbolo
-  function getElementColor(symbol) {
-    // Gases nobres - Azul-claro
-    if (['He', 'Ne', 'Ar', 'Kr', 'Xe', 'Rn', 'Og'].includes(symbol)) {
-      return '#a0d2ff';
-    }
-    
-    // Halogênios - Ciano (azul-esverdeado)
-    if (['F', 'Cl', 'Br', 'I', 'At', 'Ts'].includes(symbol)) {
-      return '#80ffe0';
-    }
-    
-    // Não metais - Verde-vivo (neon)
-    if (['N', 'O', 'P', 'S', 'Se', 'Te'].includes(symbol)) {
-      return '#80ff80';
-    }
-    
-    // Semimetais - Verde-oliva
-    if (['B', 'Si', 'Ge', 'As', 'Sb', 'Bi', 'Po'].includes(symbol)) {
-      return '#c0ca80';
-    }
-    
-    // Metais pobres - Cinza-azulado claro
-    if (['Al', 'Ga', 'In', 'Sn', 'Tl', 'Pb', 'Fl', 'Mc', 'Lv'].includes(symbol)) {
-      return '#c0d0e0';
-    }
-    
-    // Metais de transição - Rosa-avermelhado (salmão escuro)
-    if ([
-      'Sc', 'Ti', 'V', 'Cr', 'Mn', 'Fe', 'Co', 'Ni', 'Cu', 'Zn',
-      'Y', 'Zr', 'Nb', 'Mo', 'Tc', 'Ru', 'Rh', 'Pd', 'Ag', 'Cd',
-      'Hf', 'Ta', 'W', 'Re', 'Os', 'Ir', 'Pt', 'Au', 'Hg',
-      'Rf', 'Db', 'Sg', 'Bh', 'Hs', 'Mt', 'Ds', 'Rg', 'Cn'
-    ].includes(symbol)) {
-      return '#e39b9b';
-    }
-    
-    // Metais alcalino-terrosos - Amarelo-limão
-    if (['Be', 'Mg', 'Ca', 'Sr', 'Ba', 'Ra'].includes(symbol)) {
-      return '#d1ff7a';
-    }
-    
-    // Metais alcalinos - Laranja
-    if (['Li', 'Na', 'K', 'Rb', 'Cs', 'Fr'].includes(symbol)) {
-      return '#ffa54d';
-    }
-    
-    // Lantanídeos - Laranja-claro (salmão)
-    if ([
-      'La', 'Ce', 'Pr', 'Nd', 'Pm', 'Sm', 'Eu', 'Gd', 'Tb', 'Dy', 
-      'Ho', 'Er', 'Tm', 'Yb', 'Lu'
-    ].includes(symbol)) {
-      return '#ffb38a';
-    }
-    
-    // Actinídeos - Lilás (violeta-claro)
-    if ([
-      'Ac', 'Th', 'Pa', 'U', 'Np', 'Pu', 'Am', 'Cm', 'Bk', 'Cf',
-      'Es', 'Fm', 'Md', 'No', 'Lr'
-    ].includes(symbol)) {
-      return '#d8b0ff';
-    }
-    
-    // Hidrogênio - Roxo-claro
-    if (symbol === 'H') {
-      return '#c9abff';
-    }
-    
-    // Cor padrão caso o símbolo não seja encontrado
-    return '#7c7c7c';
-  }
-  
-  // Função auxiliar para escurecer uma cor (para bordas)
-  function darkenColor(color, percent) {
-    const num = parseInt(color.slice(1), 16);
-    const amt = Math.round(2.55 * percent);
-    const R = Math.max(0, (num >> 16) - amt);
-    const G = Math.max(0, (num >> 8 & 0x00FF) - amt);
-    const B = Math.max(0, (num & 0x0000FF) - amt);
-    return `#${(1 << 24 | R << 16 | G << 8 | B).toString(16).slice(1)}`;
-  }
-
-/**
- * Atualiza as cores das janelas modais de acordo com o modo de cor.  
- * Quando o modo colorido está ativado, cada modal assume a mesma cor
- * do botão do elemento correspondente. Caso contrário, as modais
- * retornam ao esquema escuro padrão definido nos estilos CSS.
- * @param {boolean} active Indica se o modo colorido está ativo.
- */
-function updateModalColors(active) {
-  // Seleciona todas as modais existentes no documento
-  const modals = document.querySelectorAll('.modal');
-  modals.forEach((modal) => {
-    const symbol = modal.getAttribute('data-element-symbol');
-    if (!symbol) return;
-    const color = getElementColor(symbol);
-    const modalContent = modal.querySelector('.modal-content');
-    if (!modalContent) return;
-    if (active) {
-      // Aplica cor de fundo e define texto preto para contraste
-      modalContent.style.backgroundColor = color;
-      modalContent.style.color = '#000000';
-      const header = modalContent.querySelector('.modal-header');
-      const body = modalContent.querySelector('.modal-body');
-      const footer = modalContent.querySelector('.modal-footer');
-      [header, body, footer].forEach((section) => {
-        if (section) {
-          section.style.backgroundColor = color;
-          section.style.color = '#000000';
-        }
-      });
-      // Ajusta a visibilidade do botão de fechar invertendo a cor
-      const closeBtn = modalContent.querySelector('.btn-close');
-      if (closeBtn) {
-        closeBtn.style.filter = 'invert(1)';
-      }
-    } else {
-      // Remove estilos inline para retornar ao modo escuro
-      modalContent.style.backgroundColor = '';
-      modalContent.style.color = '';
-      const header = modalContent.querySelector('.modal-header');
-      const body = modalContent.querySelector('.modal-body');
-      const footer = modalContent.querySelector('.modal-footer');
-      [header, body, footer].forEach((section) => {
-        if (section) {
-          section.style.backgroundColor = '';
-          section.style.color = '';
-        }
-      });
-      const closeBtn = modalContent.querySelector('.btn-close');
-      if (closeBtn) {
-        closeBtn.style.filter = '';
-      }
-    }
-  });
-}
+  // Funções relacionadas às cores foram removidas completamente do projeto
   
   // Chamar a função ao carregar a página
   document.addEventListener('DOMContentLoaded', () => {
+        // Por padrão, inicializa com a visualização por períodos
         generatePeriodSections();
-        setupColorToggle();
-        
-        // Inicializa o estado das cores conforme o valor de colorModeActive
-        const elementButtons = document.querySelectorAll('.btn-elemento');
-        if (elementButtons && elementButtons.length > 0) {
-            updateModalColors(colorModeActive);
-        }
-
-        // Sempre que uma modal Bootstrap for exibida, aplica a cor
-        // correta de acordo com o estado global colorModeActive. O
-        // evento 'show.bs.modal' é disparado imediatamente antes de
-        // a modal se tornar visível.
-        document.addEventListener('show.bs.modal', function () {
-          updateModalColors(colorModeActive);
-        });
       });
