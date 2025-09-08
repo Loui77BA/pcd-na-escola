@@ -113,7 +113,158 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
   }
   .btn-elemento:hover { transform: translateY(-4px); border-color: var(--focus); box-shadow: 0 10px 24px rgba(0,0,0,.35); }
   .btn-elemento:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
-  /* Estilos relacionados à funcionalidade de cores foram removidos */
+  
+  /* Cores para elementos químicos - com contraste adequado para baixa visão */
+  .color-mode-active .elemento-hidrogenio { 
+    background: #ffffff; 
+    color: #000000; 
+    border-color: #555555;
+  }
+  .color-mode-active .elemento-alcalino { 
+    background: #9d4edd; 
+    color: #ffffff; 
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+  }
+  .color-mode-active .elemento-alcalino-terroso { 
+    background: #748cab; 
+    color: #ffffff; 
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+  }
+  .color-mode-active .elemento-transicao { 
+    background: #ffcc00; 
+    color: #000000; 
+    text-shadow: 0px 1px 1px rgba(255,255,255,0.5);
+  }
+  .color-mode-active .elemento-lantanideo { 
+    background: #ff7f50; 
+    color: #000000; 
+    text-shadow: 0px 1px 1px rgba(255,255,255,0.5);
+  }
+  .color-mode-active .elemento-actinideo { 
+    background: #ffa07a; 
+    color: #000000; 
+    text-shadow: 0px 1px 1px rgba(255,255,255,0.5);
+  }
+  .color-mode-active .elemento-nao-metal { 
+    background: #6a994e; 
+    color: #ffffff; 
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+  }
+  .color-mode-active .elemento-semimetal { 
+    background: #e63946; 
+    color: #ffffff; 
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+  }
+  .color-mode-active .elemento-metal-representativo { 
+    background: #ffe066; 
+    color: #000000; 
+    text-shadow: 0px 1px 1px rgba(255,255,255,0.5);
+  }
+  .color-mode-active .elemento-gas-nobre { 
+    background: #00b4d8; 
+    color: #000000; 
+    text-shadow: 0px 1px 1px rgba(255,255,255,0.5);
+  }
+  
+  /* Cores para modais com contraste adequado */
+  .color-mode-active .modal-hidrogenio .modal-content { 
+    background: linear-gradient(145deg, #ffffff, #f0f0f0); 
+    color: #000000; 
+    border-color: #555555;
+  }
+  .color-mode-active .modal-alcalino .modal-content { 
+    background: linear-gradient(145deg, #9d4edd, #8a3ec8); 
+    color: #ffffff; 
+  }
+  .color-mode-active .modal-alcalino-terroso .modal-content { 
+    background: linear-gradient(145deg, #748cab, #647ba3); 
+    color: #ffffff; 
+  }
+  .color-mode-active .modal-transicao .modal-content { 
+    background: linear-gradient(145deg, #ffcc00, #e0b300); 
+    color: #000000; 
+  }
+  .color-mode-active .modal-lantanideo .modal-content { 
+    background: linear-gradient(145deg, #ff7f50, #e67147); 
+    color: #000000; 
+  }
+  .color-mode-active .modal-actinideo .modal-content { 
+    background: linear-gradient(145deg, #ffa07a, #e6906e); 
+    color: #000000; 
+  }
+  .color-mode-active .modal-nao-metal .modal-content { 
+    background: linear-gradient(145deg, #6a994e, #5d8844); 
+    color: #ffffff; 
+  }
+  .color-mode-active .modal-semimetal .modal-content { 
+    background: linear-gradient(145deg, #e63946, #cf333e); 
+    color: #ffffff; 
+  }
+  .color-mode-active .modal-metal-representativo .modal-content { 
+    background: linear-gradient(145deg, #ffe066, #e6ca5c); 
+    color: #000000; 
+  }
+  .color-mode-active .modal-gas-nobre .modal-content { 
+    background: linear-gradient(145deg, #00b4d8, #009ec0); 
+    color: #000000; 
+  }
+  
+  /* Melhorias de contraste para elementos específicos dentro das modais coloridas */
+  .color-mode-active .modal .btn-secondary {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.3);
+    color: inherit;
+  }
+  
+  /* Garantindo que os símbolos e nomes dos elementos sejam mais visíveis */
+  .color-mode-active .elemento-hidrogenio .fw-bolder,
+  .color-mode-active .elemento-transicao .fw-bolder,
+  .color-mode-active .elemento-lantanideo .fw-bolder,
+  .color-mode-active .elemento-actinideo .fw-bolder,
+  .color-mode-active .elemento-metal-representativo .fw-bolder,
+  .color-mode-active .elemento-gas-nobre .fw-bolder {
+    color: #000000;
+  }
+  
+  .color-mode-active .elemento-alcalino .fw-bolder,
+  .color-mode-active .elemento-alcalino-terroso .fw-bolder,
+  .color-mode-active .elemento-nao-metal .fw-bolder,
+  .color-mode-active .elemento-semimetal .fw-bolder {
+    color: #ffffff;
+  }
+  
+  /* Melhorando o contraste em estados de hover e focus */
+  .color-mode-active .elemento-hidrogenio:hover,
+  .color-mode-active .elemento-hidrogenio:focus-visible {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3) !important;
+    border-color: #000 !important;
+  }
+  
+  .color-mode-active .elemento-transicao:hover,
+  .color-mode-active .elemento-lantanideo:hover,
+  .color-mode-active .elemento-actinideo:hover,
+  .color-mode-active .elemento-metal-representativo:hover,
+  .color-mode-active .elemento-gas-nobre:hover,
+  .color-mode-active .elemento-transicao:focus-visible,
+  .color-mode-active .elemento-lantanideo:focus-visible,
+  .color-mode-active .elemento-actinideo:focus-visible,
+  .color-mode-active .elemento-metal-representativo:focus-visible,
+  .color-mode-active .elemento-gas-nobre:focus-visible {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3) !important;
+    filter: brightness(0.9);
+  }
+  
+  .color-mode-active .elemento-alcalino:hover,
+  .color-mode-active .elemento-alcalino-terroso:hover,
+  .color-mode-active .elemento-nao-metal:hover,
+  .color-mode-active .elemento-semimetal:hover,
+  .color-mode-active .elemento-alcalino:focus-visible,
+  .color-mode-active .elemento-alcalino-terroso:focus-visible,
+  .color-mode-active .elemento-nao-metal:focus-visible,
+  .color-mode-active .elemento-semimetal:focus-visible {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4) !important;
+    filter: brightness(1.1);
+  }
 
   /* ============================= */
   /*              Modal            */
@@ -206,7 +357,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
 
         <!-- Painel de Controle -->
         <div class="mt-4 mb-2">
-          <div class="position-relative rounded-4 bg-dark bg-opacity-10 p-3 border border-light border-opacity-10">
+          <div class="position-relative">
             <h2 id="titulo-painel" class="h4 text-center mb-4 fw-bold position-relative">
               Painel de Controle
             </h2>
@@ -229,11 +380,6 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
               </div>
             </div>
 
-            <!-- Configuração visual -->
-            <div class="bg-dark bg-opacity-50 p-3 rounded-4 mb-4">
-              <!-- Seção de configuração visual removida -->
-            </div>
-
             <!-- Opções de visualização da tabela -->
             <div class="bg-dark bg-opacity-50 p-3 rounded-4 mb-4">
               <div class="d-flex align-items-center mb-3">
@@ -248,6 +394,17 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
                 <button id="btn-view-by-group" class="btn btn-outline-light rounded-pill text-nowrap" aria-pressed="false" aria-label="Visualizar por grupos/colunas">
                   <span class="material-symbols-outlined me-1" aria-hidden="true">table_chart</span>
                   Por grupos
+                </button>
+              </div>
+              <hr class="border-light border-opacity-25 my-3">
+              <div class="d-flex align-items-center mb-3">
+                <span class="material-symbols-outlined me-2" aria-hidden="true" role="presentation">palette</span>
+                <h3 id="cores-visualizacao-label" class="fw-semibold text-white mb-0 fs-6">Visualização com cores:</h3>
+              </div>
+              <div class="d-flex justify-content-center mb-2">
+                <button id="btn-toggle-colors" class="btn btn-outline-light rounded-pill text-nowrap" aria-pressed="false" aria-label="Ativar visualização com cores para os elementos">
+                  <span class="material-symbols-outlined me-1" aria-hidden="true">colorize</span>
+                  <span id="btn-toggle-colors-text">Ativar cores</span>
                 </button>
               </div>
             </div>
@@ -407,9 +564,23 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
 
         <h3 class="h5 mb-3 pb-2 border-bottom border-light border-opacity-25">Dicas de uso</h3>
         <ul>
-          <li>Clique no botão "Ativar cores" para visualizar os elementos agrupados por categorias.</li>
-          <li>Use os filtros de grupo para encontrar elementos específicos.</li>
+          <li>Clique no botão "Ativar cores" para visualizar os elementos agrupados por categorias com cores específicas.</li>
+          <li>Alterne entre visualizações "Por períodos" e "Por grupos" para explorar a tabela de diferentes maneiras.</li>
           <li>As informações detalhadas incluem número atômico, massa atômica e distribuição eletrônica.</li>
+        </ul>
+        
+        <h3 class="h5 mb-3 pb-2 border-bottom border-light border-opacity-25">Significado das cores</h3>
+        <ul>
+          <li><span style="display:inline-block; width:20px; height:20px; background-color:#ffffff; vertical-align:middle; border-radius:3px;"></span> <strong>Branco:</strong> Hidrogênio</li>
+          <li><span style="display:inline-block; width:20px; height:20px; background-color:#9d4edd; vertical-align:middle; border-radius:3px;"></span> <strong>Roxo:</strong> Metais alcalinos</li>
+          <li><span style="display:inline-block; width:20px; height:20px; background-color:#748cab; vertical-align:middle; border-radius:3px;"></span> <strong>Cinza-azulado:</strong> Metais alcalino-terrosos</li>
+          <li><span style="display:inline-block; width:20px; height:20px; background-color:#ffcc00; vertical-align:middle; border-radius:3px;"></span> <strong>Amarelo:</strong> Metais de transição</li>
+          <li><span style="display:inline-block; width:20px; height:20px; background-color:#ff7f50; vertical-align:middle; border-radius:3px;"></span> <strong>Laranja:</strong> Lantanídeos</li>
+          <li><span style="display:inline-block; width:20px; height:20px; background-color:#ffa07a; vertical-align:middle; border-radius:3px;"></span> <strong>Laranja claro:</strong> Actinídeos</li>
+          <li><span style="display:inline-block; width:20px; height:20px; background-color:#6a994e; vertical-align:middle; border-radius:3px;"></span> <strong>Verde:</strong> Não metais</li>
+          <li><span style="display:inline-block; width:20px; height:20px; background-color:#e63946; vertical-align:middle; border-radius:3px;"></span> <strong>Vermelho:</strong> Semimetais</li>
+          <li><span style="display:inline-block; width:20px; height:20px; background-color:#ffe066; vertical-align:middle; border-radius:3px;"></span> <strong>Amarelo claro:</strong> Outros metais representativos</li>
+          <li><span style="display:inline-block; width:20px; height:20px; background-color:#00b4d8; vertical-align:middle; border-radius:3px;"></span> <strong>Azul:</strong> Gases nobres</li>
         </ul>
 
         <div class="alert alert-info mt-4">
@@ -554,6 +725,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
 <!-- Script da Tabela Periódica (injetará os elementos no #tabela-container) -->
 <script src="/assets/js/tabela-periodica.js"></script>
 <script src="/assets/js/tabela-periodica-grupos.js"></script>
+<script src="/assets/js/tabela-periodica-colors.js"></script>
 
 <!-- Script de alternância entre visualizações -->
 <script>
