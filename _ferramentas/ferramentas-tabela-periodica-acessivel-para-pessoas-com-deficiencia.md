@@ -807,7 +807,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
                 <div class="section-icon-wrapper d-flex align-items-center justify-content-center rounded-circle p-2 me-3">
                   <span class="material-symbols-outlined" style="color: #9C27B0;" aria-hidden="true" role="presentation">table_rows</span>
                 </div>
-                <h3 id="periodos-nav-label" class="fw-semibold text-white mb-0 fs-6">Navegue pelos períodos da tabela</h3>
+                <h3 id="periodos-nav-label" class="fw-semibold text-white mb-0 fs-6">Períodos da tabela</h3>
               </div>
               <nav aria-labelledby="periodos-nav-label" class="d-flex flex-wrap gap-2 justify-content-center">
                 <a class="btn btn-sm nav-link-period rounded-pill text-nowrap" 
@@ -855,7 +855,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
                 <div class="section-icon-wrapper d-flex align-items-center justify-content-center rounded-circle p-2 me-3">
                   <span class="material-symbols-outlined" style="color: #9C27B0;" aria-hidden="true" role="presentation">table_chart</span>
                 </div>
-                <h3 id="grupos-nav-label" class="fw-semibold text-white mb-0 fs-6">Navegue pelos grupos da tabela</h3>
+                <h3 id="grupos-nav-label" class="fw-semibold text-white mb-0 fs-6">Grupos da tabela</h3>
               </div>
               <nav aria-labelledby="grupos-nav-label" class="d-flex flex-wrap gap-2 justify-content-center">
                 <a class="btn btn-sm nav-link-group rounded-pill text-nowrap" 
