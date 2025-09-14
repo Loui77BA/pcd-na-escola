@@ -20,13 +20,13 @@ const periodicElements = [
         period: 1,
         column: 18,
         name: "Hélio",
-        symbol: "He",
-        symbolWriting: "He",
+        symbol: "H &#8203; e",
+        symbolWriting: "H &#8203; e",
         atomicNumber: 2,
         atomicMass: "4,003",
         groupName: "Gás nobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/09/2-helio.jpg",
-        distribution: [{ camada: 1, subnivel: "1 &ThinSpace; s", eletrons: 2 }],
+        distribution: [{ camada: 1, subnivel: "1 &#8203; s", eletrons: 2 }],
     },
     // Período 2 (linha 2) da tabela periódica
     {
