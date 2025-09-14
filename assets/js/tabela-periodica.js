@@ -3251,7 +3251,7 @@ function generatePeriodSections() {
                 colBtn.setAttribute("data-bs-target", `#${modalId}`);
                 colBtn.setAttribute(
                     "aria-label",
-                    `Elemento ${elem.name}, símbolo ${elem.symbol}, que se escreve com ${elem.symbolPronunciation}, período ${elem.period}, coluna ${elem.column}. Pressione para mais informações.`
+                    `Elemento ${elem.name}, símbolo ${elem.symbol}, período ${elem.period}, coluna ${elem.column}. Pressione para mais informações.`
                 );
 
                 // Conteúdo do botão
@@ -3305,7 +3305,7 @@ function generatePeriodSections() {
                   <h3 class="mb-3">Informações</h3>
                   ${imageSection}
                   <p><strong>Grupo:</strong> ${elem.groupName}</p>
-                  <p><strong>Símbolo:</strong> ${elem.symbolWriting}<span class="visually-hidden">, que se escreve com ${elem.symbolPronunciation}</span></p>
+                  <p><strong>Símbolo:</strong> ${elem.symbolWriting}<span class="visually-hidden"> que se escreve com, ${elem.symbolPronunciation}</span></p>
                   <p><strong>Número atômico:</strong> ${elem.atomicNumber}</p>
                   <p><strong>Número de massa:</strong> ${elem.atomicMass}</p>
                   <div class="col mb-3">
