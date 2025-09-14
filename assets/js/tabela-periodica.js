@@ -26,7 +26,7 @@ const periodicElements = [
         atomicMass: "4,003",
         groupName: "Gás nobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/09/2-helio.jpg",
-        distribution: [{ camada: 1, subnivel: "1 s", eletrons: 2 }],
+        distribution: [{ camada: 1, subnivel: "1 &ThinSpace; s", eletrons: 2 }],
     },
     // Período 2 (linha 2) da tabela periódica
     {
@@ -3231,11 +3231,9 @@ function createDistribution(distArray) {
         result += `
         <div class="d-flex">
           <span><strong>Camada ${d.camada}:</strong>&ThinSpace;</span>
-          <p aria-roledescription="subnível eletrônico">&ThinSpace; 1&#8203; ${d.subnivel} 1&#8203;</p>
+          <p aria-roledescription="subnível eletrônico">&ThinSpace; ${d.subnivel}</p>
           <p style="position: relative; top: -0.5em;" aria-roledescription="elétrons.">
-            1&#8203;
             ${d.eletrons}
-            1&#8203;
           </p>
         </div>
       `;
