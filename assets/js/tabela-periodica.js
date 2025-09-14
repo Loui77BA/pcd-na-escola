@@ -3231,9 +3231,11 @@ function createDistribution(distArray) {
         result += `
         <div class="d-flex">
           <span><strong>Camada ${d.camada}:</strong>&ThinSpace;</span>
-          <p aria-roledescription="subnível eletrônico">&ThinSpace; ${d.subnivel}</p>
+          <p aria-roledescription="subnível eletrônico">&ThinSpace; 1&#8203; ${d.subnivel} 1&#8203;</p>
           <p style="position: relative; top: -0.5em;" aria-roledescription="elétrons.">
+            1&#8203;
             ${d.eletrons}
+            1&#8203;
           </p>
         </div>
       `;
