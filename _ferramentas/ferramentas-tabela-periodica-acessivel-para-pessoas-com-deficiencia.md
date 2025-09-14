@@ -754,16 +754,16 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
                 <div class="section-icon-wrapper d-flex align-items-center justify-content-center rounded-circle p-2 me-3">
                   <span class="material-symbols-outlined" style="color: #2962ff;" aria-hidden="true" role="presentation">info</span>
                 </div>
-                <h3 id="acoes-rapidas-label" class="fw-semibold text-white mb-0 fs-6">Informações sobre a tabela</h3>
+                <h3 id="acoes-rapidas-label" class="fw-semibold text-white mb-0 fs-6">Sobre a tabela</h3>
               </div>
               <div class="d-flex flex-wrap gap-3 justify-content-center">
                 <button id="btn-como-funciona" type="button" class="btn control-panel-btn px-4 py-2 rounded-pill d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#modal-como-funciona" aria-haspopup="dialog" aria-expanded="false" aria-label="Funcionamento da tabela periódica" title="Instruções de uso">
                   <span class="material-symbols-outlined me-2" aria-hidden="true">help_outline</span>
-                  <span>Funcionamento</span>
+                  <span>Como funciona</span>
                 </button>
                 <button id="btn-saiba-mais" type="button" class="btn control-panel-btn-outline px-4 py-2 rounded-pill d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#modal-sobre" aria-haspopup="dialog" aria-expanded="false" aria-label="Sobre a tabela periódica acessível" title="Abrir informações detalhadas">
                   <span class="material-symbols-outlined me-2" aria-hidden="true">info</span>
-                  <span>Sobre</span>
+                  <span>Mais detalhes</span>
                 </button>
               </div>
             </div>
