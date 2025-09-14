@@ -1024,11 +1024,10 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
       </div>
       <div class="modal-body">
         <div class="row g-3 mb-4">
-          <figure class="text-center">
-            <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRqCkcXgtk6ToSfewsQcXjmAQiFnJwhoPlRejBWkga6xAs?width=628&height=171" aria-hidden="true" />
-          </figure>
-          
-          <nav class="my-4 p-3 border border-light border-opacity-25 rounded" aria-label="Sumário do conteúdo">
+
+          <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRqCkcXgtk6ToSfewsQcXjmAQiFnJwhoPlRejBWkga6xAs?width=628&height=171" aria-hidden="true" />
+
+          <div class="my-4 p-3 border border-light border-opacity-25 rounded">
             <h4 class="fs-5 mb-3">Navegue rapidamente:</h4>
             <style>
               .list-group-item-action:hover, .list-group-item-action:focus {
@@ -1037,39 +1036,39 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
                 padding-left: 10px !important;
               }
             </style>
-            <ul class="list-group list-group-numbered">
+            <ul class="list-group">
               <li class="list-group-item bg-transparent border-light border-opacity-25 p-0">
                 <a href="#secao-o-que-e-uma-tabela" class="list-group-item-action d-block py-2 px-3 rounded text-white text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" title="Ir para: O que é uma tabela?">
-                  <span class="badge bg-secondary">1</span>
+                  <span class="badge bg-secondary" aria-hidden="true">1</span>
                   O que é uma tabela?
                 </a>
               </li>
               <li class="list-group-item bg-transparent border-light border-opacity-25 p-0">
                 <a href="#secao-leitores-de-tela" class="list-group-item-action d-block py-2 px-3 rounded text-white text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" title="Ir para: Como ler uma tabela com leitores de tela">
-                  <span class="badge bg-secondary">2</span>
+                  <span class="badge bg-secondary" aria-hidden="true">2</span>
                   Como ler uma tabela com leitores de tela
                 </a>
               </li>
               <li class="list-group-item bg-transparent border-light border-opacity-25 p-0">
                 <a href="#secao-exemplo-de-tabela" class="list-group-item-action d-block py-2 px-3 rounded text-white text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" title="Ir para: Teste de leitura de tabela">
-                  <span class="badge bg-secondary">3</span>
+                  <span class="badge bg-secondary" aria-hidden="true">3</span>
                   Teste de leitura de tabela
                 </a>
               </li>
               <li class="list-group-item bg-transparent border-light border-opacity-25 p-0">
                 <a href="#secao-tabela-periodica" class="list-group-item-action d-block py-2 px-3 rounded text-white text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" title="Ir para: O que é a tabela periódica dos elementos químicos?">
-                  <span class="badge bg-secondary">4</span>
+                  <span class="badge bg-secondary" aria-hidden="true">4</span>
                   O que é a tabela periódica dos elementos químicos?
                 </a>
               </li>
               <li class="list-group-item bg-transparent border-light border-opacity-25 p-0">
                 <a href="#secao-como-funciona" class="list-group-item-action d-block py-2 px-3 rounded text-white text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" title="Ir para: Como funciona a tabela periódica acessível?">
-                  <span class="badge bg-secondary">5</span>
+                  <span class="badge bg-secondary" aria-hidden="true">5</span>
                   Como funciona a tabela periódica acessível?
                 </a>
               </li>
             </ul>
-          </nav>
+          </div>
           
             <h3 id="secao-o-que-e-uma-tabela" class="mb-3 pb-2 border-bottom border-light border-opacity-25">O que é uma tabela?</h3>
             <p class="fs-5">Imagine uma grande caixa de ovos, dentro dessa caixa, os ovos não estão jogados de qualquer jeito; eles estão organizados em espaços separados, lado a lado e um embaixo do outro.</p>
