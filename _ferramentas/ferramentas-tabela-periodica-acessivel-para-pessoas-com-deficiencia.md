@@ -1016,7 +1016,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
       <div class="modal-header border-light border-opacity-25">
         <h2 class="modal-title fs-4" id="modalComoFuncionaLabel">
           <span class="material-symbols-outlined align-middle me-2" aria-hidden="true">help_outline</span>
-          Como usar a Tabela Periódica
+          Como funciona a Tabela Periódica Acessível?
         </h2>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar modal" title="Fechar modal">
           <span class="visually-hidden">Fechar</span>
@@ -1025,7 +1025,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
       <div class="modal-body">
         <div class="row g-3 mb-4">
           <figure class="text-center">
-            <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRqCkcXgtk6ToSfewsQcXjmAQiFnJwhoPlRejBWkga6xAs?width=628&height=171" class="img-fluid mt-4" style="max-width: 80%;" aria-hidden="true" />
+            <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRqCkcXgtk6ToSfewsQcXjmAQiFnJwhoPlRejBWkga6xAs?width=628&height=171" aria-hidden="true" />
           </figure>
           
           <nav class="my-4 p-3 border border-light border-opacity-25 rounded" aria-label="Sumário do conteúdo">
@@ -1037,61 +1037,55 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
                 padding-left: 10px !important;
               }
             </style>
-            <ol class="list-group list-group-numbered">
+            <ul class="list-group list-group-numbered">
               <li class="list-group-item bg-transparent border-light border-opacity-25 p-0">
                 <a href="#secao-o-que-e-uma-tabela" class="list-group-item-action d-block py-2 px-3 rounded text-white text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" title="Ir para: O que é uma tabela?">
-                <span class="badge bg-secondary">1</span>
-                O que é uma tabela?</a>
-              </li>
-              <li class="list-group-item bg-transparent border-light border-opacity-25 p-0">
-                <a href="#secao-exemplo-de-tabela" class="list-group-item-action d-block py-2 px-3 rounded text-white text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" title="Ir para: Um exemplo de tabela">
-                <span class="badge bg-secondary">2</span>
-                Um exemplo de tabela</a>
+                  <span class="badge bg-secondary">1</span>
+                  O que é uma tabela?
+                </a>
               </li>
               <li class="list-group-item bg-transparent border-light border-opacity-25 p-0">
                 <a href="#secao-leitores-de-tela" class="list-group-item-action d-block py-2 px-3 rounded text-white text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" title="Ir para: Como ler uma tabela com leitores de tela">
-                <span class="badge bg-secondary">3</span>
-                Como ler uma tabela com leitores de tela</a>
+                  <span class="badge bg-secondary">2</span>
+                  Como ler uma tabela com leitores de tela
+                </a>
+              </li>
+              <li class="list-group-item bg-transparent border-light border-opacity-25 p-0">
+                <a href="#secao-exemplo-de-tabela" class="list-group-item-action d-block py-2 px-3 rounded text-white text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" title="Ir para: Teste de leitura de tabela">
+                  <span class="badge bg-secondary">3</span>
+                  Teste de leitura de tabela
+                </a>
               </li>
               <li class="list-group-item bg-transparent border-light border-opacity-25 p-0">
                 <a href="#secao-tabela-periodica" class="list-group-item-action d-block py-2 px-3 rounded text-white text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" title="Ir para: O que é a tabela periódica dos elementos químicos?">
-                <span class="badge bg-secondary">4</span>
-                O que é a tabela periódica dos elementos químicos?</a>
+                  <span class="badge bg-secondary">4</span>
+                  O que é a tabela periódica dos elementos químicos?
+                </a>
               </li>
               <li class="list-group-item bg-transparent border-light border-opacity-25 p-0">
                 <a href="#secao-como-funciona" class="list-group-item-action d-block py-2 px-3 rounded text-white text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" title="Ir para: Como funciona a tabela periódica acessível?">
-                <span class="badge bg-secondary">5</span>
-                Como funciona a tabela periódica acessível?</a>
+                  <span class="badge bg-secondary">5</span>
+                  Como funciona a tabela periódica acessível?
+                </a>
               </li>
-            </ol>
+            </ul>
           </nav>
           
             <h3 id="secao-o-que-e-uma-tabela" class="mb-3 pb-2 border-bottom border-light border-opacity-25">O que é uma tabela?</h3>
             <p class="fs-5">Imagine uma grande caixa de ovos, dentro dessa caixa, os ovos não estão jogados de qualquer jeito; eles estão organizados em espaços separados, lado a lado e um embaixo do outro.</p>
             <figure class="text-center">
-              <img src="https://thumbs.dreamstime.com/b/vista-de-cima-da-embalagem-ovos-desenho-animado-galinha-em-caixas-cart%C3%A3o-granja-ou-no-mercado-agr%C3%ADcola-org%C3%A2nicos-vetor-plano-264407040.jpg" class="img-fluid" style="max-width: 80%;" aria-hidden="true" />
+              <img src="https://thumbs.dreamstime.com/b/vista-de-cima-da-embalagem-ovos-desenho-animado-galinha-em-caixas-cart%C3%A3o-granja-ou-no-mercado-agr%C3%ADcola-org%C3%A2nicos-vetor-plano-264407040.jpg" style="max-width: 80%;" aria-hidden="true" />
             </figure>
             <p class="fs-5">Essa organização é o que chamamos de grade ou matriz. Se você já pegou em uma caixa de ovos, sabe que ela é formada por várias “casinhas”, cada “casinha” guardando um ovo.</p>
-            <div class="d-flex align-items-center justify-content-between">
-              <div class="flex-grow-1 me-3">
                 <p class="fs-5">Quando você passa a mão tanto para a esquerda quanto para a direita, sente que existem linhas de ovos, que são as fileiras na horizontal (um do lado do outro).</p>
-              </div>
-              <div class="flex-shrink-0">
                 <figure class="text-center mb-0">
                   <span class="material-symbols-outlined" style="font-size: 15rem; color: rgba(255, 255, 255, 0.7);" aria-hidden="true">table_rows</span>
                 </figure>
-              </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-between">
-              <div class="flex-shrink-0 me-3">
+                <p class="fs-5">Já se for com a mão para cima ou para baixo vai sentir que existem as colunas de ovos, que são os ovos um embaixo do outro na vertical.</p>
+
                 <figure class="text-center mb-0">
                   <span class="material-symbols-outlined" style="font-size: 15rem; color: rgba(255, 255, 255, 0.7);" aria-hidden="true">table_chart</span>
                 </figure>
-              </div>
-              <div class="flex-grow-1">
-                <p class="fs-5">Já se for com a mão para cima ou para baixo vai sentir que existem as colunas de ovos, que são os ovos um embaixo do outro na vertical.</p>
-              </div>
-            </div>
             <p class="fs-5 fw-bold text-center">Essa é a estrutura básica de uma tabela.</p>
             <figure class="text-center">
               <span class="material-symbols-outlined" style="font-size: 15rem; color: rgba(255, 255, 255, 0.7); margin-left: 1rem;" aria-hidden="true">grid_on</span>
@@ -1104,58 +1098,13 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
             <p class="fs-5">Uma tabela é o resultado de juntar linhas e colunas. Onde uma linha e uma coluna se encontram, formam um espaço único, como uma "casinha" dentro da grade. Cada casinha é um lugar específico para guardar uma informação.</p>
             <p class="fs-5">Essa "casinha" que se forma quando uma linha e uma coluna se cruzam é chamada de célula. Cada célula guarda um pedaço de informação, que pode ser um número, uma palavra, ou qualquer outro dado.</p>
 
-            <h3 id="secao-exemplo-de-tabela" class="mb-3 pb-2 border-bottom border-light border-opacity-25">Um exemplo de tabela</h3>
-            <p class="fs-5">Um bom exemplo prático é a tabela de informações dos jogos no campeonato brasileiro de futebol, o Brasileirão: </p>
-            <p class="fs-5">As linhas são os times. Cada linha é dedicada a um único time de futebol: Flamengo, Palmeiras, Corinthians, etc. É como se cada time tivesse a sua própria fileira de informações.</p>
-            <p class="fs-5">As colunas são as estatísticas do campeonato. Cada coluna tem um tipo de dado: uma para os pontos que o time tem, outra para a quantidade de vitórias, outra para o número de derrotas, outra para os gols feitos, e por aí vai.</p>
-            <p class="fs-5">Então, para saber, por exemplo, quantos pontos o Flamengo tem, você só precisa procurar na linha do Flamengo e na coluna dos pontos. Onde essas duas se cruzam (ou seja onde elas se encontram), você vai ter o número de pontos do Flamengo.</p>
-
-            <p class="fs-5">A tabela montada ficaria assim:</p>
-            <div class="table-responsive">
-              <table class="table table-dark table-striped table-bordered" aria-label="Classificação dos times de futebol brasileiro" aria-describedby="table-description">
-                <caption id="table-description" class="visually-hidden">Tabela com classificação dos principais times do campeonato brasileiro, mostrando pontuação, vitórias, derrotas e gols feitos.</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Time</th>
-                    <th scope="col">Pontos</th>
-                    <th scope="col">Vitórias</th>
-                    <th scope="col">Derrotas</th>
-                    <th scope="col">Gols Feitos</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Flamengo</th>
-                    <td>70</td>
-                    <td>21</td>
-                    <td>5</td>
-                    <td>60</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Palmeiras</th>
-                    <td>68</td>
-                    <td>20</td>
-                    <td>6</td>
-                    <td>55</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Corinthians</th>
-                    <td>65</td>
-                    <td>19</td>
-                    <td>7</td>
-                    <td>50</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-        </div>
         <h3 id="secao-leitores-de-tela" class="mb-3 pb-2 border-bottom border-light border-opacity-25">Como ler uma tabela com leitores de tela</h3>
         <p class="fs-5">Preste atenção em como o leitor de telas faz a leitura da tabela. Ele vai anunciar o cabeçalho (as colunas) primeiro, e depois vai ler cada linha com as informações. Quando ele vai passando pelas células, ele vai dizendo o nome da coluna antes de falar o valor (o que está dentro) daquela célula.</p>
 
         <p class="fs-5">Existem diferenças em como cada leitor de telas faz a leitura de uma tabela.</p>
 
         <p class="fs-5">No caso de leitores de tela de computadores de mesa e notebooks, como o NVDA (no Windows), ao chegar na tabela, ele anuncia a existência dela e informa a quantidade de linhas e colunas disponíveis. Caso exista uma descrição, ela também é lida, fornecendo o contexto sobre o conteúdo exibido.</p>
-        <p class="fs-5">Usando as setas do teclado (<kbd>↑</kbd>, <kbd>↓</kbd>, <kbd>←</kbd>, <kbd>→</kbd>), a pessoa pode percorrer cada célula da tabela. O NVDA identifica automaticamente o cabeçalho correspondente daquela linha ou coluna e anuncia junto com o valor da célula.</p>
+        <p class="fs-5">Usando as setas para cima, para baixo, esquerda e direita do teclado, a pessoa pode percorrer cada célula da tabela. O NVDA identifica automaticamente o cabeçalho correspondente daquela linha ou coluna e anuncia junto com o valor da célula.</p>
         <p class="fs-5">Por exemplo, se a célula tiver o número "70" na coluna de pontos, o NVDA dirá algo como “Pontos, 70”. Isso garante clareza sobre o que aquele número quer dizer.</p>
         <p class="fs-5">O NVDA consegue relacionar corretamente cada informação dentro da célula na tabela ao seu título na coluna, evitando que a leitura fique confusa (desde que a tabela esteja corretamente estruturada).</p>
         <p class="fs-5">Com comandos específicos do NVDA, é possível ouvir novamente o título ou a descrição da tabela, isso ajuda a relembrar o contexto do que está sendo lido.</p>
@@ -1166,32 +1115,86 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
         </ul>
 
         <p class="fs-5">para mais informações sobre o Google TalkBack, visite: <a href="https://support.google.com/accessibility/android/answer/6006598?hl=pt-BR" target="_blank" rel="noopener">Navegar no dispositivo com o TalkBack</a>.</p>
+
         <p class="fs-5">para mais informações sobre o Apple VoiceOver, visite: <a href="https://support.apple.com/pt-br/guide/iphone/iph3e2e4156/ios" target="_blank" rel="noopener">Usar o VoiceOver no iPhone</a>.</p>
 
+        <p class="fs-5">Pode acontecer de leitores de tela do Android e iOS não anunciarem corretamente o cabeçalho da tabela, os títulos das colunas e linhas. A consequência disso é que a leitura das células pode ficar confusa, pois o leitor de telas pode não conseguir relacionar o valor da célula com o título correto da coluna ou linha e por consequência acabar lendo apenas o valor da célula, sem contexto.</p>
+
+        <p class="fs-5">Por isso é importante usar a granularidade no TalkBack e o Rotor no VoiceOver para garantir que você está navegando corretamente pela tabela e que consiga entender o contexto de cada célula.</p>
+
+        <p class="fs-5">Se tiver a oportunidade, valide a leitura da tabela com leitores de tela de computadores e notebooks, como o NVDA (Windows), JAWS (Windows), VoiceOver (Mac) e Orca (Linux), para garantir que a estrutura da tabela está correta e que a leitura está clara e compreensível.</p>
+
+        <p class="fs-5"><strong>Observação:</strong> Este problema não acontece na nossa tabela periódica acessível, pois apesar do nome, ela segue uma estrutura baseada em cartões como será explicado mais adiante nesta janela de funcionamento.</p>
+
+        <h3 id="secao-exemplo-de-tabela" class="mb-3 pb-2 border-bottom border-light border-opacity-25">Teste de leitura de tabela</h3>
+        <p class="fs-5">Aqui está um exemplo simples de tabela para você testar a leitura com seu leitor de telas. Lembre-se que para o leitor de telas anunciar corretamente o cabeçalho e os valores das células, a tabela precisa estar bem estruturada.</p>
+
+        <div class="table-responsive mb-4">
+          <table class="table table-bordered table-dark" role="table" aria-labelledby="exemplo-tabela-label" aria-describedby="exemplo-tabela-desc">
+            <caption id="exemplo-tabela-label" class="visually-hidden">Exemplo de tabela simples com informações de jogadores de futebol</caption>
+            <p id="exemplo-tabela-desc" class="visually-hidden">Tabela com colunas para Nome, Posição, Clube e Pontos. Contém dados de três jogadores: Lionel Messi, Cristiano Ronaldo e Neymar Jr.</p>
+            <thead>
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Posição</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lionel Messi</td>
+                <td>Atacante</td>
+              </tr>
+              <tr>
+                <td>Cristiano Ronaldo</td>
+                <td>Atacante</td>
+              </tr>
+              <tr>
+                <td>Neymar Jr.</td>
+                <td>Atacante</td>
+              </tr>
+              <tr>
+                <td>Lucas Paquetá</td>
+                <td>Meio-campista</td>
+              </tr>
+              <tr>
+                <td>Marquinhos</td>
+                <td>Zagueiro</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="fs-5">Experimente navegar por essa tabela usando as setas do teclado (em computadores) ou os gestos de navegação (em dispositivos móveis) para ver como o leitor de telas anuncia cada célula com o contexto correto.</p>
+        
         <h3 id="secao-tabela-periodica" class="mb-3 pb-2 border-bottom border-light border-opacity-25">O que é a tabela periódica dos elementos químicos?</h3>
+
         <p class="fs-5">A tabela periódica dos elementos químicos organiza os elementos, como oxigênio, hidrogênio, ouro, ferro entre outros. Ela não apenas lista os elementos, mas os organiza de uma forma que você pode entender as características de cada um só pela sua posição.</p>
+
         <p class="fs-5">A estrutura dela segue a mesma lógica de linhas e colunas que já foi mostrada:</p>
+
         <ul>
           <li class="fs-5 mb-4"><strong>Linhas (Períodos):</strong>
-            <p class="mt-4">
+            <p class="fs-5 mt-4">
               As linhas são chamadas de Períodos. Existem 7 delas. Elas organizam os elementos em ordem crescente de número atômico (o número de prótons em cada átomo). Começando pelo Hidrogênio, que tem 1 próton, e seguindo da esquerda para a direita, o número atômico vai aumentando.
             </p>
-            <p>
+            <p class="fs-5 mt-4">
               A posição horizontal de um elemento, ou seja, o seu período, indica quantas camadas eletrônicas ele tem. Quanto mais para baixo na tabela, mais camadas de elétrons o elemento tem. Isso afeta o tamanho do átomo e o quão longe os elétrons mais externos estão do núcleo. Por exemplo, os elementos do Período 2 (segunda linha) são menores que os do Período 4 (quarta linha).
             </p>
           </li>
-          <li class="fs-5"><strong>Colunas (Grupos):</strong>
-            <p class="mt-4">
+          <li class="fs-5 mb-4"><strong>Colunas (Grupos):</strong>
+            <p class="fs-5 mt-4">
               As colunas são chamadas de Grupos. Existem 18 delas. Elementos que estão na mesma coluna, ou seja, no mesmo grupo, têm propriedades químicas parecidas. É como se todos os "parentes" estivessem juntos. Por exemplo, o grupo 18 é dos "Gases Nobres", que quase não reagem com outros elementos. 
             </p>
-            <p>
+            <p class="fs-5 mt-4">
               A posição vertical, ou o grupo, agrupa os elementos com a mesma quantidade de elétrons na camada mais externa (elétrons de valência). Isso é o mais importante! A quantidade de elétrons de valência determina as propriedades químicas de um elemento, como a forma que ele se liga a outros átomos e se reage fácil ou não. É por isso que todos os elementos em um mesmo grupo, como o Lítio e o Sódio, reagem de forma parecida.
             </p>      
           </li>
         </ul>
+
         <p class="fs-5">A tabela periódica não é apenas uma forma de organizar os elementos químicos de maneira estética; ela traz consigo um padrão de repetição chamado periodicidade, que permite prever várias propriedades dos elementos com base em sua posição. É por isso que são chamadas de propriedades "periódicas".</p>
         <figure class="text-center my-4">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Periodic_trends_-_pt_edition.svg/600px-Periodic_trends_-_pt_edition.svg.png" class="img-fluid" style="max-width: 80%;" aria-hidden="true" />
+
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Periodic_trends_-_pt_edition.svg/600px-Periodic_trends_-_pt_edition.svg.png" style="max-width: 100%;" aria-hidden="true" />
         </figure>
         <ol>
           <li class="fs-5 mb-4">
@@ -1220,64 +1223,85 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
               </ul>
           </li>
         </ol>
+
         <p class="fs-5">
           Esse padrão mostra que a posição de cada elemento na tabela periódica funciona como uma espécie de “código de barras”, revelando características fundamentais como tamanho do átomo, facilidade em perder ou ganhar elétrons e se o elemento terá comportamento mais metálico ou não metálico.
         </p>
+
         <p class="fs-5">
           Essa lógica de organização permite que, mesmo sem decorar cada propriedade isolada, seja possível deduzi-las a partir da posição do elemento na tabela.
         </p>
         <h3 id="secao-como-funciona" class="mb-3 pb-2 border-bottom border-light border-opacity-25">Como funciona a tabela periódica acessível?</h3>
+
         <p class="fs-5">
           Em uma tabela periódica tradicional, a organização visual é fixa, com todos os elementos dispostos em uma única grande tabela. Isso funciona bem em telas maiores, como as de computadores de mesa, mas pode ser um desafio para dispositivos móveis, onde a tela é pequena e a pessoa precisa dar zoom, arrastar a tela horizontalmente (o chamado "swipe" ou "scroll").
         </p>
+
         <p class="fs-5">
           Esses movimentos podem ser cansativos e dificultar a navegação, especialmente para pessoas com deficiências motoras ou visuais. Isso acontece porque a pessoa precisa fazer muitos movimentos para encontrar o que procura, o que pode dificultar o uso da tabela.
         </p>
+
         <p class="fs-5">
           Esta aplicação se diferencia por não exibir a tabela completa de uma vez, optando por uma visualização mais modular.
         </p>
+
         <p class="fs-5">
           Em vez de uma única tabela gigante, a interface é adaptada para exibir os elementos de duas formas principais, acessíveis através de botões.
         </p>
+
         <p class="fs-5">
           <strong>Visualização por Períodos:</strong> Os elementos são dispostos em seções que correspondem aos períodos (as linhas horizontais da tabela). Isso quebra a tabela grande em partes menores e mais gerenciáveis, ideais para telas de smartphones, onde o conteúdo é apresentado de forma vertical.
         </p>
-        <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSIii3xQCKdRbMo1kUHD6YxAcM3gbXmzrn_-4ppAJyJBZw?width=1120&height=620" class="img-fluid my-4" alt="A imagem exibe um recorte da tabela periódica. No primeiro período, vemos dois elementos. O hidrogênio H em um quadrado branco e, à sua direita, o hélio, (H, É), em um quadrado azul. Já no segundo período, logo abaixo, há quatro elementos: o lítio, (L, í), em um quadrado roxo, seguido pelo berílio, (B, é), em cinza, o boro B em vermelho, e o carbono C em verde. Todos os quadrados contêm o nome e o símbolo do elemento, além da indicação do período e da coluna." />
+
+        <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSIii3xQCKdRbMo1kUHD6YxAcM3gbXmzrn_-4ppAJyJBZw?width=1120&height=620" alt="A imagem exibe um recorte da tabela periódica. No primeiro período, vemos dois elementos. O hidrogênio em um quadrado branco e, à sua direita, o hélio, em um quadrado azul. Já no segundo período, logo abaixo, há quatro elementos: o lítio, em um quadrado roxo, seguido pelo berílio, em cinza, o boro em vermelho, e o carbono em verde. Todos os quadrados contêm o nome e o símbolo do elemento, além da indicação do período e da coluna." />
+
         <p class="fs-5">
           <strong>Visualização por Grupos:</strong> Os elementos são organizados por grupos (as colunas verticais). Essa visualização permite que o usuário explore os elementos por suas propriedades químicas semelhantes, o que também é uma forma de navegação mais amigável para telas pequenas.
         </p>
-        <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSev1oa0TMZTZg0q_XZj6GSASTRjt1hzJZwWkEglx89BA4?width=1102&height=613" class="img-fluid my-4" alt="A imagem exibe um recorte da tabela periódica, mostrando elementos de dois grupos. No Grupo 3, vemos dois elementos: o escândio (Sc), no Período 4 e Coluna 3, em um quadrado laranja e, à sua direita, o ítrio (Y), no Período 5 e Coluna 3, também em um quadrado laranja. Já no Grupo 4, logo abaixo, há quatro elementos, todos em quadrados laranja: o titânio (Ti), no Período 4 e Coluna 4, seguido pelo zircônio (Zr), no Período 5 e Coluna 4, o háfnio (Hf), no Período 6 e Coluna 4, e o rutherfórdio (Rf), no Período 7 e Coluna 4. Todos os quadrados contêm o nome e o símbolo do elemento, além da indicação do período e da coluna." />
+
+        <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSev1oa0TMZTZg0q_XZj6GSASTRjt1hzJZwWkEglx89BA4?width=1102&height=613" alt="A imagem exibe um recorte da tabela periódica, mostrando elementos de dois grupos. No Grupo 3, vemos dois elementos: o escândio, no Período 4 e Coluna 3, em um quadrado laranja e, à sua direita, o ítrio, no Período 5 e Coluna 3, também em um quadrado laranja. Já no Grupo 4, logo abaixo, há quatro elementos, todos em quadrados laranja: o titânio, no Período 4 e Coluna 4, seguido pelo zircônio, no Período 5 e Coluna 4, o háfnio, no Período 6 e Coluna 4, e o rutherfórdio, no Período 7 e Coluna 4. Todos os quadrados contêm o nome e o símbolo do elemento, além da indicação do período e da coluna." />
+
         <p class="fs-5">
           Essa abordagem de usar botões e seções menores é fundamental para garantir a responsividade da aplicação. Em vez de forçar a adaptação de uma tabela grande a uma tela pequena, o design já foi pensado para o mobile.
         </p>
+
         <p class="fs-5">
           Além disso, existe um painel de controle fixo na parte superior da janela onde é possível alternar entre a visualização por períodos e por grupos, além de ser possível ativar ou desativar as cores na tabela.
         </p>
-        <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSV2R8ls8k_TrB53oH-LhcpAe-hRQXDK4xPGvEUwWPNrfY" class="img-fluid my-4" aria-hidden="true" />
+
+        <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSV2R8ls8k_TrB53oH-LhcpAe-hRQXDK4xPGvEUwWPNrfY" aria-hidden="true" />
         <p class="fs-5">
           Quando a visualização por períodos está ativada o painel de controle exibe uma seção chamada <strong>Navegue pelos períodos da tabela</strong>, com botões para cada um dos 7 períodos, além dos botões para os lantanídeos e actinídeos. Pressionando um desses botões, a pessoa é levada diretamente para a seção correspondente na página.
         </p>
-        <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQT8NpsRRsiBToRuVnsaenOgARRJ8PDSI8YwLxoIqDam9VU?width=864&height=233" class="img-fluid my-4" aria-hidden="true" />
+
+        <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQT8NpsRRsiBToRuVnsaenOgARRJ8PDSI8YwLxoIqDam9VU?width=864&height=233" aria-hidden="true" />
+
         <p class="fs-5">
           Já quando a visualização por grupos está ativada, o painel de controle exibe uma seção chamada <strong>Navegue pelos grupos da tabela</strong>, com botões para cada um dos 18 grupos, além dos botões para os lantanídeos e actinídeos. Pressionando um desses botões, a pessoa é levada diretamente para a seção correspondente na página.
         </p>
-        <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTPkOn5fC4XSrtXMb-sjaSDASPZWKltwoEf-u77hy8nWB4?width=874&height=273" class="img-fluid my-4" aria-hidden="true" />
+
+        <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTPkOn5fC4XSrtXMb-sjaSDASPZWKltwoEf-u77hy8nWB4?width=874&height=273" aria-hidden="true" />
+
         <p class="fs-5">
           Cada elemento químico é apresentado em um cartão individual, que exibe informações essenciais como o símbolo, o nome e a posição que ocupa na tabela (no caso o período e a coluna).
         </p>
+
         <figure class="text-center">
-          <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTljKvRX7KIRLCcqHC_N-OxAaLFKxJMkfFRakeG_Guf694" class="img-fluid my-4" aria-hidden="true" />
+          <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTljKvRX7KIRLCcqHC_N-OxAaLFKxJMkfFRakeG_Guf694" aria-hidden="true" />
           <figcaption class="visually-hidden">
           Exemplo de cartão de elemento químico. O cartão é um quadrado com bordas arredondadas. O elemento do exemplo é o Boro, no cartão está sendo exibido o símbolo (B), o nome (Boro), o período (2) e a coluna (13) que é onde ele está localizado na tabela periódica.
           </figcaption>
         </figure>
+
         <p class="fs-5">
           Esses cartões são interativos: ao clicar com o mouse, tocar na tela touch ou pressionar <kbd>Enter</kbd> sobre eles, uma janela modal se abre, fornecendo informações detalhadas sobre o elemento, como Símbolo, Nome, Número Atômico, Número de Massa (massa atômica) e Configuração eletrônica.
         </p>
+
         <div class="alert alert-info mt-4 bg-info bg-opacity-10 border border-info text-white" role="note">
           <span class="material-symbols-outlined me-2 align-middle" aria-hidden="true">lightbulb</span>
           <strong>Dica:</strong> Em leitores de tela do mobile, como o TalkBack (Android) e o VoiceOver (iOS), pode ser que na distribuição eletrônica o leitor de telas leia o subnível "s" como "segundo" e o subnível "p" como "página". Isso acontece porque esses leitores tentam interpretar o texto de forma contextual, é uma questão da própria tecnologia assistiva que pode variar. Para evitar isso, você pode ativar a opção de soletrar o conteúdo da célula, seja usando a granularidade no TalkBack ou o Rotor no VoiceOver. Nos leitores de tela para computadores, como o NVDA, isso não acontece.
         </div>
+
       </div>
       <div class="modal-footer border-light border-opacity-25">
         <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fechar</button>
