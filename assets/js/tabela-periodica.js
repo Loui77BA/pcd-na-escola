@@ -15,6 +15,7 @@ const periodicElements = [
         atomicMass: "1,007",
         groupName: "Não metal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/09/1-hidrogenio.jpg",
+        distributionImageUrl: "https://1drv.ms/i/c/bf6f4302973a9faf/IQRTBK9pUeNQR7IRNbFuvqGXAXZRfogUZTUNYCaAimyJS9Q?width=966&height=130",
         distribution: [{ camada: 1, subnivel: "1 &#8203; s", eletrons: 1 }],
     },
     {
@@ -28,6 +29,7 @@ const periodicElements = [
         atomicMass: "4,003",
         groupName: "Gás nobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/09/2-helio.jpg",
+        distributionImageUrl: "https://1drv.ms/i/c/bf6f4302973a9faf/IQTA8shOFaB9Q4Ll3kc8wVr3AYAkgHEerVj5lwBMIi-IXk0?width=963&height=128",
         distribution: [{ camada: 1, subnivel: "1 &#8203; s", eletrons: 2 }],
     },
     // Período 2 (linha 2) da tabela periódica
@@ -42,6 +44,7 @@ const periodicElements = [
         atomicMass: "6,94",
         groupName: "Metal alcalino",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/10/3-litio.jpg",
+        distributionImageUrl: "https://1drv.ms/i/c/bf6f4302973a9faf/IQSAvV4v70LOQq5f3a66kTRpAdfKTCf8i7bmfOKC4RF_ewI?width=963&height=128",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 1 },
@@ -3285,6 +3288,11 @@ function generatePeriodSections() {
                 const imageSection = elem.imageUrl
                   ? `<div class="text-center mb-3"><img src="${elem.imageUrl}" aria-hidden="true" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;"></div>`
                   : '';
+                
+                // Prepara o bloco da imagem de distribuição eletrônica, caso a propriedade distributionImageUrl esteja definida no elemento.
+                const distributionImageSection = elem.distributionImageUrl
+                  ? `<div class="text-center my-2"><img src="${elem.distributionImageUrl}" alt="Ilustração da distribuição eletrônica de ${elem.name}" class="img-fluid rounded" style="max-height: 100%; object-fit: contain;"></div>`
+                  : '';
 
                 // Montando a estrutura do modal
                 modalDiv.innerHTML = `
@@ -3310,6 +3318,7 @@ function generatePeriodSections() {
                   <p><strong>Número de massa:</strong> ${elem.atomicMass}</p>
                   <div class="col mb-3">
                     <strong>Distribuição eletrônica</strong><br/>
+                    ${distributionImageSection}
                     ${createDistribution(elem.distribution)}
                   </div>
                 </div>

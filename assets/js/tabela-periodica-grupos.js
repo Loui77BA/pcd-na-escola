@@ -166,6 +166,11 @@ function generateColumnSections() {
                 const imageSection = elem.imageUrl
                   ? `<div class="text-center mb-3"><img src="${elem.imageUrl}" aria-hidden="true" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;"></div>`
                   : '';
+                
+                // Prepara o bloco da imagem de distribuição eletrônica, caso a propriedade distributionImageUrl esteja definida no elemento.
+                const distributionImageSection = elem.distributionImageUrl
+                  ? `<div class="text-center my-2"><img src="${elem.distributionImageUrl}" alt="Ilustração da distribuição eletrônica de ${elem.name}" class="img-fluid rounded" style="max-height: 180px; object-fit: contain;"></div>`
+                  : '';
 
                 // Montando a estrutura do modal
                 modalDiv.innerHTML = `
@@ -191,6 +196,7 @@ function generateColumnSections() {
                   <p><strong>Número de massa:</strong> ${elem.atomicMass}</p>
                   <div class="col mb-3">
                     <strong>Distribuição eletrônica</strong><br/>
+                    ${distributionImageSection}
                     ${createDistribution(elem.distribution)}
                   </div>
                 </div>
