@@ -15,7 +15,7 @@ const periodicElements = [
         atomicMass: "1,007",
         groupName: "Não metal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/09/1-hidrogenio.jpg",
-        distributionImageUrl: "https://1drv.ms/i/c/bf6f4302973a9faf/IQRTBK9pUeNQR7IRNbFuvqGXAXZRfogUZTUNYCaAimyJS9Q?width=966&height=130",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/694489a3-cdd9-4d53-f24f-36b5ef8d2200/public",
         distribution: [{ camada: 1, subnivel: "1 &#8203; s", eletrons: 1 }],
     },
     {
@@ -29,7 +29,7 @@ const periodicElements = [
         atomicMass: "4,003",
         groupName: "Gás nobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/09/2-helio.jpg",
-        distributionImageUrl: "https://1drv.ms/i/c/bf6f4302973a9faf/IQTA8shOFaB9Q4Ll3kc8wVr3AYAkgHEerVj5lwBMIi-IXk0?width=963&height=128",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/9a05e9fb-9ef1-4452-0154-fcdb3fe2d100/public",
         distribution: [{ camada: 1, subnivel: "1 &#8203; s", eletrons: 2 }],
     },
     // Período 2 (linha 2) da tabela periódica
@@ -44,7 +44,7 @@ const periodicElements = [
         atomicMass: "6,94",
         groupName: "Metal alcalino",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/10/3-litio.jpg",
-        distributionImageUrl: "https://1drv.ms/i/c/bf6f4302973a9faf/IQSAvV4v70LOQq5f3a66kTRpAdfKTCf8i7bmfOKC4RF_ewI?width=963&height=128",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/507575ec-f1f7-4a0b-090c-18edfac3fd00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 1 },
@@ -61,6 +61,7 @@ const periodicElements = [
         atomicMass: "9,012",
         groupName: "Metal alcalino-terroso",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2010/05/4-berilio.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/dc9cc948-0d21-4d2c-7aca-3b235ab89300/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -77,6 +78,7 @@ const periodicElements = [
         atomicMass: "10,81",
         groupName: "Semimetal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/10/5-boro.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d02625b6-abe9-4302-5d24-c74d57000600/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -94,6 +96,7 @@ const periodicElements = [
         atomicMass: "12,01",
         groupName: "Não metal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/10/6-carbono.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/4b419a82-916f-478f-6e49-d7ab0e17b500/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -111,6 +114,7 @@ const periodicElements = [
         atomicMass: "14,01",
         groupName: "Não metal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/10/7-nitrogenio.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/04b3b21e-ae8f-4f32-83d7-257f7134ec00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -128,6 +132,7 @@ const periodicElements = [
         atomicMass: "16,00",
         groupName: "Não metal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/10/8-oxigenio.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/662c3722-14f9-4ede-3be6-6ef785411f00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -145,6 +150,7 @@ const periodicElements = [
         atomicMass: "19,00",
         groupName: "Halogênio",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/10/9-fluor.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/dbefe14a-081f-410b-a536-51347f1b7d00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -162,6 +168,7 @@ const periodicElements = [
         atomicMass: "20,18",
         groupName: "Gás nobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/11/10-neonio.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/0190b319-deaf-4d59-743c-0185c79d8a00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },

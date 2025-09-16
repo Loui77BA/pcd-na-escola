@@ -542,7 +542,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
       </div>
       <div class="modal-body">
           <div class="text-center mb-4">
-            <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRqCkcXgtk6ToSfewsQcXjmAQiFnJwhoPlRejBWkga6xAs?width=628&height=171" style="max-width: 100%; height: auto;" alt="Como usar a Tabela Periódica" aria-hidden="true" />
+            <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/01248cbd-d6fc-4d17-2007-b107616a0000/public" style="max-width: 100%; height: auto;" alt="Como usar a Tabela Periódica" aria-hidden="true" />
           </div>
 
           <div class="my-4 p-3 border border-light border-opacity-25 rounded">
@@ -769,13 +769,13 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
           <strong>Visualização por Períodos:</strong> Os elementos são dispostos em seções que correspondem aos períodos (as linhas horizontais da tabela). Isso quebra a tabela grande em partes menores e mais gerenciáveis, ideais para telas de smartphones, onde o conteúdo é apresentado de forma vertical.
         </p>
 
-        <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSIii3xQCKdRbMo1kUHD6YxAcM3gbXmzrn_-4ppAJyJBZw?width=1120&height=620" style="max-width: 100%; height: auto;" alt="A imagem exibe um recorte da tabela periódica. No primeiro período, vemos dois elementos. O hidrogênio em um quadrado branco e, à sua direita, o hélio, em um quadrado azul. Já no segundo período, logo abaixo, há quatro elementos: o lítio, em um quadrado roxo, seguido pelo berílio, em cinza, o boro em vermelho, e o carbono em verde. Todos os quadrados contêm o nome e o símbolo do elemento, além da indicação do período e da coluna." />
+        <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6f7c129b-9d6e-4a40-d20b-7cbb1d7bdb00/public" style="max-width: 100%; height: auto;" alt="A imagem exibe um recorte da tabela periódica. No primeiro período, vemos dois elementos. O hidrogênio em um quadrado branco e, à sua direita, o hélio, em um quadrado azul. Já no segundo período, logo abaixo, há quatro elementos: o lítio, em um quadrado roxo, seguido pelo berílio, em cinza, o boro em vermelho, e o carbono em verde. Todos os quadrados contêm o nome e o símbolo do elemento, além da indicação do período e da coluna." />
 
         <p class="fs-5">
           <strong>Visualização por Grupos:</strong> Os elementos são organizados por grupos (as colunas verticais). Essa visualização permite que o usuário explore os elementos por suas propriedades químicas semelhantes, o que também é uma forma de navegação mais amigável para telas pequenas.
         </p>
 
-        <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSev1oa0TMZTZg0q_XZj6GSASTRjt1hzJZwWkEglx89BA4?width=1102&height=613" style="max-width: 100%; height: auto;" alt="A imagem exibe um recorte da tabela periódica, mostrando elementos de dois grupos. No Grupo 3, vemos dois elementos: o escândio, no Período 4 e Coluna 3, em um quadrado laranja e, à sua direita, o ítrio, no Período 5 e Coluna 3, também em um quadrado laranja. Já no Grupo 4, logo abaixo, há quatro elementos, todos em quadrados laranja: o titânio, no Período 4 e Coluna 4, seguido pelo zircônio, no Período 5 e Coluna 4, o háfnio, no Período 6 e Coluna 4, e o rutherfórdio, no Período 7 e Coluna 4. Todos os quadrados contêm o nome e o símbolo do elemento, além da indicação do período e da coluna." />
+        <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6f7c129b-9d6e-4a40-d20b-7cbb1d7bdb00/public" style="max-width: 100%; height: auto;" alt="A imagem exibe um recorte da tabela periódica, mostrando elementos de dois grupos. No Grupo 3, vemos dois elementos: o escândio, no Período 4 e Coluna 3, em um quadrado laranja e, à sua direita, o ítrio, no Período 5 e Coluna 3, também em um quadrado laranja. Já no Grupo 4, logo abaixo, há quatro elementos, todos em quadrados laranja: o titânio, no Período 4 e Coluna 4, seguido pelo zircônio, no Período 5 e Coluna 4, o háfnio, no Período 6 e Coluna 4, e o rutherfórdio, no Período 7 e Coluna 4. Todos os quadrados contêm o nome e o símbolo do elemento, além da indicação do período e da coluna." />
 
         <p class="fs-5">
           Essa abordagem de usar botões e seções menores é fundamental para garantir a responsividade da aplicação. Em vez de forçar a adaptação de uma tabela grande a uma tela pequena, o design já foi pensado para o mobile.
@@ -785,25 +785,26 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
           Além disso, existe um painel de controle fixo na parte superior da janela onde é possível alternar entre a visualização por períodos e por grupos, além de ser possível ativar ou desativar as cores na tabela.
         </p>
 
-        <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSV2R8ls8k_TrB53oH-LhcpAe-hRQXDK4xPGvEUwWPNrfY" style="max-width: 100%; height: auto;" aria-hidden="true" />
+        <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6f7c129b-9d6e-4a40-d20b-7cbb1d7bdb00/public" style="max-width: 100%; height: auto;" aria-hidden="true" />
+
         <p class="fs-5">
           Quando a visualização por períodos está ativada o painel de controle exibe uma seção chamada <strong>Navegue pelos períodos da tabela</strong>, com botões para cada um dos 7 períodos, além dos botões para os lantanídeos e actinídeos. Pressionando um desses botões, a pessoa é levada diretamente para a seção correspondente na página.
         </p>
 
-        <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQT8NpsRRsiBToRuVnsaenOgARRJ8PDSI8YwLxoIqDam9VU?width=864&height=233" style="max-width: 100%; height: auto;" aria-hidden="true" />
+        <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6f7c129b-9d6e-4a40-d20b-7cbb1d7bdb00/public" style="max-width: 100%; height: auto;" aria-hidden="true" />
 
         <p class="fs-5">
           Já quando a visualização por grupos está ativada, o painel de controle exibe uma seção chamada <strong>Navegue pelos grupos da tabela</strong>, com botões para cada um dos 18 grupos, além dos botões para os lantanídeos e actinídeos. Pressionando um desses botões, a pessoa é levada diretamente para a seção correspondente na página.
         </p>
 
-        <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTPkOn5fC4XSrtXMb-sjaSDASPZWKltwoEf-u77hy8nWB4?width=874&height=273" style="max-width: 100%; height: auto;" aria-hidden="true" />
+        <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6f7c129b-9d6e-4a40-d20b-7cbb1d7bdb00/public" style="max-width: 100%; height: auto;" aria-hidden="true" />
 
         <p class="fs-5">
           Cada elemento químico é apresentado em um cartão individual, que exibe informações essenciais como o símbolo, o nome e a posição que ocupa na tabela (no caso o período e a coluna).
         </p>
 
         <figure class="text-center">
-          <img src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTljKvRX7KIRLCcqHC_N-OxAaLFKxJMkfFRakeG_Guf694" style="max-width: 100%; height: auto;" aria-hidden="true" />
+          <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6f7c129b-9d6e-4a40-d20b-7cbb1d7bdb00/public" style="max-width: 100%; height: auto;" aria-hidden="true" />
           <figcaption class="visually-hidden">
           Exemplo de cartão de elemento químico. O cartão é um quadrado com bordas arredondadas. O elemento do exemplo é o Boro, no cartão está sendo exibido o símbolo (B), o nome (Boro), o período (2) e a coluna (13) que é onde ele está localizado na tabela periódica.
           </figcaption>
@@ -812,11 +813,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
         <p class="fs-5">
           Esses cartões são interativos: ao clicar com o mouse, tocar na tela touch ou pressionar <kbd>Enter</kbd> sobre eles, uma janela modal se abre, fornecendo informações detalhadas sobre o elemento, como Símbolo, Nome, Número Atômico, Número de Massa (massa atômica) e Configuração eletrônica.
         </p>
-
-        <div class="alert alert-info mt-4">
-          <span class="material-symbols-outlined me-2 align-middle" aria-hidden="true">lightbulb</span>
-          <strong>Dica:</strong> Para uma experiência ainda melhor, utilize um dispositivo com tela grande ou gire seu dispositivo móvel na horizontal.
-        </div>
+        
       </div>
       <div class="modal-footer border-light border-opacity-25">
         <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fechar</button>
