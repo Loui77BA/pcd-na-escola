@@ -3298,7 +3298,7 @@ function generatePeriodSections() {
                 
                 // Prepara o bloco da imagem de distribuição eletrônica, caso a propriedade distributionImageUrl esteja definida no elemento.
                 const distributionImageSection = elem.distributionImageUrl
-                  ? `<div class="text-center my-2"><img src="${elem.distributionImageUrl}" alt="Ilustração da distribuição eletrônica de ${elem.name}" class="img-fluid rounded" style="max-height: 100%; object-fit: contain;"></div>`
+                  ? `<div class="text-center my-2"><img src="${elem.distributionImageUrl}" alt="Ilustração da distribuição eletrônica de ${elem.name}" class="img-fluid rounded mb-3" aria-hidden="true" style="max-height: 100%; object-fit: contain;"></div>`
                   : '';
 
                 // Montando a estrutura do modal
