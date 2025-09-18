@@ -479,53 +479,243 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
         </button>
       </div>
       <div class="modal-body">
-        <div class="mb-4">
-          <div class="d-flex justify-content-center align-items-center gap-3 mb-4">
-            <div>
-              <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6175db1e-4454-4c47-c7a6-b2c789de8000/public" 
-                   class="img-fluid rounded-circle border border-3 border-primary shadow" 
-                   style="width: 150px; height: 150px; object-fit: cover; transition: transform 0.3s ease;" 
-                   alt="Duas pessoas em pé, sorrindo, posam juntas para a foto. A pessoa à esquerda é Louise, ela usa óculos escuros, camiseta preta e segura um diploma emoldurado por uma borda verde. A pessoa à direita é a professora de Química Ana Célia, ela está de camisa branca com pequenas estampas e cabelos compridos, apoia o braço sobre o ombro de Louise. Ao fundo, há uma parede clara e árvores visíveis ao fundo." 
-                   onmouseover="this.style.transform='scale(1.05)'" 
-                   onmouseout="this.style.transform='scale(1)'">
-            </div>
-            <div>
-              <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/f4252d17-dd58-448e-fc6d-3db8f81c4e00/public" 
-                   class="img-fluid rounded-circle border border-3 border-primary shadow" 
-                   style="width: 150px; height: 150px; object-fit: cover; transition: transform 0.3s ease;" 
-                   alt="Duas pessoas sorriem para a câmera em uma sala de informática. A pessoa à esquerda é a professora de programação Karine, ela tem cabelos loiros e soltos, usa óculos de grau e blusa azul. A pessoa à direita é Louise, ela tem cabelos pretos longos, também usa óculos e camisa xadrez. Elas estão próximas, com o braço em torno uma da outra. Ao fundo, há várias mesas com computadores, monitores e cadeiras enfileiradas." 
-                   onmouseover="this.style.transform='scale(1.05)'" 
-                   onmouseout="this.style.transform='scale(1)'">
-            </div>
+        <div class="mt-4 mb-4">
+          <div style="position:relative;width:80%;margin:0 auto;padding-top:45%;">
+            <iframe id="panda-037a4eaa-cf8a-4189-b090-31bb5a0c2924" 
+                  src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=037a4eaa-cf8a-4189-b090-31bb5a0c2924" 
+                  style="border:none;position:absolute;top:0;left:0;border-radius:15px;box-shadow:0 15px 25px rgba(0,0,0,0.4); border: 3px solid rgba(13,110,253,0.3);" 
+                  allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
+                  allowfullscreen=true 
+                  width="100%" 
+                  height="100%" 
+                  fetchpriority="high"></iframe>
           </div>
-          
-          <h3 class="h5 mb-3 pb-2 border-bottom border-light border-opacity-25">O que é esta ferramenta?</h3>
-          <p>A Tabela Periódica Acessível é uma ferramenta educacional desenvolvida para facilitar o aprendizado de química para pessoas com deficiência, especialmente quem utiliza tecnologias assistivas.</p>
-          <p>O objetivo é democratizar o acesso ao conhecimento científico, tornando-o acessível para todas as pessoas.</p>
+
+          <figcaption id="figcaption-reportagem-tv-bahia" 
+                    class="figure-caption text-center mt-4">
+            <div class="d-inline-flex align-items-center bg-dark bg-opacity-50 rounded-pill px-4 py-3"
+                 style="backdrop-filter: blur(8px);
+                        transition: transform 0.3s ease;
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                        border: 1px solid rgba(255,255,255,0.1);">
+                <span class="text-light small" 
+                      style="padding: 2px 8px;
+                             letter-spacing: 0.3px;
+                             font-weight: 500;">
+                    Reportagem da TV Bahia, afiliada da Rede Globo, sobre a Tabela Periódica Acessível. O projeto ganhou o primeiro lugar no Prêmio Hipertexto 2015, realizado na Universidade Federal de Pernambuco (UFPE).
+                </span>
+            </div>
+        </figcaption>
+
+          <h3 class="mb-4 mt-4 pb-2 border-bottom border-light border-opacity-25">
+            História e evolução da Tabela Periódica Acessível
+          </h3>
+          <p class="fs-5">
+            A Tabela Periódica Acessível surgiu de uma necessidade muito real. Louise Suelen, uma estudante com deficiência visual do ensino médio técnico integrado em Informática no IFBA – Barreiras na época, precisava de uma forma prática e acessível para estudar Química. Não havia ferramentas prontas que atendessem às suas necessidades com a velocidade que ela precisava, então algo novo teve que ser criado.
+          </p>
+          <p class="fs-5">
+            Foi aí que as professoras do IFBA entraram em cena. A Profª <strong>Ana Célia Barreto de Araujo Santana</strong>, da área de Química, e a Profª <strong>Karine do Prado Ribeiro</strong>, da Computação, uniram forças para desenvolver a primeira versão dessa ferramenta. Elas trabalharam juntas para transformar uma ideia em realidade.
+          </p>
+          <p class="fs-5">
+            No começo, a ferramenta era bem simples e tinha suas limitações. Usava tecnologias como <em>AJAX</em> e <em>jQuery</em>, mas ainda não seguia padrões modernos de acessibilidade. Para tentar resolver isso, algumas soluções improvisadas foram usadas, como:
+          </p>
+          <ul>
+            <li class="fs-5 mb-4">Colocar informações químicas no atributo <em>alt</em> das imagens, mesmo quando isso não era o ideal;</li>
+            <li class="fs-5">Usar áudios pré-gravados que eram ativados por <em>JavaScript</em> para "falar" o que estava na tela.</li>
+          </ul>
+          <p class="fs-5">
+            Essas ideias ajudaram na época, mas também trouxeram problemas, como:
+          </p>
+          <ul>
+            <li class="fs-5 mb-4">O sistema não era muito confiável;</li>
+            <li class="fs-5 mb-4">Às vezes, as informações ficavam confusas ou fora de contexto;</li>
+            <li class="fs-5 mb-4">Dependência excessiva de <em>JavaScript</em> para coisas importantes como "esconder" da navegação elementos inacessíveis como a distribuição eletrônica que foi construída na época e colocar um áudio pré-gravado no lugar para ser ouvido;</li>
+            <li class="fs-5">Falta de integração entre o que era mostrado e o que era narrado.</li>
+          </ul>
+          <p class="fs-5">
+            Com o tempo, a ferramenta foi melhorando e se modernizando. Hoje, ela segue práticas mais avançadas, como:
+          </p>
+          <ul>
+            <li class="fs-5 mb-4">Usar <em>HTML</em> semântico, onde o significado está no código, não só na aparência;</li>
+            <li class="fs-5 mb-4">Aplicar <em>WAI-ARIA</em> de forma cuidadosa, para melhorar a acessibilidade de componentes que precisam de suporte adicional;</li>
+            <li class="fs-5 mb-4">Garantir que leitores de tela leiam as mesmas informações que aparecem na tela;</li>
+            <li class="fs-5 mb-4">Adicionar controles de acessibilidade, como foco automático ao abrir ou fechar janelas;</li>
+            <li class="fs-5 mb-4">Evitar depender de cores para transmitir informações, ajudando pessoas com daltonismo;</li>
+            <li class="fs-5">Fazer com que a página funcione bem em qualquer tamanho de tela e até em conexões mais lentas.</li>
+          </ul>
+          <p class="fs-5">
+            Essa evolução mostrou que, com as práticas certas, é possível estudar a Tabela Periódica de forma acessível e sem perder nenhuma informação importante, mesmo para quem não usa pistas visuais.
+          </p>
+          <h3 class="mb-4 mt-4 pb-2 border-bottom border-light border-opacity-25">
+            O que é a Tabela Periódica Acessível hoje?
+          </h3>
+          <p class="fs-5">
+            Hoje, a Tabela Periódica Acessível é feita para que qualquer pessoa consiga entender os conteúdos, mesmo quem usa tecnologias assistivas. Ela foi criada pensando em acessibilidade, para que todos possam aprender sem dificuldades.
+          </p>
+          <p class="fs-5">
+            Ela funciona com leitores de tela e dispositivos Braille, tem opções de alto contraste, contraste negativo, escala de cinza, ajustes no tamanho das letras e até integração com o VLibras, que traduz conteúdos para Libras - a Língua Brasileira de Sinais.
+          </p>
+          <p class="fs-5">
+            A estrutura foi feita para ser simples e organizada. Ela usa códigos que ajudam na navegação, como marcadores de seção, títulos bem definidos e uma leitura linear que apresenta as informações de cada elemento químico (como número atômico, símbolo, nome, massa, grupo e distribuição eletrônica) de forma clara e direta.
+          </p>
+          <p class="fs-5">
+            Aqui estão alguns dos principais pontos que tornam essa ferramenta acessível:
+          </p>
+          <ul>
+            <li class="fs-5 mb-4">
+              <strong>Navegação fácil:</strong> A ordem de navegação é previsível, com atalhos para ir direto aos períodos (do 1 ao 7), grupos (do 1 ao 18), Lantanídeos e Actinídeos.
+            </li>
+            <li class="fs-5 mb-4">
+              <strong>Leitura organizada:</strong> As informações aparecem em uma sequência lógica, com títulos e listas bem estruturadas, obedecendo a hierarquia correta do <em>HTML</em> semântico.
+            </li>
+            <li class="fs-5 mb-4">
+              <strong>Ferramentas de acessibilidade:</strong> A ferramenta tem opções como alto contraste (fundo escuro e texto claro), contraste negativo (inversão de cores), escala de cinza (quase preto e branco), sublinhado de links e ajustes no tamanho das letras. Essas configurações ficam salvas para a pessoa e dão avisos, visuais e para leitores de tela, quando estão ativadas ou desativadas.
+            </li>
+            <li class="fs-5 mb-4">
+              <strong>Não depende de cores:</strong> As cores são usadas como um extra, mas as informações importantes também estão em texto, para não prejudicar quem tem dificuldade de enxergar cores, ou faz uma navegação totalmente não-visual.
+            </li>
+            <li class="fs-5 mb-4">
+              <strong>Navegação em janelas (modais):</strong> Quando uma janela é aberta, o foco vai direto para o primeiro botão. Quando fechada, o foco volta para onde estava antes, evitando confusões ou que a pessoa se perca.
+            </li>
+            <li class="fs-5">
+              <strong>Funciona em qualquer dispositivo:</strong> A ferramenta se adapta bem a telas pequenas e grandes, funciona em modo retrato ou paisagem, e é rápida até em celulares mais simples.
+            </li>
+          </ul>
         </div>
-        <h3 class="h5 mb-3" id="principais-recursos-titulo">Principais recursos</h3>
-        <div class="row g-4 mb-4" aria-labelledby="principais-recursos-titulo">
-          <div class="col-md-4">
-            <section class="text-center" role="region" aria-labelledby="modal-a11y-title" aria-describedby="modal-a11y-desc">
-              <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">accessibility</span>
-              <h4 id="modal-a11y-title" class="h6">Acessibilidade Total</h4>
-              <p id="modal-a11y-desc" class="small">Compatível com leitores de tela e tecnologias assistivas</p>
-            </section>
+        <h3 class="mb-3" id="sobre-as-autoras">Sobre as autoras</h3>
+        <div class="row g-4 mb-4" aria-labelledby="sobre-as-autoras">
+          
+          <!-- Cards de equipe com design acessível e visualmente atrativo -->
+          <div class="row g-4">
+            <!-- Card da Ana Célia -->
+            <div class="col-12 mb-4">
+              <div class="card bg-dark text-white border-light" style="border-radius: 1rem; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.3);">
+                <div class="row g-0">
+                  <div class="col-md-3 text-center p-4 border-end border-light d-flex align-items-center justify-content-center" style="background-color: var(--surface-2);">
+                    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c9a5b6c3-65ef-49e0-d4fc-5924d5d77100/public" 
+                         alt="Foto da Professora Ana Célia sorridente de cabelos longos e escuros, usando uma roupa amarela, em frente a folhagens verdes iluminadas." 
+                         class="rounded-circle mb-3" 
+                         style="width: 150px; height: 150px; object-fit: cover; border: 4px solid var(--primary);" />
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-header border-bottom border-light">
+                      <h4 class="card-title mb-0">Ana Célia Barreto de Araújo Santana</h4>
+                    </div>
+                    <div class="card-body" style="background-color: var(--surface);">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="mb-2 border-bottom pb-2 border-light">
+                            <span class="material-symbols-outlined align-middle me-2" aria-hidden="true">school</span>
+                            Formação acadêmica
+                          </h5>
+                          <ul class="mb-4">
+                            <li>Doutorado em Química pela Universidade Federal da Bahia (2016).</li>
+                            <li>Mestrado em Química pela Universidade do Estado da Bahia (2009).</li>
+                            <li>Licenciatura em Química pela Universidade do Estado da Bahia (2007).</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="mb-2 border-bottom pb-2 border-light">
+                            <span class="material-symbols-outlined align-middle me-2" aria-hidden="true">work</span>
+                            Atuação profissional
+                          </h5>
+                          <ul>
+                            <li>Professora no Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA) – Campus Lauro de Freitas.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card da Karine -->
+            <div class="col-12 mb-4">
+              <div class="card bg-dark text-white border-light" style="border-radius: 1rem; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.3);">
+                <div class="row g-0">
+                  <div class="col-md-3 text-center p-4 border-end border-light d-flex align-items-center justify-content-center" style="background-color: var(--surface-2);">
+                    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/cd749420-d252-4d97-536c-81228f40f600/public" 
+                         alt="Foto da Professora Karine sorridente de cabelos longos e loiros, usando óculos e blusa clara, em uma sala de informática com vários computadores dispostos em mesas." 
+                         class="rounded-circle mb-3" 
+                         style="width: 150px; height: 150px; object-fit: cover; border: 4px solid var(--primary);" />
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-header border-bottom border-light">
+                      <h4 class="card-title mb-0">Karine do Prado Ribeiro</h4>
+                    </div>
+                    <div class="card-body" style="background-color: var(--surface);">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="mb-2 border-bottom pb-2 border-light">
+                            <span class="material-symbols-outlined align-middle me-2" aria-hidden="true">school</span>
+                            Formação acadêmica
+                          </h5>
+                          <ul class="mb-4">
+                            <li>Mestrado em Engenharia Industrial pela Universidade Federal da Bahia (2018).</li>
+                            <li>Especialização em Engenharia de Sistemas pela Escola Superior Aberta do Brasil (2012).</li>
+                            <li>Bacharelado em Ciência da Computação pela Universidade Estadual do Sudoeste da Bahia (2009).</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="mb-2 border-bottom pb-2 border-light">
+                            <span class="material-symbols-outlined align-middle me-2" aria-hidden="true">work</span>
+                            Atuação profissional
+                          </h5>
+                          <ul>
+                            <li>Professora das disciplinas de Linguagem de Programação e Banco de Dados no Instituto Federal da Bahia (IFBA) – Campus Ilhéus.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card da Louise -->
+            <div class="col-12 mb-4">
+              <div class="card bg-dark text-white border-light" style="border-radius: 1rem; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.3);">
+                <div class="row g-0">
+                  <div class="col-md-3 text-center p-4 border-end border-light d-flex align-items-center justify-content-center" style="background-color: var(--surface-2);">
+                    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/04996eda-ef24-4768-33dc-7209b5e53500/public" 
+                         alt="Foto de Louise Suelen sorridente de cabelos curtos e cacheados, vestindo casaco escuro e cachecol de lã bege, em ambiente interno com armários de madeira ao fundo." 
+                         class="rounded-circle mb-3" 
+                         style="width: 150px; height: 150px; object-fit: cover; border: 4px solid var(--primary);" />
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-header border-bottom border-light">
+                      <h4 class="card-title mb-0">Louise Suelen Araujo Reis</h4>
+                    </div>
+                    <div class="card-body" style="background-color: var(--surface);">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="mb-2 border-bottom pb-2 border-light">
+                            <span class="material-symbols-outlined align-middle me-2" aria-hidden="true">school</span>
+                            Formação acadêmica
+                          </h5>
+                          <ul class="mb-4">
+                            <li>Bacharelado em Ciência da Computação pela Universidade Salvador (2025).</li>
+                            <li>Formação técnica em Informática pelo Instituto Federal da Bahia (IFBA), campus Barreiras (2016).</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="mb-2 border-bottom pb-2 border-light">
+                            <span class="material-symbols-outlined align-middle me-2" aria-hidden="true">work</span>
+                            Atuação profissional
+                          </h5>
+                          <ul>
+                            <li>Engenheira de software no Grupo Globo com foco em desenvolvimento backend utilizando Golang e Ruby on Rails.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <section class="text-center" role="region" aria-labelledby="modal-inter-title" aria-describedby="modal-inter-desc">
-              <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">touch_app</span>
-              <h4 id="modal-inter-title" class="h6">Interatividade</h4>
-              <p id="modal-inter-desc" class="small">Informações detalhadas sobre cada elemento químico</p>
-            </section>
-          </div>
-          <div class="col-md-4">
-            <section class="text-center" role="region" aria-labelledby="modal-resp-title" aria-describedby="modal-resp-desc">
-              <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">devices</span>
-              <h4 id="modal-resp-title" class="h6">Responsividade</h4>
-              <p id="modal-resp-desc" class="small">Funciona em diversos dispositivos e tamanhos de tela</p>
-            </section>
-          </div>
+
         </div>
       </div>
       <div class="modal-footer border-light border-opacity-25">
@@ -881,6 +1071,25 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
         if (primeiro) primeiro.focus();
       });
       modalSobre.addEventListener('hidden.bs.modal', function () {
+        // Interromper a reprodução do vídeo quando a modal for fechada
+        const videoFrame = document.getElementById('panda-037a4eaa-cf8a-4189-b090-31bb5a0c2924');
+        if (videoFrame) {
+          try {
+            // Método 1: Usando a API do Panda Video
+            videoFrame.contentWindow.postMessage(JSON.stringify({
+              event: 'command',
+              func: 'pauseVideo'
+            }), '*');
+            
+            // Método 2: Recarregar o iframe para garantir que o vídeo pare
+            // (backup caso o método 1 não funcione)
+            const videoSrc = videoFrame.src;
+            videoFrame.src = videoSrc;
+          } catch (e) {
+            console.log('Erro ao pausar o vídeo:', e);
+          }
+        }
+        
         btnSaibaMais.setAttribute('aria-expanded', 'false');
         btnSaibaMais.focus();
       });
@@ -1064,5 +1273,45 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
         }, 100); // Pequeno atraso para garantir que a DOM foi atualizada
       });
     });
+  });
+</script>
+
+<!-- Script para controle específico do vídeo -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Função para observar e lidar com o fechamento de modais que contenham vídeos do Panda Video
+    function configurarPausaDeVideoEmModalFechada() {
+      // Cria um handler genérico para qualquer modal com vídeos do Panda
+      document.addEventListener('hidden.bs.modal', function(event) {
+        const modal = event.target;
+        // Procura iframes do Panda Video dentro da modal
+        const pandaVideos = modal.querySelectorAll('iframe[id^="panda-"]');
+        
+        if (pandaVideos.length > 0) {
+          console.log(`Modal fechada: Pausando ${pandaVideos.length} vídeo(s)`);
+          
+          pandaVideos.forEach((videoFrame, index) => {
+            try {
+              // Tenta pausar usando a API do Panda
+              videoFrame.contentWindow.postMessage(JSON.stringify({
+                event: 'command',
+                func: 'pauseVideo'
+              }), '*');
+              
+              // Método de backup: recarregar o iframe
+              const videoSrc = videoFrame.src;
+              videoFrame.src = videoSrc;
+              
+              console.log(`Vídeo ${index + 1} pausado com sucesso`);
+            } catch (error) {
+              console.error(`Erro ao pausar vídeo ${index + 1}:`, error);
+            }
+          });
+        }
+      });
+    }
+    
+    // Inicializar o controle de vídeo
+    configurarPausaDeVideoEmModalFechada();
   });
 </script>
