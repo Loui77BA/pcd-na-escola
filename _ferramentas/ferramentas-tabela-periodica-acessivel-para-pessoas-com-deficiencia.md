@@ -480,7 +480,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
       </div>
       <div class="modal-body">
         <div class="mt-4 mb-4">
-          <div style="position:relative;width:80%;margin:0 auto;padding-top:45%;">
+          <div style="position:relative;width:90%;margin:0 auto;padding-top:50.625%;">
             <iframe id="panda-037a4eaa-cf8a-4189-b090-31bb5a0c2924" 
                   src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=037a4eaa-cf8a-4189-b090-31bb5a0c2924" 
                   style="border:none;position:absolute;top:0;left:0;border-radius:15px;box-shadow:0 15px 25px rgba(0,0,0,0.4); border: 3px solid rgba(13,110,253,0.3);" 
@@ -488,24 +488,15 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
                   allowfullscreen=true 
                   width="100%" 
                   height="100%" 
-                  fetchpriority="high"></iframe>
+                  fetchpriority="high"
+                  title="Reportagem da TV Bahia sobre a Tabela Periódica Acessível"></iframe>
           </div>
 
-          <figcaption id="figcaption-reportagem-tv-bahia" 
-                    class="figure-caption text-center mt-4">
-            <div class="d-inline-flex align-items-center bg-dark bg-opacity-50 rounded-pill px-4 py-3"
-                 style="backdrop-filter: blur(8px);
-                        transition: transform 0.3s ease;
-                        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-                        border: 1px solid rgba(255,255,255,0.1);">
-                <span class="text-light small" 
-                      style="padding: 2px 8px;
-                             letter-spacing: 0.3px;
-                             font-weight: 500;">
-                    Reportagem da TV Bahia, afiliada da Rede Globo, sobre a Tabela Periódica Acessível. O projeto ganhou o primeiro lugar no Prêmio Hipertexto 2015, realizado na Universidade Federal de Pernambuco (UFPE).
-                </span>
-            </div>
-        </figcaption>
+          <figcaption id="figcaption-reportagem-tv-bahia" class="figure-caption text-center mt-4">
+            <p class="small text-white">
+                Reportagem da TV Bahia, afiliada da Rede Globo, sobre a Tabela Periódica Acessível. O projeto ganhou o primeiro lugar no Prêmio Hipertexto 2015, realizado na Universidade Federal de Pernambuco (UFPE).
+            </p>
+          </figcaption>
 
           <h3 class="mb-4 mt-4 pb-2 border-bottom border-light border-opacity-25">
             História e evolução da Tabela Periódica Acessível
