@@ -15,7 +15,7 @@ const periodicElements = [
         atomicMass: "1,007",
         groupName: "Não metal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/09/1-hidrogenio.jpg",
-        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/694489a3-cdd9-4d53-f24f-36b5ef8d2200/public",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c7c023b7-c298-4a7a-772f-9005930f1100/public",
         distribution: [{ camada: 1, subnivel: "1 &#8203; s", eletrons: 1 }],
     },
     {
@@ -29,7 +29,7 @@ const periodicElements = [
         atomicMass: "4,003",
         groupName: "Gás nobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/09/2-helio.jpg",
-        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/9a05e9fb-9ef1-4452-0154-fcdb3fe2d100/public",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/157f0c6d-9a76-4ea2-7ab4-f13012f79300/public",
         distribution: [{ camada: 1, subnivel: "1 &#8203; s", eletrons: 2 }],
     },
     // Período 2 (linha 2) da tabela periódica
@@ -44,7 +44,7 @@ const periodicElements = [
         atomicMass: "6,94",
         groupName: "Metal alcalino",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/10/3-litio.jpg",
-        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/507575ec-f1f7-4a0b-090c-18edfac3fd00/public",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/0961777e-83a8-4d67-a9bd-bda538e90300/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 1 },
@@ -61,7 +61,7 @@ const periodicElements = [
         atomicMass: "9,012",
         groupName: "Metal alcalino-terroso",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2010/05/4-berilio.jpg",
-        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/dc9cc948-0d21-4d2c-7aca-3b235ab89300/public",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b6a5536f-6c3e-4b3a-9591-b8bc638bac00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -78,7 +78,7 @@ const periodicElements = [
         atomicMass: "10,81",
         groupName: "Semimetal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/10/5-boro.jpg",
-        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d02625b6-abe9-4302-5d24-c74d57000600/public",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/392f8f82-b2aa-420b-5317-5906d41f5500/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -96,7 +96,7 @@ const periodicElements = [
         atomicMass: "12,01",
         groupName: "Não metal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/10/6-carbono.jpg",
-        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/4b419a82-916f-478f-6e49-d7ab0e17b500/public",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/8a9d3ce3-87c9-4039-732f-4acf735f4a00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -114,7 +114,7 @@ const periodicElements = [
         atomicMass: "14,01",
         groupName: "Não metal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/10/7-nitrogenio.jpg",
-        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/04b3b21e-ae8f-4f32-83d7-257f7134ec00/public",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/8bc7bf66-0e8f-49d7-4daa-29717a206f00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -132,7 +132,7 @@ const periodicElements = [
         atomicMass: "16,00",
         groupName: "Não metal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/10/8-oxigenio.jpg",
-        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/662c3722-14f9-4ede-3be6-6ef785411f00/public",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/3c88baf7-4507-4627-8c81-21cf89432d00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -150,7 +150,7 @@ const periodicElements = [
         atomicMass: "19,00",
         groupName: "Halogênio",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/10/9-fluor.jpg",
-        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/dbefe14a-081f-410b-a536-51347f1b7d00/public",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/aeb83269-2915-4eaf-78c0-6a09048a5100/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -168,7 +168,7 @@ const periodicElements = [
         atomicMass: "20,18",
         groupName: "Gás nobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/11/10-neonio.jpg",
-        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/0190b319-deaf-4d59-743c-0185c79d8a00/public",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/7662d75b-979b-48cb-0434-a7a08530c600/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -187,6 +187,7 @@ const periodicElements = [
         atomicMass: "22,99",
         groupName: "Metal alcalino",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/11/11-sodio.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/7b6efc62-5466-4882-07cf-6e75f861aa00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -205,6 +206,7 @@ const periodicElements = [
         atomicMass: "24,31",
         groupName: "Metal alcalino-terroso",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/11/12-magnesio.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/8ec59de1-256e-4b77-9192-51efcf9b6300/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -223,6 +225,7 @@ const periodicElements = [
         atomicMass: "26,98",
         groupName: "Metal pobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/11/13-aluminio.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b48a29d4-d6e8-48dc-08bf-333d149faf00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -242,6 +245,7 @@ const periodicElements = [
         atomicMass: "28,09",
         groupName: "Semimetal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/11/14-silicio.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/ed9080bd-4ab6-4d30-8d6a-fde621823000/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -261,6 +265,7 @@ const periodicElements = [
         atomicMass: "30,97",
         groupName: "Não metal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/11/15-fosforo-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/bd7de1de-a460-4a97-fdce-2bdfe4fa7700/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -280,6 +285,7 @@ const periodicElements = [
         atomicMass: "32,07",
         groupName: "Não metal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/11/16-enxofre-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/1315f746-5669-49c5-5456-ff5ed5e8f900/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -299,6 +305,7 @@ const periodicElements = [
         atomicMass: "35,45",
         groupName: "Halogênio",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/11/17-cloro-med.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/47bc6482-5ba8-4f66-299b-e0c5620e7f00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -318,6 +325,7 @@ const periodicElements = [
         atomicMass: "39,95",
         groupName: "Gás nobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/11/18-argonio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/916adc89-494c-4096-4815-e33d1f505d00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -338,6 +346,7 @@ const periodicElements = [
         atomicMass: "39,10",
         groupName: "Metal alcalino",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/11/19-potassio.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/01e785cf-bf3a-46c5-38af-52ae74517e00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -358,6 +367,7 @@ const periodicElements = [
         atomicMass: "40,08",
         groupName: "Metal alcalino-terroso",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2017/11/20-calcio.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/5cf9c379-69e5-4492-172a-07993a30ac00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -378,6 +388,7 @@ const periodicElements = [
         atomicMass: "44,96",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/02/21-escandio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/4da2b5d9-86e9-442d-d4d2-cb7cfa1b7500/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -399,6 +410,7 @@ const periodicElements = [
         atomicMass: "47,87",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/02/22-titanio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/cedf9292-87c3-4c51-2e3e-b8ddb6460000/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -420,6 +432,7 @@ const periodicElements = [
         atomicMass: "50,94",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/02/23-vanadio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/8fb1c081-d26d-4227-efc6-bcd2987dfb00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -441,6 +454,7 @@ const periodicElements = [
         atomicMass: "51,99",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/02/24-cromo-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/2998a43a-634e-4f49-d1fb-a9c6de38f500/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -463,6 +477,7 @@ const periodicElements = [
         atomicMass: "54,94",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/02/25-manganes-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/ae3ced91-e2c4-46b3-bf8a-001e76690600/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -484,6 +499,7 @@ const periodicElements = [
         atomicMass: "55,85",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/02/26-ferro-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/4d6233d0-d3aa-49e7-eea0-a5815eb4d300/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -505,6 +521,7 @@ const periodicElements = [
         atomicMass: "58,93",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/02/27-cobalto-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/05742c34-53f7-46a0-208e-4695e493a700/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -526,6 +543,7 @@ const periodicElements = [
         atomicMass: "58,69",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/02/28-niquel-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/f7b6ef91-7c74-4278-5ac0-d762f2218e00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -547,6 +565,7 @@ const periodicElements = [
         atomicMass: "63,55",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/02/29-cobre-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/bb6effc6-0040-4e08-34c5-7ad767b80800/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -569,6 +588,7 @@ const periodicElements = [
         atomicMass: "65,38",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/02/30-zinco-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/7ceafdc3-e734-4e83-449d-6ba6e67dc000/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -590,6 +610,7 @@ const periodicElements = [
         atomicMass: "69,72",
         groupName: "Metal pobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/31-galio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/267d9774-3941-480c-5da0-20e84a5f5a00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -612,6 +633,7 @@ const periodicElements = [
         atomicMass: "72,63",
         groupName: "Semimetal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/32-germanio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/f4055574-dcc0-43b0-71ca-58fcf4635200/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -634,6 +656,7 @@ const periodicElements = [
         atomicMass: "74,92",
         groupName: "Semimetal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/33-arsenio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/88fa9aca-6fbe-4efb-91e6-1d2fad019d00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -656,6 +679,7 @@ const periodicElements = [
         atomicMass: "78,97",
         groupName: "Não metal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/34-selenio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/4fe805c7-3d45-4d6a-a403-46d0f95b6500/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -678,6 +702,7 @@ const periodicElements = [
         atomicMass: "79,90",
         groupName: "Halogênio",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/35-bromo-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/117fa960-1c6c-447f-c101-22461b68fd00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -700,6 +725,7 @@ const periodicElements = [
         atomicMass: "83,80",
         groupName: "Gás nobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/36-criptonio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/32747cbc-797d-4cad-523d-fb4290909300/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -723,6 +749,7 @@ const periodicElements = [
         atomicMass: "85,47",
         groupName: "Metal alcalino",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/37-rubidio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/22bd616c-ead6-44b9-e890-802e8f19b400/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -746,6 +773,7 @@ const periodicElements = [
         atomicMass: "87,62",
         groupName: "Metal alcalino-terroso",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/38-estroncio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b3560d54-9d8f-4585-7c2a-a553cf9b1500/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -769,6 +797,7 @@ const periodicElements = [
         atomicMass: "88,91",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/39-itrio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/3334ad1b-7a8c-4bf9-1825-f40d6bf2fb00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -793,6 +822,7 @@ const periodicElements = [
         atomicMass: "91,22",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/40-zirconio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/24bc01dd-78cf-4834-ffd9-d78adf4c0a00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -817,6 +847,7 @@ const periodicElements = [
         atomicMass: "92,91",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/41-niobio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d9fb1887-7920-409d-c728-d85850c72f00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -842,6 +873,7 @@ const periodicElements = [
         atomicMass: "95,95",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/42-molibdenio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6a425c55-ed4e-4eee-aa7b-06302ab03100/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -867,6 +899,7 @@ const periodicElements = [
         atomicMass: "98",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/43-tecnecio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6a12efbc-c8a7-4c7e-99b0-2e9f7aa1a500/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -891,6 +924,7 @@ const periodicElements = [
         atomicMass: "101,07",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/44-rutenio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/ed2f60e5-115c-4729-a818-f3340fb10400/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -916,6 +950,7 @@ const periodicElements = [
         atomicMass: "102,91",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/45-rodio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/61a549ed-4b20-42dc-2236-060a56cf7b00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -941,6 +976,7 @@ const periodicElements = [
         atomicMass: "106,42",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/46-paladio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/2d3d4f6c-584a-43be-db7c-b2af29c08900/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -965,6 +1001,7 @@ const periodicElements = [
         atomicMass: "107,87",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/47-prata-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b0f07ac0-5b44-4bbf-8aa3-21df42fcf900/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -990,6 +1027,7 @@ const periodicElements = [
         atomicMass: "112,41",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/03/48-cadmio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/8e46d6cc-fc23-4bde-8123-3be09e746900/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1014,6 +1052,7 @@ const periodicElements = [
         atomicMass: "114,82",
         groupName: "Metal pobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/09/49-indio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/e161fedb-1afb-492b-7ecd-6ecf1cdd1100/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1039,6 +1078,7 @@ const periodicElements = [
         atomicMass: "118,71",
         groupName: "Metal pobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/09/50-estanho-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/729a4f9a-ed48-4458-60c4-1d8bb7a06a00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1064,6 +1104,7 @@ const periodicElements = [
         atomicMass: "121,76",
         groupName: "Semimetal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/04/51-antimonio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/63a8c264-b406-4d30-3fa2-aadc78b1cd00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1089,6 +1130,7 @@ const periodicElements = [
         atomicMass: "127,60",
         groupName: "Semimetal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/09/52-telurio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/80b33d51-0b23-4d4c-b2d9-fb07a6802600/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1114,6 +1156,7 @@ const periodicElements = [
         atomicMass: "126,90",
         groupName: "Halogênio",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/04/53-iodo-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/1e3ce717-0143-469e-75a9-74ef2c70d500/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1139,6 +1182,7 @@ const periodicElements = [
         atomicMass: "131,29",
         groupName: "Gás nobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/09/54-xenonio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/9cf0cb8e-6a91-4e3d-5426-93bc12bb1400/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1165,6 +1209,7 @@ const periodicElements = [
         atomicMass: "132,91",
         groupName: "Metal alcalino",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/55-cesio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/4324c401-ab63-4f12-f503-9be7e0046b00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1191,6 +1236,7 @@ const periodicElements = [
         atomicMass: "137,33",
         groupName: "Metal alcalino-terroso",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/56-bario-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/06d3115d-a63a-446a-0009-fd4c3e184900/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1219,6 +1265,7 @@ const periodicElements = [
         atomicMass: "138,91",
         groupName: "Lantanídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/57-lantanio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/77016c92-c90f-4ce9-b3ca-b1771d158d00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1247,6 +1294,7 @@ const periodicElements = [
         atomicMass: "140,12",
         groupName: "Lantanídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/58-cerio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b421bc1a-73fc-4817-3ecf-8816cacd0400/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1276,6 +1324,7 @@ const periodicElements = [
         atomicMass: "140,91",
         groupName: "Lantanídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/59-praseodimio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/afd159e9-c421-4268-fbec-41dcdcbc7c00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1304,6 +1353,7 @@ const periodicElements = [
         atomicMass: "144,24",
         groupName: "Lantanídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/60-neodimio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fb5f26ba-d0ea-4def-fe4c-513752549c00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1332,6 +1382,7 @@ const periodicElements = [
         atomicMass: "(145)",
         groupName: "Lantanídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/61-promecio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/bd8e2f21-9659-4c33-4af9-f31b23b0ac00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1360,6 +1411,7 @@ const periodicElements = [
         atomicMass: "150,36",
         groupName: "Lantanídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/62-samario-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/a63e2ad9-6ad3-478c-dd8c-65d5b0b38000/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1388,6 +1440,7 @@ const periodicElements = [
         atomicMass: "151,96",
         groupName: "Lantanídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/63-europio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/0eb37d0f-7d3c-4244-1b13-59b3bb5e8e00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1416,6 +1469,7 @@ const periodicElements = [
         atomicMass: "157,25",
         groupName: "Lantanídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/64-gadolinio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/69b9b45e-0d71-471b-7c18-f5cc8c4c9c00/public",
         distribution: [
             // até Xe (54 elétrons):
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
@@ -1448,6 +1502,7 @@ const periodicElements = [
         atomicMass: "158,93",
         groupName: "Lantanídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/65-terbio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/e1e7b8c8-6749-42aa-c3dc-ded0ecd73600/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1476,6 +1531,7 @@ const periodicElements = [
         atomicMass: "162,50",
         groupName: "Lantanídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/66-disprosio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/e90ba717-8cfe-49e1-1bda-bee21ad4a100/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1504,6 +1560,7 @@ const periodicElements = [
         atomicMass: "164,93",
         groupName: "Lantanídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/67-holmio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6bbab6a7-b426-404e-81a1-1b7b8e31ca00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1532,6 +1589,7 @@ const periodicElements = [
         atomicMass: "167,26",
         groupName: "Lantanídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/68-erbio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/f54fee77-ea2b-414e-7eec-96aa6e166400/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1560,6 +1618,7 @@ const periodicElements = [
         atomicMass: "168,93",
         groupName: "Lantanídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/69-tulio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/e56eb34c-4d97-4a51-23ba-0bcc8cbf5a00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1588,6 +1647,7 @@ const periodicElements = [
         atomicMass: "173,05",
         groupName: "Lantanídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/70-iterbio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/cb7fa50b-5ec0-4628-ff3a-6d1d2ea47900/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1616,6 +1676,7 @@ const periodicElements = [
         atomicMass: "174,97",
         groupName: "Lantanídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/71-lutecio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d9931b86-f9da-4770-c446-92e6a7c2f100/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1646,6 +1707,7 @@ const periodicElements = [
         atomicMass: "178,49",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/72-hafnio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/37a37a1f-57c0-4296-9036-518ccb21b600/public",
         distribution: [
             // +1 e– em 5d em relação ao Lu
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
@@ -1676,6 +1738,7 @@ const periodicElements = [
         atomicMass: "180,95",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/73-tantalo-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d7a585cd-9739-4bdd-f645-54e61786ae00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1705,6 +1768,7 @@ const periodicElements = [
         atomicMass: "183,84",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/74-tungstenio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/a80d95da-96d5-4330-64a0-39d653356800/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1734,6 +1798,7 @@ const periodicElements = [
         atomicMass: "186,21",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/75-renio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/537f3fcc-dd81-4f81-db20-8cfce0415400/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1763,6 +1828,7 @@ const periodicElements = [
         atomicMass: "190,23",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/76-osmio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/35eee803-95bd-42ca-3e01-3a2b04280200/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1792,6 +1858,7 @@ const periodicElements = [
         atomicMass: "192,22",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/77-iridio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/38e85fac-fcdd-4a76-a067-6f34f6e54e00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1821,6 +1888,7 @@ const periodicElements = [
         atomicMass: "195,08",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/78-platina-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/cba27559-991f-46d8-2ed7-1132b2895000/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1851,6 +1919,7 @@ const periodicElements = [
         atomicMass: "196,97",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/79-ouro-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/68a27206-1f53-4a0d-cc2e-af79999c3800/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1881,6 +1950,7 @@ const periodicElements = [
         atomicMass: "200,59",
         groupName: "Metal de transição",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/80-mercurio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/25ff39cd-5540-40b0-bc1c-3733ab199600/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1910,6 +1980,7 @@ const periodicElements = [
         atomicMass: "204,38",
         groupName: "Metal pobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/81-talio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/350bd735-f665-4161-3214-c6e483b32d00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1940,6 +2011,7 @@ const periodicElements = [
         atomicMass: "207,2",
         groupName: "Metal pobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/82-chumbo-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/231bea1c-94d0-4e1d-f877-2c0ea2876e00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -1970,6 +2042,7 @@ const periodicElements = [
         atomicMass: "208,98",
         groupName: "Metal pobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/83-bismuto-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b43cb574-d4a6-476a-47a3-ecb443683300/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2000,6 +2073,7 @@ const periodicElements = [
         atomicMass: "(209)",
         groupName: "Semimetal",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/84-polonio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/541bc648-97cc-41ff-62f5-93a5d64fb500/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2030,6 +2104,7 @@ const periodicElements = [
         atomicMass: "(210)",
         groupName: "Halogênio",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/85-astato-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d7321a60-f554-422d-ab6b-b0ef53125d00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2060,6 +2135,7 @@ const periodicElements = [
         atomicMass: "(222)",
         groupName: "Gás nobre",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/10/86-radonio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/35f2eedf-0d8f-4437-cf5f-70a507836d00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2090,6 +2166,7 @@ const periodicElements = [
         atomicMass: "(223)",
         groupName: "Metal alcalino",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/87-francio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/e214248c-6a4b-4456-d0c9-94cf7cee2a00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2121,6 +2198,7 @@ const periodicElements = [
         atomicMass: "(226)",
         groupName: "Metal alcalino-terroso",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/88-radio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c7c038d8-3248-4a51-5ade-053ce607e800/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2153,6 +2231,7 @@ const periodicElements = [
         atomicMass: "(227)",
         groupName: "Actinídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/89-actinio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/e174b040-962d-4521-9fe7-716e1f00d100/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2187,6 +2266,7 @@ const periodicElements = [
         atomicMass: "232,04",
         groupName: "Actinídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/90-torio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/e673c0c9-64f6-444b-5664-1b071bcea300/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2220,6 +2300,7 @@ const periodicElements = [
         atomicMass: "231,04",
         groupName: "Actinídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/91-protactinio-corrigido.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d57a5cb5-ea99-48bc-fea4-f112ab453400/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2254,6 +2335,7 @@ const periodicElements = [
         atomicMass: "238,03",
         groupName: "Actinídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/92-uranio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/ae5125bb-db2d-472d-984a-1c27e41cb700/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2288,6 +2370,7 @@ const periodicElements = [
         atomicMass: "(237)",
         groupName: "Actinídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/93-neptunio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/1fb90e37-b4bf-400c-a6ca-b079bb39b500/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2322,6 +2405,7 @@ const periodicElements = [
         atomicMass: "(244)",
         groupName: "Actinídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/94-plutonio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/ec8d1b68-d722-44d8-16ec-c8b93f219700/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2355,6 +2439,7 @@ const periodicElements = [
         atomicMass: "(243)",
         groupName: "Actinídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/95-americio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/e0bc15e9-5bf6-4a3b-b7bd-4545db49fd00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2388,6 +2473,7 @@ const periodicElements = [
         atomicMass: "(247)",
         groupName: "Actinídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/96-curio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/a927888d-0cd0-41a1-9ce8-68f98b918800/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2422,6 +2508,7 @@ const periodicElements = [
         atomicMass: "(247)",
         groupName: "Actinídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/97-berquelio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/68e34a4c-12ca-4ceb-672e-98c0b55d0600/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2455,6 +2542,7 @@ const periodicElements = [
         atomicMass: "(251)",
         groupName: "Actinídeo",
         imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/98-californio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/662e9456-21ba-45eb-7adc-bd97f3eee700/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2487,6 +2575,8 @@ const periodicElements = [
         atomicNumber: 99,
         atomicMass: "(252)",
         groupName: "Actinídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/99-einstinio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/1fb0d0d6-44b3-409e-0842-7bda0ca9d500/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2519,6 +2609,8 @@ const periodicElements = [
         atomicNumber: 100,
         atomicMass: "(257)",
         groupName: "Actinídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/100-fermio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/9eec388e-fb56-499b-1b2c-424b44038f00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2551,6 +2643,8 @@ const periodicElements = [
         atomicNumber: 101,
         atomicMass: "(258)",
         groupName: "Actinídeo",
+        imageUrl: "https://www.tabelaperiodica.org/wp-content/uploads/2018/11/101-mendelevio-MED.jpg",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/cae021b1-5220-4931-3e6b-cec112855b00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2583,6 +2677,7 @@ const periodicElements = [
         atomicNumber: 102,
         atomicMass: "(259)",
         groupName: "Actinídeo",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/a1f23e5c-0c35-4684-7b63-066c22456700/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2615,6 +2710,7 @@ const periodicElements = [
         atomicNumber: 103,
         atomicMass: "(262)",
         groupName: "Actinídeo",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/f6b48e34-b788-42e3-f9e6-da4bf9bd7300/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2649,6 +2745,7 @@ const periodicElements = [
         atomicNumber: 104,
         atomicMass: "(267)",
         groupName: "Metal de transição",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/653718ca-b5e6-4f46-52f8-df67c7b51600/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2681,6 +2778,7 @@ const periodicElements = [
         atomicNumber: 105,
         atomicMass: "(268)",
         groupName: "Metal de transição",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d461b940-15e7-4f95-efab-7389b3882a00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2713,6 +2811,7 @@ const periodicElements = [
         atomicNumber: 106,
         atomicMass: "(269)",
         groupName: "Metal de transição",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b72950c4-7ef9-4f8c-5a83-4fcf3e40a700/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2745,6 +2844,7 @@ const periodicElements = [
         atomicNumber: 107,
         atomicMass: "(270)",
         groupName: "Metal de transição",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/8cceff23-965e-4a8f-b364-e25ae8ba0700/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2777,6 +2877,7 @@ const periodicElements = [
         atomicNumber: 108,
         atomicMass: "(270)",
         groupName: "Metal de transição",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/7690d1dd-a4dc-4c4e-87e7-bcd8623c1000/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2809,6 +2910,7 @@ const periodicElements = [
         atomicNumber: 109,
         atomicMass: "(278)",
         groupName: "Metal de transição",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/7e8f7361-ed15-4a54-6b01-e0690061dd00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2841,6 +2943,7 @@ const periodicElements = [
         atomicNumber: 110,
         atomicMass: "(281)",
         groupName: "Metal de transição",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/e09983e4-02f7-45bc-bbea-7ae82890ab00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2873,6 +2976,7 @@ const periodicElements = [
         atomicNumber: 111,
         atomicMass: "(282)",
         groupName: "Metal de transição",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/ae91953c-63fc-4538-5629-47c439d1a500/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2905,6 +3009,7 @@ const periodicElements = [
         atomicNumber: 112,
         atomicMass: "(285)",
         groupName: "Metal de transição",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/f66b792e-39fb-4cd9-70f6-314f2c95ce00/public",
         distribution: [
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
             { camada: 2, subnivel: "2 &#8203; s", eletrons: 2 },
@@ -2937,6 +3042,7 @@ const periodicElements = [
         atomicNumber: 113,
         atomicMass: "(286)",
         groupName: "Metal pobre",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/13544f75-ea8e-4e9d-45ba-36eb8ecdea00/public",
         distribution: [
             // Mesma base do Cn (Z=112), mas com +1 elétron em 7p
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
@@ -2971,6 +3077,7 @@ const periodicElements = [
         atomicNumber: 114,
         atomicMass: "(289)",
         groupName: "Metal pobre",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/ce26f9d6-bbac-4b02-9fd3-e93fec830900/public",
         distribution: [
             // Mesma base do Nihônio, mas 7p²
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
@@ -3005,6 +3112,7 @@ const periodicElements = [
         atomicNumber: 115,
         atomicMass: "(290)",
         groupName: "Semimetal",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/26e9b9ad-a9bc-43c3-3fc1-13c10ce9c700/public",
         distribution: [
             // 7p³
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
@@ -3039,6 +3147,7 @@ const periodicElements = [
         atomicNumber: 116,
         atomicMass: "(293)",
         groupName: "Metal pobre",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/9d13a6fe-6d45-471e-bf8f-477a0c48db00/public",
         distribution: [
             // 7p⁴
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
@@ -3073,6 +3182,7 @@ const periodicElements = [
         atomicNumber: 117,
         atomicMass: "(294)",
         groupName: "Halogênio",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/2f3fd3e8-68d5-4b02-81f4-c2747f0eed00/public",
         distribution: [
             // 7p⁵
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
@@ -3107,6 +3217,7 @@ const periodicElements = [
         atomicNumber: 118,
         atomicMass: "(294)",
         groupName: "Gás nobre",
+        distributionImageUrl: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d6456c4c-1d51-4766-b2ba-4c7380e97200/public",
         distribution: [
             // 7p⁶
             { camada: 1, subnivel: "1 &#8203; s", eletrons: 2 },
@@ -3298,7 +3409,7 @@ function generatePeriodSections() {
                 
                 // Prepara o bloco da imagem de distribuição eletrônica, caso a propriedade distributionImageUrl esteja definida no elemento.
                 const distributionImageSection = elem.distributionImageUrl
-                  ? `<div class="text-center my-2"><img src="${elem.distributionImageUrl}" alt="Ilustração da distribuição eletrônica de ${elem.name}" class="img-fluid rounded mb-3" aria-hidden="true" style="max-height: 100%; object-fit: contain;"></div>`
+                  ? `<div class="text-center my-2"><img src="${elem.distributionImageUrl}" alt="Ilustração da distribuição eletrônica de ${elem.name}" class="img-fluid rounded mb-3 shadow" aria-hidden="true" style="max-height: 100%; object-fit: contain;"></div>`
                   : '';
 
                 // Montando a estrutura do modal
