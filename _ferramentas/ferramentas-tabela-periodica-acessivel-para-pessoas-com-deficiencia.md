@@ -64,6 +64,27 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
     * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   }
 
+  /* Responsividade para botões de controle em mobile */
+  @media (max-width: 575.98px) {
+    .btn.rounded-pill {
+      font-size: 0.875rem;
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .btn .material-symbols-outlined {
+      font-size: 1.25rem;
+    }
+    
+    #modo-visualizacao-label,
+    #cores-visualizacao-label,
+    #periodos-nav-label,
+    #grupos-nav-label,
+    #categorias-nav-label,
+    #acoes-rapidas-label {
+      font-size: 0.875rem !important;
+    }
+  }
+
   /* ============================= */
   /*            Header             */
   /* ============================= */
@@ -386,18 +407,21 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
                 <span class="material-symbols-outlined me-2" aria-hidden="true" role="presentation">view_week</span>
                 <h3 id="modo-visualizacao-label" class="fw-semibold text-white mb-0 fs-6">Modo de visualização:</h3>
               </div>
-              <div class="d-flex justify-content-center mb-2 gap-2">
-                <button id="btn-view-by-period" class="btn btn-primary rounded-pill text-nowrap active" aria-pressed="true" aria-label="Visualizar por períodos">
+              <div class="d-flex flex-wrap justify-content-center mb-2 gap-2">
+                <button id="btn-view-by-period" class="btn btn-primary rounded-pill text-nowrap active flex-grow-1 flex-sm-grow-0" aria-pressed="true" aria-label="Visualizar por períodos" style="min-width: fit-content;">
                   <span class="material-symbols-outlined me-1" aria-hidden="true">table_rows</span>
-                  Por períodos
+                  <span class="d-none d-sm-inline">Por períodos</span>
+                  <span class="d-inline d-sm-none">Períodos</span>
                 </button>
-                <button id="btn-view-by-group" class="btn btn-outline-light rounded-pill text-nowrap" aria-pressed="false" aria-label="Visualizar por grupos/colunas">
+                <button id="btn-view-by-group" class="btn btn-outline-light rounded-pill text-nowrap flex-grow-1 flex-sm-grow-0" aria-pressed="false" aria-label="Visualizar por grupos/colunas" style="min-width: fit-content;">
                   <span class="material-symbols-outlined me-1" aria-hidden="true">table_chart</span>
-                  Por grupos
+                  <span class="d-none d-sm-inline">Por grupos</span>
+                  <span class="d-inline d-sm-none">Grupos</span>
                 </button>
-                <button id="btn-view-by-category" class="btn btn-outline-light rounded-pill text-nowrap" aria-pressed="false" aria-label="Visualizar por categorias químicas">
+                <button id="btn-view-by-category" class="btn btn-outline-light rounded-pill text-nowrap flex-grow-1 flex-sm-grow-0" aria-pressed="false" aria-label="Visualizar por categorias químicas" style="min-width: fit-content;">
                   <span class="material-symbols-outlined me-1" aria-hidden="true">category</span>
-                  Por categorias
+                  <span class="d-none d-sm-inline">Por categorias</span>
+                  <span class="d-inline d-sm-none">Categorias</span>
                 </button>
               </div>
               <hr class="border-light border-opacity-25 my-3">
