@@ -395,6 +395,10 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
                   <span class="material-symbols-outlined me-1" aria-hidden="true">table_chart</span>
                   Por grupos
                 </button>
+                <button id="btn-view-by-category" class="btn btn-outline-light rounded-pill text-nowrap" aria-pressed="false" aria-label="Visualizar por categorias químicas">
+                  <span class="material-symbols-outlined me-1" aria-hidden="true">category</span>
+                  Por categorias
+                </button>
               </div>
               <hr class="border-light border-opacity-25 my-3">
               <div class="d-flex align-items-center mb-3">
@@ -455,6 +459,27 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
                 <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-18" title="Ir para o Grupo 18" aria-label="Navegar para o grupo 18">Grupo 18</a>
                 <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-lantanideos" title="Ir para os Lantanídeos" aria-label="Navegar para os elementos lantanídeos">Lantanídeos</a>
                 <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#grupo-actinideos" title="Ir para os Actinídeos" aria-label="Navegar para os elementos actinídeos">Actinídeos</a>
+              </nav>
+            </div>
+
+            <!-- Navegação por categorias (links âncora) -->
+            <div id="categoria-nav-container" class="bg-dark bg-opacity-50 p-3 rounded-4 mb-4" style="display: none;">
+              <div class="d-flex align-items-center mb-3">
+                <span class="material-symbols-outlined me-2" aria-hidden="true" role="presentation">category</span>
+                <h3 id="categorias-nav-label" class="fw-semibold text-white mb-0 fs-6">Navegue pelas categorias da tabela:</h3>
+              </div>
+              <nav aria-labelledby="categorias-nav-label" class="d-flex flex-wrap gap-2 justify-content-center">
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#categoria-metais-alcalinos" title="Ir para Metais Alcalinos" aria-label="Navegar para metais alcalinos">Metais Alcalinos</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#categoria-metais-alcalinoterrosos" title="Ir para Metais Alcalinoterrosos" aria-label="Navegar para metais alcalinoterrosos">Alcalinoterrosos</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#categoria-metais-transicao" title="Ir para Metais de Transição" aria-label="Navegar para metais de transição">Metais de Transição</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#categoria-lantanideos" title="Ir para Lantanídeos" aria-label="Navegar para lantanídeos">Lantanídeos</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#categoria-actinideos" title="Ir para Actinídeos" aria-label="Navegar para actinídeos">Actinídeos</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#categoria-outros-metais" title="Ir para Outros Metais" aria-label="Navegar para outros metais">Outros Metais</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#categoria-semimetais" title="Ir para Semimetais" aria-label="Navegar para semimetais">Semimetais</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#categoria-nao-metais" title="Ir para Não Metais" aria-label="Navegar para não metais">Não Metais</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#categoria-halogenios" title="Ir para Halogênios" aria-label="Navegar para halogênios">Halogênios</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#categoria-gases-nobres" title="Ir para Gases Nobres" aria-label="Navegar para gases nobres">Gases Nobres</a>
+                <a class="btn btn-sm btn-outline-light rounded-pill text-nowrap" href="#categoria-hidrogenio" title="Ir para Hidrogênio" aria-label="Navegar para hidrogênio">Hidrogênio</a>
               </nav>
             </div>
           </div>
@@ -1163,16 +1188,19 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
 <!-- Script da Tabela Periódica (injetará os elementos no #tabela-container) -->
 <script src="/assets/js/tabela-periodica.js"></script>
 <script src="/assets/js/tabela-periodica-grupos.js"></script>
+<script src="/assets/js/tabela-periodica-categorias.js"></script>
 <script src="/assets/js/tabela-periodica-colors.js"></script>
 
 <!-- Script de alternância entre visualizações -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Alternar entre visualização por períodos e por grupos
+    // Alternar entre visualização por períodos, grupos e categorias
     const btnViewByPeriod = document.getElementById('btn-view-by-period');
     const btnViewByGroup = document.getElementById('btn-view-by-group');
+    const btnViewByCategory = document.getElementById('btn-view-by-category');
     const periodoNavContainer = document.getElementById('periodo-nav-container');
     const grupoNavContainer = document.getElementById('grupo-nav-container');
+    const categoriaNavContainer = document.getElementById('categoria-nav-container');
     
     // Criamos um elemento para anúncios de acessibilidade
     const visualAnnouncer = document.createElement('div');
@@ -1190,8 +1218,13 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
       btnViewByGroup.classList.add('btn-outline-light');
       btnViewByGroup.setAttribute('aria-pressed', 'false');
       
+      btnViewByCategory.classList.remove('btn-primary');
+      btnViewByCategory.classList.add('btn-outline-light');
+      btnViewByCategory.setAttribute('aria-pressed', 'false');
+      
       periodoNavContainer.style.display = 'block';
       grupoNavContainer.style.display = 'none';
+      categoriaNavContainer.style.display = 'none';
       
       // Anunciar para leitores de tela
       visualAnnouncer.textContent = 'Visualização por períodos ativada';
@@ -1216,8 +1249,13 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
       btnViewByPeriod.classList.add('btn-outline-light');
       btnViewByPeriod.setAttribute('aria-pressed', 'false');
       
+      btnViewByCategory.classList.remove('btn-primary');
+      btnViewByCategory.classList.add('btn-outline-light');
+      btnViewByCategory.setAttribute('aria-pressed', 'false');
+      
       periodoNavContainer.style.display = 'none';
       grupoNavContainer.style.display = 'block';
+      categoriaNavContainer.style.display = 'none';
       
       // Anunciar para leitores de tela
       visualAnnouncer.textContent = 'Visualização por grupos ativada';
@@ -1232,10 +1270,42 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
       generateColumnSections();
     }
     
+    // Função para mostrar visualização por categorias
+    function showCategoryView() {
+      btnViewByPeriod.classList.remove('btn-primary');
+      btnViewByPeriod.classList.add('btn-outline-light');
+      btnViewByPeriod.setAttribute('aria-pressed', 'false');
+      
+      btnViewByGroup.classList.remove('btn-primary');
+      btnViewByGroup.classList.add('btn-outline-light');
+      btnViewByGroup.setAttribute('aria-pressed', 'false');
+      
+      btnViewByCategory.classList.add('btn-primary');
+      btnViewByCategory.classList.remove('btn-outline-light');
+      btnViewByCategory.setAttribute('aria-pressed', 'true');
+      
+      periodoNavContainer.style.display = 'none';
+      grupoNavContainer.style.display = 'none';
+      categoriaNavContainer.style.display = 'block';
+      
+      // Anunciar para leitores de tela
+      visualAnnouncer.textContent = 'Visualização por categorias ativada';
+      
+      // Garantir que o container esteja limpo antes de gerar a visualização
+      const container = document.querySelector("#secao-periodos .container");
+      if (container) {
+        container.innerHTML = '';
+      }
+      
+      // Gerar a visualização por categorias
+      generateCategorySections();
+    }
+    
     // Adicionar event listeners para os botões de alternância de visualização
-    if (btnViewByPeriod && btnViewByGroup) {
+    if (btnViewByPeriod && btnViewByGroup && btnViewByCategory) {
       btnViewByPeriod.addEventListener('click', showPeriodView);
       btnViewByGroup.addEventListener('click', showGroupView);
+      btnViewByCategory.addEventListener('click', showCategoryView);
     }
     
     // Corrige a navegação para Lantanídeos e Actinídeos nos links de grupo
