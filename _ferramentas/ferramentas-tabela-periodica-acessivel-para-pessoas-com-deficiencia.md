@@ -527,20 +527,17 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
           <span class="visually-hidden">Fechar</span>
         </button>
       </div>
-      <div class="modal-body">
+        <div class="modal-body">
         <div class="mt-4 mb-4">
-          <div style="position:relative;width:90%;margin:0 auto;padding-top:50.625%;">
-            <iframe id="panda-037a4eaa-cf8a-4189-b090-31bb5a0c2924" 
-                  src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=037a4eaa-cf8a-4189-b090-31bb5a0c2924" 
-                  style="border:none;position:absolute;top:0;left:0;border-radius:15px;box-shadow:0 15px 25px rgba(0,0,0,0.4); border: 3px solid rgba(13,110,253,0.3);" 
-                  allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
-                  allowfullscreen=true 
-                  width="100%" 
-                  height="100%" 
-                  fetchpriority="high"
-                  title="Reportagem da TV Bahia sobre a Tabela Periódica Acessível"></iframe>
+          <div style="position: relative; padding-top: 56.016597510373444%;">
+          <iframe
+            src="https://customer-n8imyf4ea5hvxexl.cloudflarestream.com/258412568d970cc4740cb9c4825c0d37/iframe?poster=https%3A%2F%2Fcustomer-n8imyf4ea5hvxexl.cloudflarestream.com%2F258412568d970cc4740cb9c4825c0d37%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+            loading="lazy"
+            style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+            allowfullscreen="true"
+          ></iframe>
           </div>
-
           <figcaption id="figcaption-reportagem-tv-bahia" class="figure-caption text-center mt-4">
             <p class="small text-white">
                 Reportagem da TV Bahia, afiliada da Rede Globo, sobre a Tabela Periódica Acessível. O projeto ganhou o primeiro lugar no Prêmio Hipertexto 2015, realizado na Universidade Federal de Pernambuco (UFPE).
@@ -621,6 +618,9 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
               <strong>Funciona em qualquer dispositivo:</strong> A ferramenta se adapta bem a telas pequenas e grandes, funciona em modo retrato ou paisagem, e é rápida até em celulares mais simples.
             </li>
           </ul>
+          <p class="fs-5">
+            Para ler o artigo completo sobre a construção da Tabela Periódica Acessível, acesse o link: <a href="https://pcdnaescola.com.br/tecnologias-assistivas-no-ensino-de-quimica-uma-proposta-de-tabela-periodica-acessivel/" target="_blank" rel="noopener">Tecnologias Assistivas no Ensino de Química: Uma Proposta de Tabela Periódica Acessível</a> e leia desde ahistória inicial até os detalhes técnicos da implementação.
+          </p>
         </div>
         <h3 class="mb-3" id="sobre-as-autoras">Sobre as autoras</h3>
         <div class="row g-4 mb-4" aria-labelledby="sobre-as-autoras">
@@ -1003,30 +1003,79 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
         </p>
 
         <p class="fs-5">
-          Em vez de uma única tabela gigante, a interface é adaptada para exibir os elementos de duas formas principais, acessíveis através de botões.
+          Em vez de uma única tabela grande, a interface é adaptada para exibir os elementos de três formas principais, acessíveis através de botões.
         </p>
 
+        <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fa712b1a-0440-4eb2-911f-c2d6b1ad5c00/public" aria-hidden="true" style="max-width: 100%; height: auto;" />
+
+        <h4 class="fs-5 mt-4 mb-3 pb-2 border-bottom border-light border-opacity-25">
+          <strong>Visualização por Períodos</strong>
+        </h4>
+
         <p class="fs-5">
-          <strong>Visualização por Períodos:</strong> Os elementos são dispostos em seções que correspondem aos períodos (as linhas horizontais da tabela). Isso quebra a tabela grande em partes menores e mais gerenciáveis, ideais para telas de smartphones, onde o conteúdo é apresentado de forma vertical.
+          Os elementos são dispostos em seções que correspondem aos períodos (as linhas horizontais da tabela). Isso quebra a tabela grande em partes menores e mais gerenciáveis, ideais para telas de smartphones, onde o conteúdo é apresentado de forma vertical.
         </p>
 
         <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6f7c129b-9d6e-4a40-d20b-7cbb1d7bdb00/public" style="max-width: 100%; height: auto;" alt="A imagem exibe um recorte da tabela periódica. No primeiro período, vemos dois elementos. O hidrogênio em um quadrado branco e, à sua direita, o hélio, em um quadrado azul. Já no segundo período, logo abaixo, há quatro elementos: o lítio, em um quadrado roxo, seguido pelo berílio, em cinza, o boro em vermelho, e o carbono em verde. Todos os quadrados contêm o nome e o símbolo do elemento, além da indicação do período e da coluna." />
 
+        <h4 class="fs-5 mt-4 mb-3 pb-2 border-bottom border-light border-opacity-25">
+          <strong>Visualização por Grupos</strong>
+        </h4>
+
         <p class="fs-5">
-          <strong>Visualização por Grupos:</strong> Os elementos são organizados por grupos (as colunas verticais). Essa visualização permite que o usuário explore os elementos por suas propriedades químicas semelhantes, o que também é uma forma de navegação mais amigável para telas pequenas.
+          Os elementos são organizados por grupos (as colunas verticais). Essa visualização permite que o usuário explore os elementos por suas propriedades químicas semelhantes, o que também é uma forma de navegação mais amigável para telas pequenas.
         </p>
 
         <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/550b29eb-4641-4cb6-59b9-6d4c77df1000/public" style="max-width: 100%; height: auto;" alt="A imagem exibe um recorte da tabela periódica, mostrando elementos de dois grupos. No Grupo 3, vemos dois elementos: o escândio, no Período 4 e Coluna 3, em um quadrado laranja e, à sua direita, o ítrio, no Período 5 e Coluna 3, também em um quadrado laranja. Já no Grupo 4, logo abaixo, há quatro elementos, todos em quadrados laranja: o titânio, no Período 4 e Coluna 4, seguido pelo zircônio, no Período 5 e Coluna 4, o háfnio, no Período 6 e Coluna 4, e o rutherfórdio, no Período 7 e Coluna 4. Todos os quadrados contêm o nome e o símbolo do elemento, além da indicação do período e da coluna." />
+
+        <h4 class="fs-5 mt-4 mb-3 pb-2 border-bottom border-light border-opacity-25">
+          <strong>Visualização por Categorias</strong>
+        </h4>
+
+        <p class="fs-5">
+          Os elementos são agrupados por suas categorias químicas, organizados em quatro grandes grupos principais:
+        </p>
+
+        <ul>
+          <li class="fs-5 mb-4"> Metais</li>
+          <li class="fs-5 mb-4"> Semimetais</li>
+          <li class="fs-5 mb-4"> Não Metais</li>
+          <li class="fs-5 mb-4"> Outros (Hidrogênio)</li>
+        </ul>
+
+        <p class="fs-5">
+        Essa forma de visualização agrupa os elementos com características químicas semelhantes, facilitando a compreensão de suas propriedades e comportamentos.
+        </p>
+
+        <p class="fs-5">
+          Por exemplo, dentro da categoria "Metais", você encontrará subcategorias como Metais Alcalinos, Metais Alcalinoterrosos, Metais de Transição, Lantanídeos, Actinídeos e Outros Metais.
+        </p>
+
+        <p class="fs-5">
+          Já em "Não Metais", estão agrupados os Não Metais propriamente ditos, os Halogênios e os Gases Nobres. O Hidrogênio, por ser único, tem sua própria categoria em "Outros".
+        </p>
+
+        <p class="fs-5">
+           Essa organização permite que o usuário explore a tabela periódica de uma forma mais didática, compreendendo as relações entre os elementos e suas classificações químicas.
+        </p>
+
+        <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/00bf013e-2494-4376-ba30-04a57a056c00/public" style="max-width: 100%; height: auto;" alt="A imagem exibe uma representação visual dos Semimetais, com sete elementos destacados em quadrados vermelhos. Estão incluídos: Boro,  Período 2, Grupo 13; Silício, Período 3, Grupo 14; Germânio, Período 4, Grupo 14; Arsênio, Período 4, Grupo 15; Antimônio, Período 5, Grupo 15; Telúrio, Período 5, Grupo 16; e Polônio, Período 6, Grupo 16." />
+
+        <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/74c6cb47-115f-4972-7e14-266316dd8600/public" style="max-width: 100%; height: auto;" alt="A imagem exibe uma representação visual dos Não Metais, com seis elementos destacados em quadrados verdes-musgo. Estão incluídos: Carbono, Período 2, Grupo 14; Nitrogênio, Período 2, Grupo 15; Oxigênio, Período 2, Grupo 16; Fósforo, Período 3, Grupo 15; Enxofre, Período 3, Grupo 16; e Selênio, Período 4, Grupo 16." />
 
         <p class="fs-5">
           Essa abordagem de usar botões e seções menores é fundamental para garantir a responsividade da aplicação. Em vez de forçar a adaptação de uma tabela grande a uma tela pequena, o design já foi pensado para o mobile.
         </p>
 
+        <h4 class="fs-5 mt-4 mb-3 pb-2 border-bottom border-light border-opacity-25">
+          <strong>Painel de Controle</strong>
+        </h4>
+
         <p class="fs-5">
-          Além disso, existe um painel de controle fixo na parte superior da janela onde é possível alternar entre a visualização por períodos e por grupos, além de ser possível ativar ou desativar as cores na tabela.
+          Existe um painel de controle fixo na parte superior da janela onde é possível alternar entre a visualização por períodos, por grupos e por categorias, além de ser possível ativar ou desativar as cores na tabela.
         </p>
 
-        <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/1a648071-8d2c-4a66-9707-95d51f672200/public" style="max-width: 100%; height: auto;" aria-hidden="true" />
+        <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/afcad38c-2abe-484b-6d3e-942882041c00/public" style="max-width: 100%; height: auto;" aria-hidden="true" />
 
         <p class="fs-5">
           Quando a visualização por períodos está ativada o painel de controle exibe uma seção chamada <strong>Navegue pelos períodos da tabela</strong>, com botões para cada um dos 7 períodos, além dos botões para os lantanídeos e actinídeos. Pressionando um desses botões, a pessoa é levada diretamente para a seção correspondente na página.
@@ -1039,6 +1088,16 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
         </p>
 
         <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/dee30e7b-9132-4219-ab2d-07521b680600/public" style="max-width: 100%; height: auto;" aria-hidden="true" />
+
+        <p class="fs-5">
+          E quando a visualização por categorias está ativada, o painel de controle exibe uma seção chamada <strong>Navegue pelas categorias da tabela</strong>, com botões organizados hierarquicamente pelas quatro grandes categorias: Metais (com subcategorias como Alcalinos, Alcalinoterrosos, Transição, etc.), Semimetais, Não Metais (incluindo Halogênios e Gases Nobres) e Outros (Hidrogênio). Pressionando um desses botões, a pessoa é levada diretamente para a categoria ou subcategoria correspondente na página, facilitando a navegação por tipo de elemento químico.
+        </p>
+
+        <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/a6cf2451-92d0-4f8e-b17b-1d10bfae7000/public" style="max-width: 100%; height: auto;" aria-hidden="true" />
+
+        <h4 class="fs-5 mt-4 mb-3 pb-2 border-bottom border-light border-opacity-25">
+          <strong>Cartões de Elementos Químicos</strong>
+        </h4>
 
         <p class="fs-5">
           Cada elemento químico é apresentado em um cartão individual, que exibe informações essenciais como o símbolo, o nome e a posição que ocupa na tabela (no caso o período e a coluna).
@@ -1054,8 +1113,91 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
         <p class="fs-5">
           Esses cartões são interativos: ao clicar com o mouse, tocar na tela touch ou pressionar <kbd>Enter</kbd> sobre eles, uma janela modal se abre, fornecendo informações detalhadas sobre o elemento, como Símbolo, Nome, Número Atômico, Número de Massa (massa atômica) e Configuração eletrônica.
         </p>
+
+        <h4 class="fs-5 mt-4 mb-3 pb-2 border-bottom border-light border-opacity-25">
+          <strong>Modal de Detalhes do Elemento</strong>
+        </h4>
         
+        <p class="fs-5">
+          Quando você acessa um cartão de elemento, seja clicando, tocando ou pressionando <kbd>Enter</kbd>, uma janela modal é aberta com informações detalhadas.
+        </p>
+
+        <p class="fs-5">
+          <strong>Gerenciamento de foco:</strong> Ao abrir a modal, o foco é automaticamente direcionado para o primeiro elemento interativo (geralmente o botão de fechar no canto superior direito). Isso garante que pessoas que navegam por teclado ou usam leitores de tela saibam imediatamente onde estão e possam fechar a janela facilmente se desejarem.
+        </p>
+        
+        <p class="fs-5">
+          Quando você fecha a modal, o foco retorna automaticamente para o cartão do elemento que você havia clicado. Isso evita que a pessoa se perca na página e precise procurar novamente onde estava antes de abrir a janela.
+        </p>
+        
+        <p class="fs-5">
+          <strong>Estrutura semântica:</strong> A modal usa elementos HTML semânticos apropriados, com atributos ARIA <code class="text-white-50">role="dialog"</code> e <code class="text-white-50">aria-modal="true"</code>. Isso informa aos leitores de tela que uma janela de diálogo foi aberta, alterando o modo de navegação.
+        </p>
+        
+        <p class="fs-5">
+          <strong>Rotulagem acessível:</strong> Cada modal possui um título claro (o nome do elemento) que é anunciado quando a janela abre. As informações são organizadas hierarquicamente com títulos (<code class="text-white-50">&lt;h2&gt;</code>, <code class="text-white-50">&lt;h3&gt;</code>) que permitem navegação rápida por marcos de referência.
+        </p>
+        
+        <h5 class="fs-5 mt-4 mb-3">Informações apresentadas na modal</h5>
+        
+        <p class="fs-5">
+          A janela modal de cada elemento apresenta as seguintes informações:
+        </p>
+        
+        <ul>
+          <li class="fs-5 mb-4">
+            <strong>Nome do elemento:</strong> Apresentado como título principal da modal, é a primeira informação anunciada pelos leitores de tela.
+          </li>
+          <li class="fs-5 mb-4">
+            <strong>Ilustração do elemento:</strong> Uma imagem que mostra como o elemento aparece ou é utilizado no dia a dia. Por exemplo, para o carbono, pode aparecer uma ilustração de grafite ou diamante; para o oxigênio, uma representação de bolhas de ar.
+          </li>
+          <li class="fs-5 mb-4">
+            <strong>Grupo:</strong> Informa a qual família de elementos pertence (por exemplo: "Metais Alcalinos", "Halogênios", "Gases Nobres"). Esta informação é fundamental para entender as propriedades químicas do elemento.
+          </li>
+          <li class="fs-5 mb-4">
+            <strong>Símbolo:</strong> A abreviatura química do elemento (por exemplo: H para Hidrogênio, O para Oxigênio, Au para Ouro). É apresentado de forma clara e acessível.
+          </li>
+          <li class="fs-5 mb-4">
+            <strong>Número atômico:</strong> Indica quantos prótons existem no núcleo do átomo. Este número define a identidade do elemento e sua posição na tabela periódica.
+          </li>
+          <li class="fs-5 mb-4">
+            <strong>Número de massa (massa atômica):</strong> Representa a soma de prótons e nêutrons no núcleo, indicando a massa aproximada do átomo.
+          </li>
+          <li class="fs-5 mb-4">
+            <strong>Distribuição eletrônica:</strong> Esta é apresentada de duas formas complementares para garantir acessibilidade total:
+            <ul class="mt-3">
+              <li class="fs-5 mb-3">
+                <strong>Visual:</strong> Um diagrama ilustrativo mostrando o núcleo do átomo no centro e as camadas eletrônicas ao redor, com os elétrons distribuídos em suas respectivas posições. Esta representação visual ajuda quem enxerga a ter uma compreensão espacial de como os elétrons estão organizados.
+                <br/>
+                <div class="text-center my-3">
+                  <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c7c023b7-c298-4a7a-772f-9005930f1100/public" style="max-width: 100%; height: auto;" aria-hidden="true" />
+                </div>
+              </li>
+              <li class="fs-5">
+                <strong>Linear (textual):</strong> A notação científica padrão da distribuição eletrônica, apresentada em formato de texto sequencial. Por exemplo:
+                <br/>
+              <div class="bg-dark bg-opacity-50 p-3 rounded my-3 text-center">
+                <div class="d-flex">
+                  <span><strong>Camada 1:</strong>&ThinSpace;</span>
+                  <p aria-roledescription="subnível eletrônico">&ThinSpace; 1s</p>
+                  <p style="position: relative; top: -0.5em;" aria-roledescription="elétrons.">
+                    1
+                  </p>
+                </div>
+              </div>
+              A leitura dessa notação é direta, sequencial e construída usando atributos ARIA para garantir que leitores de tela anunciem corretamente cada parte da configuração eletrônica.
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6dc29fb6-d403-40e4-1dea-0017e6efd300/public" style="max-width: 100%; height: auto;" alt="A imagem mostra uma janela pop-up de informações para o elemento Boro símbolo B. A janela exibe o símbolo B, o número atômico 5 e uma ilustração de equipamentos esportivos, raquetes e bola que representam o uso do Boro no dia a dia. As informações listadas são Grupo que é Semimetal; Símbolo: B; Número atômico: 5; Número de massa: 10,81. Abaixo, há um diagrama de distribuição eletrônica com duas camadas K e L, mostrando o núcleo e os elétrons, e o detalhamento das subcamadas: Camada 1 subnível s 2 elétrons., camada 2 subnível s 2 elétrons e ainda na camada 2 subnível p 1 elétron." />
+
+        <p class="fs-5">
+          Essa combinação de recursos garante que um maior número de pessoas, independentemente de como acessa a informação (visual, auditiva, tátil), consiga compreender completamente as propriedades de cada elemento químico, respeitando as diferenças individuais e promovendo a inclusão no aprendizado de Química.
+        </p>
       </div>
+
       <div class="modal-footer border-light border-opacity-25">
         <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fechar</button>
       </div>

@@ -8,6 +8,251 @@ categories: [Educação]
 tags: [Educação, Química]
 permalink: /tecnologias-assistivas-no-ensino-de-quimica-uma-proposta-de-tabela-periodica-acessivel/
 lang: pt-BR
+sumario: |
+    <ul class="list-group bg-dark">
+        <!-- 1. Apresentação -->
+        <li class="list-group-item bg-dark text-white border-0">
+            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+               href="#apresentacao">
+                <span class="badge bg-secondary">1</span>
+                Apresentação
+            </a>
+        </li>
+        <!-- 2. Conceitos gerais -->
+        <li class="list-group-item bg-dark text-white border-0">
+            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+               href="#conceitos-gerais">
+                <span class="badge bg-secondary">2</span>
+                Conceitos gerais
+            </a>
+        </li>
+        <!-- 3. Educação e deficiência visual: principais questões -->
+        <li class="list-group-item bg-dark text-white border-0">
+            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+               href="#educacao-e-deficiencia-visual-principais-questoes">
+                <span class="badge bg-secondary">3</span>
+                Educação e deficiência visual: principais questões
+            </a>
+            <ul class="list-group list-group-flush ms-3">
+                <!-- 3.1 Principais características da baixa visão -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#principais-caracteristicas-da-baixa-visao">
+                        <span class="badge bg-secondary">3.1</span>
+                        Principais características da baixa visão
+                    </a>
+                </li>
+                <!-- 3.2 Cegueira -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#cegueira">
+                        <span class="badge bg-secondary">3.2</span>
+                        Cegueira
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- 4. A Química -->
+        <li class="list-group-item bg-dark text-white border-0">
+            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+               href="#a-quimica">
+                <span class="badge bg-secondary">4</span>
+                A Química
+            </a>
+        </li>
+        <!-- 5. Tabela periódica -->
+        <li class="list-group-item bg-dark text-white border-0">
+            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+               href="#tabela-periodica">
+                <span class="badge bg-secondary">5</span>
+                Tabela periódica
+            </a>
+            <ul class="list-group list-group-flush ms-3">
+                <!-- 5.1 Propriedades da tabela periódica -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#propriedades-da-tabela-periodica">
+                        <span class="badge bg-secondary">5.1</span>
+                        Propriedades da tabela periódica
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- 6. Tecnologias assistivas no ensino de Química -->
+        <li class="list-group-item bg-dark text-white border-0">
+            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+               href="#tecnologias-assistivas-no-ensino-de-quimica">
+                <span class="badge bg-secondary">6</span>
+                Tecnologias assistivas no ensino de Química
+            </a>
+        </li>
+        <!-- 7. Internet e desenvolvimento Web como tecnologias assistivas -->
+        <li class="list-group-item bg-dark text-white border-0">
+            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+               href="#internet-e-desenvolvimento-web-como-tecnologias-assistivas">
+                <span class="badge bg-secondary">7</span>
+                Internet e desenvolvimento Web como tecnologias assistivas
+            </a>
+            <ul class="list-group list-group-flush ms-3">
+                <!-- 7.1 HTML Semântico -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#html-semantico">
+                        <span class="badge bg-secondary">7.1</span>
+                        HTML Semântico
+                    </a>
+                </li>
+                <!-- 7.2 Texto Alternativo em Imagens (Alt Text) -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#texto-alternativo-em-imagens-alt-text">
+                        <span class="badge bg-secondary">7.2</span>
+                        Texto Alternativo em Imagens (Alt Text)
+                    </a>
+                </li>
+                <!-- 7.3 Compatibilidade com Leitores de Telas -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#compatibilidade-com-leitores-de-telas">
+                        <span class="badge bg-secondary">7.3</span>
+                        Compatibilidade com Leitores de Telas
+                    </a>
+                </li>
+                <!-- 7.4 Design de Alto Contraste e Tamanho de Fonte Ajustável -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#design-de-alto-contraste-e-tamanho-de-fonte-ajustavel">
+                        <span class="badge bg-secondary">7.4</span>
+                        Design de Alto Contraste e Tamanho de Fonte Ajustável
+                    </a>
+                </li>
+                <!-- 7.5 WAI-ARIA (Accessible Rich Internet Applications) -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#wai-aria-accessible-rich-internet-applications">
+                        <span class="badge bg-secondary">7.5</span>
+                        WAI-ARIA (Accessible Rich Internet Applications)
+                    </a>
+                </li>
+                <!-- 7.6 Acessibilidade no Código -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#acessibilidade-no-codigo">
+                        <span class="badge bg-secondary">7.6</span>
+                        Acessibilidade no Código
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- 8. Desenvolvimento de uma Tabela Periódica Acessível -->
+        <li class="list-group-item bg-dark text-white border-0">
+            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+               href="#desenvolvimento-de-uma-tabela-periodica-acessivel">
+                <span class="badge bg-secondary">8</span>
+                Desenvolvimento de uma Tabela Periódica Acessível
+            </a>
+            <ul class="list-group list-group-flush ms-3">
+                <!-- 8.1 Metodologia -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#metodologia">
+                        <span class="badge bg-secondary">8.1</span>
+                        Metodologia
+                    </a>
+                </li>
+                <!-- 8.2 Arquitetura Técnica em Três Camadas -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#arquitetura-tecnica-em-tres-camadas">
+                        <span class="badge bg-secondary">8.2</span>
+                        Arquitetura Técnica em Três Camadas
+                    </a>
+                </li>
+                <!-- 8.3 Princípios de Acessibilidade Implementados -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#principios-de-acessibilidade-implementados">
+                        <span class="badge bg-secondary">8.3</span>
+                        Princípios de Acessibilidade Implementados
+                    </a>
+                </li>
+                <!-- 8.4 Validação e Testes -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#validacao-e-testes">
+                        <span class="badge bg-secondary">8.4</span>
+                        Validação e Testes
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- 9. Resultados e Impacto -->
+        <li class="list-group-item bg-dark text-white border-0">
+            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+               href="#resultados-e-impacto">
+                <span class="badge bg-secondary">9</span>
+                Resultados e Impacto
+            </a>
+            <ul class="list-group list-group-flush ms-3">
+                <!-- 9.1 Visualização por Períodos -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#visualizacao-por-periodos">
+                        <span class="badge bg-secondary">9.1</span>
+                        Visualização por Períodos
+                    </a>
+                </li>
+                <!-- 9.2 Visualização por Grupos -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#visualizacao-por-grupos">
+                        <span class="badge bg-secondary">9.2</span>
+                        Visualização por Grupos
+                    </a>
+                </li>
+                <!-- 9.3 Visualização por Categorias -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#visualizacao-por-categorias">
+                        <span class="badge bg-secondary">9.3</span>
+                        Visualização por Categorias
+                    </a>
+                </li>
+                <!-- 9.4 Painel de Controle -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#painel-de-controle">
+                        <span class="badge bg-secondary">9.4</span>
+                        Painel de Controle
+                    </a>
+                </li>
+                <!-- 9.5 Cartões de Elementos Químicos -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#cartoes-de-elementos-quimicos">
+                        <span class="badge bg-secondary">9.5</span>
+                        Cartões de Elementos Químicos
+                    </a>
+                </li>
+                <!-- 9.6 Modal de Detalhes do Elemento -->
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                       href="#modal-de-detalhes-do-elemento">
+                        <span class="badge bg-secondary">9.6</span>
+                        Modal de Detalhes do Elemento
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- 10. Considerações Finais -->
+        <li class="list-group-item bg-dark text-white border-0">
+            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+               href="#consideracoes-finais">
+                <span class="badge bg-secondary">10</span>
+                Considerações Finais
+            </a>
+        </li>
+    </ul>
 ---
 
 Este artigo apresenta uma solução para tornar a tabela periódica acessível a pessoas com deficiência. O objetivo é demonstrar como recursos tecnológicos podem promover inclusão e autonomia no aprendizado de Química.
@@ -52,7 +297,7 @@ O capacitismo está enraizado na sociedade, de forma estrutural e constante, já
 
 <blockquote class="bg-dark text-light rounded shadow-lg p-4 my-5 border-start border-4 border-primary">
   <p class="lead fst-italic lh-lg">"[...] desde o momento em que uma criança nasce ela emerge em um mundo onde recebe mensagens de que ser uma pessoa com deficiência é ser inferior."</p>
-  <footer class
+  <footer class="text-light">GESSER; BLOCK; HENRIQUE NUERNBERG, 2019</footer>
 </blockquote>
 
 As pessoas com deficiência visual fazem parte desse contexto, principalmente porque:
@@ -673,7 +918,162 @@ Profissionais especializados em acessibilidade digital, desenvolvedores de softw
 ## Resultados e Impacto {#resultados-e-impacto}
 ---
 
-A metodologia aplicada resultou em uma ferramenta que demonstra a viabilidade técnica e pedagógica de tornar conteúdos científicos complexos completamente acessíveis. Os resultados evidenciaram que:
+A metodologia aplicada resultou em uma ferramenta que demonstra a viabilidade técnica e pedagógica de tornar conteúdos científicos complexos mais acessíveis.
+
+<div class="text-center">
+    <figcaption>Figura 4: Botões de controle para alternar entre os modos de visualização da tabela periódica (visualização por períodos, grupos e categorias).</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fa712b1a-0440-4eb2-911f-c2d6b1ad5c00/public" aria-hidden="true" class="img-fluid" />
+    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
+</div>
+
+### Visualização por Períodos {#visualizacao-por-periodos}
+---
+
+Os elementos são dispostos em seções que correspondem aos períodos (as linhas horizontais da tabela). Isso quebra a tabela grande em partes menores e mais gerenciáveis, ideais para telas de smartphones, onde o conteúdo é apresentado de forma vertical.
+
+<div class="text-center">
+    <figcaption>Figura 5: Demonstração da visualização por períodos, onde os elementos são agrupados em seções correspondentes a cada linha da tabela.</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6f7c129b-9d6e-4a40-d20b-7cbb1d7bdb00/public" aria-hidden="true" class="img-fluid" />
+    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
+</div>
+
+### Visualização por Grupos {#visualizacao-por-grupos}
+---
+
+Os elementos são organizados por grupos (as colunas verticais). Essa visualização permite que o usuário explore os elementos por suas propriedades químicas semelhantes, o que também é uma forma de navegação mais amigável para telas pequenas.
+
+<div class="text-center">
+    <figcaption>Figura 6: Demonstração da visualização por grupos, com elementos organizados em colunas.</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/550b29eb-4641-4cb6-59b9-6d4c77df1000/public" aria-hidden="true" class="img-fluid" />
+    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
+</div>
+
+### Visualização por Categorias {#visualizacao-por-categorias}
+---
+
+Os elementos são agrupados por suas categorias químicas, organizados em quatro grandes grupos principais:
+
+- Metais
+- Semimetais
+- Não Metais
+- Outros (Hidrogênio)
+
+Essa forma de visualização agrupa os elementos com características químicas semelhantes, facilitando a compreensão de suas propriedades e comportamentos.
+
+Por exemplo, dentro da categoria "Metais", você encontrará subcategorias como Metais Alcalinos, Metais Alcalinoterrosos, Metais de Transição, Lantanídeos, Actinídeos e Outros Metais.
+
+Já em "Não Metais", estão agrupados os Não Metais propriamente ditos, os Halogênios e os Gases Nobres. O Hidrogênio, por ser único, tem sua própria categoria em "Outros".
+
+Essa organização permite que o usuário explore a tabela periódica de uma forma mais didática, compreendendo as relações entre os elementos e suas classificações químicas.
+
+<div class="text-center">
+    <figcaption>Figura 7: Exemplo da categoria "Semimetais" na visualização por categorias.</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/00bf013e-2494-4376-ba30-04a57a056c00/public" aria-hidden="true" class="img-fluid" />
+    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
+</div>
+
+<div class="text-center">
+    <figcaption>Figura 8: Exemplo da categoria "Não Metais" na visualização por categorias.</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/74c6cb47-115f-4972-7e14-266316dd8600/public" aria-hidden="true" class="img-fluid" />
+    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
+</div>
+
+Essa abordagem de usar botões e seções menores é fundamental para garantir a responsividade da aplicação. Em vez de forçar a adaptação de uma tabela grande a uma tela pequena, o design já foi pensado para o mobile.
+
+### Painel de Controle {#painel-de-controle}
+---
+
+Existe um painel de controle fixo na parte superior da janela onde é possível alternar entre a visualização por períodos, por grupos e por categorias, além de ser possível ativar ou desativar as cores na tabela.
+
+<div class="text-center">
+    <figcaption>Figura 9: Painel de controle da tabela periódica, com opções para alternar visualizações e ativar/desativar cores.</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/afcad38c-2abe-484b-6d3e-942882041c00/public" aria-hidden="true" class="img-fluid" />
+    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
+</div>
+
+Quando a visualização por períodos está ativada o painel de controle exibe uma seção chamada Navegue pelos períodos da tabela, com botões para cada um dos 7 períodos, além dos botões para os lantanídeos e actinídeos. Pressionando um desses botões, a pessoa é levada diretamente para a seção correspondente na página.
+
+<div class="text-center">
+    <figcaption>Figura 10: Painel de navegação por períodos, com botões para cada período, lantanídeos e actinídeos.</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/08252ef4-b9e3-4c16-73c0-491563db6c00/public" aria-hidden="true" class="img-fluid" />
+    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
+</div>
+
+Já quando a visualização por grupos está ativada, o painel de controle exibe uma seção chamada Navegue pelos grupos da tabela, com botões para cada um dos 18 grupos, além dos botões para os lantanídeos e actinídeos. Pressionando um desses botões, a pessoa é levada diretamente para a seção correspondente na página.
+
+<div class="text-center">
+    <figcaption>Figura 11: Painel de navegação por grupos, com botões para os 18 grupos, lantanídeos e actinídeos.</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/dee30e7b-9132-4219-ab2d-07521b680600/public" aria-hidden="true" class="img-fluid" />
+    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
+</div>
+
+E quando a visualização por categorias está ativada, o painel de controle exibe uma seção chamada Navegue pelas categorias da tabela, com botões organizados hierarquicamente pelas quatro grandes categorias: Metais (com subcategorias como Alcalinos, Alcalinoterrosos, Transição, etc.), Semimetais, Não Metais (incluindo Halogênios e Gases Nobres) e Outros (Hidrogênio). Pressionando um desses botões, a pessoa é levada diretamente para a categoria ou subcategoria correspondente na página, facilitando a navegação por tipo de elemento químico.
+
+<div class="text-center">
+    <figcaption>Figura 12: Painel de navegação por categorias, com botões hierárquicos para cada tipo de elemento.</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/a6cf2451-92d0-4f8e-b17b-1d10bfae7000/public" aria-hidden="true" class="img-fluid" />
+    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
+</div>
+
+### Cartões de Elementos Químicos {#cartoes-de-elementos-quimicos}
+---
+
+Cada elemento químico é apresentado em um cartão individual, que exibe informações essenciais como o símbolo, o nome e a posição que ocupa na tabela (no caso o período e a coluna).
+
+<div class="text-center">
+    <figcaption>Figura 13: Cartão interativo de um elemento químico, exibindo informações essenciais.</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/22f300fb-5e4d-45ea-3131-3f47f6848d00/public" aria-hidden="true" class="img-fluid" />
+    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
+</div>
+
+Esses cartões são interativos: ao clicar com o mouse, tocar na tela touch ou pressionar Enter sobre eles, uma janela modal se abre, fornecendo informações detalhadas sobre o elemento, como Símbolo, Nome, Número Atômico, Número de Massa (massa atômica) e Configuração eletrônica.
+
+### Modal de Detalhes do Elemento {#modal-de-detalhes-do-elemento}
+---
+
+Quando você acessa um cartão de elemento, seja clicando, tocando ou pressionando Enter, uma janela modal é aberta com informações detalhadas.
+
+**Gerenciamento de foco:** Ao abrir a modal, o foco é automaticamente direcionado para o primeiro elemento interativo (geralmente o botão de fechar no canto superior direito). Isso garante que pessoas que navegam por teclado ou usam leitores de tela saibam imediatamente onde estão e possam fechar a janela facilmente se desejarem.
+
+Quando você fecha a modal, o foco retorna automaticamente para o cartão do elemento que você havia clicado. Isso evita que a pessoa se perca na página e precise procurar novamente onde estava antes de abrir a janela.
+
+**Estrutura semântica:** A modal usa elementos HTML semânticos apropriados, com atributos ARIA <em>role="dialog"</em> e <em>aria-modal="true"</em>. Isso informa aos leitores de tela que uma janela de diálogo foi aberta, alterando o modo de navegação.
+
+**Rotulagem acessível:** Cada modal possui um título claro (o nome do elemento) que é anunciado quando a janela abre. As informações são organizadas hierarquicamente com títulos (<em>&lt;h2&gt;</em>, <em>&lt;h3&gt;</em>) que permitem navegação rápida por marcos de referência.
+
+#### Informações apresentadas na modal {#informacoes-apresentadas-na-modal}
+---
+
+A janela modal de cada elemento apresenta as seguintes informações:
+
+- **Nome do elemento**: Apresentado como título principal da modal, é a primeira informação anunciada pelos leitores de tela.
+- **Ilustração do elemento**: Uma imagem que mostra como o elemento aparece ou é utilizado no dia a dia. Por exemplo, para o carbono, pode aparecer uma ilustração de grafite ou diamante; para o oxigênio, uma representação de bolhas de ar.
+- **Grupo**: Informa a qual família de elementos pertence (por exemplo: "Metais Alcalinos", "Halogênios", "Gases Nobres"). Esta informação é fundamental para entender as propriedades químicas do elemento.
+- **Símbolo**: A abreviatura química do elemento (por exemplo: H para Hidrogênio, O para Oxigênio, Au para Ouro). É apresentado de forma clara e acessível.
+- **Número atômico**: Indica quantos prótons existem no núcleo do átomo. Este número define a identidade do elemento e sua posição na tabela periódica.
+- **Número de massa (massa atômica)**: Representa a soma de prótons e nêutrons no núcleo, indicando a massa aproximada do átomo.
+- **Distribuição eletrônica**: Esta é apresentada de duas formas complementares para garantir acessibilidade total:
+
+    **Visual**: Um diagrama ilustrativo mostrando o núcleo do átomo no centro e as camadas eletrônicas ao redor, com os elétrons distribuídos em suas respectivas posições. Esta representação visual ajuda quem enxerga a ter uma compreensão espacial de como os elétrons estão organizados.
+
+    <div class="text-center">
+        <figcaption>Figura 14: Representação visual da distribuição eletrônica do Hidrogênio.</figcaption>
+        <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c7c023b7-c298-4a7a-772f-9005930f1100/public" aria-hidden="true" class="img-fluid" />
+        <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
+    </div>
+
+    **Linear (textual)**: A notação científica padrão da distribuição eletrônica, apresentada em formato de texto sequencial. Por exemplo:
+Camada 1: 1s¹
+
+A leitura dessa notação é direta, sequencial e construída usando atributos ARIA para garantir que leitores de tela anunciem corretamente cada parte da configuração eletrônica.
+
+<div class="text-center">
+    <figcaption>Figura 15: Modal de detalhes do elemento, exibindo informações completas e acessíveis.</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6dc29fb6-d403-40e4-1dea-0017e6efd300/public" aria-hidden="true" class="img-fluid" />
+    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
+</div>
+
+Diante de tudo que foi apresentado, os principais resultados alcançados com a Tabela Periódica Acessível podem ser resumidos em quatro pontos essenciais:
 
 -   **Preservação de Fidelidade Semântica**: Todas as informações químicas são transmitidas com precisão absoluta, independentemente da modalidade sensorial utilizada para acessá-las.
 
