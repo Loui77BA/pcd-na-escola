@@ -356,21 +356,21 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
           <div class="col-md-4 mb-4">
             <section class="feature-card h-100" role="region" aria-labelledby="feat-a11y-title" aria-describedby="feat-a11y-desc">
               <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">accessibility_new</span>
-              <h2 id="feat-a11y-title" class="mb-1" role="text">Acessibilidade</h2>
+              <h2 id="feat-a11y-title" class="mb-1 h5" role="text">Acessibilidade</h2>
               <p id="feat-a11y-desc" class="small mb-0">Compatível com tecnologias assistivas e leitores de tela</p>
             </section>
           </div>
           <div class="col-md-4 mb-4">
             <section class="feature-card h-100" role="region" aria-labelledby="feat-inter-title" aria-describedby="feat-inter-desc">
               <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">science</span>
-              <h2 id="feat-inter-title" class="mb-1" role="text">Interatividade</h2>
+              <h2 id="feat-inter-title" class="mb-1 h5" role="text">Interatividade</h2>
               <p id="feat-inter-desc" class="small mb-0">Explore os elementos químicos de maneira dinâmica e educativa</p>
             </section>
           </div>
           <div class="col-md-4 mb-4">
             <section class="feature-card h-100" role="region" aria-labelledby="feat-edu-title" aria-describedby="feat-edu-desc">
               <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">school</span>
-              <h2 id="feat-edu-title" class="mb-1" role="text">Educacional</h2>
+              <h2 id="feat-edu-title" class="mb-1 h5" role="text">Educacional</h2>
               <p id="feat-edu-desc" class="small mb-0">Informações científicas precisas para aprendizado eficiente</p>
             </section>
           </div>
