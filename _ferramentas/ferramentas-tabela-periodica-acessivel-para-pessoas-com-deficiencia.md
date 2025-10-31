@@ -1354,52 +1354,34 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
       }
     });
     
-    // Handler global para interceptar cliques em links internos de qualquer modal
-    document.addEventListener('click', function(e) {
-      // Verifica se o clique foi em um link dentro de uma modal
-      const modal = e.target.closest('.modal');
-      if (!modal) return;
-      
-      const link = e.target.closest('a[href^="#"]');
-      if (!link) return;
-      
-      const href = link.getAttribute('href');
-      
-      // Só intercepta links internos específicos que causam problema de acessibilidade
-      // (links que apontam para seções dentro da própria modal)
-      if (href.startsWith('#secao-')) {
-        const targetId = href.substring(1);
-        const targetElement = document.getElementById(targetId);
+    // Handler local: navegação dentro da modal "Como funciona" mantendo a modal aberta
+    const comoFuncionaModal = document.getElementById('modal-como-funciona');
+    if (comoFuncionaModal) {
+      comoFuncionaModal.addEventListener('click', function(e) {
+        const link = e.target.closest('a[href^="#secao-"]');
+        if (!link) return;
         
-        // Verifica se o elemento de destino existe dentro da modal atual
-        if (targetElement && modal.contains(targetElement)) {
-          e.preventDefault();
-          
-          // Navega dentro da modal sem fechar
-          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          // Define foco no elemento de destino para acessibilidade
-          targetElement.setAttribute('tabindex', '-1');
-          targetElement.focus();
-        }
-      }
-    });
+        const href = link.getAttribute('href');
+        if (!href || !href.startsWith('#secao-')) return;
+        
+        const targetId = href.slice(1);
+        const targetElement = comoFuncionaModal.querySelector('#' + targetId) || document.getElementById(targetId);
+        if (!targetElement) return;
+        
+        e.preventDefault();
+        // Rolagem suave dentro do corpo da modal
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Tornar focável temporariamente (apenas se necessário) e focar
+        const hadTabindex = targetElement.hasAttribute('tabindex');
+        if (!hadTabindex) targetElement.setAttribute('tabindex', '-1');
+        setTimeout(() => {
+          targetElement.focus({ preventScroll: true });
+          if (!hadTabindex) targetElement.removeAttribute('tabindex');
+        }, 150);
+      });
+    }
     
-    // Melhoria de acessibilidade: gerenciar atributo inert para manter foco na modal
-    document.addEventListener('shown.bs.modal', function(e) {
-      // Adiciona inert ao conteúdo da página quando modal abre
-      const pageContent = document.querySelector('header[role="banner"], main, footer');
-      if (pageContent) {
-        pageContent.setAttribute('inert', '');
-      }
-    });
-    
-    document.addEventListener('hidden.bs.modal', function(e) {
-      // Remove inert do conteúdo da página quando modal fecha
-      const pageContent = document.querySelector('header[role="banner"], main, footer');
-      if (pageContent) {
-        pageContent.removeAttribute('inert');
-      }
-    });
+    // Removido: gerenciamento de atributo inert (causava bloqueio de interação)
   });
 </script>
 
