@@ -1107,28 +1107,25 @@ Os resultados alcançados evidenciam que, com planejamento adequado, é possíve
 
 <ul class="references-list text-light text-break ps-lg-4">
     <li class="mb-3">
-        BERSCH, R. Classificações de Tecnologia Assistiva. Porto Alegre: Acessibilidade Brasil/Assistiva, 2013. Disponível em: <a class="text-break" href="https://www.assistiva.com.br/">https://www.assistiva.com.br/</a>. Acesso em: 31 out. 2025.
+    BERSCH, R. Classificações de Tecnologia Assistiva. Porto Alegre: Acessibilidade Brasil/Assistiva, 2013.
     </li>
     <li class="mb-3">
         BERSCH, R. Tecnologia Assistiva e Educação Inclusiva. In: <em>Ensaios Pedagógicos</em>. Brasília: Ministério da Educação, Secretaria de Educação Especial, 2006. p. 146.
     </li>
     <li class="mb-3">
-        BRASIL. Lei nº 9.394, de 20 de dezembro de 1996. Estabelece as diretrizes e bases da educação nacional. <em>Diário Oficial da União</em>, Brasília, DF, v. 134, n. 248, 23 dez. 1996. Seção 1, p. 27834–27841. Disponível em: <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/leis/l9394.htm">https://www.planalto.gov.br/ccivil_03/leis/l9394.htm</a>. Acesso em: 31 out. 2025.
+    BRASIL. Lei nº 9.394, de 20 de dezembro de 1996. Estabelece as diretrizes e bases da educação nacional. <em>Diário Oficial da União</em>, Brasília, DF, v. 134, n. 248, 23 dez. 1996. Seção 1, p. 27834–27841.
     </li>
         <li class="mb-3">
-            BRASIL. Lei nº 13.146, de 6 de julho de 2015. Institui a Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da Pessoa com Deficiência). Disponível em: <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm">https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm</a>. Acesso em: 31 out. 2025.
+            BRASIL. Lei nº 13.146, de 6 de julho de 2015. Institui a Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da Pessoa com Deficiência).
         </li>
     <li class="mb-3">
-        BRASIL. Decreto nº 3.298, de 20 de dezembro de 1999. Regulamenta a Lei nº 7.853/1989 e dispõe sobre a Política Nacional para a Integração da Pessoa Portadora de Deficiência. Disponível em: <a class="text-break" href="https://www.planalto.gov.br/ccivil_03/decreto/d3298.htm">https://www.planalto.gov.br/ccivil_03/decreto/d3298.htm</a>. Acesso em: 31 out. 2025.
+    BRASIL. Decreto nº 3.298, de 20 de dezembro de 1999. Regulamenta a Lei nº 7.853/1989 e dispõe sobre a Política Nacional para a Integração da Pessoa Portadora de Deficiência.
     </li>
     <li class="mb-3">
         BRASIL. Ministério da Educação. Secretaria de Educação Especial. <em>Desenvolvendo competências para o atendimento das necessidades educacionais de alunos cegos e de alunos com baixa visão</em>. Brasília: MEC/SEESP, 2005.
     </li>
     <li class="mb-3">
-        BRUNO, M. M. G. <em>Avaliação educacional de alunos com baixa visão e múltipla deficiência na educação infantil</em>. Dourados, MS: Editora da UFGD, 2009. 198 p.
-    </li>
-    <li class="mb-3">
-        CONDE, A. J. M. Definindo cegueira e baixa visão. Disponível em: <a class="text-break" href="http://www.ibc.gov.br/?itemid=94#more">http://www.ibc.gov.br/?itemid=94#more</a>. Acesso em: 13 nov. 2015.
+        CONDE, A. J. M. Definindo cegueira e baixa visão.
     </li>
     <li class="mb-3">
         FELTRE, R. <em>Química Geral</em>. São Paulo: Editora Moderna, 2004.
@@ -1140,31 +1137,31 @@ Os resultados alcançados evidenciam que, com planejamento adequado, é possíve
         GALVÃO FILHO, T.; DAMASCENO, L. Programa InfoEsp: Premio Reina Sofia 2007 de Rehabilitación y de Integración. <em>Boletín del Real Patronato Sobre Discapacidad</em>, Ministerio de Educación, Política Social y Deporte, Madrid, n. 63, p. 14–23, abr. 2008. ISSN 1696-0998.
     </li>
     <li class="mb-3">
-        GARRUTTI DE LOURENÇO, B. A.; <em>et al.</em> <em>Acessibilidade para estudantes com deficiência visual: orientações para o ensino superior</em>. São Paulo: UNIFESP, 2020. Disponível em: <a class="text-break" href="https://acessibilidade.unifesp.br/images/PDF/Ebook-Colecao-DV01-2020.pdf">https://acessibilidade.unifesp.br/images/PDF/Ebook-Colecao-DV01-2020.pdf</a>. Acesso em: 31 out. 2025.
+    GARRUTTI DE LOURENÇO, B. A.; <em>et al.</em> <em>Acessibilidade para estudantes com deficiência visual: orientações para o ensino superior</em>. São Paulo: UNIFESP, 2020.
     </li>
     <li class="mb-3">
-        IVANOVICH, A. C. F.; GESSER, M. Deficiência e capacitismo: correção dos corpos e produção de sujeitos (a)políticos. <em>Quaderns de Psicologia</em>, v. 22, n. 3, e1618, 2020. DOI: <a class="text-break" href="https://doi.org/10.5565/rev/qpsicologia.1618">10.5565/rev/qpsicologia.1618</a>.
+        IVANOVICH, A. C. F.; GESSER, M. Deficiência e capacitismo: correção dos corpos e produção de sujeitos (a)políticos. <em>Quaderns de Psicologia</em>, v. 22, n. 3, e1618, 2020.
     </li>
     <li class="mb-3">
         JACYNTHO, M. D. de A. <em>Processos para Desenvolvimento de Aplicações Web</em>. 2008. 25 f. Monografia (Bacharelado em Ciência da Computação) — PUC-Rio, 2008.
     </li>
     <li class="mb-3">
-        LIMA, A. G. <em>JavaScript – Aplicações Interativas para a Web</em>. Disponível em: <a class="text-break" href="http://www.cin.ufpe.br/~rmd2/3317_JavaScript.pdf">http://www.cin.ufpe.br/~rmd2/3317_JavaScript.pdf</a>. Acesso em: 23 nov. 2015.
+        LIMA, A. G. <em>JavaScript – Aplicações Interativas para a Web</em>.
     </li>
     <li class="mb-3">
         MANTOAN, M. T. E. A tecnologia aplicada à educação na perspectiva inclusiva. Mimeo, 2005.
     </li>
     <li class="mb-3">
-        RABELLO, E. T.; PASSOS, J. S. Vygotsky e o desenvolvimento humano. Disponível em: <a class="text-break" href="http://www.josesilveira.com">http://www.josesilveira.com</a>. Acesso em: 23 nov. 2015.
+        RABELLO, E. T.; PASSOS, J. S. Vygotsky e o desenvolvimento humano.
     </li>
     <li class="mb-3">
-        REBONATTO, M. T. <em>Organização de Computadores – Notas de aula</em>. Passo Fundo, 2003. Disponível em: <a class="text-break" href="http://usuarios.upf.br/~rebonatto/organizacao/organizacao.pdf">http://usuarios.upf.br/~rebonatto/organizacao/organizacao.pdf</a>. Acesso em: 20 nov. 2015.
+        REBONATTO, M. T. <em>Organização de Computadores – Notas de aula</em>. Passo Fundo, 2003.
     </li>
     <li class="mb-3">
         REIS, C. de A. R. <em>A baixa visão no meu caminho</em>. Aracaju: Editora Triunfo, 2015.
     </li>
     <li class="mb-3">
-        SANTOS, E. C. dos; FERRÉ, F. <em>Introdução ao desenvolvimento Web usando HTML, CSS e PHP</em>. Disponível em: <a class="text-break" href="http://www.lbs.dcc.ufmg.br/cvbioinfo2011/material/notas_de_aula_webdev.pdf">http://www.lbs.dcc.ufmg.br/cvbioinfo2011/material/notas_de_aula_webdev.pdf</a>. Acesso em: 20 nov. 2015.
+        SANTOS, E. C. dos; FERRÉ, F. <em>Introdução ao desenvolvimento Web usando HTML, CSS e PHP</em>.
     </li>
     <li class="mb-3">
         SIAULIYS, M. O. C.; ORMELEZI, E. M.; BRIANT, M. E. (Org.). <em>A deficiência visual associada à deficiência múltipla e o atendimento educacional especializado: encarando desafios e construindo possibilidades</em>. São Paulo: Laramara, 2010.
@@ -1173,9 +1170,9 @@ Os resultados alcançados evidenciam que, com planejamento adequado, é possíve
         SILVA, M. O. E. Inclusão e Formação Docente. <em>Eccos – Revista Científica</em>, v. 10, n. 2, p. 479–495, [s.d.].
     </li>
     <li class="mb-3">
-        W3C – World Wide Web Consortium. <em>Web Content Accessibility Guidelines (WCAG) 2.2</em>. 05 out. 2023. Disponível em: <a class="text-break" href="https://www.w3.org/TR/WCAG22/">https://www.w3.org/TR/WCAG22/</a>. Acesso em: 31 out. 2025.
+    W3C – World Wide Web Consortium. <em>Web Content Accessibility Guidelines (WCAG) 2.2</em>. 05 out. 2023.
     </li>
     <li class="mb-3">
-        W3C – World Wide Web Consortium. <em>Accessible Rich Internet Applications (WAI‑ARIA) 1.2</em>. 06 set. 2023. Disponível em: <a class="text-break" href="https://www.w3.org/TR/wai-aria-1.2/">https://www.w3.org/TR/wai-aria-1.2/</a>. Acesso em: 31 out. 2025.
+    W3C – World Wide Web Consortium. <em>Accessible Rich Internet Applications (WAI‑ARIA) 1.2</em>. 06 set. 2023.
     </li>
 </ul>
