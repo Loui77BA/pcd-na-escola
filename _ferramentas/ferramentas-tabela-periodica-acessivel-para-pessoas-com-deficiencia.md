@@ -1353,6 +1353,71 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
         });
       }
     });
+    
+    // Handler global para interceptar cliques em links internos de qualquer modal
+    document.addEventListener('click', function(e) {
+      // Verifica se o clique foi em um link dentro de uma modal
+      const modal = e.target.closest('.modal');
+      if (!modal) return;
+      
+      const link = e.target.closest('a[href^="#"]');
+      if (!link) return;
+      
+      const href = link.getAttribute('href');
+      const targetId = href.substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      // Verifica se o elemento de destino existe dentro da modal ou na página
+      if (targetElement) {
+        e.preventDefault();
+        
+        // Verifica se o elemento de destino está dentro da modal atual
+        const targetInModal = modal.contains(targetElement);
+        
+        if (targetInModal) {
+          // Se o destino está dentro da modal, navega sem fechar a modal
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Define foco no elemento de destino para acessibilidade
+          targetElement.setAttribute('tabindex', '-1');
+          targetElement.focus();
+        } else {
+          // Se o destino está fora da modal (na página), fecha a modal primeiro
+          const modalInstance = bootstrap.Modal.getInstance(modal);
+          if (modalInstance) {
+            modalInstance.hide();
+            
+            // Navega para o elemento após a modal fechar
+            modal.addEventListener('hidden.bs.modal', function navigateAfterClose() {
+              setTimeout(() => {
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                // Define foco no elemento de destino para acessibilidade
+                targetElement.setAttribute('tabindex', '-1');
+                targetElement.focus();
+                // Remove o listener para evitar execução múltipla
+                modal.removeEventListener('hidden.bs.modal', navigateAfterClose);
+              }, 300);
+            });
+          }
+        }
+      }
+    });
+    
+    // Melhoria de acessibilidade: gerenciar atributo inert para manter foco na modal
+    document.addEventListener('shown.bs.modal', function(e) {
+      // Adiciona inert ao conteúdo da página quando modal abre
+      const pageContent = document.querySelector('header[role="banner"], main, footer');
+      if (pageContent) {
+        pageContent.setAttribute('inert', '');
+      }
+    });
+    
+    document.addEventListener('hidden.bs.modal', function(e) {
+      // Remove inert do conteúdo da página quando modal fecha
+      const pageContent = document.querySelector('header[role="banner"], main, footer');
+      if (pageContent) {
+        pageContent.removeAttribute('inert');
+      }
+    });
   });
 </script>
 
