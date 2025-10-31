@@ -356,21 +356,21 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
           <div class="col-md-4 mb-4">
             <section class="feature-card h-100" role="region" aria-labelledby="feat-a11y-title" aria-describedby="feat-a11y-desc">
               <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">accessibility_new</span>
-              <h5 id="feat-a11y-title" class="mb-1">Acessibilidade</h5>
+              <h5 id="feat-a11y-title" class="mb-1" role="text">Acessibilidade</h5>
               <p id="feat-a11y-desc" class="small mb-0">Compatível com tecnologias assistivas e leitores de tela</p>
             </section>
           </div>
           <div class="col-md-4 mb-4">
             <section class="feature-card h-100" role="region" aria-labelledby="feat-inter-title" aria-describedby="feat-inter-desc">
               <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">science</span>
-              <h5 id="feat-inter-title" class="mb-1">Interatividade</h5>
+              <h5 id="feat-inter-title" class="mb-1" role="text">Interatividade</h5>
               <p id="feat-inter-desc" class="small mb-0">Explore os elementos químicos de maneira dinâmica e educativa</p>
             </section>
           </div>
           <div class="col-md-4 mb-4">
             <section class="feature-card h-100" role="region" aria-labelledby="feat-edu-title" aria-describedby="feat-edu-desc">
               <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">school</span>
-              <h5 id="feat-edu-title" class="mb-1">Educacional</h5>
+              <h5 id="feat-edu-title" class="mb-1" role="text">Educacional</h5>
               <p id="feat-edu-desc" class="small mb-0">Informações científicas precisas para aprendizado eficiente</p>
             </section>
           </div>
@@ -787,7 +787,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
           </div>
 
           <div class="my-4 p-3 border border-light border-opacity-25 rounded">
-            <h4 class="fs-5 mb-3">Navegue rapidamente:</h4>
+            <h3 class="fs-5 mb-3">Navegue rapidamente:</h3>
             <style>
               .list-group-item-action:hover, .list-group-item-action:focus {
                 background-color: rgba(42, 123, 255, 0.3) !important;
@@ -1146,22 +1146,22 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
         
         <ul>
           <li class="fs-5 mb-4">
-            <strong>Nome do elemento:</strong> Apresentado como título principal da modal, é a primeira informação anunciada pelos leitores de tela.
+            <strong>Nome do elemento</strong> 
           </li>
           <li class="fs-5 mb-4">
-            <strong>Ilustração do elemento:</strong> Uma imagem que mostra como o elemento aparece ou é utilizado no dia a dia. Por exemplo, para o carbono, pode aparecer uma ilustração de grafite ou diamante; para o oxigênio, uma representação de bolhas de ar.
+            <strong>Ilustração do elemento</strong>
           </li>
           <li class="fs-5 mb-4">
-            <strong>Grupo:</strong> Informa a qual família de elementos pertence (por exemplo: "Metais Alcalinos", "Halogênios", "Gases Nobres"). Esta informação é fundamental para entender as propriedades químicas do elemento.
+            <strong>Grupo</strong> 
           </li>
           <li class="fs-5 mb-4">
-            <strong>Símbolo:</strong> A abreviatura química do elemento (por exemplo: H para Hidrogênio, O para Oxigênio, Au para Ouro). É apresentado de forma clara e acessível.
+            <strong>Símbolo</strong> 
           </li>
           <li class="fs-5 mb-4">
-            <strong>Número atômico:</strong> Indica quantos prótons existem no núcleo do átomo. Este número define a identidade do elemento e sua posição na tabela periódica.
+            <strong>Número atômico</strong>
           </li>
           <li class="fs-5 mb-4">
-            <strong>Número de massa (massa atômica):</strong> Representa a soma de prótons e nêutrons no núcleo, indicando a massa aproximada do átomo.
+            <strong>Número de massa (massa atômica)</strong>
           </li>
           <li class="fs-5 mb-4">
             <strong>Distribuição eletrônica:</strong> Esta é apresentada de duas formas complementares para garantir acessibilidade total:
@@ -1191,7 +1191,12 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
           </li>
         </ul>
 
-        <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6dc29fb6-d403-40e4-1dea-0017e6efd300/public" style="max-width: 100%; height: auto;" alt="A imagem mostra uma janela pop-up de informações para o elemento Boro símbolo B. A janela exibe o símbolo B, o número atômico 5 e uma ilustração de equipamentos esportivos, raquetes e bola que representam o uso do Boro no dia a dia. As informações listadas são Grupo que é Semimetal; Símbolo: B; Número atômico: 5; Número de massa: 10,81. Abaixo, há um diagrama de distribuição eletrônica com duas camadas K e L, mostrando o núcleo e os elétrons, e o detalhamento das subcamadas: Camada 1 subnível s 2 elétrons., camada 2 subnível s 2 elétrons e ainda na camada 2 subnível p 1 elétron." />
+        <figure>
+          <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6dc29fb6-d403-40e4-1dea-0017e6efd300/public" style="max-width: 100%; height: auto;" aria-hidden="true" />
+        <figcaption class="visually-hidden">
+          A imagem mostra uma janela pop-up de informações para o elemento Boro símbolo B. A janela exibe o símbolo B, o número atômico 5 e uma ilustração de equipamentos esportivos, raquetes e bola que representam o uso do Boro no dia a dia. As informações listadas são Grupo que é Semimetal; Símbolo: B; Número atômico: 5; Número de massa: 10,81. Abaixo, há um diagrama de distribuição eletrônica com duas camadas K e L, mostrando o núcleo e os elétrons, e o detalhamento das subcamadas: Camada 1 subnível s 2 elétrons., camada 2 subnível s 2 elétrons e ainda na camada 2 subnível p 1 elétron.
+        </figcaption>
+        </figure>
 
         <p class="fs-5">
           Essa combinação de recursos garante que um maior número de pessoas, independentemente de como acessa a informação (visual, auditiva, tátil), consiga compreender completamente as propriedades de cada elemento químico, respeitando as diferenças individuais e promovendo a inclusão no aprendizado de Química.
