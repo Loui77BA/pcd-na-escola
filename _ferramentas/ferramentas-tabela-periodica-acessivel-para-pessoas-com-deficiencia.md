@@ -516,7 +516,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
 
 <!-- Modal “Saiba mais” -->
 <div class="modal fade" id="modal-sobre" aria-labelledby="modalSobreLabel" aria-hidden="true" role="dialog" aria-modal="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+  <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
     <div class="modal-content bg-dark text-white p-3">
       <div class="modal-header border-light border-opacity-25">
         <h2 class="modal-title fs-4" id="modalSobreLabel">
@@ -770,7 +770,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
 
 <!-- Modal Como Funciona -->
 <div class="modal fade" id="modal-como-funciona" aria-labelledby="modalComoFuncionaLabel" aria-hidden="true" role="dialog" aria-modal="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+  <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
     <div class="modal-content bg-dark text-white p-3">
       <div class="modal-header border-light border-opacity-25">
         <h2 class="modal-title fs-4" id="modalComoFuncionaLabel">
@@ -782,6 +782,8 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
         </button>
       </div>
       <div class="modal-body">
+      <!-- Região viva para anunciar navegação interna na modal (acessibilidade) -->
+      <div id="modal-como-funciona-live" class="visually-hidden" aria-live="polite"></div>
           <div class="text-center mb-4">
             <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/01248cbd-d6fc-4d17-2007-b107616a0000/public" style="max-width: 100%; height: auto;" alt="Como usar a Tabela Periódica" aria-hidden="true" />
           </div>
@@ -1357,27 +1359,47 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
     // Handler local: navegação dentro da modal "Como funciona" mantendo a modal aberta
     const comoFuncionaModal = document.getElementById('modal-como-funciona');
     if (comoFuncionaModal) {
-      comoFuncionaModal.addEventListener('click', function(e) {
+      const modalBody = comoFuncionaModal.querySelector('.modal-body');
+      const liveRegion = comoFuncionaModal.querySelector('#modal-como-funciona-live');
+
+      function handleInternalNav(e) {
         const link = e.target.closest('a[href^="#secao-"]');
         if (!link) return;
-        
         const href = link.getAttribute('href');
         if (!href || !href.startsWith('#secao-')) return;
-        
+
         const targetId = href.slice(1);
-        const targetElement = comoFuncionaModal.querySelector('#' + targetId) || document.getElementById(targetId);
+        const targetElement = comoFuncionaModal.querySelector('#' + targetId);
         if (!targetElement) return;
-        
+
+        // Evita que o navegador altere o hash/scroll do documento e mude o contexto do leitor
         e.preventDefault();
-        // Rolagem suave dentro do corpo da modal
-        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        // Tornar focável temporariamente (apenas se necessário) e focar
-        const hadTabindex = targetElement.hasAttribute('tabindex');
-        if (!hadTabindex) targetElement.setAttribute('tabindex', '-1');
+        e.stopPropagation();
+        if (typeof e.stopImmediatePropagation === 'function') e.stopImmediatePropagation();
+
+        // Rolagem explícita do container da modal (não do documento)
+        if (modalBody) {
+          const top = targetElement.offsetTop - modalBody.offsetTop + modalBody.scrollTop - 8; // padding
+          modalBody.scrollTo({ top, behavior: 'smooth' });
+        } else {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Foco seguro no destino (mantém tabindex=-1 para acessibilidade)
+        if (!targetElement.hasAttribute('tabindex')) targetElement.setAttribute('tabindex', '-1');
         setTimeout(() => {
           targetElement.focus({ preventScroll: true });
-          if (!hadTabindex) targetElement.removeAttribute('tabindex');
+          if (liveRegion) liveRegion.textContent = `Seção: ${targetElement.textContent.trim()}`;
         }, 150);
+      }
+
+      // Clique do mouse/touch
+      comoFuncionaModal.addEventListener('click', handleInternalNav);
+      // Ativação pelo teclado em leitores que não disparam click
+      comoFuncionaModal.addEventListener('keydown', function(e) {
+        if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('a[href^="#secao-"]')) {
+          handleInternalNav(e);
+        }
       });
     }
     
