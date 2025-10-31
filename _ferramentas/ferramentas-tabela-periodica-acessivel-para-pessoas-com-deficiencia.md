@@ -1364,40 +1364,22 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
       if (!link) return;
       
       const href = link.getAttribute('href');
-      const targetId = href.substring(1);
-      const targetElement = document.getElementById(targetId);
       
-      // Verifica se o elemento de destino existe dentro da modal ou na página
-      if (targetElement) {
-        e.preventDefault();
+      // Só intercepta links internos específicos que causam problema de acessibilidade
+      // (links que apontam para seções dentro da própria modal)
+      if (href.startsWith('#secao-')) {
+        const targetId = href.substring(1);
+        const targetElement = document.getElementById(targetId);
         
-        // Verifica se o elemento de destino está dentro da modal atual
-        const targetInModal = modal.contains(targetElement);
-        
-        if (targetInModal) {
-          // Se o destino está dentro da modal, navega sem fechar a modal
+        // Verifica se o elemento de destino existe dentro da modal atual
+        if (targetElement && modal.contains(targetElement)) {
+          e.preventDefault();
+          
+          // Navega dentro da modal sem fechar
           targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
           // Define foco no elemento de destino para acessibilidade
           targetElement.setAttribute('tabindex', '-1');
           targetElement.focus();
-        } else {
-          // Se o destino está fora da modal (na página), fecha a modal primeiro
-          const modalInstance = bootstrap.Modal.getInstance(modal);
-          if (modalInstance) {
-            modalInstance.hide();
-            
-            // Navega para o elemento após a modal fechar
-            modal.addEventListener('hidden.bs.modal', function navigateAfterClose() {
-              setTimeout(() => {
-                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                // Define foco no elemento de destino para acessibilidade
-                targetElement.setAttribute('tabindex', '-1');
-                targetElement.focus();
-                // Remove o listener para evitar execução múltipla
-                modal.removeEventListener('hidden.bs.modal', navigateAfterClose);
-              }, 300);
-            });
-          }
         }
       }
     });
