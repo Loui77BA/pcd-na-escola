@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tecnologias Assistivas no Ensino de Química: Uma Proposta de Tabela Periódica Acessível"
-description: "Esse artigo vai apresentar uma proposta de tabela periódica acessível para estudantes com deficiência visual, utilizando tecnologias WEB para implementar recursos de acessibilidade na ferramenta."
+description: "Este artigo apresenta uma proposta de tabela periódica acessível para estudantes com deficiência visual, utilizando tecnologias WEB para implementar recursos de acessibilidade na ferramenta."
 date: 2025-08-19 10:00:00 -0300
 author: ["Ana Célia Barreto de Araújo Santana, ", "Karine do Prado Ribeiro e ", "Louise Suelen Reis"]
 categories: [Educação]
@@ -500,7 +500,7 @@ Tolentino e Rocha-Filho (1997, p. 1) afirmam que:
 
 A tabela periódica representa uma estrutura sistematizada utilizada para classificar os elementos químicos, organizando-os segundo a ordem crescente de seus números atômicos. Essa disposição se baseia na configuração eletrônica dos átomos, evidenciando a recorrência de determinadas propriedades entre os elementos.
 
-As linhas horizontais, denominadas períodos, apresentam à esquerda os metais e, à direita, os não-metais. Já as colunas verticais, chamadas grupos, reúnem conjuntos específicos de elementos, como o grupo 1, que corresponde aos metais alcalinos (FELTRE, 2004). Elementos pertencentes a um mesmo grupo geralmente compartilham semelhanças marcantes, frequentemente mais notáveis do que aquelas observadas entre elementos de um mesmo período. No entanto, há casos em que as semelhanças dentro dos períodos também se destacam, como entre os lantanídeos e actinídeos (FELTRE, 2004).
+As linhas horizontais, denominadas períodos, apresentam à esquerda os metais e, à direita, os não metais. Já as colunas verticais, chamadas grupos, reúnem conjuntos específicos de elementos, como o grupo 1, que corresponde aos metais alcalinos (FELTRE, 2004). Elementos pertencentes a um mesmo grupo geralmente compartilham semelhanças marcantes, frequentemente mais notáveis do que aquelas observadas entre elementos de um mesmo período. No entanto, há casos em que as semelhanças dentro dos períodos também se destacam, como entre os lantanídeos e actinídeos (FELTRE, 2004).
 
 Segundo a lei periódica de Moseley, as propriedades físicas e químicas dos elementos variam periodicamente de acordo com seus números atômicos. Essas variações, conhecidas como propriedades periódicas, manifestam-se ao longo da tabela, sendo exemplos delas: raio atômico, eletronegatividade e eletropositividade (FELTRE, 2004).
 
@@ -720,27 +720,27 @@ Considerando os desafios apresentados, foi desenvolvida uma tabela periódica co
 
 Foram definidos os seguintes critérios de acessibilidade:
 
-- **Compatibilidade com leitores de ecrã:** A estrutura da tabela foi planeada para garantir que utilizadores destes recursos possam aceder, compreender e interagir eficientemente com todas as informações apresentadas.
+- **Compatibilidade com leitores de tela:** A estrutura da tabela foi planejada para garantir que usuários desses recursos possam acessar, compreender e interagir eficientemente com todas as informações apresentadas.
 
-- **Adaptabilidade:** O design responsivo permite que a tabela seja visualizada adequadamente em diferentes dispositivos, como smartphones, tablets ou computadores. O conteúdo mantém-se íntegro independentemente do tamanho do texto ou das restrições visuais do utilizador, permitindo navegação tanto em modo vertical como horizontal, sem distorções.
+- **Adaptabilidade:** O design responsivo permite que a tabela seja visualizada adequadamente em diferentes dispositivos, como smartphones, tablets ou computadores. O conteúdo permanece íntegro independentemente do tamanho do texto ou das restrições visuais da pessoa usuária, incluindo navegação tanto em modo retrato (vertical) quanto paisagem (horizontal), sem distorções.
 
-- **Independência das cores:** As relações entre os elementos químicos são comunicadas por outros sinais e descrições, para além das cores, assegurando plena compreensão mesmo por pessoas com deficiência na perceção cromática.
+- **Independência das cores:** As relações entre os elementos químicos são comunicadas por outros sinais e descrições, além das cores, assegurando plena compreensão mesmo por pessoas com deficiência na percepção cromática.
 
-- **Alto contraste:** São disponibilizadas opções de cores com elevado destaque, como fundo preto e letras brancas, além de tons de cinzento, melhorando a legibilidade para utilizadores com baixa visão.
+- **Alto contraste:** São disponibilizadas opções de cores com elevado destaque, como fundo preto e letras brancas, além de tons de cinza, melhorando a legibilidade para usuários com baixa visão.
 
-- **Tamanho do texto ajustável:** É possível modificar o tamanho da fonte conforme a necessidade, sem prejuízo para a integridade ou clareza das informações.
+- **Tamanho do texto ajustável:** É possível modificar o tamanho da fonte conforme a necessidade, sem prejuízo à integridade ou clareza das informações.
 
-- **Integração com VLibras:** Um botão dedicado ao VLibras (sistema de tradução automática para Língua Gestual Brasileira) permite a conversão do conteúdo textual, ampliando a acessibilidade para pessoas surdas.
+- **Integração com VLibras:** Um botão dedicado ao VLibras (um recurso de tradução automática para a Língua Brasileira de Sinais) possibilita a conversão do conteúdo textual para Libras, ampliando a acessibilidade para pessoas surdas.
 
-O objetivo central da Tabela Periódica Acessível é assegurar precisão semântica, mantendo o significado original do conteúdo fielmente preservado. Materiais considerados fidedignos não apresentam alterações, distorções ou modificações ao seu sentido autêntico.
+O propósito central da Tabela Periódica Acessível é assegurar precisão semântica, mantendo o significado original do conteúdo fielmente preservado. Materiais considerados fidedignos (fiéis) não apresentam alterações, distorções ou modificações em seu sentido autêntico.
 
-É importante salientar que a interação entre tecnologias assistivas e conteúdos desprovidos de acessibilidade pode comprometer a transmissão adequada das informações, impactando especialmente áreas das ciências exatas e tecnológicas. Assim, a criação de recursos acessíveis é essencial para garantir acesso equitativo ao conhecimento científico.
+Ressalta-se que a interação entre tecnologias assistivas e conteúdos desprovidos de acessibilidade pode comprometer a transmissão adequada das informações, impactando especialmente áreas de ciências exatas e tecnológicas. Portanto, a criação de recursos acessíveis é essencial para garantir que todos tenham acesso equitativo ao conhecimento científico.
 
-Compreender uma tabela periódica representa um desafio significativo para pessoas cegas ou com baixa visão, mesmo utilizando leitores de ecrã. A complexidade visual associada aos símbolos, números e agrupamentos dificulta a interpretação auditiva, particularmente quando as descrições não são estruturadas adequadamente.
+Compreender uma tabela periódica representa um desafio significativo para pessoas cegas ou com baixa visão, mesmo utilizando leitores de tela. A complexidade visual associada aos símbolos, números e agrupamentos dificulta a interpretação auditiva, particularmente quando as descrições não são estruturadas adequadamente.
 
-A maioria das soluções online existentes negligencia práticas de acessibilidade, dificultando a correta assimilação dos dados e prejudicando o aprendizado de diversos grupos, incluindo pessoas cegas, daltónicas, disléxicas ou com baixa visão. Diante deste cenário, a criação de uma tabela periódica acessível torna-se imprescindível para garantir que todos os estudantes possam compreender e interagir com este conteúdo fundamental da Química.
+A maioria das soluções online existentes negligencia práticas de acessibilidade, dificultando a correta assimilação dos dados e prejudicando o aprendizado de diversos grupos, incluindo pessoas cegas, daltônicas, disléxicas ou com baixa visão. Diante desse cenário, a criação de uma tabela periódica acessível torna-se imprescindível para garantir que todos os estudantes possam compreender e interagir com esse conteúdo fundamental da Química.
 
-Adicionalmente, a solução proposta foi otimizada para ambientes com ligação limitada à internet e dispositivos de menor desempenho, priorizando leveza e economia de dados móveis. Esta abordagem visa ampliar o acesso ao recurso, especialmente em regiões com infraestrutura tecnológica restrita, garantindo que mais pessoas possam usufruir da tabela periódica acessível sem enfrentar barreiras técnicas.
+Adicionalmente, a solução proposta foi otimizada para ambientes com conexão limitada à internet e dispositivos de menor desempenho, priorizando leveza e economia de dados móveis. Essa abordagem visa ampliar o acesso ao recurso, especialmente em regiões com infraestrutura tecnológica restrita, garantindo que mais pessoas possam usufruir da tabela periódica acessível sem enfrentar barreiras técnicas.
 
 ### Metodologia {#metodologia}
 ---
@@ -786,7 +786,7 @@ Essa camada é o núcleo funcional da ferramenta, composta por quatro <em>script
 
 - <strong>tabela-periodica.js</strong>: contém o <em>array</em> com os dados brutos de todos os elementos químicos, servindo como a "única fonte de verdade" para a aplicação.
 - <strong>tabela-periodica-grupos.js</strong>: responsável por renderizar a visualização "Por Grupos". Agrupa os elementos por suas colunas na tabela periódica e gera dinamicamente o <em>HTML</em> correspondente.
-- <strong>tabela-periodica-categorias.js</strong>: renderiza a visualização "Por Categorias". Este <em>script</em> agrupa os elementos com base em suas propriedades químicas (ex: "Metais Alcalinos", "Gases Nobres") e os apresenta sob títulos hierárquicos, como "Metais" (categoria principal) e "Metais de Transição" (subcategoria).
+- <strong>tabela-periodica-categorias.js</strong>: renderiza a visualização "Por Categorias". Esse <em>script</em> agrupa os elementos com base em suas propriedades químicas (ex: "Metais Alcalinos", "Gases Nobres") e os apresenta sob títulos hierárquicos, como "Metais" (categoria principal) e "Metais de Transição" (subcategoria).
 - <strong>tabela-periodica-colors.js</strong>: gerencia o sistema de cores opcional. Aplica classes <em>CSS</em> aos elementos com base em sua categoria química e utiliza um <em>MutationObserver</em> para garantir que a coloração seja aplicada corretamente, mesmo quando os elementos são recriados dinamicamente ao trocar o modo de visualização.
 
 Essa arquitetura modular garante que cada parte do sistema tenha uma responsabilidade única, tornando o código mais organizado, eficiente e fácil de manter.
@@ -852,27 +852,7 @@ A interface foi otimizada para funcionar eficientemente em:
 
 O código <em>JavaScript</em> é modular e carregado de forma otimizada, executando apenas as funções necessárias para o modo de visualização ativo. As imagens são servidas através de <em>CDN</em> com redimensionamento automático, minimizando o consumo de dados.
 
-A título de curiosidade, uma <em>CDN</em> (<em>Content Delivery Network</em> ou Rede de Distribuição de Conteúdo em português) é uma rede distribuída de servidores que entrega conteúdos da <em>web</em> de forma rápida e eficiente, reduzindo a latência e melhorando a performance do <em>site</em> para usuários em diferentes regiões geográficas. Neste contexto, a utilização de uma <em>CDN</em> para hospedar as imagens da tabela periódica assegura que os usuários possam carregar o conteúdo visual rapidamente, independentemente de sua localização ou da qualidade de sua conexão com a internet.
-
--   **Fontes aprimoradas**: Tipografias com maior distinção entre caracteres similares
-
-Todas essas configurações são salvas em <em>localStorage</em> e restauradas automaticamente em visitas subsequentes.
-
-**4. Design Responsivo e Performático**
-
-A interface foi otimizada para funcionar eficientemente em:
-
--   Dispositivos móveis (smartphones e tablets)
-
--   Computadores desktop e notebooks
-
--   Conexões de internet lentas ou intermitentes
-
--   Dispositivos com poder de processamento limitado
-
-O código JavaScript é modular e carregado de forma otimizada, executando apenas as funções necessárias para o modo de visualização ativo. As imagens são servidas através de CDN com redimensionamento automático, minimizando o consumo de dados.
-
-A título de curiosidade, uma CDN (Content Delivery Network ou Rede de Distribuição de Conteúdo em português) é uma rede distribuída de servidores que entrega conteúdos da web de forma rápida e eficiente, reduzindo a latência e melhorando a performance do site para usuários em diferentes regiões geográficas. Neste contexto, a utilização de uma CDN para hospedar as imagens da tabela periódica assegura que os usuários possam carregar o conteúdo visual rapidamente, independentemente de sua localização ou da qualidade de sua conexão com a internet.
+A título de curiosidade, uma <em>CDN</em> (<em>Content Delivery Network</em> ou Rede de Distribuição de Conteúdo em português) é uma rede distribuída de servidores que entrega conteúdos da <em>web</em> de forma rápida e eficiente, reduzindo a latência e melhorando a performance do <em>site</em> para usuários em diferentes regiões geográficas. Nesse contexto, a utilização de uma <em>CDN</em> para hospedar as imagens da tabela periódica assegura que os usuários possam carregar o conteúdo visual rapidamente, independentemente de sua localização ou da qualidade de sua conexão com a internet.
 
 ### Validação e Testes {#validacao-e-testes}
 ---
@@ -1069,136 +1049,6 @@ Diante do exposto, os principais resultados alcançados com a Tabela Periódica 
 - **Estabelecimento de Padrões Replicáveis:** A arquitetura modular e as práticas implementadas podem ser adaptadas para o desenvolvimento de outras ferramentas educacionais inclusivas em diferentes áreas do conhecimento.
 
 A evolução do projeto, desde versões iniciais com soluções improvisadas (uso inadequado de atributos alt, áudios pré-gravados que rapidamente se tornavam desatualizados) até a versão atual (com HTML semântico rigoroso, WAI-ARIA implementado corretamente, design responsivo e sistema modular de JavaScript), ilustra a importância da aplicação consistente de princípios de acessibilidade e da incorporação do feedback de usuários reais no processo de desenvolvimento iterativo.
-- Semimetais
-- Não Metais
-- Outros (Hidrogênio)
-
-Essa forma de visualização agrupa os elementos com características químicas semelhantes, facilitando a compreensão de suas propriedades e comportamentos.
-
-Por exemplo, dentro da categoria "Metais", você encontrará subcategorias como Metais Alcalinos, Metais Alcalinoterrosos, Metais de Transição, Lantanídeos, Actinídeos e Outros Metais.
-
-Já em "Não Metais", estão agrupados os Não Metais propriamente ditos, os Halogênios e os Gases Nobres. O Hidrogênio, por ser único, tem sua própria categoria em "Outros".
-
-Essa organização permite que o usuário explore a tabela periódica de uma forma mais didática, compreendendo as relações entre os elementos e suas classificações químicas.
-
-<div class="text-center">
-    <figcaption>Figura 7: Exemplo da categoria "Semimetais" na visualização por categorias.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/00bf013e-2494-4376-ba30-04a57a056c00/public" aria-hidden="true" class="img-fluid" />
-    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
-</div>
-
-<div class="text-center">
-    <figcaption>Figura 8: Exemplo da categoria "Não Metais" na visualização por categorias.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/74c6cb47-115f-4972-7e14-266316dd8600/public" aria-hidden="true" class="img-fluid" />
-    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
-</div>
-
-Essa abordagem de usar botões e seções menores é fundamental para garantir a responsividade da aplicação. Em vez de forçar a adaptação de uma tabela grande a uma tela pequena, o <em>design</em> já foi pensado para o <em>mobile</em>.
-
-### Painel de Controle {#painel-de-controle}
----
-
-Existe um painel de controle fixo na parte superior da janela onde é possível alternar entre a visualização por períodos, por grupos e por categorias, além de ser possível ativar ou desativar as cores na tabela.
-
-<div class="text-center">
-    <figcaption>Figura 9: Painel de controle da tabela periódica, com opções para alternar visualizações e ativar/desativar cores.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/afcad38c-2abe-484b-6d3e-942882041c00/public" aria-hidden="true" class="img-fluid" />
-    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
-</div>
-
-Quando a visualização por períodos está ativada o painel de controle exibe uma seção chamada Navegue pelos períodos da tabela, com botões para cada um dos 7 períodos, além dos botões para os lantanídeos e actinídeos. Pressionando um desses botões, a pessoa é levada diretamente para a seção correspondente na página.
-
-<div class="text-center">
-    <figcaption>Figura 10: Painel de navegação por períodos, com botões para cada período, lantanídeos e actinídeos.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/08252ef4-b9e3-4c16-73c0-491563db6c00/public" aria-hidden="true" class="img-fluid" />
-    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
-</div>
-
-Já quando a visualização por grupos está ativada, o painel de controle exibe uma seção chamada Navegue pelos grupos da tabela, com botões para cada um dos 18 grupos, além dos botões para os lantanídeos e actinídeos. Pressionando um desses botões, a pessoa é levada diretamente para a seção correspondente na página.
-
-<div class="text-center">
-    <figcaption>Figura 11: Painel de navegação por grupos, com botões para os 18 grupos, lantanídeos e actinídeos.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/dee30e7b-9132-4219-ab2d-07521b680600/public" aria-hidden="true" class="img-fluid" />
-    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
-</div>
-
-E quando a visualização por categorias está ativada, o painel de controle exibe uma seção chamada Navegue pelas categorias da tabela, com botões organizados hierarquicamente pelas quatro grandes categorias: Metais (com subcategorias como Alcalinos, Alcalinoterrosos, Transição, etc.), Semimetais, Não Metais (incluindo Halogênios e Gases Nobres) e Outros (Hidrogênio). Pressionando um desses botões, a pessoa é levada diretamente para a categoria ou subcategoria correspondente na página, facilitando a navegação por tipo de elemento químico.
-
-<div class="text-center">
-    <figcaption>Figura 12: Painel de navegação por categorias, com botões hierárquicos para cada tipo de elemento.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/a6cf2451-92d0-4f8e-b17b-1d10bfae7000/public" aria-hidden="true" class="img-fluid" />
-    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
-</div>
-
-### Cartões de Elementos Químicos {#cartoes-de-elementos-quimicos}
----
-
-Cada elemento químico é apresentado em um cartão individual, que exibe informações essenciais como o símbolo, o nome e a posição que ocupa na tabela (no caso o período e a coluna).
-
-<div class="text-center">
-    <figcaption>Figura 13: Cartão interativo de um elemento químico, exibindo informações essenciais.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/22f300fb-5e4d-45ea-3131-3f47f6848d00/public" aria-hidden="true" class="img-fluid" />
-    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
-</div>
-
-Esses cartões são interativos: ao clicar com o mouse, tocar na tela touch ou pressionar Enter sobre eles, uma janela modal se abre, fornecendo informações detalhadas sobre o elemento, como Símbolo, Nome, Número Atômico, Número de Massa (massa atômica) e Configuração eletrônica.
-
-### Modal de Detalhes do Elemento {#modal-de-detalhes-do-elemento}
----
-
-Quando você acessa um cartão de elemento, seja clicando, tocando ou pressionando Enter, uma janela modal é aberta com informações detalhadas.
-
-**Gerenciamento de foco:** Ao abrir a modal, o foco é automaticamente direcionado para o primeiro elemento interativo (geralmente o botão de fechar no canto superior direito). Isso garante que pessoas que navegam por teclado ou usam leitores de tela saibam imediatamente onde estão e possam fechar a janela facilmente se desejarem.
-
-Quando você fecha a modal, o foco retorna automaticamente para o cartão do elemento que você havia clicado. Isso evita que a pessoa se perca na página e precise procurar novamente onde estava antes de abrir a janela.
-
-**Estrutura semântica:** A modal usa elementos HTML semânticos apropriados, com atributos ARIA <em>role="dialog"</em> e <em>aria-modal="true"</em>. Isso informa aos leitores de tela que uma janela de diálogo foi aberta, alterando o modo de navegação.
-
-**Rotulagem acessível:** Cada modal possui um título claro (o nome do elemento) que é anunciado quando a janela abre. As informações são organizadas hierarquicamente com títulos (<em>&lt;h2&gt;</em>, <em>&lt;h3&gt;</em>) que permitem navegação rápida por marcos de referência.
-
-#### Informações apresentadas na modal {#informacoes-apresentadas-na-modal}
----
-
-A janela modal de cada elemento apresenta as seguintes informações:
-
-- **Nome do elemento**: Apresentado como título principal da modal, é a primeira informação anunciada pelos leitores de tela.
-- **Ilustração do elemento**: Uma imagem que mostra como o elemento aparece ou é utilizado no dia a dia. Por exemplo, para o carbono, pode aparecer uma ilustração de grafite ou diamante; para o oxigênio, uma representação de bolhas de ar.
-- **Grupo**: Informa a qual família de elementos pertence (por exemplo: "Metais Alcalinos", "Halogênios", "Gases Nobres"). Esta informação é fundamental para entender as propriedades químicas do elemento.
-- **Símbolo**: A abreviatura química do elemento (por exemplo: H para Hidrogênio, O para Oxigênio, Au para Ouro). É apresentado de forma clara e acessível.
-- **Número atômico**: Indica quantos prótons existem no núcleo do átomo. Este número define a identidade do elemento e sua posição na tabela periódica.
-- **Número de massa (massa atômica)**: Representa a soma de prótons e nêutrons no núcleo, indicando a massa aproximada do átomo.
-- **Distribuição eletrônica**: Esta é apresentada de duas formas complementares para garantir acessibilidade total:
-
-    **Visual**: Um diagrama ilustrativo mostrando o núcleo do átomo no centro e as camadas eletrônicas ao redor, com os elétrons distribuídos em suas respectivas posições. Esta representação visual ajuda quem enxerga a ter uma compreensão espacial de como os elétrons estão organizados.
-
-    <div class="text-center">
-        <figcaption>Figura 14: Representação visual da distribuição eletrônica do Hidrogênio.</figcaption>
-        <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c7c023b7-c298-4a7a-772f-9005930f1100/public" aria-hidden="true" class="img-fluid" />
-        <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
-    </div>
-
-    **Linear (textual)**: A notação científica padrão da distribuição eletrônica, apresentada em formato de texto sequencial. Por exemplo:
-Camada 1: 1s¹
-
-A leitura dessa notação é direta, sequencial e construída usando atributos ARIA para garantir que leitores de tela anunciem corretamente cada parte da configuração eletrônica.
-
-<div class="text-center">
-    <figcaption>Figura 15: Modal de detalhes do elemento, exibindo informações completas e acessíveis.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6dc29fb6-d403-40e4-1dea-0017e6efd300/public" aria-hidden="true" class="img-fluid" />
-    <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
-</div>
-
-Diante de tudo que foi apresentado, os principais resultados alcançados com a Tabela Periódica Acessível podem ser resumidos em quatro pontos essenciais:
-
--   **Preservação de Fidelidade Semântica**: Todas as informações químicas são transmitidas com precisão absoluta, independentemente da modalidade sensorial utilizada para acessá-las.
-
--   **Promoção de Autonomia**: Usuários navegam independentemente pela tabela periódica, acessam informações detalhadas sobre elementos específicos e compreendem as relações entre períodos, grupos e categorias sem necessidade de assistência externa.
-
--   **Demonstração de Viabilidade**: A ferramenta prova concretamente que, mediante aplicação rigorosa de padrões de acessibilidade e uso apropriado de tecnologias web, é possível criar recursos educacionais que atendam simultaneamente estudantes com e sem deficiência.
-
--   **Estabelecimento de Padrões Replicáveis**: A arquitetura modular e as práticas implementadas podem ser adaptadas para desenvolvimento de outras ferramentas educacionais inclusivas em diferentes áreas do conhecimento.
-
-A evolução do projeto, desde versões iniciais com soluções improvisadas (uso inadequado de atributos <em>alt</em>, áudios pré-gravados que rapidamente tornavam-se desatualizados) até a versão atual (com HTML semântico rigoroso, WAI-ARIA implementado corretamente, design responsivo e sistema modular de JavaScript), ilustra a importância da aplicação consistente de princípios de acessibilidade e da incorporação de feedback de usuários reais no processo de desenvolvimento iterativo.
 
 ## Considerações Finais {#consideracoes-finais}
 ---
