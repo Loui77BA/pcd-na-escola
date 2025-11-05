@@ -517,20 +517,9 @@ O raio atômico, definido pela distância entre o núcleo e a camada mais extern
 
 <div class="text-center">
     <figcaption>Figura 2: Variação das propriedades periódicas na tabela periódica.</figcaption>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Periodic_trends_-_pt_edition.svg/600px-Periodic_trends_-_pt_edition.svg.png" class="img-fluid" alt="Diagrama mostrando as tendências periódicas da tabela periódica, com setas indicando a direção do aumento das propriedades: raio atômico diminui para cima e direita; energia de ionização e afinidade eletrônica aumentam para a direita e para cima; e setas diagonais mostrando características metálicas e não-metálicas que se distribuem na tabela." />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Periodic_trends_-_pt_edition.svg/600px-Periodic_trends_-_pt_edition.svg.png" class="img-fluid" alt="Diagrama mostrando as tendências periódicas da tabela periódica." />
     <figcaption>Fonte: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Periodic_trends_-_pt_edition.svg/600px-Periodic_trends_-_pt_edition.svg.png" target="_blank">https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Periodic_trends_-_pt_edition.svg/600px-Periodic_trends_-_pt_edition.svg.png</a></figcaption>
 </div>
-
-<p><strong>Descrição resumida da imagem:</strong> A tabela periódica, apresentada em formato retangular, traz setas coloridas sobre os elementos, ilustrando o sentido das principais propriedades periódicas.</p>
-
-<ul>
-    <li><strong>Raio atômico:</strong> Indicado por uma seta azul apontando de cima para baixo e da direita para a esquerda, mostrando que o tamanho dos átomos cresce nessas direções – ou seja, elementos maiores localizam-se à esquerda e na parte inferior.</li>
-    <li><strong>Energia de ionização:</strong> Representada por setas vermelhas que seguem da esquerda para a direita e de baixo para cima, evidenciando que essa energia aumenta nesse sentido. Assim, retirar elétrons de elementos no canto superior direito, como o flúor, é mais difícil.</li>
-    <li><strong>Afinidade eletrônica:</strong> Demonstrada por setas marrons nos mesmos sentidos da energia de ionização, indicando que elementos do canto superior direito tendem a atrair elétrons com mais facilidade.</li>
-    <li><strong>Características metálicas:</strong> Uma seta cinza-escura do canto superior direito ao inferior esquerdo ilustra o aumento da tendência metálica. Os metais concentram-se à esquerda e na parte inferior (ex.: sódio e cálcio).</li>
-    <li><strong>Características não-metálicas:</strong> Uma seta marrom-clara do canto inferior esquerdo ao superior direito mostra que as propriedades não-metálicas aumentam nesse sentido, sendo os não-metais mais comuns na parte superior direita (como oxigênio, nitrogênio e cloro).</li>
-</ul>
-
 <div class="sr-only">
     <p>Descrição detalhada da imagem: A imagem mostra a tabela periódica dos elementos em forma de retângulo dividido em pequenos quadrados (cada um representando um elemento químico). Sobre essa tabela, há setas coloridas que indicam como algumas propriedades periódicas variam de acordo com a posição dos elementos.</p>
     <p>Raio atômico (tamanho do átomo):</p>
