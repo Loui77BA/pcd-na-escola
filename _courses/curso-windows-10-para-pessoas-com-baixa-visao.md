@@ -9,11 +9,11 @@ excerpt: "Curso que ensina como configurar o Windows 10 para pessoas com baixa v
 tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
 ---
 
-<button class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#introducao" aria-expanded="false" aria-controls="introducao">
+<button id="btn-introducao" class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#introducao" aria-expanded="false" aria-controls="introducao">
     Sobre o Curso
 </button>
 
-<div class="collapse mb-4" id="introducao">
+<div class="collapse mb-4" id="introducao" role="region" aria-labelledby="btn-introducao" tabindex="-1">
     <h2 id="sobre-o-curso">
         Sobre o Curso
     </h2>
@@ -34,24 +34,26 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
     </p>
 </div>
 
-<button class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula01" aria-expanded="false" aria-controls="aula01">
+<button id="btn-aula01" class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula01" aria-expanded="false" aria-controls="aula01">
     Aula 01 - Temas Escuros e de Alto Contraste
 </button>
 
-<div class="collapse mb-4" id="aula01">
+<div class="collapse mb-4" id="aula01" role="region" aria-labelledby="btn-aula01" tabindex="-1">
     <h2 id="temas-escuros-e-alto-contraste">
         Temas Escuros e Alto Contraste
     </h2>
 
     <div style="position:relative;padding-top:56.25%;">
-        <iframe id="panda-db9e664f-b0bb-4bed-9112-999b8bdc4278" 
+    <iframe id="panda-db9e664f-b0bb-4bed-9112-999b8bdc4278" 
                 src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=db9e664f-b0bb-4bed-9112-999b8bdc4278" 
                 style="border:none;position:absolute;top:0;left:0;border-radius:15px;box-shadow:0 15px 25px rgba(0,0,0,0.4); border: 3px solid rgba(13,110,253,0.3);"
                 allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
-                allowfullscreen=true 
+        allowfullscreen=true 
                 width="100%" 
                 height="100%" 
-                fetchpriority="high">
+        fetchpriority="high" 
+        loading="lazy" 
+        title="Vídeo Aula 01: Temas Escuros e Alto Contraste">
         </iframe>
     </div>
 
@@ -100,24 +102,26 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
     </p>
 </div>
 
-<button class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula02" aria-expanded="false" aria-controls="aula02">
+<button id="btn-aula02" class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula02" aria-expanded="false" aria-controls="aula02">
     Aula 02 - Lupa do Windows 10
 </button>
 
-<div class="collapse mb-4" id="aula02">
+<div class="collapse mb-4" id="aula02" role="region" aria-labelledby="btn-aula02" tabindex="-1">
     <h2 id="lupa-do-windows-10">
         Lupa do Windows 10
     </h2>
     
     <div style="position:relative;padding-top:56.25%;">
-        <iframe id="panda-a4b9eff5-9c4b-4726-83f3-79968b4f6812" 
+    <iframe id="panda-a4b9eff5-9c4b-4726-83f3-79968b4f6812" 
                 src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=a4b9eff5-9c4b-4726-83f3-79968b4f6812" 
                 style="border:none;position:absolute;top:0;left:0;border-radius:15px;box-shadow:0 15px 25px rgba(0,0,0,0.4); border: 3px solid rgba(13,110,253,0.3);"
                 allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
-                allowfullscreen=true 
+        allowfullscreen=true 
                 width="100%" 
                 height="100%" 
-                fetchpriority="high">
+        fetchpriority="high" 
+        loading="lazy" 
+        title="Vídeo Aula 02: Lupa do Windows 10">
         </iframe>
     </div>
 
@@ -160,10 +164,10 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
     </p>
     <ul>
         <li>
-            <kbd>Windows</kbd> + <kbd>+</kbd>: Amplia a tela. Ppressione e segure a tecla <kbd>Windows</kbd> e, em seguida, pressione a tecla <kbd>+</kbd> várias vezes para aumentar o zoom.
+            <kbd>Windows</kbd> + <kbd>+</kbd>: Amplia a tela. Pressione e segure a tecla <kbd>Windows</kbd> e, em seguida, pressione a tecla <kbd>+</kbd> várias vezes para aumentar o zoom.
         </li>
         <li>
-            <kbd>Windows</kbd> + <kbd>-</kbd>: Reduz o zoom da tela. Ppressione e segure a tecla <kbd>Windows</kbd> e, em seguida, pressione a tecla <kbd>-</kbd> várias vezes para diminuir o zoom.
+            <kbd>Windows</kbd> + <kbd>-</kbd>: Reduz o zoom da tela. Pressione e segure a tecla <kbd>Windows</kbd> e, em seguida, pressione a tecla <kbd>-</kbd> várias vezes para diminuir o zoom.
         </li>
         <li>
             <kbd>Windows</kbd> + <kbd>Ctrl</kbd> + <kbd>Enter</kbd>: Ativa a função de leitura de texto em voz alta. Isso fará com que o Windows leia o texto em voz alta usando a lupa sem a necessidade de um leitor de telas adicional. Muito útil para pessoas com baixa visão que conseguem ver a tela, mas têm dificuldade para ler o texto.
@@ -268,24 +272,26 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
     </p>
 </div>
 
-<button class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula03" aria-expanded="false" aria-controls="aula03">
+<button id="btn-aula03" class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula03" aria-expanded="false" aria-controls="aula03">
     Aula 03 - Tornar Tudo Maior no Windows 10
 </button>
 
-<div class="collapse mb-4" id="aula03">
+<div class="collapse mb-4" id="aula03" role="region" aria-labelledby="btn-aula03" tabindex="-1">
     <h2 id="tornar-tudo-maior-no-windows-10">
         Tornar Tudo Maior no Windows 10
     </h2>
 
     <div style="position:relative;padding-top:56.25%;">
-        <iframe id="panda-e57d0a0f-5694-4faa-bd53-a1cad9e23a9d" 
+    <iframe id="panda-e57d0a0f-5694-4faa-bd53-a1cad9e23a9d" 
                 src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=e57d0a0f-5694-4faa-bd53-a1cad9e23a9d" 
                 style="border:none;position:absolute;top:0;left:0;border-radius:15px;box-shadow:0 15px 25px rgba(0,0,0,0.4); border: 3px solid rgba(13,110,253,0.3);"
                 allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
-                allowfullscreen=true 
+        allowfullscreen=true 
                 width="100%" 
                 height="100%" 
-                fetchpriority="high">
+        fetchpriority="high" 
+        loading="lazy" 
+        title="Vídeo Aula 03: Tornar tudo maior no Windows 10">
         </iframe>
     </div>
 
@@ -390,24 +396,26 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
 
 </div>
 
-<button class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula04" aria-expanded="false" aria-controls="aula04">
+<button id="btn-aula04" class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula04" aria-expanded="false" aria-controls="aula04">
     Aula 04 - Remover o Papel de Parede do Windows 10
 </button>
 
-<div class="collapse mb-4" id="aula04">
+<div class="collapse mb-4" id="aula04" role="region" aria-labelledby="btn-aula04" tabindex="-1">
     <h2 id="remover-o-papel-de-parede-do-windows-10">
         Remover o Papel de Parede do Windows 10
     </h2>
 
     <div style="position:relative;padding-top:56.25%;">
-        <iframe id="panda-2f37c960-9453-467e-b4cc-dbf45c0de9b8" 
+    <iframe id="panda-2f37c960-9453-467e-b4cc-dbf45c0de9b8" 
                 src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=2f37c960-9453-467e-b4cc-dbf45c0de9b8" 
                 style="border:none;position:absolute;top:0;left:0;border-radius:15px;box-shadow:0 15px 25px rgba(0,0,0,0.4); border: 3px solid rgba(13,110,253,0.3);"
                 allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
-                allowfullscreen=true 
+        allowfullscreen=true 
                 width="100%" 
                 height="100%" 
-                fetchpriority="high">
+        fetchpriority="high" 
+        loading="lazy" 
+        title="Vídeo Aula 04: Remover papel de parede no Windows 10">
         </iframe>
     </div>
 
@@ -487,24 +495,26 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
 
 </div>
 
-<button class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula05" aria-expanded="false" aria-controls="aula05">
+<button id="btn-aula05" class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula05" aria-expanded="false" aria-controls="aula05">
     Aula 05 - Tamanho e Cor do Ponteiro do Mouse
 </button>
 
-<div class="collapse mb-4" id="aula05">
+<div class="collapse mb-4" id="aula05" role="region" aria-labelledby="btn-aula05" tabindex="-1">
     <h2 id="tamanho-e-cor-do-ponteiro-do-mouse">
         Tamanho e Cor do Ponteiro do Mouse
     </h2>
 
     <div style="position:relative;padding-top:56.25%;">
-        <iframe id="panda-55f3dc5c-cc13-4e28-8f06-f91757d04f91" 
+    <iframe id="panda-55f3dc5c-cc13-4e28-8f06-f91757d04f91" 
                 src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=55f3dc5c-cc13-4e28-8f06-f91757d04f91" 
                 style="border:none;position:absolute;top:0;left:0;border-radius:15px;box-shadow:0 15px 25px rgba(0,0,0,0.4); border: 3px solid rgba(13,110,253,0.3);"
                 allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
-                allowfullscreen=true 
+        allowfullscreen=true 
                 width="100%" 
                 height="100%" 
-                fetchpriority="high">
+        fetchpriority="high" 
+        loading="lazy" 
+        title="Vídeo Aula 05: Tamanho e cor do ponteiro do mouse">
         </iframe>
     </div>
 
@@ -644,24 +654,26 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
 
 </div>
 
-<button class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula06" aria-expanded="false" aria-controls="aula06">
+<button id="btn-aula06" class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula06" aria-expanded="false" aria-controls="aula06">
     Aula 06 - Leitura Avançada do Microsoft Edge
 </button>
 
-<div class="collapse mb-4" id="aula06">
+<div class="collapse mb-4" id="aula06" role="region" aria-labelledby="btn-aula06" tabindex="-1">
     <h2 id="leitura-avancada-do-microsoft-edge">
         Leitura Avançada do Microsoft Edge
     </h2>
 
     <div style="position:relative;padding-top:56.25%;">
-        <iframe id="panda-480fe5ff-1753-47a4-9910-23dd992e8304" 
+    <iframe id="panda-480fe5ff-1753-47a4-9910-23dd992e8304" 
                 src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=480fe5ff-1753-47a4-9910-23dd992e8304" 
                 style="border:none;position:absolute;top:0;left:0;border-radius:15px;box-shadow:0 15px 25px rgba(0,0,0,0.4); border: 3px solid rgba(13,110,253,0.3);"
                 allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
-                allowfullscreen=true 
+        allowfullscreen=true 
                 width="100%" 
                 height="100%" 
-                fetchpriority="high">
+        fetchpriority="high" 
+        loading="lazy" 
+        title="Vídeo Aula 06: Leitura avançada no Microsoft Edge">
         </iframe>
     </div>
 
@@ -807,11 +819,11 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
 
 </div>
 
-<button class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula07" aria-expanded="false" aria-controls="aula07">
+<button id="btn-aula07" class="btn btn-outline-light w-100 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#aula07" aria-expanded="false" aria-controls="aula07">
     Fim do Curso
 </button>
 
-<div class="collapse mb-4" id="aula07">
+<div class="collapse mb-4" id="aula07" role="region" aria-labelledby="btn-aula07" tabindex="-1">
     <h2>
         Fim do Curso
     </h2>
