@@ -297,7 +297,7 @@ sumario: |
     </ul>
 ---
 
-Este artigo vai apresentar como fazer as configurações iniciais para montar um ambiente de desenvolvimento em **Ruby** usando o **asdf**, um gerenciador de versões universal. Isso inclui a instalação do asdf, configuração do WSL no Windows, instalação do Ruby e preparação do VS Code.
+Neste artigo, vamos configurar o ambiente necessário para começar a programar em **Ruby**, serão configuradas as ferramentas essenciais para o desenvolvimento em Ruby, incluindo o terminal e o gerenciador de versões **asdf**.
 
 <div class="text-center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" aria-hidden="true" class="img-fluid" style="max-height:200px">
