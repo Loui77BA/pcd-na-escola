@@ -2334,7 +2334,7 @@ Ao navegar pelo VS Code com um leitor de telas, você pode usar o marco principa
 
 Essas são algumas das principais teclas de atalho que você pode usar para navegar e interagir com o marco principal do Visual Studio Code. Existem muitas outras teclas de atalho disponíveis no editor, que podem ser usadas para realizar diferentes tarefas, como abrir arquivos, salvar alterações, executar comandos, entre outras operações.
 
-Você pode consultar a documentação oficial do VS Code para obter uma lista completa de atalhos de teclado disponíveis que te interessam. A documentação pode ser encontrada em: <a href="https://code.visualstudio.com/docs/getstarted/keybindings" target="_blank" rel="noopener">https://code.visualstudio.com/docs/getstarted/keybindings</a>.
+Você pode consultar a documentação oficial do VS Code para obter uma lista completa de atalhos de teclado disponíveis que te interessam. A documentação pode ser encontrada em: <a class="text-break" href="https://code.visualstudio.com/docs/getstarted/keybindings" target="_blank" rel="noopener">https://code.visualstudio.com/docs/getstarted/keybindings</a>.
 
 ## Barra de Status {#barra-de-status}
 ---
