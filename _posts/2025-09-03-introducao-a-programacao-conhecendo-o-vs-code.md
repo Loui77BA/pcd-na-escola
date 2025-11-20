@@ -11,57 +11,50 @@ lang: pt-BR
 sumario: |
     <ul class="list-group bg-dark">
         <!-- 1. Apresentação -->
-        <li class="list-group-item bg-dark text-white border-0 position-relative">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#apresentacao">
+        <li class="list-group-item bg-dark text-white border-0">
+            <a href="#apresentacao" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                 <span class="badge bg-secondary">1</span>
                 Apresentação
             </a>
         </li>
 
         <!-- 2. O que faz o VS Code ser tão legal? -->
-        <li class="list-group-item bg-dark text-white border-0 position-relative">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#o-que-faz-o-vs-code-ser-tao-legal">
+        <li class="list-group-item bg-dark text-white border-0">
+            <a href="#o-que-faz-o-vs-code-ser-tao-legal" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                 <span class="badge bg-secondary">2</span>
                 O que faz o VS Code ser tão legal?
             </a>
         </li>
 
         <!-- 3. Por que o VS Code é excelente para começar a programar -->
-        <li class="list-group-item bg-dark text-white border-0 position-relative">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#por-que-o-vs-code-e-excelente-para-comecar">
+        <li class="list-group-item bg-dark text-white border-0">
+            <a href="#por-que-o-vs-code-e-excelente-para-comecar" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                 <span class="badge bg-secondary">3</span>
                 Por que o VS Code é excelente para começar a programar
             </a>
         </li>
 
         <!-- 4. Instalação do VS Code -->
-        <li class="list-group-item bg-dark text-white border-0 position-relative">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#instalacao-do-vs-code">
+        <li class="list-group-item bg-dark text-white border-0">
+            <a href="#instalacao-do-vs-code" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                 <span class="badge bg-secondary">4</span>
                 Instalação do VS Code
             </a>
             <ul class="list-group bg-dark">
-                <li class="list-group-item bg-dark text-white border-0 position-relative">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#windows">
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a href="#windows" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                         <span class="badge bg-secondary">4.1</span>
                         Windows
                     </a>
                 </li>
-                <li class="list-group-item bg-dark text-white border-0 position-relative">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#linux">
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a href="#linux" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                         <span class="badge bg-secondary">4.2</span>
                         Linux
                     </a>
                 </li>
-                <li class="list-group-item bg-dark text-white border-0 position-relative">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#macos">
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a href="#macos" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                         <span class="badge bg-secondary">4.3</span>
                         macOS
                     </a>
@@ -70,87 +63,76 @@ sumario: |
         </li>
 
         <!-- 5. VS Code com leitores de telas -->
-        <li class="list-group-item bg-dark text-white border-0 position-relative">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#vs-code-com-leitores-de-tela">
+        <li class="list-group-item bg-dark text-white border-0">
+            <a href="#vs-code-com-leitores-de-tela" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                 <span class="badge bg-secondary">5</span>
                 VS Code com leitores de telas
             </a>
         </li>
 
         <!-- 6. Primeira vez abrindo o VS Code com NVDA -->
-        <li class="list-group-item bg-dark text-white border-0 position-relative">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#primeira-vez-abrindo-o-vs-code-com-nvda">
+        <li class="list-group-item bg-dark text-white border-0">
+            <a href="#primeira-vez-abrindo-o-vs-code-com-nvda" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                 <span class="badge bg-secondary">6</span>
                 Primeira vez abrindo o VS Code com NVDA
             </a>
         </li>
 
         <!-- 7. Navegação básica no VS Code com NVDA -->
-        <li class="list-group-item bg-dark text-white border-0 position-relative">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#navegacao-basica-no-vs-code-com-nvda">
+        <li class="list-group-item bg-dark text-white border-0">
+            <a href="#navegacao-basica-no-vs-code-com-nvda" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                 <span class="badge bg-secondary">7</span>
                 Navegação básica no VS Code com NVDA
             </a>
         </li>
 
         <!-- 8. Acessando menus no VS Code com NVDA -->
-        <li class="list-group-item bg-dark text-white border-0 position-relative">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#acessando-menus-no-vs-code-com-nvda">
+        <li class="list-group-item bg-dark text-white border-0">
+            <a href="#acessando-menus-no-vs-code-com-nvda" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                 <span class="badge bg-secondary">8</span>
                 Acessando menus no VS Code com NVDA
             </a>
         </li>
 
         <!-- 9. Barra de Atividades -->
-        <li class="list-group-item bg-dark text-white border-0 position-relative">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#barra-atividades">
+        <li class="list-group-item bg-dark text-white border-0">
+            <a href="#barra-atividades" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                 <span class="badge bg-secondary">9</span>
                 Barra de Atividades
             </a>
             <ul class="list-group bg-dark">
-                <li class="list-group-item bg-dark text-white border-0 position-relative">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#explorador-arquivos">
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a href="#explorador-arquivos" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                         <span class="badge bg-secondary">9.1</span>
                         Explorador de arquivos
                     </a>
                 </li>
-                <li class="list-group-item bg-dark text-white border-0 position-relative">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#buscar">
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a href="#buscar" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                         <span class="badge bg-secondary">9.2</span>
                         Buscar
                     </a>
                 </li>
-                <li class="list-group-item bg-dark text-white border-0 position-relative">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#controle-versao-git">
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a href="#controle-versao-git" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                         <span class="badge bg-secondary">9.3</span>
                         Controle de Versão (Git)
                     </a>
                 </li>
-                <li class="list-group-item bg-dark text-white border-0 position-relative">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#debugging">
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a href="#debugging" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                         <span class="badge bg-secondary">9.4</span>
                         Depuração
                     </a>
                 </li>
-                <li class="list-group-item bg-dark text-white border-0 position-relative">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#extensoes">
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a href="#extensoes" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                         <span class="badge bg-secondary">9.5</span>
                         Extensões
                     </a>
                 </li>
-                <li class="list-group-item bg-dark text-white border-0 position-relative">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#github-copilot">
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a href="#github-copilot" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                         <span class="badge bg-secondary">9.6</span>
                         GitHub Copilot (se disponível)
                     </a>
@@ -159,23 +141,20 @@ sumario: |
         </li>
 
         <!-- 10. Principal marco -->
-        <li class="list-group-item bg-dark text-white border-0 position-relative">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#principal-marco">
+        <li class="list-group-item bg-dark text-white border-0">
+            <a href="#principal-marco" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                 <span class="badge bg-secondary">10</span>
                 Principal marco
             </a>
             <ul class="list-group bg-dark">
-                <li class="list-group-item bg-dark text-white border-0 position-relative">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#componentes-do-marco-principal">
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a href="#componentes-do-marco-principal" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                         <span class="badge bg-secondary">10.1</span>
                         Componentes do Marco Principal
                     </a>
                 </li>
-                <li class="list-group-item bg-dark text-white border-0 position-relative">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#navegacao-e-interacao-com-o-marco-principal">
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a href="#navegacao-e-interacao-com-o-marco-principal" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                         <span class="badge bg-secondary">10.2</span>
                         Navegação e Interação com o Marco Principal
                     </a>
@@ -184,23 +163,20 @@ sumario: |
         </li>
 
         <!-- 11. Barra de Status -->
-        <li class="list-group-item bg-dark text-white border-0 position-relative">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#barra-de-status">
+        <li class="list-group-item bg-dark text-white border-0">
+            <a href="#barra-de-status" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                 <span class="badge bg-secondary">11</span>
                 Barra de Status
             </a>
             <ul class="list-group bg-dark">
-                <li class="list-group-item bg-dark text-white border-0 position-relative">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#componentes-da-barra-de-status">
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a href="#componentes-da-barra-de-status" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                         <span class="badge bg-secondary">11.1</span>
                         Componentes da Barra de Status
                     </a>
                 </li>
-                <li class="list-group-item bg-dark text-white border-0 position-relative">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#navegacao-e-interacao-com-a-barra-de-status">
+                <li class="list-group-item bg-dark text-white border-0">
+                    <a href="#navegacao-e-interacao-com-a-barra-de-status" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                         <span class="badge bg-secondary">11.2</span>
                         Navegação e Interação com a Barra de Status
                     </a>
@@ -209,45 +185,40 @@ sumario: |
         </li>
 
         <!-- 12. Criando um novo arquivo no VS Code -->
-        <li class="list-group-item bg-dark text-white border-0 position-relative">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#criando-um-novo-arquivo-no-vs-code">
+        <li class="list-group-item bg-dark text-white border-0">
+            <a href="#criando-um-novo-arquivo-no-vs-code" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                 <span class="badge bg-secondary">12</span>
                 Criando um novo arquivo no VS Code
             </a>
         </li>
 
         <!-- 13. Navegando pelo código-fonte com o NVDA -->
-        <li class="list-group-item bg-dark text-white border-0 position-relative">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#navegando-pelo-codigo-fonte-com-o-nvda">
+        <li class="list-group-item bg-dark text-white border-0">
+            <a href="#navegando-pelo-codigo-fonte-com-o-nvda" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                 <span class="badge bg-secondary">13</span>
                 Navegando pelo código-fonte com o NVDA
             </a>
         </li>
 
         <!-- 14. Terminais integrados -->
-        <li class="list-group-item bg-dark text-white border-0 position-relative">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#terminais-integrados">
+        <li class="list-group-item bg-dark text-white border-0">
+            <a href="#terminais-integrados" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                 <span class="badge bg-secondary">14</span>
                 Terminais integrados
             </a>
         </li>
 
         <!-- 15. Extensões -->
-        <li class="list-group-item bg-dark text-white border-0 position-relative">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#extensoes">
+        <li class="list-group-item bg-dark text-white border-0">
+            <a href="#extensoes" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                 <span class="badge bg-secondary">15</span>
                 Extensões
             </a>
         </li>
 
         <!-- 16. Resumo -->
-        <li class="list-group-item bg-dark text-white border-0 position-relative">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#resumo">
+        <li class="list-group-item bg-dark text-white border-0">
+            <a href="#resumo" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
                 <span class="badge bg-secondary">16</span>
                 Resumo
             </a>
