@@ -2,7 +2,7 @@
 layout: post
 title: "Introdução à Programação: Entrada e Saída de Dados em Ruby"
 description: "Neste artigo vamos conhecer as maneiras que existem para inserir e capturar dados em Ruby usando comandos como puts, gets e outros conceitos que já conhecemos."
-date: 2025-09-20 10:00:00 -0300
+date: 2025-09-19 10:00:00 -0300
 author: Louise Suelen
 categories: [Programação]
 tags: [programação, tecnologia]
