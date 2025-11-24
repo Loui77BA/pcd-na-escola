@@ -239,7 +239,7 @@ sumario: |
 <p>Com o tempo, mais pessoas passaram a usar computadores, e a internet se popularizou. Isso fez com que os softwares precisassem ficar mais completos, com mais funções, bonitos, rápidos e capazes de atender milhares ou até milhões de pessoas ao mesmo tempo. Ou seja, os programas começaram a ficar bem mais complexos.</p>
 
 {% include figure.html 
-    src="https://i.ytimg.com/vi/SDmTLcksD-Y/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AH8BIAC4AOKAgwIABABGGUgWyhHMA8=&rs=AOn4CLARCrPa9yI4xlVpwuQuXZpEDBVcCg"
+    src="https://i.ytimg.com/vi/WDK24SwJd98/maxresdefault.jpg"
     alt="Computador de mesa antigo com monitor de tubo, teclado e mouse. Na tela, o sistema operacional Windows XP."
     caption="Computador de mesa antigo com monitor de tubo e Windows XP."
 %}
