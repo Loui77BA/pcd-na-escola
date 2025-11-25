@@ -92,10 +92,10 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                         <span class="d-block mt-2 text-white">— Mary Pat Rabanaugh</span>
                     </p>
                     <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                        <a class="btn btn-primary-gradient btn-lg px-4 py-3 rounded-pill" href="#target-audiences" role="button">
+                        <a class="btn btn-primary-gradient btn-lg px-4 py-3 rounded-pill" href="#target-audiences" role="button" aria-label="Saiba mais sobre os públicos que queremos alcançar">
                             <i class="material-icons align-middle me-2">explore</i>Saiba mais
                         </a>
-                        <a class="btn btn-outline-custom btn-lg px-4 py-3 rounded-pill" href="/contato" role="button">
+                        <a class="btn btn-outline-custom btn-lg px-4 py-3 rounded-pill" href="/contato" role="button" aria-label="Ir para a página de contato">
                             <i class="material-icons align-middle me-2">mail_outline</i>Contato
                         </a>
                     </div>
