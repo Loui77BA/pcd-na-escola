@@ -214,7 +214,6 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
         <div class="row gx-5 align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <h2 id="challenges" class="fw-bold mb-4">
-                    <span class="d-block text-gradient text-uppercase mb-2" style="font-size: 0.875rem; letter-spacing: 2px;">O que enfrentamos</span>
                     <span class="h3">Desafios na Educação</span>
                 </h2>
                 <p class="text-white-50 mb-4">
@@ -228,15 +227,14 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
             </div>
             <div class="col-lg-6">
                 <div style="border-radius: 8px; overflow: hidden;">
-                    <div style="position:relative;padding-top:56.25%;">
-                        <iframe id="panda-25f13c60-bac7-45a9-be54-d519419335b7" 
-                                src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=25f13c60-bac7-45a9-be54-d519419335b7" 
-                                style="border:none;position:absolute;top:0;left:0;width:100%;height:100%;" 
-                                allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
-                                allowfullscreen=true 
-                                fetchpriority="high"
-                                title="Vídeo sobre desafios na educação">
-                        </iframe>
+                    <div style="position: relative; padding-top: 56.25%;">
+                        <iframe
+                            src="https://customer-n8imyf4ea5hvxexl.cloudflarestream.com/b5ec1881b528d8c92b827c5a27862d3c/iframe?poster=https%3A%2F%2Fimagedelivery.net%2FRuw4waFkOelbXULIoE-oQg%2F89dd155d-aea0-4c79-3eec-e91b10fac400%2Fpublic"
+                            loading="lazy"
+                            style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+                            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+                            allowfullscreen="true"
+                        ></iframe>
                     </div>
                 </div>
             </div>
@@ -247,7 +245,6 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
 <section class="py-5" role="region" aria-labelledby="principles">
     <div class="container px-5">
         <h2 id="principles" class="fw-bold mb-5 text-center">
-            <span class="d-block text-gradient text-uppercase mb-2" style="font-size: 0.875rem; letter-spacing: 2px;">Nossos valores</span>
             <span class="display-5">Princípios</span>
         </h2>
         <div class="row gx-4 justify-content-center">
