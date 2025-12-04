@@ -11,6 +11,9 @@ tags: ["Acessibilidade", "Windows 10", "Baixa Visão"]
 
 
 <main>
+  <div class="text-center mb-4">
+    <i class="bi bi-eye-fill icon-page-header" style="font-size: 4rem; color: var(--accent-color);" aria-hidden="true"></i>
+  </div>
   <h1 class="section-title" id="course-title">Configurações do Windows 10 para Pessoas com Baixa Visão</h1>
   
   <ul class="video-list" id="video-list" aria-labelledby="course-title">

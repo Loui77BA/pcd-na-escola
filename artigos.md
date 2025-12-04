@@ -197,7 +197,7 @@ description: "Artigos sobre educação, tecnologia e acessibilidade no PcD na Es
       <span class="text-gradient">Biblioteca de Artigos</span>
     </h1>
     <p class="lead" style="color: var(--text-muted); max-width: 700px;">
-      Explore nossos artigos sobre educação inclusiva, inovações tecnológicas e recursos de acessibilidade. Navegue pelas categorias abaixo.
+      Explore nossos artigos sobre tecnologia, programação, educação inclusiva e acessibilidade. Utilize os filtros abaixo para encontrar o conteúdo ideal para você.
     </p>
   </header>
   
@@ -207,12 +207,15 @@ description: "Artigos sobre educação, tecnologia e acessibilidade no PcD na Es
     </h2>
     <ul class="nav-pills-custom" role="list">
       {% for category in site.categories %}
+      {% assign count = category[1].size %}
       <li>
         <a href="#categoria-{{ category[0] | slugify }}" 
            class="btn-category"
-           aria-label="Ir para seção {{ category[0] | capitalize }}">
+           aria-label="Ir para seção {{ category[0] | capitalize }}, que contém {{ count }} artigo{% if count != 1 %}s{% endif %}">
            {{ category[0] | capitalize }}
-           <span class="badge-count">{{ category[1].size }}</span>
+           <span class="badge-count">
+             {{ count }} artigo{% if count != 1 %}s{% endif %}
+           </span>
         </a>
       </li>
       {% endfor %}

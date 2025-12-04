@@ -206,20 +206,25 @@ permalink: /cursos/
         <button type="button" 
            class="btn-filter active category-trigger" 
            data-category="all"
-           aria-pressed="true">
+           aria-pressed="true"
+           aria-label="Mostrar todos os cursos">
            Todos os cursos
         </button>
       </li>
 
       {% assign grouped = site.courses | group_by: 'category' %}
       {% for group in grouped %}
+      {% assign count = group.items | size %}
       <li>
         <button type="button" 
            class="btn-filter category-trigger" 
            data-category="{{ group.name | slugify }}"
-           aria-pressed="false">
+           aria-pressed="false"
+           aria-label="Filtrar por {{ group.name | capitalize }}, {{ count }} curso{% if count != 1 %}s{% endif %}">
            {{ group.name | capitalize }}
-           <span class="badge-count">{{ group.items | size }}</span>
+           <span class="badge-count">
+             {{ count }} curso{% if count != 1 %}s{% endif %}
+           </span>
         </button>
       </li>
       {% endfor %}
