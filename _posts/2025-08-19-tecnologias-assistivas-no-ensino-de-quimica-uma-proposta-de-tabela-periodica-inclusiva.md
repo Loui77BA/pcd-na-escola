@@ -342,7 +342,7 @@ Segundo Reis (2015, p. 28), a deficiência visual pode ser entendida como “um 
 
 De acordo com Reis (2015, p. 28), a deficiência visual é avaliada a partir de duas medidas oftalmológicas: acuidade visual (capacidade de enxergar a uma determinada distância) e campo visual (área alcançada pela visão).
 
-<div class="text-center">
+<div class="text-center mb-4">
         <figcaption>Figura 1: Representação visual dos dois principais parâmetros oftalmológicos para avaliação visual.</figcaption>
 
         <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/db43e9f5-7daa-4214-f8ff-9282daaff900/public" class="img-fluid" alt="Ilustração explicando os conceitos de acuidade visual e campo visual. Na parte superior, uma cabeça de perfil olhando para uma tabela de exame visual com letras decrescentes, representando a acuidade visual. Na parte inferior, outra cabeça de perfil com um cone triangular saindo dos olhos, mostrando a área de visão que alcança uma árvore, representando o campo visual." />
@@ -515,7 +515,7 @@ Diversas propriedades químicas seguem padrões ao longo da tabela, facilitando 
 
 O raio atômico, definido pela distância entre o núcleo e a camada mais externa de elétrons, corresponde ao tamanho do átomo e apresenta variação sistemática conforme a posição do elemento na tabela.
 
-<div class="text-center">
+<div class="text-center mb-4">
     <figcaption>Figura 2: Variação das propriedades periódicas na tabela periódica.</figcaption>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Periodic_trends_-_pt_edition.svg/600px-Periodic_trends_-_pt_edition.svg.png" class="img-fluid" alt="Diagrama mostrando as tendências periódicas da tabela periódica." />
     <figcaption>Fonte: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Periodic_trends_-_pt_edition.svg/600px-Periodic_trends_-_pt_edition.svg.png" target="_blank">https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Periodic_trends_-_pt_edition.svg/600px-Periodic_trends_-_pt_edition.svg.png</a></figcaption>
@@ -668,7 +668,7 @@ O texto alternativo constitui uma descrição textual associada a elementos imag
 
 No contexto do ensino de Química, representações gráficas de estruturas moleculares podem ser complementadas com textos alternativos que detalham sua composição, como no exemplo:
 
-<div class="text-center">
+<div class="text-center mb-4">
     <figcaption>Figura 3: Estrutura molecular do benzeno.</figcaption>
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/dde96d0f-0607-4ab3-d3ec-51f9825b0300/public" class="img-fluid shadow" alt="Estrutura molecular do benzeno (C6H6), representada por um hexágono regular com seis átomos de carbono nos vértices. Cada carbono está conectado aos adjacentes por ligações alternadas entre simples (linha contínua) e duplas (linha tracejada), formando um sistema de elétrons deslocalizados. Cada carbono também está ligado a um átomo de hidrogênio que aponta para fora do hexágono." />
     <figcaption>Fonte: <a href="https://upload.wikimedia.org/wikipedia/commons/2/23/Benzene-2D-flat.png" target="_blank">https://upload.wikimedia.org/wikipedia/commons/2/23/Benzene-2D-flat.png</a></figcaption>
@@ -883,7 +883,7 @@ Profissionais com deficiência visual especializados em acessibilidade digital, 
 
 A metodologia aplicada resultou em uma ferramenta que demonstra a viabilidade técnica e pedagógica de tornar conteúdos científicos complexos mais acessíveis.
 
-<div class="text-center">
+<div class="text-center mb-4">
     <figcaption>Figura 4: Botões de controle para alternar entre os modos de visualização da tabela periódica (visualização por períodos, grupos e categorias).</figcaption>
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fa712b1a-0440-4eb2-911f-c2d6b1ad5c00/public" aria-hidden="true" class="img-fluid" />
     <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
@@ -894,7 +894,7 @@ A metodologia aplicada resultou em uma ferramenta que demonstra a viabilidade t�
 
 Os elementos são dispostos em seções que correspondem aos períodos (linhas horizontais da tabela), o que fragmenta a tabela em partes menores e mais gerenciáveis — ideal para telas de smartphones, onde o conteúdo é apresentado verticalmente.
 
-<div class="text-center">
+<div class="text-center mb-4">
     <figcaption>Figura 5: Demonstração da visualização por períodos, com elementos agrupados em seções correspondentes a cada linha da tabela.</figcaption>
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6f7c129b-9d6e-4a40-d20b-7cbb1d7bdb00/public" aria-hidden="true" class="img-fluid" />
     <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
@@ -905,7 +905,7 @@ Os elementos são dispostos em seções que correspondem aos períodos (linhas h
 
 Os elementos são organizados por grupos (colunas verticais), permitindo ao usuário explorar os elementos por propriedades químicas semelhantes. Essa forma de navegação também é mais amigável para telas pequenas.
 
-<div class="text-center">
+<div class="text-center mb-4">
     <figcaption>Figura 6: Demonstração da visualização por grupos, com elementos organizados em colunas.</figcaption>
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/550b29eb-4641-4cb6-59b9-6d4c77df1000/public" aria-hidden="true" class="img-fluid" />
     <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
@@ -929,15 +929,15 @@ Na categoria "Não Metais", estão agrupados os Não Metais propriamente ditos, 
 
 Essa organização permite ao usuário explorar a tabela periódica de forma mais didática, compreendendo as relações entre os elementos e suas classificações químicas.
 
-<div class="text-center">
+<div class="text-center mb-4">
     <figcaption>Figura 7: Exemplo da categoria "Semimetais" na visualização por categorias.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/550b29eb-4641-4cb6-59b9-6d4c77df1000/public" aria-hidden="true" class="img-fluid" />
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/00bf013e-2494-4376-ba30-04a57a056c00/public" aria-hidden="true" class="img-fluid" />
     <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
 </div>
 
-<div class="text-center">
+<div class="text-center mb-4">
     <figcaption>Figura 8: Exemplo da categoria "Não Metais" na visualização por categorias.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/550b29eb-4641-4cb6-59b9-6d4c77df1000/public" aria-hidden="true" class="img-fluid" />
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/74c6cb47-115f-4972-7e14-266316dd8600/public" aria-hidden="true" class="img-fluid" />
     <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
 </div>
 
@@ -948,33 +948,33 @@ Essa abordagem, que utiliza botões e seções menores, é fundamental para gara
 
 Há um painel de controle fixo na parte superior da janela, onde é possível alternar entre as visualizações por períodos, grupos e categorias, além de ativar ou desativar as cores na tabela.
 
-<div class="text-center">
+<div class="text-center mb-4">
     <figcaption>Figura 9: Painel de controle da tabela periódica, com opções para alternar visualizações e ativar/desativar cores.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fa712b1a-0440-4eb2-911f-c2d6b1ad5c00/public" aria-hidden="true" class="img-fluid" />
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/afcad38c-2abe-484b-6d3e-942882041c00/public" aria-hidden="true" class="img-fluid" />
     <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
 </div>
 
 Quando a visualização por períodos está ativada, o painel exibe uma seção chamada "Navegue pelos períodos da tabela", com botões para cada um dos 7 períodos, além dos botões para lantanídeos e actinídeos. Ao pressionar um desses botões, o usuário é direcionado diretamente para a seção correspondente na página.
 
-<div class="text-center">
+<div class="text-center mb-4">
     <figcaption>Figura 10: Painel de navegação por períodos, com botões para cada período, lantanídeos e actinídeos.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fa712b1a-0440-4eb2-911f-c2d6b1ad5c00/public" aria-hidden="true" class="img-fluid" />
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/08252ef4-b9e3-4c16-73c0-491563db6c00/public" aria-hidden="true" class="img-fluid" />
     <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
 </div>
 
 Na visualização por grupos, o painel exibe a seção "Navegue pelos grupos da tabela", com botões para cada um dos 18 grupos, além dos botões para lantanídeos e actinídeos. Ao pressionar um desses botões, o usuário é levado diretamente à seção correspondente.
 
-<div class="text-center">
+<div class="text-center mb-4">
     <figcaption>Figura 11: Painel de navegação por grupos, com botões para os 18 grupos, lantanídeos e actinídeos.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fa712b1a-0440-4eb2-911f-c2d6b1ad5c00/public" aria-hidden="true" class="img-fluid" />
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/dee30e7b-9132-4219-ab2d-07521b680600/public" aria-hidden="true" class="img-fluid" />
     <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
 </div>
 
 Na visualização por categorias, o painel exibe a seção "Navegue pelas categorias da tabela", com botões organizados hierarquicamente pelas quatro grandes categorias: Metais (com subcategorias como Alcalinos, Alcalinoterrosos, Transição etc.), Semimetais, Não Metais (incluindo Halogênios e Gases Nobres) e Outros (Hidrogênio). Ao pressionar um desses botões, o usuário é direcionado para a categoria ou subcategoria correspondente, facilitando a navegação por tipo de elemento químico.
 
-<div class="text-center">
-    <figcaption>Figura 12: Painel de navegação por categorias, com botões hierárquicos para cada tipo de elemento.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fa712b1a-0440-4eb2-911f-c2d6b1ad5c00/public" aria-hidden="true" class="img-fluid" />
+<div class="text-center mb-4">
+    <figcaption>Figura 12: Painel de navegação por categorias, com botões organizados hierarquicamente.</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/a6cf2451-92d0-4f8e-b17b-1d10bfae7000/public" aria-hidden="true" class="img-fluid" />
     <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
 </div>
 
@@ -983,9 +983,11 @@ Na visualização por categorias, o painel exibe a seção "Navegue pelas catego
 
 Cada elemento químico é apresentado em um cartão individual, exibindo informações essenciais como símbolo, nome e posição na tabela (período e coluna).
 
-<div class="text-center">
-    <figcaption>Figura 13: Cartão interativo de um elemento químico, exibindo informações essenciais.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fa712b1a-0440-4eb2-911f-c2d6b1ad5c00/public" aria-hidden="true" class="img-fluid" />
+<div class="text-center mb-4">
+    <figcaption>Figura 13: Cartão interativo do elemento Boro</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/22f300fb-5e4d-45ea-3131-3f47f6848d00/public" aria-hidden="true" class="img-fluid" />
+    <figcaption class="visually-hidden">Exemplo de cartão de elemento químico. O cartão é um quadrado com bordas arredondadas. O elemento do exemplo é o Boro, no cartão está sendo exibido o símbolo (B), o nome (Boro), o período (2) e a coluna (13) que é onde ele está localizado na tabela periódica.
+    </figcaption>
     <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
 </div>
 
@@ -1024,17 +1026,20 @@ A janela <em>modal</em> de cada elemento apresenta as seguintes informações:
 
   - <strong>Visual</strong>: Um diagrama ilustrativo mostrando o núcleo do átomo no centro e as camadas eletrônicas ao redor, com os elétrons distribuídos em suas respectivas posições. Essa representação visual auxilia quem enxerga a compreender espacialmente a organização dos elétrons.
 
-<div class="text-center">
+<div class="text-center mb-4">
     <figcaption>Figura 14: Representação visual da distribuição eletrônica do Hidrogênio.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fa712b1a-0440-4eb2-911f-c2d6b1ad5c00/public" aria-hidden="true" class="img-fluid" />
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c7c023b7-c298-4a7a-772f-9005930f1100/public" aria-hidden="true" class="img-fluid" />
     <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
 </div>
 
   - <strong>Linear (textual)</strong>: A notação científica padrão da distribuição eletrônica, apresentada em formato de texto sequencial. Exemplo: Camada 1: 1s¹. A leitura dessa notação é direta, sequencial e construída usando atributos <em>ARIA</em> para garantir que leitores de tela anunciem corretamente cada parte da configuração eletrônica.
 
-<div class="text-center">
+<div class="text-center mb-4">
     <figcaption>Figura 15: Modal de detalhes do elemento, exibindo informações completas e acessíveis.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fa712b1a-0440-4eb2-911f-c2d6b1ad5c00/public" aria-hidden="true" class="img-fluid" />
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6dc29fb6-d403-40e4-1dea-0017e6efd300/public" aria-hidden="true" class="img-fluid" />
+    <figcaption class="visually-hidden">
+        A imagem mostra uma janela pop-up de informações para o elemento Boro símbolo B. A janela exibe o símbolo B, o número atômico 5 e uma ilustração de equipamentos esportivos, raquetes e bola que representam o uso do Boro no dia a dia. As informações listadas são Grupo que é Semimetal; Símbolo: B; Número atômico: 5; Número de massa: 10,81. Abaixo, há um diagrama de distribuição eletrônica com duas camadas K e L, mostrando o núcleo e os elétrons, e o detalhamento das subcamadas: Camada 1 subnível s 2 elétrons., camada 2 subnível s 2 elétrons e ainda na camada 2 subnível p 1 elétron.
+    </figcaption>
     <figcaption>Fonte: Elaborada pelas autoras.</figcaption>
 </div>
 
