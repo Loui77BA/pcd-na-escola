@@ -518,7 +518,7 @@ O raio atômico, definido pela distância entre o núcleo e a camada mais extern
 <div class="text-center mb-4">
     <figcaption>Figura 2: Variação das propriedades periódicas na tabela periódica.</figcaption>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Periodic_trends_-_pt_edition.svg/600px-Periodic_trends_-_pt_edition.svg.png" class="img-fluid" alt="Diagrama mostrando as tendências periódicas da tabela periódica." />
-    <figcaption>Fonte: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Periodic_trends_-_pt_edition.svg/600px-Periodic_trends_-_pt_edition.svg.png" target="_blank">https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Periodic_trends_-_pt_edition.svg/600px-Periodic_trends_-_pt_edition.svg.png</a></figcaption>
+    <figcaption>Fonte: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Periodic_trends_-_pt_edition.svg/600px-Periodic_trends_-_pt_edition.svg.png" target="_blank" rel="noopener noreferrer" class="text-break d-inline-block mw-100">https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Periodic_trends_-_pt_edition.svg/600px-Periodic_trends_-_pt_edition.svg.png</a></figcaption>
 </div>
 <div class="sr-only">
     <p>Descrição detalhada da imagem: A imagem mostra a tabela periódica dos elementos em forma de retângulo dividido em pequenos quadrados (cada um representando um elemento químico). Sobre essa tabela, há setas coloridas que indicam como algumas propriedades periódicas variam de acordo com a posição dos elementos.</p>
