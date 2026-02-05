@@ -16,6 +16,10 @@ end
 # Compatibilidade com Ruby 3.4+
 gem "csv"
 gem "base64"
+gem "bigdecimal"
+
+# Força o uso do sassc ao invés do sass-embedded para evitar problemas com google-protobuf no Ruby 4
+gem "jekyll-sass-converter", "~> 2.0"
 
 # Suporte para plataformas Windows e JRuby
 platforms :mingw, :x64_mingw, :mswin, :jruby do

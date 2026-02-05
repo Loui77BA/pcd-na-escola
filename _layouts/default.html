@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title | default: site.title }} - {{ site.title }}</title>
 
     <!-- Paleta visual -->
@@ -11,13 +11,16 @@
     <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
     <link rel="apple-touch-icon-precomposed" href="{{ '/assets/images/apple-touch-icon-precomposed.png' | relative_url }}">
     <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
-    <meta name="theme-color" content="#18181d" />
-    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#18181d">
+    <meta name="color-scheme" content="dark">
 
     <!-- Material Symbols + Bootstrap Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/a11y-toolbar.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
   </head>
   <body id="topo" class="d-flex flex-column h-100">
     {% include navbar.html %}
@@ -56,7 +59,7 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
       });
     </script>
-    <script type="text/javascript" async
+    <script async
       src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
     <script type="text/x-mathjax-config">
@@ -70,176 +73,14 @@
     </script>
     
     <!-- A11y Toolbar – começo -->
-    <style>
-      .a11y-toolbar {
-        position: fixed;
-        right: 15px;
-        top: 25%;
-        z-index: 2147483646;
-        background: #0b0b0b;
-        border-radius: 12px;
-        box-shadow: 0 8px 24px rgba(0,0,0,.35);
-        display: flex;
-        flex-direction: column;
-        gap: .5rem;
-        padding: .8rem;
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-        transform: translateX(100%);
-      }
-      .a11y-toolbar.active {
-        visibility: visible;
-        opacity: 1;
-        pointer-events: all;
-        transform: translateX(0);
-      }
-      .a11y-toolbar button {
-        border: 0;
-        border-radius: .5rem;
-        padding: .6rem .8rem;
-        background: #151515;
-        color: #e8e8e8;
-        font: 600 15px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-        cursor: pointer;
-        text-align: left;
-        min-width: 14rem;
-        transition: all 0.2s ease;
-      }
-      .a11y-toolbar button:hover {
-        background: #2c2c2c;
-        transform: translateX(-3px);
-      }
-      .a11y-toolbar button:focus {
-        outline: 3px solid #77b2ff;
-        outline-offset: 2px;
-      }
-      .a11y-toolbar button[aria-pressed="true"] {
-        background: #1a237e;
-        color: #ffffff;
-      }
-      .a11y-toolbar .a11y-title {
-        font-weight: 700;
-        color: #fff;
-        margin: .25rem .25rem .7rem .25rem;
-        font-size: 16px;
-      }
-      @media (prefers-reduced-motion: no-preference) {
-        .a11y-toolbar {
-          transition: all .3s ease;
-        }
-      }
-      
-      /* Ajustes responsivos para a toolbar */
-      @media (max-width: 767px) {
-        .a11y-toolbar {
-          top: 40%;
-          max-width: 85vw;
-        }
-        .a11y-toolbar button {
-          min-width: unset;
-          width: 100%;
-          max-width: 260px;
-        }
-      }
-      /* Estados aplicados no documento */
-      html[data-a11y-fontscale] {
-        font-size: calc(100% * var(--a11y-fontscale, 1));
-      }
-      html.a11y-grayscale {
-        filter: grayscale(1);
-      }
-      html.a11y-negative {
-        filter: invert(1) hue-rotate(180deg);
-      }
-      /* Alto contraste (preto/branco) – tentativa ampla e segura */
-      body.a11y-contrast, body.a11y-contrast *:not(svg,svg *) {
-        background-color: #000 !important;
-        color: #fff !important;
-        border-color: #fff !important;
-      }
-      body.a11y-contrast a {
-        color: #0ff !important;
-        text-decoration: underline !important;
-      }
-      /* Links sublinhados */
-      body.a11y-underline a {
-        text-decoration: underline !important;
-      }
-      /* Fonte legível (ajuste aqui a fonte preferida do seu projeto) */
-      body.a11y-readable {
-        font-family: Arial, Helvetica, "Segoe UI", system-ui, -apple-system, sans-serif !important;
-      }
-      /* Botão dobrar/abrir */
-      .a11y-toggle {
-        position: fixed;
-        right: 15px;
-        /* top definido via JavaScript para alinhar abaixo do VLibras */
-        z-index: 2147483647;
-        background: #041d47; /* Cor ainda mais escura para maior contraste */
-        color: #ffffff;
-        border: 1.5px solid #ffffff;
-        border-radius: 10px;
-        padding: .45rem;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-        transition: all 0.3s ease;
-      }
-      .a11y-toggle:hover {
-        background: #062e66;
-        transform: translateX(-5px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-        border: 1.5px solid #ffffff;
-      }
-      .a11y-toggle:focus {
-        outline: 3px solid #77b2ff;
-        outline-offset: 2px;
-      }
-      .a11y-toggle .material-symbols-outlined {
-        font-size: 21px;
-        transition: transform 0.3s ease;
-      }
-      .a11y-toggle:hover .material-symbols-outlined {
-        transform: scale(1.1);
-      }
-      
-      /* Ajuste de posicionamento responsivo */
-      @media (max-width: 767px) {
-        .a11y-toggle {
-          /* top definido via JavaScript para alinhar abaixo do VLibras */
-          right: 15px;
-          width: 36px;
-          height: 36px;
-        }
-        .a11y-toggle .material-symbols-outlined {
-          font-size: 19px;
-        }
-      }
-      /* Região só para leitores de tela */
-      .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0,0,0,0);
-        white-space: nowrap;
-        border: 0;
-      }
-    </style>
+    <!-- CSS movido para assets/css/a11y-toolbar.css -->
 
     <button id="a11yToggle" class="a11y-toggle" aria-controls="a11yToolbar" aria-expanded="false" aria-hidden="true">
       <span class="material-symbols-outlined" aria-hidden="true">accessibility_new</span>
       <span class="sr-only">Opções de acessibilidade</span>
     </button>
 
-    <nav id="a11yToolbar" class="a11y-toolbar" role="region" aria-label="Ferramentas de acessibilidade" aria-hidden="true">
+    <nav id="a11yToolbar" class="a11y-toolbar" aria-label="Ferramentas de acessibilidade" aria-hidden="true">
       <div class="a11y-title">Ferramentas</div>
       <button type="button" id="a11yInc" aria-label="Aumentar tamanho do texto">🔍 Aumentar texto</button>
       <button type="button" id="a11yDec" aria-label="Diminuir tamanho do texto">🔎 Diminuir texto</button>

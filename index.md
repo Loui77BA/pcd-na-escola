@@ -4,153 +4,9 @@ title: "Página Inicial"
 permalink: /
 description: "O PcD na Escola é um projeto que visa promover a educação e tecnologia para todas as pessoas, com foco na acessibilidade e inclusão de pessoas com deficiência."
 ---
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<style>
-  /* --- Variáveis de Design (Dark Mode Moderno) --- */
-  :root {
-    --bg-body: #121214;        /* Fundo principal (quase preto) */
-    --bg-card: #202024;        /* Fundo dos cartões (cinza escuro) */
-    --bg-hover: #29292e;       /* Fundo ao passar o mouse */
-    --primary: #8257e5;        /* Roxo principal */
-    --primary-dark: #6c4ed9;   /* Roxo escuro para gradiente */
-    --text-main: #e1e1e6;      /* Texto principal (off-white) */
-    --text-muted: #a8a8b3;     /* Texto secundário (cinza claro) */
-    --focus-color: #ffd700;    /* Amarelo Ouro para foco acessível */
-    --transition: all 0.3s ease;
-  }
 
-  /* --- Estilos Globais --- */
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--bg-body);
-    color: var(--text-main);
-    line-height: 1.6;
-  }
 
-  /* Foco visível para navegação por teclado (Acessibilidade Crítica) */
-  a:focus-visible, button:focus-visible, .btn:focus-visible {
-    outline: 3px solid var(--focus-color) !important;
-    outline-offset: 3px;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
-    border-radius: 4px;
-    z-index: 10;
-  }
-
-  /* --- Tipografia --- */
-  h1, h2, h3, h4 {
-    color: #ffffff;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-  }
-
-  .text-gradient {
-    background: linear-gradient(90deg, #996DFF, #8257e5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    /* Fallback para alto contraste */
-    color: var(--primary); 
-  }
-
-  /* --- Botões --- */
-  .btn-primary-custom {
-    background: var(--primary);
-    border: 2px solid var(--primary);
-    color: #fff;
-    font-weight: 600;
-    transition: var(--transition);
-  }
-  
-  .btn-primary-custom:hover {
-    background: var(--primary-dark);
-    border-color: var(--primary-dark);
-    transform: translateY(-3px);
-    box-shadow: 0 4px 20px rgba(130, 87, 229, 0.4);
-    color: #fff;
-  }
-
-  .btn-outline-custom {
-    background: transparent;
-    border: 2px solid #323238;
-    color: var(--text-main);
-    font-weight: 600;
-    transition: var(--transition);
-  }
-
-  .btn-outline-custom:hover {
-    border-color: var(--primary);
-    color: var(--primary);
-    background: rgba(130, 87, 229, 0.1);
-  }
-
-  /* --- Cards Modernos --- */
-  .custom-card {
-    background-color: var(--bg-card);
-    border: 1px solid transparent;
-    border-radius: 12px;
-    padding: 2rem;
-    height: 100%;
-    transition: var(--transition);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .custom-card:hover {
-    background-color: var(--bg-hover);
-    border-color: var(--primary);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  }
-
-  /* Ícone dentro do card */
-  .card-icon-wrapper {
-    width: 64px;
-    height: 64px;
-    background: rgba(130, 87, 229, 0.15);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #996DFF;
-    margin-bottom: 1.5rem;
-    transition: var(--transition);
-  }
-
-  .custom-card:hover .card-icon-wrapper {
-    background: var(--primary);
-    color: #fff;
-    transform: scale(1.1) rotate(5deg);
-  }
-
-  /* --- Seções e Layout --- */
-  .header-bg {
-    background: radial-gradient(circle at top right, rgba(130,87,229,0.1) 0%, rgba(18,18,20,0) 50%);
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .section-alt {
-    background-color: #1a1a1e; /* Levemente mais claro que o body */
-    border-top: 1px solid #202024;
-    border-bottom: 1px solid #202024;
-  }
-
-  .accent-border-left {
-    border-left: 4px solid var(--primary);
-    padding-left: 1.5rem;
-  }
-
-  /* Imagens e Vídeos */
-  .media-frame {
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #323238;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    background-color: #000;
-  }
-</style>
 
 <header class="header-bg" role="banner">
     <div class="container px-4">
@@ -189,7 +45,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                             loading="lazy"
                             style="border: none;"
                             allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-                            allowfullscreen="true"
+                            allowfullscreen
                             title="Vídeo de apresentação do projeto PcD na Escola"
                         ></iframe>
                     </div>
@@ -199,7 +55,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
     </div>
 </header>
 
-<section class="py-5 section-alt" role="region" aria-labelledby="target-audiences-title">
+<section class="py-5 section-alt" aria-labelledby="target-audiences-title">
     <div class="container px-4 my-5">
         <div class="text-center mb-5">
             <span class="text-gradient text-uppercase fw-bold" style="letter-spacing: 2px; font-size: 0.9rem;">Foco principal</span>
@@ -247,7 +103,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
     </div>
 </section>
 
-<section class="py-5" role="region" aria-labelledby="vision-mission-title">
+<section class="py-5" aria-labelledby="vision-mission-title">
     <div class="container px-4 my-5">
         <h2 id="vision-mission-title" class="visually-hidden">Nossa Visão e Missão</h2>
         
@@ -287,7 +143,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
     </div>
 </section>
 
-<section class="py-5 section-alt" role="region" aria-labelledby="challenges-title">
+<section class="py-5 section-alt" aria-labelledby="challenges-title">
     <div class="container px-4 my-5">
         <div class="row gx-5 align-items-center">
             <div class="col-lg-6 mb-5 mb-lg-0">
@@ -312,7 +168,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                             loading="lazy"
                             style="border: none;"
                             allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-                            allowfullscreen="true"
+                            allowfullscreen
                             title="Vídeo sobre desafios na educação inclusiva"
                         ></iframe>
                     </div>
@@ -322,7 +178,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
     </div>
 </section>
 
-<section class="py-5" role="region" aria-labelledby="principles-title">
+<section class="py-5" aria-labelledby="principles-title">
     <div class="container px-4 my-5">
         <div class="text-center mb-5">
             <h2 id="principles-title" class="display-5 fw-bold">Nossos Princípios</h2>
