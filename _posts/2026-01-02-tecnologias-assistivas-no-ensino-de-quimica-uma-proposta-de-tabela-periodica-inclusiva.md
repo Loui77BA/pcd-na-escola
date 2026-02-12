@@ -186,53 +186,55 @@ sumario: |
                 Resultados e Impacto
             </a>
             <ul class="list-group list-group-flush ms-3">
-                <!-- 9.1 Visualização por Períodos -->
+                <!-- 9.1 Análise dos Resultados -->
                 <li class="list-group-item bg-dark text-white border-0">
                     <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#visualizacao-por-periodos">
+                       href="#analise-dos-resultados">
                         <span class="badge bg-secondary">9.1</span>
-                        Visualização por Períodos
+                        Análise dos Resultados
                     </a>
                 </li>
-                <!-- 9.2 Visualização por Grupos -->
+                <!-- 9.2 Ferramenta Disponível para Uso -->
                 <li class="list-group-item bg-dark text-white border-0">
                     <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#visualizacao-por-grupos">
+                       href="#ferramenta-disponivel-para-uso">
                         <span class="badge bg-secondary">9.2</span>
-                        Visualização por Grupos
+                        Ferramenta Disponível para Uso
                     </a>
-                </li>
-                <!-- 9.3 Visualização por Categorias -->
-                <li class="list-group-item bg-dark text-white border-0">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#visualizacao-por-categorias">
-                        <span class="badge bg-secondary">9.3</span>
-                        Visualização por Categorias
-                    </a>
-                </li>
-                <!-- 9.4 Painel de Controle -->
-                <li class="list-group-item bg-dark text-white border-0">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#painel-de-controle">
-                        <span class="badge bg-secondary">9.4</span>
-                        Painel de Controle
-                    </a>
-                </li>
-                <!-- 9.5 Cartões de Elementos Químicos -->
-                <li class="list-group-item bg-dark text-white border-0">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#cartoes-de-elementos-quimicos">
-                        <span class="badge bg-secondary">9.5</span>
-                        Cartões de Elementos Químicos
-                    </a>
-                </li>
-                <!-- 9.6 Modal de Detalhes do Elemento -->
-                <li class="list-group-item bg-dark text-white border-0">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#modal-de-detalhes-do-elemento">
-                        <span class="badge bg-secondary">9.6</span>
-                        Modal de Detalhes do Elemento
-                    </a>
+                    <ul class="list-group list-group-flush ms-3">
+                        <!-- 9.2.1 Modos de Visualização -->
+                        <li class="list-group-item bg-dark text-white border-0">
+                            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                               href="#modos-de-visualizacao">
+                                <span class="badge bg-secondary">9.2.1</span>
+                                Modos de Visualização
+                            </a>
+                        </li>
+                        <!-- 9.2.2 Painel de Controle -->
+                        <li class="list-group-item bg-dark text-white border-0">
+                            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                               href="#painel-de-controle">
+                                <span class="badge bg-secondary">9.2.2</span>
+                                Painel de Controle
+                            </a>
+                        </li>
+                        <!-- 9.2.3 Cartões de Elementos Químicos -->
+                        <li class="list-group-item bg-dark text-white border-0">
+                            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                               href="#cartoes-de-elementos-quimicos">
+                                <span class="badge bg-secondary">9.2.3</span>
+                                Cartões de Elementos Químicos
+                            </a>
+                        </li>
+                        <!-- 9.2.4 Modal de Detalhes do Elemento -->
+                        <li class="list-group-item bg-dark text-white border-0">
+                            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
+                               href="#modal-de-detalhes-do-elemento">
+                                <span class="badge bg-secondary">9.2.4</span>
+                                Modal de Detalhes do Elemento
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </li>
@@ -675,9 +677,7 @@ Em vez de a pessoa desenvolvedora criar tudo de maneira genérica e apenas alter
 Os <em>softwares</em> leitores de tela reconhecem as marcações semânticas e informam as pessoas usuárias sobre como o conteúdo está organizado hierarquicamente, tornando a navegação e a compreensão do contexto mais fáceis.
 
 <div class="text-center mb-4">
-    <figcaption>
-    Figura 3: Comparação entre <em>HTML</em> semântico e não semântico.
-    </figcaption>
+    <figcaption>Figura 3: Comparação entre <em>HTML</em> semântico e não semântico.</figcaption>
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/a853eb89-dbf2-4e78-41ca-75712f919600/public" class="img-fluid" alt="Ilustração comparando HTML semântico e não semântico." />
     <div class="sr-only">
         <p>Descrição detalhada da imagem: A imagem é um infográfico em fundo preto, com o título grande no topo “<em>HTML</em> Semântico: Clareza Estrutural e Acessibilidade”, comparando duas formas de estruturar páginas.</p>
@@ -1264,39 +1264,193 @@ Esse questionamento aberto permitiu que as pessoas participantes expressassem su
 ## Resultados e Impacto {#resultados-e-impacto}
 ---
 
-A metodologia utilizada levou ao desenvolvimento de uma ferramenta que comprova ser possível, tanto técnica quanto pedagogicamente, tornar mais acessível a ultilização da tabela periódica por pessoas com deficiência visual. A seguir, são apresentados os principais resultados alcançados.
+A seguir são apresentados os resultados obtidos a partir dos testes de validação da tabela periódica acessível, bem como o impacto observado na experiência de uso das pessoas participantes. A análise dos dados coletados revelou que a maioria das pessoas avaliou a tabela periódica acessível como uma ferramenta necessária e inovadora, destacando seu baixo custo cognitivo e a facilidade de navegação.
 
-### Modos de Visualização da Tabela Periódica {#modos-de-visualizacao-da-tabela-periodica}
+### Análise dos Resultados {#analise-dos-resultados}
+---
+
+**Pergunta 1**
+
+<div class="text-center mb-4">
+    <figcaption>Figura 5: Avaliação comparativa da tabela — acessibilidade, usabilidade e design.</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/eeeaa7fe-f176-447b-b3d0-bae2815a0500/public" class="img-fluid shadow" alt="Gráfico de barras horizontais com a distribuição das respostas da Pergunta 1." />
+    <figcaption class="visually-hidden">Descrição detalhada da imagem: A imagem apresenta um gráfico de barras horizontais em fundo escuro, intitulado “Pergunta 1 — Distribuição geral (pessoas cegas n=47, pessoas com baixa visão n=8) / Comparação com outras tabelas digitais (acessibilidade, usabilidade e design)”.
+    <br />
+    O gráfico resume 55 respostas no total (n=55) para uma pergunta de comparação com outras tabelas digitais, considerando acessibilidade, usabilidade e design.
+    <br />
+    Eixo horizontal (X): rotulado como “Percentual do total (n=55)”, com escala de 0 a 100%.
+    <br />
+    Eixo vertical (Y): lista três categorias de resposta (rótulos longos, alinhados à esquerda), correspondentes às avaliações possíveis.
+    <br />
+    Há três barras (uma por categoria), com os valores escritos junto às barras:
+    <br />
+    “Mais acessível/usável e design melhor” — barra muito mais longa, representando 89,1%, com 49 respostas indicadas como “89.1% (49)”.
+    <br />
+    “Igualmente acessível/usável e design semelhante” — barra bem menor, representando 10,9%, com 6 respostas indicadas como “10.9% (6)”.
+    <br />
+    “Menos acessível/usável e design pior” — categoria sem barra visível (valor zerado), indicada como 0,0%, com 0 respostas (“0.0% (0)”).
+    </figcaption>
+    <figcaption>Fonte: Elaborada pela autora.</figcaption>
+</div>
+
+A maioria expressiva dos participantes (89,1%) avaliou que a tabela é mais acessível, fácil de usar e apresenta melhor design do que outras tabelas digitais. Uma parcela menor (10,9%) percebeu equivalência entre as opções, enquanto nenhum participante considerou que a tabela era menos acessível ou apresentava um design inferior.
+
+A tabela periódica acessível se destaca pelas qualidades de acessibilidade, usabilidade e design. Estes resultados evidenciam a necessidade de envolvimento de pessoas com deficiência no processo de desenvolvimento de recursos educacionais, garantindo que suas necessidades sejam atendidas e que a experiência de uso seja satisfatória.
+
+**Pergunta 2**
+
+<div class="text-center mb-4">
+    <figcaption>Figura 6: Facilidade de navegação e de encontrar informações usando apenas o teclado.</figcaption>   
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/1c551c9d-ea77-4d7c-4b43-303f8e0c0100/public" class="img-fluid shadow" alt="Gráfico de barras horizontais da Pergunta 2 sobre navegar e encontrar informações só com teclado: 72,7% (40 pessoas) consideram fácil; 27,3% (15 pessoas) nem difícil nem fácil; 0% (0 pessoas) difícil." />
+    <figcaption class="visually-hidden">Descrição detalhada da imagem: A imagem apresenta um gráfico de barras horizontais em fundo escuro, intitulado “Pergunta 2 — Distribuição geral (pessoas cegas n=47, pessoas com baixa visão n=8) / Facilidade de navegação e de encontrar informações usando apenas teclado”.
+    <br />
+    O gráfico resume 55 respostas (n=55) sobre a facilidade de navegação e de localizar informações utilizando somente o teclado.
+    <br />
+    Eixo horizontal (X): rotulado como “Percentual do total (n=55)”, com escala percentual iniciando em 0 e seguindo até aproximadamente 80 (com marcações regulares).
+    <br />
+    Eixo vertical (Y): contém três categorias de resposta.
+    <br />
+    As três barras e seus valores (percentual e contagem) são:
+    <br />
+    “Fácil” — a barra mais longa, com 72,7% (40), indicada no fim da barra como “72.7% (40)”.
+    <br />
+    “Nem difícil, nem fácil” — barra intermediária, com 27,3% (15), indicada como “27.3% (15)”.
+    <br />
+    “Difícil” — não há barra visível (valor zero), indicado como 0,0% (0).
+    </figcaption>
+    <figcaption>Fonte: Elaborada pela autora.</figcaption>
+</div>
+
+72,7% dos participantes acham fácil usar apenas o teclado para navegar e encontrar informações. 27,3% classificaram como neutro, e nenhum relatou dificuldades impeditivas (0%).
+
+Os resultados mostram que a tabela periódica acessível permite navegação eficiente por teclado, beneficiando pessoas que precisam desta modalidade de navegação. A falta de relatos de dificuldade confirma a eficácia do design acessível. 
+
+**Pergunta 3**
+
+<div class="text-center mb-4">
+    <figcaption>Figura 7: Funcionamento da Tabela Periódica Acessível com leitor de telas.</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/3fee5239-ce97-4e84-7b0b-1b73313d5100/public" class="img-fluid shadow" alt="Gráfico de barras horizontais da Pergunta 3 sobre compatibilidade com leitores de tela: 78,2% (43 pessoas) consideram que funcionou perfeitamente; 16,4% (9 pessoas) que funcionou razoavelmente bem; 5,5% (3 pessoas) que não funcionou bem; 0% (0 pessoas) não utilizaram leitor de telas." />
+    <figcaption class="visually-hidden">Descrição detalhada da imagem: A imagem apresenta um gráfico de barras horizontais em fundo escuro, com o título “Pergunta 3 — Distribuição geral (n=55) / A Tabela Periódica Acessível funcionou bem com o leitor de tela utilizado?”.
+    <br />
+    O gráfico resume 55 respostas (n=55) sobre a experiência de uso da Tabela Periódica Acessível em relação ao leitor de tela (quando utilizado).
+    <br />
+    Eixo horizontal (X): rotulado como “Percentual do total (n=55)”, com escala percentual iniciando em 0 e indo até cerca de 70 (com marcações regulares).
+    <br />
+    Eixo vertical (Y): lista quatro categorias de resposta, cada uma com uma barra correspondente.
+    <br />
+    As categorias e valores exibidos no final das barras (percentual e contagem) são:
+    <br />
+    1 “Funcionou perfeitamente” — barra mais longa, com 69,1% (38).
+    <br />
+    2 “Não utilizei leitor de tela” — segunda maior barra, com 14,5% (8).
+    <br />
+    3 “Funcionou razoavelmente bem” — barra menor, com 12,7% (7).
+    <br />
+    4 “Não funcionou bem” — barra curta, com 3,6% (2).
+    </figcaption>
+    <figcaption>Fonte: Elaborada pela autora.</figcaption>
+</div>
+
+Dos 55 participantes, a maior parte (69,1%) afirmou que a tabela funcionou perfeitamente com o leitor de telas usado. Uma parcela menor (14,5%) não utilizou o leitor de telas e 12,7% disseram que o funcionamento foi razoavelmente bom. Somente 3,6% dos entrevistados relataram que a tabela não funcionou bem.
+
+Os participantes com baixa visão que não utilizaram leitores de tela recorreram a ampliadores (lupas), recursos de contraste e demais ferramentas de acessibilidade. Não foi possível identificar por que pessoas usuárias de leitores de tela avaliaram o funcionamento da tabela de maneiras tão diferentes, indo do "perfeito" ao "razoavelmente bem" ou "não funcionou bem". 
+
+Vale ressaltar que cada participante apresenta diferentes níveis de habilidade ao usar leitores de tela, já que nem todos conhecem ou dominam totalmente as ferramentas oferecidas pelo software. Além disso, a compatibilidade pode ser afetada por fatores como a versão do leitor de telas, o sistema operacional e as configurações individuais.
+
+Os resultados demonstram que a tabela periódica acessível apresenta compatibilidade consistente com leitores de tela, uma vez que a maior parte das pessoas usuárias relatou experiências positivas. Contudo, evidencia-se a necessidade de futuras pesquisas. Destaca-se a importância de considerar a diversidade de experiências e habilidades das pessoas usuárias para compreender as diferentes avaliações e identificar oportunidades de aprimoramento da ferramenta, caso necessário.
+
+**Pergunta 4**
+
+<div class="text-center mb-4">
+    <figcaption>Figura 8: Satisfação com ajuste de contraste e tamanho de fonte.</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/dbb59e77-f3ca-491d-43e8-5017245ae700/public" class="img-fluid shadow" alt="Gráfico de barras horizontais da Pergunta 4 sobre satisfação com ajuste de contraste e tamanho da fonte: 85,5% (47) não utilizaram esses recursos; 14,5% (8) consideraram muito satisfatório; 0% (0) razoavelmente satisfatório ou insatisfatório." />
+    <figcaption class="visually-hidden">Descrição detalhada da imagem: A imagem apresenta um gráfico de barras horizontais em fundo escuro, com o título “Pergunta 4 — Distribuição geral (n=55) / Satisfação com ajuste de contraste e tamanho de fonte para atender às necessidades visuais”.
+    <br />
+    O gráfico resume 55 respostas (n=55) sobre a satisfação com recursos de ajuste de contraste e de tamanho de fonte (recursos tipicamente associados à personalização visual).
+    <br />
+    Eixo horizontal (X): rotulado como “Percentual do total (n=55)”, com escala percentual partindo de 0 e chegando até cerca de 90 (marcas regulares).
+    <br />
+    Eixo vertical (Y): contém quatro categorias de resposta, cada uma com seu rótulo à esquerda.
+    <br />
+    As barras e valores indicados são:
+    <br />
+    1 “Não utilizei esses recursos” — barra mais longa, com 85,5% (47), indicada no fim da barra como “85.5% (47)”.
+    <br />
+    2 “Muito satisfatório” — barra menor, com 14,5% (8), indicada como “14.5% (8)”.
+    <br />
+    3 “Insatisfatório” — não há barra visível, indicado como 0,0% (0).
+    <br />
+    4 “Razoavelmente satisfatório” — também sem barra visível, indicado como 0,0% (0).
+    </figcaption>
+    <figcaption>Fonte: Elaborada pela autora.</figcaption>
+</div>
+
+A maioria dos participantes (85,5%) indicou que não utilizou os recursos de ajuste de contraste e tamanho da fonte. Dos que avaliaram a experiência, 14,5% consideraram-na como muito satisfatória. Não foram observados registros de avaliação intermediária (razoavelmente satisfatório) ou de insatisfação, ambos com índice de 0%.
+
+O pequeno número de pessoas que utilizaram o recurso se deve à baixa participação de pessoas com baixa visão na pesquisa, já que a maioria dos participantes eram pessoas cegas que utilizam leitores de tela. Uma possibilidade para aprimorar pesquisas futuras é investir esforços adicionais na inclusão de um número mais significativo de pessoas com baixa visão.
+
+Embora a participação seja voluntária, a expansão das estratégias de divulgação pode potencialmente aumentar o número de participantes, contribuindo para uma avaliação mais robusta da ferramenta. Porém, é importante destacar que a satisfação expressa por aqueles que utilizaram os recursos de personalização visual é um indicativo positivo da eficácia desses recursos para atender às necessidades visuais das pessoas usuárias.
+
+**Pergunta 5**
+
+A pergunta 5 era aberta (campo de texto livre) e buscava identificar dificuldades específicas relacionadas ao uso da tabela periódica acessível em dispositivos móveis. As respostas foram analisadas qualitativamente para identificar temas comuns e insights (percepções ou entendimentos) sobre a experiência de uso em plataformas móveis.
+
+A maioria dos participantes relatou que a tabela periódica acessível funcionou bem em dispositivos móveis, sem dificuldades significativas. As pessoas com baixa visão que utilizaram a tabela em smartphones ou tablets mencionaram que os recursos de personalização visual, como ajuste de contraste e tamanho de fonte, foram úteis para melhorar a legibilidade e a usabilidade da tabela em telas menores.
+
+Além disso, a ideia de dividir a tabela periódica em diferentes modos de visualização e em "cartões" (elementos químicos apresentados em formato de cartões) foi destacada como uma solução eficaz para facilitar a navegação e a compreensão do conteúdo em dispositivos móveis, onde o espaço de tela é limitado. Essa abordagem permitiu que as pessoas usuárias que apresentam campo visual reduzido ou que utilizam lupas eletrônicas pudessem acessar as informações de maneira mais organizada e acessível, sem grande custo cognitivo ou fadiga visual.
+
+Para as pessoas usuárias de leitores de tela, a experiência de uso em dispositivos móveis também foi positiva, com relatos de que a tabela periódica acessível manteve sua funcionalidade e compatibilidade com os leitores de tela. A possibilidade de "granular" (filtrar ou organizar) as informações em diferentes modos de visualização contribuiu para uma navegação mais eficiente e direcionada, permitindo que as pessoas usuárias pudessem acessar as informações de maneira mais rápida e intuitiva. 
+
+A tabela periódica é uma ferramenta de consulta sobre os elementos químicos, e a possibilidade de acessar essas informações de maneira eficiente em dispositivos móveis é fundamental para garantir a inclusão e a equidade no acesso ao conhecimento científico. Os resultados indicam que a tabela periódica acessível foi bem-sucedida em atender às necessidades das pessoas usuárias em plataformas móveis, proporcionando uma experiência de uso satisfatória e inclusiva.
+
+**Pergunta 6**
+
+A pergunta 6 também era aberta (campo de texto livre) e buscava avaliar o nível geral de satisfação dos participantes com a tabela periódica acessível, além de permitir que eles compartilhassem comentários adicionais ou sugestões para melhorias. A análise qualitativa das respostas revelou um alto nível de satisfação geral com a tabela periódica acessível, com muitos participantes expressando entusiasmo e reconhecimento pela importância de uma ferramenta acessível para o ensino de Química.
+
+Um ponto recorrente foi a insegurança em definir com precisão a fidelidade semântica da tabela periódica acessível. Muitas pessoas comentaram que suas dificuldades com o conteúdo de Química as levavam a se perguntar se suas dúvidas originavam-se de questões de acessibilidade ou simplesmente de problemas com um conteúdo que não dominam.
+
+Houveram diversos relatos negativos relacionados a experiências educacionais das pessoas participantes, como a falta de recursos acessíveis em materiais didáticos, a ausência de apoio adequado por parte de instituições de ensino e a dificuldade em encontrar informações científicas apresentadas de forma inclusiva. Esses relatos reforçam a importância de iniciativas como a tabela periódica acessível, que visam preencher lacunas significativas na oferta de recursos educacionais para pessoas com deficiência visual.
+
+Muitos participantes destacaram a relevância da tabela periódica acessível como uma ferramenta que promove a inclusão e a equidade no acesso ao conhecimento científico. Eles ressaltaram que a tabela não apenas facilita o aprendizado, mas também contribui para a autonomia e a participação ativa em ambientes educacionais.
+
+### Ferramenta Disponível para Uso {#ferramenta-disponivel-para-uso}
+---
+
+A tabela periódica acessível está disponível para uso público no seguinte endereço: <a href="https://pcdnaescola.com.br/ferramentas-tabela-periodica-acessivel-para-pessoas-com-deficiencia/" target="_blank" rel="noopener noreferrer" class="text-break">https://pcdnaescola.com.br/ferramentas-tabela-periodica-acessivel-para-pessoas-com-deficiencia/</a>. A ferramenta pode ser acessada gratuitamente por qualquer pessoa interessada, sem necessidade de cadastro ou pagamento.
+
+A metodologia permitiu desenvolver uma ferramenta que torna a tabela periódica acessível a pessoas com deficiência visual, comprovando sua viabilidade técnica e pedagógica. A seguir são destacados os principais aspectos relacionados à ultilização da tabela periódica acessível:
+
+### 1. Modos de Visualização {#modos-de-visualizacao}
 ---
 
 A tabela periódica pode ser visualizada de três maneiras diferentes: por períodos, por grupos e por categorias. Cada modo oferece uma perspectiva distinta sobre a organização dos elementos químicos, facilitando a compreensão das suas propriedades e relações.
 
 <div class="text-center mb-4">
-    <figcaption>Figura 5: Botões de controle para alternar entre os modos de visualização da tabela periódica (visualização por períodos, grupos e categorias).</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fa712b1a-0440-4eb2-911f-c2d6b1ad5c00/public" class="img-fluid" alt="Botões de controle para alternar entre os modos de visualização da tabela periódica" />
+    <figcaption>Figura 9: Botões de controle para alternar entre os modos de visualização da tabela periódica (visualização por períodos, grupos e categorias).</figcaption>
+     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fa712b1a-0440-4eb2-911f-c2d6b1ad5c00/public" class="img-fluid" alt="Botões de controle para alternar entre os modos de visualização da tabela periódica" />
     <figcaption class="visually-hidden">A imagem mostra uma barra de opções de visualização em fundo escuro. No canto esquerdo aparece o texto “Modo de visualização:”. À direita desse texto há três botões grandes, arredondados, alinhados horizontalmente. O primeiro botão está destacado em azul e traz um ícone de linhas empilhadas junto do texto “Por períodos”, indicando que essa opção está selecionada. O segundo botão é cinza escuro, com um ícone de colunas e o texto “Por grupos”. O terceiro botão também é cinza escuro e apresenta um ícone de formas geométricas junto do texto “Por categorias”. A imagem representa um menu onde a pessoa usuária pode escolher como deseja organizar ou visualizar as informações: por períodos, por grupos ou por categorias.</figcaption>
     <figcaption>Fonte: Elaborada pela autora.</figcaption>
 </div>
 
-### Visualização por Períodos {#visualizacao-por-periodos}
+#### 1.1 Visualização por Períodos {#visualizacao-por-periodos}
 ---
 
 Os elementos estão organizados em seções que equivalem aos períodos (as linhas horizontais da tabela), tornando a tabela dividida em partes menores e mais fáceis de manejar, isso é especialmente útil em telas de smartphones, onde o conteúdo aparece na vertical.
 
 <div class="text-center mb-4">
-    <figcaption>Figura 6: Demonstração da visualização por períodos, com elementos agrupados em seções correspondentes a cada linha da tabela.</figcaption>
+    <figcaption>Figura 10: Demonstração da visualização por períodos, com elementos agrupados em seções correspondentes a cada linha da tabela.</figcaption>
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6f7c129b-9d6e-4a40-d20b-7cbb1d7bdb00/public" class="img-fluid" alt="visualização do primeiro e segundo períodos da tabela periódica" />
     <figcaption class="visually-hidden">A imagem mostra uma parte de uma tabela periódica organizada por períodos, sobre um fundo escuro. No topo aparece o título “1º período”. Logo abaixo há dois cartões grandes e arredondados. O primeiro é branco e mostra a letra “H” no centro, com o nome “Hidrogênio” escrito abaixo, além das indicações “Período 1” na parte superior e “Coluna 1” na parte inferior. Ao lado dele há um cartão azul claro com a sigla “He” e o nome “Hélio”, também com “Período 1” no topo e “Coluna 18” na parte de baixo. <br /> Mais abaixo está o título “2º período”. Nessa parte aparecem quatro cartões coloridos alinhados lado a lado. O primeiro é roxo e mostra “Li” com o nome “Lítio”, indicando “Período 2” no topo e “Coluna 1” embaixo. O segundo é azul acinzentado, com “Be” e o nome “Berílio”, marcado como “Período 2” e “Coluna 2”. O terceiro é vermelho, com a letra “B” e o nome “Boro”, identificado como “Período 2” e “Coluna 13”. O quarto é verde, com a letra “C” e o nome “Carbono”, mostrando “Período 2” e “Coluna 14”. <br /> Cada cartão tem o símbolo do elemento em letras grandes no centro, o nome completo logo abaixo e pequenas setas para baixo, sugerindo que é possível abrir mais informações. A imagem representa um modo visual da tabela periódica em que os elementos aparecem como blocos separados por períodos, usando cores diferentes para facilitar a identificação e a organização.</figcaption>
     <figcaption>Fonte: Elaborada pela autora.</figcaption>
 </div>
 
-### Visualização por Grupos {#visualizacao-por-grupos}
+#### 1.2 Visualização por Grupos {#visualizacao-por-grupos}
 ---
 
 Os elementos estão dispostos em grupos (colunas verticais), possibilitando que a pessoa examine elementos com propriedades químicas semelhantes. Essa estrutura de navegação também se mostra mais adequada para dispositivos com telas reduzidas.
 
 <div class="text-center mb-4">
-    <figcaption>Figura 7: Demonstração da visualização por grupos, com elementos organizados em colunas.</figcaption>
+    <figcaption>Figura 11: Demonstração da visualização por grupos, com elementos organizados em colunas.</figcaption>
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/550b29eb-4641-4cb6-59b9-6d4c77df1000/public" class="img-fluid" alt="visualização dos grupos 3 e 4 da tabela periódica" />
     <figcaption class="visually-hidden">
     A imagem mostra uma parte da tabela periódica organizada por grupos, sobre um fundo escuro. Na parte superior aparece o título “Grupo 3”. Abaixo dele há dois cartões grandes e arredondados, na cor amarela. O primeiro cartão mostra o símbolo “Sc” e o nome “Escândio”, com a indicação “Coluna 3” na parte superior e “Período 4” na parte inferior. Ao lado está outro cartão também amarelo com o símbolo “Y” e o nome “Ítrio”, identificado como “Coluna 3” e “Período 5”. Em ambos os cartões há uma pequena seta para baixo abaixo do nome do elemento, indicando que podem existir mais informações ao serem selecionados.
@@ -1308,7 +1462,7 @@ Os elementos estão dispostos em grupos (colunas verticais), possibilitando que 
     <figcaption>Fonte: Elaborada pela autora.</figcaption>
 </div>
 
-### Visualização por Categorias {#visualizacao-por-categorias}
+#### 1.3 Visualização por Categorias {#visualizacao-por-categorias}
 ---
 
 Os elementos estão classificados de acordo com suas categorias químicas, distribuídos em quatro grupos principais. São eles:
@@ -1330,7 +1484,7 @@ A categoria "Não Metais" inclui os não metais, halogênios e gases nobres, enq
 Essa estrutura facilita a exploração didática da tabela periódica e a compreensão das relações e classificações dos elementos.
 
 <div class="text-center mb-4">
-    <figcaption>Figura 8: Exemplo da categoria "Semimetais" na visualização por categorias.</figcaption>
+    <figcaption>Figura 12: Exemplo da categoria "Semimetais" na visualização por categorias.</figcaption>
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/00bf013e-2494-4376-ba30-04a57a056c00/public" class="img-fluid" alt="Semimetais na visualização por categorias" />
     <figcaption class="visually-hidden">
     A imagem mostra uma parte da tabela periódica organizada por categoria, com o título “Semimetais” centralizado no topo, sobre um fundo escuro. Abaixo do título aparecem vários cartões grandes, arredondados e todos na cor vermelha, distribuídos em duas linhas. Na primeira linha há quatro cartões. O primeiro mostra a letra “B” e o nome “Boro”, com a indicação “Período 2” na parte superior e “Grupo 13” na parte inferior. Ao lado dele está o cartão do “Si”, com o nome “Silício”, identificado como “Período 3” e “Grupo 14”. Em seguida aparece o cartão do “Ge”, com o nome “Germânio”, marcado como “Período 4” e “Grupo 14”. O quarto cartão dessa linha mostra “As” e o nome “Arsênio”, com as informações “Período 4” e “Grupo 15”.
@@ -1343,7 +1497,7 @@ Essa estrutura facilita a exploração didática da tabela periódica e a compre
 </div>
 
 <div class="text-center mb-4">
-    <figcaption>Figura 9: Exemplo da categoria "Não Metais" na visualização por categorias.</figcaption>
+    <figcaption>Figura 13: Exemplo da categoria "Não Metais" na visualização por categorias.</figcaption>
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/74c6cb47-115f-4972-7e14-266316dd8600/public" class="img-fluid" alt="Não metais na visualização por categorias" />
     <figcaption class="visually-hidden">
     A imagem mostra uma parte da tabela periódica organizada por categoria, com o título “Não Metais” no centro da parte superior, sobre um fundo escuro. Abaixo do título aparecem vários cartões grandes, arredondados e todos na cor verde, distribuídos em duas linhas.
@@ -1357,15 +1511,13 @@ Essa estrutura facilita a exploração didática da tabela periódica e a compre
     <figcaption>Fonte: Elaborada pela autora.</figcaption>
 </div>
 
-Essa estratégia, que recorre ao uso de botões e seções compactas, é essencial para assegurar a responsividade da aplicação. Ao invés de adaptar tabelas extensas para telas reduzidas, o design foi previamente estruturado considerando dispositivos móveis.
-
-### Painel de Controle {#painel-de-controle}
+### 2. Painel de Controle {#painel-de-controle}
 ---
 
 Um painel de controle fixo no topo permite alternar entre períodos, grupos, categorias e ativar ou desativar as cores da tabela.
 
 <div class="text-center mb-4">
-    <figcaption>Figura 10: Painel de controle da tabela periódica, com opções para alternar visualizações e ativar/desativar cores.</figcaption>
+    <figcaption>Figura 14: Painel de controle da tabela periódica, com opções para alternar visualizações e ativar/desativar cores.</figcaption>
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/afcad38c-2abe-484b-6d3e-942882041c00/public" class="img-fluid" alt="Painel de controle da tabela periódica" />
     <figcaption class="visually-hidden">
     A imagem mostra um painel de configurações em fundo escuro, com cantos arredondados, organizado em duas partes principais. Na parte superior aparece o texto “Modo de visualização:”, acompanhado de um pequeno ícone ao lado esquerdo. Logo abaixo desse título há três botões grandes e arredondados, dispostos horizontalmente. O primeiro botão está destacado em azul e contém um ícone de linhas empilhadas junto do texto “Por períodos”, indicando que esta opção está selecionada no momento. Ao lado dele há um segundo botão em cinza escuro com um ícone de colunas e o texto “Por grupos”. O terceiro botão, também em cinza escuro, apresenta um ícone de formas geométricas e o texto “Por categorias”.
@@ -1380,34 +1532,56 @@ Um painel de controle fixo no topo permite alternar entre períodos, grupos, cat
 Ao habilitar a visualização por períodos, o painel apresenta uma seção intitulada "Navegue pelos períodos da tabela", composta por botões referentes aos sete períodos, bem como opções específicas para lantanídeos e actinídeos. A seleção de qualquer um desses botões direciona a pessoa imediatamente para a respectiva seção da página.
 
 <div class="text-center mb-4">
-    <figcaption>Figura 11: Painel de navegação por períodos, com botões para cada período, lantanídeos e actinídeos.</figcaption>
+    <figcaption>Figura 15: Painel de navegação por períodos, com botões para cada período, lantanídeos e actinídeos.</figcaption>
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/08252ef4-b9e3-4c16-73c0-491563db6c00/public" aria-hidden="true" class="img-fluid" />
+    <figcaption class="visually-hidden">A imagem mostra um painel de navegação em fundo escuro, com cantos arredondados, pensado para facilitar a exploração da tabela periódica. No canto esquerdo do painel há um ícone circular com três linhas horizontais, semelhante a um menu. Ao lado desse ícone aparece o texto “Navegue pelos períodos da tabela”, indicando o objetivo da área.
+    <br />
+    Logo abaixo desse título há uma sequência de botões pequenos, ovais e de cor cinza escuro, alinhados horizontalmente. Cada botão representa um período da tabela periódica e traz os rótulos “1º Período”, “2º Período”, “3º Período”, “4º Período”, “5º Período”, “6º Período” e “7º Período”. Esses botões sugerem que a pessoa usuária pode selecionar diretamente o período que deseja visualizar.
+    <br />
+    Abaixo dessa primeira linha de botões há dois outros botões semelhantes, também ovais e escuros, com os rótulos “Lantanídeos” e “Actinídeos”, permitindo o acesso direto a esses conjuntos específicos de elementos químicos.
+    <br />
+    No conjunto, a imagem representa um componente de navegação simples e organizado, que permite escolher rapidamente diferentes períodos da tabela periódica ou acessar grupos especiais, de forma clara e fácil de usar.
+    </figcaption>
     <figcaption>Fonte: Elaborada pela autora.</figcaption>
 </div>
 
 Na visualização por grupos, o painel mostra botões para cada um dos 18 grupos e para lantanídeos e actinídeos. Ao clicar em um botão, a pessoa vai direto à seção correspondente.
 
 <div class="text-center mb-4">
-    <figcaption>Figura 12: Painel de navegação por grupos, com botões para os 18 grupos, lantanídeos e actinídeos.</figcaption>
+    <figcaption>Figura 16: Painel de navegação por grupos, com botões para os 18 grupos, lantanídeos e actinídeos.</figcaption>
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/dee30e7b-9132-4219-ab2d-07521b680600/public" aria-hidden="true" class="img-fluid" />
+    <figcaption class="visually-hidden">A imagem mostra um painel de navegação em fundo escuro, com bordas arredondadas, voltado para a exploração da tabela periódica por grupos. No canto esquerdo há um ícone circular com o desenho de colunas verticais, indicando a ideia de organização por grupos. Ao lado desse ícone aparece o texto “Navegue pelos grupos da tabela”, que explica a função do painel.
+    <br />
+    Abaixo do título há vários botões pequenos, ovais e em tom de cinza escuro, distribuídos em duas linhas principais. Na primeira linha aparecem os botões “Grupo 1”, “Grupo 2”, “Grupo 3”, “Grupo 4”, “Grupo 5”, “Grupo 6”, “Grupo 7”, “Grupo 8” e “Grupo 9”. Logo abaixo, na segunda linha, estão os botões “Grupo 10”, “Grupo 11”, “Grupo 12”, “Grupo 13”, “Grupo 14”, “Grupo 15”, “Grupo 16” e “Grupo 17”.
+    <br />
+    Na parte inferior do painel há mais três botões semelhantes, com os rótulos “Grupo 18”, “Lantanídeos” e “Actinídeos”. Esses botões permitem acessar rapidamente tanto o último grupo da tabela periódica quanto os conjuntos especiais de elementos.
+    <br />
+    No conjunto, a imagem representa um menu de navegação claro e organizado, que possibilita escolher diretamente qualquer grupo da tabela periódica ou acessar categorias específicas, facilitando a exploração e a compreensão da estrutura da tabela.
+    </figcaption>
     <figcaption>Fonte: Elaborada pela autora.</figcaption>
 </div>
 
 Na visualização por categorias, o painel apresenta a seção "Navegue pelas categorias da tabela", exibindo botões hierarquicamente organizados de acordo com as quatro principais categorias: Metais (com subdivisões como Alcalinos, Alcalinoterrosos, Transição, entre outras), Semimetais, Não Metais (incluindo Halogênios e Gases Nobres) e Outros (Hidrogênio). Ao selecionar um desses botões, a pessoa é direcionada para a respectiva categoria ou subcategoria, promovendo uma navegação eficiente pelo tipo de elemento químico.
 
 <div class="text-center mb-4">
-    <figcaption>Figura 13: Painel de navegação por categorias, com botões organizados hierarquicamente.</figcaption>
+    <figcaption>Figura 17: Painel de navegação por categorias, com botões organizados hierarquicamente.</figcaption>
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/a6cf2451-92d0-4f8e-b17b-1d10bfae7000/public" aria-hidden="true" class="img-fluid" />
+    <figcaption class="visually-hidden">A imagem mostra um painel de navegação em fundo escuro, com cantos arredondados, dedicado à exploração da tabela periódica por categorias. No canto esquerdo há um ícone que representa diferentes formas geométricas, indicando classificação ou agrupamento. Ao lado desse ícone aparece o texto “Navegue pelas categorias da tabela:”, que explica a função do painel.
+    <br />
+    Abaixo do título há vários botões ovais, em tom de cinza escuro, organizados em duas linhas. Na primeira linha aparecem os botões “Metais Alcalinos”, “Alcalinoterrosos”, “Metais de Transição”, “Lantanídeos”, “Actinídeos” e “Outros Metais”. Na segunda linha estão os botões “Semimetais”, “Não Metais”, “Halogênios”, “Gases Nobres” e “Hidrogênio”.
+    <br />
+    Todos os botões têm o mesmo formato e estilo visual, sugerindo que podem ser selecionados para filtrar ou navegar entre os diferentes tipos de elementos químicos. No conjunto, a imagem representa um menu claro e organizado que permite escolher categorias específicas da tabela periódica, facilitando a navegação e o entendimento da classificação dos elementos.
+    </figcaption>
     <figcaption>Fonte: Elaborada pela autora.</figcaption>
 </div>
 
-### Cartões de Elementos Químicos {#cartoes-de-elementos-quimicos}
+### 3. Cartões de Elementos Químicos {#cartoes-de-elementos-quimicos}
 ---
 
 Cada elemento químico aparece em um cartão com símbolo, nome, período e coluna.
 
 <div class="text-center mb-4">
-    <figcaption>Figura 14: Cartão interativo do elemento Boro</figcaption>
+    <figcaption>Figura 18: Cartão interativo do elemento Boro</figcaption>
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/22f300fb-5e4d-45ea-3131-3f47f6848d00/public" aria-hidden="true" class="img-fluid" />
     <figcaption class="visually-hidden">Exemplo de cartão de elemento químico. O cartão é um quadrado com bordas arredondadas. O elemento do exemplo é o Boro, no cartão está sendo exibido o símbolo (B), o nome (Boro), o período (2) e a coluna (13) que é onde ele está localizado na tabela periódica.
     </figcaption>
@@ -1416,7 +1590,7 @@ Cada elemento químico aparece em um cartão com símbolo, nome, período e colu
 
 Estes cartões permitem interação: ao usar o mouse, tocar na tela ou pressionar <em>Enter</em>, uma janela modal surge exibindo dados detalhados do elemento, incluindo símbolo, nome, número atômico, massa atômica e configuração eletrônica.
 
-### <em>Modal</em> de Detalhes do Elemento {#modal-de-detalhes-do-elemento}
+### 4. <em>Modal</em> de Detalhes do Elemento {#modal-de-detalhes-do-elemento}
 ---
 
 Ao acessar um cartão de elemento por clique, toque ou <em>Enter</em>, abre-se uma janela <em>modal</em> com informações detalhadas.
@@ -1450,18 +1624,26 @@ A janela <em>modal</em> de cada elemento apresenta as seguintes informações:
   - <strong>Visual</strong>: Um diagrama ilustrativo mostrando o núcleo do átomo no centro e as camadas eletrônicas ao redor, com os elétrons distribuídos em suas respectivas posições. Essa representação visual auxilia quem enxerga a compreender espacialmente a organização dos elétrons.
 
 <div class="text-center mb-4">
-    <figcaption>Figura 15: Representação visual da distribuição eletrônica do Hidrogênio.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c7c023b7-c298-4a7a-772f-9005930f1100/public" aria-hidden="true" class="img-fluid" />
+    <figcaption>Figura 19: Representação visual da distribuição eletrônica do Hidrogênio.</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c7c023b7-c298-4a7a-772f-9005930f1100/public" class="img-fluid" alt="Diagrama ilustrativo da distribuição eletrônica do Hidrogênio" />
+        <figcaption class="visually-hidden">A imagem mostra uma representação visual simples da distribuição eletrônica do hidrogênio, sobre um fundo preto. No centro aparece um pequeno círculo cinza, que representa o núcleo do átomo. Ao redor desse núcleo há um único círculo fino na cor azul-clara, formando uma órbita eletrônica. Sobre essa órbita existe apenas um pequeno ponto azul-claro, que representa o único elétron do hidrogênio, girando em volta do núcleo. Perto da parte superior da órbita está a letra “K”, indicando a camada eletrônica K, que é a primeira e única camada ocupada nesse elemento. A imagem ilustra de forma didática que o hidrogênio possui apenas um elétron distribuído na camada mais interna do átomo.
+    </figcaption>
     <figcaption>Fonte: Elaborada pela autora.</figcaption>
 </div>
 
   - <strong>Linear (textual)</strong>: A notação científica padrão da distribuição eletrônica, apresentada em formato de texto sequencial. Exemplo: Camada 1: 1s¹. A leitura dessa notação é direta, sequencial e construída usando atributos <em>ARIA</em> para garantir que leitores de tela anunciem corretamente cada parte da configuração eletrônica.
 
 <div class="text-center mb-4">
-    <figcaption>Figura 16: Modal de detalhes do elemento, exibindo informações completas e acessíveis.</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6dc29fb6-d403-40e4-1dea-0017e6efd300/public" aria-hidden="true" class="img-fluid" />
+    <figcaption>Figura 20: Modal de detalhes do elemento, exibindo informações completas e acessíveis.</figcaption>
+    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6dc29fb6-d403-40e4-1dea-0017e6efd300/public" class="img-fluid" alt="Janela pop-up de informações do elemento Boro" />
     <figcaption class="visually-hidden">
-        A imagem mostra uma janela pop-up de informações para o elemento Boro símbolo B. A janela exibe o símbolo B, o número atômico 5 e uma ilustração de equipamentos esportivos, raquetes e bola que representam o uso do Boro no dia a dia. As informações listadas são Grupo que é Semimetal; Símbolo: B; Número atômico: 5; Número de massa: 10,81. Abaixo, há um diagrama de distribuição eletrônica com duas camadas K e L, mostrando o núcleo e os elétrons, e o detalhamento das subcamadas: Camada 1 subnível s 2 elétrons., camada 2 subnível s 2 elétrons e ainda na camada 2 subnível p 1 elétron.
+    A imagem mostra uma janela de detalhes aberta sobre a tabela periódica, com foco no elemento Boro, em uma interface de fundo escuro. No topo da janela aparece o título “Boro” e, no canto superior direito, há um botão em forma de “X” para fechar o painel. Logo abaixo está o subtítulo “Informações”, indicando que se trata de um painel informativo.
+    <br />
+    Na parte superior do conteúdo há uma ilustração em estilo de carta, semelhante a um cartão educativo. Nela aparece a letra “B”, o nome “Boro”, o número atômico “5” e a indicação “Equipamentos Esportivos”, acompanhada do desenho de uma raquete e uma bola, sugerindo um uso ou associação simbólica do elemento. Abaixo dessa ilustração estão listadas várias informações textuais: o grupo químico “Semimetal”, o símbolo “B”, o número atômico “5” e o número de massa “10,81”.
+    <br />
+    Mais abaixo aparece a seção “Distribuição eletrônica”, acompanhada de um diagrama visual do átomo. Esse diagrama mostra um núcleo central em cinza e duas camadas eletrônicas circulares, identificadas pelas letras “K” e “L”. Pequenos pontos azuis sobre essas órbitas representam os elétrons distribuídos ao redor do núcleo. Logo abaixo do desenho, a distribuição eletrônica é detalhada em texto, indicando: “Camada 1: 1s2” e “Camada 2: 2s2 2p1”.
+    <br />
+    Na parte inferior da janela há um botão com o texto “Voltar à tabela”, indicando que a pessoa usuária pode fechar o painel e retornar à visualização geral da tabela periódica. Ao fundo, de forma desfocada e escurecida, ainda é possível perceber outros cartões da tabela periódica, como Lítio, Carbono, Nitrogênio, Neônio, Silício e Argônio, mostrando que o painel do Boro está sobreposto à tabela principal.
     </figcaption>
     <figcaption>Fonte: Elaborada pela autora.</figcaption>
 </div>
@@ -1469,11 +1651,17 @@ A janela <em>modal</em> de cada elemento apresenta as seguintes informações:
 ## Considerações Finais {#consideracoes-finais}
 ---
 
-A incorporação de tecnologias assistivas no ensino de Química, evidenciada pela elaboração de uma tabela periódica acessível, ressalta o impacto transformador dessas soluções para a promoção da inclusão educacional. A adoção de práticas de desenvolvimento web voltadas à acessibilidade não só amplia o acesso ao conhecimento científico, como também fomenta a autonomia e a participação efetiva de estudantes com deficiência. 
+Este artigo teve como objetivo investigar desafios e estratégias para o ensino da tabela periódica a estudantes com deficiência visual e, a partir disso, propor e validar uma ferramenta digital acessível. Esse objetivo foi alcançado por meio do desenvolvimento de uma Tabela Periódica Acessível baseada em tecnologias <em>Web</em> e em princípios de acessibilidade, contemplando o uso de <em>HTML</em> semântico, textos alternativos, compatibilidade com leitores de tela, navegação por teclado e rotulagem adequada com <em>ARIA</em>, além de modos de visualização que organizam o conteúdo em blocos menores e mais manejáveis.
 
-A experiência obtida ao longo deste projeto destaca a importância de uma abordagem sistemática e criteriosa na concepção de recursos educacionais, contemplando desde o planejamento inicial as diferentes demandas das pessoas usuárias. A implementação de tecnologias assistivas deve ser considerada um elemento fundamental do design educacional inclusivo, e não meramente um recurso adicional. 
+Os resultados obtidos na validação indicam que a proposta responde diretamente ao problema da pesquisa: é possível disponibilizar a tabela periódica em formato digital sem que o recurso se torne uma barreira para pessoas com deficiência visual. A maioria dos participantes considerou a ferramenta mais acessível, mais usável e com melhor design do que outras tabelas digitais (89,1%). Também se observou boa avaliação da navegação por teclado (72,7% classificaram como fácil) e do funcionamento com leitores de tela (69,1% relataram funcionamento perfeito). Em conjunto, esses achados sugerem que as decisões de design e a estrutura técnica adotada contribuíram para reduzir barreiras, favorecendo autonomia e consistência na experiência de uso.
 
-Os resultados observados comprovam que é viável desenvolver ferramentas acessíveis que mantenham elevados padrões de qualidade e complexidade científica, desde que haja um planejamento adequado. Este projeto se configura como referência para iniciativas futuras que visem incentivar a inclusão e assegurar a equidade no acesso ao conhecimento em múltiplos campos do saber. 
+Como contribuição prática, a pesquisa disponibiliza uma ferramenta gratuita e pública que pode ser incorporada ao contexto educacional como recurso de apoio ao ensino de Química, especialmente quando se busca ampliar a autonomia e a participação de estudantes com deficiência visual. Do ponto de vista teórico e metodológico, o trabalho reforça a internet e o desenvolvimento <em>Web</em> como tecnologias assistivas viáveis, evidenciando que acessibilidade não é um complemento, mas um requisito estruturante do projeto. Além disso, o estudo exemplifica um caminho replicável de concepção de recursos educacionais: combinar princípios de Desenho Universal, boas práticas de acessibilidade e validação com pessoas usuárias para orientar decisões de desenvolvimento.
+
+Apesar dos resultados positivos, algumas limitações devem ser consideradas. A amostra foi restrita e apresentou baixa participação de pessoas com baixa visão, o que reduz a generalização dos achados para todo o espectro da deficiência visual. A avaliação também foi baseada predominantemente em percepções de uso (questionário), sem contemplar medidas diretas de aprendizagem ou acompanhamento longitudinal em sala de aula. Adicionalmente, a experiência pode variar conforme dispositivo, sistema operacional, versão do leitor de tela e nível de familiaridade das pessoas participantes com tecnologias assistivas.
+
+Como continuidade, recomenda-se ampliar a pesquisa com maior diversidade de participantes (incluindo mais pessoas com baixa visão) e com estudos em ambientes educacionais reais, investigando não apenas usabilidade e acessibilidade, mas também impactos no aprendizado, na motivação e na participação em atividades de Química. Outra direção relevante é aprofundar testes comparativos entre diferentes leitores de tela e plataformas, bem como aprimorar estratégias pedagógicas de uso da ferramenta (por exemplo, roteiros didáticos e orientações para docentes) para fortalecer sua integração ao currículo.
+
+Por fim, novas investigações podem explorar a combinação de recursos digitais acessíveis com abordagens multissensoriais (como materiais táteis), buscando ampliar ainda mais as possibilidades de ensino inclusivo de conteúdos que dependem fortemente de representações visuais. A pesquisa reforça a importância de considerar a diversidade de necessidades e experiências das pessoas com deficiência visual no desenvolvimento de recursos educacionais, promovendo uma educação mais inclusiva, equitativa e centrada na autonomia dos estudantes.
 
 ## Referências {#referencias}
 ---
