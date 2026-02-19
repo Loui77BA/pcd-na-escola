@@ -709,7 +709,7 @@ No ensino de Química, usar representações gráficas com textos alternativos d
     <figcaption>Figura 4: Estrutura molecular do benzeno.</figcaption>
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/dde96d0f-0607-4ab3-d3ec-51f9825b0300/public" class="img-fluid shadow" alt="Estrutura molecular do benzeno (C6H6)." />
     <figcaption class="visually-hidden">Descrição detalhada da imagem: A imagem mostra um desenho simples, em preto e branco, de uma molécula em forma de anel: seis letras “C” (carbono) formam um hexágono, como se fosse uma “argola” com seis lados. Entre esses carbonos aparecem linhas alternadas (algumas duplas e outras simples), indicando as ligações entre eles. Em volta do anel, há seis letras “H” (hidrogênio), uma ligada a cada carbono, apontando para fora do hexágono. É o tipo de esquema usado em química para mostrar a estrutura de uma molécula, com tudo bem centralizado em um fundo branco.</figcaption>
-    <figcaption>Fonte: <a href="https://upload.wikimedia.org/wikipedia/commons/2/23/Benzene-2D-flat.png" target="_blank">https://upload.wikimedia.org/wikipedia/commons/2/23/Benzene-2D-flat.png</a></figcaption>
+    <figcaption>Fonte: <a href="https://upload.wikimedia.org/wikipedia/commons/2/23/Benzene-2D-flat.png" target="_blank" class="text-break">https://upload.wikimedia.org/wikipedia/commons/2/23/Benzene-2D-flat.png</a></figcaption>
 </div>
 
 A imagem é inserida assim no código <em>HTML</em>:
