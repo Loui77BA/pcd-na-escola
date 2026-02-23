@@ -982,7 +982,7 @@ Para fazer a validação de acessibilidade da tabela periódica, foram realizado
             </td>
         </tr>
     </tbody>
-    <caption>Fonte: Elaborada pela autora.</caption>
+    <caption class="text-white">Fonte: Elaborada pela autora.</caption>
 </table>
 </div>
 
@@ -1037,7 +1037,7 @@ As regiões Sudeste e Nordeste do Brasil foram as mais representadas, somando ma
             <td>1,82%</td>
         </tr>
     </tbody>
-    <caption>Fonte: Elaborada pela autora.</caption>
+    <caption class="text-white">Fonte: Elaborada pela autora.</caption>
 </table>
 </div>
 
