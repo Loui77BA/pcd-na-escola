@@ -198,7 +198,7 @@ sumario: |
 <p>Essas quatro etapas acontecem toda vez que usamos um computador — seja para assistir a um vídeo, escrever um texto, jogar ou acessar a internet.</p>
 
 {% include figure.html 
-    src="https://files.meiobit.com/wp-content/uploads_legacy/vonnewumman_3.png"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/eef37fbe-6545-434a-b34e-f0b418a43600/public"
     alt="Ilustração que mostra as partes principais de um computador e como elas estão ligadas a CPU que é a unidade central de processamento.  No centro, há um círculo laranja com a palavra CPU e uma imagem de um chip de processador. Mais detalhes na descrição completa a seguir."
 %}
 
@@ -237,7 +237,7 @@ sumario: |
 <p>O software é uma parte que não podemos tocar, é totalmente virtual e lógico (ou seja, não é físico), mas que é essencial para o funcionamento do computador, como o Windows, o Word, o Excel, o PowerPoint, o Google Chrome, o Firefox, redes sociais, jogos, aplicativos, entre outros.</p>
 
 {% include figure.html 
-    src="https://s3.amazonaws.com/www-itopvpn-com/blog/20231128/1701137596640778.png"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c0c52cd2-43e7-46c6-4f5e-fe1249084f00/public"
     alt="Uma imagem dividida na vertical, cortada no meio de cima para baixo, mostrando a diferença entre hardware à esquerda, com ilustrações de um computador, monitor, teclado, mouse e disco rígido e do Software que está à direita, com ícones que representam programas como Photoshop, Android e computação em nuvem."
     caption="Comparação entre Hardware e Software"
 %}
@@ -257,7 +257,7 @@ sumario: |
     alt="Uma pessoa usando luvas azuis segurando um microprocessador dourado com pinos visíveis, contra um fundo desfocado de componentes de placa-mãe iluminados em tons de roxo e laranja."
 %}
 
-<h2 id="cpu-unidade-central-de-processamento">CPU – Unidade Central de Processamento</h2>
+<h2 id="cpu-unidade-central-de-processamento">CPU: Unidade Central de Processamento</h2>
 <hr>
 
 <p>CPU é a sigla para <strong>Central Processing Unit</strong>, que em português significa <strong>Unidade Central de Processamento</strong>. É o Microprocessador, o chip que faz o computador funcionar. Ele é responsável por executar as instruções dos programas e processar os dados.</p>
@@ -292,7 +292,7 @@ sumario: |
 </ul>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSp_MLApNCLSJHuk-vGRFtsASSfa9i16eEVtYi8Y56wQXM"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/529fd8b7-435e-4f50-7d53-95333084fa00/public"
     alt="Uma representação visual de um multiplexador com quatro entradas de dados, x0, x1, x2 e x3, duas entradas de seleção, S0 e S1, e uma única saída Y, ilustrando como o MUX seleciona uma das entradas de dados."
     caption="Funcionamento de um multiplexador (MUX) com entradas e sinais de seleção."
 %}
@@ -306,7 +306,7 @@ sumario: |
 </ul>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQS1_1pYc5iST6PqS0mFMArWAYbUBNzf9r8hfpwbkMOPvBM"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/370f5092-f0a7-4204-4ec1-24777b57e100/public"
     alt="um diagrama de um multiplexador, MUX, com entradas A e B, entrada de seleção S, e saída X. Ao lado, uma tabela verdade correspondente mostra que quando S é 0, a saída X é A, e quando S é 1, a saída X é B."
     caption="Funcionamento de um multiplexador (MUX) com entradas A e B, entrada de seleção S, e saída X."
 %}
@@ -367,7 +367,7 @@ sumario: |
         <ul>
             <li>Você pede: faça a soma de 5 + 3.</li>
             <li>O tradutor (compilador ou interpretador) converte (transforma) isso em um código de máquina, que é uma sequência de 0 e 1.</li>
-            <li>Essa sequência é parecisa com: 01110011 01101111 01101101 01100001 01110010 00100000 00110101 00100000 00101011 00100000 00110011.</li>
+            <li>Essa sequência é parecida com: 01110011 01101111 01101101 01100001 01110010 00100000 00110101 00100000 00101011 00100000 00110011.</li>
         </ul>
     </div>
 </div>
@@ -393,7 +393,7 @@ sumario: |
 </div>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQ-zavzno2aSIsnpqeHmOfAAYSonR_KrkxXb3FV6NOWq5c"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/f2177e52-521b-43df-ecee-9e1d5ab09800/public"
     alt="Ilustração que demonstra o processamento de uma instrução em um computador. Uma pessoa pede para somar 5 com 3, o que é traduzido para o código binário e enviado para a CPU na ULA que usa MUX. Depois de processado o resultado 8 é exibido em um monitor."
     caption="Representação do processamento de uma instrução em um computador."
 %}
@@ -461,7 +461,7 @@ sumario: |
     <div class="card-body">
         <span class="badge bg-secondary mb-2" role="text">Passo 1</span>
         <p>Você clica no ícone do jogo.</p>
-        <p>Nesse momento, o seu Windows, Linux ou macOS (também é se aplica a Android no celular) entende que você quer abrir aquele jogo. Ele transforma esse clique em uma série de ordens (instruções) que o “cérebro” do computador (a CPU) consegue entender.</p>
+        <p>Nesse momento, o seu Windows, Linux ou macOS (também se aplica a Android no celular) entende que você quer abrir aquele jogo. Ele transforma esse clique em uma série de ordens (instruções) que o “cérebro” do computador (a CPU) consegue entender.</p>
     </div>
 </div>
 
@@ -477,7 +477,7 @@ sumario: |
     <div class="card-body">
         <span class="badge bg-secondary mb-2" role="text">Passo 3</span>
         <p>O relógio interno (clock) organiza cada passo.</p>
-        <p> A Unidade de Controle usa esse “relógio” para marcar o ritmo. A cada batida do clock, uma nova ação é feita — como se fosse uma coreografia super rápida.</p>
+        <p> A Unidade de Controle usa esse “relógio” para marcar o ritmo. A cada batida do clock, uma nova ação é feita, como se fosse uma coreografia super rápida.</p>
     </div>
 </div>
 
@@ -529,7 +529,7 @@ sumario: |
 </div>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSBQtRgFLpwS7OPan21LCTTAXxKjYOs3Au-SwvdlBucLWg"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/25103714-3012-460b-e96b-44df16813500/public"
     alt="Ilustração que mostra as etapas para abrir o jogo no computador descritas acima. A imagem mostra um toque na tela, a interação com o Disco e a Memória, o processamento pela CPU (incluindo MUX), e a saída visual no monitor."
     caption="Fluxo de dados e controle na abertura de um jogo no computador."
 %}
@@ -619,7 +619,7 @@ sumario: |
 <p>Pense nos <strong>transistores</strong> como portinhas e nos <strong>capacitores</strong> como baldinhos que podem estar cheios ou vazios, onde cada baldinho cheio representa um 1 e cada baldinho vazio representa um 0. Assim, a memória RAM armazena informações em forma de sequências de 0 e 1.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRULxfzQcb7QaQIIbw4Yd3eAdzaXNjEJaxMdMkfeg3X3hI"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/cc375965-2931-4843-8d6b-e0cff4f6e400/public"
     alt="Ilustração detalhada de uma memória RAM, com rótulos apontando para seus componentes principais, a placa de circuito impresso, os Chips de memória, os Contatos elétricos e a carcaça que é a estrutura externa."
     caption="Componentes principais de uma memória RAM."
 %}
@@ -637,19 +637,19 @@ sumario: |
 </ul>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQWaAZsvxFIQ4jGpiANWyrhAUkbPStTj_cmVWLOff7hpY0"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c0cfaedd-8e17-486e-8540-7578d4fc7900/public"
     alt="Uma Célula de Memória RAM, mostrando que a combinação de um Transistor, que controla o acesso e um Capacitor, que armazena a carga elétrica, equivale a 1 Bit de informação que pode ser 0 ou 1."
     caption="Célula de Memória RAM"
 %}
 
-<p>Como já falamos, cada célula da memória RAM é como uma caixinha. Dentro dessa caixinha, tem uma "portinha" (que é o transistor) e um "baldinho" (que é o capacitor). Esse balde pode estar cheio — representando o número 1 — ou vazio — representando o número 0. A portinha serve para controlar se o computador pode ou não acessar o que tem dentro do balde.</p>
+<p>Como já falamos, cada célula da memória RAM é como uma caixinha. Dentro dessa caixinha, tem uma "portinha" (que é o transistor) e um "baldinho" (que é o capacitor). Esse balde pode estar cheio, representando o número 1, ou vazio, representando o número 0. A portinha serve para controlar se o computador pode ou não acessar o que tem dentro do balde.</p>
 
 <p>Cada uma dessas células guarda sempre a mesma quantidade de dados e tem um número único que serve como seu endereço, como se fosse o número da casa onde ela mora. O computador usa esse número para saber onde buscar ou guardar as informações.</p>
 
 <p>Quando o computador precisa acessar a memória, ele faz isso usando o que a gente chama de "palavra de memória". Mas vale lembrar que a memória funciona mais devagar do que o processador. Isso significa que, mesmo que o computador pense rápido, ele às vezes precisa esperar um pouco para a memória responder.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRqptaK6MQORZyDnT2Tx51oAWc4AergvWGuLCql_frFmYk"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fa9222c8-804a-4f81-4329-d263fa19f900/public"
     alt="Imagem que explica uma célula de memória RAM usando a analogia de uma portinha e um baldinho para armazenar um bit, 1 ou 0. A imagem mostra como várias células formam uma palavra de memória de 8 bits que se conecta a um processador, com uma nota indicando que a RAM é mais lenta que a CPU."
     caption="Célula de memória RAM e sua relação com o processador."
 %}
@@ -657,7 +657,7 @@ sumario: |
 <p>Para quem conhece o sistema Braille, usado por pessoas cegas ou com baixa visão, dá pra comparar essas células de memória com as células Braille de uma reglete. A reglete é um tipo de régua com quadradinhos onde se escreve em Braille. Cada quadradinho é uma célula Braille, e cada célula guarda uma única letra. Ou seja, pra escrever uma palavra, você usa uma célula pra cada letra.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTgHF8AFGvHRarRw7i6jUdOAddmvhGSdrhT9u4Fi_9gKEk"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fddcce1b-4b80-46e9-0145-3ad0e536e900/public"
     alt="Um diagrama em um quadro-negro que explica a escrita em Braille, mostrando uma régua, reglete, com várias células. A imagem detalha uma célula Braille individual, que representa uma letra, e mostra como várias células são usadas para formar uma palavra."
     caption="Reglete Braille e suas células."
 %}
@@ -665,15 +665,15 @@ sumario: |
 <p>Por exemplo: se a reglete tem 4 linhas e 24 colunas, ela tem 96 células Braille no total. Se você quiser escrever a palavra "casa", vai usar 4 quadradinhos seguidos. A letra "c" vai na primeira linha, primeira coluna; a letra "a" na primeira linha, segunda coluna; a letra "s" na terceira célula; e a última letra "a" na quarta. Cada célula tem uma posição certinha — e é isso que chamamos de endereço.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQzPTj2mJBvQIEp4WZ9t-JHAdtutvuCycPg65wR_Vy1DnQ"
-    alt="Um diagrama em um quadro-negro que ilustra um reglete Braille de 96 células, mostrando como a palavra casa é escrita e endereçada usando coordenadas de linha e coluna, explicando o conceito de endereçamento de células."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/4cb0dd63-3437-4136-8342-e2c7e03c4600/public"
+    alt="Um diagrama em um quadro-negro que ilustra uma reglete Braille de 96 células, mostrando como a palavra casa é escrita e endereçada usando coordenadas de linha e coluna, explicando o conceito de endereçamento de células."
     caption="Endereçamento de células Braille."
 %}
 
 <p>Da mesma forma, no computador, cada célula de memória também tem um endereço, só que em vez de linha e coluna, esse endereço é um número. Isso permite ao computador saber exatamente onde guardar ou buscar cada pedacinho de informação.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQOPN0YHKFLRrQr7O0h7-_vAQBi5I6sBOeSpnyJ6pjnFqw"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c8ae4b56-ee1f-42d1-0c84-3ea7a8478100/public"
     alt="Um diagrama que ilustra o endereçamento linear, como uma palavra de memória, exemplo, 4 bytes com a palavra casa, é armazenada e como a CPU usa esses endereços numéricos para guardar e buscar dados."
     caption="Endereçamento de memória RAM."
 %}
@@ -691,7 +691,7 @@ sumario: |
 <p>Os nomes como "a" e "z" são o que a pessoa programadora usa pra trabalhar com as variáveis. Já os números como 1000 ou 1028 são o que o computador usa pra localizar exatamente onde está guardada cada informação.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTZKlUCsfqHS7CnGZ6QfVZhAYv-MPxMWcJnIPpESSSh-3o?width=1536&height=1024"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fb4fc64e-55d3-4530-e892-78c0d633b000/public"
     alt="Um diagrama que mostra como as variáveis a, q, y e m são armazenadas em endereços de memória específicos, como 1000, 1004, 1008 e 1012, respectivamente."
     caption="Endereçamento de variáveis na memória RAM."
 %}
@@ -713,7 +713,7 @@ sumario: |
 </ul>
 
 {% include figure.html
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSfSm33wfTJSq2LxPCd33JOAdyh1oz1jUpWLpARGBP8v6A"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/4e678fbd-d260-44f5-a345-edf934086000/public"
     alt="Ilustração que mostra as linhas de controle da memória RAM, com a linha de palavra e a linha de memória, explicando como elas trabalham juntas para acessar as células de memória. São duas matrizes de chaves: uma linha de palavra com 6 chaves abertas, conectada a uma linha de memória, chave única."
     caption="Linhas de controle da memória RAM."
 %}
@@ -726,7 +726,7 @@ sumario: |
 </ul>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQfu_McKcCsR7vIBFkYrknlARKcoA-SvcaZfYGWglyD7cY"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fd6ac48e-ab73-4b86-f05d-9d66ab6db100/public"
     alt="Diagrama mostrando o acesso a uma célula RAM: um decodificador de linha usa um endereço para ativar as linhas de palavra e memória e acessar o dado."
     caption="Acesso a uma célula de memória RAM."
 %}
@@ -734,12 +734,12 @@ sumario: |
 <h4>Pré-carga: Preparação do corrredor</h4>
 <hr>
 
-<p>Antes do computador ler ou escrever qualquer informação, o corredor por onde os dados vão passar — que é a linha de memória — precisa estar pronto.</p>
+<p>Antes do computador ler ou escrever qualquer informação, o corredor por onde os dados vão passar, que é a linha de memória, precisa estar pronto.</p>
 
 <p>É por isso que existe um circuito chamado pré-carga. Ele serve para “arrumar” esse corredor, deixando tudo limpo e estável. Assim, quando os dados começarem a circular, não tem bagunça nem erro. É como varrer e organizar um caminho antes de alguém passar por ele, para garantir que tudo funcione direitinho.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQ0sHlW6aI7SZAL2uGjzcJ1AbGVD8mr2rAqF6dROGo_KbA?width=1536&height=1024"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6000b393-5397-4613-39a0-570dde1f4f00/public"
     alt="Diagrama do pré-carregamento de uma célula RAM: um decodificador de linha usa um endereço para arrumar a linha de palavra, deixando-a limpa para o pré-carregamento."
     caption="Pré-carga da linha de memória RAM."
 %}
@@ -759,7 +759,7 @@ sumario: |
 <p>É desse jeito que, o computador consegue “escrever” novas informações na memória, enchendo ou esvaziando os baldinhos conforme o valor que ele quer guardar.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRlf59PrqN3TqfgpwMEUxaiASfbZ_lCIvgg_8mXBeobw_4"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/cb650f05-7b77-4ac2-e29c-125513859e00/public"
     alt="Diagrama mostrando como escrever um dado em uma célula de memória: um sinal de 1 é transformado em 0 por um capacitor que age como um componente que armazena temporariamente dados."
     caption="Escrita de dados na memória RAM."
 %}
@@ -777,7 +777,7 @@ sumario: |
 <p>Mas tem um detalhe: essa energia é muito fraquinha, tão pequena que o computador teria dificuldade de perceber se é 0 ou 1 só olhando direto para ela.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSrWw3wI1GOR5l9RMnHiCm5AViL1QmNBY_QJM15_Yi0i2I"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/34088347-52bc-4038-738a-cb8fd573da00/public"
     alt="Diagrama em um fundo azul-escuro sobre leitura de dados em memória. Ilustra como um transistor abre, permitindo a passagem de energia."
     caption="Leitura de dados na memória RAM."
 %}
@@ -795,7 +795,7 @@ sumario: |
 <p>Assim, o computador (a CPU) consegue ler as informações da memória RAM de forma precisa, sem confundir os valores.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQToEk2jpewtRrfbfi5bTBjQATuthmtTH_9t1-v0quGwZlo"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/1e771e87-f95b-466c-b141-d2de3b307200/public"
     alt="Ilustração em fundo escuro sobre amplificador de sentido. Uma energia fraca de um balde é amplificada, resultando em 0 ou 1."
     caption="Amplificador de sentido na memória RAM."
 %}
@@ -813,7 +813,7 @@ sumario: |
 </ul>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSD7-lhP9kJTLUuAy1BTdS5AXyjURGh1sN_asWU3gsUtJ0"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/41497c74-6076-4d9a-8c6d-4b473b857f00/public"
     alt="Ilustração sobre o refresh da memória RAM. Uma torneira preenche os baldes de forma cíclica para recarregar os dados."
     caption="Refresh da memória RAM."
 %}
@@ -833,7 +833,7 @@ sumario: |
 <p>que a memória RAM funciona dentro do computador. Tudo isso acontece muito rápido e com precisão, enquanto o aparelho está ligado, para garantir que os programas e sistemas funcionem direitinho.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQzhBIYWWsmSrn4UKcuOdjpAb1zz_ECD8yLAk04z0NN_ek"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/248c99b7-7979-4857-6f0a-8ddae71ecd00/public"
     alt="Ilustração que mostra o funcionamento da memória RAM, com baldes (capacitores) e portinhas (transistores) que guardam e leem informações, além de linhas de memória e amplificadores de sinal."
     caption="Funcionamento da memória RAM."
 %}
@@ -907,7 +907,7 @@ sumario: |
 <p>A cache é construída dentro do próprio chip da CPU, bem próxima dos circuitos que fazem os cálculos e comandos. Isso faz com que a distância praticamente desapareça — e, com isso, a velocidade aumenta bastante.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQStedfYGKICSovGX2ajPZ1qAZZMkO6oBKFAfvzFwYA-QXk"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/8b8fe292-ee5c-4d61-96a7-9499e5ec1500/public"
     alt="Ilustração que mostra a memória cache dentro do chip da CPU, destacando sua proximidade com os circuitos principais e como ela melhora a velocidade de acesso aos dados."
     caption="Memória cache dentro do chip da CPU."
 %}
@@ -931,7 +931,7 @@ sumario: |
 </ul>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQ4A6PwBxjaSLeAFYs3la2kAVWboTHsKAY_OfIZjjziL98"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/8f243707-1b16-4936-aab2-f8b2630a2200/public"
     alt="Diagrama que ilustra os diferentes níveis de memória cache, L1, L2 e L3, dentro do chip da CPU, mostrando como cada nível é organizado e sua proximidade com os circuitos principais."
     caption="Níveis de memória cache."
 %}
@@ -946,7 +946,7 @@ sumario: |
 <p>Esse sistema funciona porque, normalmente, os programas tendem a usar os mesmos dados várias vezes em pouco tempo.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSxzvepEBRbT6tknxqLw14GAX73wMXWHW3B9NgJXvP7mzQ"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b599da15-13df-4099-1b8f-b7ed84d9af00/public"
     alt="Diagrama que ilustra o processo de cache hit e cache miss, mostrando como a CPU verifica a memória cache antes de acessar a RAM."
     caption="Cache hit e cache miss."
 %}
@@ -974,7 +974,7 @@ sumario: |
 <p>O HD, também chamado de disco rígido, é um tipo de memória onde os dados ficam guardados por bastante tempo, mesmo quando o computador está desligado. E o nome disco rígido não é só um jeito de falar — ele é literalmente um disco, feito de material rígido, que fica dentro de uma caixinha metálica fechada a vácuo.</p>
 
 {% include figure.html 
-    src="https://s2-techtudo.glbimg.com/KLA1baPBwzskZ0kG-jcE9JvlS3g=/0x0:695x494/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/N/S/vnAUz6RsahMFMM5TjJ2A/2014-08-28-disco-rigido-precisa-de-backup-na-nuvem-ou-em-midia-fisica-nao-perca-seus-dados.png"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/9645afe9-0f52-4381-2805-fdd1b3bc5100/public"
     alt="Imagem de um disco rígido (HD) aberto, mostrando o disco interno e a agulha de leitura e gravação. O disco é um círculo metálico brilhante, enquanto a agulha é uma peça fina e delicada que se move sobre a superfície do disco."
     caption=" Disco rígido (HD) aberto, mostrando o disco interno e a agulha de leitura e gravação."
 %}
@@ -986,15 +986,15 @@ sumario: |
 <p>Ao lado do braço tem uma engrenagem, como um motorzinho, que serve para mover esse braço de um lado para o outro. Além disso, o HD tem várias outras pecinhas internas que ajudam tudo a funcionar direitinho.</p>
 
 {% include figure.html 
-    src="https://www.oficinadanet.com.br/media/post/20417/330/hd_estrutura.png"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/42b0f17c-1411-4eeb-d47e-7c7a7d024e00/public"
     alt="Ilustração dos componentes internos de um HD, incluindo o disco, a agulha de leitura e gravação, o cabeçote e a engrenagem."
     caption="Componentes internos de um HD."
 %}
 
-<p>Na parte de fora — normalmente embaixo ou na lateral do HD — ficam as entradas, que lembram tomadas. Elas servem para ligar o HD ao computador, levando energia para ele funcionar e permitindo que os dados entrem e saiam.</p>
+<p>Na parte de fora, normalmente embaixo ou na lateral do HD, ficam as entradas, que lembram tomadas. Elas servem para ligar o HD ao computador, levando energia para ele funcionar e permitindo que os dados entrem e saiam.</p>
 
 {% include figure.html 
-    src="https://http2.mlstatic.com/D_862462-MLB86224080469_062025-O.jpg"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/61ede972-dce1-4980-4d92-307e9164d300/public"
     alt="Imagem da parte de fora de um HD com as entradas visíveis."
     caption="Parte externa de um HD."
 %}
@@ -1007,7 +1007,7 @@ sumario: |
 <p>O HD é muito sensível, e é por isso que ele vem lacrado a vácuo, ou seja, bem fechado e sem ar dentro. Se entrar qualquer sujeirinha lá dentro, isso pode atrapalhar totalmente o funcionamento e fazer o disco parar de funcionar, resultando na perda dos dados.</p>
 
 {% include figure.html 
-    src="https://images.wondershare.com/recoverit/article/check-hard-drive-physically.jpg"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/09c18d88-dc80-49f8-d250-35690afb8700/public"
     alt="Disco do HD com sujeira, poeira e ferrugem visíveis."
     caption=" Disco do HD com sujeira."
 %}
@@ -1015,7 +1015,7 @@ sumario: |
 <p>Outro problema é a agulha magnética. Ela deve sempre flutuar bem perto do disco, sem tocar na superfície. Se por acaso ela encostar no disco, pode estragar a gravação dos dados.</p>
 
 {% include figure.html 
-    src="https://images.wondershare.com/recoverit/article/recover-broken-hard-drive-3.jpg"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/f44d6c7d-19ac-45f1-4351-138cbc894500/public"
     alt="Um HD danificado, com a agulha tocando o disco, todo quebrado, arranhado e com sujeira visível."
     caption="HD danificado."
 %}
@@ -1035,7 +1035,7 @@ sumario: |
 
 <p>Nos HDs, existe um espaço especial chamado <strong>swap</strong>, é como uma memória reserva que o computador usa quando a memória principal, a memória RAM, já está cheia.</p>
 
-<p>Imagine que você está usando uma mesa para organizar suas tarefas (essa mesa é a RAM). Mas aí, de repente, a mesa fica cheia de coisas e você não tem mais espaço para continuar trabalhando. Então você resolve usar um cantinho do armário, que normalmente serve para guardar coisas, para continuar fazendo parte do trabalho ali mesmo. Esse cantinho do armário é o que chamamos de swap — ele fica no HD do computador.</p>
+<p>Imagine que você está usando uma mesa para organizar suas tarefas (essa mesa é a RAM). Mas aí, de repente, a mesa fica cheia de coisas e você não tem mais espaço para continuar trabalhando. Então você resolve usar um cantinho do armário, que normalmente serve para guardar coisas, para continuar fazendo parte do trabalho ali mesmo. Esse cantinho do armário é o que chamamos de swap, ele fica no HD do computador.</p>
 
 <p>O objetivo do swap é evitar que o computador trave ou pare de funcionar quando tem muitos programas abertos ao mesmo tempo. É como ter um lugar extra para organizar a bagunça quando a mesa já não dá conta.</p>
 
@@ -1051,7 +1051,7 @@ sumario: |
 <p>O SSD usa uma tecnologia chamada memória flash NAND, que é a mesma que encontramos em pen drives e cartões de memória, só que em versões mais rápidas, seguras e confiáveis.</p>
 
 {% include figure.html 
-    src="https://4infrasite.storage.googleapis.com/wp-content/uploads/2024/07/14195507/4Infra-o-que-e-SSD-e-para-que-serve-1024x683.png"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b731e317-b918-4051-af29-d11265671d00/public"
     alt="Imagem da parte externa de um SSD, mostrando a carcaça metálica e as entradas de conexão."
     caption="SSD: Unidade de Estado Sólido."
 %}
@@ -1075,7 +1075,7 @@ sumario: |
 </ul>
 
 {% include figure.html
-    src="https://i.ytimg.com/vi/vVKlJ0BunNw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDyew2Iu63Y3a4RvazTuZNe_Bb7AA"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/a704fb81-fe86-4b64-f93a-668011d33000/public"
     alt="SSD aberto, mostrando as células de memória organizadas em páginas e blocos, com destaque para o controlador que gerencia a leitura e gravação dos dados."
     caption="SSD aberto, mostrando as células de memória."
 %}
@@ -1121,7 +1121,7 @@ sumario: |
 <p>Agora que já entendemos como o HD e o SSD funcionam, vamos comparar os dois para ver as diferenças e vantagens de cada um.</p>
 
 {% include figure.html
-    src="https://s2-techtudo.glbimg.com/yc7cM2ZvlEk1D5m2QjOv7uIjaOg=/0x0:620x343/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/Y/A/bjhId5TBW0fBaubJDjzA/2013-10-22-ssdvhd.jpg"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/455f2902-4622-406b-9762-1ed8233eae00/public"
     alt="HD e SSD lado a lado, os dois estão abertos, mostrando o disco rígido do HD e as células de memória do SSD. O HD é maior e mais pesado, enquanto o SSD é menor e mais compacto."
 %}
 
@@ -1175,7 +1175,7 @@ sumario: |
 <p> Em outras palavras: quando o “relógio” interno da CPU faz um tic, ela já transfere dados, e no tac, transfere de novo — por isso, ela é mais rápida do que as memórias mais antigas.</p>
 
 {% include figure.html 
-    src="https://www.adrenaline.com.br/wp-content/uploads/2020/07/ddr5-chamada.jpg"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/281e5c92-2996-4a8d-277b-8ff618601c00/public"
     alt="Imagem de um módulo de memória DDR."
     caption="Módulo de memória DDR."
 %}
@@ -1248,7 +1248,7 @@ sumario: |
 <p>Esses dispositivos são os que permitem ao computador mostrar texto, imagens, sons e vídeos. Eles ajudam a pessoa a interagir com o computador e a entender o que está acontecendo dentro dele.</p>
 
 {% include figure.html 
-    src="https://static.significados.com.br/foto/dispositivos-0-cke.jpg"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/e323b8b6-8770-4a7a-962e-417b89e1f500/public"
     alt=" A imagem é um diagrama que classifica dispositivos de entrada e saída de um computador. O diagrama é dividido em duas seções principais: Dispositivos de Entrada à esquerda e Dispositivos de Saída à direita. No centro, onde as duas seções se sobrepõem, está um roteador, que pode ser considerado tanto um dispositivo de entrada quanto de saída."
     caption="Dagrama de Venn classificando dispositivos de entrada e saída de um computador."
 %}

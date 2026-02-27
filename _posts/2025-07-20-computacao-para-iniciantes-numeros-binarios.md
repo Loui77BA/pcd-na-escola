@@ -107,7 +107,7 @@ sumario: |
 <p><strong>0, 1, 2, 3, 4, 5, 6, 7, 8, 9</strong></p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQT-pHJgBGEKS6uXZzFhCEDzAWrfyClaGuTLrU4AvpuAaqI"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/19c65b32-09c5-48de-d2dd-d64c0f65b100/public"
     alt="Uma ilustração colorida que apresenta o SISTEMA DECIMAL, mostrando os dígitos de 0 a 9 em diferentes cores dentro de um grande círculo amarelo."
     caption="Dígitos do sistema decimal (base 10) de 0 a 9."
 %}
@@ -137,7 +137,7 @@ sumario: |
 <p><span aria-label="300 mais 40 mais 5">300 + 40 + 5</span> = 345</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRUJYnd2XTNR45fSlT-wAI8Adm3p-5ndIe9ZiNNpQGCUBc"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/851531bb-f6dc-475f-1c3e-61e02384a400/public"
     alt="Uma ilustração colorida explicando o valor posicional do número 345 que é decomposto mostrando que o 3 na cor laranja representa 3 vezes 100 igual a 300, o 4 na cor verde representa 4 vezes 10 igual a 40, e o 5 na cor vermelho representa 5 vezes 1 igual a 5, somando para formar 345."
     caption="Valor posicional do número 345, mostrando como cada dígito contribui para o total."
 %}
@@ -153,7 +153,7 @@ sumario: |
     </li>
     <li>
         {% include figure.html 
-            src="https://1drv.ms/i/c/bf6f4302973a9faf/IQT4xfXW1k6_SqoBn3ePYtTcAZ66D0p3euPmkuHXx1rcbBw"
+            src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/545c44b3-0f29-4439-5e8b-2d12d3526600/public"
             alt="Uma ilustração colorida que demonstra o valor posicional do número 50, o dígito 5 na cor laranja é mostrado como 5 vezes 10 igual a 50, e o dígito 0 na cor verde é mostrado como 0 vezes 1 igual a 0, somando para formar 50 mais 0 igual a 50."
             caption="Valor posicional do número 50, mostrando como cada dígito contribui para o total."
         %}
@@ -165,7 +165,7 @@ sumario: |
     </li>
     <li>
         {% include figure.html 
-            src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRgq_g9mLV4TrC7F01NsYeLAcIyzHPYBy8-RCXagK6gjS0?width=1024&height=1536"
+            src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/85e0622a-b063-4a29-e585-937b54d43000/public"
             alt="Uma ilustração colorida que demonstra a decomposição do número 1234, mostrando que cada dígito, 1, 2, 3 e 4 representam milhares, centenas, dezenas e unidades, respectivamente, com suas multiplicações correspondentes, 1 vezes 1000, 2 vezes 100, 3 vezes 10, 4 vezes 1 e a soma final resultando em 1234."
             caption="Valor posicional do número 1234, mostrando como cada dígito contribui para o total."
         %}
