@@ -96,7 +96,7 @@ sumario: |
 <p>Este artigo aborda os circuitos lógicos, as portas lógicas e suas aplicações. Eles são fundamentais na computação, pois são usados para processar informações e tomar decisões.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSkSjtjDN8ES4cJ8NDgWIJdAdyvXWSo8ouQZl8HyWyDq1w"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/cdc4f6e2-28d5-4726-664c-0a6ae41baa00/public"
     alt="Uma rede de circuitos lógicos digitais interconectados com portas AND, OR, XOR e NOR, ilustrando o fluxo de dados."
 %}
 
@@ -108,7 +108,7 @@ sumario: |
 <p>Os circuitos lógicos nada mais são do que grupos de transistores trabalhando juntos para realizar operações como somar, comparar valores e tomar decisões — por meio da combinação de portas lógicas simples em circuitos mais complexos, como somadores e comparadores. Em outras palavras, eles (circuitos lógicos) são responsáveis por processar informações e executar tarefas dentro de um dispositivo eletrônico.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQR_zGjqSRdIQqofjsf1RXEhAeKaGO11-fF5UtflZa7gKvY"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/5ab3261a-1f70-4d2b-4ef5-f9c9691f9f00/public"
     alt="Um conjunto de circuítos coloridos conectados por fios, cada um rotulado com funções como somar, subtrair, comparar valores, tomar decisões e filtrar, simbolizando operações lógicas e de processamento."
     caption="Circuito lógico com operações como somar, subtrair, comparar valores, tomar decisões e filtrar."
 %}
@@ -118,7 +118,7 @@ sumario: |
 <p>Esses circuitos são feitos de portas lógicas, que são como pequenos blocos de construção. Uma analogia (comparação) simples é pensar nessas portas lógicas como se fossem peças de LEGO, que podem ser montadas de diferentes maneiras para criar circuitos mais complexos.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTAQmtUJI1XRZ_-NwLJvP5aAYH1XFCWY3QCw7ZOkWHQpx0"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/64adad9b-908c-4a16-0ce9-aac3c762c100/public"
     alt="Uma ilustração que compara circuitos lógicos a peças de LEGO, mostrando blocos coloridos interconectados que representam Portas Lógicas, Transistores, Processamento e Saída de Informação, com texto explicando que circuitos lógicos processam informações e executam tarefas dentro de um dispositivo eletrônico."
     caption="Circuitos lógicos como peças de LEGO, com blocos representando portas lógicas, transistores, processamento e saída de informação."
 %}
@@ -136,7 +136,7 @@ sumario: |
 </ul>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQT94i1lRBkwSbIxKuwRilAWAd7zWRkpaIdgaeH4BH5uHxM"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fc1bc94f-970d-4a5a-9cf0-fd57605e5d00/public"
     alt="Dois blocos retangulares, um verde escrito a palavra VERDADEIRO com um símbolo de verificado e o número 1, o outro bloco é vermelho e está escrito a palavra FALSO com um símbolo de X e o número 0, representando os estados binários de lógica."
     caption="Símbolos de verdadeiro (1) e falso (0) representados por um bloco verde e um bloco vermelho, respectivamente."
 %}
@@ -151,7 +151,7 @@ sumario: |
 </ul>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQzHl4UE9nhTY136vMgPXySAfP9xUJduvDCrRV48zJ8Gys"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/59f91268-779a-47e4-929e-015ec852f200/public"
     alt="Ilustração exibindo os símbolos de portas lógicas digitais comuns AND, OR, NOT, XOR em uma superfície que lembra um quadro-negro. A primeira porta se chama AND, e ela parece a letra D maiúscula, daquelas que a gente desenha no papel, com a parte reta para o lado esquerdo e a curva para o lado direito. Ela tem dois lugares por onde a energia pode entrar, e só um lugar por onde ela pode sair. A próxima porta é a OR, que parece um escudo de cavaleiro ou uma fatia de melancia cortada no meio, com a parte curva para trás e a pontinha para a frente. Assim como a AND, ela também tem dois lugares para a energia entrar e um para sair. Depois, temos a porta NOT, que é um triângulo apontando para a direita, como uma seta. Ela tem uma bolinha pequena bem na ponta, no lugar de onde a energia sai, e um lugar para a energia entrar na parte de trás. Por último, tem a porta XOR, que é parecida com a OR aquela do escudo ou melancia. A diferença é que a XOR tem uma linha extra, uma barreira curva, bem na frente dos lugares por onde a energia entra. Ela também tem dois lugares para entrar e um para sair."
     caption="Símbolos de portas lógicas digitais comuns: AND, OR, NOT, XOR."
 %}
@@ -210,7 +210,7 @@ sumario: |
 <p>Ou seja, as possibilidades de saída (resultado) para a operação E (AND) são:
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTY_snR_zPQRbEKWb8NibE5AVAjLAZwZig4TJRfcriHJcc"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d3374b8f-c0c3-4ddd-2293-06c2827d9800/public"
     alt="Uma imagem mostrando o símbolo da porta lógica E, AND, e sua tabela de possibilidades de saída. A tabela tem colunas para as entradas A e B, e para a Saída, exibindo que a saída é 1 apenas quando ambas as entradas A e B são 1 em todas as outras combinações, a saída é 0."
     caption="Símbolo da porta lógica E (AND) e sua tabela de possibilidades de saída."
 %}
@@ -269,7 +269,7 @@ sumario: |
 <p>Ou seja, as possibilidades de saída (resultado) para a operação OU (OR) são:</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQR9nPuLrJoCSo5ZoDOPo6dBAZk2MWGTDSeNPJ1suDbHH0I?width=1024&height=1024"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/2fb291c0-ea4e-4c05-d4a9-c2354195bc00/public"
     alt="Uma imagem mostrando o símbolo da porta lógica OU, OR, e sua tabela de possibilidades de saída. A tabela tem colunas para as entradas A e B, e para a Saída, exibindo que a saída é 1 quando pelo menos uma das entradas A ou B é 1 se as duas entradas forem 0, a saída é 0."
     caption="Símbolo da porta lógica OU (OR) e sua tabela de possibilidades de saída."
 %}
@@ -321,7 +321,7 @@ sumario: |
 <p>Ou seja, as possibilidades de saída (resultado) para a operação OU Exclusivo (XOR) são:</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQS2JPqcaZTPQ6I2Rmi1LiGvAW-D7_Te7_CEyeFMRQ_ekYs?width=1024&height=1024"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/9693fe8b-c4dd-42a5-73e4-6d8c57323e00/public"
     alt="Uma imagem mostrando o símbolo da porta lógica OU Exclusivo, XOR, e sua tabela de possibilidades de saída. A tabela tem colunas para as entradas A e B, e para a Saída, exibindo que a saída é 1 quando apenas uma das entradas A ou B é 1. Se as duas entradas forem 0 ou se as duas forem 1, a saída é 0."
     caption="Símbolo da porta lógica OU Exclusivo (XOR) e sua tabela de possibilidades de saída."
 %}
@@ -360,7 +360,7 @@ sumario: |
 <p>Ou seja, as possibilidades de saída (resultado) para a operação NÃO (NOT) são:</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTF3iG7D7H_SLoQE2Rqfm0RAYNHsDZPoHl9Fqx--sHS0n0"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/2d102263-d79b-4fff-7a13-2bf1f622a200/public"
     alt="Uma imagem mostrando o símbolo da porta lógica NÃO, NOT, e sua tabela de possibilidades de saída. A tabela tem uma coluna para a entrada A e outra para a Saída, exibindo que a saída é 0 quando a entrada é 1 e a saída é 1 quando a entrada é 0. Ou seja, a saída é sempre o oposto da entrada."
     caption="Símbolo da porta lógica NÃO (NOT) e sua tabela de possibilidades de saída."
 %}

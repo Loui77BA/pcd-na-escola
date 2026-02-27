@@ -76,38 +76,38 @@ sumario: |
 <p>Para responder essa pergunta, é preciso voltar um pouco em conceitos de, Química, engenharia elétrica e Eletrônica.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSs4o3H-TOAS4iNItz62a-gAcYgpm0LYrWes_gswoFeJPw"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/0536682c-f358-497f-02b9-f129a88aa200/public"
     alt="Ilustração comparando condutor, semicondutor e isolante com símbolos de eletricidade."
 %}
 
 <h2 id="materiais-condutores-e-isolantes">Materiais Condutores e Isolantes</h2>
 <hr>
 
-<p>Quando falamos em material condutor, estamos falando de algo que deixa a eletricidade passar com facilidade. Um exemplo disso são os metais, como o cobre. É por isso que os fios usados na rede elétrica geralmente são feitos de cobre ou de algum outro metal parecido — eles conseguem conduzir a energia elétrica muito bem.</p>
+<p>Quando falamos em material condutor, estamos falando de algo que deixa a eletricidade passar com facilidade. Um exemplo disso são os metais, como o cobre. É por isso que os fios usados na rede elétrica geralmente são feitos de cobre ou de algum outro metal parecido, eles conseguem conduzir a energia elétrica muito bem.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQa-pC7EGrnTZ5qAQTluwjAAesEttrMgoUt09JXRsY9mpE"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/eff296d7-ea75-4bb6-e5ef-afb637bf7800/public"
     alt="Ilustração de uma estrada onde pequenos raios de energia correm livremente sobre superfícies com placas de cobre, alumínio e ferro, representando a passagem fácil da eletricidade em materiais condutores."
 %}
 
 <p>Já os materiais isolantes fazem o contrário: eles dificultam a passagem da eletricidade. Um bom exemplo é a borracha que envolve os fios elétricos. Essa camada de borracha serve para proteger as pessoas de choques elétricos. A borracha não bloqueia completamente a corrente elétrica, mas impede que ela passe com facilidade.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQ74G1oCrXlRrEKGM0MyR7JAeEEXJBsO7FUJNNxAibZlHU"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/a0ab7b3f-0d29-434d-976d-fc6ca654c400/public"
     alt="Ilustração de raios de energia sendo impedidos de passar por barreiras feitas de borracha e vidro, representando a função dos isolantes elétricos que protegem contra choques."
 %}
 
-<p>Entre esses dois tipos — condutores e isolantes — existe um terceiro grupo chamado de semicondutores. Esses materiais conduzem, ou não, a eletricidade dependendo da situação. Às vezes eles se comportam como condutores, e em outros momentos se comportam como isolantes.</p>
+<p>Entre esses dois tipos, condutores e isolantes, existe um terceiro grupo chamado de semicondutores. Esses materiais conduzem, ou não, a eletricidade dependendo da situação. Às vezes eles se comportam como condutores, e em outros momentos se comportam como isolantes.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQIAJsG1Ts-TI5ecOfkrMkhAfJgiOfK7MfW2TKBVc8XY8g"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/aff52f42-09b2-4d88-4a8b-44633b611f00/public"
     alt="Ilustração que compara semicondutores com condutores e isolantes, mostrando como eles podem conduzir ou bloquear a eletricidade dependendo da situação. São três colunas organizadas, a primeira é o condutor, que tem fundo verde, estrada livre e a energia está fluindo. A segunda são os isolantes, que tem fundo vermelho, um muro protetor na estrada e a energia está bloqueada. E a terceira coluna são os semicondutores, que tem fundo amarelo, um portão eletrônico e a energia passa as vezes se o portão estiver aberto."
 %}
 
 <p>Um exemplo bem conhecido de semicondutor é o silício. Ele pode ser ajustado ou manipulado para deixar a corrente elétrica passar ou para bloquear a passagem, conforme a necessidade. Isso é o que torna o silício tão importante na fabricação de chips, transistores e outros componentes eletrônicos.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQS5IrqM4ay6R697FXjDJAhqAc8dxALJxeXNS5wNAuaAluw"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/2224377e-2214-48f6-f984-2340c8be3d00/public"
     alt="Ilustração de um portão eletrônico controlando a passagem de raios de energia sobre um chão de silício, simbolizando o funcionamento de um semicondutor."
 %}
 
@@ -119,7 +119,7 @@ sumario: |
 <p>Em Química, o átomo é o menor pedaço de qualquer coisa. Ele é formado por duas partes principais: o núcleo (que fica no centro) e a eletrosfera (que é como uma nuvem em volta do núcleo).</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTjv5qBj1nWRpktVmlJa4K7AagRVp3C5szhJ896zgImVDk"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c42dc5ba-4fe4-4926-9430-7dd131b18100/public"
     alt="Ilustração que mostra a estrutura de um átomo, com destaque para o núcleo e a eletrosfera."
 %}
 
@@ -134,7 +134,7 @@ sumario: |
 <p>É aí que entra uma ideia chamada regra do octeto. Essa regra diz que um átomo fica mais estável quando tem 8 elétrons na sua camada mais externa, ou seja, a parte mais distante do núcleo. Como nem todo átomo tem esse número, eles procuram se juntar com outros átomos para completar essa quantidade.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSA5MASvtP_Rr3uXto1ZAhkAUR5e8VjRBm-zIuEuGpIyrw"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/626cd097-773b-40cc-9877-b63c83e6fe00/public"
     alt="Ilustração da regra do octeto, mostrando como os átomos se unem para completar 8 elétrons na camada mais externa."
 %}
 
@@ -148,7 +148,7 @@ sumario: |
 <p>Quando um átomo com poucos elétrons encontra outro que está quase com 8, eles podem formar uma ligação iônica. Nesse tipo de ligação, um átomo “dá” elétrons para o outro. Assim, os dois ficam mais estáveis. É como se um átomo emprestasse ou doasse um elétron para o outro, e isso cria uma ligação forte entre eles.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSKZmtKlWP5QY8ZGn-1i4n8AUiv4TmEJgfHmnrBnKx09hk?width=1024&height=1024"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/bb20672f-e953-4092-252b-bba8a392c700/public"
     alt="Ilustração dividida em 4 painéis sobre conceitos científicos. no painel superior esquerdo há um professor mostrando um átomo. No painel superior direito há um diagrama detalhado de um átomo. No painel inferior esquerdo há evolução de 3 pontos para 6 pontos dentro de um círculo. No painel inferior direito há símbolos de mais, menos e divisão."
 %}
 
@@ -280,7 +280,7 @@ sumario: |
 </ul>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRNk8gqQV70QLAlbIvmVqD9AV_xSoa214uYkPUTuGGFWII"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/0a3f3317-e5a1-4544-a2da-aecad4734100/public"
     alt="Uma seção P+ vermelha, com cargas positivas (lacunas), está à direita. Uma faixa central cinza clara, rotulada Depleção e com um raio, separa as duas seções. Abaixo, há uma seta indicando o sentido da corrente e o símbolo de um diodo."
     caption="Diagrama esquemático de junção PN, com os cristais tipo N e tipo P separados por uma região de depleção."
 %}
@@ -305,7 +305,7 @@ sumario: |
 <p>Ou seja, ele usa sinais elétricos para decidir se deixa a energia passar. É assim que os computadores conseguem fazer bilhões de operações por segundo, tudo só com sinais elétricos.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTIDes_lB3KSbZ10zrBWoqUAUlyBEBuDtviKxt6RLewkNc"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/9649287a-98da-4e2e-c1d8-7307523fdf00/public"
     alt="Ilustração de um transistor de potência com pinos identificados como Base e Coletor, e uma legenda que o descreve como um botão ligar e desligar que controla o fluxo de eletricidade."
 %}
 
@@ -321,7 +321,7 @@ sumario: |
 </ul>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQziaGIaZmwSq9x8wcrnQaCAbLMYHxDp3g8nwubvL_XtCc"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/214b878f-1b3c-4c13-db85-eec963a2a000/public"
     alt="Uma representação simplificada de um transistor com três partes amarelas, a Fonte, a Porta e o Dreno conectadas por uma barra prateada."
     caption="Diagrama de um transistor com as partes Fonte, Porta e Dreno."
 %}
@@ -339,7 +339,7 @@ sumario: |
 </ul>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSq_PO1uly-RIhBu5LMuPT5ATZWi6IXnlZZLp5H-iiJTSI"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/8aa833d9-9667-4c08-a4c7-f9228e4cbe00/public"
     alt="Uma ilustração detalhada de um MOSFET mostrando terminais de saída, uma camada de Óxido de Silício que é Isolante no topo e o corpo feito de Silício, com quatro pinos na parte inferior."
     caption="Estrutura de um MOSFET, com detalhes sobre os materiais usados e como eles se conectam."
 %}
@@ -357,7 +357,7 @@ sumario: |
 <p>Por causa disso, os transistores servem para representar os números 0 e 1, que são a base de toda informação nos computadores.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQhi8P9n4xBQ5-p1LcBoCSUAbxNGewf5eTqjVViX133cdI"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/bdefde34-6a0b-4e1a-df42-9c37cbbb3100/public"
     alt="Diagrama esquemático de um transistor MOSFET."
     caption="Esquema estrutural de um transistor MOSFET de canal N, um componente eletrônico amplamente utilizado em circuitos para controlar a passagem de corrente elétrica."
 %}
@@ -379,7 +379,7 @@ sumario: |
 <p>Podemos comparar o transistor a uma torneira de água: a porta seria o volante da torneira, e a água que passa pelo cano é a corrente elétrica. Se não giramos a torneira (não tem energia na porta), nada passa. Quando giramos (colocamos energia), a água (corrente) começa a passar.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTb4AEU-eLwS7yKsD_yY5MaAfHO1C7Keb4byen9eEPT7Sg"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fd992495-c79b-45ec-552b-bf7f104df000/public"
     alt=" Uma ilustração conceitual de um MOSFET usando a analogia de uma torneira: a porta, um bloco amarelo com uma torneira dourada acima, controla o fluxo de água, que é a eletricidade, entre a fonte e o dreno, que são terminais de metal e que estão conectados a regiões n mais dentro de um corpo de material semicondutor."
     caption="Analogia (comparação) entre um MOSFET e uma torneira, onde a porta controla o fluxo de eletricidade entre a fonte e o dreno."
 %}
@@ -398,7 +398,7 @@ sumario: |
 <p>Esse é um tipo de MOSFET chamado <strong>NMOS</strong>, feito para trabalhar com cargas negativas. Mas também existe o oposto: pode-se construir com cargas positivas. Nesse caso, precisamos colocar uma voltagem negativa na porta para abrir caminho para as cargas positivas entre fonte e dreno.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTvTUuiitryRaev5gtx5VLsAbI9XSr_SBl4e1PEru6_ZnY"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b56ab792-fabf-4f05-b4c6-09651c247c00/public"
     alt="Uma comparação lado a lado de dois MOSFETs um NMOS com Canal N e Substrato Tipo P e um PMOS com Canal P e Substrato Tipo N, mostrando suas estruturas internas e pinos de Porta, Fonte, Dreno e Substrato."
     caption="Comparação entre NMOS e PMOS, dois tipos de transistores MOSFET."
 %}
@@ -408,10 +408,11 @@ sumario: |
 <p>Porquê? Por causa de uma coisa chamada capacitância, que é a capacidade de um material guardar carga elétrica. Como o computador trabalha muito rápido, é ruim se o transistor ficar "segurando" carga, já que ele precisa ligar e desligar bilhões de vezes por segundo.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSPsUk88AexQpnZFbbfHBR_ASWV8FLZaNiE64q4sAjeUyk"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d00d2451-81dd-48b8-db67-b80e8b97e100/public"
     alt="Uma ilustração de um MOSFET CMOS, mostrando a combinação de um MOSFET NMOS e um MOSFET PMOS em um único MOSFET, com detalhes de suas conexões internas e regiões como Poço N, Poço P  e os substratos Tipo P e Tipo N."
     caption="Circuito integrado com transistores NMOS e PMOS trabalhando juntos."
 %}
+
 <p>O transistor N descarrega cargas positivas melhor, e o transistor P descarrega cargas negativas melhor. Por isso, quando juntamos os dois em um circuito, aproveitamos o que cada um tem de melhor. O transistor N serve para conduzir melhor sinais negativos, e o transistor P é usado para sinais positivos. Assim, conseguimos superar os problemas causados pela capacitância.</p>
 
 <h3><strong>Vantagens do CMOS (que é a combinação de NMOS e PMOS)</strong></h3>

@@ -273,7 +273,7 @@ sumario: |
 <hr>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQS1v4TQ-uuBRoqOIMZ7x7Q0AYcxycMXHXO2G6UBK-Gs7P0?width=1024"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/9aa3deec-c75b-4609-11ed-dedcc52d6600/public"
     alt="tweet de Richard Dawkins defendendo a eugenia em 2020."
     caption="Print de um tweet de Richard Dawkins, datado de 16 de fevereiro de 2020, com um texto em inglês que, em tradução livre, afirma: 'apesar da eugenia ser condenável do ponto de vista ideológico, político e moral, não devemos concluir que ela não funciona; ela funciona para cavalos, vacas, porcos, cachorros e rosas.'"
 %}
@@ -626,7 +626,7 @@ sumario: |
 %} 
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQf201OY_pZRIh8PXXwKhZGAQKJ9ZLm6GHZTISuzK1YsT0?width=1024"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/ab0b7d20-3671-44d7-65b4-b4a4b01ff200/public"
     alt="Luciano Hang, empresário e dono da rede de lojas Havan, aparece em pé ao lado de Jelres Freitas, advogado e então presidente da Comissão dos Direitos das Pessoas com Deficiência da OAB de Sumaré (SP), que está sentado em uma cadeira de rodas. A foto é tirada dentro de uma loja Havan, bem iluminada, com prateleiras e corredores ao fundo. Luciano Hang veste uma camiseta azul com mensagens patrióticas e o logotipo da Havan, enquanto Jelres Freitas usa uma camisa social azul-marinho com estampa discreta."
     caption="Luciano Hang e Jelres Freitas em uma loja Havan."
 %}
@@ -674,7 +674,17 @@ sumario: |
 
 <hr>
 
-<div style="position:relative;padding-top:56.25%;"><iframe id="panda-c75beb18-9f19-4a37-b8db-e9f28fe6f810" src="https://player-vz-480faebf-94f.tv.pandavideo.com.br/embed/?v=c75beb18-9f19-4a37-b8db-e9f28fe6f810" style="border:none;position:absolute;top:0;left:0;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen=true width="100%" height="100%" fetchpriority="high"></iframe></div>
+<div class="text-center mb-4">
+<div style="position: relative; padding-top: 56.016597510373444%;">
+<iframe
+src="https://customer-n8imyf4ea5hvxexl.cloudflarestream.com/5069fa72dad94cd9f7fd5805b152efa2/iframe?poster=https%3A%2F%2Fcustomer-n8imyf4ea5hvxexl.cloudflarestream.com%2F5069fa72dad94cd9f7fd5805b152efa2%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D0h0m20s%26height%3D600"
+loading="lazy"
+style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+allowfullscreen="true"
+></iframe>
+</div>
+</div>
 
 <p>
      O jornalista Filipe Oliveira, que é cego, escreveu um artigo na Folha de São Paulo abordando o assunto. Ele destacou que pisos táteis mal projetados ou instalados de forma inadequada realmente não cumprem seu papel. Porém, em vez de culpar a exigência legal, a responsabilidade deveria recair sobre quem os instala sem o devido cuidado. Ele questionou:
@@ -760,7 +770,7 @@ sumario: |
 </p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQS8v1OIxi39SL5BjUBKOoAIARmuGfHnOkdoF_6_SDvuTVc?width=2962&height=990"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/4e25a0cc-517c-4b5f-51a1-0c3df3b8b400/public"
     alt="manchete do portal g1 com fundo preto e texto branco que diz: Secretário da Educação de Barueri é exonerado após afirmar que crianças com deficiência não têm condição de aprender. Abaixo, em letras menores, está escrito: Celso Furlan disse ainda que mães levam crianças com deficiência para escolas como uma maneira de se livrar dos filhos. Prefeitura lamentou o ocorrido. A matéria é assinada pela redação do g1 SP e datada de 16/05/2025 as 19h30."
 %}
 
@@ -779,17 +789,17 @@ sumario: |
 <h4 id="trechos-das-falas-de-furlan">Trechos das Falas de Furlan</h4>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQpwPRrBvrVQIw4ZatkvL6pAXnOMIuhVymtrLVSAg6kiKQ?width=1024"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/e0435f1f-b117-4667-6c48-7442ed50e600/public"
     alt="Imagem com fundo azul contendo uma fotografia de Celso Furlan, identificado como ex-secretário de Educação de Barueri, acompanhada da seguinte citação que diz: Tomem cuidado para não ficar dando vaga para deficientes, porque vocês não estão mais levando eles na escola (...). Nós não podemos ficar com esse problema, porque não vai dar para nós atendermos todos. Não dá. Tá difícil."
 %}
 
 {% include figure.html
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTK2goae72dRozVFuE5vJHFAf9xlyKwTT3ox4fwEvJvsK0?width=1024"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/9ce07006-d183-4d8d-2192-efe537f97c00/public"
     alt="citação de Celso Furlan que diz: Um garoto com problema de autismo, ele significa 20 alunos a mais. Esse é um caso sério a pensar. Mas as mães não estão preocupadas com isso. Elas querem se livrar (...) E que nós que cuidamos deles. Não é certo."
 %}
 
 {% include figure.html
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQde95JB3obTJEhELUVJ8PnAQ4CVtAqXeWbu8F1e2Yev50?width=1024"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/ca8bebd9-404d-41bb-2159-b11bcd2fe700/public"
     alt="citação de Celso Furlan, que diz: Basta vocês aconselharem as mães que têm em casa um deficiente cadeirante. Um cadeirante que não mexe nenhum membro do corpo... nada. Todinho torto. Não tem condição... cadeirante não tem condição de aprender nada!! A mãe leva, sabe por quê? Pra ficar livre quatro... cinco horas do filho."
 %}
 
@@ -810,7 +820,7 @@ sumario: |
 %}
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQQ75ebComPQIiELMGhSI-7AclYr3GqCDPiKUHSW4cqpJs?width=1887&height=557"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d822bcaf-eecc-40e9-ce09-849629ab4f00/public"
     alt="notícia sobre vereadora que virou ré por injúria racial e discriminação contra estagiárias com deficiência em Porto Alegre, publicado no site g1."
     caption="Captura de tela de uma notícia publicada no site g1, na seção 'Rio Grande do Sul'. O texto menciona que a vereadora Lourdes Sprenger (MDB) teria chamado estagiárias de 'debilóides' e alegado que elas não tinham condições de exercer suas funções. Além disso, a vereadora teria se referido ao chefe das estagiárias como 'aquele professor preto, sujo e burro', conforme denúncia do Ministério Público. A matéria foi escrita por João Pedro Lamas e publicada em 24 de abril de 2024."
 %}
@@ -902,7 +912,7 @@ sumario: |
 </p>
 
 {% include figure.html
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSxrCLlEHm1SbkKqHjf6JBsAaq84uBXeb-GSmWur-WVE20?width=1917&height=438"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/f3ca150f-8d7f-4edf-0f3f-89c5bb20c100/public"
     alt="Captura de tela de uma notícia publicada no site Estadão, na seção Comportamento. O título destaca que um menino com deficiência foi deixado na escola enquanto os colegas foram para um passeio."
     caption="A reportagem menciona que a mãe de João, de 9 anos, relatou o caso nas redes sociais, o que gerou grande repercussão e levou a uma resposta da Secretaria de Educação. O caso ocorreu em Belo Horizonte, onde João, que tem paralisia cerebral e usa cadeira de rodas, foi deixado na escola enquanto a turma foi ao cinema, apesar de sua mãe ter autorizado sua participação. A mãe expressou frustração com a falta de inclusão e pediu maior capacitação dos profissionais da área."
 %}
