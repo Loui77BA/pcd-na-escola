@@ -11,13 +11,13 @@ description: "Conheça mais sobre Louise Suelen, idealizadora do projeto PcD na 
 </p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSRcl7LKE45SY9oqKim32ZlATst3dHyB7xojJMJ5Gk5M1A?width=1024"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d7c459dd-2af6-4b69-d32c-42a13daf7c00/public"
     alt="Pessoa sorridente com cabelos curtos e cacheados, vestindo um casaco escuro e um cachecol volumoso de lã bege, em ambiente interno com armários de madeira ao fundo." caption="Louise Suelen — engenheira de software"
 %}
 
 ## Quem sou eu?
 
-Eu sou uma pessoa muito apaixonada por educação, ciência e tecnologia, em especial o ensino de ciências exatas e tecnológicas para pessoas com deficiência e outras necessidades educacionais específicas. Eu trabalho com desenvolvimento de software, atualmente no <a href="https://grupoglobo.globo.com/" target="_blank">grupo Globo</a>, mas já trabalhei no <a href="https://www.itau.com.br/" target="_blank">Itaú Unibanco</a>, <a href="https://www.pipefy.com/pt-br/" target="_blank">Pipefy</a> e <a href="https://nttdata-solutions.com/br/" target="_blank">NTT Data</a>.
+Eu sou uma pessoa muito apaixonada por educação, ciência e tecnologia, em especial o ensino de ciências exatas e tecnológicas para pessoas com deficiência e outras necessidades educacionais específicas. Eu trabalho com desenvolvimento de software, atualmente na empresa <a href="https://creditas.com.br" target="_blank">Creditas</a>, mas já trabalhei no <a href="https://grupoglobo.globo.com/" target="_blank">grupo Globo</a>, <a href="https://www.itau.com.br/" target="_blank">Itaú Unibanco</a>, <a href="https://www.pipefy.com/pt-br/" target="_blank">Pipefy</a> e <a href="https://nttdata-solutions.com/br/" target="_blank">NTT Data</a>.
 
 De acadêmico eu fiz o curso técnico integrado em Informática, no Instituto Federal de Educação, Ciência e Tecnologia da Bahia – IFBA no campus da minha cidade, Barreiras. Foi lá, no IFBA, que eu aprendi a programar, mas essa não é uma história de amor à primeira vista, pelo contrário, foi ódio à primeira vista. Vou contar essa história algum dia.
 
@@ -25,7 +25,7 @@ Depois do IFBA, eu cursei dois semestres da faculdade de Psicologia e já foi o 
 
 O meu diploma de bacharelado em Ciência da Computação veio pela Universidade de Salvador (UNIFACS), onde cursei o mesmo bacharelado em Ciência da Computação, a partir de 2020 e me formei. 
 
-Na vida pessoal eu sou casada com a Vitória, ela também é uma mulher cega, e nós temos dois cachorrinhos, Amora uma Fox Paulistinha e Amendoim um Labrador. No mais, eu sou um projeto mal-acabado de escritora, gosto de nerdices, de ciência e de muito cuscuz com café.
+Na vida pessoal eu sou casada com a Vitória, ela também é uma mulher cega, e nós temos quatro cachorros, a Amora, Amendoím, Pitoco e a Pitanga. No mais, eu sou um projeto mal-acabado de escritora, gosto de nerdices, de ciência e de muito cuscuz com café.
 
 ## Por que criei o projeto PcD na Escola?
 
