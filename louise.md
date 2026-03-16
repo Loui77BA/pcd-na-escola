@@ -152,10 +152,7 @@ Comecei a estruturar o que eu gostaria que o projeto tivesse, fui escrevendo as 
   - Conhecer o NVDA
   - Saber como usar o NVDA no Windows
   - Saber como usar o Google Chrome com o NVDA
-  - Para só depois desenvolver a familiaridade com programas como:
-    - Word ou Google Docs
-        - VS Code
-        - E por aí vai.
+    - Para só depois desenvolver a familiaridade com programas como Word ou Google Docs, VS Code e por aí vai.
 - Ainda sobre leitores de tela, eu gostaria de repetir esse processo com o Orca no Linux, o VoiceOver no macOS e, se possível, com leitores de tela em smartphones.
 - Não há como estudar ciências exatas e tecnológicas sem ter domínio do leitor de telas, então essa seria a primeira etapa do projeto.
 
