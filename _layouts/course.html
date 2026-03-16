@@ -13,8 +13,7 @@ layout: default
   <li>
     <button type="button"
             class="video-card-btn"
-            data-bs-toggle="modal"
-            data-bs-target="#modal-{{ lesson.id }}"
+            data-lesson-index="{{ forloop.index0 }}"
             aria-label="Assistir Aula {{ lesson.number }}: {{ lesson.title }}{% if lesson.transcript_pending %}, transcrição em breve{% else %}, transcrição disponível{% endif %}">
       <article class="video-card">
         <div class="video-thumbnail-wrapper">
@@ -46,36 +45,65 @@ layout: default
   {% endfor %}
 </ul>
 
-{% for lesson in page.lessons %}
-{% assign modal_id = lesson.id | prepend: 'modal-' %}
-<div class="modal fade" id="{{ modal_id }}" tabindex="-1" aria-labelledby="{{ modal_id }}-label">
-  <div class="modal-dialog modal-dialog-centered modal-video modal-dialog-scrollable">
+<!-- Modal único: conteúdo populado por JS -->
+<div class="modal fade" id="course-modal" tabindex="-1" aria-labelledby="course-modal-label">
+  <div class="modal-dialog modal-dialog-centered modal-video">
     <div class="modal-content">
+
       <div class="modal-header">
-        <h2 class="custom-modal-title" id="{{ modal_id }}-label">Aula {{ lesson.number }} — {{ lesson.title }}</h2>
+        <div class="modal-title-group">
+          <h2 class="custom-modal-title" id="course-modal-label"></h2>
+          <span class="lesson-progress" aria-live="polite"></span>
+        </div>
         <button type="button" class="custom-close-btn" data-bs-dismiss="modal" aria-label="Fechar janela">
           <i class="bi bi-x-lg"></i>
         </button>
       </div>
+
       <div class="modal-body">
-        <div class="ratio ratio-16x9 bg-black rounded">
-          <iframe
-            src="https://customer-n8imyf4ea5hvxexl.cloudflarestream.com/{{ lesson.id }}/iframe?poster=https%3A%2F%2Fcustomer-n8imyf4ea5hvxexl.cloudflarestream.com%2F{{ lesson.id }}%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D1s%26height%3D600"
-            title="Vídeo: Aula {{ lesson.number }} - {{ lesson.title }}"
-            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+        <div class="video-container">
+          <div class="ratio ratio-16x9 bg-black rounded">
+            <iframe id="course-iframe" src="" title=""
+              allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
         </div>
-        <div class="video-transcript">
-          {{ lesson.transcript | markdownify }}
-        </div>
+        <details class="video-transcript" open>
+          <summary class="transcript-summary">
+            <span>Transcrição da aula</span>
+            <i class="bi bi-chevron-down transcript-chevron" aria-hidden="true"></i>
+          </summary>
+          <div class="transcript-content" id="course-transcript"></div>
+        </details>
       </div>
+
       <div class="modal-footer">
+        <button type="button" id="btn-prev-lesson" class="btn-lesson-nav" aria-label="Aula anterior">
+          <i class="bi bi-chevron-left" aria-hidden="true"></i> Anterior
+        </button>
         <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" id="btn-next-lesson" class="btn-lesson-nav" aria-label="Próxima aula">
+          Próxima <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </button>
       </div>
+
     </div>
   </div>
 </div>
-{% endfor %}
+
+<!-- Dados das aulas para o JS -->
+<script>
+const courseLessons = [
+  {% for lesson in page.lessons %}
+  {
+    id: {{ lesson.id | jsonify }},
+    number: {{ lesson.number | jsonify }},
+    title: {{ lesson.title | jsonify }},
+    transcript: {{ lesson.transcript | markdownify | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+];
+</script>
 
 <script src="{{ '/assets/js/course.js' | relative_url }}" defer></script>
