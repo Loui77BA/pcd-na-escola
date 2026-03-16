@@ -2,18 +2,33 @@
 layout: default
 ---
 
-<div class="text-center mb-4">
-  <i class="bi bi-eye-fill" style="font-size: 4rem; color: var(--accent-color);" aria-hidden="true"></i>
-</div>
+<nav class="course-breadcrumb" aria-label="Navegação">
+  <a href="{{ '/cursos/' | relative_url }}">
+    <i class="bi bi-arrow-left" aria-hidden="true"></i> Voltar aos cursos
+  </a>
+</nav>
 
-<h1 class="section-title" id="course-title">{{ page.title }}</h1>
+<header class="course-header">
+  <h1 class="course-page-title" id="course-title">{{ page.title }}</h1>
+  {% if page.excerpt %}
+  <p class="course-description">{{ page.excerpt }}</p>
+  {% endif %}
+  <span class="course-lesson-count" aria-label="{{ page.lessons | size }} aulas neste curso">
+    <i class="bi bi-play-circle" aria-hidden="true"></i> {{ page.lessons | size }} aulas
+  </span>
+</header>
 
 <ul class="video-list" id="video-list" aria-labelledby="course-title">
   {% for lesson in page.lessons %}
   <li>
     <button type="button"
             class="video-card-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#course-modal"
             data-lesson-index="{{ forloop.index0 }}"
+            data-lesson-id="{{ lesson.id }}"
+            data-lesson-number="{{ lesson.number }}"
+            data-lesson-title="{{ lesson.title | escape }}"
             aria-label="Assistir Aula {{ lesson.number }}: {{ lesson.title }}{% if lesson.transcript_pending %}, transcrição em breve{% else %}, transcrição disponível{% endif %}">
       <article class="video-card">
         <div class="video-thumbnail-wrapper">
@@ -21,7 +36,7 @@ layout: default
                alt="" aria-hidden="true" loading="lazy">
           <span class="lesson-number-badge" aria-hidden="true">Aula {{ lesson.number }}</span>
           <div class="play-icon-overlay" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M8 5V19L19 12L8 5Z" fill="white"/>
             </svg>
           </div>
@@ -45,7 +60,7 @@ layout: default
   {% endfor %}
 </ul>
 
-<!-- Modal único: conteúdo populado por JS -->
+<!-- Modal única — conteúdo populado pelo evento show.bs.modal -->
 <div class="modal fade" id="course-modal" tabindex="-1" aria-labelledby="course-modal-label">
   <div class="modal-dialog modal-dialog-centered modal-video">
     <div class="modal-content">
@@ -82,7 +97,7 @@ layout: default
         <button type="button" id="btn-prev-lesson" class="btn-lesson-nav" aria-label="Aula anterior">
           <i class="bi bi-chevron-left" aria-hidden="true"></i> Anterior
         </button>
-        <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Fechar</button>
+        <span class="lesson-progress-footer" aria-hidden="true"></span>
         <button type="button" id="btn-next-lesson" class="btn-lesson-nav" aria-label="Próxima aula">
           Próxima <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </button>
@@ -92,18 +107,11 @@ layout: default
   </div>
 </div>
 
-<!-- Dados das aulas para o JS -->
-<script>
-const courseLessons = [
-  {% for lesson in page.lessons %}
-  {
-    id: {{ lesson.id | jsonify }},
-    number: {{ lesson.number | jsonify }},
-    title: {{ lesson.title | jsonify }},
-    transcript: {{ lesson.transcript | markdownify | jsonify }}
-  }{% unless forloop.last %},{% endunless %}
-  {% endfor %}
-];
-</script>
+<!-- Transcrições renderizadas pelo Jekyll em <template> — sem risco de quebrar JS -->
+{% for lesson in page.lessons %}
+<template id="transcript-{{ lesson.id }}">{{ lesson.transcript | markdownify }}</template>
+{% endfor %}
+
+<span id="lesson-total" hidden>{{ page.lessons | size }}</span>
 
 <script src="{{ '/assets/js/course.js' | relative_url }}" defer></script>

@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   var CF_BASE = 'https://customer-n8imyf4ea5hvxexl.cloudflarestream.com';
-  var total = courseLessons.length;
+  var totalEl = document.getElementById('lesson-total');
+  var total = totalEl ? parseInt(totalEl.textContent, 10) : 0;
   var currentIndex = 0;
 
   var modalEl      = document.getElementById('course-modal');
@@ -11,40 +12,50 @@ document.addEventListener('DOMContentLoaded', function() {
   var detailsEl    = modalEl.querySelector('.video-transcript');
   var btnPrev      = document.getElementById('btn-prev-lesson');
   var btnNext      = document.getElementById('btn-next-lesson');
+  var footerProgress = modalEl.querySelector('.lesson-progress-footer');
 
   function loadLesson(index) {
-    var lesson = courseLessons[index];
+    var btn = document.querySelector('[data-lesson-index="' + index + '"]');
+    if (!btn) return;
     currentIndex = index;
 
-    // Título e progresso
-    titleEl.textContent = 'Aula ' + lesson.number + ' — ' + lesson.title;
-    progressEl.textContent = (index + 1) + ' de ' + total;
+    var lessonId     = btn.dataset.lessonId;
+    var lessonNumber = btn.dataset.lessonNumber;
+    var lessonTitle  = btn.dataset.lessonTitle;
+
+    // Título
+    titleEl.textContent = 'Aula ' + lessonNumber + ' \u2014 ' + lessonTitle;
 
     // Vídeo
     var poster = encodeURIComponent(
-      CF_BASE + '/' + lesson.id + '/thumbnails/thumbnail.jpg?time=1s&height=600'
+      CF_BASE + '/' + lessonId + '/thumbnails/thumbnail.jpg?time=1s&height=600'
     );
-    iframe.src = CF_BASE + '/' + lesson.id + '/iframe?poster=' + poster;
-    iframe.title = 'Vídeo: Aula ' + lesson.number + ' - ' + lesson.title;
+    iframe.src   = CF_BASE + '/' + lessonId + '/iframe?poster=' + poster;
+    iframe.title = 'Vídeo: Aula ' + lessonNumber + ' - ' + lessonTitle;
 
-    // Transcrição
-    transcriptEl.innerHTML = lesson.transcript;
+    // Transcrição (via <template> renderizado pelo Jekyll)
+    var tmpl = document.getElementById('transcript-' + lessonId);
+    transcriptEl.innerHTML = tmpl ? tmpl.innerHTML : '';
     detailsEl.open = true;
+    detailsEl.scrollTop = 0;
 
-    // Botões de navegação
+    // Botões de navegação e progresso
     btnPrev.disabled = (index === 0);
     btnNext.disabled = (index === total - 1);
+    var progressText = (index + 1) + ' de ' + total;
+    progressEl.textContent = progressText;
+    if (footerProgress) footerProgress.textContent = progressText;
   }
 
-  // Abre a modal ao clicar no card
+  // Carrega os dados antes do Bootstrap abrir a modal
+  // (listeners diretos nos elementos executam antes da delegação no document)
   document.querySelectorAll('.video-card-btn').forEach(function(btn) {
     btn.addEventListener('click', function() {
       loadLesson(parseInt(this.dataset.lessonIndex, 10));
-      bootstrap.Modal.getOrCreateInstance(modalEl).show();
     });
   });
 
-  // Navegação entre aulas
+  // Navegação entre aulas (modal permanece aberta)
   btnPrev.addEventListener('click', function() {
     if (currentIndex > 0) loadLesson(currentIndex - 1);
   });
