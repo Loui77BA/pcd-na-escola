@@ -603,7 +603,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
         </button>
       </div>
         <div class="modal-body">
-        <div class="mt-4 mb-4">
+        <div class="mt-4 mb-4 cf-player">
           <div style="position: relative; padding-top: 56.016597510373444%;">
           <iframe
             src="https://customer-n8imyf4ea5hvxexl.cloudflarestream.com/258412568d970cc4740cb9c4825c0d37/iframe?poster=https%3A%2F%2Fcustomer-n8imyf4ea5hvxexl.cloudflarestream.com%2F258412568d970cc4740cb9c4825c0d37%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
@@ -611,6 +611,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
             style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
             allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
             allowfullscreen
+            title="Reportagem da TV Bahia sobre a Tabela Periódica Acessível"
           ></iframe>
           </div>
           <figcaption id="figcaption-reportagem-tv-bahia" class="figure-caption text-center mt-4">

@@ -30,8 +30,15 @@ document.addEventListener('DOMContentLoaded', function() {
     var poster = encodeURIComponent(
       CF_BASE + '/' + lessonId + '/thumbnails/thumbnail.jpg?time=1s&height=600'
     );
-    iframe.src   = CF_BASE + '/' + lessonId + '/iframe?poster=' + poster;
+    iframe.src   = CF_BASE + '/' + lessonId + '/iframe?poster=' + poster + '&controls=false';
     iframe.title = 'Vídeo: Aula ' + lessonNumber + ' - ' + lessonTitle;
+
+    // Reinicializa o player acessível com controles em pt-BR
+    var playerContainer = document.getElementById('course-player');
+    if (playerContainer && typeof window.reinitCfPlayer === 'function') {
+      // Pequeno delay para garantir que o iframe carregou
+      setTimeout(function() { window.reinitCfPlayer(playerContainer); }, 300);
+    }
 
     // Transcrição (via <template> renderizado pelo Jekyll)
     var tmpl = document.getElementById('transcript-' + lessonId);
@@ -64,8 +71,16 @@ document.addEventListener('DOMContentLoaded', function() {
     if (currentIndex < total - 1) loadLesson(currentIndex + 1);
   });
 
-  // Para o vídeo ao fechar a modal
+  // Para o vídeo ao fechar a modal e limpa controles do player
   modalEl.addEventListener('hidden.bs.modal', function() {
     iframe.src = '';
+    var playerContainer = document.getElementById('course-player');
+    if (playerContainer) {
+      var oldControls = playerContainer.querySelector('.cf-controls');
+      var oldOverlay = playerContainer.querySelector('.cf-play-overlay');
+      if (oldControls) oldControls.remove();
+      if (oldOverlay) oldOverlay.remove();
+      playerContainer.dataset.cfInit = '';
+    }
   });
 });

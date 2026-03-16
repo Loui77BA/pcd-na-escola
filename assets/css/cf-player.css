@@ -1,0 +1,172 @@
+/* Player de vídeo acessível com controles em Português */
+.cf-player {
+  position: relative;
+}
+
+.cf-player iframe {
+  pointer-events: auto;
+}
+
+/* Barra de controles */
+.cf-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 0 0 8px 8px;
+  flex-wrap: nowrap;
+}
+
+/* Botões */
+.cf-controls button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  min-height: 36px;
+  flex-shrink: 0;
+}
+
+.cf-controls button:hover,
+.cf-controls button:focus-visible {
+  background: rgba(255, 255, 255, 0.2);
+  outline: 2px solid #fff;
+  outline-offset: 1px;
+}
+
+.cf-controls button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.cf-controls button svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Barra de progresso */
+.cf-progress-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-width: 60px;
+}
+
+.cf-progress {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+}
+
+.cf-progress:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.cf-progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.cf-progress::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Tempo */
+.cf-time {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+  min-width: 80px;
+  text-align: center;
+}
+
+/* Overlay de play grande */
+.cf-play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.cf-play-overlay button {
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  color: #fff;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.cf-play-overlay button:hover,
+.cf-play-overlay button:focus-visible {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.cf-play-overlay button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.cf-play-overlay button svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+  margin-left: 4px;
+}
+
+.cf-play-overlay[hidden] {
+  display: none;
+}
+
+/* Responsivo */
+@media (max-width: 576px) {
+  .cf-controls {
+    gap: 4px;
+    padding: 6px 8px;
+  }
+
+  .cf-time {
+    font-size: 0.7rem;
+    min-width: 65px;
+  }
+
+  .cf-controls button {
+    min-width: 32px;
+    min-height: 32px;
+  }
+}

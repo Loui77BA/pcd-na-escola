@@ -674,7 +674,7 @@ sumario: |
 
 <hr>
 
-<div class="text-center mb-4">
+<div class="text-center mb-4 cf-player">
 <div style="position: relative; padding-top: 56.016597510373444%;">
 <iframe
 src="https://customer-n8imyf4ea5hvxexl.cloudflarestream.com/5069fa72dad94cd9f7fd5805b152efa2/iframe?poster=https%3A%2F%2Fcustomer-n8imyf4ea5hvxexl.cloudflarestream.com%2F5069fa72dad94cd9f7fd5805b152efa2%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D0h0m20s%26height%3D600"
@@ -682,6 +682,7 @@ loading="lazy"
 style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
 allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
 allowfullscreen="true"
+title="Vídeo de Luciano Hang e Jelres Freitas"
 ></iframe>
 </div>
 </div>

@@ -38,7 +38,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
             </div>
             
             <div class="col-xl-5 col-lg-8">        
-                <div class="media-frame">
+                <div class="media-frame cf-player">
                     <div class="ratio ratio-16x9">
                         <iframe
                             src="https://customer-n8imyf4ea5hvxexl.cloudflarestream.com/bdb671eacec4dc6db44cd7729bece654/iframe?poster=https%3A%2F%2Fimagedelivery.net%2FRuw4waFkOelbXULIoE-oQg%2F9da6e101-1fe1-46f8-b533-b0cfd9c49e00%2Fpublic"
@@ -161,7 +161,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="media-frame">
+                <div class="media-frame cf-player">
                     <div class="ratio ratio-16x9">
                         <iframe
                             src="https://customer-n8imyf4ea5hvxexl.cloudflarestream.com/b5ec1881b528d8c92b827c5a27862d3c/iframe?poster=https%3A%2F%2Fimagedelivery.net%2FRuw4waFkOelbXULIoE-oQg%2F89dd155d-aea0-4c79-3eec-e91b10fac400%2Fpublic"
