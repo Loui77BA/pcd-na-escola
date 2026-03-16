@@ -14,11 +14,11 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
             <div class="col-lg-7 col-xl-6 mb-5 mb-xl-0">
                 <div class="text-center text-xl-start">
                     <h1 class="display-4 fw-bold mb-4">
-                        <span class="text-gradient">Educação e tecnologia</span>
+                        <span class="text-gradient">Educação</span>
                         <span class="d-block text-white mt-2">para todas as pessoas</span>
                     </h1>
                     <div class="accent-border-left mb-4">
-                        <p class="lead" style="color: var(--text-muted);">
+                        <p class="lead text-muted-custom">
                             "Para as pessoas sem deficiência, a tecnologia torna as coisas mais fáceis. Para as pessoas com deficiência, a tecnologia torna as coisas possíveis" 
                         </p>
                         <span class="d-block mt-2 text-white fw-medium">— Mary Pat Rabanaugh</span>
@@ -55,10 +55,10 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
     </div>
 </header>
 
-<section class="py-5 section-alt" aria-labelledby="target-audiences-title">
+<section class="py-5 section-alt" aria-labelledby="target-audiences-title" id="target-audiences">
     <div class="container px-4 my-5">
         <div class="text-center mb-5">
-            <span class="text-gradient text-uppercase fw-bold" style="letter-spacing: 2px; font-size: 0.9rem;">Foco principal</span>
+            <span class="text-gradient text-uppercase fw-bold section-eyebrow">Foco principal</span>
             <h2 id="target-audiences-title" class="display-6 fw-bold mt-2">Públicos que queremos alcançar</h2>
         </div>
 
@@ -69,7 +69,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                         <i class="material-icons fs-2" aria-hidden="true">location_on</i>
                     </div>
                     <h3 class="h5 fw-bold text-white mb-3">Nordeste</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Há mais pessoas com deficiência fora da escola do que a média nacional.</p>
+                    <p class="text-muted-sm">Há mais pessoas com deficiência fora da escola do que a média nacional.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -78,7 +78,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                         <i class="material-icons fs-2" aria-hidden="true">location_city</i>
                     </div>
                     <h3 class="h5 fw-bold text-white mb-3">Interior</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">É difícil acessar informações especializadas longe dos grandes centros.</p>
+                    <p class="text-muted-sm">É difícil acessar informações especializadas longe dos grandes centros.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -87,7 +87,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                         <i class="material-icons fs-2" aria-hidden="true">diversity_1</i>
                     </div>
                     <h3 class="h5 fw-bold text-white mb-3">Comunidade</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">O capacitismo acontece em todos os lugares e combatê-lo precisa de união.</p>
+                    <p class="text-muted-sm">O capacitismo acontece em todos os lugares e combatê-lo precisa de união.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -96,7 +96,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                         <i class="material-icons fs-2" aria-hidden="true">school</i>
                     </div>
                     <h3 class="h5 fw-bold text-white mb-3">Escolas</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Para colaborar diretamente com a comunidade escolar e familiares.</p>
+                    <p class="text-muted-sm">Para colaborar diretamente com a comunidade escolar e familiares.</p>
                 </div>
             </div>
         </div>
@@ -113,7 +113,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                     <i class="material-icons text-gradient fs-1 me-3" aria-hidden="true">visibility</i>
                     <h3 class="h2 fw-bold mb-0">Visão</h3>
                 </div>
-                <p style="color: var(--text-muted);" class="mb-4 lead">
+                <p class="text-muted-custom mb-4 lead">
                     Queremos ser um lugar excelente para compartilhar conteúdo sobre educação, tecnologia e acessibilidade, ajudando na formação crítica de pessoas com deficiência.
                 </p>
                 <div class="media-frame">
@@ -129,7 +129,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                     <i class="material-icons text-gradient fs-1 me-3" aria-hidden="true">flag</i>
                     <h3 class="h2 fw-bold mb-0">Missão</h3>
                 </div>
-                <p style="color: var(--text-muted);" class="mb-4 lead">
+                <p class="text-muted-custom mb-4 lead">
                     Queremos facilitar o acesso ao conhecimento e à tecnologia, independentemente das necessidades educacionais específicas de quem deseja aprender.
                 </p>
                 <div class="media-frame">
@@ -150,7 +150,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                 <h2 id="challenges-title" class="fw-bold display-6 mb-4">
                     Desafios na Educação
                 </h2>
-                <p style="color: var(--text-muted);" class="mb-4">
+                <p class="text-muted-custom mb-4">
                     Pessoas com deficiência enfrentam diversas barreiras no ambiente educacional, desde a falta de acessibilidade física até a ausência de materiais didáticos adaptados. Muitas escolas e universidades ainda não estão preparadas para oferecer um ambiente verdadeiramente inclusivo.
                 </p>
                 <div class="custom-card p-4 border-start border-4 border-primary">
@@ -182,7 +182,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
     <div class="container px-4 my-5">
         <div class="text-center mb-5">
             <h2 id="principles-title" class="display-5 fw-bold">Nossos Princípios</h2>
-            <div class="mx-auto mt-3" style="width: 60px; height: 4px; background: var(--primary); border-radius: 2px;"></div>
+            <div class="section-divider mx-auto mt-3"></div>
         </div>
 
         <div class="row gx-4 gy-4 justify-content-center">
@@ -192,7 +192,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                         <i class="material-icons fs-2" aria-hidden="true">group</i>
                     </div>
                     <h3 class="h4 fw-bold text-white mb-3">Humanidade</h3>
-                    <p style="color: var(--text-muted);">A naturalização da pessoa com deficiência enquanto ser humano, afastando-se por completo do padrão que tende a extremos de inferioridade e superação.</p>
+                    <p class="text-muted-custom">A naturalização da pessoa com deficiência enquanto ser humano, afastando-se por completo do padrão que tende a extremos de inferioridade e superação.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -201,7 +201,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                         <i class="material-icons fs-2" aria-hidden="true">diversity_2</i>
                     </div>
                     <h3 class="h4 fw-bold text-white mb-3">Respeito</h3>
-                    <p style="color: var(--text-muted);">O respeito absoluto e incondicional a laicidade e aos valores políticos, jurídicos e sociais do Estado Democrático de Direito na abordagem sobre a deficiência.</p>
+                    <p class="text-muted-custom">O respeito absoluto e incondicional a laicidade e aos valores políticos, jurídicos e sociais do Estado Democrático de Direito na abordagem sobre a deficiência.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -210,7 +210,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                         <i class="material-icons fs-2" aria-hidden="true">gavel</i>
                     </div>
                     <h3 class="h4 fw-bold text-white mb-3">Combate</h3>
-                    <p style="color: var(--text-muted);">O combate ao preconceito inclusive entre as diferentes comunidades de pessoas com deficiência e a equivocada hierarquização de deficiências.</p>
+                    <p class="text-muted-custom">O combate ao preconceito inclusive entre as diferentes comunidades de pessoas com deficiência e a equivocada hierarquização de deficiências.</p>
                 </div>
             </div>
         </div>

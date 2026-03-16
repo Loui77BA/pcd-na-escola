@@ -120,6 +120,7 @@
   flex-direction: column;
 }
 
+.video-info h2,
 .video-info h3 {
   font-size: 1.1rem;
   font-weight: 600;
@@ -206,8 +207,8 @@
   gap: 6px;
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--accent-color);
-  background: rgba(130, 87, 229, 0.1);
+  color: #c4b5fd;
+  background: rgba(130, 87, 229, 0.15);
   padding: 6px 14px;
   border-radius: 20px;
 }
@@ -218,8 +219,8 @@
 
 /* Tamanho responsivo */
 .modal-video {
-  width: 92vw;
-  max-width: 92vw;
+  width: calc(100vw - 2rem);
+  max-width: calc(100vw - 2rem);
 }
 
 @media (min-width: 576px) {
@@ -404,7 +405,8 @@ details[open] .transcript-chevron {
   color: var(--text-main);
   font-size: 0.82rem;
   font-weight: 600;
-  padding: 5px 12px;
+  padding: 6px 12px;
+  min-height: 36px;
   border-radius: 6px;
   cursor: pointer;
   transition: border-color 0.2s, color 0.2s;
@@ -450,6 +452,7 @@ kbd {
 @media (max-width: 575px) {
   .video-list {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .modal-video {
@@ -472,7 +475,27 @@ kbd {
   }
 
   .btn-lesson-nav {
-    padding: 5px 8px;
+    padding: 6px 10px;
     font-size: 0.78rem;
+    min-height: 36px;
+  }
+}
+
+/* Landscape em telas pequenas: permitir scroll no conteúdo da modal */
+@media (max-height: 500px) and (orientation: landscape) {
+  .modal-content {
+    max-height: calc(100svh - 1rem);
+    overflow-y: auto;
+  }
+}
+
+/* Respeitar preferência por movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  .video-card,
+  .video-card-btn:hover .video-card,
+  .video-card-btn:hover img,
+  .transcript-chevron {
+    transition: none !important;
+    transform: none !important;
   }
 }

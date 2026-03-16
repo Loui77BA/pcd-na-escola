@@ -43,8 +43,15 @@ h1, h2, h3, h4 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* Fallback para alto contraste */
-  color: var(--primary); 
+  color: transparent;
+}
+
+@supports not (-webkit-background-clip: text) {
+  .text-gradient {
+    background: none;
+    -webkit-text-fill-color: unset;
+    color: var(--primary);
+  }
 }
 
 /* --- Botões --- */
@@ -81,7 +88,7 @@ h1, h2, h3, h4 {
 /* --- Cards Modernos --- */
 .custom-card {
   background-color: var(--bg-card);
-  border: 1px solid transparent;
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 2rem;
   height: 100%;
@@ -199,8 +206,22 @@ h1, h2, h3, h4 {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .custom-cards .card-hover {
-    transition: none;
+  .custom-cards .card-hover,
+  .custom-card,
+  .custom-card:hover,
+  .card-icon-wrapper,
+  .custom-card:hover .card-icon-wrapper,
+  .btn-primary-custom,
+  .btn-outline-custom,
+  .custom-figure .image-wrapper,
+  .custom-figure .image-wrapper img,
+  .custom-figure .image-overlay,
+  .custom-figure .figcaption-wrapper,
+  .custom-figure .figure-decoration .accent-bar,
+  .custom-blockquote .card {
+    transition: none !important;
+    transform: none !important;
+    animation: none !important;
   }
 }
 
@@ -297,7 +318,8 @@ h1, h2, h3, h4 {
 }
 
 .custom-figure .image-overlay {
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8));
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   opacity: 0;
   transition: all 0.4s ease;
@@ -329,6 +351,8 @@ h1, h2, h3, h4 {
 }
 
 .custom-figure .figcaption-wrapper {
+  background-color: rgba(32, 32, 36, 0.9);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   transition: transform 0.3s ease;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -502,4 +526,35 @@ h1, h2, h3, h4 {
     animation: none !important;
     transition: none !important;
   }
+}
+
+/* --- Utilitários de z-index --- */
+.back-to-top {
+  z-index: 1000;
+}
+
+.vlibras-widget {
+  z-index: 9999;
+}
+
+/* --- Utilitários para index --- */
+.text-muted-custom {
+  color: var(--text-muted);
+}
+
+.text-muted-sm {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.section-eyebrow {
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.section-divider {
+  width: 60px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 2px;
 }

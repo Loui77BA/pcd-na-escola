@@ -42,7 +42,7 @@ layout: default
           </div>
         </div>
         <div class="video-info">
-          <h3>Aula {{ lesson.number }} - {{ lesson.title }}</h3>
+          <h2 class="video-info-title">Aula {{ lesson.number }} - {{ lesson.title }}</h2>
           <p>{{ lesson.description }}</p>
           {% if lesson.transcript_pending %}
           <span class="transcript-status transcript-status--pending" aria-hidden="true">
@@ -78,7 +78,7 @@ layout: default
       <div class="modal-body">
         <div class="video-container cf-player" id="course-player">
           <div class="ratio ratio-16x9 bg-black rounded">
-            <iframe id="course-iframe" src="" title=""
+            <iframe id="course-iframe" src="" title="Player de vídeo da aula"
               allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
               allowfullscreen>
             </iframe>
