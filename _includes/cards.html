@@ -1,14 +1,12 @@
 <section class="custom-cards my-5">
-  <article class="card bg-dark text-light border-0 shadow-lg card-hover"
-           style="border-radius: 15px; transition: all 0.3s ease;"
+  <article class="card bg-dark text-light border-0 shadow-lg card-hover card-article"
            aria-labelledby="card-title"
            aria-describedby="card-desc"
            tabindex="0">
     <div class="card-body p-4 position-relative">
       <!-- Ícone ilustrativo -->
       <div class="mb-3" aria-hidden="true">
-        <span class="rounded-circle p-3 d-inline-flex align-items-center justify-content-center text-light" 
-              style="width: 60px; height: 60px; font-size: 2.5rem; background: rgba(77,171,247,0.1);">
+        <span class="rounded-circle p-3 d-inline-flex align-items-center justify-content-center text-light card-icon-circle">
           {{ include.number }}
         </span>
       </div>
@@ -22,80 +20,3 @@
     </div>
   </article>
 </section>
-
-<style>
-/* Classe para esconder elementos visualmente mas mantê-los acessíveis */
-.visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-
-/* Melhorias de acessibilidade e contraste */
-.custom-cards .card-hover {
-  background: linear-gradient(145deg, #1e1e1e, #2a2a2a) !important;
-  border: 1px solid rgba(255,255,255,0.1);
-}
-
-/* Estados de foco para navegação por teclado */
-.custom-cards .card-hover:focus {
-  outline: 3px solid #0d6efd !important;
-  outline-offset: 2px;
-  box-shadow: 0 0 0 3px rgba(13,110,253,0.3) !important;
-}
-
-.custom-cards .card-hover:focus-visible {
-  outline: 3px solid #0d6efd !important;
-  outline-offset: 2px;
-}
-
-/* Estados hover e focus */
-.custom-cards .card-hover:hover,
-.custom-cards .card-hover:focus {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.4) !important;
-}
-
-/* Texto com alto contraste */
-.text-high-contrast {
-  color: rgba(255,255,255,0.95) !important;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
-}
-
-/* Animação respeitando preferências do usuário */
-@media (prefers-reduced-motion: reduce) {
-  .custom-cards .card-hover {
-    transition: none;
-  }
-}
-
-/* Suporte para temas de alto contraste do sistema */
-@media (prefers-contrast: high) {
-  .custom-cards .card-hover {
-    border: 2px solid #ffffff !important;
-    background: #000000 !important;
-  }
-  
-  .text-high-contrast {
-    color: #ffffff !important;
-  }
-}
-
-/* Responsividade com melhor acessibilidade */
-@media (max-width: 768px) {
-  .custom-cards .card-body {
-    padding: 1.5rem;
-  }
-  
-  /* Tamanho mínimo de toque para dispositivos móveis */
-  .custom-cards .card-hover {
-    min-height: 44px;
-  }
-}
-</style>
