@@ -15,11 +15,12 @@ layout: default
             class="video-card-btn"
             data-bs-toggle="modal"
             data-bs-target="#modal-{{ lesson.id }}"
-            aria-label="Assistir Aula {{ lesson.number }}: {{ lesson.title }}">
+            aria-label="Assistir Aula {{ lesson.number }}: {{ lesson.title }}{% if lesson.transcript_pending %}, transcrição em breve{% else %}, transcrição disponível{% endif %}">
       <article class="video-card">
         <div class="video-thumbnail-wrapper">
           <img src="https://customer-n8imyf4ea5hvxexl.cloudflarestream.com/{{ lesson.id }}/thumbnails/thumbnail.jpg?time={{ lesson.thumbnail_time }}&height=600"
                alt="" aria-hidden="true" loading="lazy">
+          <span class="lesson-number-badge" aria-hidden="true">Aula {{ lesson.number }}</span>
           <div class="play-icon-overlay" aria-hidden="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M8 5V19L19 12L8 5Z" fill="white"/>
@@ -29,6 +30,15 @@ layout: default
         <div class="video-info">
           <h3>Aula {{ lesson.number }} - {{ lesson.title }}</h3>
           <p>{{ lesson.description }}</p>
+          {% if lesson.transcript_pending %}
+          <span class="transcript-status transcript-status--pending" aria-hidden="true">
+            <i class="bi bi-clock"></i> Transcrição em breve
+          </span>
+          {% else %}
+          <span class="transcript-status transcript-status--available" aria-hidden="true">
+            <i class="bi bi-card-text"></i> Transcrição disponível
+          </span>
+          {% endif %}
         </div>
       </article>
     </button>
@@ -39,16 +49,16 @@ layout: default
 {% for lesson in page.lessons %}
 {% assign modal_id = lesson.id | prepend: 'modal-' %}
 <div class="modal fade" id="{{ modal_id }}" tabindex="-1" aria-labelledby="{{ modal_id }}-label">
-  <div class="modal-dialog modal-dialog-centered modal-compact modal-dialog-scrollable">
+  <div class="modal-dialog modal-dialog-centered modal-video modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="custom-modal-title" id="{{ modal_id }}-label">Aula {{ lesson.number }} - {{ lesson.title }}</h2>
-        <button type="button" class="custom-close-btn" data-bs-dismiss="modal" aria-label="Fechar Janela">
+        <h2 class="custom-modal-title" id="{{ modal_id }}-label">Aula {{ lesson.number }} — {{ lesson.title }}</h2>
+        <button type="button" class="custom-close-btn" data-bs-dismiss="modal" aria-label="Fechar janela">
           <i class="bi bi-x-lg"></i>
         </button>
       </div>
       <div class="modal-body">
-        <div class="ratio ratio-16x9 mb-3 bg-black rounded">
+        <div class="ratio ratio-16x9 bg-black rounded">
           <iframe
             src="https://customer-n8imyf4ea5hvxexl.cloudflarestream.com/{{ lesson.id }}/iframe?poster=https%3A%2F%2Fcustomer-n8imyf4ea5hvxexl.cloudflarestream.com%2F{{ lesson.id }}%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D1s%26height%3D600"
             title="Vídeo: Aula {{ lesson.number }} - {{ lesson.title }}"
