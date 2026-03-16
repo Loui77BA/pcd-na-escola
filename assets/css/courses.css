@@ -1,16 +1,3 @@
-/* --- VARIÁVEIS DE CORES (DARK MODE) --- */
-:root {
-  --bg-body: #121214;        
-  --bg-card: #202024;        
-  --bg-hover: #29292e;       
-  --text-main: #e1e1e6;      
-  --text-muted: #a8a8b3;     
-  --accent-color: #8257e5;   
-  --focus-color: #ffcd1e;    
-  --border-color: #323238;   
-  --close-btn-bg: #323238; /* Cor de fundo do botão fechar */
-}
-
 /* --- GERAL --- */
 body {
   background-color: var(--bg-body) !important;
