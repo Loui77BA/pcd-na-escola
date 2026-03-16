@@ -193,9 +193,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Configura o observador para monitorar adições de elementos ao container
+    // Configura o observador para monitorar adições de elementos ao container de view
     const container = document.querySelector('#secao-periodos .container');
     if (container) {
         observer.observe(container, { childList: true, subtree: true });
+    }
+
+    // Também observa o container dedicado de modais (cache)
+    const modaisContainer = document.getElementById('modais-container');
+    if (modaisContainer) {
+        observer.observe(modaisContainer, { childList: true, subtree: true });
     }
 });

@@ -101,11 +101,46 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
   header .btn {
     border-radius: 999px;
     margin: .25rem;
-    border: 1px solid rgba(255,255,255,.35);
     transition: transform .2s ease, background-color .2s ease;
   }
-  header .btn:hover,
-  header .btn:focus-visible { background: rgba(255,255,255,0.22); transform: translateY(-1px); }
+
+  /* Botões do dashboard: preservar estilos Bootstrap e garantir texto branco legível */
+  header .bg-dark .btn {
+    color: #ffffff;
+  }
+  header .bg-dark .btn.btn-primary {
+    background-color: #2570eb;
+    border-color: #2570eb;
+    color: #ffffff;
+  }
+  header .bg-dark .btn.btn-primary:hover,
+  header .bg-dark .btn.btn-primary:focus-visible {
+    background-color: #1d63d4;
+    border-color: #1d63d4;
+    color: #ffffff;
+    transform: translateY(-1px);
+  }
+  header .bg-dark .btn.btn-outline-light {
+    color: #ffffff;
+    border-color: rgba(255,255,255,.6);
+    background-color: transparent;
+  }
+  header .bg-dark .btn.btn-outline-light:hover,
+  header .bg-dark .btn.btn-outline-light:focus-visible {
+    background-color: rgba(255,255,255,0.15);
+    color: #ffffff;
+    border-color: rgba(255,255,255,.8);
+    transform: translateY(-1px);
+  }
+  header .bg-dark a.btn {
+    color: #ffffff;
+  }
+  header .bg-dark a.btn:hover,
+  header .bg-dark a.btn:focus-visible {
+    background-color: rgba(255,255,255,0.15);
+    color: #ffffff;
+    transform: translateY(-1px);
+  }
 
   .feature-card {
     background: rgba(255,255,255,0.05);
@@ -146,9 +181,9 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
     color: #ffffff; 
     text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
   }
-  .color-mode-active .elemento-alcalino-terroso { 
-    background: #748cab; 
-    color: #ffffff; 
+  .color-mode-active .elemento-alcalino-terroso {
+    background: #5e789b;
+    color: #ffffff;
     text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
   }
   .color-mode-active .elemento-transicao { 
@@ -166,14 +201,14 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
     color: #000000; 
     text-shadow: 0px 1px 1px rgba(255,255,255,0.5);
   }
-  .color-mode-active .elemento-nao-metal { 
-    background: #6a994e; 
-    color: #ffffff; 
+  .color-mode-active .elemento-nao-metal {
+    background: #5a8142;
+    color: #ffffff;
     text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
   }
-  .color-mode-active .elemento-semimetal { 
-    background: #e63946; 
-    color: #ffffff; 
+  .color-mode-active .elemento-semimetal {
+    background: #e42735;
+    color: #ffffff;
     text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
   }
   .color-mode-active .elemento-metal-representativo { 
@@ -197,9 +232,9 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
     background: linear-gradient(145deg, #9d4edd, #8a3ec8); 
     color: #ffffff; 
   }
-  .color-mode-active .modal-alcalino-terroso .modal-content { 
-    background: linear-gradient(145deg, #748cab, #647ba3); 
-    color: #ffffff; 
+  .color-mode-active .modal-alcalino-terroso .modal-content {
+    background: linear-gradient(145deg, #5e789b, #587192);
+    color: #ffffff;
   }
   .color-mode-active .modal-transicao .modal-content { 
     background: linear-gradient(145deg, #ffcc00, #e0b300); 
@@ -213,13 +248,13 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
     background: linear-gradient(145deg, #ffa07a, #e6906e); 
     color: #000000; 
   }
-  .color-mode-active .modal-nao-metal .modal-content { 
-    background: linear-gradient(145deg, #6a994e, #5d8844); 
-    color: #ffffff; 
+  .color-mode-active .modal-nao-metal .modal-content {
+    background: linear-gradient(145deg, #5a8142, #54793e);
+    color: #ffffff;
   }
-  .color-mode-active .modal-semimetal .modal-content { 
-    background: linear-gradient(145deg, #e63946, #cf333e); 
-    color: #ffffff; 
+  .color-mode-active .modal-semimetal .modal-content {
+    background: linear-gradient(145deg, #e42735, #d81b2a);
+    color: #ffffff;
   }
   .color-mode-active .modal-metal-representativo .modal-content { 
     background: linear-gradient(145deg, #ffe066, #e6ca5c); 
@@ -310,6 +345,24 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
     min-height: 280px;
   }
   #tabela-status { position: absolute; clip: rect(0 0 0 0); clip-path: inset(50%); height: 1px; width: 1px; overflow: hidden; white-space: nowrap; }
+
+  /* Busca de elementos */
+  #busca-elemento::placeholder { color: rgba(255,255,255,0.5); }
+  #busca-resultado .busca-item {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: .75rem;
+    padding: .75rem 1rem;
+    margin-bottom: .5rem;
+    cursor: pointer;
+    transition: border-color .18s ease, background .18s ease;
+  }
+  #busca-resultado .busca-item:hover,
+  #busca-resultado .busca-item:focus-visible {
+    border-color: var(--focus);
+    background: rgba(42, 123, 255, 0.15);
+  }
+  #busca-resultado .busca-vazio { color: var(--muted); font-style: italic; }
 </style>
 
 <!-- Link "Pular para o conteúdo" -->
@@ -356,21 +409,21 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
           <div class="col-md-4 mb-4">
             <section class="feature-card h-100" aria-labelledby="feat-a11y-title" aria-describedby="feat-a11y-desc">
               <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">accessibility_new</span>
-              <h2 id="feat-a11y-title" class="mb-1 h5" role="text">Acessibilidade</h2>
+              <h2 id="feat-a11y-title" class="mb-1 h5">Acessibilidade</h2>
               <p id="feat-a11y-desc" class="small mb-0">Compatível com tecnologias assistivas e leitores de tela</p>
             </section>
           </div>
           <div class="col-md-4 mb-4">
             <section class="feature-card h-100" aria-labelledby="feat-inter-title" aria-describedby="feat-inter-desc">
               <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">science</span>
-              <h2 id="feat-inter-title" class="mb-1 h5" role="text">Interatividade</h2>
+              <h2 id="feat-inter-title" class="mb-1 h5">Interatividade</h2>
               <p id="feat-inter-desc" class="small mb-0">Explore os elementos químicos de maneira dinâmica e educativa</p>
             </section>
           </div>
           <div class="col-md-4 mb-4">
             <section class="feature-card h-100" aria-labelledby="feat-edu-title" aria-describedby="feat-edu-desc">
               <span class="material-symbols-outlined d-block mb-2" aria-hidden="true">school</span>
-              <h2 id="feat-edu-title" class="mb-1 h5" role="text">Educacional</h2>
+              <h2 id="feat-edu-title" class="mb-1 h5">Educacional</h2>
               <p id="feat-edu-desc" class="small mb-0">Informações científicas precisas para aprendizado eficiente</p>
             </section>
           </div>
@@ -401,13 +454,35 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
               </div>
             </div>
 
+            <!-- Busca de elementos -->
+            <div class="bg-dark bg-opacity-50 p-3 rounded-4 mb-4">
+              <div class="d-flex align-items-center mb-3">
+                <span class="material-symbols-outlined me-2" aria-hidden="true" role="presentation">search</span>
+                <label for="busca-elemento" class="fw-semibold text-white mb-0 fs-6">Buscar elemento:</label>
+              </div>
+              <div class="position-relative">
+                <input
+                  type="search"
+                  id="busca-elemento"
+                  class="form-control bg-dark text-white border-light border-opacity-25 rounded-pill px-4 py-2"
+                  placeholder="Digite o nome, símbolo ou número atômico"
+                  aria-describedby="busca-elemento-desc"
+                  autocomplete="off"
+                />
+                <p id="busca-elemento-desc" class="visually-hidden">
+                  Digite para buscar um elemento por nome, símbolo químico ou número atômico. Os resultados aparecerão automaticamente abaixo.
+                </p>
+                <div id="busca-resultado" class="mt-2" role="region" aria-live="polite" aria-label="Resultados da busca"></div>
+              </div>
+            </div>
+
             <!-- Opções de visualização da tabela -->
             <div class="bg-dark bg-opacity-50 p-3 rounded-4 mb-4">
               <div class="d-flex align-items-center mb-3">
                 <span class="material-symbols-outlined me-2" aria-hidden="true" role="presentation">view_week</span>
                 <h3 id="modo-visualizacao-label" class="fw-semibold text-white mb-0 fs-6">Modo de visualização:</h3>
               </div>
-              <div class="d-flex flex-wrap justify-content-center mb-2 gap-2">
+              <div class="d-flex flex-wrap justify-content-center mb-2 gap-2" role="group" aria-labelledby="modo-visualizacao-label">
                 <button id="btn-view-by-period" class="btn btn-primary rounded-pill text-nowrap active flex-grow-1 flex-sm-grow-0" aria-pressed="true" aria-label="Visualizar por períodos" style="min-width: fit-content;">
                   <span class="material-symbols-outlined me-1" aria-hidden="true">table_rows</span>
                   <span class="d-none d-sm-inline">Por períodos</span>
@@ -1214,6 +1289,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
 
 <!-- Seção da tabela -->
 <section id="secao-periodos" class="text-white pt-2 position-relative" aria-labelledby="tabela-titulo">
+  <h2 id="tabela-titulo" class="visually-hidden">Tabela Periódica dos Elementos Químicos</h2>
   <div class="container px-4 my-2">
   <!-- Os elementos serão colocados aqui -->
   </div>
@@ -1275,7 +1351,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
             const videoSrc = videoFrame.src;
             videoFrame.src = videoSrc;
           } catch (e) {
-            console.log('Erro ao pausar o vídeo:', e);
+            // Erro silencioso ao pausar vídeo
           }
         }
         
@@ -1332,30 +1408,6 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
       });
     });
     
-    // Adiciona um listener para depurar o carregamento das imagens dos modais
-    document.addEventListener('show.bs.modal', function(event) {
-      const modal = event.target;
-      const symbol = modal.getAttribute('data-element-symbol');
-      const images = modal.querySelectorAll('img');
-      
-      if (images.length === 0) {
-        console.log(`Modal do elemento ${symbol}: Nenhuma imagem encontrada`);
-      } else {
-        images.forEach((img, index) => {
-          console.log(`Modal do elemento ${symbol}: Imagem ${index+1} - URL: ${img.src}`);
-          
-          // Adiciona listener para verificar o carregamento da imagem
-          img.addEventListener('load', () => {
-            console.log(`Modal do elemento ${symbol}: Imagem ${index+1} carregada com sucesso`);
-          });
-          
-          img.addEventListener('error', () => {
-            console.log(`Modal do elemento ${symbol}: ERRO ao carregar imagem ${index+1} - URL: ${img.src}`);
-          });
-        });
-      }
-    });
-    
     // Handler local: navegação dentro da modal "Como funciona" mantendo a modal aberta
     const comoFuncionaModal = document.getElementById('modal-como-funciona');
     if (comoFuncionaModal) {
@@ -1409,6 +1461,7 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
 
 <!-- Script da Tabela Periódica (injetará os elementos no #tabela-container) -->
 <script src="/assets/js/tabela-periodica.js"></script>
+<script src="/assets/js/tabela-periodica-shared.js"></script>
 <script src="/assets/js/tabela-periodica-grupos.js"></script>
 <script src="/assets/js/tabela-periodica-categorias.js"></script>
 <script src="/assets/js/tabela-periodica-colors.js"></script>
@@ -1424,11 +1477,8 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
     const grupoNavContainer = document.getElementById('grupo-nav-container');
     const categoriaNavContainer = document.getElementById('categoria-nav-container');
     
-    // Criamos um elemento para anúncios de acessibilidade
-    const visualAnnouncer = document.createElement('div');
-    visualAnnouncer.setAttribute('aria-live', 'polite');
-    visualAnnouncer.classList.add('visually-hidden');
-    document.body.appendChild(visualAnnouncer);
+    // Reutiliza o announcer de acessibilidade já existente na página
+    const visualAnnouncer = document.getElementById('a11y-announcer');
     
     // Função para mostrar visualização por períodos
     function showPeriodView() {
@@ -1559,6 +1609,83 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
   });
 </script>
 
+<!-- Script de busca de elementos -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const buscaInput = document.getElementById('busca-elemento');
+    const buscaResultado = document.getElementById('busca-resultado');
+    if (!buscaInput || !buscaResultado || typeof periodicElements === 'undefined') return;
+
+    let debounceTimer;
+
+    buscaInput.addEventListener('input', function() {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(function() {
+        realizarBusca(buscaInput.value.trim());
+      }, 300);
+    });
+
+    function realizarBusca(termo) {
+      buscaResultado.innerHTML = '';
+
+      if (termo.length < 1) return;
+
+      const termoLower = termo.toLowerCase();
+      const resultados = periodicElements.filter(function(elem) {
+        return elem.name.toLowerCase().includes(termoLower) ||
+               elem.symbol.toLowerCase() === termoLower ||
+               String(elem.atomicNumber) === termo;
+      });
+
+      if (resultados.length === 0) {
+        buscaResultado.innerHTML = '<p class="busca-vazio mb-0">Nenhum elemento encontrado para "' + termo.replace(/[<>&"]/g, '') + '".</p>';
+        return;
+      }
+
+      // Limita a 10 resultados para não poluir
+      var mostrar = resultados.slice(0, 10);
+
+      mostrar.forEach(function(elem) {
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'busca-item d-flex align-items-center gap-3 w-100 text-white text-start border-0';
+        btn.setAttribute('aria-label', 'Abrir detalhes de ' + elem.name + ', símbolo ' + elem.symbol + ', número atômico ' + elem.atomicNumber);
+
+        btn.innerHTML =
+          '<span class="fw-bolder fs-3" style="min-width: 3rem; text-align: center;">' + elem.symbol + '</span>' +
+          '<span class="flex-grow-1">' +
+            '<span class="fw-bold">' + elem.name + '</span><br>' +
+            '<span class="small" style="color: var(--muted);">Nº atômico: ' + elem.atomicNumber + ' · Massa: ' + elem.atomicMass + ' · ' + elem.groupName + '</span>' +
+          '</span>';
+
+        btn.addEventListener('click', function() {
+          abrirModalDoElemento(elem);
+        });
+
+        buscaResultado.appendChild(btn);
+      });
+
+      if (resultados.length > 10) {
+        var aviso = document.createElement('p');
+        aviso.className = 'busca-vazio mb-0 text-center mt-2';
+        aviso.textContent = 'Mostrando 10 de ' + resultados.length + ' resultados. Refine sua busca.';
+        buscaResultado.appendChild(aviso);
+      }
+    }
+
+    function abrirModalDoElemento(elem) {
+      // Tenta encontrar a modal do elemento na DOM atual
+      var modalId = 'modal-' + elem.symbol + '-' + elem.period + '-' + elem.column;
+      var modalEl = document.getElementById(modalId);
+
+      if (modalEl) {
+        var modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+        modal.show();
+      }
+    }
+  });
+</script>
+
 <!-- Script para controle específico do vídeo -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
@@ -1571,23 +1698,19 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
         const pandaVideos = modal.querySelectorAll('iframe[id^="panda-"]');
         
         if (pandaVideos.length > 0) {
-          console.log(`Modal fechada: Pausando ${pandaVideos.length} vídeo(s)`);
-          
-          pandaVideos.forEach((videoFrame, index) => {
+          pandaVideos.forEach((videoFrame) => {
             try {
               // Tenta pausar usando a API do Panda
               videoFrame.contentWindow.postMessage(JSON.stringify({
                 event: 'command',
                 func: 'pauseVideo'
               }), '*');
-              
+
               // Método de backup: recarregar o iframe
               const videoSrc = videoFrame.src;
               videoFrame.src = videoSrc;
-              
-              console.log(`Vídeo ${index + 1} pausado com sucesso`);
             } catch (error) {
-              console.error(`Erro ao pausar vídeo ${index + 1}:`, error);
+              // Erro silencioso ao pausar vídeo
             }
           });
         }

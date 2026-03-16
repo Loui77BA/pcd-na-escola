@@ -3352,115 +3352,18 @@ function generatePeriodSections() {
                 "justify-content-center"
             );
 
-            // Gera os "cards" (botões) para cada elemento do período
+            // Gera os "cards" (botões) e modais para cada elemento do período
             periodGroups[period].forEach((elem) => {
-                const colBtn = document.createElement("button");
-                colBtn.classList.add(
-                    "btn",
-                    "text-white",
-                    "mb-4",
-                    "shadow",
-                    "border-5",
-                    "col-lg-4",
-                    "btn-elemento"
+                const colBtn = createElementCard(
+                    elem,
+                    `Período ${elem.period}`,
+                    `Coluna ${elem.column}`,
+                    `período ${elem.period}, coluna ${elem.column}`
                 );
-                colBtn.type = "button";
-                colBtn.setAttribute("data-bs-toggle", "modal");
-
-                // Cria ID único para a modal
-                const modalId = `modal-${elem.symbol}-${elem.period}-${elem.column}`;
-                colBtn.setAttribute("data-bs-target", `#${modalId}`);
-                colBtn.setAttribute(
-                    "aria-label",
-                    `Elemento ${elem.name}, símbolo ${elem.symbol}, período ${elem.period}, coluna ${elem.column}. Pressione para mais informações.`
-                );
-
-                // Conteúdo do botão
-                colBtn.innerHTML = `
-            <div class="fs-6 text-end fw-bold fst-italic">Período ${elem.period}</div>
-            <span class="fw-bolder fs-1">${elem.symbol}</span><br/>
-            <span class="fw-bolder fs-4">${elem.name}</span><br/>
-            <span class="fw-bolder material-symbols-outlined" aria-hidden="true">expand_more</span>
-            <div class="fs-6 text-end fw-bold fst-italic">Coluna ${elem.column}</div>
-          `;
                 row.appendChild(colBtn);
 
-                // Cria o modal correspondente
-                const modalDiv = document.createElement("div");
-                modalDiv.classList.add("modal", "fade", "dialog");
-                modalDiv.id = modalId;
-                modalDiv.tabIndex = -1;
-                modalDiv.setAttribute("role", "dialog");
-                modalDiv.setAttribute("aria-modal", "true");
-                modalDiv.setAttribute("aria-labelledby", `label-${modalId}`);
-                modalDiv.setAttribute("aria-hidden", "true");
-
-                // Armazena o símbolo do elemento no modal para usar
-                // posteriormente na aplicação de cores nas modais.  
-                modalDiv.setAttribute('data-element-symbol', elem.symbol);
-
-                // Aria-describedby, apontando para o ID de um container
-                const descId = `desc-${modalId}`;
-
-                // Prepara o bloco da imagem, caso a propriedade imageUrl esteja definida no elemento.
-                const imageSection = elem.imageUrl
-                  ? `<div class="text-center mb-3"><img src="${elem.imageUrl}" aria-hidden="true" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;"></div>`
-                  : '';
-                
-                // Prepara o bloco da imagem de distribuição eletrônica, caso a propriedade distributionImageUrl esteja definida no elemento.
-                const distributionImageSection = elem.distributionImageUrl
-                  ? `<div class="text-center my-2"><img src="${elem.distributionImageUrl}" alt="Ilustração da distribuição eletrônica de ${elem.name}" class="img-fluid rounded mb-3 shadow" aria-hidden="true" style="max-height: 100%; object-fit: contain;"></div>`
-                  : '';
-
-                // Montando a estrutura do modal
-                modalDiv.innerHTML = `
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h2 class="modal-title fw-bold" id="label-${modalId}">
-                    ${elem.name}
-                  </h2>
-                  <button
-                    type="button"
-                    class="btn-close fw-bold bg-light h3"
-                    data-bs-dismiss="modal"
-                    aria-label="Fechar"
-                  ></button>
-                </div>
-                <div class="modal-body" id="${descId}">
-                  <h3 class="mb-3">Informações</h3>
-                  ${imageSection}
-                  <p><strong>Grupo:</strong> ${elem.groupName}</p>
-                  <p><strong>Símbolo:</strong> ${elem.symbolWriting}<span class="visually-hidden"> que se escreve com, ${elem.symbolPronunciation}</span></p>
-                  <p><strong>Número atômico:</strong> ${elem.atomicNumber}</p>
-                  <p><strong>Número de massa:</strong> ${elem.atomicMass}</p>
-                  <div class="col mb-3">
-                    <strong>Distribuição eletrônica</strong><br/>
-                    ${distributionImageSection}
-                    ${createDistribution(elem.distribution)}
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary fw-bold"
-                    data-bs-dismiss="modal"
-                  >
-                    Voltar à tabela
-                  </button>
-                </div>
-              </div>
-            </div>
-          `;
-
-                // Adiciona a modal no container principal
-                container.appendChild(modalDiv);
-                
-                // Adiciona a classe modal-dialog-scrollable ao modal-dialog para tornar a barra de rolagem visível
-                const modalDialogElement = modalDiv.querySelector('.modal-dialog');
-                if (modalDialogElement) {
-                    modalDialogElement.classList.add('modal-dialog-scrollable');
-                }
+                // Modal é criada/cacheada automaticamente no container dedicado
+                createElementModal(elem);
             });
 
             // Ao término do loop dos elementos, anexamos a row ao container
@@ -3476,10 +3379,10 @@ function createDistribution(distArray) {
         result += `
         <div class="d-flex">
           <span><strong>Camada ${d.camada}:</strong>&ThinSpace;</span>
-          <p aria-roledescription="subnível eletrônico">&ThinSpace; ${d.subnivel}</p>
-          <p style="position: relative; top: -0.5em;" aria-roledescription="elétrons.">
+          <span aria-roledescription="subnível eletrônico">&ThinSpace; ${d.subnivel}</span>
+          <span style="position: relative; top: -0.5em;" aria-roledescription="elétrons">
             ${d.eletrons}
-          </p>
+          </span>
         </div>
       `;
     });
