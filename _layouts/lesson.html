@@ -1,0 +1,119 @@
+---
+layout: default
+---
+
+<nav class="lesson-breadcrumb" aria-label="Navegação estrutural">
+  <ol>
+    <li><a href="{{ '/cursos/' | relative_url }}">Cursos</a></li>
+    <li><a href="{{ page.course_url | relative_url }}">{{ page.course_title }}</a></li>
+    <li aria-current="page">Aula {{ page.lesson.number }}</li>
+  </ol>
+</nav>
+
+<div class="lesson-layout">
+  {%- comment -%} ── Coluna principal: vídeo + info + transcrição ── {%- endcomment -%}
+  <div class="lesson-primary">
+    <div class="lesson-video-card">
+      <div class="video-container cf-player">
+        <div class="ratio ratio-16x9 bg-black">
+          {% assign cf_base = "https://customer-n8imyf4ea5hvxexl.cloudflarestream.com" %}
+          {% assign poster_url = cf_base | append: "/" | append: page.lesson.id | append: "/thumbnails/thumbnail.jpg?time=" | append: page.lesson.thumbnail_time | append: "&height=600" %}
+          <iframe src="{{ cf_base }}/{{ page.lesson.id }}/iframe?poster={{ poster_url | url_encode }}&controls=false"
+                  title="Vídeo: Aula {{ page.lesson.number }} - {{ page.lesson.title }}"
+                  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-info">
+      <div class="lesson-info-top">
+        <h1 class="lesson-page-title">{{ page.lesson.title }}</h1>
+        <span class="lesson-progress-badge" aria-label="Aula {{ page.lesson_index | plus: 1 }} de {{ page.total_lessons }}">
+          {{ page.lesson_index | plus: 1 }}/{{ page.total_lessons }}
+        </span>
+      </div>
+      {% if page.lesson.description %}
+      <p class="lesson-page-desc">{{ page.lesson.description }}</p>
+      {% endif %}
+    </div>
+
+    <nav class="lesson-nav" aria-label="Navegação entre aulas">
+      {% if page.prev_lesson %}
+      <a href="{{ page.prev_lesson.url | relative_url }}" class="btn-lesson-nav btn-lesson-nav--prev"
+         aria-label="Aula anterior: {{ page.prev_lesson.title }}">
+        <i class="bi bi-chevron-left" aria-hidden="true"></i>
+        Anterior
+      </a>
+      {% else %}
+      <span class="btn-lesson-nav btn-lesson-nav--prev btn-lesson-nav--disabled" aria-disabled="true">
+        <i class="bi bi-chevron-left" aria-hidden="true"></i>
+        Anterior
+      </span>
+      {% endif %}
+
+      {% if page.next_lesson %}
+      <a href="{{ page.next_lesson.url | relative_url }}" class="btn-lesson-nav btn-lesson-nav--next"
+         aria-label="Próxima aula: {{ page.next_lesson.title }}">
+        Próxima aula
+        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+      </a>
+      {% else %}
+      <span class="btn-lesson-nav btn-lesson-nav--next btn-lesson-nav--disabled" aria-disabled="true">
+        Próxima aula
+        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+      </span>
+      {% endif %}
+    </nav>
+
+    {% unless page.lesson.transcript_pending %}
+    <details class="lesson-transcript" open>
+      <summary class="transcript-summary">
+        <span class="transcript-summary-left">
+          <i class="bi bi-card-text" aria-hidden="true"></i>
+          Transcrição da aula
+        </span>
+        <i class="bi bi-chevron-down transcript-chevron" aria-hidden="true"></i>
+      </summary>
+      <div class="transcript-content">
+        {{ page.lesson.transcript | markdownify }}
+      </div>
+    </details>
+    {% else %}
+    <div class="lesson-transcript-pending">
+      <i class="bi bi-clock" aria-hidden="true"></i>
+      <span>Transcrição em breve</span>
+    </div>
+    {% endunless %}
+  </div>
+
+  {%- comment -%} ── Coluna lateral: lista de aulas ── {%- endcomment -%}
+  <aside class="lesson-sidebar" aria-label="Lista de aulas">
+    <div class="lesson-sidebar-header">
+      <h2 class="lesson-sidebar-title">Conteúdo</h2>
+      <span class="lesson-sidebar-count">{{ page.total_lessons }} aulas</span>
+    </div>
+    <ol class="lesson-sidebar-list">
+      {% for l in page.all_lessons %}
+      <li>
+        {% assign lesson_url = page.course_url | append: "aula-" | append: l.number | append: "/" %}
+        {% if l.number == page.lesson.number %}
+        <a href="{{ lesson_url | relative_url }}" class="lesson-sidebar-item lesson-sidebar-item--active" aria-current="page">
+          <span class="lesson-sidebar-number">{{ l.number }}</span>
+          <span class="lesson-sidebar-label">{{ l.title }}</span>
+          <span class="lesson-sidebar-playing" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </a>
+        {% else %}
+        <a href="{{ lesson_url | relative_url }}" class="lesson-sidebar-item">
+          <span class="lesson-sidebar-number">{{ l.number }}</span>
+          <span class="lesson-sidebar-label">{{ l.title }}</span>
+        </a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </aside>
+</div>

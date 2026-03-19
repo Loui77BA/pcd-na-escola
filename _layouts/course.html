@@ -18,21 +18,16 @@ layout: default
   </span>
 </header>
 
+<h2 class="video-list-heading">Aulas do curso</h2>
 <ul class="video-list" id="video-list" aria-labelledby="course-title">
   {% for lesson in page.lessons %}
   <li>
-    <button type="button"
-            class="video-card-btn"
-            data-bs-toggle="modal"
-            data-bs-target="#course-modal"
-            data-lesson-index="{{ forloop.index0 }}"
-            data-lesson-id="{{ lesson.id }}"
-            data-lesson-number="{{ lesson.number }}"
-            data-lesson-title="{{ lesson.title | escape }}"
-            aria-label="Assistir Aula {{ lesson.number }}: {{ lesson.title }}{% if lesson.transcript_pending %}, transcrição em breve{% else %}, transcrição disponível{% endif %}">
+    <a href="{{ page.url }}aula-{{ lesson.number }}/"
+       class="video-card-link"
+       aria-label="Assistir Aula {{ lesson.number }}: {{ lesson.title }}{% if lesson.transcript_pending %}, transcrição em breve{% else %}, transcrição disponível{% endif %}">
       <article class="video-card">
         <div class="video-thumbnail-wrapper">
-          <img src="https://customer-n8imyf4ea5hvxexl.cloudflarestream.com/{{ lesson.id }}/thumbnails/thumbnail.jpg?time={{ lesson.thumbnail_time }}&height=600"
+          <img src="https://customer-n8imyf4ea5hvxexl.cloudflarestream.com/{{ lesson.id }}/thumbnails/thumbnail.jpg?time={{ lesson.thumbnail_time }}&height=240"
                alt="" aria-hidden="true" loading="lazy">
           <span class="lesson-number-badge" aria-hidden="true">Aula {{ lesson.number }}</span>
           <div class="play-icon-overlay" aria-hidden="true">
@@ -42,7 +37,7 @@ layout: default
           </div>
         </div>
         <div class="video-info">
-          <h2 class="video-info-title">Aula {{ lesson.number }} - {{ lesson.title }}</h2>
+          <h3 class="video-info-title">Aula {{ lesson.number }} - {{ lesson.title }}</h3>
           <p>{{ lesson.description }}</p>
           {% if lesson.transcript_pending %}
           <span class="transcript-status transcript-status--pending" aria-hidden="true">
@@ -55,63 +50,7 @@ layout: default
           {% endif %}
         </div>
       </article>
-    </button>
+    </a>
   </li>
   {% endfor %}
 </ul>
-
-<!-- Modal única — conteúdo populado pelo evento show.bs.modal -->
-<div class="modal fade" id="course-modal" tabindex="-1" aria-labelledby="course-modal-label">
-  <div class="modal-dialog modal-dialog-centered modal-video">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <div class="modal-title-group">
-          <h2 class="custom-modal-title" id="course-modal-label"></h2>
-          <span class="lesson-progress" aria-live="polite"></span>
-        </div>
-        <button type="button" class="custom-close-btn" data-bs-dismiss="modal" aria-label="Fechar janela">
-          <i class="bi bi-x-lg"></i>
-        </button>
-      </div>
-
-      <div class="modal-body">
-        <div class="video-container cf-player" id="course-player">
-          <div class="ratio ratio-16x9 bg-black rounded">
-            <iframe id="course-iframe" src="" title="Player de vídeo da aula"
-              allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-        <details class="video-transcript" open>
-          <summary class="transcript-summary">
-            <span>Transcrição da aula</span>
-            <i class="bi bi-chevron-down transcript-chevron" aria-hidden="true"></i>
-          </summary>
-          <div class="transcript-content" id="course-transcript"></div>
-        </details>
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" id="btn-prev-lesson" class="btn-lesson-nav" aria-label="Aula anterior">
-          <i class="bi bi-chevron-left" aria-hidden="true"></i> Anterior
-        </button>
-        <span class="lesson-progress-footer" aria-hidden="true"></span>
-        <button type="button" id="btn-next-lesson" class="btn-lesson-nav" aria-label="Próxima aula">
-          Próxima <i class="bi bi-chevron-right" aria-hidden="true"></i>
-        </button>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- Transcrições renderizadas pelo Jekyll em <template> — sem risco de quebrar JS -->
-{% for lesson in page.lessons %}
-<template id="transcript-{{ lesson.id }}">{{ lesson.transcript | markdownify }}</template>
-{% endfor %}
-
-<span id="lesson-total" hidden>{{ page.lessons | size }}</span>
-
-<script src="{{ '/assets/js/course.js' | relative_url }}" defer></script>
