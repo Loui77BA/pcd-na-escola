@@ -8,7 +8,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
 
 
 
-<header class="header-bg" role="banner">
+<header class="header-bg">
     <div class="container px-4">
         <div class="row gx-5 align-items-center justify-content-center">
             <div class="col-lg-7 col-xl-6 mb-5 mb-xl-0">
@@ -47,6 +47,8 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                             allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
                             allowfullscreen
                             title="Vídeo de apresentação do projeto PcD na Escola"
+                            aria-hidden="true"
+                            tabindex="-1"
                         ></iframe>
                     </div>
                 </div>
@@ -170,6 +172,8 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                             allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
                             allowfullscreen
                             title="Vídeo sobre desafios na educação inclusiva"
+                            aria-hidden="true"
+                            tabindex="-1"
                         ></iframe>
                     </div>
                 </div>

@@ -363,6 +363,16 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
     background: rgba(42, 123, 255, 0.15);
   }
   #busca-resultado .busca-vazio { color: var(--muted); font-style: italic; }
+
+  /* Classes utilitárias (substituem estilos inline para acessibilidade) */
+  .bg-surface { background-color: var(--surface); }
+  .bg-surface-2 { background-color: var(--surface-2); }
+  .text-muted-pt { color: var(--muted); }
+  .icon-decorative-lg { font-size: 15rem; color: rgba(255, 255, 255, 0.7); }
+  .icon-decorative-lg-ml { font-size: 15rem; color: rgba(255, 255, 255, 0.7); margin-left: 1rem; }
+  .author-photo { width: 150px; height: 150px; object-fit: cover; border: 4px solid var(--primary); }
+  .author-card { border-radius: 1rem; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
+  .symbol-cell { min-width: 3rem; text-align: center; }
 </style>
 
 <!-- Link "Pular para o conteúdo" -->
@@ -705,19 +715,19 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
           <div class="row g-4">
             <!-- Card da Ana Célia -->
             <div class="col-12 mb-4">
-              <div class="card bg-dark text-white border-light" style="border-radius: 1rem; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.3);">
+              <div class="card bg-dark text-white border-light" class="author-card">
                 <div class="row g-0">
-                  <div class="col-md-3 text-center p-4 border-end border-light d-flex align-items-center justify-content-center" style="background-color: var(--surface-2);">
+                  <div class="col-md-3 text-center p-4 border-end border-light d-flex align-items-center justify-content-center" class="bg-surface-2">
                     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c9a5b6c3-65ef-49e0-d4fc-5924d5d77100/public" 
                          alt="Foto da Professora Ana Célia sorridente de cabelos longos e escuros, usando uma roupa amarela, em frente a folhagens verdes iluminadas." 
                          class="rounded-circle mb-3" 
-                         style="width: 150px; height: 150px; object-fit: cover; border: 4px solid var(--primary);" />
+                         class="author-photo" />
                   </div>
                   <div class="col-md-9">
                     <div class="card-header border-bottom border-light">
                       <h4 class="card-title mb-0">Ana Célia Barreto de Araújo Santana</h4>
                     </div>
-                    <div class="card-body" style="background-color: var(--surface);">
+                    <div class="card-body" class="bg-surface">
                       <div class="row">
                         <div class="col-md-6">
                           <h5 class="mb-2 border-bottom pb-2 border-light">
@@ -748,19 +758,19 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
             
             <!-- Card da Karine -->
             <div class="col-12 mb-4">
-              <div class="card bg-dark text-white border-light" style="border-radius: 1rem; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.3);">
+              <div class="card bg-dark text-white border-light" class="author-card">
                 <div class="row g-0">
-                  <div class="col-md-3 text-center p-4 border-end border-light d-flex align-items-center justify-content-center" style="background-color: var(--surface-2);">
+                  <div class="col-md-3 text-center p-4 border-end border-light d-flex align-items-center justify-content-center" class="bg-surface-2">
                     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/cd749420-d252-4d97-536c-81228f40f600/public" 
                          alt="Foto da Professora Karine sorridente de cabelos longos e loiros, usando óculos e blusa clara, em uma sala de informática com vários computadores dispostos em mesas." 
                          class="rounded-circle mb-3" 
-                         style="width: 150px; height: 150px; object-fit: cover; border: 4px solid var(--primary);" />
+                         class="author-photo" />
                   </div>
                   <div class="col-md-9">
                     <div class="card-header border-bottom border-light">
                       <h4 class="card-title mb-0">Karine do Prado Ribeiro</h4>
                     </div>
-                    <div class="card-body" style="background-color: var(--surface);">
+                    <div class="card-body" class="bg-surface">
                       <div class="row">
                         <div class="col-md-6">
                           <h5 class="mb-2 border-bottom pb-2 border-light">
@@ -791,19 +801,19 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
             
             <!-- Card da Louise -->
             <div class="col-12 mb-4">
-              <div class="card bg-dark text-white border-light" style="border-radius: 1rem; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.3);">
+              <div class="card bg-dark text-white border-light" class="author-card">
                 <div class="row g-0">
-                  <div class="col-md-3 text-center p-4 border-end border-light d-flex align-items-center justify-content-center" style="background-color: var(--surface-2);">
+                  <div class="col-md-3 text-center p-4 border-end border-light d-flex align-items-center justify-content-center" class="bg-surface-2">
                     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/04996eda-ef24-4768-33dc-7209b5e53500/public" 
                          alt="Foto de Louise Suelen sorridente de cabelos curtos e cacheados, vestindo casaco escuro e cachecol de lã bege, em ambiente interno com armários de madeira ao fundo." 
                          class="rounded-circle mb-3" 
-                         style="width: 150px; height: 150px; object-fit: cover; border: 4px solid var(--primary);" />
+                         class="author-photo" />
                   </div>
                   <div class="col-md-9">
                     <div class="card-header border-bottom border-light">
                       <h4 class="card-title mb-0">Louise Suelen Araujo Reis</h4>
                     </div>
-                    <div class="card-body" style="background-color: var(--surface);">
+                    <div class="card-body" class="bg-surface">
                       <div class="row">
                         <div class="col-md-6">
                           <h5 class="mb-2 border-bottom pb-2 border-light">
@@ -915,16 +925,16 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
             <p class="fs-5">Essa organização é o que chamamos de grade ou matriz. Se você já pegou em uma caixa de ovos, sabe que ela é formada por várias "casinhas", cada "casinha" guardando um ovo.</p>
                 <p class="fs-5">Quando você passa a mão tanto para a esquerda quanto para a direita, sente que existem linhas de ovos, que são as fileiras na horizontal (um do lado do outro).</p>
                 <figure class="text-center mb-0">
-                  <span class="material-symbols-outlined" style="font-size: 15rem; color: rgba(255, 255, 255, 0.7);" aria-hidden="true">table_rows</span>
+                  <span class="material-symbols-outlined icon-decorative-lg" aria-hidden="true">table_rows</span>
                 </figure>
                 <p class="fs-5">Já se for com a mão para cima ou para baixo vai sentir que existem as colunas de ovos, que são os ovos um embaixo do outro na vertical.</p>
 
                 <figure class="text-center mb-0">
-                  <span class="material-symbols-outlined" style="font-size: 15rem; color: rgba(255, 255, 255, 0.7);" aria-hidden="true">table_chart</span>
+                  <span class="material-symbols-outlined icon-decorative-lg" aria-hidden="true">table_chart</span>
                 </figure>
             <p class="fs-5 fw-bold text-center">Essa é a estrutura básica de uma tabela.</p>
             <figure class="text-center">
-              <span class="material-symbols-outlined" style="font-size: 15rem; color: rgba(255, 255, 255, 0.7); margin-left: 1rem;" aria-hidden="true">grid_on</span>
+              <span class="material-symbols-outlined icon-decorative-lg-ml" aria-hidden="true">grid_on</span>
             </figure>
             <ul>
               <li class="fs-5 mb-4"><strong>Linhas:</strong> Uma linha em uma tabela é exatamente isso: uma sequência de informações colocadas (organizadas) na horizontal.</li>
@@ -1653,10 +1663,10 @@ description: "Conheça a Tabela Periódica Acessível, uma ferramenta desenvolvi
         btn.setAttribute('aria-label', 'Abrir detalhes de ' + elem.name + ', símbolo ' + elem.symbol + ', número atômico ' + elem.atomicNumber);
 
         btn.innerHTML =
-          '<span class="fw-bolder fs-3" style="min-width: 3rem; text-align: center;">' + elem.symbol + '</span>' +
+          '<span class="fw-bolder fs-3 symbol-cell">' + elem.symbol + '</span>' +
           '<span class="flex-grow-1">' +
             '<span class="fw-bold">' + elem.name + '</span><br>' +
-            '<span class="small" style="color: var(--muted);">Nº atômico: ' + elem.atomicNumber + ' · Massa: ' + elem.atomicMass + ' · ' + elem.groupName + '</span>' +
+            '<span class="small text-muted-pt">Nº atômico: ' + elem.atomicNumber + ' · Massa: ' + elem.atomicMass + ' · ' + elem.groupName + '</span>' +
           '</span>';
 
         btn.addEventListener('click', function() {

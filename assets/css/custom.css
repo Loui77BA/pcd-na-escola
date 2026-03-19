@@ -273,6 +273,10 @@ h1, h2, h3, h4 {
   z-index: 1;
 }
 
+.custom-blockquote .blockquote-content {
+  z-index: 2;
+}
+
 .custom-blockquote .blockquote p {
   font-style: italic;
   position: relative;
@@ -557,4 +561,44 @@ h1, h2, h3, h4 {
   height: 4px;
   background: var(--primary);
   border-radius: 2px;
+}
+
+/* --- Utilitários de acessibilidade (substituem estilos inline) --- */
+.lead-muted {
+  color: var(--text-muted);
+  max-width: 700px;
+}
+
+.section-filter-title {
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.author-comment-quote {
+  font-style: italic;
+}
+
+.author-comment-gradient {
+  background: linear-gradient(135deg, rgba(13,110,253,0.1), rgba(102,16,242,0.1));
+  z-index: 1;
+}
+
+.author-comment-body {
+  z-index: 2;
+}
+
+.author-comment-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-comment-dot-1 { width: 6px; height: 6px; opacity: 0.7; }
+.author-comment-dot-2 { width: 6px; height: 6px; opacity: 0.5; }
+.author-comment-dot-3 { width: 6px; height: 6px; opacity: 0.3; }
+
+.author-comment-card {
+  border-radius: 20px;
 }

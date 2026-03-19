@@ -196,13 +196,13 @@ description: "Artigos sobre educação, tecnologia e acessibilidade no PcD na Es
     <h1 class="display-4 fw-bold mb-3 text-white">
       <span class="text-gradient">Biblioteca de Artigos</span>
     </h1>
-    <p class="lead" style="color: var(--text-muted); max-width: 700px;">
+    <p class="lead lead-muted">
       Explore nossos artigos sobre tecnologia, programação, educação inclusiva e acessibilidade. Utilize os filtros abaixo para encontrar o conteúdo ideal para você.
     </p>
   </header>
   
   <nav class="category-nav-card" aria-label="Filtrar por categorias">
-    <h2 class="h6 text-uppercase fw-bold text-white mb-3" style="letter-spacing: 1px; opacity: 0.8;">
+    <h2 class="h6 text-uppercase fw-bold text-white mb-3 section-filter-title">
       <i class="material-icons align-middle fs-6 me-1" aria-hidden="true">filter_list</i> Categorias
     </h2>
     <ul class="nav-pills-custom" role="list">

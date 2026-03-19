@@ -4,8 +4,8 @@ layout: default
 
 <nav class="lesson-breadcrumb" aria-label="Navegação estrutural">
   <ol>
-    <li><a href="{{ '/cursos/' | relative_url }}">Cursos</a></li>
-    <li><a href="{{ page.course_url | relative_url }}">{{ page.course_title }}</a></li>
+    <li><a href="{{ '/cursos/' | relative_url }}">Cursos</a><span class="breadcrumb-separator" aria-hidden="true">›</span></li>
+    <li><a href="{{ page.course_url | relative_url }}">{{ page.course_title }}</a><span class="breadcrumb-separator" aria-hidden="true">›</span></li>
     <li aria-current="page">Aula {{ page.lesson.number }}</li>
   </ol>
 </nav>
@@ -21,7 +21,9 @@ layout: default
           <iframe src="{{ cf_base }}/{{ page.lesson.id }}/iframe?poster={{ poster_url | url_encode }}&controls=false"
                   title="Vídeo: Aula {{ page.lesson.number }} - {{ page.lesson.title }}"
                   allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
-                  allowfullscreen>
+                  allowfullscreen
+                  aria-hidden="true"
+                  tabindex="-1">
           </iframe>
         </div>
       </div>

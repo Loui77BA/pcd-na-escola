@@ -7,7 +7,7 @@ layout: default
     <h1 class="display-4 fw-bold">{{ page.title }}</h1>
     <p class="meta text-muted fst-italic">
       {% if page.author %}Por: <span class="fw-medium">{{ page.author }}</span> | {% endif %}
-      {% if page.date %}Publicado em {{ page.date | date: "%d de %B de %Y" }}{% endif %}
+      {% if page.date %}Publicado em <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%d de %B de %Y" }}</time>{% endif %}
     </p>
 
     {% if page.tags %}

@@ -191,13 +191,13 @@ permalink: /cursos/
     <h1 class="display-4 fw-bold mb-3 text-white">
       <span class="text-gradient">Cursos Disponíveis</span>
     </h1>
-    <p class="lead" style="color: var(--text-muted); max-width: 700px;">
+    <p class="lead lead-muted">
       Explore nossos cursos sobre educação, tecnologia e acessibilidade. Utilize os filtros abaixo para encontrar o conteúdo ideal para você.
     </p>
   </header>
 
   <nav class="filter-nav-card" aria-label="Filtrar cursos por categoria">
-    <h2 class="h6 text-uppercase fw-bold text-white mb-3" style="letter-spacing: 1px; opacity: 0.8;">
+    <h2 class="h6 text-uppercase fw-bold text-white mb-3 section-filter-title">
       <i class="material-icons align-middle fs-6 me-1" aria-hidden="true">filter_list</i> Categorias
     </h2>
     <ul class="nav-pills-custom" role="list">
@@ -275,8 +275,8 @@ permalink: /cursos/
     {% endfor %}
   </div>
   
-  <div id="no-results" class="text-center py-5 d-none" style="color: var(--text-muted);">
-    <i class="material-icons fs-1 mb-2">search_off</i>
+  <div id="no-results" class="text-center py-5 d-none text-muted-custom">
+    <i class="material-icons fs-1 mb-2" aria-hidden="true">search_off</i>
     <p>Nenhum curso encontrado nesta categoria.</p>
   </div>
 

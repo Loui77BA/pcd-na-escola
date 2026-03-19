@@ -1,7 +1,8 @@
+{% assign card_id = include.title | slugify %}
 <section class="custom-cards my-5">
   <article class="card bg-dark text-light border-0 shadow-lg card-hover card-article"
-           aria-labelledby="card-title"
-           aria-describedby="card-desc"
+           aria-labelledby="card-title-{{ card_id }}"
+           aria-describedby="card-desc-{{ card_id }}"
            tabindex="0">
     <div class="card-body p-4 position-relative">
       <!-- Ícone ilustrativo -->
@@ -11,10 +12,10 @@
         </span>
       </div>
 
-      <h3 class="card-title text-light mb-3 fw-bold h5" id="card-title">
+      <h3 class="card-title text-light mb-3 fw-bold h5" id="card-title-{{ card_id }}">
         {{ include.title }}
       </h3>
-      <div class="card-text text-high-contrast lh-base" id="card-desc">
+      <div class="card-text text-high-contrast lh-base" id="card-desc-{{ card_id }}">
         {{ include.content }}
       </div>
     </div>
