@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var progressEl   = modalEl.querySelector('.lesson-progress');
   var transcriptEl = document.getElementById('course-transcript');
   var detailsEl    = modalEl.querySelector('.video-transcript');
+  var scrollEl     = modalEl.querySelector('.transcript-scroll');
   var btnPrev      = document.getElementById('btn-prev-lesson');
   var btnNext      = document.getElementById('btn-next-lesson');
   var footerProgress = modalEl.querySelector('.lesson-progress-footer');
@@ -44,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var tmpl = document.getElementById('transcript-' + lessonId);
     transcriptEl.innerHTML = tmpl ? tmpl.innerHTML : '';
     detailsEl.open = true;
-    detailsEl.scrollTop = 0;
+    scrollEl.scrollTop = 0;
 
     // Botões de navegação e progresso
     btnPrev.disabled = (index === 0);

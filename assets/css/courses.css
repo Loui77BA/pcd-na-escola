@@ -325,7 +325,7 @@
 }
 
 /* --- Transcrição colapsável e scrollável --- */
-.video-transcript {
+.transcript-scroll {
   flex: 1;
   min-height: 0;
   overflow-y: auto;
@@ -458,9 +458,9 @@ kbd {
   }
 
   .modal-video {
-    width: 100%;
-    max-width: 100%;
-    margin: 0.5rem;
+    width: calc(100% - 1rem);
+    max-width: calc(100% - 1rem);
+    margin: 0.5rem auto;
   }
 
   .modal-content {
