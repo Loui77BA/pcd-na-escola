@@ -221,6 +221,8 @@
 .modal-video {
   width: calc(100vw - 2rem);
   max-width: calc(100vw - 2rem);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 576px) {
