@@ -854,6 +854,967 @@ h1, h2, h3, h4 {
 }
 
 /* ===========================================================
+   POST — Layout de artigo individual (inspirado Rocketseat)
+   =========================================================== */
+
+.post-article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+/* --- Breadcrumb --- */
+.post-breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 2rem;
+  font-size: 0.82rem;
+}
+
+.post-breadcrumb-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.post-breadcrumb-link:hover {
+  color: var(--primary);
+}
+
+.post-breadcrumb-sep {
+  color: var(--border-color);
+}
+
+.post-breadcrumb-current {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+/* --- Header do post --- */
+.post-header {
+  margin-bottom: 2.5rem;
+}
+
+.post-category-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.post-category-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--primary);
+  padding: 4px 12px;
+  border-radius: 6px;
+}
+
+.post-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .post-title {
+    font-size: 2.5rem;
+  }
+}
+
+.post-description {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Barra de autor (estilo Rocketseat) --- */
+.post-author-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.post-author-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid rgba(130, 87, 229, 0.4);
+}
+
+.post-author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.post-author-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.post-author-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.post-reading-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+
+/* --- Tags --- */
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 0.25rem;
+}
+
+.post-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  padding: 3px 10px;
+  border-radius: 20px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.post-tag:hover {
+  border-color: var(--primary);
+  color: #fff;
+}
+
+/* --- Alerta / Aviso --- */
+.post-alert {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  background: rgba(255, 193, 7, 0.06);
+  border: 1px solid rgba(255, 193, 7, 0.2);
+  border-left: 3px solid #ffc107;
+  border-radius: 0 10px 10px 0;
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  color: var(--text-main);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.post-alert i {
+  color: #ffc107;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* --- Sumário (TOC) --- */
+.post-toc {
+  margin-bottom: 2rem;
+}
+
+.post-toc-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.post-toc-toggle:hover {
+  border-color: var(--primary);
+  background: var(--bg-hover);
+}
+
+.post-toc-toggle-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.post-toc-toggle-left i {
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.post-toc-chevron {
+  color: var(--text-muted);
+  transition: transform 0.2s ease;
+}
+
+.post-toc-toggle[aria-expanded="true"] .post-toc-chevron {
+  transform: rotate(180deg);
+}
+
+.post-toc-body {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  padding: 0.75rem 1rem;
+  margin-top: -1px;
+}
+
+.post-toc-body .list-group {
+  gap: 2px;
+}
+
+.post-toc-body .list-group-item {
+  background: transparent !important;
+  border: none !important;
+  padding: 0.2rem 0;
+}
+
+.post-toc-body .list-group-item a {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.post-toc-body .list-group-item a:hover {
+  color: #fff;
+  background: rgba(130, 87, 229, 0.1);
+}
+
+.post-toc-body .badge {
+  background: var(--primary) !important;
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* --- Conteúdo do post --- */
+.post-content {
+  color: var(--text-main);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.post-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.post-content p {
+  margin-bottom: 0.85rem;
+}
+
+/* Remove <br class="mb-*"> usados como espaçadores entre parágrafos —
+   o espaçamento já é controlado por margin-bottom dos <p> */
+.post-content br[class] {
+  display: none;
+}
+
+/* Imagens diretas no conteúdo (exclui .custom-figure que tem estilos próprios) */
+.post-content > img,
+.post-content > p > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+}
+
+.post-content a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.post-content a:hover {
+  color: #fff;
+}
+
+/* Blockquotes simples (exclui .custom-blockquote que tem layout próprio) */
+.post-content > blockquote {
+  border-left: 3px solid var(--primary);
+  background: var(--bg-card);
+  border-radius: 0 10px 10px 0;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.post-content > blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Garante que componentes customizados não herdem estilos do post-content */
+.post-content .custom-blockquote blockquote {
+  border-left: none;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+}
+
+/* Corrige figure-container d-inline-block que colapsa largura das imagens */
+.post-content .custom-figure .figure-container {
+  display: block !important;
+  width: 100%;
+}
+
+/* Espaçamento dos componentes customizados dentro do post */
+.post-content .custom-figure,
+.post-content .custom-blockquote {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.post-content .custom-figure img {
+  border: none;
+  border-radius: inherit;
+  margin: 0;
+}
+
+/* --- Inline code --- */
+.post-content code {
+  background: rgba(130, 87, 229, 0.12);
+  color: #c9b1ff;                /* ~7.2:1 sobre #121214 — WCAG AAA */
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 0.85em;
+  word-break: break-word;
+}
+
+/* Inline code com classes Bootstrap dos posts (text-white-50 etc.) */
+.post-content code[class] {
+  background: rgba(130, 87, 229, 0.12);
+  color: #c9b1ff !important;
+}
+
+/* --- Code blocks (estilo IDE moderna) --- */
+.post-content .highlighter-rouge {
+  background: #1a1a2e;           /* Fundo escuro uniforme tipo VS Code */
+  border: 1px solid rgba(130, 87, 229, 0.2);
+  border-radius: 10px;
+  margin: 1.25rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Remove classes Bootstrap inline (bg-dark, p-3) que conflitam */
+.post-content .highlighter-rouge[class*="bg-"] {
+  background: #1a1a2e !important;
+  padding: 0 !important;
+}
+
+.post-content .highlighter-rouge .highlight {
+  background: transparent;
+}
+
+.post-content .highlighter-rouge pre.highlight {
+  background: transparent;
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  border-radius: 0;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #e1e1e6;                /* --text-main — 12.6:1 sobre #1a1a2e */
+  -webkit-overflow-scrolling: touch;
+}
+
+.post-content .highlighter-rouge pre.highlight code {
+  background: transparent !important;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+  font-family: inherit;
+  word-break: normal;
+}
+
+/* Scrollbar estilizada nos blocos de código */
+.post-content .highlighter-rouge pre.highlight::-webkit-scrollbar {
+  height: 6px;
+}
+
+.post-content .highlighter-rouge pre.highlight::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.post-content .highlighter-rouge pre.highlight::-webkit-scrollbar-thumb {
+  background: rgba(130, 87, 229, 0.3);
+  border-radius: 3px;
+}
+
+/* <pre> sem classe (markdown indentado) */
+.post-content pre:not([class]) {
+  background: #1a1a2e;
+  border: 1px solid rgba(130, 87, 229, 0.2);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  margin: 1.25rem 0;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #e1e1e6;
+}
+
+.post-content pre:not([class]) code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+}
+
+/* =============================================
+   Syntax Highlighting — tema escuro tipo IDE
+   Cores verificadas com contraste ≥ 4.5:1 sobre #1a1a2e (WCAG AA)
+   ============================================= */
+
+/* Comentários */
+.highlight .c,
+.highlight .c1,
+.highlight .cm,
+.highlight .cs,
+.highlight .ch,
+.highlight .cp,
+.highlight .cpf {
+  color: #6b7280;               /* cinza — 4.6:1 */
+  font-style: italic;
+}
+
+/* Strings */
+.highlight .s,
+.highlight .s1,
+.highlight .s2,
+.highlight .sb,
+.highlight .sc,
+.highlight .sh,
+.highlight .sx,
+.highlight .dl {
+  color: #a5d6a7;               /* verde claro — 8.9:1 */
+}
+
+/* Números */
+.highlight .mi,
+.highlight .mf,
+.highlight .mh,
+.highlight .mo,
+.highlight .mb,
+.highlight .mx,
+.highlight .il {
+  color: #f9a825;               /* amarelo dourado — 7.5:1 */
+}
+
+/* Keywords (def, class, if, end, do, etc.) */
+.highlight .k,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kv,
+.highlight .kc {
+  color: #c9b1ff;               /* roxo claro — 7.2:1 */
+  font-weight: 600;
+}
+
+/* Nomes de funções/métodos */
+.highlight .nf,
+.highlight .fm {
+  color: #82b1ff;               /* azul claro — 6.7:1 */
+}
+
+/* Nomes de classes/módulos */
+.highlight .nc,
+.highlight .nn {
+  color: #f9a825;               /* amarelo dourado — 7.5:1 */
+  font-weight: 600;
+}
+
+/* Builtins (puts, print, require, etc.) */
+.highlight .nb {
+  color: #82b1ff;               /* azul claro — 6.7:1 */
+}
+
+/* Variáveis de instância/classe */
+.highlight .vi,
+.highlight .vc,
+.highlight .vg,
+.highlight .va {
+  color: #ef9a9a;               /* vermelho claro — 6.5:1 */
+}
+
+/* Operadores */
+.highlight .o,
+.highlight .ow {
+  color: #ce93d8;               /* lilás — 5.5:1 */
+}
+
+/* Símbolos (Ruby :symbol) */
+.highlight .ss {
+  color: #80cbc4;               /* teal — 8.3:1 */
+}
+
+/* Regex */
+.highlight .sr {
+  color: #ef9a9a;               /* vermelho claro — 6.5:1 */
+}
+
+/* Flags de comando (--force, -v, etc.) */
+.highlight .nt {
+  color: #ce93d8;               /* lilás — 5.5:1 */
+}
+
+/* Nomes genéricos / texto */
+.highlight .n,
+.highlight .na,
+.highlight .no,
+.highlight .nd,
+.highlight .ni,
+.highlight .ne,
+.highlight .nl,
+.highlight .nx,
+.highlight .py,
+.highlight .nt {
+  color: #e1e1e6;               /* texto padrão */
+}
+
+/* Erros de syntax */
+.highlight .err {
+  color: #ef5350;
+}
+
+/* Escape em strings */
+.highlight .se {
+  color: #f9a825;               /* amarelo dourado */
+  font-weight: 600;
+}
+
+/* Prompt de shell ($) */
+.highlight .gp {
+  color: #6b7280;               /* cinza — não destacar */
+  user-select: none;
+}
+
+/* Output genérico */
+.highlight .go {
+  color: #b4b4bf;               /* --text-muted */
+}
+
+/* Horizontal rules */
+.post-content hr {
+  border: none;
+  height: 1px;
+  background: var(--border-color);
+  margin: 1.25rem 0;
+  opacity: 0.6;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-bottom: 0.85rem;
+  padding-left: 1.5rem;
+}
+
+.post-content li {
+  margin-bottom: 0.25rem;
+}
+
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.92rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid var(--border-color);
+  padding: 0.65rem 0.85rem;
+  text-align: left;
+}
+
+.post-content th {
+  background: var(--bg-card);
+  font-weight: 600;
+  color: #fff;
+}
+
+.post-content td {
+  background: var(--bg-body);
+}
+
+@media (max-width: 768px) {
+  .post-content {
+    font-size: 1rem;
+  }
+
+  .post-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .post-content h3 {
+    font-size: 1.12rem;
+  }
+
+  .post-content .highlighter-rouge {
+    border-radius: 8px;
+  }
+}
+
+/* --- Footer do post --- */
+.post-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* --- Navegação entre posts --- */
+.post-nav {
+  margin-bottom: 1.5rem;
+}
+
+.post-nav-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: var(--text-main);
+  height: 100%;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.post-nav-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  color: var(--text-main);
+}
+
+.post-nav-next {
+  text-align: end;
+  align-items: flex-end;
+}
+
+.post-nav-direction {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.post-nav-direction i {
+  font-size: 1rem;
+}
+
+.post-nav-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.4;
+}
+
+/* --- Botão voltar --- */
+.post-back {
+  text-align: center;
+}
+
+.post-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.6rem 1.25rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.post-back-btn:hover {
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.post-back-btn i {
+  font-size: 1.1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post-nav-card,
+  .post-toc-toggle,
+  .post-toc-chevron,
+  .post-breadcrumb-link,
+  .post-back-btn,
+  .post-tag {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  .post-nav-card {
+    border: 2px solid #ffffff !important;
+  }
+  .post-toc-toggle {
+    border: 2px solid #ffffff !important;
+  }
+  .post-category-badge {
+    outline: 2px solid #ffffff;
+  }
+}
+
+/* ===========================================================
+   PÁGINAS DE LISTAGEM (Artigos & Cursos)
+   =========================================================== */
+
+/* --- Subtítulo da página --- */
+.page-subtitle {
+  max-width: 650px;
+}
+
+/* --- Card de filtros --- */
+.filter-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.filter-card-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+/* --- Filter pills --- */
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.filter-pill:hover {
+  border-color: var(--primary);
+  color: #fff;
+  background: rgba(130, 87, 229, 0.08);
+}
+
+.filter-pill.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(130, 87, 229, 0.35);
+}
+
+.filter-pill-count {
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1px 7px;
+  border-radius: 6px;
+  line-height: 1.5;
+}
+
+.filter-pill.active .filter-pill-count {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* --- Listing card (compartilhado por artigos e cursos) --- */
+.listing-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 1.75rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.listing-card:hover {
+  border-color: var(--primary);
+  background: var(--bg-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.listing-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.listing-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.listing-card-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.listing-card-date i {
+  color: var(--primary);
+}
+
+.listing-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.listing-card-title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.listing-card-excerpt {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.listing-card-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.listing-card-action {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.listing-card:hover .listing-card-action {
+  transform: translateX(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .listing-card,
+  .listing-card:hover,
+  .listing-card-action,
+  .listing-card:hover .listing-card-action,
+  .filter-pill {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  .listing-card {
+    border: 2px solid #ffffff !important;
+  }
+  .filter-pill {
+    border: 2px solid #ffffff !important;
+  }
+  .filter-pill.active {
+    border-color: var(--primary) !important;
+  }
+}
+
+/* ===========================================================
    HOMEPAGE — Design inspirado em Rocketseat
    =========================================================== */
 

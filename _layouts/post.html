@@ -2,122 +2,134 @@
 layout: default
 ---
 
-<article class="container-lg py-4">
-  <header class="post-header mb-5 text-center">
-    <h1 class="display-4 fw-bold">{{ page.title }}</h1>
-    <p class="meta text-muted fst-italic">
-      {% if page.author %}Por: <span class="fw-medium">{{ page.author }}</span> | {% endif %}
-      {% if page.date %}Publicado em <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%d de %B de %Y" }}</time>{% endif %}
-    </p>
+<article class="post-article">
+  <!-- Breadcrumb -->
+  <nav class="post-breadcrumb" aria-label="Navegação de localização">
+    <a href="{{ '/' | relative_url }}" class="post-breadcrumb-link">Início</a>
+    <span class="post-breadcrumb-sep" aria-hidden="true">/</span>
+    <a href="{{ '/artigos' | relative_url }}" class="post-breadcrumb-link">Artigos</a>
+    {% if page.categories %}
+    {% for cat in page.categories %}
+    <span class="post-breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="post-breadcrumb-current">{{ cat }}</span>
+    {% endfor %}
+    {% endif %}
+  </nav>
+
+  <!-- Header do post -->
+  <header class="post-header">
+    {% if page.categories %}
+    <div class="post-category-badges">
+      {% for cat in page.categories %}
+      <span class="post-category-badge">{{ cat }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <h1 class="post-title">{{ page.title }}</h1>
+
+    {% if page.description %}
+    <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+
+    <div class="post-author-bar">
+      <img class="post-author-avatar"
+           src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d7c459dd-2af6-4b69-d32c-42a13daf7c00/public"
+           alt=""
+           loading="lazy" />
+      <div class="post-author-info">
+        {% if page.author %}
+        <span class="post-author-name">{{ page.author }}</span>
+        {% endif %}
+        <div class="post-author-meta">
+          {% if page.date %}
+          <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%d de %B de %Y" }}</time>
+          {% endif %}
+          {% assign word_count = content | number_of_words %}
+          {% assign reading_time = word_count | divided_by: 200 %}
+          {% if reading_time < 1 %}{% assign reading_time = 1 %}{% endif %}
+          <span class="post-reading-dot" aria-hidden="true"></span>
+          <span>{{ reading_time }} min de leitura</span>
+        </div>
+      </div>
+    </div>
 
     {% if page.tags %}
-    <div class="mt-3">
+    <div class="post-tags">
       {% for tag in page.tags %}
-        <span class="badge bg-secondary rounded-pill px-3 py-2 me-2">{{ tag }}</span>
+      <span class="post-tag">{{ tag }}</span>
       {% endfor %}
     </div>
     {% endif %}
   </header>
 
   {% if page.aviso %}
-  <div class="alert alert-warning shadow-sm rounded-3 mb-4">
-    <div class="d-flex align-items-center">
-      <span class="material-symbols-outlined me-2" aria-hidden="true">warning</span>
-      <strong>Aviso:</strong>&nbsp;{{ page.aviso }}
+  <div class="post-alert" role="alert">
+    <i class="material-icons" aria-hidden="true">warning</i>
+    <div>
+      <strong>Aviso:</strong> {{ page.aviso }}
     </div>
   </div>
   {% endif %}
 
   {% if page.sumario %}
-  <nav aria-label="Sumário do texto" class="mb-5">
-    <button class="btn btn-dark w-100 d-flex align-items-center justify-content-between px-4 py-3 rounded-pill shadow"
-      type="button" data-bs-toggle="collapse" data-bs-target="#sumario" aria-controls="sumario"
-      aria-expanded="false" aria-label="Lista de capítulos do texto">
-      <span class="d-flex align-items-center gap-2">
-        <span class="material-symbols-outlined" aria-hidden="true">format_list_numbered</span>
+  <nav aria-label="Sumário do texto" class="post-toc">
+    <button class="post-toc-toggle"
+      type="button" data-bs-toggle="collapse" data-bs-target="#sumario"
+      aria-controls="sumario" aria-expanded="false">
+      <span class="post-toc-toggle-left">
+        <i class="material-icons" aria-hidden="true">format_list_numbered</i>
         <span class="fw-bold">Sumário</span>
       </span>
-      <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+      <i class="material-icons post-toc-chevron" aria-hidden="true">expand_more</i>
     </button>
-    <div class="collapse mt-3 card card-body shadow-sm rounded-3 bg-dark" id="sumario">
+    <div class="collapse post-toc-body" id="sumario">
       {{ page.sumario }}
     </div>
   </nav>
   {% endif %}
 
-  <div class="row justify-content-center">
-    <div class="col-lg-10 col-xl-8">
-      <div class="post-content fs-5 lh-lg">
-        {{ content }}
-      </div>
-    </div>
+  <!-- Conteúdo do post -->
+  <div class="post-content">
+    {{ content }}
   </div>
 
-  <footer class="mt-5 border-top pt-4">
-    <nav aria-label="Navegação entre posts">
-      <div class="row">
-        <div class="col-md-6 mb-3 mb-md-0">
+  <!-- Navegação entre posts -->
+  <footer class="post-footer">
+    <nav aria-label="Navegação entre posts" class="post-nav">
+      <div class="row g-3">
+        <div class="col-md-6">
           {% if page.previous %}
-          <a class="card bg-dark text-white text-decoration-none h-100 shadow-sm hover-shadow transition" href="{{ page.previous.url | relative_url }}"
+          <a class="post-nav-card" href="{{ page.previous.url | relative_url }}"
             aria-label="Post anterior: {{ page.previous.title }}">
-            <div class="card-body">
-              <p class="text-light mb-1"><span class="material-symbols-outlined align-middle me-1" aria-hidden="true">arrow_back</span> Post anterior</p>
-              <h5 class="card-title mb-0">{{ page.previous.title }}</h5>
-            </div>
+            <span class="post-nav-direction">
+              <i class="material-icons" aria-hidden="true">west</i>
+              Post anterior
+            </span>
+            <span class="post-nav-title">{{ page.previous.title }}</span>
           </a>
           {% endif %}
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 text-md-end">
           {% if page.next %}
-          <a class="card bg-dark text-white text-decoration-none h-100 shadow-sm hover-shadow transition text-md-end" href="{{ page.next.url | relative_url }}"
+          <a class="post-nav-card post-nav-next" href="{{ page.next.url | relative_url }}"
             aria-label="Próximo post: {{ page.next.title }}">
-            <div class="card-body">
-              <p class="text-light mb-1">Próximo post <span class="material-symbols-outlined align-middle ms-1" aria-hidden="true">arrow_forward</span></p>
-              <h5 class="card-title mb-0">{{ page.next.title }}</h5>
-            </div>
+            <span class="post-nav-direction">
+              Próximo post
+              <i class="material-icons" aria-hidden="true">east</i>
+            </span>
+            <span class="post-nav-title">{{ page.next.title }}</span>
           </a>
           {% endif %}
         </div>
       </div>
     </nav>
+
+    <div class="post-back">
+      <a href="{{ '/artigos' | relative_url }}" class="post-back-btn">
+        <i class="material-icons" aria-hidden="true">arrow_back</i>
+        Ver todos os artigos
+      </a>
+    </div>
   </footer>
 </article>
-
-<style>
-  .post-content {
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .post-content h2, .post-content h3, .post-content h4 {
-    margin-top: 1.5em;
-    margin-bottom: 0.75em;
-    font-weight: 600;
-  }
-  
-  .post-content p {
-    margin-bottom: 1.2em;
-  }
-  
-  .post-content img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 1.5rem 0;
-  }
-  
-  .hover-shadow:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-  }
-  
-  .transition {
-    transition: all 0.3s ease;
-  }
-  
-  @media (max-width: 768px) {
-    .post-content {
-      font-size: 1.1rem !important;
-    }
-  }
-</style>
