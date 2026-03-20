@@ -1,56 +1,89 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Menu principal">
-  <div class="container px-4">
-    <a class="navbar-brand" href="{{ '/' | relative_url }}">
-      <img src="{{ '/images/logo.png' | relative_url }}" width="150" alt="Logomarca do PcD na Escola">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Menu de opções.">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url }}">Página inicial</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ '/artigos' | relative_url }}">Artigos</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ '/cursos' | relative_url }}">Cursos</a></li>
-        <li class="nav-item dropdown">
-          <button class="nav-link dropdown-toggle" id="navbarDropdownTools" type="button"
-             data-bs-toggle="dropdown" aria-expanded="false">
-            Ferramentas
+<header class="site-header" data-pagefind-ignore>
+  <nav class="navbar navbar-expand-lg" aria-label="Menu principal">
+    <div class="container px-4">
+      <a class="navbar-brand" href="{{ '/' | relative_url }}">
+        <img src="{{ '/images/logo.png' | relative_url }}" width="140" alt="Logomarca do PcD na Escola" class="nav-logo">
+      </a>
+      <button class="nav-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false"
+              aria-label="Abrir menu de navegação">
+        <span class="nav-toggler-bar"></span>
+        <span class="nav-toggler-bar"></span>
+        <span class="nav-toggler-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item">
+            <a class="nav-link-custom" href="{{ '/' | relative_url }}">Página inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom" href="{{ '/artigos' | relative_url }}">Artigos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom" href="{{ '/cursos' | relative_url }}">Cursos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="nav-link-custom dropdown-toggle" id="navDropTools" type="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Ferramentas
+            </button>
+            <ul class="dropdown-menu nav-dropdown" aria-labelledby="navDropTools">
+              <li>
+                <a class="dropdown-item nav-dropdown-item" href="{{ '/ferramentas-tabela-periodica-acessivel-para-pessoas-com-deficiencia/' | relative_url }}">
+                  <i class="material-icons nav-dropdown-icon" aria-hidden="true">science</i>
+                  Tabela Periódica Acessível
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="nav-link-custom dropdown-toggle" id="navDropDocs" type="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Documentações
+            </button>
+            <ul class="dropdown-menu nav-dropdown" aria-labelledby="navDropDocs">
+              <li>
+                <a class="dropdown-item nav-dropdown-item" href="https://www2.camara.leg.br/a-camara/estruturaadm/gestao-na-camara-dos-deputados/responsabilidade-social-e-ambiental/acessibilidade/pdfs/ABNTNBR17225AcessibilidadeDigitalparaWeb.pdf"
+                   target="_blank" rel="noopener">
+                  <i class="material-icons nav-dropdown-icon" aria-hidden="true">description</i>
+                  ABNT NBR 17225
+                  <i class="material-icons nav-external-icon" aria-hidden="true">open_in_new</i>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item nav-dropdown-item" href="https://developer.mozilla.org/pt-BR/docs/Web/Accessibility/ARIA" target="_blank" rel="noopener">
+                  <i class="material-icons nav-dropdown-icon" aria-hidden="true">code</i>
+                  Acessibilidade com ARIA
+                  <i class="material-icons nav-external-icon" aria-hidden="true">open_in_new</i>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item nav-dropdown-item" href="https://guia-wcag.com/" target="_blank" rel="noopener">
+                  <i class="material-icons nav-dropdown-icon" aria-hidden="true">checklist</i>
+                  Guia WCAG
+                  <i class="material-icons nav-external-icon" aria-hidden="true">open_in_new</i>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item nav-dropdown-item" href="https://www.nvaccess.org/files/nvda/releases/stable/documentation/pt_BR/userGuide.html"
+                   target="_blank" rel="noopener">
+                  <i class="material-icons nav-dropdown-icon" aria-hidden="true">record_voice_over</i>
+                  Manual do NVDA
+                  <i class="material-icons nav-external-icon" aria-hidden="true">open_in_new</i>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav-actions">
+          <button type="button" class="nav-search-btn"
+                  data-bs-toggle="modal" data-bs-target="#searchModal"
+                  aria-label="Buscar no site">
+            <i class="material-icons" aria-hidden="true">search</i>
+            <span class="d-none d-lg-inline">Buscar</span>
           </button>
-          <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDropdownTools">
-            <li>
-              <a class="dropdown-item" href="{{ '/ferramentas-tabela-periodica-acessivel-para-pessoas-com-deficiencia/' | relative_url }}">
-                Tabela Periódica Acessível
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <button class="nav-link dropdown-toggle" id="navbarDropdownDocs" type="button"
-             data-bs-toggle="dropdown" aria-expanded="false">
-            Documentações
-          </button>
-          <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDropdownDocs">
-            <li>
-              <a class="dropdown-item" href="https://www2.camara.leg.br/a-camara/estruturaadm/gestao-na-camara-dos-deputados/responsabilidade-social-e-ambiental/acessibilidade/pdfs/ABNTNBR17225AcessibilidadeDigitalparaWeb.pdf?utm_source=chatgpt.com&utm_medium=referral&utm_campaign=chatgpt.com"
-                 target="_blank" rel="noopener">ABNT NBR 17225 – Acessibilidade Web</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="https://developer.mozilla.org/pt-BR/docs/Web/Accessibility/ARIA" target="_blank" rel="noopener">
-                Acessibilidade com ARIA
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="https://guia-wcag.com/" target="_blank" rel="noopener">Guia WCAG</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="https://www.nvaccess.org/files/nvda/releases/stable/documentation/pt_BR/userGuide.html"
-                 target="_blank" rel="noopener">Manual do NVDA</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>

@@ -1,0 +1,29 @@
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-modal="true" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content search-modal-content">
+      <div class="modal-header search-modal-header">
+        <h2 class="modal-title h5 text-white" id="searchModalLabel">
+          <i class="material-icons align-middle me-2" aria-hidden="true">search</i>
+          Buscar no site
+        </h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar busca"></button>
+      </div>
+      <div class="modal-body search-modal-body">
+        <div class="search-input-wrapper">
+          <label for="search-input-modal" class="visually-hidden">Digite sua busca</label>
+          <input type="search"
+                 id="search-input-modal"
+                 class="form-control search-input"
+                 placeholder="Ex: acessibilidade, educação inclusiva..."
+                 autocomplete="off"
+                 aria-describedby="search-help-modal">
+          <small id="search-help-modal" class="text-muted-custom d-block mt-2">
+            Digite pelo menos 2 caracteres para buscar
+          </small>
+        </div>
+        <div id="search-results-modal" class="search-results mt-3" aria-live="polite">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

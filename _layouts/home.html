@@ -26,10 +26,8 @@
   <body id="topo" class="d-flex flex-column h-100">
     {% include navbar.html %}
 
-    <main id="main-content" class="flex-shrink-0 py-4" data-pagefind-body>
-      <div class="container">
-        {{ content }}
-      </div>
+    <main id="main-content" class="flex-shrink-0" data-pagefind-body>
+      {{ content }}
     </main>
 
     {% include footer.html %}
@@ -73,7 +71,7 @@
         }
       });
     </script>
-    
+
     <!-- A11y Toolbar – começo -->
     <!-- CSS movido para assets/css/a11y-toolbar.css -->
 
