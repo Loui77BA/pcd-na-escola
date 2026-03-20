@@ -109,6 +109,13 @@
 
     var seeking = false;
 
+    // Região de status para leitores de tela (WCAG 4.1.3)
+    var liveRegion = document.createElement('span');
+    liveRegion.className = 'sr-only';
+    liveRegion.setAttribute('role', 'status');
+    liveRegion.setAttribute('aria-live', 'polite');
+    container.appendChild(liveRegion);
+
     // Play / Pause
     function togglePlay() {
       if (player.paused) {
@@ -124,19 +131,28 @@
     player.addEventListener('play', function () {
       btnPlay.innerHTML = ICON.pause;
       btnPlay.setAttribute('aria-label', 'Pausar');
+      // Transfere foco antes de esconder o overlay (WCAG 2.4.3)
+      if (document.activeElement === overlayBtn || overlay.contains(document.activeElement)) {
+        btnPlay.focus();
+      }
       overlay.setAttribute('hidden', '');
+      liveRegion.textContent = 'Vídeo reproduzindo';
     });
 
     player.addEventListener('pause', function () {
       btnPlay.innerHTML = ICON.play;
       btnPlay.setAttribute('aria-label', 'Reproduzir');
       overlay.removeAttribute('hidden');
+      liveRegion.textContent = 'Vídeo pausado';
     });
 
     player.addEventListener('ended', function () {
       btnPlay.innerHTML = ICON.play;
       btnPlay.setAttribute('aria-label', 'Reproduzir');
       overlay.removeAttribute('hidden');
+      // Move foco para o overlay quando reaparece
+      overlayBtn.focus();
+      liveRegion.textContent = 'Vídeo finalizado';
     });
 
     // Progresso
