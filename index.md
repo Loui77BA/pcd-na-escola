@@ -13,7 +13,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
         <div class="row gx-5 align-items-center justify-content-center">
             <div class="col-lg-7 col-xl-6 mb-5 mb-xl-0">
                 <div class="text-center text-xl-start">
-                    <h1 class="display-4 fw-bold mb-4">
+                    <h1 class="display-1 fw-bold mb-4">
                         <span class="text-gradient">Educação</span>
                         <span class="d-block text-white mt-2">para todas as pessoas</span>
                     </h1>
