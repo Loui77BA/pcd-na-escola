@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<article class="about-page">
+  <!-- Hero de perfil -->
+  <header class="about-hero">
+    {% if page.photo %}
+    <div class="about-photo-wrapper">
+      <img class="about-photo"
+           src="{{ page.photo }}"
+           alt="{{ page.photo_alt | default: '' }}"
+           loading="eager" />
+    </div>
+    {% endif %}
+
+    <div class="about-hero-text">
+      {% if page.role %}
+      <span class="about-role">{{ page.role }}</span>
+      {% endif %}
+
+      <h1 class="about-name">{{ page.title }}</h1>
+
+      {% if page.description %}
+      <p class="about-bio">{{ page.description }}</p>
+      {% endif %}
+
+      {% if page.links %}
+      <div class="about-links">
+        {% for link in page.links %}
+        <a href="{{ link.url }}" class="about-link" target="_blank" rel="noopener noreferrer">
+          <i class="material-icons" aria-hidden="true">{{ link.icon | default: 'link' }}</i>
+          {{ link.label }}
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </header>
+
+  <!-- Conteúdo -->
+  <div class="about-content post-content">
+    {{ content }}
+  </div>
+
+  <!-- Voltar -->
+  <footer class="about-footer">
+    <a href="{{ '/' | relative_url }}" class="post-back-btn">
+      <i class="material-icons" aria-hidden="true">arrow_back</i>
+      Voltar para o início
+    </a>
+  </footer>
+</article>

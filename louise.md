@@ -1,21 +1,30 @@
 ---
-layout: post
+layout: about
 permalink: /louise/
 title: "Louise Suelen"
-tags: [autora do projeto]
-description: "Conheça mais sobre Louise Suelen, idealizadora do projeto PcD na Escola e engenheira de software."
+description: "Engenheira de Software e idealizadora do projeto PcD na Escola."
+role: "Autora do Projeto"
+photo: "https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d7c459dd-2af6-4b69-d32c-42a13daf7c00/public"
+photo_alt: "Pessoa sorridente com cabelos curtos e cacheados, vestindo um casaco escuro e um cachecol volumoso de lã bege, em ambiente interno com armários de madeira ao fundo."
+links:
+  - label: "GitHub"
+    url: "https://github.com/Loui77BA"
+    icon: "code"
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/louise-suelen-araujo-reis-0548a8210/"
+    icon: "work"
+  - label: "Instagram"
+    url: "https://www.instagram.com/louise_suelen/"
+    icon: "photo_camera"
+  - label: "YouTube"
+    url: "https://www.youtube.com/@louise_suelen"
+    icon: "play_circle"
 ---
 
-<p>
-    Olá, mundo! Eu sou a Louise Suelen. Faço questão de escrever este texto em primeira pessoa porque quero abrir meu coração. Quero compartilhar com você como este projeto nasceu, pois ele surgiu da dor, não de um sonho.
-</p>
-
-{% include figure.html 
-    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d7c459dd-2af6-4b69-d32c-42a13daf7c00/public"
-    alt="Pessoa sorridente com cabelos curtos e cacheados, vestindo um casaco escuro e um cachecol volumoso de lã bege, em ambiente interno com armários de madeira ao fundo." caption="Louise Suelen, engenheira de software"
-%}
+Olá, mundo! Eu sou a Louise Suelen. Faço questão de escrever este texto em primeira pessoa porque quero abrir meu coração. Quero compartilhar com você como este projeto nasceu, pois ele surgiu da dor, não de um sonho.
 
 ## Quem sou eu?
+---
 
 Sou apaixonada por educação, ciência e tecnologia, especialmente pelo ensino de ciências exatas e tecnológicas para pessoas com deficiência e outras necessidades educacionais específicas. Trabalho com desenvolvimento de software, atualmente na <a href="https://creditas.com.br" target="_blank">Creditas</a>, mas já trabalhei no <a href="https://grupoglobo.globo.com/" target="_blank">Grupo Globo</a>, <a href="https://www.itau.com.br/" target="_blank">Itaú Unibanco</a>, <a href="https://www.pipefy.com/pt-br/" target="_blank">Pipefy</a> e na <a href="https://nttdata-solutions.com/br/" target="_blank">NTT Data</a>.
 
@@ -28,6 +37,7 @@ Meu diploma de bacharelado em Ciência da Computação veio pela Universidade de
 Na vida pessoal, sou casada com a Vitória (ela também é uma mulher cega) e nós temos quatro cachorros: Amora, Amendoím, Pitoco e Pitanga. No mais, sou um projeto mal-acabado de escritora; gosto de nerdices, de ciência e de muito cuscuz com café.
 
 ## Por que criei o projeto PcD na Escola?
+---
 
 Agora, "centa que lá vem história" e, como eu disse, é uma história de dor, não de sonho.
 
@@ -58,6 +68,7 @@ Com o apoio das meninas do núcleo de acessibilidade, que faziam a ponte e tenta
 O cenário não mudou muito. Voltei a ter problemas com uma professora que não queria dar aula de um jeito mais acessível: em vez de descrever, ela só dizia "aqui", "ali", "em cima", "embaixo". Foi necessária a intervenção do núcleo de acessibilidade para que ela melhorasse um pouco. Funcionou parcialmente, mas ainda não era o ideal.
 
 ### O estopim
+---
 
 Pedi uma conversa com o coordenador do curso. Eu queria a ajuda dele para se aproximar do núcleo de acessibilidade e apoiar a mediação com os professores. Outros coordenadores mantinham uma relação mais próxima com o núcleo; ele, não.
 
@@ -70,6 +81,7 @@ Havia duas coisas falsas nessa resposta: a primeira era dizer que compreendia a 
 Daí por diante, tudo desandou na minha cabeça. Abandonei quase todas as matérias que estava cursando, menos a disciplina em que tive problemas com a professora, porque o meu pior medo era ser aluna dela outra vez. Essa foi a única em que passei. No restante, eu nem sequer tranquei: simplesmente abandonei.
 
 ### Depois do estopim
+---
 
 Depois de tudo isso, eu tinha um labrador caramelo de 11 anos, o Bob. Ele adoeceu gravemente e eu comecei a pegar qualquer trabalho que aparecesse para cuidar dele. Algumas das coisas que fiz:
 
@@ -91,6 +103,7 @@ Na NTT Data, eu trabalhava com testes de acessibilidade digital, seguindo os pad
 Depois de um tempo, me ofereceram a oportunidade de participar de um programa interno de formação em desenvolvimento de software (na época, com Java) e eu aceitei. Assim, migrei da área de qualidade para a área de desenvolvimento, onde trabalhei com Java até receber a proposta da Pipefy, quando fui trabalhar com Ruby on Rails.
 
 ### Percepções
+---
 
 Durante o tempo em que estive na NTT Data, tive contato com muitas pessoas com deficiência (em sua maioria, pessoas cegas). Pude observar um padrão de dificuldades na vida acadêmica, principalmente em cursos de exatas e de tecnologia. Assim como eu, muita gente largou os cursos na pandemia por questões que envolviam acessibilidade, com impactos emocionais e abalos na saúde mental.
 
@@ -113,6 +126,7 @@ Me identifiquei muito com esse trecho, tirando a parte de "ir super bem", porque
 A partir das histórias que ouvi e das experiências que compartilhei, percebi que minhas dificuldades eram comuns a muitas outras pessoas com deficiência visual e que não eram falta de esforço ou dedicação, mas falta de materiais adaptados e de metodologias de ensino inclusivas. A Katia e o Lucas são, de fato, sobreviventes. São o tipo de sobrevivente que eu gostaria de ter sido, mas não consegui. E isso me dói muito.
 
 ### A ideia do projeto
+---
 
 Eu gosto muito de estudar ciências exatas e tecnológicas, mas só de pensar em aprender algo novo eu já sinto medo de não conseguir: de não entender, de não acompanhar. Na minha cabeça vêm pensamentos como:
 
@@ -143,6 +157,7 @@ Então comecei a pensar algumas coisas...
 Então me fiz a pergunta: "**E se eu criasse esse lugar? Eu sei programar, conheço os requisitos de acessibilidade (WCAG) que uma plataforma precisa ter. Por que eu não faria isso?**"
 
 ### A estrutura do projeto
+---
 
 Comecei a estruturar o que eu gostaria que o projeto tivesse, fui escrevendo as ideias:
 
@@ -181,6 +196,7 @@ Por isso, eu também queria que o projeto tivesse Libras (Língua Brasileira de 
 É isso. Assim o projeto foi tomando forma e eu fui percebendo que ele poderia ser um espaço onde eu pudesse compartilhar tudo o que aprendi, tudo o que sei e tudo o que ainda quero aprender. Um lugar onde outras pessoas com deficiência pudessem encontrar apoio, recursos e meios para aprender ciências exatas e tecnológicas de forma acessível.
 
 ## O que eu espero do projeto?
+---
 
 Depois de mudar de nome várias vezes, ter muitas ideias e passar por muitas dificuldades, o PcD na Escola finalmente tomou forma. Eu o fiz do jeito mais simples e barato que consegui, com Jekyll, GitHub Pages e um domínio pago. Tudo o que eu espero é que, pelo menos, uma pessoa no mundo não precise passar pelas mesmas dificuldades que eu para aprender ciências exatas e tecnológicas.
 

@@ -854,6 +854,136 @@ h1, h2, h3, h4 {
 }
 
 /* ===========================================================
+   ABOUT — Página de perfil pessoal
+   =========================================================== */
+
+.about-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+/* --- Hero de perfil --- */
+.about-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0 2.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.about-photo-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.about-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+  box-shadow: 0 0 0 6px rgba(130, 87, 229, 0.15),
+              0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.about-role {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--primary);
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+}
+
+.about-name {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .about-name {
+    font-size: 2.75rem;
+  }
+}
+
+.about-bio {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto 1.25rem;
+}
+
+/* --- Links de perfil --- */
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.about-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 0.45rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.about-link:hover {
+  color: #fff;
+  border-color: var(--primary);
+  background: rgba(130, 87, 229, 0.08);
+}
+
+.about-link i {
+  font-size: 1rem;
+}
+
+/* --- Conteúdo reutiliza .post-content --- */
+.about-content {
+  margin-bottom: 2rem;
+}
+
+/* --- Footer --- */
+.about-footer {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-link {
+    transition: none !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  .about-photo {
+    border: 3px solid #ffffff !important;
+  }
+  .about-link {
+    border: 2px solid #ffffff !important;
+  }
+}
+
+/* ===========================================================
    POST — Layout de artigo individual (inspirado Rocketseat)
    =========================================================== */
 
