@@ -42,6 +42,14 @@ collections:
     output: true
     permalink: /:title/
 
+# Defaults para posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /:title/
+
 # Exclusões
 exclude:
   - .sass-cache/
