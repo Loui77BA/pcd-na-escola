@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pcdnaescola.com.br/sitemap.xml
