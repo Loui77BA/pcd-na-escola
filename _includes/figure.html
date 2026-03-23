@@ -4,8 +4,7 @@
 
             <img class="img-fluid"
                  src="{{ include.src }}"
-                 alt=""
-                 aria-hidden="true"
+                 alt="{{ include.alt }}"
                  loading="lazy" />
 
             <div class="image-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
@@ -16,8 +15,6 @@
                 </div>
             </div>
         </div>
-
-        <span class="visually-hidden">Descrição da imagem: {{ include.alt }}</span>
 
         <div class="figure-decoration position-absolute bottom-0 start-50 translate-middle-x"
              aria-hidden="true">
