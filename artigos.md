@@ -40,8 +40,8 @@ description: "Artigos sobre educação, tecnologia e acessibilidade no PcD na Es
            class="filter-pill category-trigger"
            data-category="{{ category[0] | slugify }}"
            aria-pressed="false"
-           aria-label="Filtrar por {{ category[0] | capitalize }}, {{ count }} artigo{% if count != 1 %}s{% endif %}">
-           {{ category[0] | capitalize }}
+           aria-label="Filtrar por {{ category[0] }}, {{ count }} artigo{% if count != 1 %}s{% endif %}">
+           {{ category[0] }}
            <span class="filter-pill-count">{{ count }}</span>
         </button>
       </li>
@@ -50,10 +50,10 @@ description: "Artigos sobre educação, tecnologia e acessibilidade no PcD na Es
   </nav>
 
   <div class="row g-4" id="articles-grid">
-    {% for category in site.categories %}
-      {% assign sorted_posts = category[1] | sort: 'date' %}
-      {% for post in sorted_posts %}
-      <div class="col-md-6 col-lg-4 article-item" data-category="{{ category[0] | slugify }}">
+    {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+    {% for post in sorted_posts %}
+      <div class="col-md-6 col-lg-4 article-item"
+           data-category="{% for cat in post.categories %}{{ cat | slugify }}{% unless forloop.last %} {% endunless %}{% endfor %}">
         <article class="listing-card">
           <div class="listing-card-top">
             <div class="listing-card-badges">
@@ -84,7 +84,6 @@ description: "Artigos sobre educação, tecnologia e acessibilidade no PcD na Es
           </div>
         </article>
       </div>
-      {% endfor %}
     {% endfor %}
   </div>
 
@@ -113,7 +112,8 @@ description: "Artigos sobre educação, tecnologia e acessibilidade no PcD na Es
         var visible = 0;
 
         items.forEach(function (item) {
-          var show = (selected === 'all' || item.dataset.category === selected);
+          var cats = (item.dataset.category || '').split(' ');
+          var show = (selected === 'all' || cats.indexOf(selected) !== -1);
           item.classList.toggle('d-none', !show);
           if (show) visible++;
         });
