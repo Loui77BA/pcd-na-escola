@@ -8,11 +8,25 @@ layout: default
     <a href="{{ '/' | relative_url }}" class="post-breadcrumb-link">Início</a>
     <span class="post-breadcrumb-sep" aria-hidden="true">/</span>
     <a href="{{ '/artigos' | relative_url }}" class="post-breadcrumb-link">Artigos</a>
-    {% if page.categories %}
-    {% for cat in page.categories %}
-    <span class="post-breadcrumb-sep" aria-hidden="true">/</span>
-    <span class="post-breadcrumb-current">{{ cat }}</span>
-    {% endfor %}
+    {% if page.series %}
+      {% assign series_names = "" | split: "" %}
+      {% assign series_names = series_names | push: "o-que-significa::O que Significa?" %}
+      {% assign series_names = series_names | push: "computacao-para-iniciantes::Computação para Iniciantes" %}
+      {% assign series_names = series_names | push: "introducao-a-programacao::Introdução à Programação" %}
+      {% assign series_label = page.series %}
+      {% for entry in series_names %}
+        {% assign parts = entry | split: "::" %}
+        {% if parts[0] == page.series %}
+          {% assign series_label = parts[1] %}
+        {% endif %}
+      {% endfor %}
+      <span class="post-breadcrumb-sep" aria-hidden="true">/</span>
+      <span class="post-breadcrumb-current">{{ series_label }}</span>
+    {% elsif page.categories %}
+      {% for cat in page.categories %}
+      <span class="post-breadcrumb-sep" aria-hidden="true">/</span>
+      <span class="post-breadcrumb-current">{{ cat }}</span>
+      {% endfor %}
     {% endif %}
   </nav>
 
@@ -43,7 +57,9 @@ layout: default
         {% endif %}
         <div class="post-author-meta">
           {% if page.date %}
-          <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%d de %B de %Y" }}</time>
+          {% assign m = page.date | date: "%-m" | plus: 0 | minus: 1 %}
+          {% assign meses = "janeiro,fevereiro,março,abril,maio,junho,julho,agosto,setembro,outubro,novembro,dezembro" | split: "," %}
+          <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%d" }} de {{ meses[m] }} de {{ page.date | date: "%Y" }}</time>
           {% endif %}
           {% assign word_count = content | number_of_words %}
           {% assign reading_time = word_count | divided_by: 200 %}
@@ -72,8 +88,7 @@ layout: default
   </div>
   {% endif %}
 
-  {% if page.sumario %}
-  <nav aria-label="Sumário do texto" class="post-toc">
+  <nav aria-label="Sumário do texto" class="post-toc" id="post-toc-nav" style="display:none;">
     <button class="post-toc-toggle"
       type="button" data-bs-toggle="collapse" data-bs-target="#sumario"
       aria-controls="sumario" aria-expanded="false">
@@ -84,18 +99,129 @@ layout: default
       <i class="material-icons post-toc-chevron" aria-hidden="true">expand_more</i>
     </button>
     <div class="collapse post-toc-body" id="sumario">
-      {{ page.sumario }}
+      <ol id="toc-list" class="list-group bg-dark"></ol>
     </div>
   </nav>
-  {% endif %}
 
   <!-- Conteúdo do post -->
   <div class="post-content">
     {{ content }}
   </div>
 
+  <script>
+  (function () {
+    var content = document.querySelector('.post-content');
+    var tocList = document.getElementById('toc-list');
+    var tocNav = document.getElementById('post-toc-nav');
+    if (!content || !tocList || !tocNav) return;
+
+    var headings = content.querySelectorAll('h2, h3');
+    if (headings.length === 0) return;
+
+    var counter = 0;
+    var subCounter = 0;
+
+    headings.forEach(function (h) {
+      if (!h.id) {
+        h.id = h.textContent.trim().toLowerCase()
+          .replace(/[^\w\s-]/g, '')
+          .replace(/\s+/g, '-');
+      }
+
+      var li = document.createElement('li');
+      li.className = 'list-group-item bg-dark text-white border-0';
+
+      var a = document.createElement('a');
+      a.className = 'text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light';
+      a.href = '#' + h.id;
+
+      var badge = document.createElement('span');
+      badge.className = 'badge bg-secondary';
+
+      if (h.tagName === 'H2') {
+        counter++;
+        subCounter = 0;
+        badge.textContent = counter;
+      } else {
+        subCounter++;
+        badge.textContent = counter + '.' + subCounter;
+        li.classList.add('ms-4');
+      }
+
+      a.appendChild(badge);
+      a.appendChild(document.createTextNode(' ' + h.textContent.trim()));
+      li.appendChild(a);
+      tocList.appendChild(li);
+    });
+
+    tocNav.style.display = '';
+  })();
+  </script>
+
   <!-- Navegação entre posts -->
   <footer class="post-footer">
+    {% if page.series %}
+    {% assign series_posts = site.posts | where: "series", page.series | sort: "date" %}
+    {% assign series_names_nav = "" | split: "" %}
+    {% assign series_names_nav = series_names_nav | push: "o-que-significa::O que Significa?" %}
+    {% assign series_names_nav = series_names_nav | push: "computacao-para-iniciantes::Computação para Iniciantes" %}
+    {% assign series_names_nav = series_names_nav | push: "introducao-a-programacao::Introdução à Programação" %}
+    {% assign series_display = page.series %}
+    {% for entry in series_names_nav %}
+      {% assign parts = entry | split: "::" %}
+      {% if parts[0] == page.series %}
+        {% assign series_display = parts[1] %}
+      {% endif %}
+    {% endfor %}
+    {% assign prev_series = nil %}
+    {% assign next_series = nil %}
+    {% assign found_current = false %}
+    {% for sp in series_posts %}
+      {% if sp.url == page.url %}
+        {% assign found_current = true %}
+      {% elsif found_current and next_series == nil %}
+        {% assign next_series = sp %}
+      {% elsif found_current == false %}
+        {% assign prev_series = sp %}
+      {% endif %}
+    {% endfor %}
+
+    {% if prev_series or next_series %}
+    <nav aria-label="Navegação da série {{ series_display }}" class="post-nav mb-4">
+      <p class="text-muted-custom small mb-2">
+        <i class="material-icons fs-6 align-middle" aria-hidden="true">collections_bookmark</i>
+        Série: <strong>{{ series_display }}</strong>
+      </p>
+      <div class="row g-3">
+        <div class="col-md-6">
+          {% if prev_series %}
+          <a class="post-nav-card" href="{{ prev_series.url | relative_url }}"
+            aria-label="Artigo anterior da série: {{ prev_series.title }}">
+            <span class="post-nav-direction">
+              <i class="material-icons" aria-hidden="true">west</i>
+              Anterior na série
+            </span>
+            <span class="post-nav-title">{{ prev_series.title }}</span>
+          </a>
+          {% endif %}
+        </div>
+        <div class="col-md-6 text-md-end">
+          {% if next_series %}
+          <a class="post-nav-card post-nav-next" href="{{ next_series.url | relative_url }}"
+            aria-label="Próximo artigo da série: {{ next_series.title }}">
+            <span class="post-nav-direction">
+              Próximo na série
+              <i class="material-icons" aria-hidden="true">east</i>
+            </span>
+            <span class="post-nav-title">{{ next_series.title }}</span>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </nav>
+    {% endif %}
+    {% endif %}
+
     <nav aria-label="Navegação entre posts" class="post-nav">
       <div class="row g-3">
         <div class="col-md-6">
