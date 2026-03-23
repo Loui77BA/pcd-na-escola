@@ -8,77 +8,8 @@ categories: [Computação para Iniciantes]
 tags: [computação, tecnologia]
 permalink: /computacao-para-iniciantes-introducao-as-redes-de-computadores/
 lang: pt-BR
-sumario: |
-    <ul class="list-group bg-dark">
-        <!-- 1. Apresentação -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#apresentacao">
-                <span class="badge bg-secondary">1</span>
-                Apresentação
-            </a>
-        </li>
-        <!-- 2. Partes de uma Rede de Computadores -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#partes-de-uma-rede-de-computadores">
-                <span class="badge bg-secondary">2</span>
-                Partes de uma Rede de Computadores
-            </a>
-        </li>
-        <!-- 3. Modelo OSI -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#modelo-osi">
-                <span class="badge bg-secondary">3</span>
-                Modelo OSI
-            </a>
-        </li>
-        <!-- 4. Modelo TCP/IP -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#modelo-tcp-ip">
-                <span class="badge bg-secondary">4</span>
-                Modelo TCP/IP
-            </a>
-        </li>
-        <!-- 5. Protocolos de comunicação na internet -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#protocolos-comunicacao-internet">
-                <span class="badge bg-secondary">5</span>
-                Protocolos de comunicação na internet
-            </a>
-        </li>
-        <!-- 6. A World Wide Web (WWW) -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#a-world-wide-web-www">
-                <span class="badge bg-secondary">6</span>
-                A World Wide Web (WWW)
-            </a>
-        </li>
-        <!-- 7. Resumo -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#resumo">
-                <span class="badge bg-secondary">7</span>
-                Resumo
-            </a>
-            <ul class="list-group bg-dark">
-                <!-- 7.1. A Internet -->
-                <li class="list-group-item bg-dark text-white border-0">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-                       href="#a-internet">
-                        <span class="badge bg-secondary">7.1</span>
-                        A Internet
-                    </a>
-                </li>
-            </ul>
-        </li>
-    </ul>
+series: "computacao-para-iniciantes"
 ---
-
 <p>Agora que já entendemos o que são sistemas operacionais, vamos explorar o que são redes de computadores e como elas funcionam.</p>
 
 {% include figure.html

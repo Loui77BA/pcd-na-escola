@@ -8,51 +8,8 @@ categories: [Computação para Iniciantes]
 tags: [computação, tecnologia]
 permalink: /computacao-para-iniciantes-fim-da-serie/
 lang: pt-BR
-sumario: |
-    <ul class="list-group bg-dark">
-        <!-- 1. Apresentação -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#apresentacao">
-                <span class="badge bg-secondary">1</span>
-                Apresentação
-            </a>
-        </li>
-        <!-- 2. Como foi o nosso caminho? -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#como-foi-o-nosso-caminho">
-                <span class="badge bg-secondary">2</span>
-                Como foi o nosso caminho?
-            </a>
-        </li>
-        <!-- 3. Resumo dos aprendizados -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#resumo-dos-aprendizados">
-                <span class="badge bg-secondary">3</span>
-                Resumo dos aprendizados
-            </a>
-        </li>
-        <!-- 4. Acessibilidade em foco -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#acessibilidade-em-foco">
-                <span class="badge bg-secondary">4</span>
-                Acessibilidade em foco
-            </a>
-        </li>
-        <!-- 5. Próximos passos -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#proximos-passos">
-                <span class="badge bg-secondary">5</span>
-                Próximos passos (sugestões de caminhos)
-            </a>
-        </li>
-    </ul>
+series: "computacao-para-iniciantes"
 ---
-
 <p>Este artigo encerra a série Computação para Iniciantes, revisitando os conceitos trabalhados, sua importância e como se conectam na computação.</p>
 
 <div class="text-center">

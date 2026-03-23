@@ -8,59 +8,8 @@ categories: [Computação para Iniciantes]
 tags: [computação, tecnologia]
 permalink: /computacao-para-iniciantes-fisica-dos-computadores/
 lang: pt-BR
-sumario: |
-    <ul class="list-group bg-dark">
-        <!-- 1. Apresentação -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#apresentacao">
-                <span class="badge bg-secondary">1</span>
-                Apresentação
-            </a>
-        </li>
-        <!-- 2. Materiais condutores e isolantes -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#materiais-condutores-e-isolantes">
-                <span class="badge bg-secondary">2</span>
-                Materiais condutores e isolantes
-            </a>
-        </li>
-        <!-- 3. Como os átomos se ligam -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#como-os-atoms-se-ligam-por-que-o-silicio-pode-ser-manipulado">
-                <span class="badge bg-secondary">3</span>
-                Como os átomos se ligam: por que o silício pode ser manipulado
-            </a>
-        </li>
-        <!-- 4. Junção PN -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#juncao-pn">
-                <span class="badge bg-secondary">4</span>
-                Junção PN
-            </a>
-        </li>
-        <!-- 5. Transistores -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#transistores-o-coracao-da-computacao-moderna">
-                <span class="badge bg-secondary">5</span>
-                Transistores: o coração da computação moderna
-            </a>
-        </li>
-        <!-- 6. Resumo -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#resumo">
-                <span class="badge bg-secondary">6</span>
-                Resumo
-            </a>
-        </li>
-    </ul>
+series: "computacao-para-iniciantes"
 ---
-
 <p>Este artigo aborda os fundamentos físicos dos computadores. Vamos explorar desde os materiais condutores e isolantes até a importância dos transistores.</p>
 
 {% include figure.html 

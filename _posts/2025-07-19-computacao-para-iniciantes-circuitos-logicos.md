@@ -2,97 +2,14 @@
 layout: post
 title: "Computação para Iniciantes: Circuitos Lógicos"
 description: "Este artigo aborda os circuitos lógicos, as portas lógicas e suas aplicações."
-date: 2025-07-19 12:00:00 +0000
+date: 2025-07-19 12:00:00 -0300
 author: Louise Suelen
 categories: [Computação para Iniciantes]
 tags: [computação, tecnologia]
 permalink: /computacao-para-iniciantes-circuitos-logicos/
 lang: pt-BR
-sumario: |
-    <ul class="list-group bg-dark">
-        <!-- 1. Apresentação -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#apresentacao">
-                <span class="badge bg-secondary">1</span>
-                Apresentação
-            </a>
-        </li>
-        <!-- 2. Lógica Booleana -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#logica-booleana">
-                <span class="badge bg-secondary">2</span>
-                Lógica Booleana
-            </a>
-        </li>
-        <!-- 3. Operação E (AND) -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#operacao-e-and">
-                <span class="badge bg-secondary">3</span>
-                Operação E (AND)
-            </a>
-        </li>
-        <!-- 4. Operação OU (OR) -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#operacao-ou-or">
-                <span class="badge bg-secondary">4</span>
-                Operação OU (OR)
-            </a>
-        </li>
-        <!-- 5. Operação OU Exclusivo (XOR) -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#operacao-ou-exclusivo-xor">
-                <span class="badge bg-secondary">5</span>
-                Operação OU Exclusivo (XOR)
-            </a>
-        </li>
-        <!-- 6. Operação NÃO (NOT) -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#operacao-nao-not">
-                <span class="badge bg-secondary">6</span>
-                Operação NÃO (NOT)
-            </a>
-        </li>
-        <!-- 7. Tabela Verdade -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#tabela-verdade">
-                <span class="badge bg-secondary">7</span>
-                Tabela Verdade
-            </a>
-        </li>
-        <!-- 8. Exemplo de tabela-verdade combinando E (AND) e OU (OR) -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#exemplo-tabela-verdade-combinando-e-and-e-ou-or">
-                <span class="badge bg-secondary">8</span>
-                Exemplo de tabela-verdade combinando E (AND) e OU (OR)
-            </a>
-        </li>
-        <!-- 9. Exemplo de tabela-verdade combinando OU (OR) e XOR -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#exemplo-tabela-verdade-combinando-ou-or-e-xor">
-                <span class="badge bg-secondary">9</span>
-                Exemplo de tabela-verdade combinando OU (OR) e OU Exclusivo (XOR)
-            </a>
-        </li>
-        <!-- 10. Resumo -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#resumo">
-                <span class="badge bg-secondary">10</span>
-                Resumo
-            </a>
-        </li>
-    </ul>
+series: "computacao-para-iniciantes"
 ---
-
 <p>Este artigo aborda os circuitos lógicos, as portas lógicas e suas aplicações. Eles são fundamentais na computação, pois são usados para processar informações e tomar decisões.</p>
 
 {% include figure.html 

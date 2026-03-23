@@ -8,58 +8,8 @@ categories: [Programação]
 tags: [programação, tecnologia]
 permalink: /introducao-a-programacao-ola-mundo-em-ruby/
 lang: pt-BR
-sumario: |
-    <ul class="list-group bg-dark">
-        <!-- 1. Apresentação -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a href="#apresentacao" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
-                <span class="badge bg-secondary">1</span>
-                Apresentação
-            </a>
-        </li>
-
-        <!-- 2. Criando uma pasta para o projeto -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a href="#criando-uma-pasta-para-o-projeto" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
-                <span class="badge bg-secondary">2</span>
-                Criando uma pasta para o projeto
-            </a>
-        </li>
-
-        <!-- 3. Criando o arquivo Ruby -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a href="#criando-o-arquivo-ruby" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
-                <span class="badge bg-secondary">3</span>
-                Criando o arquivo Ruby
-            </a>
-        </li>
-
-        <!-- 4. Escrevendo o código Ruby -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a href="#escrevendo-o-codigo-ruby" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
-                <span class="badge bg-secondary">4</span>
-                Escrevendo o código Ruby
-            </a>
-        </li>
-
-        <!-- 5. Executando o programa Ruby -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a href="#executando-o-programa-ruby" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
-                <span class="badge bg-secondary">5</span>
-                Executando o programa Ruby
-            </a>
-        </li>
-
-        <!-- 6. Resumo -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a href="#resumo" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
-                <span class="badge bg-secondary">6</span>
-                Resumo
-            </a>
-        </li>
-    </ul>
+series: "introducao-a-programacao"
 ---
-
 Neste artigo, iniciando a parte prática da nossa série sobre introdução à programação, vamos escrever nosso primeiro programa em Ruby: o clássico "Olá Mundo" para começar a entender a sintaxe e o funcionamento básico da linguagem.
 
 <div class="text-center">

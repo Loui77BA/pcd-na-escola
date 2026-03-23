@@ -8,58 +8,8 @@ categories: [Programação]
 tags: [programação, tecnologia]
 permalink: /introducao-a-programacao-conhecendo-e-usando-o-irb/
 lang: pt-BR
-sumario: |
-    <ul class="list-group bg-dark">
-        <!-- 1. Apresentação -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a href="#apresentacao" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
-                <span class="badge bg-secondary">1</span>
-                Apresentação
-            </a>
-        </li>
-
-        <!-- 2. Iniciando o IRB -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a href="#iniciando-o-irb" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
-                <span class="badge bg-secondary">2</span>
-                Iniciando o IRB
-            </a>
-        </li>
-
-        <!-- 3. Testando o IRB -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a href="#testando-o-irb" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
-                <span class="badge bg-secondary">3</span>
-                Testando o IRB
-            </a>
-        </li>
-
-        <!-- 4. Testando números no IRB -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a href="#testando-numeros-no-irb" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
-                <span class="badge bg-secondary">4</span>
-                Testando números no IRB
-            </a>
-        </li>
-
-        <!-- 5. Combinando texto e números no IRB -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a href="#combinando-texto-e-numeros-no-irb" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
-                <span class="badge bg-secondary">5</span>
-                Combinando texto e números no IRB
-            </a>
-        </li>
-
-        <!-- 6. Resumo -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a href="#resumo" class="text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light">
-                <span class="badge bg-secondary">6</span>
-                Resumo
-            </a>
-        </li>
-    </ul>
+series: "introducao-a-programacao"
 ---
-
 Neste artigo, vamos explorar o IRB (Interactive Ruby), um ambiente interativo que permite as pessoas testarem códigos Ruby rapidamente. O IRB é uma ferramenta essencial para quem está começando a aprender programação em Ruby.
 
 <div class="text-center">

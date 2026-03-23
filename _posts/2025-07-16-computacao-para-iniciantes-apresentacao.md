@@ -8,40 +8,8 @@ categories: [Computação para Iniciantes]
 tags: [computação, tecnologia]
 permalink: /computacao-para-iniciantes-apresentacao/
 lang: pt-BR
-sumario: |
-    <ul class="list-group bg-dark">
-        <!-- 1. Apresentação -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#por-que-essa-serie">
-                <span class="badge bg-secondary">1</span>
-                Por que essa série?
-            </a>
-        </li>
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#objetivos-da-serie">
-                <span class="badge bg-secondary">2</span>
-                Objetivos da série
-            </a>
-        </li>
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#para-quem-e-essa-serie">
-                <span class="badge bg-secondary">3</span>
-                Para quem é essa série?
-            </a>
-        </li>
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#resumo">
-                <span class="badge bg-secondary">4</span>
-                Resumo
-            </a>
-        </li>
-    </ul>
+series: "computacao-para-iniciantes"
 ---
-
 <p>Este artigo inicia uma série de posts sobre computação, explicando conceitos básicos e sua evolução histórica. A ideia é tornar a computação acessível para um maior número de pessoas.</p>
 
 {% include figure.html 

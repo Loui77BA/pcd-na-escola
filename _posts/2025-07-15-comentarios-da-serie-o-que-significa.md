@@ -2,17 +2,14 @@
 layout: post
 title: "Comentários da série 'O que significa?'"
 description: "Este texto reúne comentários e reflexões sobre os artigos da série 'O que significa?', abordando temas como deficiência, capacitismo e acessibilidade."
-date: 2025-07-15
+date: 2025-07-15 10:00:00 -0300
 author: Louise Suelen
-categories: deficiência
-tags: [
-  opinião,
-  comentários
-]
+categories: [Deficiência]
+tags: [opinião, comentários]
 permalink: /comentarios-da-serie-o-que-significa/
 lang: pt-BR
+series: "o-que-significa"
 ---
-
 <p>Este texto reúne comentários e reflexões sobre os artigos da série 'O que significa?', abordando temas como deficiência, capacitismo e acessibilidade.</p>
 
 ## **Apresentação**

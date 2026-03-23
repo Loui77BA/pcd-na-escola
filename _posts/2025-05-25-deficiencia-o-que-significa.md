@@ -1,118 +1,15 @@
 ---
 layout: post
 title: "Deficiência: O que Significa?"
+description: "Este artigo explora o significado da deficiência, sua evolução histórica e os diferentes modelos que ajudam a compreender o tema."
 date: 2025-05-25 19:11:05 -0300
 author: Louise Suelen
-categories: deficiência
+categories: [Deficiência]
 tags: [deficiência]
 permalink: /deficiencia-o-que-significa/
-sumario: |
-    <ul class="list-group bg-dark">
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-               href="#apresentacao">
-                <span class="badge bg-secondary">1</span>
-                Apresentação
-            </a>
-        </li>
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-               href="#historia-da-deficiencia">
-                <span class="badge bg-secondary">2</span>
-                História da Deficiência
-            </a>
-            <ul class="list-group bg-dark">
-                <li class="list-group-item bg-dark text-white border-0 ms-4">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-                       href="#egito-antigo">
-                        <span class="badge bg-secondary">2.1</span>
-                        Egito Antigo
-                    </a>
-                </li>
-                <li class="list-group-item bg-dark text-white border-0 ms-4">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-                       href="#hebreus">
-                        <span class="badge bg-secondary">2.2</span>
-                        Hebreus
-                    </a>
-                </li>
-                <li class="list-group-item bg-dark text-white border-0 ms-4">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-                       href="#grecia-antiga">
-                        <span class="badge bg-secondary">2.3</span>
-                        Grécia Antiga
-                    </a>
-                </li>
-                <li class="list-group-item bg-dark text-white border-0 ms-4">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-                       href="#roma-antiga">
-                        <span class="badge bg-secondary">2.4</span>
-                        Roma Antiga
-                    </a>
-                </li>
-                <li class="list-group-item bg-dark text-white border-0 ms-4">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-                       href="#idade-media">
-                        <span class="badge bg-secondary">2.5</span>
-                        Idade Média
-                    </a>
-                </li>
-                <li class="list-group-item bg-dark text-white border-0 ms-4">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-                       href="#renascimento">
-                        <span class="badge bg-secondary">2.6</span>
-                        Renascimento
-                    </a>
-                </li>
-                <li class="list-group-item bg-dark text-white border-0 ms-4">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-                       href="#segunda-guerra-mundial">
-                        <span class="badge bg-secondary">2.7</span>
-                        Segunda Guerra Mundial
-                    </a>
-                </li>
-                <li class="list-group-item bg-dark text-white border-0 ms-4">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-                       href="#pos-guerra">
-                        <span class="badge bg-secondary">2.8</span>
-                        Pós-Guerra
-                    </a>
-                </li>
-                <li class="list-group-item bg-dark text-white border-0 ms-4">
-                    <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-                       href="#a-populacao-com-deficiencia-no-brasil">
-                        <span class="badge bg-secondary">2.9</span>
-                        A População com Deficiência no Brasil
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-               href="#conceito-de-deficiencia-no-brasil-hoje">
-                <span class="badge bg-secondary">3</span>
-                Conceito de Deficiência no Brasil Hoje
-            </a>
-        </li>
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-               href="#texto-sobre-deficiencia-feito-por-pessoa-com-deficiencia">
-                <span class="badge bg-secondary">4</span>
-                Texto sobre Deficiência Feito por Pessoa com Deficiência
-            </a>
-        </li>
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-               href="#referencias">
-                <span class="badge bg-secondary">5</span>
-                Referências
-            </a>
-        </li>
-    </ul>
+lang: pt-BR
+series: "o-que-significa"
 ---
-
- O objetivo é refletir sobre o significado da palavra deficiência sob um viés histórico-social, fundamentado em pesquisa e ciência, com uma leve pitada de desabafos pessoais e humor.
-
 
 {% include figure.html 
     src="https://media.istockphoto.com/id/1141509310/photo/content-disabled-student-in-library.jpg?s=612x612&w=0&k=20&c=RKLsu1XuTMvyPZlJJdYfwrQCWQBQbZ7Vic6NqsYPj90="

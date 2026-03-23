@@ -3,88 +3,13 @@ layout: post
 title: "Computação para Iniciantes: Números Binários"
 description: "Entenda o sistema binário, sua importância na computação e como converter números decimais para binários e vice-versa."
 date: 2025-07-20 12:00:00 -0300
-author: "Louise Suelen"
+author: Louise Suelen
 categories: [Computação para Iniciantes]
 tags: [computação, tecnologia]
 permalink: /computacao-para-iniciantes-numeros-binarios/
 lang: pt-BR
-sumario: |
-    <ul class="list-group bg-dark">
-        <!-- 1. Apresentação -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#apresentacao">
-                <span class="badge bg-secondary">1</span>
-                Apresentação
-            </a>
-        </li>
-        <!-- 2. Começando pelo sistema decimal (o que usamos todos os dias) -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#sistema-decimal">
-                <span class="badge bg-secondary">2</span>
-                Começando pelo sistema decimal (o que usamos todos os dias)
-            </a>
-        </li>
-        <!-- 3. E o que é o sistema binário? -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#sistema-binario">
-                <span class="badge bg-secondary">3</span>
-                E o que é o sistema binário?
-            </a>
-        </li>
-        <!-- 4. Comparando os sistemas decimal e binário -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#comparacao-sistemas">
-                <span class="badge bg-secondary">4</span>
-                Comparando os sistemas decimal e binário
-            </a>
-        </li>
-        <!-- 5. Como transformar um número decimal em binário? -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#transformar-decimal-binario">
-                <span class="badge bg-secondary">5</span>
-                Como transformar um número decimal em binário?
-            </a>
-        </li>
-        <!-- 6. Outro exemplo de conversão de decimal para binário -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#outro-exemplo-conversao-decimal-binario">
-                <span class="badge bg-secondary">6</span>
-                Outro exemplo de conversão de decimal para binário
-            </a>
-        </li>
-        <!-- 7. E como fazer o caminho contrário, de binário para decimal? -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#binario-para-decimal">
-                <span class="badge bg-secondary">7</span>
-                E como fazer o caminho contrário, de binário para decimal?
-            </a>
-        </li>
-        <!-- 8. Por que isso é importante? -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#por-que-importante">
-                <span class="badge bg-secondary">8</span>
-                Por que isso é importante?
-            </a>
-        </li>
-        <!-- 9. Resumo -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#resumo">
-                <span class="badge bg-secondary">9</span>
-                Resumo
-            </a>
-        </li>
-    </ul>
+series: "computacao-para-iniciantes"
 ---
-
 <p>Este artigo aborda o sistema de numeração binário, explicando o seu funcionamento, a conversão entre os sistemas decimal e binário, e a importância na computação.</p>
 
 {% include figure.html 

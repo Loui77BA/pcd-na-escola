@@ -2,80 +2,15 @@
 layout: post
 title: "Capacitismo: O que significa?"
 description: "Até mesmo o nome do preconceito contra a pessoa com deficiência é desconhecido, conheça a forma da discriminação que une todas as outras."
-date: 2025-06-07 12:00:00 +0000
+date: 2025-06-07 12:00:00 -0300
 author: Louise Suelen
 image: https://media.istockphoto.com/id/117148620/photo/young-disabled-boy-looking-upon-his-peers-leaving-him-out.jpg?s=612x612&w=0&k=20&c=HCtvKXk19IXIQS21bCXP8K6n2rd2zG9XRNijJJ4Gy2w=
-categories: deficiência
+categories: [Deficiência]
 tags: [deficiência, capacitismo]
-permalink: /capacitismo-o-que-significa
-sumario: |
-    <ul class="list-group bg-dark">
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-               href="#apresentacao">
-                <span class="badge bg-secondary">1</span>
-                Apresentação
-            </a>
-        </li>
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-               href="#por-que-usar-uma-palavra-diferente">
-                <span class="badge bg-secondary">2</span>
-                Por que usar uma palavra diferente?
-            </a>
-        </li>
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-               href="#as-relacoes-da-eugenia-com-o-capacitismo">
-                <span class="badge bg-secondary">3</span>
-                As relações da eugenia com o capacitismo
-            </a>
-        </li>
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-               href="#afinal-o-que-e-capacitismo">
-                <span class="badge bg-secondary">4</span>
-                Afinal, o que é capacitismo?
-            </a>
-        </li>
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-               href="#estudos-sobre-o-capacitismo-no-brasil">
-                <span class="badge bg-secondary">5</span>
-                Estudos sobre o capacitismo no Brasil
-            </a>
-        </li>
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-               href="#o-capacitismo-da-pessoa-com-deficiencia">
-                <span class="badge bg-secondary">6</span>
-                O capacitismo da pessoa com deficiência
-            </a>
-        </li>
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-               href="#exemplos-de-capacitismo-que-repercutiram-na-midia">
-                <span class="badge bg-secondary">7</span>
-                Exemplos de capacitismo que repercutiram na mídia
-            </a>
-        </li>
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-               href="#consideracoes-finais">
-                <span class="badge bg-secondary">8</span>
-                Considerações finais
-            </a>
-        </li>
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light" 
-               href="#referencias">
-                <span class="badge bg-secondary">9</span>
-                Referências
-            </a>
-        </li>
-    </ul>
+permalink: /capacitismo-o-que-significa/
+lang: pt-BR
+series: "o-que-significa"
 ---
-
 <p>
     Até mesmo o nome do preconceito contra a pessoa com deficiência (o capacitismo) é desconhecido, conheça a força da discriminação que une todas as outras.
 </p>

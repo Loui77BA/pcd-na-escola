@@ -8,43 +8,8 @@ categories: [Computação para Iniciantes]
 tags: [computação, tecnologia]
 permalink: /computacao-para-iniciantes-panorama-da-area-de-tecnologia/
 lang: pt-BR
-sumario: |
-    <ul class="list-group bg-dark">
-        <!-- 1. Apresentação -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#apresentacao">
-                <span class="badge bg-secondary">1</span>
-                Apresentação
-            </a>
-        </li>
-        <!-- 2. Cursos e Faculdades -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#cursos-e-faculdades">
-                <span class="badge bg-secondary">2</span>
-                Cursos e Faculdades
-            </a>
-        </li>
-        <!-- 3. Possibilidades de Trabalho -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#possibilidades-de-trabalho">
-                <span class="badge bg-secondary">3</span>
-                Possibilidades de Trabalho
-            </a>
-        </li>
-        <!-- 4. Resumo -->
-        <li class="list-group-item bg-dark text-white border-0">
-            <a class="stretched-link text-decoration-none d-flex align-items-center gap-2 rounded px-2 py-1 link-light"
-               href="#resumo">
-                <span class="badge bg-secondary">4</span>
-                Resumo
-            </a>
-        </li>
-    </ul>
+series: "computacao-para-iniciantes"
 ---
-
 <p>Este artigo explora o vasto campo da tecnologia, suas aplicações e as oportunidades de carreira disponíveis. A ideia é apresentar uma visão geral do setor.</p>
 
 {% include figure.html 
