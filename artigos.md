@@ -50,7 +50,7 @@ description: "Artigos sobre educação, tecnologia e acessibilidade no PcD na Es
   </nav>
 
   <div class="row g-4" id="articles-grid">
-    {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+    {% assign sorted_posts = site.posts | sort: 'date' %}
     {% for post in sorted_posts %}
       <div class="col-md-6 col-lg-4 article-item"
            data-category="{% for cat in post.categories %}{{ cat | slugify }}{% unless forloop.last %} {% endunless %}{% endfor %}">
@@ -74,7 +74,11 @@ description: "Artigos sobre educação, tecnologia e acessibilidade no PcD na Es
           </h3>
 
           <p class="listing-card-excerpt">
-            {{ post.excerpt | strip_html | truncatewords: 22 }}
+            {% if post.description %}
+              {{ post.description | truncatewords: 22 }}
+            {% else %}
+              {{ post.excerpt | strip_html | truncatewords: 22 }}
+            {% endif %}
           </p>
 
           <div class="listing-card-footer">
