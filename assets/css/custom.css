@@ -1250,7 +1250,10 @@ h1, h2, h3, h4 {
   color: var(--text-main);
   font-family: 'Poppins', sans-serif;
   font-size: 1.05rem;
-  line-height: 1.65;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  word-spacing: 0.05em;
+  max-width: 72ch;
 }
 
 .post-content h2 {
@@ -1278,14 +1281,9 @@ h1, h2, h3, h4 {
 }
 
 .post-content p {
-  margin-bottom: 0.85rem;
+  margin-bottom: 1.25rem;
 }
 
-/* Remove <br class="mb-*"> usados como espaçadores entre parágrafos —
-   o espaçamento já é controlado por margin-bottom dos <p> */
-.post-content br[class] {
-  display: none;
-}
 
 /* Imagens diretas no conteúdo (exclui .custom-figure que tem estilos próprios) */
 .post-content > img,
@@ -1598,7 +1596,7 @@ h1, h2, h3, h4 {
 }
 
 .post-content li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.4rem;
 }
 
 .post-content table {
@@ -1642,6 +1640,114 @@ h1, h2, h3, h4 {
 
   .post-content .highlighter-rouge {
     border-radius: 8px;
+  }
+}
+
+/* --- Author Comment (estilos movidos de inline) --- */
+.author-comment .card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(13, 110, 253, 0.2);
+}
+
+.author-comment .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+  border-color: rgba(13, 110, 253, 0.4);
+}
+
+.author-comment .quote-icon-wrapper {
+  position: relative;
+}
+
+.author-comment .quote-icon-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(to right, #0d6efd, transparent);
+}
+
+/* --- Imagem centralizada (include) --- */
+.post-centered-image {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.post-centered-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* --- Callout / Dica / Aviso / Importante --- */
+.post-callout {
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid;
+}
+
+.post-callout-dica {
+  background: rgba(130, 87, 229, 0.1);
+  border-left-color: var(--primary);
+}
+
+.post-callout-aviso {
+  background: rgba(255, 215, 0, 0.1);
+  border-left-color: #ffd700;
+}
+
+.post-callout-importante {
+  background: rgba(239, 68, 68, 0.1);
+  border-left-color: #ef4444;
+}
+
+.post-callout-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.post-callout-dica .post-callout-header i { color: var(--primary); }
+.post-callout-aviso .post-callout-header i { color: #ffd700; }
+.post-callout-importante .post-callout-header i { color: #ef4444; }
+
+.post-callout-body {
+  font-size: 0.95rem;
+  color: var(--text-main);
+  line-height: 1.7;
+}
+
+/* --- Video embed (16:9 responsivo) --- */
+.post-video-embed {
+  margin: 1.5rem 0;
+}
+
+.post-video-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.post-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .author-comment .card {
+    transition: none !important;
+    transform: none !important;
   }
 }
 
@@ -1702,6 +1808,71 @@ h1, h2, h3, h4 {
   font-weight: 600;
   color: #fff;
   line-height: 1.4;
+}
+
+/* --- Artigos relacionados --- */
+.post-related {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.post-related-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.post-related-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--text-main);
+  height: 100%;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.post-related-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  color: var(--text-main);
+}
+
+.post-related-card-category {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--primary);
+}
+
+.post-related-card-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.post-related-card-date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post-related-card {
+    transition: none !important;
+    transform: none !important;
+  }
 }
 
 /* --- Botão voltar --- */
