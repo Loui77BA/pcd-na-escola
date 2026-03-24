@@ -10,8 +10,6 @@ permalink: /introducao-a-programacao-tipos-de-dados/
 lang: pt-BR
 series: "introducao-a-programacao"
 ---
-Neste artigo, vamos conhecer e aprender a trabalhar com os tipos de dados em Ruby. Eles são fundamentais na programação, pois definem a natureza dos valores que podemos manipular em nossos programas.
-
 <div class="text-center">
     <img src="https://ifrnead.github.io/rubynapratica/assets/images/tipos-dados.png" aria-hidden="true" class="img-fluid">
 </div>

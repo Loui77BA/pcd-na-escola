@@ -10,7 +10,6 @@ permalink: /computacao-para-iniciantes-introducao-as-redes-de-computadores/
 lang: pt-BR
 series: "computacao-para-iniciantes"
 ---
-<p>Agora que já entendemos o que são sistemas operacionais, vamos explorar o que são redes de computadores e como elas funcionam.</p>
 
 {% include figure.html
     src="https://images.prismic.io/voitto-blog/cf699ddd-8f3a-4d72-a53a-fb80973050f4_redes-de-computadores.jpg?auto=compress,format?w=3840&q=75"

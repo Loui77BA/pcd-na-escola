@@ -10,8 +10,6 @@ permalink: /introducao-a-programacao-editores-de-texto-e-ides/
 lang: pt-BR
 series: "introducao-a-programacao"
 ---
-Conheça os editores de código e IDEs (Ambientes Integrados de Desenvolvimento), ferramentas essenciais para quem desenvolve software. É fundamental entender suas diferenças, vantagens e desvantagens.
-
 <div class="text-center">
     <img src="https://ourcodeworld.com/public-media/articles/whats-an-ide-60621caac020e.jpeg" aria-hidden="true" class="img-fluid">
 </div>

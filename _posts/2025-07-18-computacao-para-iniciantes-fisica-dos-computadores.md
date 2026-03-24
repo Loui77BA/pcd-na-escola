@@ -10,14 +10,13 @@ permalink: /computacao-para-iniciantes-fisica-dos-computadores/
 lang: pt-BR
 series: "computacao-para-iniciantes"
 ---
-<p>Este artigo aborda os fundamentos físicos dos computadores. Vamos explorar desde os materiais condutores e isolantes até a importância dos transistores.</p>
 
 {% include figure.html 
     src="https://media.istockphoto.com/id/646291934/photo/black-power-transistors.jpg?s=612x612&w=0&k=20&c=jmkG5DH3NFNxGGX4JLy_2TXhY1vPJIVrubKlWIXdYXE="
     alt="imagem de transistores de potência em um circuito eletrônico sobre uma superfície escura, destaque para componente com três pinos metálicos."
 %}
 
-<h2 id="apresentacao">Apresentação</h2>
+## Apresentação
 <hr>
 
 <p>A primeira pergunta que deve ser feita é: como um sinal elétrico se movendo no silício se transforma em vídeos, jogos e outras informações que são consumidas no computador? Para começo de conversa o silício é sim fortemente associado ao computador, não é à toa que existe o vale do silício, que é o lugar onde as empresas mais importantes do mundo de tecnologia estão.</p>
@@ -29,7 +28,7 @@ series: "computacao-para-iniciantes"
     alt="Ilustração comparando condutor, semicondutor e isolante com símbolos de eletricidade."
 %}
 
-<h2 id="materiais-condutores-e-isolantes">Materiais Condutores e Isolantes</h2>
+## Materiais Condutores e Isolantes
 <hr>
 
 <p>Quando falamos em material condutor, estamos falando de algo que deixa a eletricidade passar com facilidade. Um exemplo disso são os metais, como o cobre. É por isso que os fios usados na rede elétrica geralmente são feitos de cobre ou de algum outro metal parecido, eles conseguem conduzir a energia elétrica muito bem.</p>
@@ -60,7 +59,7 @@ series: "computacao-para-iniciantes"
     alt="Ilustração de um portão eletrônico controlando a passagem de raios de energia sobre um chão de silício, simbolizando o funcionamento de um semicondutor."
 %}
 
-<h2 id="como-os-atoms-se-ligam-por-que-o-silicio-pode-ser-manipulado">Como os átomos se ligam: por que o silício pode ser manipulado?</h2>
+## Como os átomos se ligam: por que o silício pode ser manipulado?
 <hr>
 
 <p>Para entender isso, precisamos pensar no que são os átomos, que são as partes super pequenas que compõem tudo ao nosso redor.</p>
@@ -193,7 +192,7 @@ series: "computacao-para-iniciantes"
 
 <p>Esse processo de colocar essas pequenas quantidades de outros elementos se chama dopagem, e ele é fundamental para fazer as peças eletrônicas que a gente usa no dia a dia — como os transistores, chips e sensores.</p>
 
-<h2 id="juncao-pn">Junção PN</h2>
+## Junção PN
 <hr>
 
 <p>Quando juntamos dois tipos diferentes de pedaços de silício — um chamado tipo N (cheio de elétrons) e outro chamado tipo P (cheio de espaços vazios, chamados de “lacunas”) — formamos o que se chama de junção PN.</p>
@@ -242,7 +241,7 @@ series: "computacao-para-iniciantes"
 
 <p>Esse é o jeito que muitos componentes eletrônicos funcionam, como os diodos. Eles só deixam a corrente passar em um sentido por causa dessa junção PN, que funciona como uma “porta que só abre para um lado”.</p>
 
-<h2 id="transistores-o-coracao-da-computacao-moderna">Transistores: o coração da computação moderna</h2>
+## Transistores: o coração da computação moderna
 <hr>
 
 <p>Depois de entender o que é uma junção PN, já dá para falar de um dos componentes mais importantes para toda a tecnologia de hoje: o transistor.</p>
@@ -373,7 +372,7 @@ series: "computacao-para-iniciantes"
     <li>Permite criar mais funções (como memória, processadores, etc.) em um espaço menor.</li>
 </ul>
 
-<h2 id="resumo">Resumo</h2>
+## Resumo
 <hr>
 
 <p>Depois de tudo que vimos até aqui, dá para entender melhor como o silício virou a base de quase toda a tecnologia que usamos hoje. A gente começou falando de coisas da Química, como os átomos e as ligações entre eles, e foi chegando até a parte da eletrônica, onde os semicondutores entram em cena (aparecem).</p>

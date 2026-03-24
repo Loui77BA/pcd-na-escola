@@ -10,7 +10,6 @@ permalink: /computacao-para-iniciantes-windows-linux-macos/
 lang: pt-BR
 series: "computacao-para-iniciantes"
 ---
-<p>Vamos explorar três dos mais populares sistemas operacionais: Windows, Linux e macOS. Todos eles têm suas características únicas, interfaces e diferentes formas de interação.</p>
 
 {% include figure.html
     src="https://miro.medium.com/v2/resize:fit:698/0*7FjJW89gWct6ISLH.jpg"

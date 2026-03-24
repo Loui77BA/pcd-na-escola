@@ -10,14 +10,13 @@ permalink: /computacao-para-iniciantes-estrutura-basica-dos-computadores/
 lang: pt-BR
 series: "computacao-para-iniciantes"
 ---
-<p>Este artigo explora a estrutura física de um computador, explicando os componentes essenciais como CPU, memória e dispositivos de entrada e saída.</p>
 
 {% include figure.html 
     src="https://images.pexels.com/photos/115655/pexels-photo-115655.jpeg?cs=srgb&dl=pexels-lee-campbell-115655.jpg&fm=jpg"
     alt="um ambiente de trabalho moderno e organizado. Há uma mesa com dois monitores. O monitor à esquerda exibe códigos de programação coloridos, enquanto o monitor à direita mostra uma paisagem serena de montanhas cobertas por nuvens. Uma lâmpada de mesa com design moderno ilumina a área de trabalho. Na frente dos monitores, há um teclado e um mouse brancos. Além disso, cadernos empilhados e outros itens pequenos estão organizados ao lado do teclado."
 %}
 
-<h2 id="apresentacao">Apresentação</h2>
+## Apresentação
 <hr>
 
 <p>Todo computador, desde o mais potente até o mais simples, funciona a partir de quatro ações principais (quatro etapas). São elas:</p>
@@ -91,7 +90,7 @@ series: "computacao-para-iniciantes"
     alt="Uma pessoa usando luvas azuis segurando um microprocessador dourado com pinos visíveis, contra um fundo desfocado de componentes de placa-mãe iluminados em tons de roxo e laranja."
 %}
 
-<h2 id="cpu-unidade-central-de-processamento">CPU: Unidade Central de Processamento</h2>
+## CPU: Unidade Central de Processamento
 <hr>
 
 <p>CPU é a sigla para <strong>Central Processing Unit</strong>, que em português significa <strong>Unidade Central de Processamento</strong>. É o Microprocessador, o chip que faz o computador funcionar. Ele é responsável por executar as instruções dos programas e processar os dados.</p>
@@ -102,7 +101,7 @@ series: "computacao-para-iniciantes"
 
 <p>Dentro da CPU, existem partes menores com tarefas diferentes. Duas delas são a Unidade Lógica e Aritmética (ULA) e a Unidade de Controle (UC). A ULA faz as contas, como somar e multiplicar, enquanto a UC organiza tudo, dizendo para cada parte do computador o que fazer.</p>
 
-<h3 id="ula-unidade-logica-e-aritmetica">Unidade Lógica e Aritmética (ULA)</h3>
+### Unidade Lógica e Aritmética (ULA)
 <hr>
 
 <p>Para entender o que é a unidade lógica e aritmética (ULA), primeiro precisamos conhecer um componente chamado multiplexador, ou simplesmente MUX.</p>
@@ -151,7 +150,7 @@ series: "computacao-para-iniciantes"
 
 <p>Por exemplo: Se o sinal for <span class="math-formula"><em>00</em></span>, só o caminho da <span class="math-formula"><em>x<sub>0</sub></em></span> será ativado; os outros ficam desligados. No final, uma porta lógica OU junta tudo e manda o resultado para frente (passa o resultado a diante).</p>
 
-<h3 id="relacao-mux-ula">Qual a relação do MUX com a ULA?</h3>
+### Qual a relação do MUX com a ULA?
 <hr>
 
 <p>A ULA (Unidade Lógica e Aritmética) precisa do MUX para:</p>
@@ -163,7 +162,7 @@ series: "computacao-para-iniciantes"
 
 <p>Sem o multiplexador, a CPU seria muito mais lenta e confusa, porque não teria como organizar o fluxo de informações. É como se, em vez de um painel organizado, você tivesse fios espalhados por todos os lados, sem controle.</p>
 
-<h3 id="o-que-e-a-ula">O que é a ULA?</h3>
+### O que é a ULA?
 <hr>
 
 <p>A ULA (Unidade Lógica e Aritmética) é como uma calculadora super-rápida dentro da CPU.</p>
@@ -186,7 +185,7 @@ series: "computacao-para-iniciantes"
 
 <p>Esse é um dos pontos mais importantes dentro do computador: é aqui que os números 0 e 1 (do sistema binário) começam a se transformar nos programas que a gente usa, como jogos, editores de texto ou navegadores de internet.</p>
 
-<h3 id="como-assim">Como assim?</h3>
+### Como assim?
 <hr>
 
 <p>Nós já sabemos que o computador só entende números binários, que são 0 e 1. Essa linguagem de 0 e 1 dos números binários é chamada de <strong>linguagem de máquina</strong>.</p>
@@ -236,7 +235,7 @@ series: "computacao-para-iniciantes"
 
 <p>A ULA é uma parte fundamental desse processo, porque é ela que faz as contas e toma as decisões lógicas necessárias para que tudo funcione corretamente. Basicamente temos sinais elétricos, que são representados por essas sequências de 0 e 1, sendo transformados em dados úteis para nós.</p>
 
-<h3 id="unidade-de-controle">Unidade de Controle</h3>
+### Unidade de Controle
 <hr>
 
 <p>Dentro do computador, tem um monte de combinações de números 0 e 1 funcionando ao mesmo tempo. Algumas dessas combinações são dados (como números, textos, imagens), e outras são instruções (ordens para fazer alguma coisa). Mas como o computador sabe o que é dado e o que é instrução, sem se confundir?</p>
@@ -247,7 +246,7 @@ series: "computacao-para-iniciantes"
 
 <p>No computador, a Unidade de Controle faz o papel do maestro — ela coordena tudo para que cada parte do computador trabalhe no tempo certo.</p>
 
-<h3 id="o-que-a-unidade-de-controle-faz">O que a Unidade de Controle faz?</h3>
+### O que a Unidade de Controle faz?
 <hr>
 
 <ul>
@@ -273,7 +272,7 @@ series: "computacao-para-iniciantes"
 
 <p>Quanto mais rápido esse relógio, mais rápido o computador consegue processar as informações. Porque <strong>um clock mais rápido permite que mais instruções sejam executadas em menos tempo</strong>.</p>
 
-<h3 id="e-na-pratica-como-isso-funciona">E na prática, como isso funciona?</h3>
+### E na prática, como isso funciona?
 <hr>
 
 <p>Quando você clica para abrir alguma coisa no computador, a Unidade de Controle entra em ação, ela começa a ler um monte de instruções e organiza tudo:</p>
@@ -286,7 +285,7 @@ series: "computacao-para-iniciantes"
 
 <p>A cada batida do clock, um passo diferente acontece, e tudo acontece rápido e na ordem certa. Isso faz com que consiga acessar o que você pediu, como abrir um programa ou salvar um arquivo, sem travar ou demorar muito.</p>
 
-<h3 id="exemplo-abrindo-um-jogo">Exemplo: Abrindo um jogo</h3>
+### Exemplo: Abrindo um jogo
 <hr>
 
 <p>Vamos imaginar tudo acontecendo rapidinho, em frações de segundo. Mas aqui vamos explicar devagar, passo por passo, para você entender bem.</p>
@@ -368,7 +367,7 @@ series: "computacao-para-iniciantes"
     caption="Fluxo de dados e controle na abertura de um jogo no computador."
 %}
 
-<h3 id="assim-a-cpu-funciona">Assim a CPU funciona</h3>
+### Assim a CPU funciona
 <hr>
 
 <p>Então, agora você já sabe as partes principais da CPU e como elas trabalham juntas para fazer o computador funcionar. A CPU é uma grande coordenadora que organiza tudo, desde as contas simples até as tarefas mais complexas, como rodar jogos e programas.</p>
@@ -383,7 +382,7 @@ series: "computacao-para-iniciantes"
     caption="Módulo de memória RAM."
 %}
 
-<h2 id="memoria">Memória</h2>
+## Memória
 <hr>
 
 <p>Você já viu em anúncios frases como:</p>
@@ -394,7 +393,7 @@ series: "computacao-para-iniciantes"
 
 <p>Vamos entender isso melhor.</p>
 
-<h3 id="memoria-de-trabalho-e-memoria-de-armazenamento">Memória de trabalho e memória de armazenamento</h3>
+### Memória de trabalho e memória de armazenamento
 <hr>
 
 <ul>
@@ -436,7 +435,7 @@ series: "computacao-para-iniciantes"
 
 <p>Por isso, quando você compra um computador, é importante saber a quantidade de memória RAM (a bancada) e o tamanho do HD ou SSD (o armário). Quanto mais memória RAM, mais coisas você consegue fazer ao mesmo tempo sem travar. E quanto maior o HD ou SSD, mais arquivos você pode guardar.</p>
 
-<h3 id="memoria-ram">Memória RAM</h3>
+### Memória RAM
 <hr>
 
 <p>A RAM (que significa "memória de acesso aleatório") é onde o computador guarda temporariamente as informações dos programas que estão sendo usados naquele momento.</p>
@@ -445,7 +444,7 @@ series: "computacao-para-iniciantes"
 
 <p>Da mesma forma, a RAM armazena informações temporariamente enquanto o computador está ligado. Quando você desliga o computador, todas as informações na RAM são perdidas.</p>
 
-<h3 id="como-a-ram-funciona-por-dentro">Como a RAM funciona por dentro?</h3>
+### Como a RAM funciona por dentro?
 <hr>
 
 <p>A memória RAM é uma memória semicondutora, ou seja, é uma memória feita por componentes de silício, como os transistores. A memória RAM possui também capacitores, que são dispositivos eletrônicos que armazenam carga.</p>
@@ -727,7 +726,7 @@ series: "computacao-para-iniciantes"
     <li><p>É por isso que dizemos que a memória RAM é uma memória volátil — ela precisa de energia constante para funcionar. E também por isso ela serve para tarefas temporárias, não para guardar informações permanentemente.</p></li>
 </ul>
 
-<h3 id="memoria-cache">Memória Cache</h3>
+### Memória Cache
 <hr>
 
 <p>A memória cache existe para resolver um problema que acontece entre a CPU (o “cérebro” do computador) e a memória RAM.</p>
@@ -800,7 +799,7 @@ series: "computacao-para-iniciantes"
 
 <p>Tudo isso faz da memória cache uma peça essencial para que os computadores sejam rápidos e eficientes. Mesmo sendo pequena e cara, ela faz uma diferença enorme, porque ajuda a CPU a passar menos tempo esperando por dados e mais tempo trabalhando no que precisa.</p>
 
-<h3 id="hd">HD: Disco Rígido</h3>
+### HD: Disco Rígido
 <hr>
 
 <p>Agora que já falamos das memórias de trabalho, como a RAM e a cache, vamos entender melhor as memórias de armazenamento, começando pelo HD.</p>
@@ -877,7 +876,7 @@ series: "computacao-para-iniciantes"
 
 <p>Por isso, é sempre bom ter uma quantidade adequada de memória RAM no computador, compatível com o que você costuma fazer. Assim, você evita depender muito do swap e mantém o computador funcionando de forma mais rápida.</p>
 
-<h3 id="ssd">SSD: Unidade de Estado Sólido</h3>
+### SSD: Unidade de Estado Sólido
 <hr>
 
 <p>O SSD (sigla em inglês para Solid State Drive, ou Unidade de Estado Sólido) é um tipo de armazenamento de dados que não tem partes móveis, ao contrário do HD tradicional que funciona com discos girando e agulhas se movendo.</p>
@@ -950,7 +949,7 @@ series: "computacao-para-iniciantes"
     </li>
 </ul>
 
-<h3 id="comparando-hd-e-ssd">Comparando HD e SSD</h3>
+### Comparando HD e SSD
 <hr>
 <p>Agora que já entendemos como o HD e o SSD funcionam, vamos comparar os dois para ver as diferenças e vantagens de cada um.</p>
 
@@ -999,7 +998,7 @@ series: "computacao-para-iniciantes"
     </table>
 </div>
 
-<h3 id="como-a-memoria-do-computador-e-organizada-hoje">Como a memória do computador é organizada hoje</h3>
+### Como a memória do computador é organizada hoje
 <hr>
 
 <p>Como já comentamos antes, no dia a dia é comum ouvir falar da memória RAM, geralmente quando alguém menciona um “pente” de 8 GB ou 16 GB que se encaixa na placa-mãe do computador.</p>
@@ -1036,7 +1035,7 @@ series: "computacao-para-iniciantes"
 
 <p>Assim, o computador consegue trabalhar de forma organizada, sem perder tempo procurando as informações, e tudo fica mais rápido e eficiente.</p>
 
-<h2 id="dispositivos-de-entrada-e-saida">Dispositivos de Entrada e Saída</h2>
+## Dispositivos de Entrada e Saída
 <hr>
 
 <p>Os dispositivos de entrada e saída são os equipamentos que o computador usa para receber informações do mundo externo e também para mostrar essas informações de volta para a pessoa que está usando a máquina.</p>
@@ -1097,7 +1096,7 @@ series: "computacao-para-iniciantes"
 
 <p>Esses dispositivos são chamados de dispositivos de entrada e saída ao mesmo tempo, e são muito comuns em equipamentos modernos. Eles permitem que o computador receba e envie informações simultaneamente, facilitando a interação com o usuário.</p>
 
-<h2 id="resumo">Resumo</h2>
+## Resumo
 <hr>
 
 <p>Ok! Neste artigo, nós aprendemos sobre:</p>

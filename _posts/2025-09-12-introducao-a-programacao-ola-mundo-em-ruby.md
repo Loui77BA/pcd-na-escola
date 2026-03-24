@@ -10,8 +10,6 @@ permalink: /introducao-a-programacao-ola-mundo-em-ruby/
 lang: pt-BR
 series: "introducao-a-programacao"
 ---
-Neste artigo, iniciando a parte prática da nossa série sobre introdução à programação, vamos escrever nosso primeiro programa em Ruby: o clássico "Olá Mundo" para começar a entender a sintaxe e o funcionamento básico da linguagem.
-
 <div class="text-center">
     <img src="https://augustopontin.com.br/wp-content/uploads/2020/02/hello_world.gif" aria-hidden="true" class="img-fluid">
 </div>

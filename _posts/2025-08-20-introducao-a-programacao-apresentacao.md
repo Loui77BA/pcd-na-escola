@@ -10,8 +10,6 @@ permalink: /introducao-a-programacao-apresentacao/
 lang: pt-BR
 series: "introducao-a-programacao"
 ---
-Este artigo inicia uma série sobre Introdução à Programação, o objetivo é apresentar os conceitos fundamentais da programação, incluindo lógica, estruturas de controle, e as principais linguagens utilizadas no mercado.
-
 <div class="text-center">
 <img src="https://www.serasaexperian.com.br/content/dam/serasa-institucional/blog/assets/downloads/Profissao-Programador-1.jpg" aria-hidden="true" />
 </div>

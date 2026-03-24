@@ -10,14 +10,13 @@ permalink: /computacao-para-iniciantes-circuitos-logicos/
 lang: pt-BR
 series: "computacao-para-iniciantes"
 ---
-<p>Este artigo aborda os circuitos lógicos, as portas lógicas e suas aplicações. Eles são fundamentais na computação, pois são usados para processar informações e tomar decisões.</p>
 
 {% include figure.html 
     src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/cdc4f6e2-28d5-4726-664c-0a6ae41baa00/public"
     alt="Uma rede de circuitos lógicos digitais interconectados com portas AND, OR, XOR e NOR, ilustrando o fluxo de dados."
 %}
 
-<h2 id="apresentacao">Apresentação</h2>
+## Apresentação
 <hr>
 
 <p>Depois de entender como funcionam os transistores, podemos dar mais um passo e falar sobre os circuitos lógicos. Eles são os blocos fundamentais do processamento de dados em computadores e outros aparelhos eletrônicos.</p>
@@ -42,7 +41,7 @@ series: "computacao-para-iniciantes"
 
 <p>Esses circuitos lógicos obedecem uma lógica específica, chamada <strong>álgebra booleana</strong>. A lógica em geral é o estudo das regras do pensamento: como sabemos se uma ideia faz sentido ou não. Esse tipo de raciocínio já era estudado desde a Grécia Antiga, por filósofos como Aristóteles. Mas a lógica que os computadores usam foi desenvolvida por um matemático chamado <strong>George Boole</strong>, no século 19 — por isso, ela é chamada de lógica booleana.</p>
 
-<h2 id="logica-booleana">Lógica Booleana</h2>
+## Lógica Booleana
 <hr>
 
 <p>A lógica booleana trabalha com apenas dois valores possíveis:</p>
@@ -77,7 +76,7 @@ series: "computacao-para-iniciantes"
 
 <p>Vamos ver como cada uma dessas operações funciona com exemplos.</p>
 
-<h2 id="operacao-e-and"><strong>Operação E (AND)</strong></h2>
+## \1
 <hr>
 
 <p>Imagine que você quer ir ao cinema com uma pessoa. Duas coisas precisam acontecer:</p>
@@ -134,7 +133,7 @@ series: "computacao-para-iniciantes"
 
 <p>Como você pode observar, a saída só é verdadeira (1) quando ambas as entradas são verdadeiras (1). Se qualquer uma das entradas for falsa (0), a saída também será falsa (0). Assim como no exemplo do cinema, onde as duas condições precisam ser atendidas (cinema aberto e pessoa disponível para ir com você) para que o plano (ir ao cinema) dê certo.</p>
 
-<h2 id="operacao-ou-or"><strong>Operação OU (OR)</strong></h2>
+## \1
 <hr>
 
 <p>Aqui é mais tranquilo: basta que uma condição seja verdadeira para o resultado ser verdadeiro.</p>
@@ -193,7 +192,7 @@ series: "computacao-para-iniciantes"
 
 <p>Como você pode observar, a saída é verdadeira (1) quando pelo menos uma das entradas é verdadeira (1). Se ambas as entradas forem falsas (0), a saída será falsa (0). Assim como no exemplo do parque, onde você se divertiu se fez pelo menos uma das atividades.</p>
 
-<h2 id="operacao-ou-exclusivo-xor"><strong>Operação OU Exclusivo (XOR)</strong></h2>
+## \1
 <hr>
 
 <p>Aqui (na operação OU Exclusivo - XOR) o resultado só é verdadeiro se apenas uma das condições for verdadeira. Se as duas (condições) forem verdadeiras (ou as duas falsas), o resultado é falso.</p>
@@ -245,7 +244,7 @@ series: "computacao-para-iniciantes"
 
 <p>Como você pode observar, a saída é verdadeira (1) quando apenas uma das condições é verdadeira (1). Se as duas condições forem verdaderes (1) ou as duas forem falsas (0), a saída será falsa (0). Assim como no exemplo das roupas, onde você só veste roupas quentes ou leves, mas não as duas ao mesmo tempo.</p>
 
-<h2 id="operacao-nao-not"><strong>Operação NÃO (NOT)</strong></h2>
+## \1
 <hr>
 
 <p>Essa operação inverte o valor de uma condição. Se era verdadeiro, vira falso; se era falso, vira verdadeiro.</p>
@@ -284,7 +283,7 @@ series: "computacao-para-iniciantes"
 
 <p>Como você pode observar, a saída é o inverso (o contrário) da entrada. Se a entrada é verdadeira (1), a saída será falsa (0). Se a entrada é falsa (0), a saída será verdadeira (1). Assim como no exemplo da luz, onde a operação NÃO (NOT) inverte o estado da luz (se a luz está acesa, a operação a considera apagada e vice-versa).</p>
 
-<h2 id="tabela-verdade">Tabela Verdade</h2>
+## Tabela Verdade
 <hr>
 
 <p>Essas tabelas que acabamos de fazer, com as possibilidades de resultado para cada operação lógica, são chamadas de <strong>tabelas-verdade</strong>. Elas nos ajudam a entender como as operações funcionam em diferentes situações.</p>
@@ -295,7 +294,7 @@ series: "computacao-para-iniciantes"
 
 <p>Essas tabelas são fundamentais para entender como os circuitos lógicos funcionam e como podemos usá-los para resolver problemas e processar informações.</p>
 
-<h2 id="exemplo-tabela-verdade-combinando-e-and-e-ou-or">Exemplo de tabela-verdade combinando E (AND) e OU (OR)</h2>
+## Exemplo de tabela-verdade combinando E (AND) e OU (OR)
 <hr>
 
 <p>Imagine que você tem três interruptores chamados A, B e C. Cada um pode estar em dois estados:</p>
@@ -476,7 +475,7 @@ series: "computacao-para-iniciantes"
 
 <p><strong>Dica:</strong> Para evitar erros de interpretação, use parênteses sempre que possível para deixar claro qual parte da expressão deve ser resolvida primeiro.</p>
 
-<h2 id="exemplo-tabela-verdade-combinando-ou-or-e-xor">Exemplo de tabela-verdade combinando OU (OR) com OU Exclusivo (XOR)</h2>
+## Exemplo de tabela-verdade combinando OU (OR) com OU Exclusivo (XOR)
 <hr>
 
 <p>Vamos imaginar novamente que temos três interruptores: A, B e C. Cada um pode estar em dois estados:</p>
@@ -672,7 +671,7 @@ series: "computacao-para-iniciantes"
 </ul>
 <p>Esses conceitos são fundamentais para entender como as operações lógicas funcionam e como podemos usá-las para construir circuitos lógicos mais complexos.</p>
 
-<h2 id="resumo">Resumo</h2>
+## Resumo
 <hr>
 
 <p>Aprendemos sobre circuitos lógicos e como eles são fundamentais para a computação. Vimos que:</p>

@@ -10,8 +10,6 @@ permalink: /comentarios-da-serie-o-que-significa/
 lang: pt-BR
 series: "o-que-significa"
 ---
-<p>Este texto reúne comentários e reflexões sobre os artigos da série 'O que significa?', abordando temas como deficiência, capacitismo e acessibilidade.</p>
-
 ## **Apresentação**
 
 ---

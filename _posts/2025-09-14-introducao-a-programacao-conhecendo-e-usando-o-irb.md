@@ -10,8 +10,6 @@ permalink: /introducao-a-programacao-conhecendo-e-usando-o-irb/
 lang: pt-BR
 series: "introducao-a-programacao"
 ---
-Neste artigo, vamos explorar o IRB (Interactive Ruby), um ambiente interativo que permite as pessoas testarem códigos Ruby rapidamente. O IRB é uma ferramenta essencial para quem está começando a aprender programação em Ruby.
-
 <div class="text-center">
     <img src="https://ruby-doc.org/docs/ruby-doc-bundle/Tutorial/part_01/first_steps/03.gif" aria-hidden="true" class="img-fluid">
 </div>

@@ -10,7 +10,6 @@ permalink: /computacao-para-iniciantes-sistemas-operacionais/
 lang: pt-BR
 series: "computacao-para-iniciantes"
 ---
-<p>Entenda o que são sistemas operacionais, suas funções principais, as partes que compõem um sistema operacional e exemplos populares como Windows, macOS e Linux.</p>
 
 {% include figure.html 
     src="https://blog.winco.com.br/wp-content/uploads/2018/02/sistemas-operacionais.jpg"

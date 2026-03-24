@@ -10,8 +10,6 @@ permalink: /introducao-a-programacao-algoritmos-e-linguagens-de-programacao/
 lang: pt-BR
 series: "introducao-a-programacao"
 ---
-Este artigo vai abordar os algoritmos, que são sequências de instruções para resolver problemas, e as linguagens de programação, que são as ferramentas que usamos para implementar (construir) esses algoritmos.
-
 <div class="text-center">
 <img src="https://media.licdn.com/dms/image/v2/C5612AQGZPEZtPRFSjA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1638836845913?e=2147483647&v=beta&t=Oamy5cy8cq-wiFoKloKgBrfAGs_HOFr1gbBhIQ8m4Cs" aria-hidden="true" />
 </div>

@@ -10,8 +10,6 @@ permalink: /introducao-a-programacao-estruturas-de-repeticao-em-ruby/
 lang: pt-BR
 series: "introducao-a-programacao"
 ---
-Neste artigo, serão exploradas as estruturas de repetição em Ruby, incluindo <code class="text-white-50 text-light">while</code>, <code class="text-white-50 text-light">for</code> e <code class="text-white-50 text-light">each</code>, com exemplos práticos para facilitar o entendimento.
-
 <div class="text-center">
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/72672341-de1e-43f7-f4d9-f92e5f53c200/public" aria-hidden="true" class="img-fluid border" />
 </div>

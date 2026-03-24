@@ -10,14 +10,13 @@ permalink: /computacao-para-iniciantes/programas-ou-softwares/
 lang: pt-BR
 series: "computacao-para-iniciantes"
 ---
-<p>Você já se perguntou o que é um programa de computador? Na prática, o termo mais utilizado é "software". Mas o que isso significa? Vamos explorar esses conceitos de forma simples.</p>
 
 {% include figure.html 
     src="https://st4.depositphotos.com/12981370/24312/i/450/depositphotos_243120806-stock-photo-programmer-working-software-development-coding.jpg"
     alt="Um programador vestindo uma camisa azul-jeans escrevendo código em dois monitores usando um laptop no escritório."
 %}
 
-<h2 id="apresentacao">Apresentação</h2>
+## Apresentação
 <hr>
 
 <p>Vamos começar com uma comparação bem fácil: imagine que um programa de computador é como uma receita de bolo. Para fazer o bolo dar certo, você precisa seguir todos os passos da receita: separar os ingredientes, misturar tudo direitinho e colocar no forno no tempo certo. Com o computador é parecido. Ele precisa de uma “receita” para saber o que fazer. E essa receita é o que chamamos de programa ou software.</p>
@@ -26,7 +25,7 @@ series: "computacao-para-iniciantes"
 
 <p>Esses algoritmos são escritos em linguagens de programação, que são como idiomas próprios para conversar com o computador. Assim como o português tem regras e palavras, cada linguagem de programação também tem sua forma certa de escrever as instruções.</p>
 
-<h2 id="o-que-e-um-programa-afinal">O que é um programa, afinal?</h2>
+## O que é um programa, afinal?
 <hr>
 
 <p>Um programa nada mais é do que um tipo de algoritmo feito especialmente para o computador. A diferença é que ele precisa ser escrito de um jeito que o processador do computador consiga entender. O processador, que é como o “cérebro” do computador, não entende nossa linguagem falada, só entende números. E mais especificamente, números bem simples: 0 e 1.</p>
@@ -38,7 +37,7 @@ series: "computacao-para-iniciantes"
 
 <p>Por isso, mesmo que você veja fotos, ouça músicas, jogue ou escreva textos no computador, ele na verdade não entende o que essas coisas significam. Para ele, tudo é traduzido em sequências de zeros e uns, que representam se uma corrente elétrica está passando (1) ou não está (0). Ou seja, tudo o que aparece na tela, no fundo, é feito com eletricidade e matemática.</p>
 
-<h2 id="mas-como-o-computador-transforma-0-e-1-em-tudo-isso">Mas como o computador transforma 0 e 1 em tudo isso?</h2>
+## Mas como o computador transforma 0 e 1 em tudo isso?
 <hr>
 
 <p>Para entender isso, pense no corpo humano. Nossos olhos captam as imagens, mas é o cérebro que interpreta o que estamos vendo. Do mesmo jeito, o computador usa várias camadas de "tradução" para transformar os zeros e uns em imagens, sons, textos e tudo mais que usamos no dia a dia.</p>
@@ -50,7 +49,7 @@ series: "computacao-para-iniciantes"
 
 <p>Essas “traduções” são feitas com a ajuda das linguagens de programação. Cada linguagem tem suas próprias regras e palavras, que ajudam a organizar os comandos para o computador. Assim, quando você escreve um programa em uma linguagem de programação, está criando uma receita que o computador pode seguir para fazer o que você quer.</p>
 
-<h2 id="linguagens-de-programacao">Linguagens de Programação: A forma de escrever programas</h2>
+## Linguagens de Programação: A forma de escrever programas
 <hr>
 
 <p>Escrever tudo só com 0 e 1 seria muito difícil para nós, seres humanos, por isso, as linguagens de programação foram criadas em diferentes níveis, dependendo de quão próximas estão da linguagem humana. Ou seja, os diferentes níveis que as linguagens de programação podem estar são organizados de acordo com a nossa capacidade de entendê-las.</p>
@@ -78,7 +77,7 @@ series: "computacao-para-iniciantes"
     alt="Níveis de linguagens de programação linguagem de máquina, baixo nível e alto nível."
 %}
 
-<h2 id="como-o-computador-entende-essas-linguagens">Como o computador entende essas linguagens?</h2>
+## Como o computador entende essas linguagens?
 <hr>
 
 <p>Um programa escrito em uma linguagem de alto nível não funciona diretamente no computador. Ele precisa passar por um processo de tradução, feito por dois tipos de programas:</p>
@@ -101,14 +100,14 @@ series: "computacao-para-iniciantes"
 
 <p>Essas traduções transformam o que escrevemos em código-fonte — o texto com as instruções — em comandos que o processador pode entender e executar.</p>
 
-<h2 id="como-os-softwares-sao-criados">Como os Softwares São Criados?</h2>
+## Como os Softwares São Criados?
 <hr>
 
 <p>Para que um programa de computador funcione, é necessário usar a lógica de programação e linguagens de programação. Mas muita gente se pergunta: como esses programas são organizados? Como é possível criar coisas tão complexas como aplicativos de celular, sites ou sistemas inteiros? Afinal, como tudo isso é feito?</p>
 
 <p>Para entender isso, primeiro precisamos conhecer dois conceitos importantes no mundo da programação: <code class="text-white-50">Back-end</code> e <code class="text-white-50">Front-end</code>.</p>
 
-<h3 id="de-onde-tudo-isso-veio">De onde tudo isso veio?</h3>
+### De onde tudo isso veio?
 <hr>
 
 <p>Antigamente, os programas de computador eram muito mais simples. Muitas vezes, uma única pessoa dava conta de desenvolver tudo sozinha. Isso porque os sistemas tinham menos funções e os computadores eram bem limitados — sem internet, sem gráficos avançados, e só existiam em empresas ou instituições. Ter um computador em casa era algo raro até os anos 80. Só a partir dos anos 90 os computadores começaram a se espalhar mais, e nos anos 2000 isso se tornou algo comum.</p>
@@ -127,7 +126,7 @@ series: "computacao-para-iniciantes"
     caption="Computador de mesa antigo com monitor de tubo e Windows XP."
 %}
 
-<h3 id="como-os-programas-eram-instalados-antes">Como os programas eram instalados antes?</h3>
+### Como os programas eram instalados antes?
 <hr>
 
 <p>Antes da internet se espalhar, o jeito de instalar programas era bem diferente do que conhecemos hoje. As empresas compravam CDs, DVDs ou disquetes que vinham com os programas. Esses discos eram comprados de empresas como Microsoft, IBM, Oracle ou SAP, e para instalar o programa no computador era preciso chamar um técnico especializado.</p>
@@ -140,7 +139,7 @@ series: "computacao-para-iniciantes"
     caption="Conjunto de disquetes, um deles mostrando a etiqueta de instalação do Adobe Photoshop."
 %}
 
-<h3 id="o-que-mudou-com-a-chegada-da-internet">O que mudou com a chegada da internet?</h3>
+### O que mudou com a chegada da internet?
 <hr>
 
 <p>Com a internet, tudo ficou muito mais rápido e prático. Os programas passaram a ser distribuídos e atualizados pela internet, sem precisar de CDs ou técnicos especializados. Isso facilitou muito o uso dos softwares e também permitiu que eles se tornassem mais dinâmicos: hoje, atualizações acontecem com frequência, e os próprios usuários conseguem baixar, instalar e atualizar aplicativos com poucos cliques.</p>
@@ -167,7 +166,7 @@ series: "computacao-para-iniciantes"
 
 <p>Ou seja, a Internet não só facilitou o acesso aos programas, como também ampliou muito o que é possível fazer com eles.</p>
 
-<h3 id="por-que-o-desenvolvimento-de-softwares-mudou-tanto">Por Que o Desenvolvimento de Softwares Mudou Tanto?</h3>
+### Por Que o Desenvolvimento de Softwares Mudou Tanto?
 <hr>
 
 <p>Hoje em dia, o jeito de criar e manter programas de computador (softwares) é bem diferente de como era feito nas décadas de 1980 e 1990. Veja alguns motivos:</p>
@@ -183,7 +182,7 @@ series: "computacao-para-iniciantes"
 
 <p>Essas partes que são o Back-end e o Front-end. Vamos entender o que isso significa.</p>
 
-<h3 id="o-que-e-front-end">O Que é Front-end?</h3>
+### O Que é Front-end?
 <hr>
 
 <p>O front-end é a parte do software que aparece para quem está usando. É tudo aquilo que a pessoa vê na tela: botões, menus, textos, imagens, cores, etc. É por meio do front-end que as pessoas interagem com o programa — seja clicando, digitando ou tocando na tela. Ele é responsável por mostrar as informações e mandar os comandos para o back-end.</p>
@@ -194,7 +193,7 @@ series: "computacao-para-iniciantes"
 %}
 <p>Essa parte visual precisa ser bonita, fácil de usar e funcionar bem. Para isso, várias equipes trabalham juntas: pessoas que trabalham com design, programação, experiência do usuário (UX) e testes.</p>
 
-<h3 id="exemplo-pratico-modernizando-um-aplicativo-de-banco">Exemplo prático: modernizando um aplicativo de banco</h3>
+### Exemplo prático: modernizando um aplicativo de banco
 <hr>
 
 <p>Imagine que o time de produto de um banco decide que o aplicativo precisa ficar mais moderno. As telas precisam ser mais bonitas e fáceis de usar. Eles então passam essa tarefa para o time de tecnologia, com prazos e objetivos. A partir daí, várias perguntas são feitas:</p>
@@ -225,7 +224,7 @@ series: "computacao-para-iniciantes"
 
 <p>Depois disso, a equipe começa a programar as telas, conectar com o back-end e testar se tudo está funcionando. Esses testes são feitos tanto em celulares de verdade quanto em simuladores de celular no computador. Às vezes, existe uma equipe de qualidade (chamada QA do inglês "Quality Assurance" em português "Garantia de Qualidade") que faz esses testes.</p>
 
-<h3 id="o-que-e-back-end">O Que é Back-end?</h3>
+### O Que é Back-end?
 <hr>
 
 <p>Enquanto o front-end é a parte que aparece, o back-end é tudo o que acontece por trás, nos bastidores. É a parte que processa os dados, guarda as informações no banco de dados, cuida da segurança, e responde aos comandos enviados pelo front-end.</p>
@@ -237,7 +236,7 @@ series: "computacao-para-iniciantes"
 
 <p>O back-end é responsável por fazer o programa funcionar de verdade. Ele recebe as solicitações do front-end, processa as informações e envia os resultados de volta. É como se fosse o cozinheiro que prepara a comida enquanto o garçom (front-end) serve aos clientes.</p>
 
-<h3 id="voltando-ao-exemplo-do-aplicativo-de-banco">Voltando ao exemplo do aplicativo de banco</h3>
+### Voltando ao exemplo do aplicativo de banco
 <hr>
 
 <p>No exemplo do aplicativo de banco, para a modernização, já observamos o trabalho do time de design e do front-end. Agora, vamos ver como o back-end entra nessa história.</p>
@@ -295,7 +294,7 @@ series: "computacao-para-iniciantes"
     <li>O aplicativo é fácil de manter? O código é bem organizado e documentado, facilitando futuras atualizações e correções?</li>
 </ul>
 
-<h2 id="resumo">Resumo</h2>
+## Resumo
 <hr>
 
 <p>Resumindo de forma clara, o processo de desenvolvimento de um software costuma seguir este caminho:</p>

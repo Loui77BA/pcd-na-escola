@@ -9,8 +9,6 @@ tags: [Educação, Química]
 permalink: /tecnologias-assistivas-no-ensino-de-quimica-uma-proposta-de-tabela-periodica-acessivel/
 lang: pt-BR
 ---
-Este artigo propõe uma solução voltada à acessibilidade da tabela periódica para pessoas com deficiência, destacando o papel dos recursos tecnológicos no fomento à inclusão e à autonomia no processo de aprendizagem de Química.
-
 <div class="text-center">
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/01248cbd-d6fc-4d17-2007-b107616a0000/public" aria-hidden="true" class="img-fluid" />
 </div>

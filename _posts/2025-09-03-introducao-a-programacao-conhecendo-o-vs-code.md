@@ -10,8 +10,6 @@ permalink: /introducao-a-programacao-conhecendo-o-vs-code/
 lang: pt-BR
 series: "introducao-a-programacao"
 ---
-Este artigo apresenta o Visual Studio Code (VS Code) em detalhes, incluindo instalação, uso com leitores de tela e navegação completa pelo editor, com foco específico na acessibilidade para pessoas com deficiência.
-
 <div class="text-center">
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/1d2728c4-57cd-41b1-b6d6-b235849cab00/public" aria-hidden="true" class="img-fluid">
 </div>

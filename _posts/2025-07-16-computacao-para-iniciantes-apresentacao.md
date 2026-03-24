@@ -10,7 +10,6 @@ permalink: /computacao-para-iniciantes-apresentacao/
 lang: pt-BR
 series: "computacao-para-iniciantes"
 ---
-<p>Este artigo inicia uma série de posts sobre computação, explicando conceitos básicos e sua evolução histórica. A ideia é tornar a computação acessível para um maior número de pessoas.</p>
 
 {% include figure.html 
     src="https://media.istockphoto.com/id/1075599562/photo/programmer-working-with-program-code.jpg?s=612x612&w=0&k=20&c=n3Vw5SMbMCWW1YGG6lnTfrwndNQ8B_R4Vw-BN7LkqpA="

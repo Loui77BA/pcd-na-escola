@@ -1,26 +1,22 @@
 ---
 layout: post
 title: "Capacitismo: O que significa?"
-description: "Até mesmo o nome do preconceito contra a pessoa com deficiência é desconhecido, conheça a forma da discriminação que une todas as outras."
+description: "Até o nome do preconceito contra a pessoa com deficiência é desconhecido, conheça a forma da discriminação que une todas as outras."
 date: 2025-06-07 12:00:00 -0300
 author: Louise Suelen
-image: https://media.istockphoto.com/id/117148620/photo/young-disabled-boy-looking-upon-his-peers-leaving-him-out.jpg?s=612x612&w=0&k=20&c=HCtvKXk19IXIQS21bCXP8K6n2rd2zG9XRNijJJ4Gy2w=
 categories: [Deficiência]
 tags: [deficiência, capacitismo]
 permalink: /capacitismo-o-que-significa/
 lang: pt-BR
 series: "o-que-significa"
 ---
-<p>
-    Até mesmo o nome do preconceito contra a pessoa com deficiência (o capacitismo) é desconhecido, conheça a força da discriminação que une todas as outras.
-</p>
 
 {% include figure.html 
     src="https://media.istockphoto.com/id/117148620/photo/young-disabled-boy-looking-upon-his-peers-leaving-him-out.jpg?s=612x612&w=0&k=20&c=HCtvKXk19IXIQS21bCXP8K6n2rd2zG9XRNijJJ4Gy2w="
     alt="Um menino em uma cadeira de rodas olhando de longe para um grupo de crianças brincando em roda. A imagem mostra ele de costas olhando para o grupo de crianças que estão de frente para ele."
 %}
 
-<h2 id="apresentacao">Apresentação</h2>
+## Apresentação
 
 <hr>
 
@@ -57,7 +53,7 @@ series: "o-que-significa"
     alt="Ilustração de dois homens tentando alcançar o topo de uma escada que leva a uma meta representada por um alvo e um ícone de dinheiro. Um deles está subindo os degraus correndo, enquanto o outro, que usa cadeira de rodas, encontra uma barreira no primeiro degrau, simbolizando falta de equidade de oportunidades."
 %}
 
-<h2 id="por-que-usar-uma-palavra-diferente">Por que usar uma palavra diferente?</h2>
+## Por que usar uma palavra diferente?
 
 <hr>
 
@@ -108,7 +104,7 @@ series: "o-que-significa"
      Preconceito, estereótipos e discriminação formam um ciclo que se retroalimenta, para quebrar esse ciclo, é necessário enfrentar tanto as ações visíveis quanto as ideias e crenças que o sustentam. 
 </p>
 
-<h3 id="o-que-diz-a-lei-brasileira">O que diz a lei brasileira?</h3>
+### O que diz a lei brasileira?
 
 <hr>
 
@@ -156,7 +152,7 @@ series: "o-que-significa"
     alt="Ilustração de uma árvore com o título Eugenics no topo, representando a eugenia como se fosse uma ciência central que sustenta várias outras áreas. A frase Eugenics is the self direction of human evolution aparece ao redor do tronco. Nas raízes estão palavras como genética, biologia, psicologia, antropologia, história, e medicina, sugerindo que todas alimentam a eugenia. A imagem tem caráter propagandístico e histórico, refletindo a visão pseudocientífica de que a eugenia é a base para o progresso humano."
 %}
 
-<h2 id="as-relacoes-da-eugenia-com-o-capacitismo">As relações da eugenia com o capacitismo</h2>
+## As relações da eugenia com o capacitismo
 
 <hr>
 
@@ -203,7 +199,7 @@ series: "o-que-significa"
      Apesar de muitos acreditarem que pensamentos eugenistas desapareceram com o fim da Segunda Guerra Mundial, eles ainda persistem. Atualmente, discursos eugenistas são proferidos por figuras públicas e acadêmicas que alegam preocupar-se com a "qualidade de vida da população". Um exemplo contemporâneo é o biólogo e escritor Richard Dawkins, que em 2020 expressou opiniões controversas, defendendo a eugenia.
 </p>
 
-<h3 id="richard-dawkins-defende-a-eugenia">Richard Dawkins defende a eugenia em 2020</h3>
+### Richard Dawkins defende a eugenia em 2020
 
 <hr>
 
@@ -231,7 +227,7 @@ series: "o-que-significa"
      O divulgador científico Emílio Garcia, através do canal de YouTube BlablaLogia, abordou as incoerências nos discursos de Dawkins e destacou a importância de manter vigilância contra ideias eugenistas.
 </p>
 
-<h3 id="transcricao-do-video-de-emilio-garcia-sobre-richard-dawkins">Transcrição do vídeo de Emílio Garcia sobre Richard Dawkins</h3>
+### Transcrição do vídeo de Emílio Garcia sobre Richard Dawkins
 
 <hr>
 
@@ -343,7 +339,7 @@ series: "o-que-significa"
     <strong>(20:50)</strong> Independentemente das intenções de Dawkins, é essencial que entendamos conceitos científicos para formar uma sociedade crítica, capaz de discutir temas tão delicados como este. E é isso, pessoal! [...]
 </p>
 
-<h3 id="comentario-sobre-a-defesa-da-eugenia-de-richard-dawkins">Comentário sobre a defesa da eugenia de Richard Dawkins</h3>
+### Comentário sobre a defesa da eugenia de Richard Dawkins
 
 <hr>
 
@@ -371,7 +367,7 @@ series: "o-que-significa"
     É essencial que a sociedade se mantenha vigilante contra esses discursos, especialmente quando vindos de figuras influentes, e continue questionando, de forma crítica, as ideias que ameaçam os princípios de direitos humanos e dignidade para todas as pessoas.
 </p>
 
-<h3 id="para-saber-mais">Para saber mais</h3>
+### Para saber mais
 
 <hr>
 
@@ -411,7 +407,7 @@ series: "o-que-significa"
     alt="Ilustração de uma cena em um ambiente corporativo onde um homem em cadeira de rodas é impedido de entrar por outro homem de terno que faz um gesto de recusa com a mão estendida. Ao fundo, há um cartaz com o símbolo internacional de acesso riscado com uma linha vermelha, indicando proibição. Outro homem está sentado à mesa, observando em silêncio. A imagem simboliza discriminação e exclusão de pessoas com deficiência."
 %}
 
-<h2 id="afinal-o-que-e-capacitismo">Afinal, o que é capacitismo?</h2>
+## Afinal, o que é capacitismo?
 
 <hr>
 
@@ -486,7 +482,7 @@ series: "o-que-significa"
      O que deve ficar nítido é: a inclusão de pessoas com deficiência e o combate ao capacitismo não deve se basear na ideia de "superação", mas sim na valorização da diversidade humana e no respeito às diferenças. O "se" de "se você se curar" ou "se você se esforçar" não deve ser uma condição para o norteamento das políticas públicas e das ações de inclusão.
 </p>
 
-<h2 id="estudos-sobre-o-capacitismo-no-brasil">Estudos sobre o capacitismo no Brasil</h2>
+## Estudos sobre o capacitismo no Brasil
 
 <hr>
 
@@ -566,7 +562,7 @@ series: "o-que-significa"
     caption="Luciano Hang e Jelres Freitas em uma loja Havan."
 %}
 
-<h2 id="o-capacitismo-da-pessoa-com-deficiencia">O capacitismo da pessoa com deficiência</h2>
+## O capacitismo da pessoa com deficiência
 
 <hr>
 
@@ -605,22 +601,14 @@ series: "o-que-significa"
     Freitas também mencionou que, como presidente da comissão, repudiava o excesso de burocracia e que continuaria lutando para que tais exigências não fossem implementadas em sua cidade. Hang agradeceu o apoio e convidou Freitas para a inauguração da nova loja.
 </p>
 
-<h3 id="video-de-luciano-hang-e-jelres-freitas">Vídeo de Luciano Hang e Jelres Freitas</h3>
+### Vídeo de Luciano Hang e Jelres Freitas
 
 <hr>
 
-<div class="text-center mb-4 cf-player">
-<div style="position: relative; padding-top: 56.016597510373444%;">
-<iframe
-src="https://customer-n8imyf4ea5hvxexl.cloudflarestream.com/5069fa72dad94cd9f7fd5805b152efa2/iframe?poster=https%3A%2F%2Fcustomer-n8imyf4ea5hvxexl.cloudflarestream.com%2F5069fa72dad94cd9f7fd5805b152efa2%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D0h0m20s%26height%3D600"
-loading="lazy"
-style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
-allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-allowfullscreen="true"
-title="Vídeo de Luciano Hang e Jelres Freitas"
-></iframe>
-</div>
-</div>
+{% include video-embed.html
+    src="https://customer-n8imyf4ea5hvxexl.cloudflarestream.com/5069fa72dad94cd9f7fd5805b152efa2/iframe?poster=https%3A%2F%2Fcustomer-n8imyf4ea5hvxexl.cloudflarestream.com%2F5069fa72dad94cd9f7fd5805b152efa2%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D0h0m20s%26height%3D600"
+    title="Vídeo de Luciano Hang e Jelres Freitas"
+%}
 
 <p>
      O jornalista Filipe Oliveira, que é cego, escreveu um artigo na Folha de São Paulo abordando o assunto. Ele destacou que pisos táteis mal projetados ou instalados de forma inadequada realmente não cumprem seu papel. Porém, em vez de culpar a exigência legal, a responsabilidade deveria recair sobre quem os instala sem o devido cuidado. Ele questionou:
@@ -645,7 +633,7 @@ title="Vídeo de Luciano Hang e Jelres Freitas"
     author="Louise Suelen"
 %}
 
-<h3 id="comentario-da-autora-sobre-o-episodio-de-luciano-hang-e-jelres-freitas">Comentário da autora sobre o episódio de Luciano Hang e Jelres Freitas</h3>
+### Comentário da autora sobre o episódio de Luciano Hang e Jelres Freitas
 
 <hr>
 
@@ -697,7 +685,7 @@ title="Vídeo de Luciano Hang e Jelres Freitas"
     Eu sou cega e, todos os dias, preciso desconstruir meus preconceitos e aprender sobre pessoas com outras deficiências, não porque sou uma pessoa "melhor", mas porque quero um mundo menos capacitista para todas as pessoas. Não só um mundo menos capacitista para pessoas cegas. Só vamos conseguir ter mais força e organização política quando conhecermos nossas diferenças, nos acolhermos como uma grande comunidade, e lutarmos por uma acessibilidade realmente universal — de dentro das nossas bolhas para a sociedade inteira. 
 </p>
 
-<h2 id="exemplos-de-capacitismo-que-repercutiram-na-midia">Exemplos de capacitismo que repercutiram na mídia</h2>
+## Exemplos de capacitismo que repercutiram na mídia
 
 <hr>
 
@@ -710,7 +698,7 @@ title="Vídeo de Luciano Hang e Jelres Freitas"
     alt="manchete do portal g1 com fundo preto e texto branco que diz: Secretário da Educação de Barueri é exonerado após afirmar que crianças com deficiência não têm condição de aprender. Abaixo, em letras menores, está escrito: Celso Furlan disse ainda que mães levam crianças com deficiência para escolas como uma maneira de se livrar dos filhos. Prefeitura lamentou o ocorrido. A matéria é assinada pela redação do g1 SP e datada de 16/05/2025 as 19h30."
 %}
 
-<h3 id="caso-celso-furlan-ex-secretario-de-educacao-em-barueri-sp">Caso Celso Furlan: ex-secretário de Educação em Barueri (SP)</h3>
+### Caso Celso Furlan: ex-secretário de Educação em Barueri (SP)
 
 <hr>
 
@@ -761,7 +749,7 @@ title="Vídeo de Luciano Hang e Jelres Freitas"
     caption="Captura de tela de uma notícia publicada no site g1, na seção 'Rio Grande do Sul'. O texto menciona que a vereadora Lourdes Sprenger (MDB) teria chamado estagiárias de 'debilóides' e alegado que elas não tinham condições de exercer suas funções. Além disso, a vereadora teria se referido ao chefe das estagiárias como 'aquele professor preto, sujo e burro', conforme denúncia do Ministério Público. A matéria foi escrita por João Pedro Lamas e publicada em 24 de abril de 2024."
 %}
 
-<h3 id="caso-vereadora-lourdes-sprenger">Caso vereadora Lourdes Sprenger: se tornou ré por injúria racial e discriminação contra estagiárias com deficiência</h3>
+### Caso vereadora Lourdes Sprenger: se tornou ré por injúria racial e discriminação contra estagiárias com deficiência
 
 <hr>
 
@@ -853,7 +841,7 @@ title="Vídeo de Luciano Hang e Jelres Freitas"
     caption="A reportagem menciona que a mãe de João, de 9 anos, relatou o caso nas redes sociais, o que gerou grande repercussão e levou a uma resposta da Secretaria de Educação. O caso ocorreu em Belo Horizonte, onde João, que tem paralisia cerebral e usa cadeira de rodas, foi deixado na escola enquanto a turma foi ao cinema, apesar de sua mãe ter autorizado sua participação. A mãe expressou frustração com a falta de inclusão e pediu maior capacitação dos profissionais da área."
 %}
 
-<h3 id="caso-joao-deixado-na-escola-enquanto-colegas-foram-ao-cinema">Caso João: menino com deficiência deixado na escola enquanto colegas foram ao cinema</h3>
+### Caso João: menino com deficiência deixado na escola enquanto colegas foram ao cinema
 
 <hr>
 
@@ -942,7 +930,7 @@ title="Vídeo de Luciano Hang e Jelres Freitas"
     A inclusão vai além de uma obrigação legal, é sobre reconhecer a dignidade de todas as pessoas. O que João viveu não se resolve só com treinamentos ou regras, mas com uma mudança profunda na forma como a sociedade vê as pessoas com deficiência, reconhecendo que elas merecem respeito, acolhimento e participação plena. 
 </p>
 
-<h2 id="consideracoes-finais">Considerações finais</h2>
+## Considerações finais
 
 <hr>
 
@@ -962,7 +950,7 @@ title="Vídeo de Luciano Hang e Jelres Freitas"
     Reconhecer o capacitismo como uma discriminação específica e grave é o primeiro passo para mudar atitudes e construir uma sociedade mais justa e igualitária. Somente ao entender e combater os preconceitos que estão na base do capacitismo, poderemos criar um ambiente em que a deficiência seja vista como uma característica da diversidade humana e não como um problema a ser resolvido. O desafio é grande, mas essencial: precisamos redefinir a forma como enxergamos e tratamos as pessoas com deficiência, promovendo a verdadeira inclusão que respeite e valorize a diversidade. 
 </p>
 
-<h2 id="referencias">Referências</h2>
+## Referências
 
 <hr>
 

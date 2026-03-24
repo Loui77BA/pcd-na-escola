@@ -10,11 +10,11 @@ permalink: /introducao-a-programacao-configurando-o-ambiente-de-desenvolvimento-
 lang: pt-BR
 series: "introducao-a-programacao"
 ---
-Neste artigo, vamos configurar o ambiente necessário para começar a programar em **Ruby**, serão configuradas as ferramentas essenciais para o desenvolvimento em Ruby, incluindo o terminal e o gerenciador de versões **asdf**.
-
-<div class="text-center">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" aria-hidden="true" class="img-fluid" style="max-height:200px">
-</div>
+{% include centered-image.html
+    src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg"
+    alt=""
+    class="img-fluid"
+%}
 
 ## Apresentação {#apresentacao}
 ---
@@ -600,7 +600,6 @@ gem install rubocop
 ```
 {: .bg-dark .text-light .p-3}
 
-<!-- Seções de criação de projeto e Gemfile foram removidas para manter este artigo focado apenas na configuração e nos testes do ambiente. -->
 
 ## Testando o ambiente {#testando-o-ambiente}
 ---

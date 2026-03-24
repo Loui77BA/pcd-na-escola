@@ -10,21 +10,20 @@ permalink: /computacao-para-iniciantes-numeros-binarios/
 lang: pt-BR
 series: "computacao-para-iniciantes"
 ---
-<p>Este artigo aborda o sistema de numeração binário, explicando o seu funcionamento, a conversão entre os sistemas decimal e binário, e a importância na computação.</p>
 
 {% include figure.html 
     src="https://i.ytimg.com/vi/k0KeVEMXmWo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCK-HvNj_WQ1X2Oj0nbgTJNl26WSg"
     alt="Uma imagem de um quadro branco mostrando o cálculo da conversão do número decimal 9 para seu equivalente binário 1001, utilizando divisões sucessivas por 2 e destacando os restos e o último quociente para formar o número binário."
 %}
 
-<h2 id="apresentacao">Apresentação</h2>
+## Apresentação
 <hr>
 
 <p>Como os circuitos lógicos já foram apresentados, podemos falar sobre o sistema de numeração binário, que é a base da computação moderna. O sistema binário é um jeito de contar e representar números usando apenas dois símbolos: <strong>0</strong> (falso - é quando não tem passagem de corrente elétrica) e <strong>1</strong> (verdadeiro - é quando tem passagem de corrente elétrica).</p>
 
 <p>Para entender melhor o que são números binários e como eles funcionam, vamos simplificar e comparar com o sistema decimal que usamos no dia a dia. Além disso, vamos explicar como os números binários são usados pelos computadores para realizar suas operações.</p>
 
-<h2 id="sistema-decimal">Começando pelo sistema decimal (o que usamos todos os dias)</h2>
+## Começando pelo sistema decimal (o que usamos todos os dias)
 <hr>
 
 <p>O sistema que a maioria das pessoas usa para contar é o sistema decimal, também chamado de base 10. Ele usa 10 dígitos (números):</p>
@@ -99,7 +98,7 @@ series: "computacao-para-iniciantes"
 
 <p>E, por aí vai...</p>
 
-<h2 id="sistema-binario">E o que é o sistema binário?</h2>
+## E o que é o sistema binário?
 <hr>
 
 <p>Agora, imagine um interruptor de luz que pode estar ligado ou desligado. O sistema binário funciona com essa mesma ideia, mas usando apenas dois números: 0 e 1.</p>
@@ -117,7 +116,7 @@ series: "computacao-para-iniciantes"
 
 <p> Com vários desses “interruptores” juntos, o computador consegue representar qualquer informação: números, letras, imagens, músicas e muito mais.</p>
 
-<h2 id="comparacao-sistemas">Comparando os sistemas decimal e binário</h2>
+## Comparando os sistemas decimal e binário
 <hr>
 
 <p>Para entender melhor, vamos comparar os dois sistemas:</p>
@@ -177,7 +176,7 @@ series: "computacao-para-iniciantes"
     <span class="visually-hidden">2 elevado à n</span>.
 </p>
 
-<h2 id="transformar-decimal-binario">Como transformar um número decimal em binário?</h2>
+## Como transformar um número decimal em binário?
 <hr>
 
 <p>É importante saber como converter números do sistema decimal para o binário, porque os computadores usam o sistema binário para processar informações.</p>
@@ -313,7 +312,7 @@ series: "computacao-para-iniciantes"
     </li>
 </ol>
 
-<h2 id="outro-exemplo-conversao-decimal-binario">Outro exemplo de conversão de decimal para binário</h2>
+## Outro exemplo de conversão de decimal para binário
 <hr>
 
 <p>Vamos a outro exemplo, para entender melhor. Agora vamos transformar o número 25 em binário.</p>
@@ -427,7 +426,7 @@ series: "computacao-para-iniciantes"
     </li>
 </ol>
 
-<h2 id="binario-para-decimal">E como fazer o caminho contrário, de binário para decimal?</h2>
+## E como fazer o caminho contrário, de binário para decimal?
 <hr>
 
 <p>Agora que sabemos como converter de decimal para binário, vamos aprender a fazer o caminho contrário: de binário para decimal.</p>
@@ -473,7 +472,7 @@ series: "computacao-para-iniciantes"
 <p>Agora, somamos tudo:</p>
 <p><span aria-label="1 mais 0 mais 4">1 + 0 + 4</span> = 5</p>
 
-<h2 id="por-que-importante">Por que isso é importante?</h2>
+## Por que isso é importante?
 <hr>
 
 <p>Entender o sistema binário é fundamental porque é a base de como os computadores funcionam. Tudo — absolutamente tudo — o que acontece dentro de um computador, de uma TV, de um celular, de um videogame — é feito usando bilhões de combinações de <span aria-label="zeros e uns">0s e 1s</span>, como se fossem pequenas lâmpadas piscando (ligando ou desligando) bilhões de vezes por segundo para processar informações.</p>
@@ -542,7 +541,7 @@ series: "computacao-para-iniciantes"
 
 <p>Então é por isso que os números binários são tão importantes: eles são a linguagem que os computadores usam para entender e processar tudo o que fazemos com eles.</p>
 
-<h2 id="resumo">Resumo</h2>
+## Resumo
 <hr>
 
 <p>Para resumir, o sistema binário é a base da computação moderna, usando apenas dois símbolos: 0 e 1. Ele é fundamental porque os computadores usam esses símbolos para processar informações.</p>

@@ -10,8 +10,6 @@ permalink: /introducao-a-programacao-expressoes-condicionais-em-ruby/
 lang: pt-BR
 series: "introducao-a-programacao"
 ---
-Neste artigo, vamos aprender a usar expressões condicionais em Ruby para tomar decisões no código e validar entradas de dados nos programas, utilizando estruturas como <code class="text-white-50 text-light">if</code>, <code class="text-white-50 text-light">else</code> e <code class="text-white-50 text-light">elsif</code>.
-
 <div class="text-center">
     <img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fn6fzxw5n9y8qmjyny44v.png" aria-hidden="true" class="img-fluid border">
 </div>

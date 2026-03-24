@@ -10,8 +10,6 @@ permalink: /introducao-a-programacao-entrada-e-saida-de-dados-em-ruby/
 lang: pt-BR
 series: "introducao-a-programacao"
 ---
-Uma das partes mais fundamentais de um programa é a capacidade de interagir com o usuário. Justamente por isso, neste artigo vamos conhecer as maneiras que existem para inserir e capturar dados em Ruby.
-
 <div class="text-center">
     <img src="https://miro.medium.com/v2/resize:fit:1400/1*PMcPZ8mOKFRiGHWiIjjDvg.png" aria-hidden="true" class="img-fluid">
 </div>

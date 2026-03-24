@@ -1,27 +1,22 @@
 ---
 layout: post
 title: "Acessibilidade: O que significa?"
-description: "Este artigo analisa criticamente o conceito de acessibilidade, abordando sua evolução histórica, principais marcos legais e transformações conceituais que a consolidam como um direito humano."
+description: "Análise da evolução histórica, marcos legais e consolidação da acessibilidade como direito humano."
 date: 2025-07-06 10:00:00 -0300
 author: Louise Suelen
-image: https://accessibe.com/media/blog/uncommon-accessibility-issues/uncommon-one.jpg
 categories: [Deficiência]
 tags: [acessibilidade, inclusão, deficiência]
 permalink: /acessibilidade-o-que-significa/
 lang: pt-BR
 series: "o-que-significa"
 ---
-<p>
-    Este artigo analisa criticamente o conceito de acessibilidade, abordando sua evolução histórica, principais marcos legais e transformações conceituais.
-</p>
 
 {% include figure.html 
     src="https://accessibe.com/media/blog/uncommon-accessibility-issues/uncommon-one.jpg"
     alt="Uma pessoa em uma cadeira de rodas em frente a uma grande escadaria."
 %}
 
-<!-- 1 -->
-<h2 id="apresentacao">Apresentação</h2>
+## Apresentação
 <hr />
 <p>
     Depois dos artigos:
@@ -46,8 +41,7 @@ series: "o-que-significa"
     Este conteúdo não se destina apenas a pessoas que atuam diretamente na área de inclusão, mas também é indicado para quem ocupa cargos de gestão pública, atua na educação, desenvolve software, projeta espaços, trabalha com direito, estuda ou integra a sociedade civil e tem compromisso com a construção de um país mais acessível, justo e democrático. Em conclusão, o artigo propõe repensar a acessibilidade: ela não deve ser vista como um favor ou vantagem, mas sim como uma obrigação da justiça, parte essencial da cidadania e base necessária para a plena realização dos direitos humanos.
 </p>
 
-<!-- 2 -->
-<h2 id="historico-da-acessibilidade">Histórico da acessibilidade</h2>
+## Histórico da acessibilidade
 <hr />
 
 <p>
@@ -66,7 +60,7 @@ series: "o-que-significa"
     A seguir, uma breve recapitulação histórica sobre a evolução do conceito de acessibilidade.
 </p>
 
-<h3 id="acessibilidade-pre-seculo-xviii">Acessibilidade pré-século XVIII</h3>
+### Acessibilidade pré-século XVIII
 
 <hr />
 <p>
@@ -120,7 +114,7 @@ series: "o-que-significa"
     author="BIANCHETTI, 2001"
 %}
 
-<h3 id="seculos-xviii-xix">Séculos XVIII–XIX</h3>
+### Séculos XVIII–XIX
 <hr />
 
 <p>
@@ -136,7 +130,7 @@ series: "o-que-significa"
     No entanto, esses avanços ainda se baseavam em uma abordagem médica ou assistencialista, onde a deficiência era vista como um “problema” individual e tratada com medidas de apoio ou isolamento social. O foco estava na limitação da pessoa, e não nas barreiras presentes em toda a sociedade.
 </p>
 
-<h3 id="pos-guerra-e-direitos-civis-1945-1980">Pós-Guerra e direitos civis (1945-1980)</h3>
+### Pós-Guerra e direitos civis (1945-1980)
 <hr />
 
 <p>
@@ -168,7 +162,7 @@ series: "o-que-significa"
     Essa regulamentação definiu que a exclusão social decorre das barreiras impostas pelo ambiente, em vez da condição corporal ou sensorial dos indivíduos.
 </p>
 
-<h3 id="ano-internacional-e-plano-de-acao-1981-1982">Ano das pessoas com deficiência e plano de ação mundial (1981-1982)</h3>
+### Ano das pessoas com deficiência e plano de ação mundial (1981-1982)
 <hr />
 
 <p>
@@ -190,7 +184,7 @@ series: "o-que-significa"
     author="Louise Suelen"
 %}
 
-<h3 id="ada-e-modelo-social-da-deficiencia-1990">ADA e o modelo social da deficiência (1990)</h3>
+### ADA e o modelo social da deficiência (1990)
 <hr />
 
 <p>
@@ -206,7 +200,7 @@ series: "o-que-significa"
     Essa legislação influenciou a formulação de leis em diversos países e estabeleceu a acessibilidade como um aspecto importante da cidadania.
 </p>
 
-<h3 id="desenho-universal-e-cif-1990-2000">Desenho universal e CIF (1990-2000)</h3>
+### Desenho universal e CIF (1990-2000)
 <hr />
 
 <p>
@@ -234,7 +228,7 @@ series: "o-que-significa"
     Esta classificação foi oficialmente aprovada por todos os 191 Estados-membros da OMS na 54ª Assembleia Mundial da Saúde, realizada em 22 de maio de 2001 (resolução WHA 54.21), estabelecendo-se como o padrão internacional para descrição e mensuração da saúde e deficiência. A CIF se fundamenta nos mesmos princípios da Classificação Internacional de Doenças (CID) e do Índice de Intervenção em Saúde (ICHI), compartilhando um conjunto de códigos de extensão que permite uma documentação detalhada e precisa.
 </p>
 
-<h3 id="convencao-da-onu-2006">Convenção da ONU (2006)</h3>
+### Convenção da ONU (2006)
 <hr />
 
 <p>
@@ -250,15 +244,14 @@ series: "o-que-significa"
     O texto da convenção foi aprovado pela Assembleia Geral das Nações Unidas em 13 de dezembro de 2006 e formalmente promulgado pelo Brasil em 25 de agosto de 2009, por meio do Decreto nº 6.949.
 </p>
 
-<!-- 3 -->
-<h2 id="marcos-legais-da-acessibilidade-no-brasil">Principais marcos legais da acessibilidade no Brasil</h2>
+## Principais marcos legais da acessibilidade no Brasil
 <hr />
 
 <p>
     A partir daqui o artigo se concentra na análise dos principais marcos legais que moldaram a acessibilidade no Brasil, desde a Constituição Federal de 1988 até as legislações mais recentes. Esses marcos refletem a evolução do entendimento sobre acessibilidade e sua importância como direito humano fundamental.
 </p>
 
-<h3 id="constituicao-federal-1988">Constituição Federal de 1988 – Marco fundador</h3>
+### Constituição Federal de 1988 – Marco fundador
 <hr />
 
 <p>
@@ -274,7 +267,7 @@ series: "o-que-significa"
     Essas previsões constitucionais foram determinantes para fundamentar legislações posteriores e consolidar o entendimento de que a acessibilidade constitui direito humano inalienável, vinculado ao exercício pleno da cidadania.
 </p>
 
-<h3 id="lei-7853-1989">Lei nº 7.853/1989 – Marco legal inicial de suporte às PcD</h3>
+### Lei nº 7.853/1989 – Marco legal inicial de suporte às PcD
 <hr />
 
 <p>
@@ -287,14 +280,14 @@ series: "o-que-significa"
     A norma reconhece a importância de adaptações arquitetônicas e da acessibilidade aos meios de comunicação e informação. Embora introdutória, a Lei nº 7.853/89 contribuiu de forma decisiva para o desenvolvimento de políticas públicas e programas sociais voltados à integração das pessoas com deficiência.
 </p>
 
-<h3 id="lei-8160-1991">Lei 8.160/1991 – Símbolo da deficiência auditiva</h3>
+### Lei 8.160/1991 – Símbolo da deficiência auditiva
 <hr />
 
 <p>
     A Lei nº 8.160, publicada em 8 de janeiro de 1991, dispõe sobre a caracterização do símbolo internacional de surdez. Este símbolo, cujo uso é opcional, consiste em um ícone destinado a identificar e sinalizar a presença de pessoas com deficiência auditiva em ambientes e serviços. Embora se trate de uma norma predominantemente simbólica, sua relevância está na promoção da visibilidade e no reconhecimento social das pessoas surdas, contribuindo para a redução de estigmas e para o fortalecimento de sua identidade cultural.
 </p>
 
-<h3 id="lei-9394-1996">Lei 9.394/1996 – Diretrizes da educação nacional</h3>
+### Lei 9.394/1996 – Diretrizes da educação nacional
 <hr />
 
 <p>
@@ -307,7 +300,7 @@ series: "o-que-significa"
     Com a promulgação da LDB, as políticas educacionais passaram a adotar uma perspectiva inclusiva, em detrimento da segregação, alinhando-se às diretrizes da Convenção sobre os Direitos das Pessoas com Deficiência da ONU, incorporada ao ordenamento jurídico brasileiro em 2009, com status constitucional.
 </p>
 
-<h3 id="lei-9610-1998">Lei 9.610/1998 – Direito Autoral e Acessibilidade</h3>
+### Lei 9.610/1998 – Direito Autoral e Acessibilidade
 <hr />
 
 <p>
@@ -317,7 +310,7 @@ series: "o-que-significa"
     De acordo com o artigo 46, inciso I, alínea "d" dessa lei, não configura violação de direitos autorais a reprodução de obras para uso exclusivo de pessoas com deficiência, desde que não haja finalidade comercial. Tal previsão é fundamental para promover o acesso à leitura, à informação e à cultura pelas pessoas com deficiência, garantindo-lhes o direito à educação e à participação cultural.
 </p>
 
-<h3 id="portaria-mec-319-1999">Portaria MEC 319/1999 – Comissão Brasileira do Braille</h3>
+### Portaria MEC 319/1999 – Comissão Brasileira do Braille
 <hr />
 
 <p>
@@ -327,7 +320,7 @@ series: "o-que-significa"
     Composta por especialistas e representantes da comunidade de pessoas com deficiência visual, a Comissão atua como órgão consultivo e normativo. Seu trabalho é fundamental para assegurar que a produção de materiais didáticos e informativos em Braille siga padrões técnicos e pedagógicos, contribuindo para a efetivação do direito à comunicação e à educação acessível.
 </p>
 
-<h3 id="politica-integracao-1999">Política nacional de integração da PcD (1999)</h3>
+### Política nacional de integração da PcD (1999)
 <hr />
 
 <p>
@@ -340,28 +333,28 @@ series: "o-que-significa"
     A promulgação desta Política representou um avanço ao reconhecer a pessoa com deficiência como sujeito de direitos, afastando a perspectiva de tutela ou caridade. Sua abordagem valoriza a cidadania, a participação social e o protagonismo das pessoas com deficiência na promoção de uma sociedade mais equitativa.
 </p>
 
-<h3 id="duas-leis-estruturantes-2000">2000 – Duas leis estruturantes</h3>
+### 2000 – Duas leis estruturantes
 <hr />
 
 <p>
     A trajetória normativa brasileira no início do século XXI consolida e expande os fundamentos estabelecidos pela Constituição de 1988 e pelas legislações promulgadas na década de 1990. No período de 2000 a 2005, o ordenamento jurídico nacional avançou significativamente na efetivação de direitos, na atribuição de deveres tanto ao poder público quanto ao setor privado e na implementação de instrumentos técnicos essenciais à promoção da acessibilidade.
 </p>
 
-<h3 id="lei-10048-2000">Lei 10.048/2000 – Atendimento prioritário</h3>
+### Lei 10.048/2000 – Atendimento prioritário
 <hr />
 
 <p>
     Promulgada em 8 de novembro de 2000, a legislação estabelece prioridade para pessoas com deficiência, idosos, gestantes, lactantes e indivíduos acompanhados de crianças de colo em filas, assentos, atendimentos telefônicos e vias de acesso. Ao impor obrigação imediata e direta aos prestadores de serviços públicos e privados, prevê sanções administrativas pelo descumprimento — incluindo advertência, multa e interdição —, além de possibilitar a fiscalização por parte do Ministério Público e dos órgãos de defesa do consumidor.
 </p>
 
-<h3 id="lei-10098-2000">Lei 10.098/2000 – Lei da Acessibilidade</h3>
+### Lei 10.098/2000 – Lei da Acessibilidade
 <hr />
 
 <p>
     Publicada em 19 de dezembro de 2000, a norma estabelece diretrizes gerais e critérios mínimos de acessibilidade nos âmbitos urbano, arquitetônico, de transporte, comunicação e informação. O texto introduz conceitos essenciais, como acessibilidade, barreiras e pessoa com mobilidade reduzida, determinando que os entes federativos adotem padrões técnicos de desenho universal, bem como realizem adaptações em novas edificações e veículos. Além disso, institui o Fundo Nacional para a Acessibilidade, destinado ao financiamento de políticas e ações voltadas à promoção de adaptações.
 </p>
 
-<h3 id="diretrizes-educacao-especial-2001">2001 – Normas para educação especial</h3>
+### 2001 – Normas para educação especial
 <hr />
 
 <p>
@@ -374,7 +367,7 @@ series: "o-que-significa"
     As diretrizes contemplam orientações sobre adaptações curriculares, utilização de recursos assistivos, formação continuada de professores e adoção de estratégias pedagógicas que promovam práticas inclusivas. Esse normativo foi fundamental para consolidar a implementação da educação inclusiva nas escolas e ampliar o acesso de estudantes com deficiência ao sistema de ensino regular.
 </p>
 
-<h3 id="libras-e-braille-2002">2002 – Libras reconhecida &amp; grafia Braille</h3>
+### 2002 – Libras reconhecida &amp; grafia Braille
 <hr />
 
 <p>
@@ -390,7 +383,7 @@ series: "o-que-significa"
     Já em 24 de setembro de 2002, o Ministério da Educação publicou a <strong>Portaria nº 2.678</strong>, que institui oficialmente a <strong>Grafia Braille para a Língua Portuguesa</strong>, assegurando a padronização nacional dos símbolos empregados na transcrição de materiais escritos para o sistema Braille. A normatização da grafia é essencial para garantir qualidade e uniformidade na produção de livros didáticos, documentos administrativos, cardápios e demais materiais em Braille, promovendo maior autonomia às pessoas com deficiência visual no acesso à informação e à educação.
 </p>
 
-<h3 id="decreto-5296-2004">2004 – Decreto 5.296 (Regulamentação técnica)</h3>
+### 2004 – Decreto 5.296 (Regulamentação técnica)
 <hr />
 
 <p>
@@ -411,7 +404,7 @@ series: "o-que-significa"
     Adicionalmente, introduz o conceito de “acessibilidade plena”, visando garantir que ambientes e serviços possam ser utilizados com autonomia e segurança, sem dependência de terceiros. Com isso, o decreto consolidou obrigações gerais em requisitos técnicos, estabelecendo um novo patamar legal para a acessibilidade no país.
 </p>
 
-<h3 id="mobilidade-e-comunicacao-2005">2005 – Progresso em mobilidade e comunicação</h3>
+### 2005 – Progresso em mobilidade e comunicação
 <hr />
 
 <p>
@@ -438,7 +431,7 @@ series: "o-que-significa"
     O decreto ainda prevê a adaptação de conteúdos didáticos e a implementação de políticas linguísticas específicas para a comunidade surda, visando avanços efetivos na inclusão educacional e comunicativa.
 </p>
 
-<h3 id="inclusao-e-acessibilidade-digital-2007">2007 – Inclusão &amp; acessibilidade digital</h3>
+### 2007 – Inclusão &amp; acessibilidade digital
 <hr />
 
 <p>
@@ -475,7 +468,7 @@ series: "o-que-significa"
     Essas iniciativas permitiram avanços expressivos na democratização do acesso aos serviços públicos digitais no Brasil, promovendo a inclusão e assegurando o pleno exercício da cidadania a pessoas com deficiência visual, auditiva, motora e intelectual.
 </p>
 
-<h3 id="convencao-onu-2009">2009 – ONU: Convenção com status constitucional</h3>
+### 2009 – ONU: Convenção com status constitucional
 <hr />
 
 <p>
@@ -503,7 +496,7 @@ series: "o-que-significa"
     A promulgação desse instrumento internacional consolidou um novo patamar de exigência jurídica no Brasil, impondo ao Estado o dever de revisar leis, políticas públicas e práticas institucionais em consonância com os compromissos internacionais firmados.
 </p>
 
-<h3 id="lei-acesso-informacao-2011">2011 – Financiamento público &amp; LAI</h3>
+### 2011 – Financiamento público &amp; LAI
 <hr />
 
 <p>
@@ -527,7 +520,7 @@ series: "o-que-significa"
     O decreto fortalece o caráter obrigatório da educação inclusiva como política pública, promovendo maior integração entre normas constitucionais, tratados internacionais e práticas escolares.
 </p>
 
-<h3 id="politicas-publicas-2012">2012 – Acessibilidade nas políticas públicas</h3>
+### 2012 – Acessibilidade nas políticas públicas
 <hr />
 
 <p>
@@ -570,7 +563,7 @@ series: "o-que-significa"
     Essa política representa um avanço na visibilidade e garantia dos direitos das pessoas com TEA, fornecendo base legal para a formulação de políticas públicas nos âmbitos da saúde, educação, trabalho e assistência social.
 </p>
 
-<h3 id="lei-brasileira-inclusao-2015">2015 – Lei Brasileira de Inclusão</h3>
+### 2015 – Lei Brasileira de Inclusão
 <hr />
 
 <p>
@@ -718,7 +711,7 @@ series: "o-que-significa"
     O Estatuto proporciona ao Brasil um instrumento jurídico atualizado, fundamentado na dignidade da pessoa humana e na promoção da igualdade de oportunidades, de aplicação obrigatória para o Estado, empresas e sociedade civil. A efetividade dessa legislação está condicionada à participação ativa da sociedade, à atuação dos órgãos públicos competentes e à consolidação de uma cultura de respeito à diversidade.
 </p>
 
-<h3 id="2016-lei-reserva-de-vagas-em-instituicoes-federais">2016 – Lei 13.409: reserva de vagas em instituições federais</h3>
+### 2016 – Lei 13.409: reserva de vagas em instituições federais
 <hr />
 
 <p>
@@ -737,7 +730,7 @@ series: "o-que-significa"
     <li>A legislação reforçou o art. 30 da LBI (direito à educação superior) e fomentou discussões sobre acessibilidade acadêmica e permanência estudantil.</li>
 </ul>
 
-<h3 id="2018-portaria-mec-n-1117-2018">2018 – Portaria MEC 1117/2018</h3>
+### 2018 – Portaria MEC 1117/2018
 <hr />
 
 <p>
@@ -757,7 +750,7 @@ series: "o-que-significa"
     Tal alinhamento estatístico foi essencial para prevenir interpretações divergentes nos editais do SiSU, fortalecer os mecanismos de fiscalização do Ministério Público e aprimorar a uniformização dos dados nacionais relativos à inclusão educacional.
 </p>
 
-<h3 id="2025-abnt-nbr-17225-2025">2025 – ABNT NBR 17225:2025 – Acessibilidade na Web</h3>
+### 2025 – ABNT NBR 17225:2025 – Acessibilidade na Web
 <hr />
 
 <p>
@@ -806,8 +799,7 @@ series: "o-que-significa"
     <strong>Link para acessar a norma:</strong> <a href="https://www2.camara.leg.br/a-camara/estruturaadm/gestao-na-camara-dos-deputados/responsabilidade-social-e-ambiental/acessibilidade/pdfs/ABNTNBR17225AcessibilidadeDigitalparaWeb.pdf?utm_source=chatgpt.com&utm_medium=referral&utm_campaign=chatgpt.com" target="_blank">ABNT NBR 17225:2025</a>
 </p>
 
-<!-- 4 -->
-<h2 id="acessibilidade-no-brasil-hoje">Acessibilidade no Brasil hoje</h2>
+## Acessibilidade no Brasil hoje
 <hr />
 
 <p>
@@ -832,7 +824,7 @@ series: "o-que-significa"
     author="Louise Suelen"
 %}
 
-<h3 id="tipos-de-acessibilidade">Tipos de acessibilidade</h3>
+### Tipos de acessibilidade
 <hr />
 
 <p>
@@ -995,7 +987,7 @@ series: "o-que-significa"
     author="Louise Suelen"
 %}
 
-<h3 id="tecnologias-assistivas">Tecnologias assistivas</h3>
+### Tecnologias assistivas
 <hr />
 
 <p>
@@ -1212,17 +1204,16 @@ series: "o-que-significa"
     <strong>Fonte:</strong> Classificações de Tecnologia Assistiva (BERSCH, 2013).
 </p>
 
-<!-- 5 -->
-<h2 id="acessibilidade-digital">Acessibilidade digital</h2>
+## Acessibilidade digital
 <hr />
-<h3 id="conceito-e-relevancia-da-acessibilidade-digital">Conceito e relevância da acessibilidade digital</h3>
+### Conceito e relevância da acessibilidade digital
 <hr />
 
 <p>
     A acessibilidade digital é uma dimensão crítica da cidadania na era da informação, trata-se do conjunto de práticas, normas, tecnologias e legislações que garantem o acesso equitativo de todas as pessoas, incluindo aquelas com deficiência, a conteúdos e serviços digitais. Sua trajetória histórica acompanha o desenvolvimento da própria Web, bem como os avanços tecnológicos em sistemas operacionais, navegadores, softwares assistivos e dispositivos móveis.
 </p>
 
-<h3 id="inicio-da-web-e-primeiros-debates-sobre-acessibilidade-digital">Início da Web e primeiros debates sobre acessibilidade digital</h3>
+### Início da Web e primeiros debates sobre acessibilidade digital
 <hr />
 
 <p>
@@ -1232,7 +1223,7 @@ series: "o-que-significa"
     Com o lançamento do navegador Mosaic, em 1993, a Web ganhou tração e passou a incorporar imagens e outras mídias. Naquele mesmo ano, iniciou-se um debate técnico em listas de discussão sobre como tornar esses novos elementos gráficos acessíveis. Foi nesse contexto que se propôs o atributo alt para imagens, oficializado no HTML 2.0 em 1995. Esse recurso exibe uma descrição textual quando a imagem não pode ser carregada, além de ser essencial para leitores de tela interpretarem conteúdos visuais para pessoas com deficiência visual.
 </p>
 
-<h3 id="leitores-de-tela-e-acessibilidade-nos-sistemas-operacionais">Leitores de tela e acessibilidade nos sistemas operacionais</h3>
+### Leitores de tela e acessibilidade nos sistemas operacionais
 <hr />
 
 <p>
@@ -1242,7 +1233,7 @@ series: "o-que-significa"
     Mais tarde, Thatcher também liderou a criação do Screen Reader/2, versão voltada para ambientes gráficos. Esses desenvolvimentos foram essenciais para garantir que pessoas cegas pudessem utilizar computadores em uma era marcada principalmente por interfaces textuais.
 </p>
 
-<h3 id="dosvox-referencia-nacional-em-acessibilidade-digital">DOSVOX: referência nacional em acessibilidade digital</h3>
+### DOSVOX: referência nacional em acessibilidade digital
 <hr />
 
 <p>
@@ -1258,7 +1249,7 @@ series: "o-que-significa"
     Em reconhecimento à sua relevância, o projeto DOSVOX foi citado em documentos de políticas públicas, projetos de extensão universitária e artigos científicos, consolidando-se como referência nacional em acessibilidade computacional.
 </p>
 
-<h3 id="padronizacao-internacional-wai-section-508-e-inicio-das-wcag">Padronização internacional: WAI, Section 508 e início das WCAG</h3>
+### Padronização internacional: WAI, Section 508 e início das WCAG
 <hr />
 
 <p>
@@ -1268,7 +1259,7 @@ series: "o-que-significa"
     Em 1998, a Seção 508 da Lei de Reabilitação dos Estados Unidos foi revisada, estabelecendo a obrigatoriedade de acessibilidade em sites e sistemas eletrônicos utilizados pelo governo federal, antecipando futuras normatizações internacionais.
 </p>
 
-<h3 id="evolucao-das-wcag">Evolução das WCAG</h3>
+### Evolução das WCAG
 <hr />
 
 <p>
@@ -1278,7 +1269,7 @@ series: "o-que-significa"
     O avanço da tecnologia móvel e o crescimento das demandas por acessibilidade levaram o W3C a lançar, em 2018, a WCAG 2.1. Essa versão trouxe critérios específicos para pessoas com baixa visão, deficiências cognitivas e usuários de dispositivos móveis, mantendo compatibilidade com seu antecessor. Mais tarde, em outubro de 2023, foi publicada a WCAG 2.2, que incluiu exigências referentes à navegação por toque, foco visível, métodos de autenticação sem memorização e à acessibilidade cognitiva, reafirmando o compromisso permanente com uma Web progressivamente mais inclusiva.
 </p>
 
-<h3 id="outras-diretrizes-do-w3c-wai-aria-atag-e-uaag">Outras diretrizes do W3C: WAI-ARIA, ATAG e UAAG</h3>
+### Outras diretrizes do W3C: WAI-ARIA, ATAG e UAAG
 <hr />
 
 <p>
@@ -1297,7 +1288,7 @@ series: "o-que-significa"
     </li>
 </ul>
 
-<h3 id="avancos-em-tecnologias-assistivas">Avanços em tecnologias assistivas</h3>
+### Avanços em tecnologias assistivas
 <hr />
 
 <p>
@@ -1311,7 +1302,7 @@ series: "o-que-significa"
     <li>Em 2009, o VoiceOver foi incorporado ao iPhone 3GS, tornando-o o primeiro smartphone acessível de fábrica a pessoas com deficiência visual. O Android passou a incluir o TalkBack, leitor de telas integrado, a partir de versões lançadas oficialmente em 2011.</li>
 </ul>
 
-<h3 id="normas-e-leis-internacionais">Normas e leis internacionais</h3>
+### Normas e leis internacionais
 <hr />
 
 <p>
@@ -1334,7 +1325,7 @@ series: "o-que-significa"
     No Brasil, o Estatuto da Pessoa com Deficiência (Lei 13.146/2015) determina, em seu artigo 63, a obrigatoriedade de acessibilidade em todos os sites mantidos por órgãos públicos e empresas com representação comercial no país, exigindo a observância das melhores práticas e diretrizes internacionais. Já a União Europeia instituiu a Diretiva 2016/2102, que estabelece que os sites e aplicativos do setor público devem atender a padrões de acessibilidade unificados. Essa norma definiu prazos progressivos para implementação entre 2019 e 2021 e incentivou a utilização de declarações de acessibilidade padronizadas em todos os países membros.
 </p>
 
-<h3 id="acessibilidade-digital-cenario-atual-e-futuro">Acessibilidade digital: cenário atual e futuro</h3>
+### Acessibilidade digital: cenário atual e futuro
 <hr />
 
 <p>
@@ -1357,8 +1348,7 @@ series: "o-que-significa"
     Nos próximos anos, espera-se que haja maior integração entre acessibilidade e inteligência artificial, além do fortalecimento de políticas públicas que assegurem o cumprimento das normas por meio de fiscalização rigorosa e do envolvimento efetivo da sociedade civil. A acessibilidade digital deixou de ser vista apenas como um diferencial ou escolha opcional e tornou-se um requisito essencial do ponto de vista ético, legal e técnico, sendo indispensável para garantir uma sociedade digital mais inclusiva e justa.
 </p>
 
-<!-- 7 -->
-<h2 id="consideracoes-finais">Considerações finais</h2>
+## Considerações finais
 <hr />
 
 <p>
@@ -1380,8 +1370,7 @@ series: "o-que-significa"
     Assim, que este artigo possa contribuir para a construção de uma nova consciência, crítica e engajada, capaz de promover transformações reais nas práticas cotidianas e nas estruturas sociais. A luta pela acessibilidade é uma luta por dignidade, por pertencimento e por uma sociedade onde todas as pessoas possam exercer seus direitos em condições de igualdade.
 </p>
 
-<!-- 8 -->
-<h2 id="referencias">Referências</h2>
+## Referências
 <hr />
 
 <div class="container">

@@ -10,14 +10,13 @@ permalink: /computacao-para-iniciantes-panorama-da-area-de-tecnologia/
 lang: pt-BR
 series: "computacao-para-iniciantes"
 ---
-<p>Este artigo explora o vasto campo da tecnologia, suas aplicações e as oportunidades de carreira disponíveis. A ideia é apresentar uma visão geral do setor.</p>
 
 {% include figure.html 
     src="https://img.freepik.com/photos-gratuite/formation-programmation-personne-travaillant-codes-ordinateur_23-2150010125.jpg?semt=ais_hybrid&w=740"
     alt="mãos de uma pessoa programando em laptop com códigos flutuantes em estilo artístico."
 %}
 
-<h2 id="apresentacao">Apresentação</h2>
+## Apresentação
 <hr>
 
 <p>No Brasil, quem quer seguir carreiras como Direito, Medicina ou Engenharia geralmente precisa seguir um caminho bem certinho: primeiro faz a faculdade da área, depois passa em exames obrigatórios (como a OAB para Direito, o CRM para Medicina e o CREA para Engenharia) e ainda cumpre outras exigências específicas.</p>
@@ -28,7 +27,7 @@ series: "computacao-para-iniciantes"
 
 <p>A Ciência da Computação é uma área especial porque se apoia em outras ciências, como a Matemática, a Lógica, a Eletrônica e a própria Física, mas também serve de base para várias outras áreas dentro da tecnologia.</p>
 
-<h2 id="cursos-e-faculdades">Cursos e Faculdades</h2>
+## Cursos e Faculdades
 <hr>
 
 <p>Quem quer estudar tecnologia tem várias opções de cursos superiores:</p>
@@ -50,7 +49,7 @@ series: "computacao-para-iniciantes"
 
 <p> Além disso, quem gosta de aprender por conta própria também encontra muitos cursos, tutoriais e materiais gratuitos. O importante é nunca parar de aprender, porque a tecnologia muda o tempo todo.</p>
 
-<h2 id="possibilidades-de-trabalho">Possibilidades de Trabalho</h2>
+## Possibilidades de Trabalho
 <hr>
 
 <p>Sobre as possibilidades de trabalho, são muitas! Veja alguns exemplos:</p>
@@ -80,7 +79,7 @@ series: "computacao-para-iniciantes"
 
 <p>Essas opções, na minha opinião, são mais arriscadas, exigem um bom planejamento financeiro e são melhor aproveitadas por quem já tem experiência sólida na área.</p>
 
-<h2 id="resumo">Resumo</h2>
+## Resumo
 <hr>
 
 <p>Em resumo, a área da tecnologia é muito ampla, cheia de possibilidades e aberta a todos os tipos de profissionais. Seja você alguém que vem de outra área, uma pessoa curiosa que aprende sozinha, ou alguém que quer seguir por uma formação tradicional, sempre há espaço.</p>

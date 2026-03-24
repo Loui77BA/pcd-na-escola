@@ -10,8 +10,6 @@ permalink: /introducao-a-programacao-expressoes-condicionais-em-ruby-parte-ii/
 lang: pt-BR
 series: "introducao-a-programacao"
 ---
-Neste artigo, continuamos nossa exploração das expressões condicionais em Ruby, focando em estruturas como <code class="text-white-50 text-light">case</code>, <code class="text-white-50 text-light">unless</code> e fazendo vários exercícios práticos com todas as estruturas condicionais aprendidas.
-
 <div class="text-center">
     <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b0b695bd-ae05-4be1-5692-5131de200100/public" aria-hidden="true" class="img-fluid border" />
 </div>

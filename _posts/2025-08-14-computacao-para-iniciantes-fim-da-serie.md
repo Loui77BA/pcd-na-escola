@@ -10,7 +10,6 @@ permalink: /computacao-para-iniciantes-fim-da-serie/
 lang: pt-BR
 series: "computacao-para-iniciantes"
 ---
-<p>Este artigo encerra a série Computação para Iniciantes, revisitando os conceitos trabalhados, sua importância e como se conectam na computação.</p>
 
 <div class="text-center">
 <img src="https://media.istockphoto.com/id/1288417573/pt/vetorial/fin-movie-ending-screen.jpg?s=612x612&w=0&k=20&c=V3RafL2r2LMXb5Ez_QCKQvRZbmZ45-IKg8lz53IG4dk=" aria-hidden="true" />

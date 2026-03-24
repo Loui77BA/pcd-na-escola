@@ -10,8 +10,6 @@ permalink: /introducao-a-programacao-terminal/
 lang: pt-BR
 series: "introducao-a-programacao"
 ---
-Esse artigo vai apresentar o terminal, uma ferramenta poderosa para pessoas programadoras, que torna possível executar tarefas mais rapidamente e com maior controle sobre o sistema operacional.
-
 <div class="text-center">
     <img src="https://blog.formacao.dev/content/images/2023/11/7.jpg" aria-hidden="true" class="img-fluid">
 </div>

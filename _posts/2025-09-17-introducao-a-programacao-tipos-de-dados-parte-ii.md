@@ -10,8 +10,6 @@ permalink: /introducao-a-programacao-tipos-de-dados-parte-ii/
 lang: pt-BR
 series: "introducao-a-programacao"
 ---
-No artigo anterior, discutimos os conceitos básicos dos tipos de dados em programação. Agora, vamos aprofundar nosso entendimento sobre cada tipo, explorando suas características, capacidades e limitações.
-
 <div class="text-center">
     <img src="https://ifrnead.github.io/rubynapratica/assets/images/tipos-dados.png" aria-hidden="true" class="img-fluid">
 </div>

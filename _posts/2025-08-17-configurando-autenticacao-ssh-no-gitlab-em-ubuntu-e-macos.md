@@ -9,8 +9,6 @@ tags: [dicas, tecnologia]
 permalink: /configurando-autenticacao-ssh-no-gitlab-em-ubuntu-e-macos/
 lang: pt-BR
 ---
-Neste texto, detalhamos como configurar a autenticação SSH no GitLab, tanto no Ubuntu quanto no macOS. SSH é uma maneira segura de se conectar a servidores remotos sem precisar digitar sua senha toda vez que se conecta.
-
 <div class="text-center">
 <img src="https://www.edivaldobrito.com.br/wp-content/uploads/2021/07/como-gerar-um-par-de-chaves-ssh-para-poder-autenticar-remotamente.jpg" aria-hidden="true" />
 </div>
