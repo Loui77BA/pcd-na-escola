@@ -2,6 +2,33 @@
 layout: default
 ---
 
+<!-- BreadcrumbList JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "{{ '/' | absolute_url }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artigos",
+      "item": "{{ '/artigos' | absolute_url }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ page.title | xml_escape }}"
+    }
+  ]
+}
+</script>
+
 <article class="post-article">
   <!-- Breadcrumb -->
   <nav class="post-breadcrumb" aria-label="Navegação de localização">
@@ -9,17 +36,7 @@ layout: default
     <span class="post-breadcrumb-sep" aria-hidden="true">/</span>
     <a href="{{ '/artigos' | relative_url }}" class="post-breadcrumb-link">Artigos</a>
     {% if page.series %}
-      {% assign series_names = "" | split: "" %}
-      {% assign series_names = series_names | push: "o-que-significa::O que Significa?" %}
-      {% assign series_names = series_names | push: "computacao-para-iniciantes::Computação para Iniciantes" %}
-      {% assign series_names = series_names | push: "introducao-a-programacao::Introdução à Programação" %}
-      {% assign series_label = page.series %}
-      {% for entry in series_names %}
-        {% assign parts = entry | split: "::" %}
-        {% if parts[0] == page.series %}
-          {% assign series_label = parts[1] %}
-        {% endif %}
-      {% endfor %}
+      {% assign series_label = site.data.series[page.series] | default: page.series %}
       <span class="post-breadcrumb-sep" aria-hidden="true">/</span>
       <span class="post-breadcrumb-current">{{ series_label }}</span>
     {% elsif page.categories %}
@@ -158,98 +175,119 @@ layout: default
   })();
   </script>
 
+
+
   <!-- Navegação entre posts -->
   <footer class="post-footer">
     {% if page.series %}
-    {% assign series_posts = site.posts | where: "series", page.series | sort: "date" %}
-    {% assign series_names_nav = "" | split: "" %}
-    {% assign series_names_nav = series_names_nav | push: "o-que-significa::O que Significa?" %}
-    {% assign series_names_nav = series_names_nav | push: "computacao-para-iniciantes::Computação para Iniciantes" %}
-    {% assign series_names_nav = series_names_nav | push: "introducao-a-programacao::Introdução à Programação" %}
-    {% assign series_display = page.series %}
-    {% for entry in series_names_nav %}
-      {% assign parts = entry | split: "::" %}
-      {% if parts[0] == page.series %}
-        {% assign series_display = parts[1] %}
-      {% endif %}
-    {% endfor %}
-    {% assign prev_series = nil %}
-    {% assign next_series = nil %}
-    {% assign found_current = false %}
-    {% for sp in series_posts %}
-      {% if sp.url == page.url %}
-        {% assign found_current = true %}
-      {% elsif found_current and next_series == nil %}
-        {% assign next_series = sp %}
-      {% elsif found_current == false %}
-        {% assign prev_series = sp %}
-      {% endif %}
-    {% endfor %}
+      {% assign series_posts = site.posts | where: "series", page.series | sort: "date" %}
+      {% assign series_display = site.data.series[page.series] | default: page.series %}
+      {% assign prev_series = nil %}
+      {% assign next_series = nil %}
+      {% assign found_current = false %}
+      {% for sp in series_posts %}
+        {% if sp.url == page.url %}
+          {% assign found_current = true %}
+        {% elsif found_current and next_series == nil %}
+          {% assign next_series = sp %}
+        {% elsif found_current == false %}
+          {% assign prev_series = sp %}
+        {% endif %}
+      {% endfor %}
 
-    {% if prev_series or next_series %}
-    <nav aria-label="Navegação da série {{ series_display }}" class="post-nav mb-4">
-      <p class="text-muted-custom small mb-2">
-        <i class="material-icons fs-6 align-middle" aria-hidden="true">collections_bookmark</i>
-        Série: <strong>{{ series_display }}</strong>
-      </p>
+      {% if prev_series or next_series %}
+      <nav aria-label="Navegação da série {{ series_display }}" class="post-nav">
+        <p class="text-muted-custom small mb-2">
+          <i class="material-icons fs-6 align-middle" aria-hidden="true">collections_bookmark</i>
+          Série: <strong>{{ series_display }}</strong>
+        </p>
+        <div class="row g-3">
+          <div class="col-md-6">
+            {% if prev_series %}
+            <a class="post-nav-card" href="{{ prev_series.url | relative_url }}"
+              aria-label="Artigo anterior da série: {{ prev_series.title }}">
+              <span class="post-nav-direction">
+                <i class="material-icons" aria-hidden="true">west</i>
+                Anterior na série
+              </span>
+              <span class="post-nav-title">{{ prev_series.title }}</span>
+            </a>
+            {% endif %}
+          </div>
+          <div class="col-md-6 text-md-end">
+            {% if next_series %}
+            <a class="post-nav-card post-nav-next" href="{{ next_series.url | relative_url }}"
+              aria-label="Próximo artigo da série: {{ next_series.title }}">
+              <span class="post-nav-direction">
+                Próximo na série
+                <i class="material-icons" aria-hidden="true">east</i>
+              </span>
+              <span class="post-nav-title">{{ next_series.title }}</span>
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </nav>
+      {% endif %}
+
+    {% else %}
+      <nav aria-label="Navegação entre posts" class="post-nav">
+        <div class="row g-3">
+          <div class="col-md-6">
+            {% if page.previous %}
+            <a class="post-nav-card" href="{{ page.previous.url | relative_url }}"
+              aria-label="Post anterior: {{ page.previous.title }}">
+              <span class="post-nav-direction">
+                <i class="material-icons" aria-hidden="true">west</i>
+                Post anterior
+              </span>
+              <span class="post-nav-title">{{ page.previous.title }}</span>
+            </a>
+            {% endif %}
+          </div>
+          <div class="col-md-6 text-md-end">
+            {% if page.next %}
+            <a class="post-nav-card post-nav-next" href="{{ page.next.url | relative_url }}"
+              aria-label="Próximo post: {{ page.next.title }}">
+              <span class="post-nav-direction">
+                Próximo post
+                <i class="material-icons" aria-hidden="true">east</i>
+              </span>
+              <span class="post-nav-title">{{ page.next.title }}</span>
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </nav>
+    {% endif %}
+
+    {% assign first_cat = page.categories | first %}
+    {% if first_cat %}
+    {% assign related_posts = site.posts | where_exp: "p", "p.url != page.url" | where_exp: "p", "p.categories contains first_cat" %}
+    {% if related_posts.size > 0 %}
+    <section class="post-related" aria-label="Artigos relacionados">
+      <h2 class="post-related-title">
+        <i class="material-icons fs-6 align-middle" aria-hidden="true">auto_stories</i>
+        Artigos relacionados
+      </h2>
       <div class="row g-3">
-        <div class="col-md-6">
-          {% if prev_series %}
-          <a class="post-nav-card" href="{{ prev_series.url | relative_url }}"
-            aria-label="Artigo anterior da série: {{ prev_series.title }}">
-            <span class="post-nav-direction">
-              <i class="material-icons" aria-hidden="true">west</i>
-              Anterior na série
-            </span>
-            <span class="post-nav-title">{{ prev_series.title }}</span>
+        {% for rp in related_posts limit: 3 %}
+        <div class="col-md-4">
+          <a class="post-related-card" href="{{ rp.url | relative_url }}">
+            <span class="post-related-card-category">{{ rp.categories | first }}</span>
+            <span class="post-related-card-title">{{ rp.title }}</span>
+            {% assign rm = rp.date | date: "%-m" | plus: 0 | minus: 1 %}
+            {% assign meses_rel = "jan,fev,mar,abr,mai,jun,jul,ago,set,out,nov,dez" | split: "," %}
+            <time class="post-related-card-date" datetime="{{ rp.date | date: '%Y-%m-%d' }}">
+              {{ rp.date | date: "%d" }} {{ meses_rel[rm] }} {{ rp.date | date: "%Y" }}
+            </time>
           </a>
-          {% endif %}
         </div>
-        <div class="col-md-6 text-md-end">
-          {% if next_series %}
-          <a class="post-nav-card post-nav-next" href="{{ next_series.url | relative_url }}"
-            aria-label="Próximo artigo da série: {{ next_series.title }}">
-            <span class="post-nav-direction">
-              Próximo na série
-              <i class="material-icons" aria-hidden="true">east</i>
-            </span>
-            <span class="post-nav-title">{{ next_series.title }}</span>
-          </a>
-          {% endif %}
-        </div>
+        {% endfor %}
       </div>
-    </nav>
+    </section>
     {% endif %}
     {% endif %}
-
-    <nav aria-label="Navegação entre posts" class="post-nav">
-      <div class="row g-3">
-        <div class="col-md-6">
-          {% if page.previous %}
-          <a class="post-nav-card" href="{{ page.previous.url | relative_url }}"
-            aria-label="Post anterior: {{ page.previous.title }}">
-            <span class="post-nav-direction">
-              <i class="material-icons" aria-hidden="true">west</i>
-              Post anterior
-            </span>
-            <span class="post-nav-title">{{ page.previous.title }}</span>
-          </a>
-          {% endif %}
-        </div>
-        <div class="col-md-6 text-md-end">
-          {% if page.next %}
-          <a class="post-nav-card post-nav-next" href="{{ page.next.url | relative_url }}"
-            aria-label="Próximo post: {{ page.next.title }}">
-            <span class="post-nav-direction">
-              Próximo post
-              <i class="material-icons" aria-hidden="true">east</i>
-            </span>
-            <span class="post-nav-title">{{ page.next.title }}</span>
-          </a>
-          {% endif %}
-        </div>
-      </div>
-    </nav>
 
     <div class="post-back">
       <a href="{{ '/artigos' | relative_url }}" class="post-back-btn">
