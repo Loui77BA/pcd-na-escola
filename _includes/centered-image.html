@@ -1,0 +1,6 @@
+<div class="post-centered-image">
+  <img src="{{ include.src }}"
+       alt="{{ include.alt | default: '' }}"
+       {% if include.class %}class="{{ include.class }}"{% endif %}
+       loading="lazy" />
+</div>

@@ -1,0 +1,18 @@
+{% assign icon_map = "dica::lightbulb,aviso::warning,importante::error" | split: "," %}
+{% assign callout_type = include.type | default: "dica" %}
+{% assign callout_icon = "lightbulb" %}
+{% for entry in icon_map %}
+  {% assign parts = entry | split: "::" %}
+  {% if parts[0] == callout_type %}
+    {% assign callout_icon = parts[1] %}
+  {% endif %}
+{% endfor %}
+<div class="post-callout post-callout-{{ callout_type }}" role="note">
+  <div class="post-callout-header">
+    <i class="material-icons" aria-hidden="true">{{ callout_icon }}</i>
+    <strong>{{ callout_type | capitalize }}</strong>
+  </div>
+  <div class="post-callout-body">
+    {{ include.content }}
+  </div>
+</div>
