@@ -11,7 +11,10 @@ lang: pt-BR
 series: "introducao-a-programacao"
 ---
 <div class="text-center">
-    <img src="https://ruby-doc.org/docs/ruby-doc-bundle/Tutorial/part_01/first_steps/03.gif" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://ruby-doc.org/docs/ruby-doc-bundle/Tutorial/part_01/first_steps/03.gif"
+        decorative=true
+    %}
 </div>
 
 ## Apresentação {#apresentacao}

@@ -11,7 +11,10 @@ lang: pt-BR
 series: "introducao-a-programacao"
 ---
 <div class="text-center">
-    <img src="https://ourcodeworld.com/public-media/articles/whats-an-ide-60621caac020e.jpeg" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://ourcodeworld.com/public-media/articles/whats-an-ide-60621caac020e.jpeg"
+        decorative=true
+    %}
 </div>
 
 ## Apresentação {#apresentacao}
@@ -46,37 +49,55 @@ Esses programas têm ferramentas úteis, como colorir partes do código, sugerir
 - **Visual Studio Code (VS Code):** Feito pela Microsoft, é grátis e muito famoso. Você pode usar para escrever códigos em quase todas as linguagens, porque tem muitas extensões. É fácil de usar.
 
 <div class="text-center">
-    <img src="https://www.canalti.com.br/wp-content/uploads/2024/11/tema_dracula-1024x614.png" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://www.canalti.com.br/wp-content/uploads/2024/11/tema_dracula-1024x614.png"
+        decorative=true
+    %}
 </div>
 
 - **Sublime Text:** É bem rápido e leve, com visual simples. Ideal para computadores que não são muito potentes.
 
 <div class="text-center">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/50/A_Hello_World_Program_in_PHP_on_Sublime_Text_3.png/1024px-A_Hello_World_Program_in_PHP_on_Sublime_Text_3.png" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/5/50/A_Hello_World_Program_in_PHP_on_Sublime_Text_3.png/1024px-A_Hello_World_Program_in_PHP_on_Sublime_Text_3.png"
+        decorative=true
+    %}
 </div>
 
 - **Notepad++:** Só funciona no Windows. É leve, rápido e grátis, ótimo para fazer edições rápidas em arquivos.
 
 <div class="text-center">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Notepad%2B%2B_v7_on_Windows_10%2C_with_MediaWiki_1.27.1_source_code%2C_with_split_window_view_and_autocompletion.png/1280px-Notepad%2B%2B_v7_on_Windows_10%2C_with_MediaWiki_1.27.1_source_code%2C_with_split_window_view_and_autocompletion.png" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Notepad%2B%2B_v7_on_Windows_10%2C_with_MediaWiki_1.27.1_source_code%2C_with_split_window_view_and_autocompletion.png/1280px-Notepad%2B%2B_v7_on_Windows_10%2C_with_MediaWiki_1.27.1_source_code%2C_with_split_window_view_and_autocompletion.png"
+        decorative=true
+    %}
 </div>
 
 - **Vim:** Editor que funciona direto no terminal, é muito poderoso e eficiente, mas exige tempo para aprender a mexer. É bastante usado por quem já tem experiência e está disponível em quase todos os sistemas Unix/Linux. 
 
 <div class="text-center">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Vim-%28logiciel%29-console.png/1024px-Vim-%28logiciel%29-console.png" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Vim-%28logiciel%29-console.png/1024px-Vim-%28logiciel%29-console.png"
+        decorative=true
+    %}
 </div>
 
 - **Neovim:** Uma versão mais moderna do Vim, com melhorias e novas funcionalidades, mantendo a eficiência e a leveza do original.
 
 <div class="text-center">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Neovim_being_used_to_edit_its_own_configuration_file.png/1280px-Neovim_being_used_to_edit_its_own_configuration_file.png" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Neovim_being_used_to_edit_its_own_configuration_file.png/1280px-Neovim_being_used_to_edit_its_own_configuration_file.png"
+        decorative=true
+    %}
 </div>
 
 - **LunarVim:** Uma configuração do Neovim que já vem com várias funcionalidades prontas, facilitando o uso para quem não quer configurar tudo do zero.
 
 <div class="text-center">
-    <img src="https://i.ytimg.com/vi/mrk3sPB4u0g/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDvTACi3TAqUUf0jy-u8RSMBrjGfw" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://i.ytimg.com/vi/mrk3sPB4u0g/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDvTACi3TAqUUf0jy-u8RSMBrjGfw"
+        decorative=true
+    %}
 </div>
 
 ## O que são IDEs (Ambientes Integrados de Desenvolvimento) {#o-que-sao-ides}
@@ -105,45 +126,63 @@ As IDEs são muito úteis quando você está trabalhando em projetos grandes ou 
 - **IntelliJ IDEA:** Muito usada para programar em Java, mas também suporta outras linguagens. Tem muitas ferramentas para ajudar a escrever e organizar o código.
 
 <div class="text-center">
-    <img src="https://support.hyperskill.org/hc/article_attachments/13212376449428" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://support.hyperskill.org/hc/article_attachments/13212376449428"
+        decorative=true
+    %}
 </div>
 
 - **Eclipse:** Outra IDE popular para Java, mas também funciona com outras linguagens. É grátis e tem muitos plugins para adicionar funcionalidades.
 
 <div class="text-center">
-    <img src="https://www.eclipse.org/community/eclipse_newsletter/2016/august/images/cheworkspace.png" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://www.eclipse.org/community/eclipse_newsletter/2016/august/images/cheworkspace.png"
+        decorative=true
+    %}
 </div>
 
 - **PyCharm:** Feita especialmente para Python, com ferramentas que ajudam a escrever, testar e organizar o código.
 
 <div class="text-center">
-    <img src="https://www.edureka.co/blog/wp-content/uploads/2019/01/11-14.jpg" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://www.edureka.co/blog/wp-content/uploads/2019/01/11-14.jpg"
+        decorative=true
+    %}
 </div>
 
 - Android Studio: IDE oficial para criar aplicativos Android, baseada no IntelliJ IDEA. Tem tudo que você precisa para desenvolver apps para Android.
 
 <div class="text-center">
-    <img src="https://www.hwlibre.com/wp-content/uploads/2024/09/android-studio-1-1.jpg" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://www.hwlibre.com/wp-content/uploads/2024/09/android-studio-1-1.jpg"
+        decorative=true
+    %}
 </div>
 
 - **Xcode:** IDE oficial da Apple para desenvolver aplicativos para iOS, macOS,
 
 <div class="text-center">
-    <img src="https://preview.redd.it/xcode-is-actually-a-great-ide-v0-w1iwlcwq2nfd1.jpeg?auto=webp&s=16072ec37454c89c911ddee9cd707c45e3e89692" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://preview.redd.it/xcode-is-actually-a-great-ide-v0-w1iwlcwq2nfd1.jpeg?auto=webp&s=16072ec37454c89c911ddee9cd707c45e3e89692"
+        decorative=true
+    %}
 </div>
 
 - RubyMine: IDE feita para Ruby e Ruby on Rails, com ferramentas que ajudam a escrever e organizar o código.
 
 <div class="text-center">
-    <img src="https://www.jetbrains.com/ruby/img/screenshots/ai_assistant.png" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://www.jetbrains.com/ruby/img/screenshots/ai_assistant.png"
+        decorative=true
+    %}
 </div>
 
 ## Diferenças entre editores e IDEs {#diferencas-entre-editores-e-ides}
 ---
 
+<p class="small text-light mb-2" id="tabela-1-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-    <table class="table table-bordered table-striped table-hover table-dark">
-        <caption class="visually-hidden">
+    <table class="table table-bordered table-striped table-hover table-dark" aria-describedby="tabela-1-ajuda">        <caption class="visually-hidden">
             Comparação entre Editores de Código e IDEs (Ambientes Integrados de Desenvolvimento)
         </caption>
         <thead class="table-dark">

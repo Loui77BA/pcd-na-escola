@@ -121,8 +121,9 @@ series: "computacao-para-iniciantes"
 
 <p>Para entender melhor, vamos comparar os dois sistemas:</p>
 
+<p class="small text-light mb-2" id="tabela-decimal-binario-ajuda">Observação: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-    <table class="table table-bordered table-dark" role="table" aria-label="Tabela comparativa entre os sistemas decimal e binário">
+    <table class="table table-bordered table-dark" aria-describedby="tabela-decimal-binario-ajuda">
         <caption class="text-white">Tabela comparativa entre os sistemas decimal e binário</caption>
         <thead>
             <tr>
@@ -499,8 +500,9 @@ series: "computacao-para-iniciantes"
 
 <p>Para entender melhor como os bits e bytes são usados, aqui está uma tabela com os tamanhos mais comuns de arquivos em bytes:</p>
 
+<p class="small text-light mb-2" id="tabela-bytes-ajuda">Observação: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-    <table class="table table-bordered table-dark" role="table" aria-label="Tabela de tamanhos de arquivos em bytes">
+    <table class="table table-bordered table-dark" aria-describedby="tabela-bytes-ajuda">
         <caption class="text-white">Tabela de tamanhos de arquivos em bytes</caption>
         <thead>
             <tr>

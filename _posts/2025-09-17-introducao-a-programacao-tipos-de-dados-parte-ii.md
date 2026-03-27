@@ -11,7 +11,10 @@ lang: pt-BR
 series: "introducao-a-programacao"
 ---
 <div class="text-center">
-    <img src="https://ifrnead.github.io/rubynapratica/assets/images/tipos-dados.png" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://ifrnead.github.io/rubynapratica/assets/images/tipos-dados.png"
+        decorative=true
+    %}
 </div>
 
 ## Apresentação {#apresentacao}
@@ -254,9 +257,9 @@ Então nesse caso, os números inteiros (objetos da classe Integer) têm método
 
 Os símbolos usados para essas operações são:
 
+<p class="small text-light mb-2" id="tabela-1-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-<table class="table table-bordered table-striped table-hover table-dark text-white border-secondary" role="table" aria-label="Comparação entre símbolos matemáticos e símbolos em Ruby para operações matemáticas">
-  <caption class="visually-hidden">Tabela comparativa de símbolos matemáticos e seus equivalentes em Ruby</caption>
+<table class="table table-bordered table-striped table-hover table-dark text-white border-secondary" aria-describedby="tabela-1-ajuda">  <caption class="visually-hidden">Tabela comparativa de símbolos matemáticos e seus equivalentes em Ruby</caption>
   <thead class="table-dark">
     <tr>
       <th scope="col" class="border-white">Operação matemática</th>

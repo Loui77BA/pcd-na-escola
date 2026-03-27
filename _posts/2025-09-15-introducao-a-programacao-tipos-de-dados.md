@@ -11,7 +11,10 @@ lang: pt-BR
 series: "introducao-a-programacao"
 ---
 <div class="text-center">
-    <img src="https://ifrnead.github.io/rubynapratica/assets/images/tipos-dados.png" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://ifrnead.github.io/rubynapratica/assets/images/tipos-dados.png"
+        decorative=true
+    %}
 </div>
 
 ## Apresentação {#apresentacao}

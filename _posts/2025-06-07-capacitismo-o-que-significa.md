@@ -73,32 +73,32 @@ series: "o-que-significa"
     Não é possível abordar o capacitismo, uma forma de discriminação contra pessoas com deficiência, sem compreender antes o que são preconceito, discriminação e estereótipo. Esses conceitos formam a base para a criação dos termos específicos de cada tipo de discriminação, como demonstra Joaquim (2006) em seu estudo sobre a relação entre igualdade e discriminação.
 </p>
 
-<table class="table table-bordered text-white">
-    <thead>
-        <tr>
-            <th>Palavra</th>
-            <th>Definição</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Preconceito</td>
-            <td>Preconceito é uma ideia ou crença formada antes de conhecer algo ou alguém de verdade. Essas ideias se baseiam em generalizações, não em fatos, e costumam ser originadas por estereótipos. O preconceito distorce a visão de mundo, levando as pessoas a agirem sem questionar essas crenças.</td>
-        </tr>
-        <tr>
-            <td>Estereótipo</td>
-            <td>Os estereótipos são ideias simplificadas e generalizadas sobre um grupo de pessoas. Eles reforçam o preconceito ao transformar uma característica específica em uma "verdade" absoluta para todas as pessoas daquele grupo, perpetuando visões distorcidas.</td>
-        </tr>
-        <tr>
-            <td>Discriminação</td>
-            <td>A discriminação é a prática do preconceito e dos estereótipos. Ela se manifesta por meio de ações ou omissões que prejudicam pessoas e violam seus direitos, como quando alguém é impedido de conseguir um emprego por causa de sua cor ou gênero, ou quando espaços não são adaptados para pessoas com deficiência. Esses atos discriminatórios ampliam as desigualdades sociais.</td>
-        </tr>
-    </tbody>
-</table>
-
-<caption>
-    Fonte: Elaborado pela autora com base em Joaquim (2006, p. 1).
-</caption>
+<p class="small text-light mb-2" id="tabela-conceitos-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
+<div class="table-responsive">
+    <table class="table table-bordered text-white" aria-describedby="tabela-conceitos-ajuda">
+        <caption>Fonte: Elaborado pela autora com base em Joaquim (2006, p. 1).</caption>
+        <thead>
+            <tr>
+                <th scope="col">Palavra</th>
+                <th scope="col">Definição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Preconceito</th>
+                <td>Preconceito é uma ideia ou crença formada antes de conhecer algo ou alguém de verdade. Essas ideias se baseiam em generalizações, não em fatos, e costumam ser originadas por estereótipos. O preconceito distorce a visão de mundo, levando as pessoas a agirem sem questionar essas crenças.</td>
+            </tr>
+            <tr>
+                <th scope="row">Estereótipo</th>
+                <td>Os estereótipos são ideias simplificadas e generalizadas sobre um grupo de pessoas. Eles reforçam o preconceito ao transformar uma característica específica em uma "verdade" absoluta para todas as pessoas daquele grupo, perpetuando visões distorcidas.</td>
+            </tr>
+            <tr>
+                <th scope="row">Discriminação</th>
+                <td>A discriminação é a prática do preconceito e dos estereótipos. Ela se manifesta por meio de ações ou omissões que prejudicam pessoas e violam seus direitos, como quando alguém é impedido de conseguir um emprego por causa de sua cor ou gênero, ou quando espaços não são adaptados para pessoas com deficiência. Esses atos discriminatórios ampliam as desigualdades sociais.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 <p>
      Preconceito, estereótipos e discriminação formam um ciclo que se retroalimenta, para quebrar esse ciclo, é necessário enfrentar tanto as ações visíveis quanto as ideias e crenças que o sustentam. 

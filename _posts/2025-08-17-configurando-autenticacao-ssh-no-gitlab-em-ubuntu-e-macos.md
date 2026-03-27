@@ -10,7 +10,10 @@ permalink: /configurando-autenticacao-ssh-no-gitlab-em-ubuntu-e-macos/
 lang: pt-BR
 ---
 <div class="text-center">
-<img src="https://www.edivaldobrito.com.br/wp-content/uploads/2021/07/como-gerar-um-par-de-chaves-ssh-para-poder-autenticar-remotamente.jpg" aria-hidden="true" />
+{% include figure.html
+    src="https://www.edivaldobrito.com.br/wp-content/uploads/2021/07/como-gerar-um-par-de-chaves-ssh-para-poder-autenticar-remotamente.jpg"
+    decorative=true
+%}
 </div>
 
 ## <a id="apresentacao"></a> Apresentação

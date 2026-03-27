@@ -11,7 +11,10 @@ lang: pt-BR
 series: "introducao-a-programacao"
 ---
 <div class="text-center">
-<img src="https://media.licdn.com/dms/image/v2/C5612AQGZPEZtPRFSjA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1638836845913?e=2147483647&v=beta&t=Oamy5cy8cq-wiFoKloKgBrfAGs_HOFr1gbBhIQ8m4Cs" aria-hidden="true" />
+{% include figure.html
+    src="https://media.licdn.com/dms/image/v2/C5612AQGZPEZtPRFSjA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1638836845913?e=2147483647&v=beta&t=Oamy5cy8cq-wiFoKloKgBrfAGs_HOFr1gbBhIQ8m4Cs"
+    decorative=true
+%}
 </div>
 
 ## Apresentação {#apresentacao}
@@ -190,7 +193,10 @@ Esses exemplos servem para mostrar como um algoritmo pode ajudar a organizar o p
 Não é bom tentar resolver um problema muito complexo de uma vez só, é melhor dividir em partes menores e ir resolvendo uma de cada vez. Ou seja, **dividir para conquistar**, "quebrar" (cortar) o problema em pedaços menores e mais fáceis de trabalhar até que, no final, o problema todo esteja solucionado.
 
 <div class="text-center">
-<img src="https://universidadedatecnologia.com.br/wp-content/uploads/2017/12/o-que-%C3%A9-ling-prog.jpg" aria-hidden="true" />
+{% include figure.html
+    src="https://universidadedatecnologia.com.br/wp-content/uploads/2017/12/o-que-%C3%A9-ling-prog.jpg"
+    decorative=true
+%}
 </div>
 
 ## Linguagens de Programação {#linguagens-de-programacao}

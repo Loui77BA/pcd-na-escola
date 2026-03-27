@@ -11,7 +11,10 @@ lang: pt-BR
 series: "introducao-a-programacao"
 ---
 <div class="text-center">
-    <img src="https://augustopontin.com.br/wp-content/uploads/2020/02/hello_world.gif" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://augustopontin.com.br/wp-content/uploads/2020/02/hello_world.gif"
+        decorative=true
+    %}
 </div>
 
 ## Apresentação {#apresentacao}

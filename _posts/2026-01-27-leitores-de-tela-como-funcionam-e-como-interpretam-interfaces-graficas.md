@@ -12,7 +12,10 @@ lang: pt-BR
 Este artigo explica o leitor de telas, tecnologia que possibilita o acesso digital para pessoas com deficiência visual. Apresenta seu histórico, funções e reforça a importância da inclusão.
 
 <div class="text-center">
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/8683514b-4aaa-4f9d-ea6f-81a32c2d7100/public" aria-hidden="true" class="img-fluid" />
+    {% include figure.html
+        src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/8683514b-4aaa-4f9d-ea6f-81a32c2d7100/public"
+        decorative=true
+    %}
 </div>
 
 ## Apresentação {#apresentacao}
@@ -57,9 +60,9 @@ Já nos anos 2000, leitores de tela de código aberto começaram a ganhar mais e
 
 A seguir, serão apresentados eventos e marcos que influenciaram essa trajetória, mostrando como a acessibilidade para pessoas com deficiência visual evoluiu junto com as mudanças tecnológicas e com a forma como a sociedade passou a usar computadores e internet.
 
+<p class="small text-light mb-2" id="tabela-1-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-<table class="table table-bordered table-striped table-hover table-dark text-white border-secondary" role="table" aria-label="Linha do tempo dos leitores de tela">
-<thead>
+<table class="table table-bordered table-striped table-hover table-dark text-white border-secondary" aria-describedby="tabela-1-ajuda"><thead>
     <tr>
         <th scope="col">Período ou Ano</th>
         <th scope="col">Marco Histórico</th>
@@ -123,7 +126,10 @@ Um leitor de telas moderno faz muito mais do que “ler o que está escrito”. 
 Quando uma pessoa abre um site ou um aplicativo, o navegador ou o programa organiza o conteúdo internamente. No caso da web, o <abbr title="HyperText Markup Language em português: Linguagem de Marcação de Hipertexto">HTML</abbr> é transformado em uma estrutura chamada <abbr title="Document Object Model em português: Modelo de Objeto de Documento">DOM</abbr>, que é como um “mapa” do que existe na página.
 
 <div class="text-center">
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fe5baa0a-17fc-48cc-4772-dd3f5a111d00/public" class="img-fluid" alt="Diagrama mostrando a transformação do HTML em DOM" />
+    {% include figure.html
+        src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fe5baa0a-17fc-48cc-4772-dd3f5a111d00/public"
+        alt="Diagrama mostrando a transformação do HTML em DOM"
+    %}
     <figcaption class="visually-hidden">
         A imagem é um infográfico em estilo de ilustração simples, com fundo bege claro e contornos em azul-escuro, organizado em três quadros numerados que explicam, passo a passo, o que acontece quando uma página web é aberta e como o HTML vira uma estrutura em forma de árvore.
         No primeiro quadro, no canto superior esquerdo, aparece o texto “1. A pessoa abre um site”. Abaixo, há o desenho de uma pessoa sentada de perfil diante de um notebook aberto, com as mãos próximas ao teclado. A tela do notebook mostra retângulos e linhas claras, sugerindo uma página carregada. A pessoa usa uma blusa amarela e está sentada em uma cadeira azul.
@@ -136,7 +142,10 @@ Quando uma pessoa abre um site ou um aplicativo, o navegador ou o programa organ
 O DOM, porém, não é o melhor formato para tecnologias assistivas, porque ele pode ter muita informação visual e detalhes de formatação que não ajudam na navegação com leitor de telas. Por isso, o navegador costuma criar uma estrutura paralela chamada árvore de acessibilidade. Essa árvore é uma versão mais “limpa” do conteúdo, que tenta manter o que realmente importa para a compreensão e a navegação.
 
 <div class="text-center">
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/95c4dbca-018d-463e-a380-589e724c0100/public" class="img-fluid" alt="Diagrama mostrando que a DOM não é o melhor formato para tecnologias assistivas" />
+    {% include figure.html
+        src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/95c4dbca-018d-463e-a380-589e724c0100/public"
+        alt="Diagrama mostrando que a DOM não é o melhor formato para tecnologias assistivas"
+    %}
     <figcaption class="visually-hidden">
     A imagem é um infográfico em estilo de ilustração simples, com fundo bege claro, traços em azul-escuro e elementos em tons de azul e amarelo. Ela está organizada em três quadros, explicando por que o DOM “puro” não é a melhor estrutura para navegação com leitor de telas e como o navegador cria uma árvore de acessibilidade para tornar essa navegação mais eficiente.
     No quadro superior, que ocupa toda a largura, aparece o texto “O DOM não é ideal para navegação com leitor de”. À esquerda desse quadro há um pequeno diagrama em forma de árvore com o nó “DOM” no topo, ramificando para “head” e “body”. Abaixo de “body” surgem dois nós representando o conteúdo: “Título” e “Parágrafo”, em caixas arredondadas. À direita, há o desenho de uma janela de navegador com uma área mostrando código HTML simplificado (com linhas como &lt;html&gt;, &lt;h1&gt;Título&lt;/h1&gt;, &lt;p&gt;Parágrafo&lt;/p&gt; e &lt;/html&gt;). Sobreposta à janela, existe uma representação de um bloco visual de página, com retângulos azuis sugerindo áreas de conteúdo. Entre o diagrama do DOM e a janela do navegador, há um balão com um ícone de alto-falante, indicando a saída de áudio típica de um leitor de telas ou de uma tecnologia assistiva.
@@ -146,7 +155,10 @@ O DOM, porém, não é o melhor formato para tecnologias assistivas, porque ele 
 </div>
 
 <div class="text-center">
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b3027c85-4324-4b17-986f-d21bb27c4c00/public" class="img-fluid" alt="DOM versus árvore de acessibilidade: diferenças entre as estruturas" />
+    {% include figure.html
+        src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b3027c85-4324-4b17-986f-d21bb27c4c00/public"
+        alt="DOM versus árvore de acessibilidade: diferenças entre as estruturas"
+    %}
     <figcaption class="visually-hidden">
         A imagem é um infográfico em fundo escuro, com texto em tons claros (branco e azul) e um layout dividido verticalmente em duas colunas, comparando “DOM” com “Árvore de Acessibilidade”. No topo, em letras grandes, está o título “DOM vs Árvore de Acessibilidade”. Uma linha vertical fina separa as duas áreas, deixando claro que é uma comparação lado a lado.
         Na coluna da esquerda, aparece o cabeçalho “DOM” e, logo abaixo, a frase “Uma estrutura completa com formatação”. Abaixo do texto, há um diagrama em forma de árvore com vários nós arredondados conectados por linhas, representando a complexidade do DOM. No topo dessa árvore está “html”, que se ramifica em “head” e “body”. A partir de “body”, surgem vários elementos e ramos, incluindo nós como “Título”, “descrição”, “p”, “div”, “ul”, “bt”, “OK”, “button” e “UI”, como se fossem tags e componentes misturados. Ao lado de uma parte do diagrama há um pequeno ícone azul, sugerindo que ali existe um detalhe extra ou um ponto de atenção, reforçando visualmente a ideia de “muita coisa” para navegar.
@@ -206,7 +218,7 @@ Existem vários leitores de tela para diferentes sistemas operacionais, cada um 
 Abaixo está uma tabela com os principais leitores de tela por sistema:
 
 <div class="table-responsive mb-4">
-    <table class="table table-bordered table-dark" role="table" aria-labelledby="leitores-de-tela-por-sistema-operacional" aria-describedby="leitores-de-tela-por-sistema-operacional-desc">
+    <table class="table table-bordered table-dark" aria-labelledby="leitores-de-tela-por-sistema-operacional" aria-describedby="leitores-de-tela-por-sistema-operacional-desc">
         <caption id="leitores-de-tela-por-sistema-operacional" class="fw-bold text-white mb-2">Leitores de tela por sistema operacional</caption>
         <thead>
             <tr>
@@ -277,7 +289,7 @@ Isso orienta a navegação e dá segurança. Quando a estrutura é ruim, a exper
 A seguir está uma tabela com algumas das principais diferenças entre a experiência de navegação visual e a navegação com leitor de telas:
 
 <div class="table-responsive mb-4">
-    <table class="table table-bordered table-dark" role="table" aria-labelledby="comparativo-experiencias-uso" aria-describedby="comparativo-experiencias-uso-desc">
+    <table class="table table-bordered table-dark" aria-labelledby="comparativo-experiencias-uso" aria-describedby="comparativo-experiencias-uso-desc">
         <caption id="comparativo-experiencias-uso" class="fw-bold text-white mb-2">Comparativo entre as experiências de uso</caption>
         <thead>
             <tr>
@@ -419,7 +431,10 @@ De acordo com as diretrizes de acessibilidade do <abbr title="World Wide Web Con
 A seguir está uma imagem de exemplo, para a qual serão mostradas duas formas de descrição alternativa: uma correta e outra incorreta.
 
 <div class="text-center">
-    <img src="https://media.istockphoto.com/id/1323184150/photo/her-disability-doesnt-stop-her-from-being-a-successful-businesswoman.jpg?s=612x612&w=0&k=20&c=qnr9GU2wt_XrikxPbYin89x6tAzSpcgfhUBXOTG4_FQ=" class="img-fluid" alt="Mulher de pele preta, cabelos curtos e cacheados, sorrindo, de óculos escuros e blazer rosa, segurando uma bengala branca em uma área externa com prédios ao fundo." />
+    {% include figure.html
+        src="https://media.istockphoto.com/id/1323184150/photo/her-disability-doesnt-stop-her-from-being-a-successful-businesswoman.jpg?s=612x612&w=0&k=20&c=qnr9GU2wt_XrikxPbYin89x6tAzSpcgfhUBXOTG4_FQ="
+        alt="Mulher de pele preta, cabelos curtos e cacheados, sorrindo, de óculos escuros e blazer rosa, segurando uma bengala branca em uma área externa com prédios ao fundo."
+    %}
 </div>
 
 **Descrição alternativa incorreta:** “foto123.png”, “imagem.png", "ilustracao-xgpowyqtpom976544.png" e variações do tipo “foto de mulher” ou “mulher com bengala”.

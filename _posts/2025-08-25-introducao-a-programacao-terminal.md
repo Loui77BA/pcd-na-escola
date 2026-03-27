@@ -11,7 +11,10 @@ lang: pt-BR
 series: "introducao-a-programacao"
 ---
 <div class="text-center">
-    <img src="https://blog.formacao.dev/content/images/2023/11/7.jpg" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://blog.formacao.dev/content/images/2023/11/7.jpg"
+        decorative=true
+    %}
 </div>
 
 ## Apresentação {#apresentacao}
@@ -145,7 +148,10 @@ A lista a seguir mostra quais gerenciadores de pacotes são os mais usados em ca
 **apt (usado no Debian, Ubuntu e Linux Mint)**
 
 <div class="text-center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Apt-get_install_mediawiki.png" aria-hidden="true" />
+{% include figure.html
+    src="https://upload.wikimedia.org/wikipedia/commons/1/19/Apt-get_install_mediawiki.png"
+    decorative=true
+%}
 </div>
 
 Instalação (instalação de pacotes que são os programas)
@@ -179,7 +185,10 @@ Onde:
 **DNF (usado no Fedora)**
 
 <div class="text-center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Dnf_updates_fedora22.png" aria-hidden="true" />
+{% include figure.html
+    src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Dnf_updates_fedora22.png"
+    decorative=true
+%}
 </div>
 
 Instalação
@@ -199,7 +208,10 @@ sudo dnf upgrade --refresh     # atualiza todos os pacotes instalados
 **Pacman (usado no Arch Linux e Manjaro)**
 
 <div class="text-center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Pacman-4.1.0rc1-39-gf89f4.png" aria-hidden="true" />
+{% include figure.html
+    src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Pacman-4.1.0rc1-39-gf89f4.png"
+    decorative=true
+%}
 </div>
 
 ```bash
@@ -225,7 +237,10 @@ sudo pacman -Syu       # atualiza todos os pacotes instalados
 O gerenciador de pacotes mais comum no macOS é o **Homebrew**. 
 
 <div class="text-center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Screenshot_of_Homebrew_Man_Page_on_MacOS_Sonoma.png/1049px-Screenshot_of_Homebrew_Man_Page_on_MacOS_Sonoma.png" aria-hidden="true" />
+{% include figure.html
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Screenshot_of_Homebrew_Man_Page_on_MacOS_Sonoma.png/1049px-Screenshot_of_Homebrew_Man_Page_on_MacOS_Sonoma.png"
+    decorative=true
+%}
 </div>
 
 Para fazer a instalação de pacotes, você pode usar o seguinte comando no terminal:
@@ -258,7 +273,10 @@ Mais recentemente, a Microsoft está tentando tornar o Windows mais amigável pa
 **winget (oficial da Microsoft)**
 
 <div class="text-center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Windows_Package_Manager_v0.1.41331_Preview_1115x624.png" aria-hidden="true" />
+{% include figure.html
+    src="https://upload.wikimedia.org/wikipedia/commons/a/af/Windows_Package_Manager_v0.1.41331_Preview_1115x624.png"
+    decorative=true
+%}
 </div>
 
 O winget é o gerenciador de pacotes oficial da Microsoft que já vem instalado nas versões mais recentes do Windows.
@@ -298,7 +316,10 @@ Alguns exemplos são:
 **Python**
 
 <div class="text-center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Pip_help.png" aria-hidden="true" />
+{% include figure.html
+    src="https://upload.wikimedia.org/wikipedia/commons/0/02/Pip_help.png"
+    decorative=true
+%}
 </div>
 
 ```bash
@@ -316,7 +337,10 @@ pip install --upgrade nome-do-pacote     # atualiza um pacote
 **npm (JavaScript)**
 
 <div class="text-center">
-<img src="https://cs1.htmlacademy.ru/blog/js/useful-commands-for-working-with-nodejs/bca980d71baddc537b7e1da300c0e975.png" aria-hidden="true" />
+{% include figure.html
+    src="https://cs1.htmlacademy.ru/blog/js/useful-commands-for-working-with-nodejs/bca980d71baddc537b7e1da300c0e975.png"
+    decorative=true
+%}
 </div>
 
 ```bash
@@ -334,7 +358,10 @@ npm install --upgrade nome-do-pacote     # atualiza um pacote
 **Ruby**
 
 <div class="text-center">
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20211211004417/ruby4.png" aria-hidden="true" />
+{% include figure.html
+    src="https://media.geeksforgeeks.org/wp-content/uploads/20211211004417/ruby4.png"
+    decorative=true
+%}
 </div>
 
 ```bash
@@ -1253,9 +1280,9 @@ Pedro 22 São Paulo
 
 Assim:
 
+<p class="small text-light mb-2" id="tabela-1-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-  <table id="tabela-pessoas" class="table table-bordered table-dark" aria-label="Tabela com informações de pessoas">
-    <caption class="visually-hidden">Lista de pessoas com seus dados básicos</caption>
+  <table id="tabela-pessoas" class="table table-bordered table-dark" aria-describedby="tabela-1-ajuda">    <caption class="visually-hidden">Lista de pessoas com seus dados básicos</caption>
     <thead>
       <tr>
         <th scope="col">Nome</th>

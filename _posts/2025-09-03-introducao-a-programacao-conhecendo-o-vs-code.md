@@ -11,7 +11,10 @@ lang: pt-BR
 series: "introducao-a-programacao"
 ---
 <div class="text-center">
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/1d2728c4-57cd-41b1-b6d6-b235849cab00/public" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/1d2728c4-57cd-41b1-b6d6-b235849cab00/public"
+        decorative=true
+    %}
 </div>
 
 ## Apresentação {#apresentacao}
@@ -258,7 +261,10 @@ Dito isso, as opções do menu são:
 -  **Ajuda** submenu (<kbd>Alt</kbd> + <kbd>J</kbd>) 8 de 8
 
 <div class="text-center">
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d943e48c-cf94-4ce4-4d14-0953dc999d00/public" aria-hidden="true" class="img-fluid">
+    {% include figure.html
+        src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d943e48c-cf94-4ce4-4d14-0953dc999d00/public"
+        decorative=true
+    %}
 </div>
 
 A navegação entre opções pode ser feita pelas setas direcionais esquerda e direita, ou através das teclas de atalho, como <kbd>Alt</kbd> + <kbd>A</kbd> para o submenu Arquivo.
@@ -273,7 +279,10 @@ A navegação entre opções pode ser feita pelas setas direcionais esquerda e d
     <div id="flush-collapseArquivo" class="accordion-collapse collapse" aria-labelledby="flush-headingArquivo" data-bs-parent="#accordionMenuVSCode">
       <div class="accordion-body text-white">
         <div class="text-center">
-            <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c925aa94-b3fc-49f0-f3eb-ff76d8b13700/public" aria-hidden="true" class="img-fluid">
+            {% include figure.html
+                src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c925aa94-b3fc-49f0-f3eb-ff76d8b13700/public"
+                decorative=true
+            %}
         </div>
 
         <ol>
@@ -612,7 +621,10 @@ A navegação entre opções pode ser feita pelas setas direcionais esquerda e d
     <div id="flush-collapseEditar" class="accordion-collapse collapse" aria-labelledby="flush-headingEditar" data-bs-parent="#accordionMenuVSCode">
       <div class="accordion-body text-white">
         <div class="text-center">
-            <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/1b63192e-efa6-497c-02dc-bc9f18e58c00/public" aria-hidden="true" class="img-fluid">
+            {% include figure.html
+                src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/1b63192e-efa6-497c-02dc-bc9f18e58c00/public"
+                decorative=true
+            %}
         </div>
 
         <ol>
@@ -742,7 +754,10 @@ A navegação entre opções pode ser feita pelas setas direcionais esquerda e d
     <div id="flush-collapseSelecao" class="accordion-collapse collapse" aria-labelledby="flush-headingSelecao" data-bs-parent="#accordionMenuVSCode">
       <div class="accordion-body text-white">
         <div class="text-center">
-            <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/75dccc83-fe85-4e3a-9e52-e9e0586b8000/public" aria-hidden="true" class="img-fluid">
+            {% include figure.html
+                src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/75dccc83-fe85-4e3a-9e52-e9e0586b8000/public"
+                decorative=true
+            %}
         </div>
 
         <ol>
@@ -906,7 +921,10 @@ A navegação entre opções pode ser feita pelas setas direcionais esquerda e d
     <div id="flush-collapseVer" class="accordion-collapse collapse" aria-labelledby="flush-headingVer" data-bs-parent="#accordionMenuVSCode">
       <div class="accordion-body text-white">
         <div class="text-center">
-            <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/3ebba3e2-904c-4e48-f979-224893e42600/public" aria-hidden="true" class="img-fluid">
+            {% include figure.html
+                src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/3ebba3e2-904c-4e48-f979-224893e42600/public"
+                decorative=true
+            %}
         </div>
         <ol>
             <li class="mb-4">
@@ -1036,7 +1054,10 @@ A navegação entre opções pode ser feita pelas setas direcionais esquerda e d
     <div id="flush-collapseAcessar" class="accordion-collapse collapse" aria-labelledby="flush-headingAcessar" data-bs-parent="#accordionMenuVSCode">
       <div class="accordion-body text-white">
         <div class="text-center">
-            <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/2ee96c5b-dac8-45a3-b227-4c50eefe3800/public" aria-hidden="true" class="img-fluid">
+            {% include figure.html
+                src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/2ee96c5b-dac8-45a3-b227-4c50eefe3800/public"
+                decorative=true
+            %}
         </div>
 
         <ol>
@@ -1202,7 +1223,10 @@ A navegação entre opções pode ser feita pelas setas direcionais esquerda e d
     <div id="flush-collapseExecutar" class="accordion-collapse collapse" aria-labelledby="flush-headingExecutar" data-bs-parent="#accordionMenuVSCode">
       <div class="accordion-body text-white">
         <div class="text-center">
-            <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/f6e62807-338f-431f-8fd7-56f2499e1e00/public" aria-hidden="true" class="img-fluid">
+            {% include figure.html
+                src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/f6e62807-338f-431f-8fd7-56f2499e1e00/public"
+                decorative=true
+            %}
         </div>
 
         <ol>
@@ -1360,7 +1384,10 @@ A navegação entre opções pode ser feita pelas setas direcionais esquerda e d
     <div id="flush-collapseTerminal" class="accordion-collapse collapse" aria-labelledby="flush-headingTerminal" data-bs-parent="#accordionMenuVSCode">
       <div class="accordion-body text-white">
         <div class="text-center">
-            <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/58644fa9-0fb8-4976-4a8d-302f12fe0b00/public" aria-hidden="true" class="img-fluid">
+            {% include figure.html
+                src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/58644fa9-0fb8-4976-4a8d-302f12fe0b00/public"
+                decorative=true
+            %}
         </div>
 
         <ol>
@@ -1471,7 +1498,10 @@ A navegação entre opções pode ser feita pelas setas direcionais esquerda e d
     <div id="flush-collapseAjuda" class="accordion-collapse collapse" aria-labelledby="flush-headingAjuda" data-bs-parent="#accordionMenuVSCode">
       <div class="accordion-body text-white">
         <div class="text-center">
-            <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/367731bf-690e-4283-f8c7-72ed4f9ea600/public" aria-hidden="true" class="img-fluid">
+            {% include figure.html
+                src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/367731bf-690e-4283-f8c7-72ed4f9ea600/public"
+                decorative=true
+            %}
         </div>
 
         <ol>
@@ -1640,9 +1670,9 @@ Os componentes (partes) da barra de atividades do VS Code são:
 
 Exibe a estrutura de pastas e arquivos do projeto atual, permitindo que você navegue e gerencie os arquivos.
 
+<p class="small text-light mb-2" id="tabela-1-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-  <table class="table table-bordered table-striped table-hover table-dark">
-    <caption class="visually-hidden">
+  <table class="table table-bordered table-striped table-hover table-dark" aria-describedby="tabela-1-ajuda">    <caption class="visually-hidden">
       Guia de uso do Explorador de arquivos no Visual Studio Code com NVDA
     </caption>
     <thead class="table-dark">
@@ -1703,9 +1733,9 @@ Exibe a estrutura de pastas e arquivos do projeto atual, permitindo que você na
 
 Ferramenta para pesquisar texto em arquivos do projeto atual, permitindo a localização de palavras ou trechos específicos de código.
 
+<p class="small text-light mb-2" id="tabela-2-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-  <table class="table table-bordered table-striped table-hover table-dark">
-    <caption class="visually-hidden">
+  <table class="table table-bordered table-striped table-hover table-dark" aria-describedby="tabela-2-ajuda">    <caption class="visually-hidden">
       Guia de uso da ferramenta Buscar no Visual Studio Code com NVDA
     </caption>
     <thead class="table-dark">
@@ -1763,9 +1793,9 @@ Ferramenta para pesquisar texto em arquivos do projeto atual, permitindo a local
 
 Essa ferramenta permite que você gerencie o controle de versão do projeto com o Git diretamente do VS Code. Git é um sistema que ajuda desenvolvedores a rastrear e gerenciar as mudanças no código-fonte sem perder o histórico do que foi feito. É como ter um "diário" completo de todas as alterações no seu projeto.
 
+<p class="small text-light mb-2" id="tabela-3-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-  <table class="table table-bordered table-striped table-hover table-dark">
-    <caption class="visually-hidden">
+  <table class="table table-bordered table-striped table-hover table-dark" aria-describedby="tabela-3-ajuda">    <caption class="visually-hidden">
       Guia de uso do Controle de Versão (Git) no Visual Studio Code com NVDA
     </caption>
     <thead class="table-dark">
@@ -1836,9 +1866,9 @@ Essa ferramenta permite que você gerencie o controle de versão do projeto com 
 
 Essa ferramenta permite que você depure o código do projeto atual, inspecionando variáveis, acompanhando o fluxo de execução e encontrando erros. Depurar é o mesmo que "debugar" o código, ou seja, executar o programa de forma controlada para encontrar e corrigir problemas.
 
+<p class="small text-light mb-2" id="tabela-4-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-  <table class="table table-bordered table-striped table-hover table-dark">
-    <caption class="visually-hidden">
+  <table class="table table-bordered table-striped table-hover table-dark" aria-describedby="tabela-4-ajuda">    <caption class="visually-hidden">
       Guia de uso da ferramenta de Depuração no Visual Studio Code com NVDA
     </caption>
     <thead class="table-dark">
@@ -1923,9 +1953,9 @@ Essa ferramenta permite que você depure o código do projeto atual, inspecionan
 ### Extensões {#extensoes}
 ---
 
+<p class="small text-light mb-2" id="tabela-5-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-  <table class="table table-bordered table-hover table-dark text-white">
-    <thead class="thead-dark">
+  <table class="table table-bordered table-hover table-dark text-white" aria-describedby="tabela-5-ajuda">    <thead class="thead-dark">
       <tr>
         <th scope="col">Recurso</th>
         <th scope="col">Descrição</th>
@@ -1982,9 +2012,9 @@ Essa ferramenta permite que você depure o código do projeto atual, inspecionan
 ### GitHub Copilot (se disponível) {#github-copilot}
 ---
 
+<p class="small text-light mb-2" id="tabela-6-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-  <table class="table table-bordered table-hover table-dark text-white">
-    <thead class="thead-dark">
+  <table class="table table-bordered table-hover table-dark text-white" aria-describedby="tabela-6-ajuda">    <thead class="thead-dark">
       <tr>
         <th scope="col">Recurso</th>
         <th scope="col">Descrição</th>
@@ -2195,9 +2225,9 @@ No momento o importante é digitar o código no arquivo e salvar as alterações
 
 Agora que o código HTML está pronto, vamos aprender a navegar por ele utilizando o NVDA. Isso é importante para que você possa entender a estrutura do código e fazer edições quando necessário.
 
+<p class="small text-light mb-2" id="tabela-7-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-  <table class="table table-bordered table-striped table-hover table-dark text-white border-secondary">
-    <caption class="visually-hidden">
+  <table class="table table-bordered table-striped table-hover table-dark text-white border-secondary" aria-describedby="tabela-7-ajuda">    <caption class="visually-hidden">
       Guia de navegação pelo código-fonte usando NVDA
     </caption>
     <thead class="thead-dark">
@@ -2254,9 +2284,9 @@ O Visual Studio Code possui um terminal integrado que permite executar comandos 
 
 Isso é útil para realizar tarefas de desenvolvimento como compilar código, executar scripts, gerenciar repositórios Git, entre outras operações, sem precisar sair do ambiente de desenvolvimento.
 
+<p class="small text-light mb-2" id="tabela-8-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-  <table class="table table-bordered table-striped table-hover table-dark text-white border-secondary">
-    <caption class="visually-hidden">
+  <table class="table table-bordered table-striped table-hover table-dark text-white border-secondary" aria-describedby="tabela-8-ajuda">    <caption class="visually-hidden">
       Guia de utilização do terminal integrado do VS Code com NVDA
     </caption>
     <thead class="thead-dark">
@@ -2355,9 +2385,9 @@ Isso é útil para realizar tarefas de desenvolvimento como compilar código, ex
 
 O Visual Studio Code possui uma vasta biblioteca de extensões que podem ser instaladas para adicionar funcionalidades extras ao editor. Essas extensões podem ajudar a melhorar a produtividade, adicionar suporte a novas linguagens de programação, integrar ferramentas de desenvolvimento e muito mais.
 
+<p class="small text-light mb-2" id="tabela-9-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-  <table class="table table-bordered table-striped table-hover table-dark text-white border-secondary">
-    <caption class="visually-hidden">
+  <table class="table table-bordered table-striped table-hover table-dark text-white border-secondary" aria-describedby="tabela-9-ajuda">    <caption class="visually-hidden">
       Guia de gerenciamento de extensões no VS Code com NVDA
     </caption>
     <thead class="thead-dark">

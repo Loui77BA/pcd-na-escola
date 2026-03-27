@@ -11,7 +11,10 @@ lang: pt-BR
 series: "introducao-a-programacao"
 ---
 <div class="text-center">
-<img src="https://www.serasaexperian.com.br/content/dam/serasa-institucional/blog/assets/downloads/Profissao-Programador-1.jpg" aria-hidden="true" />
+{% include figure.html
+    src="https://www.serasaexperian.com.br/content/dam/serasa-institucional/blog/assets/downloads/Profissao-Programador-1.jpg"
+    decorative=true
+%}
 </div>
 
 ## <a id="apresentacao"></a> Apresentação

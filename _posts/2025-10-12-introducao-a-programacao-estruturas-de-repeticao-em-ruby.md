@@ -11,7 +11,10 @@ lang: pt-BR
 series: "introducao-a-programacao"
 ---
 <div class="text-center">
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/72672341-de1e-43f7-f4d9-f92e5f53c200/public" aria-hidden="true" class="img-fluid border" />
+    {% include figure.html
+        src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/72672341-de1e-43f7-f4d9-f92e5f53c200/public"
+        decorative=true
+    %}
 </div>
 
 ## Apresentação {#apresentacao}
@@ -52,7 +55,10 @@ No Ruby, existem dois tipos principais de laços:
 
 <figure class="text-center">
     <figcaption>Tipos de laços de repetição em Ruby</figcaption>
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d609c24d-19d0-4b93-c7bf-b5a5c8ac2e00/public" aria-hidden="true" class="img-fluid border" />
+    {% include figure.html
+        src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d609c24d-19d0-4b93-c7bf-b5a5c8ac2e00/public"
+        decorative=true
+    %}
     <figcaption class="visually-hidden">
     A imagem é uma ilustração em estilo de lousa, dividida em duas partes, que compara dois tipos de estruturas de repetição na programação. Na parte esquerda, com o título "REPETE ENQUANTO CONDIÇÃO (VERDADEIRA/FALSA)", uma esteira rolante transporta caixas de papelão com a palavra "AÇÃO" escrita nelas. Ao lado da esteira, uma mão robótica mantém um interruptor na posição "ON", o que mantém uma lâmpada acesa. Isso ilustra um laço de repetição, que executa uma ação repetidamente enquanto uma condição é verdadeira.
     </figcaption>
@@ -335,9 +341,9 @@ Imagine esses dois arrays como duas listas paralelas, duas colunas em uma tabela
 
 As colunas estão alinhadas, ou seja, a informação que está na primeira posição de um array corresponde à informação que está na primeira posição do outro array. Como em uma tabela:
 
+<p class="small text-light mb-2" id="tabela-1-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-<table class="table table-bordered table-striped table-hover table-dark text-white border-secondary" role="table" aria-label="Tabela de nomes e idades">
-<caption class="visually-hidden">Tabela que associa os nomes às idades dos arrays.</caption>
+<table class="table table-bordered table-striped table-hover table-dark text-white border-secondary" aria-describedby="tabela-1-ajuda"><caption class="visually-hidden">Tabela que associa os nomes às idades dos arrays.</caption>
   <thead class="table-dark">
     <tr>
       <th scope="col">Nome</th>
@@ -403,9 +409,9 @@ Por exemplo, quando <code class="text-white-50 text-light">i</code> for 0, ele a
 
 A simulação completa desse laço <code class="text-white-50 text-light">for</code> resultará no seguinte:
 
+<p class="small text-light mb-2" id="tabela-2-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-<table class="table table-bordered table-striped table-hover table-dark text-white border-secondary" role="table" aria-label="Tabela de saídas do laço for">
-<caption class="visually-hidden">Tabela que mostra as saídas do laço for para cada valor de i.</caption>
+<table class="table table-bordered table-striped table-hover table-dark text-white border-secondary" aria-describedby="tabela-2-ajuda"><caption class="visually-hidden">Tabela que mostra as saídas do laço for para cada valor de i.</caption>
   <thead class="table-dark">
     <tr>
       <th scope="col">Número de execução do laço</th>
@@ -711,10 +717,10 @@ Use o <code class="text-white-50 text-light">times</code> quando você souber ex
 ## Laços de repetição em uma frase {#lacos-de-repeticao-em-uma-frase}
 ---
 
+<p class="small text-light mb-2" id="tabela-3-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
 
-<table class="table table-bordered table-striped table-hover table-dark text-white border-secondary" role="table" aria-label="Tabela resumo dos laços de repetição em Ruby">
-<caption class="visually-hidden">Tabela resumo dos laços de repetição em Ruby.</caption>
+<table class="table table-bordered table-striped table-hover table-dark text-white border-secondary" aria-describedby="tabela-3-ajuda"><caption class="visually-hidden">Tabela resumo dos laços de repetição em Ruby.</caption>
   <thead class="table-dark">
     <tr>
       <th scope="col">Laço</th>

@@ -958,9 +958,9 @@ series: "computacao-para-iniciantes"
     alt="HD e SSD lado a lado, os dois estão abertos, mostrando o disco rígido do HD e as células de memória do SSD. O HD é maior e mais pesado, enquanto o SSD é menor e mais compacto."
 %}
 
+<p class="small text-light mb-2" id="tabela-1-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-    <table class="table table-bordered table-striped table-hover text-white table-dark">
-        <caption class="text-white">Comparação entre HD (Disco Rígido) e SSD (Unidade de Estado Sólido) em termos de velocidade, durabilidade, custo por GB, consumo de energia e nível de ruído.</caption>
+    <table class="table table-bordered table-striped table-hover text-white table-dark" aria-describedby="tabela-1-ajuda">        <caption class="text-white">Comparação entre HD (Disco Rígido) e SSD (Unidade de Estado Sólido) em termos de velocidade, durabilidade, custo por GB, consumo de energia e nível de ruído.</caption>
         <thead>
             <tr>
                 <th scope="col">Característica</th>

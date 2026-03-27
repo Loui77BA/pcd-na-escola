@@ -11,9 +11,10 @@ lang: pt-BR
 series: "computacao-para-iniciantes"
 ---
 
-<div class="text-center">
-<img src="https://media.istockphoto.com/id/1288417573/pt/vetorial/fin-movie-ending-screen.jpg?s=612x612&w=0&k=20&c=V3RafL2r2LMXb5Ez_QCKQvRZbmZ45-IKg8lz53IG4dk=" aria-hidden="true" />
-</div>
+{% include figure.html
+	src="https://media.istockphoto.com/id/1288417573/pt/vetorial/fin-movie-ending-screen.jpg?s=612x612&w=0&k=20&c=V3RafL2r2LMXb5Ez_QCKQvRZbmZ45-IKg8lz53IG4dk="
+	decorative=true
+%}
 
 ## <a id="apresentacao"></a> Apresentação
 ---

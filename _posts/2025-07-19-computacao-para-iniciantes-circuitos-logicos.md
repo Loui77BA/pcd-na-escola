@@ -88,8 +88,9 @@ series: "computacao-para-iniciantes"
 
 <p>Se as duas coisas forem verdadeiras, o plano dá certo e vocês vão ao cinema. Se qualquer uma delas for falsa, o plano não dá certo e vocês não vão.</p>
 
+<p class="small text-light mb-2" id="tabela-and-ajuda">Observação: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-    <table class="table table-bordered table-dark" role="table" aria-label="Tabela de exemplo da operação lógica E (AND) com condições do cinema">
+    <table class="table table-bordered table-dark" aria-describedby="tabela-and-ajuda">
         <caption class="text-white">Tabela para a operação lógica E (AND) com condições do cinema</caption>
         <thead>
             <tr>
@@ -147,8 +148,9 @@ series: "computacao-para-iniciantes"
 
 <p>Se fizer pelo menos uma dessas atividades, o dia foi divertido.</p>
 
+<p class="small text-light mb-2" id="tabela-or-ajuda">Observação: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-    <table class="table table-bordered table-dark" role="table" aria-label="Tabela de exemplo da operação lógica OU (OR) com atividades no parque">
+    <table class="table table-bordered table-dark" aria-describedby="tabela-or-ajuda">
         <caption class="text-white">Tabela para a operação lógica OU (OR) com atividades no parque</caption>
         <thead>
             <tr>
@@ -199,8 +201,9 @@ series: "computacao-para-iniciantes"
 
 <p>Exemplo: Você tem duas opções de roupas sobre a cama, uma roupa quente e uma roupa leve. Você só pode vestir uma delas. Se qualquer uma delas for escolhida, a situação está correta (XOR = verdadeiro). Mas você não pode escolher as duas ao mesmo tempo, ou não escolher nenhuma delas. Se isso acontecer, a situação está incorreta (XOR = falso).</p>
 
+<p class="small text-light mb-2" id="tabela-xor-ajuda">Observação: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-    <table class="table table-bordered table-dark" role="table" aria-label="Tabela de exemplo da operação lógica OU Exclusivo (XOR) com roupas">
+    <table class="table table-bordered table-dark" aria-describedby="tabela-xor-ajuda">
         <caption class="text-white">Tabela para a operação lógica OU Exclusivo (XOR) com roupas</caption>
         <thead>
             <tr>
@@ -251,8 +254,9 @@ series: "computacao-para-iniciantes"
 
 <p>Exemplo: Se a luz está acesa, a operação NÃO (NOT) fará com que consideremos que a luz está apagada.</p>
 
+<p class="small text-light mb-2" id="tabela-not-ajuda">Observação: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-    <table class="table table-bordered table-dark" role="table" aria-label="Tabela de exemplo da operação lógica NÃO (NOT) a luz">
+    <table class="table table-bordered table-dark" aria-describedby="tabela-not-ajuda">
         <caption class="text-white">Tabela para a operação lógica NÃO (NOT) com luz</caption>
         <thead>
             <tr>
@@ -373,8 +377,9 @@ series: "computacao-para-iniciantes"
 
 <p>Agora que compreendemos a lógica passo a passo, vamos montar a tabela com todas as combinações possíveis de A, B e C:</p>
 
+<p class="small text-light mb-2" id="tabela-ae-bouc-ajuda">Observação: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-    <table class="table table-bordered table-dark" role="table" aria-label="Tabela verdade de A E (B OU C)">
+    <table class="table table-bordered table-dark" aria-describedby="tabela-ae-bouc-ajuda">
         <caption class="text-white">Tabela verdade de A E (B OU C)</caption>
         <thead>
             <tr>
@@ -585,8 +590,9 @@ series: "computacao-para-iniciantes"
 
 <p>Agora que compreendemos a lógica passo a passo, vamos montar a tabela com todas as combinações possíveis de A, B e C:</p>
 
+<p class="small text-light mb-2" id="tabela-aoub-xorc-ajuda">Observação: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
 <div class="table-responsive">
-    <table class="table table-bordered table-dark" role="table" aria-label="Tabela verdade de (A OU B) XOR C">
+    <table class="table table-bordered table-dark" aria-describedby="tabela-aoub-xorc-ajuda">
         <caption class="text-white">Tabela verdade de <span class="expressao-logica" aria-label="Abre parênteses, A ou B, fecha parênteses, XOR C.">(A OU B) XOR C</span></caption>
         <thead>
             <tr>

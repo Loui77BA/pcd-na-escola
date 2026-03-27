@@ -11,7 +11,10 @@ lang: pt-BR
 series: "introducao-a-programacao"
 ---
 <div class="text-center">
-    <img src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b0b695bd-ae05-4be1-5692-5131de200100/public" aria-hidden="true" class="img-fluid border" />
+    {% include figure.html
+        src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b0b695bd-ae05-4be1-5692-5131de200100/public"
+        decorative=true
+    %}
 </div>
 
 ## Apresentação {#apresentacao}
