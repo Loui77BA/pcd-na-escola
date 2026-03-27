@@ -4,8 +4,9 @@
 
             <img class="img-fluid"
                  src="{{ include.src }}"
-                 alt="{{ include.alt }}"
-                 loading="lazy" />
+                  alt="{% if include.decorative %}{% else %}{{ include.alt | default: '' }}{% endif %}"
+                  loading="lazy"
+                  {% if include.decorative %}aria-hidden="true"{% endif %} />
 
             <div class="image-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
                  aria-hidden="true">

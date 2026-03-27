@@ -12,253 +12,428 @@ series: "computacao-para-iniciantes"
 ---
 
 {% include figure.html
-    src="https://images.prismic.io/voitto-blog/cf699ddd-8f3a-4d72-a53a-fb80973050f4_redes-de-computadores.jpg?auto=compress,format?w=3840&q=75"
-    alt="Homem desenhado com linhas brancas e luzes em um fundo azul escuro. Ele está cercado por laptops e linhas pontilhadas que se conectam, representando uma rede de computadores."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/8c6a7e49-752b-4800-71fd-e92568c6e100/public"
+    decorative=true
 %}
 
 ## <a id="apresentacao"></a> Apresentação
 ---
 
-As redes de computadores foram feitas, principalmente, para permitir que dois ou mais computadores se comuniquem e compartilhem coisas como músicas, vídeos, documentos e até mesmo controlem outros equipamentos à distância. Hoje, essas redes melhoraram muito e possibilitam não só que pessoas e empresas troquem informações, mas também que aparelhos conversem entre si sem que ninguém precise ajudar. 
+Redes de computadores existem para conectar dispositivos e permitir troca de dados. Na prática, é por causa delas que conseguimos acessar sites, enviar mensagens, fazer chamadas de vídeo, estudar online e usar serviços de banco e compras.
 
-Com o passar dos anos, a tecnologia fez com que as redes de computadores ficassem cada vez mais modernas. Elas começaram a ligar não só computadores, mas também vários outros aparelhos que usamos no dia a dia, como celulares, televisões e até geladeiras. Atualmente, as redes estão presentes em quase tudo e são essenciais para coisas como bancos pela internet, chamadas de vídeo, compras online ou até sistemas de transporte. 
+Hoje, redes conectam muito mais do que computadores: celulares, TVs, relógios, câmeras e vários outros equipamentos. Quando objetos do dia a dia se conectam entre si, chamamos isso de Internet das Coisas (IoT).
 
-Objetos comuns, como lâmpadas e relógios, também podem se conectar à internet e "conversar" entre si – isso é chamado de Internet das Coisas (IoT). Para tudo funcionar bem e de forma segura, é preciso que as redes sejam fortes, rápidas e protegidas, garantindo que as informações trocadas fiquem seguras mesmo quando muita gente está conectada ao mesmo tempo.
+Neste artigo, vamos entender:
+
+- quais são as partes básicas de uma rede;
+- quais tipos de rede usamos no dia a dia;
+- como funcionam topologias como estrela, anel e barramento;
+- como funcionam os modelos OSI e TCP/IP;
+- quais protocolos são mais usados na internet;
+- qual a diferença entre internet e Web.
 
 ## <a id="partes-de-uma-rede-de-computadores"></a> Partes de uma Rede de Computadores
 ---
 
-As redes de computadores são feitas de diferentes partes importantes:
+Uma rede funciona com pessoas, equipamentos, programas e regras de comunicação. A tabela abaixo resume os principais elementos.
 
-- **Pessoas**: quem usa os computadores, celulares e outros aparelhos conectados à rede.
-- **Programas**: aplicativos e softwares que ajudam no envio e recebimento de mensagens e informações.
-- **Roteadores**: aparelhos que conectam redes diferentes e ajudam a enviar dados de um lugar para outro.
-- **Switches**: equipamentos que juntam vários aparelhos em uma mesma rede e distribuem as informações entre eles.
-- **Servidores**: computadores que guardam arquivos, sites e dados, e permitem que outros aparelhos acessem essas informações.
-- **Cabos**: fios usados para ligar os aparelhos e transmitir sinais de um para outro.
-- **Ondas de rádio**: sinais sem fio, como o Wi-Fi, que fazem a conexão entre aparelhos sem precisar de cabos.
-- **Regras de comunicação (protocolos)**: combinados que fazem os aparelhos entenderem uns aos outros e trocarem dados de forma segura e eficiente.
+<p class="small text-light mb-2" id="tabela-partes-rede-ajuda">Observação: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
+<div class="table-responsive">
+    <table class="table table-bordered table-dark" aria-describedby="tabela-partes-rede-ajuda">
+        <caption class="text-white">Elementos básicos de uma rede de computadores</caption>
+        <thead>
+            <tr>
+                <th scope="col">Elemento</th>
+                <th scope="col">Função principal</th>
+                <th scope="col">Exemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Dispositivos</th>
+                <td>Enviam e recebem dados</td>
+                <td>Computador, celular, tablet</td>
+            </tr>
+            <tr>
+                <th scope="row">Roteador</th>
+                <td>Conecta redes e direciona pacotes</td>
+                <td>Roteador Wi-Fi residencial</td>
+            </tr>
+            <tr>
+                <th scope="row">Switch</th>
+                <td>Interliga equipamentos na mesma rede local</td>
+                <td>Switch de escritório</td>
+            </tr>
+            <tr>
+                <th scope="row">Servidor</th>
+                <td>Armazena e fornece serviços</td>
+                <td>Servidor de site ou de arquivos</td>
+            </tr>
+            <tr>
+                <th scope="row">Meio de transmissão</th>
+                <td>Transporta o sinal</td>
+                <td>Cabo de rede e Wi-Fi</td>
+            </tr>
+            <tr>
+                <th scope="row">Protocolos</th>
+                <td>Definem regras da comunicação</td>
+                <td>TCP, IP, HTTP, DNS</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-{% include figure.html
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQ_lMbPWDKYTJmk-wc_j5OCAb5wd_moO04LD4kCWfC8RIk"
-    alt="O diagrama ilustra uma rede de computadores, mostrando seus componentes principais: pessoas, programas, servidores, roteadores, switches, e dispositivos como laptops e desktops. Ele também representa os tipos de conexão (cabos e ondas de rádio) e as regras que governam a comunicação, tudo em um estilo de linhas azuis em fundo escuro."
-    caption="Diagrama de uma rede de computadores"
-%}
+Quando um dado viaja pela rede, ele é dividido em pacotes. Esses pacotes saem de um dispositivo, passam por equipamentos de rede e chegam ao destino, onde são remontados.
 
-Para usar a internet ou se conectar a uma rede, aparelhos como celular, tablet ou computador precisam de uma placa de rede. Essa placa faz a ligação com o local onde está o sinal, seja por cabo ou por ondas de rádio. É ela que permite que seu aparelho envie e receba informações, mostrando tudo certinho nos aplicativos e programas que você usa.
+Para organizar esse processo, usamos modelos em camadas. Os dois mais conhecidos são OSI e TCP/IP.
 
-Pense em como funciona uma transmissão de rádio ou TV: para receber bem o sinal, tanto quem envia quanto quem recebe precisa entender a mensagem.
+## <a id="tipos-de-rede"></a> Tipos de rede no dia a dia
+---
 
-Nas redes de computadores, os aparelhos de comunicação conseguem pegar os dados que vêm de outro lugar, tratar essas informações e enviar para quem precisa receber, mesmo que estejam em redes diferentes.
+Antes de falar de protocolos, vale conhecer os tipos de rede mais comuns. Isso ajuda a ligar a teoria com situações reais.
 
-**Observação**: Nas redes, os dados transmitidos entre aparelhos e usados pelas pessoas geralmente são chamados de pacotes. Um pacote é um pedacinho de uma mensagem maior. Os dados enviados pela internet, por exemplo, são divididos em pacotes pequenos, que depois se juntam de novo no computador ou celular que recebe.
+<p class="small text-light mb-2" id="tabela-tipos-rede-ajuda">Observação: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
+<div class="table-responsive">
+    <table class="table table-bordered table-dark" aria-describedby="tabela-tipos-rede-ajuda">
+        <caption class="text-white">Tipos de rede mais comuns</caption>
+        <thead>
+            <tr>
+                <th scope="col">Tipo</th>
+                <th scope="col">Alcance</th>
+                <th scope="col">Exemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">PAN</th>
+                <td>Pessoal, curta distância</td>
+                <td>Celular conectado ao fone Bluetooth</td>
+            </tr>
+            <tr>
+                <th scope="row">LAN</th>
+                <td>Ambiente local (casa, escola, empresa)</td>
+                <td>Rede Wi-Fi de casa ou do laboratório</td>
+            </tr>
+            <tr>
+                <th scope="row">WAN</th>
+                <td>Longa distância, conecta várias redes</td>
+                <td>A própria internet</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-Como já foi falado, uma rede de computadores tem vários componentes, e cada um segue regras próprias para permitir que os aparelhos conversem entre si. Para facilitar o entendimento e organização das redes, existem modelos que explicam como tudo funciona, dividindo as redes em partes menores chamadas camadas.
+## <a id="topologias-de-rede"></a> Topologias de rede
+---
 
-Isso torna mais fácil entender e montar uma rede de computadores. Com uma estrutura por camadas, com regras e protocolos específicos em cada uma. Os modelos de camadas mais famosos no mundo das redes de computadores são o modelo OSI e o modelo TCP/IP.
+Topologia é a forma como os dispositivos são organizados e conectados em uma rede. Em redes modernas, a estrela é a mais comum, mas conhecer outros modelos ajuda a entender vantagens e limitações.
+
+<p class="small text-light mb-2" id="tabela-topologias-ajuda">Observação: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
+<div class="table-responsive">
+    <table class="table table-bordered table-dark" aria-describedby="tabela-topologias-ajuda">
+        <caption class="text-white">Topologias de rede para iniciantes</caption>
+        <thead>
+            <tr>
+                <th scope="col">Topologia</th>
+                <th scope="col">Como funciona</th>
+                <th scope="col">Vantagem</th>
+                <th scope="col">Limitação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Estrela</th>
+                <td>Todos os dispositivos se conectam a um ponto central (switch/roteador)</td>
+                <td>Fácil de gerenciar e expandir</td>
+                <td>Se o ponto central falhar, a rede para</td>
+            </tr>
+            <tr>
+                <th scope="row">Barramento</th>
+                <td>Vários dispositivos compartilham o mesmo cabo principal</td>
+                <td>Estrutura simples</td>
+                <td>Mais colisões e perda de desempenho com muitos dispositivos</td>
+            </tr>
+            <tr>
+                <th scope="row">Anel</th>
+                <td>Os dispositivos formam um circuito fechado</td>
+                <td>Fluxo de dados mais organizado</td>
+                <td>Falha em um ponto pode afetar toda a rede</td>
+            </tr>
+            <tr>
+                <th scope="row">Malha</th>
+                <td>Cada dispositivo pode ter vários caminhos de conexão</td>
+                <td>Alta redundância e tolerância a falhas</td>
+                <td>Custo e configuração mais complexos</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 ## <a id="modelo-osi"></a> Modelo OSI
 ---
 
-O modelo OSI (Open Systems Interconnection em português Interconexão de Sistemas Abertos), foi criado pela ISO (Organização Internacional de Padronização), para organizar e facilitar a comunicação entre computadores. Ele é dividido em sete partes, chamadas de camadas, e cada uma delas tem uma função específica. Apesar de não ser muito usado no dia a dia, o modelo OSI ajuda bastante a entender como funcionam as redes de computadores.
+O modelo OSI foi criado para explicar a comunicação em rede de forma organizada. Ele tem sete camadas. Mesmo não sendo aplicado exatamente assim no dia a dia, é excelente para estudo.
 
-As sete camadas do modelo OSI são:
+<p class="small text-light mb-2" id="tabela-osi-ajuda">Observação: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
+<div class="table-responsive">
+    <table class="table table-bordered table-dark" aria-describedby="tabela-osi-ajuda">
+        <caption class="text-white">Camadas do modelo OSI</caption>
+        <thead>
+            <tr>
+                <th scope="col">Camada</th>
+                <th scope="col">Função resumida</th>
+                <th scope="col">Exemplo prático</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">7. Aplicação</th>
+                <td>Interface entre usuário e serviços de rede</td>
+                <td>Navegador e e-mail</td>
+            </tr>
+            <tr>
+                <th scope="row">6. Apresentação</th>
+                <td>Formata, codifica e cifra dados</td>
+                <td>Compressão e criptografia</td>
+            </tr>
+            <tr>
+                <th scope="row">5. Sessão</th>
+                <td>Controla início, manutenção e fim da comunicação</td>
+                <td>Sessão de chamada de vídeo</td>
+            </tr>
+            <tr>
+                <th scope="row">4. Transporte</th>
+                <td>Entrega dados com confiabilidade e ordem</td>
+                <td>TCP</td>
+            </tr>
+            <tr>
+                <th scope="row">3. Rede</th>
+                <td>Define endereçamento e roteamento</td>
+                <td>IP</td>
+            </tr>
+            <tr>
+                <th scope="row">2. Enlace</th>
+                <td>Comunicação entre dispositivos da mesma rede</td>
+                <td>Ethernet</td>
+            </tr>
+            <tr>
+                <th scope="row">1. Física</th>
+                <td>Transmissão de sinais pelo meio físico</td>
+                <td>Cabo, fibra, rádio</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-- **Física**: é a camada que cuida de enviar os dados pelos fios, cabos ou pelo ar, como se fosse o “corredor” que leva a informação de um lugar ao outro. Ela determina como as informações realmente viajam pelo caminho físico. 
-
-- **Enlace de Dados**: garante que os dados cheguem direitinho entre dois aparelhos conectados na mesma rede, corrigindo erros que possam acontecer no caminho. É como se fosse um conferente, checando se tudo saiu e chegou certo.
-
-- **Rede**: escolhe a rota que os dados precisam seguir para chegar ao destino, mesmo que passem por vários lugares diferentes. Imagine um GPS que acha o melhor caminho para cada mensagem.
-
-- **Transporte**: cuida para que os dados cheguem completos e na ordem certa, dividindo em partes menores e mandando de novo se algo se perder. É como um entregador que confere se tudo chegou direitinho.
-
-- **Sessão**: organiza o começo, o meio e o fim da conversa entre dois aparelhos, garantindo que ninguém fale por cima do outro e que tudo fique em ordem. Pensa numa ligação telefônica que só termina quando todos já falaram o que precisavam.
-
-- **Apresentação**: traduz os dados para que os programas e pessoas possam entender, além de cuidar da segurança e do jeito que as informações vão aparecer. É como um tradutor que deixa tudo compreensível e protegido.
-
-- **Aplicação**: é a camada que permite que a gente use a internet e outros programas de rede, fazendo a ponte entre o que usamos no computador e o que é enviado e recebido. É como o aplicativo que facilita nossa vida conectada.
-
-O modelo OSI mostra como funciona uma rede de computadores: ele divide tudo em sete partes, cada uma com uma função. Isso ajuda a organizar o caminho que as informações fazem de um lugar para outro e garante que tudo chegue certo. Com esse padrão, diferentes computadores e programas conseguem se comunicar bem, mesmo se forem de marcas diferentes.
-
-{% include figure.html
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQ3_4AX1LSfTYPGx-CgPYZQARm8TYzNkEp0iBYwdPGdvc8?width=852&height=837"
-    alt="Diagrama do modelo OSI, ilustrando as 7 camadas da comunicação em rede (Aplicação a Física) e o fluxo de dados entre dois computadores."
-    caption="Modelo OSI"
-%}
-
-Quando alguém usa um programa, como um navegador ou um aplicativo de mensagens, tudo começa na chamada camada de aplicação, que é onde o computador se conecta à rede. Depois, existe a camada de apresentação, que ajeita as informações para que todos os computadores entendam, cuidando de coisas como transformar letras e números, proteger os dados ou diminuir o tamanho das mensagens.
-
-Logo após, vem a camada de sessão, que abre, mantém e fecha a troca de dados entre os computadores, como se fosse uma chamada de vídeo ou um bate-papo, para garantir que tudo aconteça na ordem certa e sem confusão.
-
-Depois que a comunicação começa, a próxima etapa é dividir as informações em partes menores para facilitar o envio. Essa parte também cuida de corrigir erros e garante que tudo chegue ao destino na ordem certa, reenviando o que for preciso. Em seguida, fica decidido o melhor caminho para os dados viajarem até chegar onde precisam, passando por outras redes se necessário.
-
-Depois, vem a parte que garante que esses pedaços de informação vão de um aparelho para o outro, por exemplo, entre dois computadores ligados pelo mesmo cabo ou roteador. Nessa hora, cada aparelho recebe um endereço próprio (tipo uma “placa de identificação”) e ainda há mecanismos para corrigir possíveis erros que possam acontecer no caminho. Por último, tudo vira sinais que passam pelos fios, luzes ou ondas de rádio até chegar ao destino, seja pela internet, por cabos ou pelo wi-fi.
-
-No destino, esse processo acontece ao contrário: os sinais chegam pelo cabo, rádio ou luz, e vão sendo traduzidos, checados, organizados e montados de novo até virarem informação que o programa consegue mostrar. Ou seja, o modelo OSI ajuda a entender, passo a passo, como as mensagens conseguem viajar por diferentes equipamentos e lugares, sem perder nada pelo caminho, até chegar certinho do outro lado.
-
-Embora o modelo OSI não seja usado exatamente desse jeito na prática, ele ajuda muito quem quer aprender sobre redes de computadores. Na verdade, no nosso dia a dia, a maioria das redes funciona com o modelo TCP/IP, que é mais fácil de entender e de usar.
+Em resumo, o OSI funciona como mapa de aprendizado: ele separa funções para ficar mais fácil diagnosticar problemas e entender onde cada tecnologia atua.
 
 ## <a id="modelo-tcp-ip"></a> Modelo TCP/IP
 ---
 
-O modelo TCP/IP (do inglês Transmission Control Protocol/Internet Protocol e em português Protocolo de Controle de Transmissão/Protocolo da Internet) é o jeito mais comum de organizar como os computadores se comunicam em redes. Ele foi criado (pelo Departamento de Defesa dos Estados Unidos) para facilitar a troca de informações entre diferentes computadores, mesmo que sejam de marcas ou lugares diferentes.
+O TCP/IP é o modelo usado na prática pela internet. Ele é mais simples, com quatro camadas.
 
-Esse modelo tem quatro partes (camadas), e cada uma cuida de uma parte do processo de comunicação. Por ser mais simples e prático que outros modelos, ele é o preferido quando se fala em internet e redes de computadores.
+<p class="small text-light mb-2" id="tabela-tcpip-ajuda">Observação: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
+<div class="table-responsive">
+    <table class="table table-bordered table-dark" aria-describedby="tabela-tcpip-ajuda">
+        <caption class="text-white">Camadas do modelo TCP/IP</caption>
+        <thead>
+            <tr>
+                <th scope="col">Camada</th>
+                <th scope="col">Função resumida</th>
+                <th scope="col">Exemplo de protocolo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Aplicação</th>
+                <td>Serviços usados pelos aplicativos</td>
+                <td>HTTP, DNS, SMTP, FTP</td>
+            </tr>
+            <tr>
+                <th scope="row">Transporte</th>
+                <td>Entrega entre origem e destino</td>
+                <td>TCP, UDP</td>
+            </tr>
+            <tr>
+                <th scope="row">Internet</th>
+                <td>Endereçamento e roteamento</td>
+                <td>IP</td>
+            </tr>
+            <tr>
+                <th scope="row">Acesso à Rede</th>
+                <td>Comunicação com o meio físico</td>
+                <td>Ethernet, Wi-Fi</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-As partes ou camadas do modelo TCP/IP são:
-
-- **Acesso a rede (também chamada de enlace)**
-- **Internet (também chamada de rede)**
-- **Transporte**
-- **Aplicação**
-
-Entenda como funciona cada parte do modelo TCP/IP:
-
-- **Acesso à Rede**: É a parte que conecta o computador aos cabos ou ao Wi-Fi, permitindo que ele se ligue à rede. Também garante que cada computador tenha um "número" próprio para se identificar e que todos consigam usar a rede sem baterem de frente (sem que tenha colisões).
-
-- **Internet**: É responsável por levar as mensagens de um computador até outro, escolhendo o melhor caminho. Nessa parte, cada computador recebe um endereço (como se fosse um CEP).
-
-- **Transporte**: Cuida para que a conversa entre os programas, mesmo que estejam em computadores diferentes, aconteça direitinho, sem perder partes pelo caminho.
-
-- **Aplicação**: É a parte que faz a ponte entre a rede e os programas que usamos (como navegador, e-mail, etc.). Ela monta, organiza e transforma as mensagens para que todos entendam do jeito certo. É como se fosse o tradutor que deixa tudo compreensível (fácil de entender) e protegido.
-
-Ou seja, esse modelo funciona da seguinte forma: quando você envia uma mensagem, ela passa por todas essas camadas, cada uma fazendo sua parte, até chegar ao destino. E quando a mensagem chega, o processo acontece ao contrário, com cada camada recebendo e processando a informação até que ela chegue ao programa que vai exibi-la.
-
-{% include figure.html
-   src="https://1drv.ms/i/c/bf6f4302973a9faf/IQS_R_1OeV7YRozC9ZhmCQdwASrqYKazd-nc8nlL-2vh750?width=1023&height=830"
-   alt="Diagrama do modelo TCP/IP, mostrando as 4 camadas da comunicação em rede (Aplicação, Transporte, Internet, Acesso à Rede) entre dois computadores."
-   caption="Modelo TCP/IP"
-%}
-
-O modelo TCP/IP é uma forma de organizar como os computadores conversam entre si. Ele é mais fácil de usar do que outros modelos, por isso está presente na maioria das redes.
-
-É ele que faz a internet funcionar, dizendo como os dados devem ser enviados, como identificar os computadores e como montar as mensagens. Os protocolos do TCP/IP são realmente importantes para que tudo na internet funcione direito.
+<p class="small text-light mb-2" id="tabela-comparacao-camadas-ajuda">Observação: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
+<div class="table-responsive">
+    <table class="table table-bordered table-dark" aria-describedby="tabela-comparacao-camadas-ajuda">
+        <caption class="text-white">Comparação entre OSI e TCP/IP</caption>
+        <thead>
+            <tr>
+                <th scope="col">Ponto</th>
+                <th scope="col">OSI</th>
+                <th scope="col">TCP/IP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Quantidade de camadas</th>
+                <td>7</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th scope="row">Uso principal</th>
+                <td>Estudo e referência</td>
+                <td>Implementação real da internet</td>
+            </tr>
+            <tr>
+                <th scope="row">Complexidade</th>
+                <td>Mais detalhado</td>
+                <td>Mais direto</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 ## <a id="protocolos-comunicacao-internet"> Protocolos de comunicação na internet
 ---
 
-Protocolos são acordos que permitem a existência da comunicação, eles são como as regras de um jogo, sem eles a comunicação não acontece.
+Protocolos são regras de comunicação. Sem eles, dispositivos não conseguem trocar dados de forma organizada.
 
-Imagine a seguinte situação:
+<p class="small text-light mb-2" id="tabela-protocolos-ajuda">Observação: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
+<div class="table-responsive">
+    <table class="table table-bordered table-dark" aria-describedby="tabela-protocolos-ajuda">
+        <caption class="text-white">Protocolos mais usados na internet</caption>
+        <thead>
+            <tr>
+                <th scope="col">Protocolo</th>
+                <th scope="col">Camada (TCP/IP)</th>
+                <th scope="col">Para que serve</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">HTTP</th>
+                <td>Aplicação</td>
+                <td>Carrega páginas e conteúdo web</td>
+            </tr>
+            <tr>
+                <th scope="row">HTTPS</th>
+                <td>Aplicação</td>
+                <td>Versão segura do HTTP, com criptografia (TLS)</td>
+            </tr>
+            <tr>
+                <th scope="row">FTP</th>
+                <td>Aplicação</td>
+                <td>Transferência de arquivos</td>
+            </tr>
+            <tr>
+                <th scope="row">SMTP</th>
+                <td>Aplicação</td>
+                <td>Envio de e-mails</td>
+            </tr>
+            <tr>
+                <th scope="row">DNS</th>
+                <td>Aplicação</td>
+                <td>Tradução de nomes em endereços IP</td>
+            </tr>
+            <tr>
+                <th scope="row">IP</th>
+                <td>Internet</td>
+                <td>Endereçamento e roteamento</td>
+            </tr>
+            <tr>
+                <th scope="row">TCP</th>
+                <td>Transporte</td>
+                <td>Entrega confiável, em ordem</td>
+            </tr>
+            <tr>
+                <th scope="row">UDP</th>
+                <td>Transporte</td>
+                <td>Entrega rápida, sem confirmação</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-André pergunta:
+Quando você abre um site, o processo acontece em etapas simples:
 
-— Que horas são?
+1. o DNS descobre o endereço IP do site;
+2. TCP/IP leva os pacotes entre seu dispositivo e o servidor;
+3. HTTPS protege a troca de dados, quando o site usa conexão segura;
+4. o servidor responde e o navegador monta a página na tela.
 
-Carla responde:
+Na prática, o navegador usa DNS para achar o endereço de um site, HTTP para pedir o conteúdo e TCP/IP para transportar os dados até seu dispositivo.
 
-— Agora são dez da manhã!
-
-Existe um protocolo de comunicação padronizado entre André e Carla mesmo que não percebam, os dois sabem o que são horas, os dois sabem reconhecer a forma de montar uma pergunta em português do Brasil, os dois sabem como montar a resposta para a pergunta e os dois sabem seus lugares na conversa, André como quem pergunta e Carla como quem responde.
-
-Da mesma forma, na internet, os computadores precisam de protocolos para se comunicar. Os protocolos de comunicação da internet são acordos que permitem a troca de informações entre computadores. Eles definem como os dados são transmitidos, como os computadores se identificam e como as mensagens são estruturadas.
-
-A internet é uma rede de redes, como se fossem várias estradas conectadas entre si, permitindo que os dados viajem de um lugar para outro. Ela funciona com base em protocolos que garantem que as informações cheguem corretamente ao destino.
-
-Esses protocolos são do modelo TCP/IP, que tem quatro camadas (partes) principais, e cada uma usa seus próprios protocolos, que são diferentes e definidos de acordo com suas funções (ou seja, o que cada camada faz). Esses protocolos levam em conta coisas como: 
-
-- O tipo de serviço que vai ser entregue.
-- O ambiente onde tudo vai funcionar, incluindo os serviços que o protocolo precisa usar.
-- O conjunto de mensagens que podem ser trocadas pelo protocolo. Ou seja, são os tipos de recados que ele pode enviar e receber.
-- O jeito como cada mensagem é formada, ou seja, como ela é escrita e organizada para que os computadores consigam entender.
-- Os algoritmos usados (os métodos construídos em forma de software), para garantir que as mensagens sejam enviadas e recebidas corretamente e que o serviço funcione como esperado.
-
-Pensando nisso, vamos agora falar sobre os principais protocolos usados na internet. Existem alguns que são muito importantes. São eles:
-
-- **HTTP**: Hypertext Transfer Protocol, em português Protocolo de Transferência de Hipertexto.
-- **FTP**: File Transfer Protocol, em português Protocolo de Transferência de Arquivos.
-- **SMTP**: Simple Mail Transfer Protocol, em português Protocolo Simples de Transferência de Correio.
-- **DNS**: Domain Name System, em português Sistema de Nomes de Domínio.
-- **IP**: Internet Protocol, em português Protocolo da Internet.
-- **TCP**: Transmission Control Protocol, em português Protocolo de Controle de Transmissão.
-- **UDP**: User Datagram Protocol, em português Protocolo de Datagrama do Usuário.
-
-Onde:
-
-- **HTTP**: está na camada de aplicação.
-- **FTP**: está na camada de aplicação.
-- **SMTP**: está na camada de aplicação.
-- **DNS**: está na camada de aplicação.
-- **IP**: está na camada de rede.
-- **TCP**: está na camada de transporte.
-- **UDP**: está na camada de transporte.
-
-As responsabilidades, para que serve cada protocolo, são as seguintes:
-
-- **HTTP**: é usado para acessar sites e páginas na internet pelo navegador. Ajuda a carregar textos, imagens e vídeos que as pessoas consomem online.
-- **FTP**: serve para enviar e receber arquivos entre o computador e servidores. Ele permite que os usuários transfiram arquivos de forma eficiente pela internet.
-- **SMTP**: utilizado para enviar e-mails para outras pessoas. Ele cuida de garantir que as mensagens cheguem ao destino certo.
-- **DNS**: transforma nomes de sites em números que o computador entende, como um tradutor de endereços. Funciona como um catálogo que ajuda a localizar os sites na internet, tipo o CEP, onde o nome de uma rua é traduzido em um número específico para que os serviços de entrega encontrem o endereço correto.
-- **IP**: responsável por mostrar o endereço de cada computador e garantir que os dados cheguem ao lugar certo. É a identificação única de cada dispositivo na rede, como o número do CPF para uma pessoa.
-- **TCP**: garante que tudo que está sendo enviado pela internet chegue sem erro e na ordem certa. Ele divide as mensagens em partes menores (chamadas de pacotes) e monta de novo quando chegam, como um quebra-cabeça que pode ser desmontado e montado novamente.
-- **UDP**: também envia dados, mas de forma mais rápida, sem garantir a ordem ou se tudo chegou direitinho. Ele é usado em situações onde a velocidade é mais importante do que a precisão (estar correto), como em chamadas do Google Meet e livestreams (transmissões ao vivo).
-
-<img src="https://academiaderedes.com/wp-content/uploads/2020/12/modelo.png" aria-hidden="true" />
-
-Resumindo: cada protocolo tem uma função específica e atua em uma camada diferente do modelo TCP/IP, garantindo que a comunicação na internet seja eficiente e organizada. Eles se complementam, trabalhando juntos para permitir que diferentes tipos de dados sejam transmitidos de forma eficaz pela rede.
+Cada protocolo tem um papel específico, e todos trabalham juntos para que a internet funcione com eficiência.
 
 ## <a id="a-world-wide-web-www"> A World Wide Web (WWW)
 ---
 
-A história da World Wide Web (WWW), ou simplesmente Web, começa nos anos 1980, no CERN, que é um importante centro de pesquisas na Suíça. Um cientista chamado Tim Berners-Lee queria facilitar o jeito como os pesquisadores trocavam informações e documentos científicos. Por isso, em 1989, ele teve a ideia de criar uma forma melhor de organizar e compartilhar esses dados.
+A Web (World Wide Web) surgiu no CERN, no fim dos anos 1980, com Tim Berners-Lee. A proposta era facilitar o compartilhamento de documentos entre pesquisadores.
 
-Com a ajuda de Robert Cailliau e aproveitando ideias de um projeto antigo chamado ENQUIRE, Berners-Lee começou a criar a Web. Em 1990, ele usou um computador chamado NeXTCube, da empresa de Steve Jobs, a NeXT, para fazer o primeiro programa que funcionava como um navegador, chamado WorldWideWeb. Esse programa permitia que as pessoas vissem e interagissem com documentos. Esse programa foi chamado de WorldWideWeb.
+Com o tempo, a Web virou a principal forma de acessar conteúdo na internet usando navegadores.
 
-Ele também criou o primeiro servidor web, que era o computador que guardava e enviava esses documentos para outros computadores, permitindo que a informação fosse acessada por qualquer pessoa conectada à rede. Isso marcou o início da era da informação, onde o acesso a dados se tornaria cada vez mais fácil e rápido.
+A Web usa principalmente HTTP e hipertexto. Hipertexto é um modelo de leitura com links: você não precisa seguir uma sequência única; pode navegar entre páginas relacionadas.
 
-<div class="text-center">
-<img src="https://img.freepik.com/vetores-premium/conceito-de-conexao-on-line-vetor-plano_199064-277.jpg" aria-hidden="true" />
-</div>
+A tabela abaixo mostra a diferença entre os dois tipos de leitura:
 
-A Web foi lançada oficialmente em 1991. Para ela funcionar, Berners-Lee criou o protocolo HTTP, que é uma linguagem que os computadores usam para conversar e trocar informações. O conceito de hipertexto, que já existia desde os anos 1960, ganhou uma nova função na internet. Mas, afinal, o que é hipertexto?
-
-Hipertexto é um tipo de texto que não segue uma ordem certa — você pode clicar em palavras ou frases e ir direto para outras páginas ou assuntos relacionados. Ou seja, diferente do texto tradicional, que é linear (segue uma sequência fixa), o hipertexto permite uma navegação mais livre e dinâmica. Você decide o caminho da leitura, em vez de seguir só uma sequência. Isso permite que cada pessoa explore os conteúdos como quiser.
-
-Pense no hipertexto como uma rede de informações conectadas. Em vez de ler tudo numa ordem só, você pode ir pulando entre os temas, clicando em links que levam para outras partes. Assim, quem está navegando pode aprender e descobrir coisas novas de acordo com o interesse do momento. 
-
-<div class="text-center">
-<img src="https://static.todamateria.com.br/upload/hi/pe/hipertextoetextonormalimagem.jpg" aria-hidden="true" />
-
-<img src="https://i0.wp.com/www.ernaniterra.com.br/wp-content/uploads/2022/11/Hipertexto.png?fit=377%2C235&ssl=1" aria-hidden="true" />
+<p class="small text-light mb-2" id="tabela-hipertexto-ajuda">Observação: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
+<div class="table-responsive">
+    <table class="table table-bordered table-dark" aria-describedby="tabela-hipertexto-ajuda">
+        <caption class="text-white">Diferenças entre texto linear e hipertexto</caption>
+        <thead>
+            <tr>
+                <th scope="col">Aspecto</th>
+                <th scope="col">Texto Linear</th>
+                <th scope="col">Hipertexto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Sequência de leitura</th>
+                <td>Um caminho único predefinido (do início ao fim)</td>
+                <td>Múltiplos caminhos por links</td>
+            </tr>
+            <tr>
+                <th scope="row">Interatividade</th>
+                <td>Passiva (apenas lê)</td>
+                <td>Ativa (escolhe o caminho)</td>
+            </tr>
+            <tr>
+                <th scope="row">Conexão entre conteúdos</th>
+                <td>Referências externas ou notas</td>
+                <td>Links diretos entre páginas</td>
+            </tr>
+            <tr>
+                <th scope="row">Exemplo</th>
+                <td>Um livro impresso</td>
+                <td>Wikipedia ou sites com links</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 Hoje, esse jeito de navegar é o que mais usamos na internet. Um exemplo claro é a Wikipédia: quando você lê um artigo e encontra uma palavra desconhecida, pode clicar nela e ser levado para outra explicação. Embora hoje isso seja comum, a ideia do hipertexto veio antes mesmo da internet existir.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Hyperlinks_scheme.svg/914px-Hyperlinks_scheme.svg.png" aria-hidden="true" />
-
-O hipertexto é a base da internet como conhecemos. Ele foi pensado, lá nos anos 1960, como uma maneira de ligar informações e facilitar a compreensão, principalmente nas áreas científicas. Tim Berners-Lee trouxe esse conceito para a Web, criando também o padrão URI, que depois virou o famoso URL — o endereço que digitamos para acessar sites atualmente.
+Importante: internet e Web não são a mesma coisa. A internet é a infraestrutura de redes; a Web é um dos serviços que funciona sobre essa infraestrutura.
 
 ## Resumo
 ---
 
-Redes de computadores são como conexões que ligam vários aparelhos para que possam trocar informações e usar serviços juntos. Hoje, essas redes conectam não só computadores, mas também celulares, televisões e até eletrodomésticos. Elas são parte importante de coisas que usamos no dia a dia, como bancos, chamadas de vídeo, compras online e até semáforos nas cidades. 
+Redes de computadores conectam dispositivos para trocar dados e acessar serviços. No dia a dia, isso aparece em redes pessoais (PAN), redes locais (LAN) e redes de longa distância (WAN), como a internet.
 
-Uma rede tem várias partes: pessoas usando, programas, e equipamentos como roteadores, switches, servidores e cabos ou antenas de Wi-Fi. Cada aparelho que está na rede precisa de uma placa de rede para enviar e receber dados. Quando uma mensagem é enviada, ela é dividida em pedaços chamados pacotes, que são juntados novamente quando chegam ao destino.
+Também vimos que a rede pode ser organizada de formas diferentes (topologias), como estrela, barramento, anel e malha. Cada uma tem vantagens e limitações em custo, manutenção e tolerância a falhas.
 
-Para tudo funcionar direito, as redes seguem regras conhecidas como protocolos, que garantem que todos os aparelhos consigam conversar sem problemas. 
+Para entender a comunicação, os modelos em camadas ajudam bastante:
 
-Para ajudar a organizar tudo isso, existe a ideia de camadas, que são partes com funções diferentes dentro da rede. Usar camadas facilita entender e construir redes, e existem dois modelos que explicam como essas camadas funcionam: o modelo OSI e o modelo TCP/IP.
+- o OSI é mais detalhado e útil para estudo;
+- o TCP/IP é o modelo usado na prática da internet.
 
-O modelo OSI tem sete camadas: Física, Enlace, Rede, Transporte, Sessão, Apresentação e Aplicação. Cada uma faz uma parte do trabalho, desde enviar sinais pelos fios ou pelo ar, até mostrar os dados de forma que os programas possam usar. Esse modelo mostra como as informações são quebradas em partes, enviadas, recebidas, montadas novamente e entregues para os programas, tudo de maneira organizada, sem depender da marca dos equipamentos. 
+Na navegação web, protocolos como DNS, IP, TCP, HTTP e HTTPS trabalham juntos para encontrar sites, transportar pacotes e exibir páginas com segurança.
 
-Na prática, a maioria das redes usa o modelo TCP/IP, que é mais simples e tem quatro camadas: Acesso à Rede, Internet, Transporte e Aplicação. Ele é o modelo que faz a internet funcionar hoje. Cada camada tem sua função, como enviar dados para outros lugares, garantir que as mensagens cheguem inteiras e ajudar a web e e-mail a funcionarem. O TCP/IP define como os dados são separados, enviados e recebidos de volta, tornando tudo possível na internet.
-
-### <a id="a-internet"> A Internet
----
-
-A internet por sua vez nada mais é do que várias redes conectadas entre si, fazendo com que tudo funcione junto. Ela só existe porque temos regras, chamadas de protocolos, que ajudam os computadores, celulares e outros aparelhos a se entenderem e trocarem informações. É graças a essas regras que a internet funciona em qualquer lugar do mundo, mesmo usando aparelhos diferentes.
-
-<div class="text-center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/XO_classroom_network.jpg" aria-hidden="true" />
-
-</div>
-
-Um dos serviços mais famosos da internet é a Web (ou World Wide Web), criada para facilitar o acesso a documentos e informações. Para isso, usa o protocolo chamado HTTP, que permite que navegadores (como Chrome ou Firefox) busquem e exibam páginas que estão guardadas em servidores. Ou seja, a Web depende da internet para funcionar, mas não são a mesma coisa: a Web é só um dos muitos jeitos de usar a internet.
-
-Quando navegamos na Web, usamos links para pular de uma página para outra. Cada página ou recurso tem um endereço, chamado URL, que diz ao navegador onde encontrar o que queremos. Clicar em um link significa pedir ao navegador para buscar esse endereço e mostrar o conteúdo.
-
-Além da Web, a internet tem outros serviços feitos por diferentes protocolos: o FTP serve para baixar e enviar arquivos, o SMTP envia e-mails, e o DNS traduz nomes (como www.exemplo.com) para números que os aparelhos conseguem entender.
-
-Tudo isso funciona junto para facilitar o nosso dia a dia: você procura um site (DNS/URL), pede para o navegador buscar a página (HTTP), recebe o conteúdo (TCP/IP) e vê tudo organizado na tela.
-
-É para isso que existem as redes de computadores: para conectar tudo isso e permitir que a informação circule. Esse conhecimento é essencial para quem quer entender como a tecnologia funciona, trabalhar com programação e desenvolver novas soluções.
+Por fim, lembre-se: internet e Web não são sinônimos. A internet é a infraestrutura de redes; a Web é um serviço que funciona sobre ela.

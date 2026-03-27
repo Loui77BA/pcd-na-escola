@@ -12,8 +12,8 @@ series: "computacao-para-iniciantes"
 ---
 
 {% include figure.html 
-    src="https://blog.winco.com.br/wp-content/uploads/2018/02/sistemas-operacionais.jpg"
-    alt="Fundo de uma placa de circuito eletrônico com hexágonos contendo os logos dos sistemas operacionais Windows, MacOS, Linux, Chrome, Android e iOS."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/660b008e-a638-48a0-5810-10b96a785400/public"
+    alt="Logotipos de sistemas operacionais com efeito brilhante sobre um fundo escuro de placa de circuito. Estão organizados em três fileiras: na parte superior estão Windows, Apple e Linux; no meio estão Ubuntu, Android e Google Chrome; e na parte inferior estão Red Hat, Debian e dois ícones do FreeBSD."
 %}
 
 ## <a id="apresentacao"></a> Apresentação
@@ -31,115 +31,115 @@ O sistema operacional é como o comandante do computador, que faz tudo funcionar
 No início, antes de existirem sistemas operacionais, era preciso fazer quase tudo no computador de forma manual. Isso começou a mudar nos anos 1960, quando pessoas que trabalhavam na AT&T Bell Labs criaram um programa que facilitava o uso dos computadores. Em 1969, lançaram o UNIX, que foi um dos primeiros sistemas operacionais feitos para os computadores da época. 
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQT8GoUgozjzQK3E-vFcWCfyAQtVBpNnKIOaTgWgOSX3kjM"
-    alt="Tela exibindo o processo de inicialização do sistema UNIX 3 ponto 0 ponto 1 e comandos de login."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/224e3ffe-debc-4161-5e26-17819623af00/public"
+    alt="Monitor CRT antigo exibindo uma tela de terminal clássica com texto verde em um fundo escuro, mostrando o processo de inicialização e login de um sistema UNIX."
 %}
 
 Depois disso, vieram vários outros sistemas operacionais, como o BSD em 1977, o Apple DOS em 1978, o Apple SOS em 1980 e o MS-DOS em 1981. 
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTSbbKFXFFgQ5XoPmNAxa2uAXM2p5zZxIpcsof4uUAmX_Q"
-    alt="Imagem com três telas com terminais mostrando os sistemas operacionais Apple DOS, BSD e MS-DOS."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/7d71c71a-ba7d-4122-a8f7-35a5fcbee400/public"
+    alt="Três monitores CRT vintage sobre uma mesa de madeira em um ambiente escuro, cada um exibindo a interface de linha de comando de um sistema clássico: Apple DOS, BSD Unix e MS-DOS."
 %}
 
 O MS-DOS, por exemplo, era o sistema usado nos computadores da IBM e já deixava guardar arquivos em discos rígidos de 10 MB, além de organizar esses arquivos em pastas, como uma árvore com vários galhos. Com o passar do tempo, ele ganhou funções para ligar vários computadores em rede e um sistema de arquivos chamado FAT16, que acabou servindo de base para o Windows. 
 
 {% include figure.html 
-    src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Ms-dosdir.png"
-    alt="Tela de inicialização do MS-DOS 6 em um terminal preto. O comando dir exibe a lista de arquivos e diretórios do drive C."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/15a2ec03-71df-42ef-f70d-528fae330400/public"
+    alt="Monitor CRT antigo exibindo a interface de linha de comando clássica do sistema operacional MS-DOS, listando os arquivos básicos do sistema."
 %}
 
 Outro sistema famoso foi o MINIX, criado por Andrew S. Tanenbaum. Ele serviu de inspiração para Linus Torvalds criar o Linux em 1991. O Linux é diferente porque qualquer pessoa pode acessar o seu código e mudar o que quiser, de graça. Por isso, existem várias versões do Linux, feitas para usos diferentes, e muita gente usa essas versões sem pagar nada. 
 
 {% include figure.html 
-    src="https://upload.wikimedia.org/wikipedia/commons/6/61/MINIX_screenshot.png"
-    alt="Tela de terminal em um fundo preto, mostrando o processo de inicialização do sistema operacional Minix Release 3 e um terminal para login."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/663d09e8-b5c1-4e72-a7dc-1889ad2e5100/public"
+    alt="Monitor CRT exibindo a interface baseada em texto do sistema operacional MINIX 3, mostrando um sistema de janelas rudimentar com comandos de terminal sendo executados."
 %}
 
 O Windows surgiu a partir do MS-DOS e ficou muito conhecido entre as pessoas comuns em 1995, quando lançaram o Windows 95. Foi aí que apareceram o Menu Iniciar e a barra de tarefas, coisas que ainda usamos hoje.
 
 {% include figure.html 
-    src="https://upload.wikimedia.org/wikipedia/pt/9/90/Am_windows95_desktop.png"
-    alt="Área de trabalho do Windows 95, exibindo janelas do menu Iniciar, Meu Computador, WordPad, Paint e Calculadora."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/4550c11a-6c1b-4942-2a27-cc2853183500/public"
+    alt="Captura de tela da área de trabalho do Windows 95 clássico, com o Menu Iniciar aberto e janelas dos programas Meu Computador, WordPad, Paint e Calculadora."
 %}
 
 Em 2001 veio o Windows XP, que fez muito sucesso e ajudou a Microsoft a ficar ainda mais famosa entre quem usava computador em casa. 
 
 {% include figure.html 
-    src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Windows_XP_SP2_Boot_screen.png"
-    alt="Tela de inicialização do Windows XP em um fundo preto, mostrando o logo do sistema operacional e uma barra de carregamento."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/0d791d48-dae7-43fd-9bfb-fc5b4391a400/public"
+    alt="Monitor CRT antigo exibindo a clássica tela preta de carregamento do Windows XP, com o logotipo colorido e a barra de progresso azul."
 %}
 
 {% include figure.html 
-    src="https://upload.wikimedia.org/wikipedia/en/6/64/Windows_XP_Luna.png"
-    alt="Área de trabalho do Windows XP, exibindo o menu Iniciar aberto e a janela Meu Computador com a lista de unidades de disco."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/a320fdd0-19a0-4a14-a27e-167ea95ecf00/public"
+    alt="Captura de tela da área de trabalho do clássico Windows XP, mostrando o icônico papel de parede das colinas verdes, o Menu Iniciar aberto e a pasta Meus Documentos."
 %}
 
 Ainda em 2001, além do Windows XP, a Apple lançou o Mac OS X 10.0, um sistema que misturava partes do Mac antigo com ideias do Unix. Isso fez com que o macOS (nome que ele ganhou depois) ficasse mais estável, conseguisse rodar (executar) vários programas ao mesmo tempo sem travar e ainda tivesse uma tela mais bonita e moderna.
 
 {% include figure.html 
-    src="https://upload.wikimedia.org/wikipedia/en/d/d8/MacOSX10-0screenshot.png"
-    alt="Área de trabalho do Mac OS X 10.0 Cheetah, mostrando janelas abertas do Finder, Preferências do Sistema e o menu da barra de tarefas."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/48696846-97c7-4929-b597-ef459fa9a800/public"
+    alt="Captura de tela da interface clássica do Mac OS X tema Aqua, mostrando o Menu Apple aberto, uma janela do Finder e o painel de Preferências do Sistema."
 %}
 
 Depois do Windows XP, a Microsoft lançou outros sistemas. O Windows Vista, de 2007, trouxe mudanças na segurança e nos programas que fazem o computador conversar com impressoras e outros aparelhos, mas muita gente achou ele pesado e difícil de usar.
 
 {% include figure.html 
-    src="https://preview.redd.it/on-this-day-in-2007-windows-vista-was-released-v0-9hr2hcxfq4ge1.png?auto=webp&s=dc35715dce1c6b50588e33f308f0480255333d72"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/359169b6-c286-403f-19b7-79fb04be7200/public"
     alt="Área de trabalho do Windows Vista com o menu Iniciar e a Central de Boas-Vindas abertos. As janelas têm um design de vidro transparente."
 %}
 
 Em 2009 veio o Windows 7, que melhorou o que deu errado antes e ficou muito popular. 
 
 {% include figure.html 
-    src="https://upload.wikimedia.org/wikipedia/en/5/50/Windows_7_SP1_screenshot.png"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/32183078-6a11-4f37-822d-6b6286b6e400/public"
     alt="Área de trabalho do Windows 7 com o menu Iniciar aberto e a barra de tarefas visível. O papel de parede é o logo do sistema operacional."
 %}
 
 Mais tarde, apareceram o Windows 8 e 8.1 (2012–2013), que mudaram bastante a tela do computador para ficar melhor em aparelhos com toque, como tablets, mas nem todo mundo gostou.
 
 {% include figure.html 
-    src="https://upload.wikimedia.org/wikipedia/en/8/8e/Windows_8_Start_Screen.png"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/668488a5-8119-44ed-3292-913396300000/public"
     alt="Tela inicial do sistema operacional Windows 8, com a interface em formato de blocos coloridos para acesso a aplicativos e funcionalidades."
 %}
 
 O Windows 10, lançado em 2015, tentou juntar o melhor dos outros e recebeu atualizações ao longo do tempo. 
 
 {% include figure.html 
-    src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/sds-windows10-laptop-fy24?scl=1&fmt=png-alpha"
-    alt="Um laptop moderno com a área de trabalho do Windows 10, exibindo o menu Iniciar e o papel de parede padrão do sistema operacional."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/56eb4efa-42e9-4032-167d-f254c6fa0f00/public"
+    alt="Captura de tela da área de trabalho do Windows 10 no modo escuro, exibindo o Menu Iniciar e uma janela do Explorador de Arquivos abertos."
 %}
 
 Por fim, o Windows 11 chegou em 2021, com um visual novo, ficou mais seguro e funciona melhor em computadores mais modernos. 
 
 {% include figure.html 
-    src="https://upload.wikimedia.org/wikipedia/en/9/92/Windows_11_Desktop.png"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/4eb0eff3-2846-483c-e0c4-a9155464e400/public"
     alt="Área de trabalho do Windows 11 com o menu Iniciar e a barra de tarefas centralizados. O papel de parede abstrato tem tons de azul claro."
 %}
 
 Nesse meio tempo, o Linux virou uma base importante para servidores, supercomputadores e vários aparelhos diferentes. Algumas versões, como o Debian (de 1993), o Red Hat Enterprise Linux (desde 2002) e o Ubuntu (de 2004), tornaram tudo mais fácil para instalar, atualizar e arrumar o sistema. 
 
 {% include figure.html 
-    src="https://www.redhat.com/rhdc/managed-files/rhel-hero-ui-image-2x-optimized.png"
-    alt="Interface gráfica do Red Hat Hybrid Cloud Console em modo escuro, mostrando um resumo do estado de saúde e uso do sistema."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6a2b31d1-94f3-4fc3-fd39-c9c823095500/public"
+    alt="Captura de tela da área de trabalho do Red Hat Enterprise Linux com várias janelas abertas, incluindo um terminal atualizando o sistema, um navegador web, um gerenciador de arquivos e um editor de código."
 %}
 
 Para quem usa Linux no dia a dia, ele se tornou uma opção prática, com telas e menus fáceis de mexer (como o GNOME e o KDE), jeitos simples de baixar e instalar programas (como o APT, YUM/DNF, pacman) e sistemas modernos que ajudam o computador a ligar. 
 
 {% include figure.html 
-    src="https://www.gnome.org/img/laptop-dark.webp"
-    alt="Laptop mostrando um sistema operacional Linux com interface gráfica GNOME. A área de trabalho possui várias janelas de aplicativos abertas."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/914565e3-101d-4245-4abc-8dc7b754ff00/public"
+    alt="notebook sobre uma mesa de madeira. A tela exibe uma interface gráfica moderna, característica do ambiente GNOME no Linux, com um papel de parede de ondas abstratas em tons de verde e roxo. Na parte inferior central, há uma doc flutuante com os ícones do navegador Firefox, um gerenciador de arquivos, o Terminal e o editor de código Visual Studio Code."
     caption="Sistema operacional Linux com interface gráfica GNOME."
 %}
 
 {% include figure.html 
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kde_Plasma_6.png/800px-Kde_Plasma_6.png"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/84d82d2c-1ab9-47dc-18bb-79923ccee800/public"
     alt="Desktop de um sistema operacional Linux com interface gráfica KDE Plasma com o menu de aplicativos aberto, mostrando uma lista de categorias e ícones favoritos em um plano de fundo artístico."
     caption="Sistema operacional Linux com interface gráfica KDE Plasma."
 %}
 
 {% include figure.html 
-    src="https://i.ytimg.com/vi/3FQIrL7meB0/sddefault.jpg"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/69717d6f-385c-4718-bb0f-b09ff472b200/public"
     alt="Comparação visual entre os gerenciadores de pacotes APT, DNF e Pacman. Cada um é exibido em um terminal com seus respectivos comandos."
     caption="Comparação entre gerenciadores de pacotes APT, DNF e Pacman."
 %}
@@ -147,9 +147,9 @@ Para quem usa Linux no dia a dia, ele se tornou uma opção prática, com telas 
 Lá por 2007 e 2008, duas novidades mudaram tudo: o iOS, que veio com o iPhone, e o Android. O iOS é o sistema fechado que só funciona nos aparelhos da Apple, enquanto o Android, que é baseado no Linux, pode ser usado por várias marcas e é mais aberto. 
 
 {% include figure.html 
-    src="https://m-cdn.phonearena.com/images/article/148193-wide-two_940/iPhone-vs-Android-How-often-do-Apple-users-switch.webp?1686778681"
-    alt="Duas mãos seguram lado a lado um smartphone Samsung e um iPhone, mostrando as diferenças entre os sistemas operacionais Android e iOS."
-    caption="Comparação entre Android e iOS."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/47ed1b6e-250d-4f82-3b59-7c7528bdcc00/public"
+    alt="Duas mãos seguram lado a lado um smartphone Samsung e um iPhone, mostrando as diferenças entre os sistemas operacionais Android e iOS. O Samsung exibe a interface do Android com uma tela inicial personalizada, enquanto o iPhone mostra a interface do iOS com seus ícones organizados em uma grade."
+    caption="Comparação entre os sistemas operacionais Android e iOS em smartphones."
 %}
 
 Esses sistemas trouxeram o computador para o nosso bolso, ou seja, deixaram os celulares super inteligentes.
@@ -157,7 +157,7 @@ Esses sistemas trouxeram o computador para o nosso bolso, ou seja, deixaram os c
 Depois apareceram também o iPadOS (para os iPads, separado dos iPhones) e o ChromeOS (que funciona em computadores bem leves e foca em usar a internet). 
 
 {% include figure.html 
-    src="https://www.linuxadictos.com/wp-content/uploads/Chrome-OS-Flex.png"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/19f0ee2b-b886-4a51-81b4-e2f18a547c00/public"
     alt="Desktop do ChromeOS com o menu de aplicativos centralizado. O fundo é um papel de parede abstrato em tons de azul."
     caption="Área de trabalho do ChromeOS."
 %}
@@ -174,7 +174,7 @@ O sistema operacional é um tipo de programa que fica entre as partes físicas d
 Esse sistema pode ser bem complexo, porque cuida tanto das partes mais técnicas (como controlar os dispositivos e a memória) quanto das mais visuais e práticas, como a aparência da tela e os programas que ajudam a usar o computador. 
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSXgHlsboFMTbVs68OaM7oQAaYIvDIDolz_R8j2Z6ANjgY"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b76d07a8-c9ed-40dd-56f5-593a41ac9a00/public"
     alt="Diagrama ilustrando o funcionamento do computador com três camadas. A primeira são os aplicativos e tem os ítens editor de textos, reprodutor de mídia e editor gráfico. A segunda camada é o sistema operacional que está no centro. A terceira é o hardware que tem os ítens disco rígido, memória, portas USB e rede. A imagem mostra que o sistema operacional atua como um coordenador entre os aplicativos e o hardware."
     caption="Relação entre o sistema operacional, o hardware do computador e os aplicativos."
 %}
@@ -197,30 +197,30 @@ Essas são as plataformas para os diferentes dispositivos que temos, elas fazem 
 ## <a id="as-interfaces-de-uso"></a> As interfaces de uso
 ---
 
-Para que possamos usar o computador, é preciso uma forma de comunicação entre ele e a gente — isso é o que chamamos de "interface". Existem alguns tipos principais que são: 
+Para que possamos usar o computador, é preciso uma forma de comunicação entre ele e a gente, isso é o que chamamos de "interface". Existem alguns tipos principais que são: 
 
 A **interface de terminal**, também chamada de **linha de comando**, é bem técnica. Nela, usamos apenas o teclado para digitar comandos, como se estivéssemos conversando com o computador por mensagens.
 
 {% include figure.html 
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Linux_command-line._Bash._GNOME_Terminal._screenshot.png/960px-Linux_command-line._Bash._GNOME_Terminal._screenshot.png"
-    alt="Imagem de um terminal Linux com um fundo preto e texto verde. Vários comandos são executados, incluindo, ping fa.wikipedia.org, para testar a conexão de rede, pwd, que mostra o diretório atual como root, cd var, para mudar de diretório, ls -la, que lista o conteúdo da pasta var com detalhes, e yum search wiki, para procurar pacotes relacionados a wiki. A parte final da imagem mostra o progresso do gerenciador de pacotes enquanto ele baixa dados de repositórios."
-    caption="Interface de terminal mostrando o uso do comando ping e a busca por pacotes de software."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/f58808e7-03cf-4400-795e-383a5af72500/public"
+    alt="Monitor CRT antigo exibindo um terminal monocromático verde de um sistema UNIX, com o usuário executando comandos de diretório e abrindo um editor de texto."
+    caption="Interface de terminal em um sistema UNIX."
 %}
 
 A **interface textual** também utiliza texto, mas é um pouco mais amigável: possui menus, janelas e botões. Ela era comum em computadores mais antigos, especialmente nos anos 80 e começo dos 90, mas hoje em dia sua utilização é bem rara.
 
 {% include figure.html 
-    src="https://upload.wikimedia.org/wikipedia/commons/2/27/Linux-menuconfig.png"
-    alt="Tela de configuração do kernel do Linux, versão 2 ponto 6 ponto 32, com uma interface de texto azul. Ela exibe o menu principal com opções como, General setup, Processor type and features e Device Drivers. O menu possui atalhos de teclado as opções são Select, Exit e Help. Elas são mostradas na parte inferior."
-    caption="Interface textual de configuração do kernel do Linux com opções de menu para General setup e outras configurações."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/0945d1f8-4335-493e-ac4c-18c94f1fd400/public"
+    alt="Monitor CRT antigo exibindo a interface azul de um gerenciador de arquivos clássico em modo texto, com uma caixa de alerta vermelha no centro dizendo Error: File not found."
+    caption="Interface em modo texto de um gerenciador de arquivos da era DOS."
 %}
 
 A **interface gráfica**, ou **GUI** (do inglês Graphical User Interface), é a mais comum atualmente. Ela apresenta imagens, ícones, botões e janelas, permitindo que utilizemos o mouse, teclado ou até mesmo o toque na tela para controlar tudo. Essa interface é muito mais fácil para quem não deseja digitar comandos.
 
 {% include figure.html 
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/KDE_Plasma_6.3_desktop_screenshot.webp/1139px-KDE_Plasma_6.3_desktop_screenshot.webp.png"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/cc258df8-2e17-48c8-cf28-6f933ff0d800/public"
     alt="Área de trabalho do KDE Plasma. Duas janelas estão abertas, uma é o gerenciador de arquivos, mostrando pastas como, Templates, Music e Downloads. A outra janela, menor, é a caixa de diálogo, About KDE, que exibe um texto sobre a comunidade KDE e seu mascote, um dragão verde. A barra de tarefas na parte inferior da tela mostra ícones de aplicativos e a data."
-    caption="Área de trabalho com um sistema operacional Linux KDE Plasma, com a janela de informações e o gerenciador de arquivos abertos."
+    caption="Ambiente gráfico KDE Plasma, uma interface gráfica popular para sistemas Linux."
 %}
 
 ## <a id="as-partes-do-sistema-operacional"></a> As partes do sistema operacional
@@ -236,17 +236,17 @@ Mas, além dessa parte, os sistemas operacionais também têm várias funções 
 O kernel é como o “coração” (parte central) do sistema operacional, ele cuida de tudo dentro do computador: faz o processador funcionar, controla a memória, e garante que aparelhos como teclado, mouse e impressora estejam ligados e funcionando. Além disso, toma conta dos lugares onde os arquivos ficam guardados.
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQ3ODYTUS1HSKhep-1DZ4q0ARyNei4o1DMvtbzJxqMgQIw"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/14fd2515-48f2-4d40-aefe-3995a23b0800/public"
     alt="Diagrama que representa o Kernel como o núcleo de um sistema operacional. O Kernel está conectado a um processador, CPU, memória RAM, dispositivos de entrada e saída, teclado e mouse e um ícone circular que pode representar armazenamento ou outros periféricos. Uma seta apontando para o Kernel está rotulada como Chamada de sistema, indicando que ele gerencia as interações entre os componentes do hardware."
-    caption="Kernel, o núcleo do sistema operacional, conectando processador, memória e dispositivos de entrada/saída."
+    caption="Kernel do sistema operacional."
 %}
 
 Por exemplo: quando você vai assistir a um vídeo, o programa que está aberto pede ao sistema do computador algo como “preciso desse vídeo aqui”. Esse pedido é chamado de chamada de sistema (ou syscall). O sistema então procura o vídeo no computador, confere se você pode mesmo ver o arquivo, e faz uma ligação entre o programa e o vídeo, tudo isso sem que você perceba. 
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSFmZbboPzkQ7_nW67ZKx1fAc7CDPSzB4vbm7zKrk0Efzk"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/f972b1c6-7faa-4e0d-d2ec-3e689ed3a900/public"
     alt="Fluxograma que ilustra a interação entre um programa e o sistema operacional para acessar um vídeo. O fluxo começa com um Programa Aberto fazendo uma Chamada de Sistema para o Sistema Operacional. O sistema operacional realiza uma Busca e Validação. Se o Arquivo é Encontrado e Permissão é Concedida, ocorre uma Transmissão de Vídeo que leva à Reprodução no Player. Caso contrário, se o Arquivo Não é Encontrado ou Permissão é Negada, o fluxo leva a um Erro de Acesso."
-    caption="Fluxo de acesso a um vídeo por meio de uma chamada de sistema."
+    caption="Fluxo de acesso a um vídeo."
 %}
 
 ### <a id="gerenciamento-de-processos"></a> Gerenciamento de processos: controlando os programas abertos
@@ -255,15 +255,15 @@ Por exemplo: quando você vai assistir a um vídeo, o programa que está aberto 
 Toda vez que você abre um programa no computador, como um navegador, uma planilha ou um jogo, o sistema cria um processo para esse programa. Esse processo é como uma “caixinha” com tudo que o programa precisa: espaço na memória, tempo do processador e maneiras de conversar com outros programas.
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQ0zmMZSleWSJnLJH3lRLQAAdzwO0vFdyzWQx4uG6DYpOc"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/b8b993fb-b657-4057-76e2-d22216f35100/public"
     alt="Ilustração de um monitor de computador exibindo um diagrama sobre o conceito de Processo. O diagrama mostra três recursos principais que um processo utiliza, memória, representada por um chip de RAM, tempo do processador, representado por um chip de CPU e outros programas, representado por um ícone de setas de comunicação. A palavra Processo é o título central na parte superior da tela."
-    caption="Conceito de Processo, mostrando recursos como memória, tempo do processador e comunicação com outros programas."
+    caption="Conceito de Processo em um sistema operacional."
 %}
 
 O sistema operacional escolhe, de forma organizada, qual programa vai usar o processador em cada momento. Por exemplo, existe um jeito chamado "Round Robin" (ou "Rotação Circular"), em que cada programa tem sua vez de rodar (ser executado) por um tempinho, um depois do outro.
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQMu8SbRqXRTqTgfmirvxt2AXmeupprdujj3cu8NLcOVIU"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/aaa5b8b2-60f3-47f4-afe5-f4515dc89900/public"
     alt="Diagrama sobre a alocação de tempo do processador. A parte superior mostra um processador no centro, e os blocos de aplicativos editor, navegador e jogo são executados em um ciclo, ilustrando como o processador alterna entre eles. A parte inferior da imagem repete o conceito com a frase Rotação Circular, mostrando a troca de um único bloco, que representa o processador, entre os mesmos três aplicativos editor, navegador e jogo."
     caption="Alocação de tempo do processador usando o método de Rotação Circular (Round Robin)."
 %}
@@ -271,17 +271,17 @@ O sistema operacional escolhe, de forma organizada, qual programa vai usar o pro
 Tem também outro método, chamado "Fila de Prioridades", onde programas que precisam de respostas rápidas, como um editor de texto, acabam passando na frente e rodando antes dos outros.
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTzEaSbODOTTIczgMzC_OFZAexhUfyiDlwLTkuAmr-UDmU"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/16ce39db-1ae8-4e19-2c19-75719b8c5f00/public"
     alt="Diagrama que ilustra o conceito de Fila de Prioridades na alocação de tempo do processador. A parte superior mostra o processador no centro. Três blocos de aplicativos, editor, navegador e jogo, estão em uma fila, e uma seta indica que eles serão processados pelo processador. A parte inferior da imagem reforça o conceito, mostrando um bloco editor com prioridade sobre uma fila de outros aplicativos, incluindo navegador e jogo. O diagrama enfatiza que o processador atende aos aplicativos com base em uma fila priorizada."
     caption="Alocação de tempo do processador usando o método de Fila de Prioridades."
 %}
 
-Além disso, é importante garantir que um processo não atrapalhe o outro — isso se chama isolamento. E quando eles precisam trocar informações, o sistema usa formas de comunicação entre processos (IPC - do inglês Inter-Process Communication), como filas, tubos ou sinais para que consigam conversar.
+Além disso, é importante garantir que um processo não atrapalhe o outro, isso se chama isolamento. E quando eles precisam trocar informações, o sistema usa formas de comunicação entre processos (IPC - do inglês Inter-Process Communication), como filas, tubos ou sinais para que consigam conversar.
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRKE8OFd_LFRKY2NttTfwPqAUQ0HbGDuFPhX5ZJR4Jr58o"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/aaaed42f-c574-4342-e35d-97fffd2fe100/public"
     alt="Diagrama que ilustra o conceito de Isolamento e Comunicação entre Processos IPC. A parte superior mostra dois blocos, Processo A e Processo B, separados por uma linha pontilhada, indicando isolamento. A parte inferior da imagem descreve a Comunicação entre Processos, IPC, mostrando uma seta que conecta um processo ao Processo B, com ícones e rótulos para filas, tubos e sinais como métodos para essa comunicação."
-    caption="Isolamento e Comunicação entre Processos (IPC)."
+    caption="Isolamento e Comunicação entre Processos (IPC) em um sistema operacional."
 %}
 
 ### <a id="gerenciamento-de-memoria"></a> Gerenciamento de memória: onde os dados vivem temporariamente
@@ -294,17 +294,17 @@ A memória RAM é como uma mesa onde o computador coloca tudo o que está usando
 - **Swap**: quando falta espaço na RAM, o computador guarda parte das informações no disco rígido, liberando espaço para o que está sendo mais usado.
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTzbT_rzuFTQruV2VOb_OigAfIt6jcXykxqtoDX6wGiftg"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/7347b00f-c1a2-4914-191e-16045a56f300/public"
     alt="Diagrama que ilustra conceitos de gerenciamento de memória. A parte superior mostra a PAGINAÇÃO como uma grade de pequenos quadrados. Abaixo, a SEGMENTAÇÃO é ilustrada como blocos horizontais de tamanhos diferentes. Na parte inferior, o SWAP é representado por uma seta bidirecional entre um chip de memória RAM e um ícone de disco, simbolizando a troca de dados entre a memória e o disco."
-    caption="Gerenciamento de memória com Paginação, Segmentação e Swap."
+    caption="Técnicas de gerenciamento de memória: Paginação, Segmentação e Swap."
 %}
 
 Por exemplo: se você abre muitos programas ao mesmo tempo, o computador pode guardar os dados menos usados em um “arquivo especial” no disco, chamado swap, deixando a memória RAM livre para o que você está usando agora. 
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSFb461hQAaSZdDZnn_X6pxAQsJONZIa1dlX-Yi48I-yMo?width=426&height=407"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/637801b4-6c91-4d61-001a-4122d3497100/public"
     alt="Diagrama que ilustra o conceito de swap de memória. Três blocos de PROGRAMA são mostrados, e uma seta indica que eles ocupam espaço na memória RAM. Um segmento da RAM é representado por um bloco listrado, e uma seta aponta para baixo, em direção a um ícone de disco rotulado como ARQUIVO SWAP, indicando que o conteúdo desse segmento de memória foi movido para o disco."
-    caption="Swap de memória: movendo dados da RAM para o disco quando necessário."
+    caption="Conceito de swap de memória em um sistema operacional."
 %}
 
 ### <a id="entrada-e-saida"></a> Entrada e saída: como o computador conversa com o mundo
@@ -315,9 +315,9 @@ Tudo o que você faz no computador, como digitar ou ver algo na tela, passa por 
 Por exemplo, quando você aperta uma tecla, o teclado envia um sinal ao computador. O driver do teclado entende esse sinal e avisa ao sistema qual tecla foi apertada. Isso acontece por meio de interrupções, que são como avisos que pedem ao processador para dar atenção a algo importante naquele momento.
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRLbs6IL9_fTawmP8KKzFJ-AQhD0ayqf8KwUGgqbmTiWxU"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/c092b0a5-bca2-4c3c-909e-1257bc241000/public"
     alt="Fluxograma detalhado de uma interrupção de hardware. Uma ilustração de um teclado mostra uma pessoa digitando. Uma linha aponta de PRESSIONAR TECLA para um diagrama de ondas, que representa um sinal de interrupção. O sinal leva ao DRIVER, que se comunica com o TECLADO e o SISTEMA DE ENTRADA E SAÍDA. Uma seta do teclado aponta para um chip de processador rotulado como INTERRUPÇÃO, que então se conecta ao SISTEMA DE ENTRADA E SAÍDA. A partir daí, o fluxo de dados vai para um monitor que exibe a letra A, representando o resultado final da interrupção."
-    caption="Interrupção de hardware, desde a digitação até a exibição da letra na tela."
+    caption="Processo de uma interrupção de hardware para entrada de dados via teclado."
 %}
 
 ### <a id="explorador-de-arquivos"></a> Explorador de arquivos: a parte visual do sistema de arquivos
@@ -355,9 +355,9 @@ Vamos conhecer um pouco mais sobre alguns desses exploradores de arquivos a segu
 O Finder é o explorador do Mac usado para mexer nos arquivos. Nele, dá para mudar a forma como as pastas e documentos aparecem na tela (em Ícones, Lista, Colunas ou Galeria), e você pode deixar cada pasta do jeito que preferir, mudando o tamanho dos ícones, as colunas e a ordem dos arquivos. Usando o Quick Look, é possível ver rapidinho o que tem em um arquivo só apertando a tecla Espaço, e até fazer pequenas marcações ou anotações sem abrir o programa próprio.
 
 {% include figure.html 
-    src="https://nighteye.app/wp-content/uploads/2018/06/Finder-v2.png"
-    alt="Captura de tela da interface de desktop do macOS. A tela exibe o gerenciador de arquivos Finder aberto, mostrando a pasta Documentos, com subpastas como Music, PDFs, Videos e Work. Na barra lateral esquerda do Finder, há atalhos para favoritos e locais, como iCloud Drive e tags coloridas. Na área de trabalho, um ícone de pasta está visível, rotulado como VMware Shared Folders. A barra de menu superior e o dock na parte inferior da tela mostram vários ícones de aplicativos."
-    caption="Interface do Finder no macOS, mostrando a pasta Documentos e suas subpastas."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/754b43d5-cded-47c1-d835-b8980a0c3800/public"
+    alt="Captura de tela da área de trabalho do macOS no modo escuro, com uma janela do Finder centralizada exibindo as pastas do sistema e o Dock de aplicativos na parte inferior."
+    caption="Finder, o explorador de arquivos do macOS."
 %}
 
 No Finder, também dá para colocar tags (etiquetas coloridas) nos arquivos, o que facilita achar tudo depois, inclusive nas coisas que estão guardadas na nuvem pelo iCloud Drive. Isso ajuda a manter os arquivos sincronizados em todos os aparelhos Apple.
@@ -378,9 +378,9 @@ O Explorador de Arquivos é o programa que você usa para ver e organizar seus a
 No Windows 11, ele ficou ainda melhor: agora dá para abrir várias abas (como no navegador), a aparência está mais moderna e, nas versões mais novas, já dá para compactar e descompactar arquivos 7z e TAR sem precisar de programas extras. Houve também melhorias para deixar tudo mais rápido e estável, principalmente nas atualizações de 2025.
 
 {% include figure.html 
-    src="https://i.ytimg.com/vi/qvi9ghOqJwg/sddefault.jpg"
-    alt="Captura de tela do Windows 10, com o Explorador de Arquivos aberto no tema escuro. A janela mostra a seção Acesso rápido, com pastas favoritas como Área de Trabalho, Downloads, Documentos, Imagens, Músicas e Vídeos. Há também uma lista de Arquivos recentes. Na área de trabalho, os ícones de Lixeira e Documentos são visíveis. A barra de tarefas inferior exibe ícones de aplicativos e o relógio."
-    caption="Explorador de Arquivos do Windows (Explorer)."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/2be2fd16-5b33-4935-222b-92abac974f00/public"
+    alt="Captura de tela da área de trabalho do Windows 11 no modo escuro, exibindo uma janela do Explorador de Arquivos aberta na seção Este Computador."
+    caption="Explorador de Arquivos (Explorer) no Windows 11."
 %}
 
 Se quiser ver uma prévia de fotos, documentos e outros arquivos sem abrir nada, ative o Painel de Pré-visualização em Exibir → Painel de Pré-visualização. Ele mostra diretamente no Explorador como o arquivo é por dentro. 
@@ -393,9 +393,9 @@ O OneDrive aparece junto no Explorador, mostrando ícones e uma coluna de Status
 O Nautilus, agora chamado simplesmente de Files (Arquivos), é o programa que você usa para ver e organizar suas pastas no ambiente GNOME. Com ele, dá para procurar, abrir, mover e apagar arquivos, além de mexer com pendrives e acessar arquivos que estão em outros computadores da rede.
 
 {% include figure.html 
-    src="https://www.edivaldobrito.com.br/wp-content/uploads/2023/08/nautilus-do-gnome-45-ganhou-um-layout-de-barra-lateral-moderno-1.webp"
-    alt="Captura de tela do gerenciador de arquivos GNOME Nautilus. A janela, com tema escuro, exibe o conteúdo do diretório Home, que inclui ícones de pastas como Desktop, Documents, Downloads, Music, Pictures, Public, Templates e Videos. O painel lateral esquerdo lista locais favoritos como Home, Documents, Downloads e Pictures."
-    caption="Gerenciador de arquivos GNOME Nautilus (Files) com tema escuro."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/14f3f6d8-a732-422c-7b8d-5ab25d6dc200/public"
+    alt="Captura de tela do ambiente de área de trabalho Linux GNOME em modo escuro, exibindo o gerenciador de arquivos Nautilus aberto no diretório Home."
+    caption="Gerenciador de arquivos Nautilus (Files) no ambiente GNOME."
 %}
 
 Você pode escolher como prefere ver seus arquivos: em lista, ícones ou modo árvore. Também dá para ajustar coisas como a ordem em que as pastas aparecem e quais informações vão ser mostradas.
@@ -408,8 +408,8 @@ Na parte de propriedades do arquivo, é possível ver e mudar quem pode acessar 
 O Nemo é o gerenciador de arquivos usado no Cinnamon, que faz parte do sistema operacional Linux Mint. Ele foi criado a partir do Nautilus e é cuidado pela equipe do Mint. O Nemo traz funções que ajudam quem quer mexer no computador com mais facilidade, como dividir a tela em dois painéis (apertando <kbd>F3</kbd>), abrir várias abas ao mesmo tempo, acessar outros computadores ou servidores pela rede, e até conectar a serviços como SSH e FTP, se esses pacotes estiverem instalados.
 
 {% include figure.html 
-    src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Linux_Mint_18.3_Cinnamon_Nemo.png"
-    alt="Captura de tela do desktop Linux Mint. O gerenciador de arquivos está aberto, mostrando o conteúdo do diretório Home com ícones para as pastas Desktop, Documents, Downloads, Music, Pictures, Public, Templates e Videos. No painel lateral esquerdo, há uma lista de locais, incluindo My Computer, dispositivos e a rede. A barra de tarefas inferior exibe o menu, ícones de aplicativos e o relógio."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/7eccf111-1e2a-4429-ccf5-605553c15800/public"
+    alt="Captura de tela da área de trabalho do Linux Mint no modo escuro, exibindo o gerenciador de arquivos Nemo aberto na pasta do usuário com ícones verdes."
     caption="Gerenciador de arquivos Nemo no Linux Mint."
 %}
 
@@ -421,12 +421,12 @@ Além do painel extra com o <kbd>F3</kbd>, dá para usar atalhos no teclado para
 O Caja é o explorador que faz o gerenciamento de arquivos no MATE, que é um tipo de área de trabalho do computador usado em sistemas operacionais Linux, como o Ubuntu MATE e o Linux Mint.
 
 {% include figure.html 
-    src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Ubuntu_MATE_23.10_with_Caja_Yuru-bark-dark_theme_-_English.png"
-    alt="Captura de tela do desktop Ubuntu MATE. Duas janelas do gerenciador de arquivos Caja estão abertas: uma exibe o diretório Home, com ícones para as pastas Desktop, Documents, Downloads e Music. A outra janela, na frente, mostra o conteúdo da pasta Pictures. O painel lateral de ambas as janelas lista locais favoritos e dispositivos. A área de trabalho exibe ícones de atalho para Home e Computer. A barra de tarefas inferior mostra o menu e aplicativos abertos, incluindo o Control Center."
-    caption="Gerenciador de arquivos Caja no Ubuntu MATE."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/8e4ebbdf-2c25-4004-7ef1-a9dde00fa000/public"
+    alt="Captura de tela da área de trabalho de um sistema Linux com ambiente MATE, exibindo o gerenciador de arquivos Caja aberto na pasta do usuário."
+    caption="Gerenciador de arquivos Caja no ambiente MATE."
 %}
 
-Ele também mostra os ícones da área de trabalho, lê pen drives e CDs, e permite acessar arquivos em outros computadores pela internet (com SSH e FTP). Tudo isso de um jeito leve, fácil de entender e com opções de visualização clássicas. O Caja é bem parecido com o Nautilus, mas tem algumas diferenças que o tornam mais simples e rápido.
+Ele também mostra os ícones da área de trabalho, lê pen drives e permite acessar arquivos em outros computadores pela internet (com SSH e FTP). Tudo isso de um jeito leve, fácil de entender e com opções de visualização clássicas. O Caja é bem parecido com o Nautilus, mas tem algumas diferenças que o tornam mais simples e rápido.
 
 ### Recaptulando (revisão)
 ---
@@ -447,7 +447,7 @@ Um sistema de arquivos (FS) é o que organiza como os bytes viram arquivos e pas
 Também cuida para que tudo continue funcionando bem, mesmo se faltar luz, e pode trazer recursos como proteção dos dados, limites de espaço, cópias de segurança e integração com serviços de nuvem. Tudo isso influencia se o computador guarda seus arquivos de forma segura, rápida e fácil de acessar. 
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTyi_oQX-JVQbu2SXxogtnFAe0mr9vp9Yx0flmOPybJ1Oo"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/28cee6a1-7a26-42cc-a075-8586aac59e00/public"
     alt="Diagrama que ilustra a estrutura de um sistema de arquivos. No topo, a etiqueta FILE SYSTEM se conecta a ícones de um arquivo e uma pasta. Esses ícones, por sua vez, se conectam a uma camada intermediária que representa um banco de arquivos, com divisões para Proteção e Backup. Na parte inferior, tudo se conecta a um ícone de disco rígido, rotulado como HDD / SSD, representando o armazenamento físico dos dados."
     caption="Estrutura de um sistema de arquivos, mostrando como arquivos e pastas se conectam ao armazenamento físico."
 %}
@@ -462,7 +462,7 @@ O APFS (Apple File System) é o sistema de arquivos que vem nos computadores Mac
 Desde o macOS 11 (Big Sur), o Time Machine passou a guardar cópias de segurança usando APFS, o novo sistema de arquivos da Apple. Agora, o sistema consegue iniciar o computador a partir de uma “foto” protegida do sistema, o que ajuda a manter tudo funcionando direitinho mesmo depois de atualizações.
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQPxk4e7Q-TT6tyyIuxvsGbAd81LAgaYWbxf5TSCShSwgI?width=1024&height=1536"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/7f489972-a697-49d7-23f7-3ae9b0bc2b00/public"
     alt="Fluxograma que descreve as funcionalidades do APFS, o sistema de arquivos da Apple. O diagrama mostra o APFS no topo, conectando-se ao macOS e a ícones de pastas e arquivos. Ele destaca os recursos Clones, com um ícone de loop, Snapshots, com ícones de câmera, e Criptografia, com um ícone de cadeado, que são armazenados em um disco rígido rotulado como HDD e SSD na parte inferior."
     caption="Funcionalidades do APFS, o sistema de arquivos da Apple."
 %}
@@ -478,7 +478,7 @@ NTFS é o tipo de sistema de arquivos que o Windows usa normalmente. Ele traz re
 Alternate Data Streams (ou ADS) permitem colocar informações extras “escondidas” dentro de um arquivo, o que pode ser útil para alguns programas, mas também pode ter riscos de segurança. 
 
 {% include figure.html
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTghuWr5aIwQ7gKqYsom6MNASiKSvRwq6OYBXgmzmqyifw?width=1024&height=1536"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d5b8d221-2d0c-4de0-ed4f-57e9c321b900/public"
     alt="Fluxograma que descreve as funcionalidades do NTFS, o sistema de arquivos do Windows. O diagrama mostra o NTFS no topo, conectando-se a um ícone do Windows. Ele destaca recursos como Permissões, com um ícone de cadeado, Registro de Alterações, com um ícone de loop e pastas, e Alternate Data Streams ADS."
     caption="Funcionalidades do NTFS, o sistema de arquivos do Windows."
 %}
@@ -496,7 +496,7 @@ Desde a versão 5.10 do Linux, o sistema de arquivos ext4 ganhou um recurso cham
 O ext4 parou de guardar cada bloco separadamente e passou a usar extents (faixas de blocos juntos), facilitando o trabalho com arquivos grandes e evitando que eles fiquem espalhados no disco. Por exemplo, um extent pode guardar até 128 <abbr title="Megabytes">MB</abbr> de dados seguidos. Com alocação atrasada e alocador de vários blocos, o ext4 consegue agrupar blocos para guardar tudo junto, ocupando menos espaço e deixando as coisas mais organizadas. 
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQwPyn5eruYRomgA-HQ2pC-AfLRVP41uyagoXqudIP6wgc?width=1024&height=1536"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/eaa39ecb-62e8-40b8-462c-c93a39ff4100/public"
     alt="Fluxograma que descreve as funcionalidades do ext4, o sistema de arquivos do Linux. O diagrama mostra o ext4 no topo, conectando-se a um ícone do Tux, o pinguim mascote do Linux. Ele destaca recursos como Fast Commits, Extents, Alocação Atrasada, Alocação de Vários Blocos e Alternate Data Streams ADS com Alocação Atrasada."
     caption="Funcionalidades do ext4, o sistema de arquivos do Linux."
 %}
@@ -524,7 +524,7 @@ Todo sistema precisa saber quem pode abrir, mexer ou rodar arquivos e programas.
 Além disso, o Linux tem proteções ainda mais fortes chamadas de controle obrigatório de acesso, como o SELinux ou o AppArmor, que bloqueiam certas ações mesmo quando as permissões normais deixariam. Já o Windows e o macOS usam sistemas de proteção parecidos, como regras do Defender ou áreas isoladas chamadas sandboxes.
 
 {% include figure.html
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQMe_a3XrlbQ6rcrv6w33EnAe-95NZkJzfWgiSZN9IODrc?width=1536&height=1024"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/8ee922fc-dd24-4e62-6caa-c2b29f360700/public"
     alt="Diagrama que compara o gerenciamento de permissões de arquivo em Linux, Windows e macOS. O Linux é representado por um pinguim e mostra um sistema de permissões hierárquico para Dono, Grupo e Outros. O Windows, com o seu logo, é ilustrado com um ícone de lista, sugerindo uma lista de controle de acesso. O macOS, com um ícone de sua marca, mostra um diagrama de árvore com diferentes usuários e suas permissões. Todos os três sistemas são categorizados sob o título Permissões: quem pode fazer o quê."
     caption="Comparação do gerenciamento de permissões de arquivo em Linux, Windows e macOS."
 %}
@@ -539,7 +539,7 @@ Autenticação é quando se verifica se uma pessoa é realmente quem diz ser.
 - **No macOS**, o sistema usa contas e um lugar chamado Keychain para guardar senhas e chaves. Se você usar Touch ID ou Face ID, o computador cria uma espécie de “chave digital” para liberar o acesso sem mostrar sua senha verdadeira.
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRpXTe-fYl3QorjUzuSy6AXAbk31e5-ibgkGyULC6_-MjY?width=1536&height=1024"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/4917a3ed-722f-4d19-4d39-67bb55d5f500/public"
     alt="Diagrama que compara a autenticação de usuário em Linux, Windows e macOS. O Linux, com seu pinguim mascote, é representado com a sigla PAM, que se conecta a um cadeado, uma chave e um ícone de hierarquia de dono e outros. O Windows, com seu logo, é ilustrado com um ícone de usuário, um campo de senha ofuscado com asteriscos e um visto de confirmação. O macOS, com seu ícone, é representado por um cadeado, chaves, uma impressão digital e o termo Keychain. O diagrama geral está sob o título Autenticação: confirmando quem está usando."
     caption="Comparação da autenticação de usuário em Linux, Windows e macOS."
 %}
@@ -554,7 +554,7 @@ Guardar registros do que acontece no computador é importante para descobrir pro
 - **No macOS**, o sistema da Apple, os registros são guardados de um jeito moderno chamado Unified Logging. Assim, é possível ver mensagens com detalhes diferentes e filtrar essas mensagens para achar só o que foi feito por um programa ou parte do sistema. 
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQS_tpG7lLUSSrvDLfaiuQvCAUFBbFS02gATVcb2dRyp4gs?width=1536&height=1024"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/11429f56-0faa-4c74-b925-e27070620300/public"
     alt="Diagrama que compara a auditoria de sistemas em Linux, Windows e macOS. O Linux, com seu pinguim mascote, é representado com os termos SYSLOG e SYSTEMD-JOURNALD, juntamente com ícones de chave e impressão digital. O Windows, com seu logo, é ilustrado com um bloco rotulado Event Viewer, que se ramifica em sistema, segurança e aplicativos. O macOS, com seu ícone, é representado por um ícone de lista com uma lupa, e o termo Unified Logging. O diagrama geral está sob o título Auditoria: registrando o que acontece."
     caption="Comparação da auditoria de sistemas em Linux, Windows e macOS."
 %}
@@ -571,7 +571,7 @@ A criptografia serve para proteger os seus arquivos caso perca o computador ou e
 Alguns computadores já vêm com discos que fazem essa proteção sozinhos, mas o melhor é sempre usar uma senha ou chave junto, para garantir que ninguém acesse seus dados sem autorização.
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQU2uPciACkS5o4YH-CaWz8AbzGPyF4ECjqvj9LxtuEGeM?width=1536&height=1024"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/46cf2e43-b3b9-4e91-16a0-5432eb38ca00/public"
     alt="Diagrama que compara as soluções de criptografia em Linux, Windows e macOS. Sob o título Criptografia: protegendo o que acontece, o Linux é associado a LUKS, dm-crypt e fscrypt. O Windows é relacionado a BitLocker, senhas ocultas e TPM. O macOS é conectado a FileVault, chaves, cadeados e Unified Logging. Cada sistema operacional é representado pelo seu respectivo ícone ou mascote."
     caption="Comparação das soluções de criptografia em Linux, Windows e macOS."
 %}
@@ -613,7 +613,7 @@ De forma simples, essas três tecnologias são diferentes principalmente em como
 A escolha de qual usar depende do que você precisa: mais segurança, mais rapidez, menos gasto de recursos ou mais controle. Muitas vezes, as empresas combinam essas técnicas: por exemplo, um programa em contêineres dentro de uma VM, e partes mais importantes ainda protegidas por sandboxes — tudo isso para garantir mais camadas de segurança. 
 
 {% include figure.html 
-    src="https://www.controle.net/novo/assets/img/faq/diferencas-entre-containers-e-maquinas-virtuais-faq-container-um-ambiente-de-desenvolvimento-de-software-completo-controlenet.webp"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/65b6d865-a55f-46ca-ff7d-f8d85e183600/public"
     alt="Diagrama comparativo entre Virtualização e Container. O lado esquerdo, Virtualização, mostra um empilhamento de camadas: Hardware, Hypervisor, Sistema Operacional, Base de Dados e Aplicação, repetidas para cada máquina virtual. O lado direito, Container, mostra uma arquitetura mais simples: Hardware, Sistema Operacional, Container, e sobre ele, as camadas de Base de Dados e Aplicação, indicando que os containers compartilham o mesmo sistema operacional base."
     caption="Comparação entre Virtualização e Container."
 %}
@@ -648,9 +648,9 @@ Antigamente, em computadores mais antigos, os programas podiam usar qualquer par
 Hoje em dia, é diferente: cada programa recebe um “espaço” só dele na memória, chamado de espaço de endereços virtuais (por exemplo, de 0x00000000 até 0xFFFFFFFF).
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRguCX1NjDoQ5Vsk_NnZoJZAX6C4nk-AdydW-nDyXCW7Uw"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/3bf5358a-aacc-481d-3e0a-046562e7ad00/public"
     alt="Diagrama que explica como o sistema operacional organiza a memória. À esquerda, um livro aberto simboliza o conteúdo da memória. No centro, uma lista de endereços hexadecimais sob o título Índice e Espaço de Endereços. À direita, um diagrama de blocos de memória, indicando que o Sistema Operacional ocupa a maior parte do espaço de endereços inicial, seguido por dois blocos menores para Programas, cada um com seu próprio espaço de endereço."
-    caption="Como o sistema operacional organiza a memória."
+    caption="Índice e organização da memória pelo Sistema Operacional, mostrando o espaço de endereços virtuais para cada programa."
 %}
 
 Esses endereços são como endereços de mentira, pois o sistema é quem decide onde cada coisa vai na memória de verdade, sem que o programa precise saber disso. Assim, vários programas podem funcionar juntos e sem se atrapalhar, como se cada um tivesse sua própria memória separada, mesmo que estejam usando o mesmo computador (a mesma memória física).
@@ -666,7 +666,7 @@ Quando um programa é aberto, o sistema separa dois lugares principais para guar
 - **Heap** — é um espaço mais flexível, usado para guardar coisas que podem durar mais ou menos tempo (como listas, arquivos e outros objetos). O programa pede espaço na heap quando precisa e tem que devolver depois para não desperdiçar memória (memory leak). Esse espaço serve, por exemplo, para agrupar várias informações que o programa vai usar, como uma lista de contatos ou fotos.
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRTmbnA7d56RZVvVCpgimWmAV8UeZYuphgt-MxXAHY0ABk"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/849d0680-c321-45fa-d8ec-f1ee50d5f900/public"
     alt="Diagrama que explica o gerenciamento de memória pelo Sistema Operacional, mostrando a Pilha Stack e o Heap. A Pilha é ilustrada com blocos para Variável e Endereço, e uma seta indica que ela pede espaço do Heap. O Heap é mostrado com ícones que representam blocos de dados e estruturas complexas, e uma seta indica que ele devolve espaço para a Pilha."
     caption="Gerenciamento de memória pelo Sistema Operacional: Pilha e Heap."
 %}
@@ -676,7 +676,7 @@ Quando um programa é aberto, o sistema separa dois lugares principais para guar
 Em linguagens de programação como C, existe a função <code class="text-white">malloc</code> para pedir um pedaço de memória, e <code class="text-white">free</code> para devolver esse espaço quando não precisa mais. Se esquecer de devolver, a memória fica ocupada à toa, causando vazamento. Quando se diz que um programa tem um "vazamento de memória", significa que ele pediu memória e não a devolveu, fazendo com que a memória usada por ele aumente sem controle e fique indisponível para outros programas, eventualmente causando problemas.
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQSVBWrS-_rXRYOq2UY2VVJ5AagmwzKiJ38f17WEK61kQnI"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/0983b633-dbca-4faf-3398-5b16e097e100/public"
     alt="Fluxograma que explica a alocação de memória dinâmica. O processo começa com a chamada malloc, seguida por pedir um pedaço de memória. Uma vez alocada na MEMÓRIA, a memória é devolvida pela chamada free. Uma nota lateral destaca que se a memória não for devolvida, ela fica ocupada à toa, um problema conhecido como vazamento de memória."
     caption="Alocação de memória dinâmica: malloc e free."
 %}

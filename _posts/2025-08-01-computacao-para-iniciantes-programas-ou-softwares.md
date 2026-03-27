@@ -12,7 +12,7 @@ series: "computacao-para-iniciantes"
 ---
 
 {% include figure.html 
-    src="https://st4.depositphotos.com/12981370/24312/i/450/depositphotos_243120806-stock-photo-programmer-working-software-development-coding.jpg"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/841aed8a-d5e0-4116-8d43-3151869db800/public"
     alt="Um programador vestindo uma camisa azul-jeans escrevendo código em dois monitores usando um laptop no escritório."
 %}
 
@@ -31,7 +31,7 @@ series: "computacao-para-iniciantes"
 <p>Um programa nada mais é do que um tipo de algoritmo feito especialmente para o computador. A diferença é que ele precisa ser escrito de um jeito que o processador do computador consiga entender. O processador, que é como o “cérebro” do computador, não entende nossa linguagem falada, só entende números. E mais especificamente, números bem simples: 0 e 1.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRoJPYWLt1oQq3Egt6QUpxlAcB_YmqDw2d5GqEw6OieZ3U"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/61631274-f38a-4b1c-97c0-ea2669bd8600/public"
     alt="Ilustração com uma tela que mostra ícones de mídia e é convertida para números binários processados por um chip."
 %}
 
@@ -43,7 +43,7 @@ series: "computacao-para-iniciantes"
 <p>Para entender isso, pense no corpo humano. Nossos olhos captam as imagens, mas é o cérebro que interpreta o que estamos vendo. Do mesmo jeito, o computador usa várias camadas de "tradução" para transformar os zeros e uns em imagens, sons, textos e tudo mais que usamos no dia a dia.</p>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQRxLDMFTlkcRrl4l1mTUdTPATxPyatfSDCVhli2sLhb8fc"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/f4d7ad3b-0ef9-4e11-e287-65dec1839b00/public"
     alt="Diagrama em um fundo escuro que ilustra a conversão de código binário em linguagem de programação, resultando em um programa com imagens, sons e textos."
 %}
 
@@ -73,7 +73,7 @@ series: "computacao-para-iniciantes"
 </ul>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQQxIQaxCnkYS6V18h6xc4jRAb9fDkn7Sh_e7C060EyistE"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fbca66e4-d679-4de5-c2e4-6046de9a3100/public"
     alt="Níveis de linguagens de programação linguagem de máquina, baixo nível e alto nível."
 %}
 
@@ -94,7 +94,7 @@ series: "computacao-para-iniciantes"
 </ul>
 
 {% include figure.html 
-    src="https://1drv.ms/i/c/bf6f4302973a9faf/IQTJUOha4pCHTIAS3atn5rmVAf1C162HdkVsIr264NQM3WQ"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/19ef6f05-a9ac-44d6-3036-d9ba5707de00/public"
     alt="Diagrama em fundo escuro mostrando a diferença entre compilador e interpretador de software, desde o código-fonte até a execução."
 %}
 
@@ -113,7 +113,7 @@ series: "computacao-para-iniciantes"
 <p>Antigamente, os programas de computador eram muito mais simples. Muitas vezes, uma única pessoa dava conta de desenvolver tudo sozinha. Isso porque os sistemas tinham menos funções e os computadores eram bem limitados — sem internet, sem gráficos avançados, e só existiam em empresas ou instituições. Ter um computador em casa era algo raro até os anos 80. Só a partir dos anos 90 os computadores começaram a se espalhar mais, e nos anos 2000 isso se tornou algo comum.</p>
 
 {% include figure.html 
-    src="https://preview.redd.it/im-collecting-a-pc-for-each-era-of-gaming-v0-ngawb7qnn4kb1.jpg?width=640&crop=smart&auto=webp&s=028eca3a57a087d54829c01fa1df5af5ccc94284"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/78c13fe8-ac8f-4746-8fcb-ec9c6953da00/public"
     alt="Computador antigo dos anos 90 com monitor de tubo, teclado, mouse e caixas de som sobre uma mesa branca. Na tela, o Windows 95."
     caption="Computador antigo dos anos 90 com monitor de tubo e Windows 95."
 %}
@@ -121,9 +121,9 @@ series: "computacao-para-iniciantes"
 <p>Com o tempo, mais pessoas passaram a usar computadores, e a internet se popularizou. Isso fez com que os softwares precisassem ficar mais completos, com mais funções, bonitos, rápidos e capazes de atender milhares ou até milhões de pessoas ao mesmo tempo. Ou seja, os programas começaram a ficar bem mais complexos.</p>
 
 {% include figure.html 
-    src="https://i.ytimg.com/vi/WDK24SwJd98/maxresdefault.jpg"
-    alt="Computador de mesa antigo com monitor de tubo, teclado e mouse. Na tela, o sistema operacional Windows XP."
-    caption="Computador de mesa antigo com monitor de tubo e Windows XP."
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/1c18abc8-bf83-49de-f67e-462f54129400/public"
+    alt="Computador de mesa antigo com monitor LCD, teclado e mouse. Na tela, o sistema operacional Windows XP."
+    caption="Computador antigo com Windows XP."
 %}
 
 ### Como os programas eram instalados antes?
@@ -134,7 +134,7 @@ series: "computacao-para-iniciantes"
 <p>Esse processo era demorado, caro e manual. Tudo tinha que ser feito máquina por máquina. Depois que o software era instalado, ele costumava ficar assim por vários anos, com raras atualizações. Era um investimento alto, então os softwares eram feitos para durar bastante tempo, anos ou até mesmo décadas.</p>
 
 {% include figure.html 
-    src="https://s2-techtudo.glbimg.com/YwnKN_0eAWwo6bcQN6Z9sbmoC-k=/0x0:951x615/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2017/P/M/rXBUXoR7uMeMhTpbcTog/captura-de-tela-2017-08-02-as-10.05.10.png"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/6d0a9fac-6001-43cc-b248-1f25b18cf500/public"
     alt="Conjunto de disquetes de 3.5 polegadas, um deles mostrando a etiqueta de instalação do Adobe Photoshop 3.0 para Macintosh."
     caption="Conjunto de disquetes, um deles mostrando a etiqueta de instalação do Adobe Photoshop."
 %}
@@ -145,7 +145,7 @@ series: "computacao-para-iniciantes"
 <p>Com a internet, tudo ficou muito mais rápido e prático. Os programas passaram a ser distribuídos e atualizados pela internet, sem precisar de CDs ou técnicos especializados. Isso facilitou muito o uso dos softwares e também permitiu que eles se tornassem mais dinâmicos: hoje, atualizações acontecem com frequência, e os próprios usuários conseguem baixar, instalar e atualizar aplicativos com poucos cliques.</p>
 
 {% include figure.html 
-    src="https://br.easeus.com/images/en/data-recovery/drw-pro/windows-7-install-now.jpg"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/fc2e4713-5b6c-4465-9c5e-838cb4e57e00/public"
     alt="Tela de instalação do sistema operacional Windows 7, com a opção Install now, ou seja instalar agora, em destaque no centro da janela."
     caption="Tela de instalação do Windows 7."
 %}
@@ -188,7 +188,7 @@ series: "computacao-para-iniciantes"
 <p>O front-end é a parte do software que aparece para quem está usando. É tudo aquilo que a pessoa vê na tela: botões, menus, textos, imagens, cores, etc. É por meio do front-end que as pessoas interagem com o programa — seja clicando, digitando ou tocando na tela. Ele é responsável por mostrar as informações e mandar os comandos para o back-end.</p>
 
 {% include figure.html 
-    src="https://static.vecteezy.com/ti/vetor-gratis/p1/8649144-frontend-development-glyph-two-color-icon-vetor.jpg"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d575906b-c8be-4850-ffa4-592552e7ce00/public"
     alt="Ilustração com uma tela que mostra ícones de mídia para representar o front-end."
 %}
 <p>Essa parte visual precisa ser bonita, fácil de usar e funcionar bem. Para isso, várias equipes trabalham juntas: pessoas que trabalham com design, programação, experiência do usuário (UX) e testes.</p>
@@ -230,7 +230,7 @@ series: "computacao-para-iniciantes"
 <p>Enquanto o front-end é a parte que aparece, o back-end é tudo o que acontece por trás, nos bastidores. É a parte que processa os dados, guarda as informações no banco de dados, cuida da segurança, e responde aos comandos enviados pelo front-end.</p>
 
 {% include figure.html 
-    src="https://hermes.dio.me/articles/cover/5eb3e626-7123-4928-9751-6221b9400865.png"
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/68b61575-7a56-483e-5020-d7afdf088500/public"
     alt="Diagrama que representa as diferenças entre front-end e back-end. Mostra a comunicação entre o navegador do cliente como front-end e o servidor e o banco de dados que são o back-end."
 %}
 
