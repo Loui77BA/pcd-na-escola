@@ -1,0 +1,19 @@
+<!-- A11y Toolbar -->
+<button id="a11yToggle" class="a11y-toggle" aria-controls="a11yToolbar" aria-expanded="false" aria-hidden="true">
+  <span class="material-symbols-outlined" aria-hidden="true">accessibility_new</span>
+  <span class="sr-only">Opções de acessibilidade</span>
+</button>
+
+<nav id="a11yToolbar" class="a11y-toolbar" aria-label="Ferramentas de acessibilidade" aria-hidden="true">
+  <div class="a11y-title">Ferramentas</div>
+  <button type="button" id="a11yInc" aria-label="Aumentar tamanho do texto">🔍 Aumentar texto</button>
+  <button type="button" id="a11yDec" aria-label="Diminuir tamanho do texto">🔎 Diminuir texto</button>
+  <button type="button" id="a11yHC" aria-pressed="false" aria-label="Ativar alto contraste">🎯 Alto contraste</button>
+  <button type="button" id="a11yNeg" aria-pressed="false" aria-label="Ativar contraste negativo (inverter cores)">🌓 Contraste negativo</button>
+  <button type="button" id="a11yGray" aria-pressed="false" aria-label="Ativar escala de cinza">⚪ Escala de cinza</button>
+  <button type="button" id="a11yUnder" aria-pressed="false" aria-label="Sublinhar links">🔗 Links sublinhados</button>
+  <button type="button" id="a11yRead" aria-pressed="false" aria-label="Fonte legível">🅰️ Fonte legível</button>
+  <button type="button" id="a11yReset" aria-label="Redefinir ajustes">↩️ Redefinir</button>
+</nav>
+
+<div id="a11yLive" class="sr-only" aria-live="polite"></div>
