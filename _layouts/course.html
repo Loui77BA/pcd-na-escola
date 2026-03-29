@@ -2,6 +2,23 @@
 layout: default
 ---
 
+<!-- Course JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "{{ page.title | xml_escape }}",
+  "description": "{{ page.excerpt | strip_html | truncatewords: 30 | xml_escape }}",
+  "provider": {
+    "@type": "Organization",
+    "name": "{{ site.title | xml_escape }}",
+    "url": "{{ site.url }}"
+  },
+  "numberOfLessons": {{ page.lessons | size }},
+  "url": "{{ page.url | absolute_url }}"
+}
+</script>
+
 <nav class="course-breadcrumb" aria-label="Navegação">
   <a href="{{ '/cursos/' | relative_url }}">
     <i class="bi bi-arrow-left" aria-hidden="true"></i> Voltar aos cursos
