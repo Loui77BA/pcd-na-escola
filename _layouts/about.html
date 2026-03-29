@@ -31,6 +31,7 @@ layout: default
         <a href="{{ link.url }}" class="about-link" target="_blank" rel="noopener noreferrer">
           <i class="material-icons" aria-hidden="true">{{ link.icon | default: 'link' }}</i>
           {{ link.label }}
+          <span class="visually-hidden">(abre em nova janela)</span>
         </a>
         {% endfor %}
       </div>

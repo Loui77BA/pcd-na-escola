@@ -101,6 +101,8 @@ document.addEventListener('DOMContentLoaded', function() {
     toolbar.classList.toggle('active');
     const isActive = toolbar.classList.contains('active');
     toggle.setAttribute('aria-expanded', String(isActive));
+    toolbar.setAttribute('aria-hidden', String(!isActive));
+    if (isActive) toolbar.querySelector('button')?.focus();
   });
 
   document.addEventListener('click', (event) => {
@@ -110,6 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
         !toggle.contains(event.target)) {
       toolbar.classList.remove('active');
       toggle.setAttribute('aria-expanded', 'false');
+      toolbar.setAttribute('aria-hidden', 'true');
     }
   });
 

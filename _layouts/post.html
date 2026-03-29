@@ -29,6 +29,30 @@ layout: default
 }
 </script>
 
+<!-- Article JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title | xml_escape }}",
+  "description": "{{ page.description | default: page.excerpt | strip_html | truncatewords: 30 | xml_escape }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ page.author | default: site.author | xml_escape }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title | xml_escape }}",
+    "url": "{{ site.url }}"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }
+}
+</script>
+
 <article class="post-article">
   <!-- Breadcrumb -->
   <nav class="post-breadcrumb" aria-label="Navegação de localização">
@@ -38,11 +62,11 @@ layout: default
     {% if page.series %}
       {% assign series_label = site.data.series[page.series] | default: page.series %}
       <span class="post-breadcrumb-sep" aria-hidden="true">/</span>
-      <span class="post-breadcrumb-current">{{ series_label }}</span>
+      <span class="post-breadcrumb-current" aria-current="page">{{ series_label }}</span>
     {% elsif page.categories %}
       {% for cat in page.categories %}
       <span class="post-breadcrumb-sep" aria-hidden="true">/</span>
-      <span class="post-breadcrumb-current">{{ cat }}</span>
+      <span class="post-breadcrumb-current" aria-current="page">{{ cat }}</span>
       {% endfor %}
     {% endif %}
   </nav>
@@ -66,7 +90,7 @@ layout: default
     <div class="post-author-bar">
       <img class="post-author-avatar"
            src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/d7c459dd-2af6-4b69-d32c-42a13daf7c00/public"
-           alt=""
+           alt="Foto de {{ page.author | default: 'autor' }}"
            loading="lazy" />
       <div class="post-author-info">
         {% if page.author %}

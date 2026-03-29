@@ -12,7 +12,7 @@ series: "introducao-a-programacao"
 ---
 {% include centered-image.html
     src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg"
-    alt=""
+    alt="Logo da linguagem de programação Ruby"
     class="img-fluid"
 %}
 

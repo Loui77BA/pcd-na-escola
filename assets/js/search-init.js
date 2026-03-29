@@ -62,7 +62,7 @@
     var pf = await loadPagefind();
     if (!pf) {
       resultsContainer.innerHTML =
-        '<div class="text-center py-4">' +
+        '<div class="text-center py-4" role="status">' +
         '<i class="material-icons d-block fs-1 mb-2 text-muted-custom" aria-hidden="true">cloud_off</i>' +
         '<p class="text-muted-custom">A busca está disponível apenas no site publicado.<br>' +
         '<small>Em desenvolvimento local, execute: <code>npx pagefind --site _site</code></small></p>' +
@@ -74,7 +74,7 @@
 
     if (search.results.length === 0) {
       resultsContainer.innerHTML =
-        '<div class="text-center py-4">' +
+        '<div class="text-center py-4" role="status">' +
         '<i class="material-icons d-block fs-1 mb-2 text-muted-custom" aria-hidden="true">search_off</i>' +
         '<p class="text-muted-custom">Nenhum resultado encontrado para "<strong>' +
         escapeHtml(query) + '</strong>"</p>' +
@@ -173,6 +173,12 @@
     if (modalEl && modalInput) {
       bindSearch(modalInput, modalResults, MAX_MODAL_RESULTS);
 
+      var searchTrigger = null;
+
+      modalEl.addEventListener('show.bs.modal', function (e) {
+        searchTrigger = e.relatedTarget || document.activeElement;
+      });
+
       modalEl.addEventListener('shown.bs.modal', function () {
         modalInput.focus();
         loadPagefind(); // Pré-carrega enquanto o usuário digita
@@ -181,6 +187,10 @@
       modalEl.addEventListener('hidden.bs.modal', function () {
         modalInput.value = '';
         if (modalResults) modalResults.innerHTML = '';
+        if (searchTrigger) {
+          searchTrigger.focus();
+          searchTrigger = null;
+        }
       });
     }
 

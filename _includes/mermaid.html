@@ -15,6 +15,8 @@
   document.querySelectorAll('pre > code.language-mermaid').forEach((code) => {
     const wrapper = document.createElement('div');
     wrapper.className = 'mermaid';
+    wrapper.setAttribute('role', 'img');
+    wrapper.setAttribute('aria-label', 'Diagrama: ' + code.textContent.trim().substring(0, 300));
     // Mantém o texto puro do diagrama
     wrapper.textContent = code.textContent;
     // Substitui o <pre><code> pelo contêiner esperado pelo Mermaid
