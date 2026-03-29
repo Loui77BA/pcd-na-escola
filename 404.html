@@ -1,25 +1,25 @@
 ---
 permalink: /404.html
 layout: default
+title: "Página não encontrada"
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<div class="text-center py-5">
+  <h1 class="display-1 fw-bold text-white mb-3">404</h1>
+  <p class="lead text-muted-custom mb-4">A página solicitada não foi encontrada.</p>
 
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Página não encontrada</strong></p>
-  <p>A página solicitada não foi encontrada.</p>
+  <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+    <a class="btn btn-hero-primary" href="{{ '/' | relative_url }}">
+      <i class="material-icons me-2" aria-hidden="true">home</i>
+      Página inicial
+    </a>
+    <a class="btn btn-hero-outline" href="{{ '/artigos' | relative_url }}">
+      <i class="material-icons me-2" aria-hidden="true">auto_stories</i>
+      Artigos
+    </a>
+    <a class="btn btn-hero-outline" href="{{ '/cursos' | relative_url }}">
+      <i class="material-icons me-2" aria-hidden="true">play_circle</i>
+      Cursos
+    </a>
+  </div>
 </div>
