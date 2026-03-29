@@ -4,7 +4,7 @@ title: "Leitores de Tela: Como Funcionam e Como Interpretam Interfaces Gráficas
 description: "Este artigo explica o leitor de telas, tecnologia que possibilita o acesso digital para pessoas com deficiência visual. Apresenta seu histórico, funções e reforça a importância da inclusão."
 date: 2026-01-27 10:00:00 -0300
 author: Louise Suelen
-categories: [Educação, Acessibilidade Digital, Leitores de Tela]
+categories: [Acessibilidade Digital, Leitores de Tela]
 tags: [Leitores de Tela, Acessibilidade Digital]
 permalink: /leitores-de-tela-como-funcionam-e-como-interpretam-interfaces-graficas/
 lang: pt-BR
