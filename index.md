@@ -44,8 +44,6 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                             allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
                             allowfullscreen
                             title="Vídeo de apresentação do projeto PcD na Escola"
-                            aria-hidden="true"
-                            tabindex="-1"
                         ></iframe>
                     </div>
                 </div>
@@ -59,32 +57,32 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
 <section class="py-5" aria-labelledby="impact-title">
     <div class="container px-4">
         <h2 id="impact-title" class="visually-hidden">Nosso impacto em números</h2>
-        <div class="row g-4 justify-content-center text-center">
+        <dl class="row g-4 justify-content-center text-center mb-0">
             <div class="col-6 col-lg-3">
                 <div class="impact-stat">
-                    <span class="impact-number">{{ site.posts | size }}+</span>
-                    <span class="impact-label">artigos publicados</span>
+                    <dt class="impact-label">artigos publicados</dt>
+                    <dd class="impact-number">{{ site.posts | size }}+</dd>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="impact-stat">
-                    <span class="impact-number">{{ site.courses | size }}</span>
-                    <span class="impact-label">cursos em vídeo</span>
+                    <dt class="impact-label">cursos em vídeo</dt>
+                    <dd class="impact-number">{{ site.courses | size }}</dd>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="impact-stat">
-                    <span class="impact-number">{{ site.categories | size }}</span>
-                    <span class="impact-label">categorias de conteúdo</span>
+                    <dt class="impact-label">categorias de conteúdo</dt>
+                    <dd class="impact-number">{{ site.categories | size }}</dd>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="impact-stat">
-                    <span class="impact-number">{{ site.ferramentas | size }}</span>
-                    <span class="impact-label">{% if site.ferramentas.size == 1 %}ferramenta acessível{% else %}ferramentas acessíveis{% endif %}</span>
+                    <dt class="impact-label">{% if site.ferramentas.size == 1 %}ferramenta acessível{% else %}ferramentas acessíveis{% endif %}</dt>
+                    <dd class="impact-number">{{ site.ferramentas | size }}</dd>
                 </div>
             </div>
-        </div>
+        </dl>
     </div>
 </section>
 <section class="section-divider-line" aria-hidden="true"></section>
@@ -332,8 +330,6 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                             allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
                             allowfullscreen
                             title="Vídeo sobre desafios na educação inclusiva"
-                            aria-hidden="true"
-                            tabindex="-1"
                         ></iframe>
                     </div>
                 </div>
