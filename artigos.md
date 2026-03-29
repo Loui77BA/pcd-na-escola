@@ -4,6 +4,35 @@ title: "Artigos"
 description: "Artigos sobre educação, tecnologia e acessibilidade no PcD na Escola"
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "{{ page.title }}",
+  "description": "{{ page.description }}",
+  "url": "{{ page.url | absolute_url }}",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ site.posts | size }},
+    "itemListElement": [
+      {% for post in site.posts %}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "url": "{{ post.url | absolute_url }}",
+        "name": "{{ post.title }}"
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+
 <div class="py-5">
 
   <header class="mb-5 text-center text-lg-start">
