@@ -2332,7 +2332,6 @@ h1, h2, h3, h4 {
 
 .impact-number {
   display: block;
-  order: -1;
   font-size: 2.75rem;
   font-weight: 700;
   color: #fff;

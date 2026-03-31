@@ -60,26 +60,26 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
         <dl class="row g-4 justify-content-center text-center mb-0">
             <div class="col-6 col-lg-3">
                 <div class="impact-stat">
-                    <dt class="impact-label">artigos publicados</dt>
                     <dd class="impact-number">{{ site.posts | size }}+</dd>
+                    <dt class="impact-label">artigos publicados</dt>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="impact-stat">
-                    <dt class="impact-label">cursos em vídeo</dt>
                     <dd class="impact-number">{{ site.courses | size }}</dd>
+                    <dt class="impact-label">cursos em vídeo</dt>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="impact-stat">
-                    <dt class="impact-label">categorias de conteúdo</dt>
                     <dd class="impact-number">{{ site.categories | size }}</dd>
+                    <dt class="impact-label">categorias de conteúdo</dt>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="impact-stat">
-                    <dt class="impact-label">{% if site.ferramentas.size == 1 %}ferramenta acessível{% else %}ferramentas acessíveis{% endif %}</dt>
                     <dd class="impact-number">{{ site.ferramentas | size }}</dd>
+                    <dt class="impact-label">{% if site.ferramentas.size == 1 %}ferramenta acessível{% else %}ferramentas acessíveis{% endif %}</dt>
                 </div>
             </div>
         </dl>
@@ -95,7 +95,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                 <span class="section-tag">Publicações</span>
                 <h2 id="recent-articles-title" class="section-title-lg">Artigos recentes</h2>
             </div>
-            <a href="{{ '/artigos' | relative_url }}" class="btn btn-outline-custom rounded-pill px-4 d-none d-md-inline-flex align-items-center">
+            <a href="{{ '/artigos' | relative_url }}" class="btn btn-outline-custom rounded-pill px-4 d-none d-md-inline-flex align-items-center" aria-label="Ver todos os artigos">
                 Ver todos
                 <i class="material-icons ms-1 fs-6" aria-hidden="true">arrow_forward</i>
             </a>
@@ -133,8 +133,8 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
             {% endfor %}
         </div>
 
-        <div class="text-center mt-4 d-md-none">
-            <a href="{{ '/artigos' | relative_url }}" class="btn btn-outline-custom rounded-pill px-4">
+        <div class="text-center mt-4 d-md-none" aria-hidden="true">
+            <a href="{{ '/artigos' | relative_url }}" class="btn btn-outline-custom rounded-pill px-4" tabindex="-1">
                 Ver todos os artigos
                 <i class="material-icons align-middle ms-1 fs-6" aria-hidden="true">arrow_forward</i>
             </a>
@@ -150,7 +150,7 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
                 <span class="section-tag">Aprendizado</span>
                 <h2 id="courses-title" class="section-title-lg">Cursos disponíveis</h2>
             </div>
-            <a href="{{ '/cursos' | relative_url }}" class="btn btn-outline-custom rounded-pill px-4 d-none d-md-inline-flex align-items-center">
+            <a href="{{ '/cursos' | relative_url }}" class="btn btn-outline-custom rounded-pill px-4 d-none d-md-inline-flex align-items-center" aria-label="Ver todos os cursos">
                 Ver todos
                 <i class="material-icons ms-1 fs-6" aria-hidden="true">arrow_forward</i>
             </a>
@@ -188,8 +188,8 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
             {% endfor %}
         </div>
 
-        <div class="text-center mt-4 d-md-none">
-            <a href="{{ '/cursos' | relative_url }}" class="btn btn-outline-custom rounded-pill px-4">
+        <div class="text-center mt-4 d-md-none" aria-hidden="true">
+            <a href="{{ '/cursos' | relative_url }}" class="btn btn-outline-custom rounded-pill px-4" tabindex="-1">
                 Ver todos os cursos
                 <i class="material-icons align-middle ms-1 fs-6" aria-hidden="true">arrow_forward</i>
             </a>
