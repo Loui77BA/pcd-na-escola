@@ -32,41 +32,18 @@
   });
 </script>
 {% if page.math %}
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath:  [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']],
-      processEscapes: true
-    },
-    chtml: {
-      displayAlign: 'center'
-    },
-    options: {
-      enableMenu: true,
-      menuOptions: {
-        settings: {
-          assistiveMml: true
-        }
-      }
-    },
-    startup: {
-      ready: function () {
-        MathJax.startup.defaultReady();
-        MathJax.startup.promise.then(function () {
-          document.querySelectorAll('mjx-container').forEach(function (node) {
-            if (!node.getAttribute('role')) {
-              node.setAttribute('role', 'math');
-            }
-          });
-        });
-      }
-    }
-  };
-</script>
-<script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      { left: '$$', right: '$$', display: true },
+      { left: '\\[', right: '\\]', display: true },
+      { left: '$', right: '$', display: false },
+      { left: '\\(', right: '\\)', display: false }
+    ],
+    throwOnError: false,
+    output: 'mathml'
+  });"></script>
 {% endif %}
 
 {% include a11y-toolbar.html %}

@@ -56,7 +56,7 @@ O segundo passo é tornar o projeto disponível, para isso foi utilizado o GitHu
 ## Tecnologias usadas
 
 ```
-HTML | CSS | JavaScript | Ruby on Rails | Jekyll | GitHub | GitHub Pages | Markdown | Bootstrap | ARIA | Latex | MathJax
+HTML | CSS | JavaScript | Ruby on Rails | Jekyll | GitHub | GitHub Pages | Markdown | Bootstrap | ARIA | LaTeX | KaTeX
 ```
 
 ## Acesso ao site

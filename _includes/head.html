@@ -19,6 +19,9 @@
 <link rel="stylesheet" href="{{ '/assets/css/a11y-toolbar.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/cf-player.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+{% if page.math %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css">
+{% endif %}
 
 <!-- RSS feed -->
 <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
