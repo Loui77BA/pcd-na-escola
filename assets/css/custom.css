@@ -1,3 +1,15 @@
+/* --- Equações matemáticas acessíveis (MathA11y + KaTeX) --- */
+.math-a11y-display {
+  display: block;
+  text-align: center;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+.math-a11y-inline {
+  display: inline;
+}
+
 /* --- Variáveis de Design (Dark Mode Moderno) --- */
 :root {
   --bg-body: #121214;        /* Fundo principal (quase preto) */

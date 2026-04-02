@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Teste KaTeX com Acessibilidade"
+title: "Teste de Equações Matemáticas Acessíveis"
 date: 2026-04-02
 math: true
 categories: [teste]
-description: "Página de teste para verificar a renderização de expressões matemáticas com KaTeX e acessibilidade para leitores de tela."
+description: "Página de teste para verificar a renderização de expressões matemáticas com KaTeX e acessibilidade para leitores de tela via aria-label."
 ---
 
 ## Equação inline
@@ -32,7 +32,7 @@ $$J_n(x) = \frac{1}{\pi} \int_0^\pi \cos(n\tau - x\sin\tau) d\tau$$
 ## Como verificar a acessibilidade
 
 1. Abra o DevTools (F12) e inspecione uma fórmula renderizada.
-2. Procure o elemento `<math>` com atributo `xmlns="http://www.w3.org/1998/Math/MathML"`.
-3. Ele deve conter MathML nativo com elementos semânticos (`<msup>`, `<mfrac>`, `<mrow>`, etc.).
-4. O KaTeX com `output: 'mathml'` gera MathML nativo diretamente no DOM, sem elementos ocultos.
+2. O elemento wrapper deve ter `role="math"` e um `aria-label` com a descrição textual em português.
+3. O conteúdo visual (KaTeX HTML) deve estar marcado com `aria-hidden="true"`.
+4. O leitor de tela deve ler apenas o `aria-label`, ignorando a renderização visual.
 5. Use um leitor de tela (NVDA, JAWS ou VoiceOver) para confirmar que as fórmulas são lidas corretamente.
