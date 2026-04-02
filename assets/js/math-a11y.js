@@ -90,6 +90,11 @@ var MathA11y = (function () {
     '\\prod': 'produtório'
   };
 
+  function isSimpleToken(text) {
+    var t = text.trim();
+    return /^[a-zA-Z]$/.test(t) || /^\d+$/.test(t);
+  }
+
   function latexToText(latex) {
     var input = latex.trim();
     var result = parseExpr(input, 0);
@@ -146,58 +151,56 @@ var MathA11y = (function () {
         continue;
       }
 
-      // Operadores
+      // Operadores (com vírgula antes para pausa semântica)
       if (ch === '+') {
-        parts.push('mais');
+        parts.push(', mais');
         pos++;
         continue;
       }
       if (ch === '=') {
-        parts.push('igual a');
+        parts.push(', igual a');
         pos++;
         continue;
       }
       if (ch === '-') {
-        // Sinal negativo vs subtração: se anterior é vazio ou operador, é sinal
         var prev = parts.length > 0 ? parts[parts.length - 1] : '';
-        if (prev === '' || prev === 'mais' || prev === 'igual a' || prev === 'menos' ||
-            prev === 'abre parênteses' || prev === 'abre colchetes') {
-          parts.push('menos');
-        } else {
-          parts.push('menos');
-        }
+        var isSign = !prev || prev === ', igual a' || prev === ', mais' ||
+                     prev === ', menos' || prev === 'negativo' ||
+                     prev.indexOf('abre') !== -1 || prev.indexOf(' de') !== -1 ||
+                     prev.indexOf('sobre') !== -1;
+        parts.push(isSign ? 'negativo' : ', menos');
         pos++;
         continue;
       }
       if (ch === '<') {
-        parts.push('menor que');
+        parts.push(', menor que');
         pos++;
         continue;
       }
       if (ch === '>') {
-        parts.push('maior que');
+        parts.push(', maior que');
         pos++;
         continue;
       }
 
-      // Parênteses e colchetes
+      // Parênteses e colchetes (vírgula antes de abrir, vírgula depois de fechar)
       if (ch === '(') {
-        parts.push('abre parênteses');
+        parts.push(', abre parênteses,');
         pos++;
         continue;
       }
       if (ch === ')') {
-        parts.push('fecha parênteses');
+        parts.push('fecha parênteses,');
         pos++;
         continue;
       }
       if (ch === '[') {
-        parts.push('abre colchetes');
+        parts.push(', abre colchetes,');
         pos++;
         continue;
       }
       if (ch === ']') {
-        parts.push('fecha colchetes');
+        parts.push('fecha colchetes,');
         pos++;
         continue;
       }
@@ -263,13 +266,13 @@ var MathA11y = (function () {
       if (pos < input.length) {
         var delim = input[pos];
         pos++;
-        if (delim === '(') return { text: 'abre parênteses', pos: pos };
-        if (delim === '[') return { text: 'abre colchetes', pos: pos };
-        if (delim === '{' || delim === '\\') return { text: 'abre chaves', pos: pos };
-        if (delim === '|') return { text: 'abre valor absoluto', pos: pos };
-        if (delim === '.') return { text: '', pos: pos }; // \left. = delimitador vazio
+        if (delim === '(') return { text: ', abre parênteses,', pos: pos };
+        if (delim === '[') return { text: ', abre colchetes,', pos: pos };
+        if (delim === '{' || delim === '\\') return { text: ', abre chaves,', pos: pos };
+        if (delim === '|') return { text: ', abre valor absoluto,', pos: pos };
+        if (delim === '.') return { text: '', pos: pos };
       }
-      return { text: 'abre parênteses', pos: pos };
+      return { text: ', abre parênteses,', pos: pos };
     }
 
     if (fullCmd === '\\right') {
@@ -277,13 +280,13 @@ var MathA11y = (function () {
       if (pos < input.length) {
         var rDelim = input[pos];
         pos++;
-        if (rDelim === ')') return { text: 'fecha parênteses', pos: pos };
-        if (rDelim === ']') return { text: 'fecha colchetes', pos: pos };
-        if (rDelim === '}' || rDelim === '\\') return { text: 'fecha chaves', pos: pos };
-        if (rDelim === '|') return { text: 'fecha valor absoluto', pos: pos };
+        if (rDelim === ')') return { text: 'fecha parênteses,', pos: pos };
+        if (rDelim === ']') return { text: 'fecha colchetes,', pos: pos };
+        if (rDelim === '}' || rDelim === '\\') return { text: 'fecha chaves,', pos: pos };
+        if (rDelim === '|') return { text: 'fecha valor absoluto,', pos: pos };
         if (rDelim === '.') return { text: '', pos: pos };
       }
-      return { text: 'fecha parênteses', pos: pos };
+      return { text: 'fecha parênteses,', pos: pos };
     }
 
     // \frac{num}{den}
@@ -294,7 +297,10 @@ var MathA11y = (function () {
       pos = skipSpaces(input, pos);
       var den = consumeArg(input, pos);
       pos = den.pos;
-      return { text: num.text + ' sobre ' + den.text, pos: pos };
+      if (isSimpleToken(num.text) && isSimpleToken(den.text)) {
+        return { text: num.text + ' sobre ' + den.text, pos: pos };
+      }
+      return { text: 'início de fração, ' + num.text + ', sobre, ' + den.text + ', fim de fração', pos: pos };
     }
 
     // \sqrt[n]{x} ou \sqrt{x}
@@ -396,14 +402,17 @@ var MathA11y = (function () {
     if (text === '2') return { text: 'ao quadrado', pos: arg.pos };
     if (text === '3') return { text: 'ao cubo', pos: arg.pos };
 
-    return { text: 'elevado a ' + text, pos: arg.pos };
+    if (isSimpleToken(text)) {
+      return { text: 'elevado a ' + text, pos: arg.pos };
+    }
+    return { text: 'elevado a, início do expoente, ' + text + ', fim do expoente', pos: arg.pos };
   }
 
   function parseSubscript(input, pos) {
     // pos aponta para '_'
     pos++; // pular '_'
     var arg = consumeArg(input, pos);
-    return { text: 'subscrito ' + arg.text, pos: arg.pos };
+    return { text: 'índice ' + arg.text, pos: arg.pos };
   }
 
   function consumeArg(input, pos) {
@@ -437,18 +446,7 @@ var MathA11y = (function () {
   }
 
   function cleanText(text) {
-    // Normalizar espaços múltiplos
     text = text.replace(/\s+/g, ' ').trim();
-    // Inserir vírgulas entre blocos semânticos para pausas naturais no leitor de tela
-    text = text.replace(/ (igual a) /g, ', $1 ');
-    text = text.replace(/ (mais) /g, ', $1 ');
-    text = text.replace(/ (menos) (?!infinito)/g, ', $1 ');
-    text = text.replace(/ (sobre) /g, ' $1 ');
-    text = text.replace(/ (abre parênteses)/g, ', $1');
-    text = text.replace(/(fecha parênteses) /g, '$1, ');
-    text = text.replace(/ (abre colchetes)/g, ', $1');
-    text = text.replace(/(fecha colchetes) /g, '$1, ');
-    // Limpar vírgulas duplicadas
     text = text.replace(/,\s*,/g, ',');
     text = text.replace(/^\s*,\s*/, '');
     text = text.replace(/\s*,\s*$/, '');
@@ -640,12 +638,15 @@ var MathA11y = (function () {
 
   function createA11yElement(latex, display) {
     var label = latexToText(latex);
+    if (display) {
+      label = label + '.';
+    }
     var tag = display ? 'div' : 'span';
     var cssClass = display ? 'math-a11y math-a11y-display' : 'math-a11y math-a11y-inline';
 
     var wrapper = document.createElement(tag);
     wrapper.className = cssClass;
-    wrapper.setAttribute('role', 'math');
+    wrapper.setAttribute('role', 'img');
     wrapper.setAttribute('aria-label', label);
 
     var visual = document.createElement('span');
