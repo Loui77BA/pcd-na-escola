@@ -95,6 +95,41 @@ var MathA11y = (function () {
     return /^[a-zA-Z]$/.test(t) || /^\d+$/.test(t);
   }
 
+  var GREEKS = ['pi','tau','alfa','beta','gama','delta','épsilon','teta','lambda','mu','sigma','ômega','fi','psi'];
+
+  function isValueToken(token) {
+    if (!token) return false;
+    var t = token.trim().replace(/,/g, '');
+    if (!t) return false;
+    if (/^[a-zA-Z0-9]/.test(t) && t.indexOf('abre') === -1 && t.indexOf('fecha') === -1
+        && t.indexOf('mais') === -1 && t.indexOf('menos') === -1 && t.indexOf('igual') === -1
+        && t.indexOf('negativo') === -1 && t.indexOf('vezes') === -1 && t.indexOf('menor') === -1
+        && t.indexOf('maior') === -1) return true;
+    if (t === 'ao quadrado' || t === 'ao cubo') return true;
+    if (t.indexOf('fim d') === 0) return true;
+    if (t === 'fecha parênteses' || t === 'fecha colchetes') return true;
+    if (GREEKS.indexOf(t) !== -1) return true;
+    return false;
+  }
+
+  function isDifferential(token) {
+    if (!token) return false;
+    var t = token.trim();
+    return /^d[a-zA-Z]$/.test(t) || /^d /.test(t);
+  }
+
+  function pushWithImplicitMul(parts, token) {
+    if (isDifferential(token)) {
+      parts.push(token);
+      return;
+    }
+    var prev = parts.length > 0 ? parts[parts.length - 1] : '';
+    if (isValueToken(prev) && isValueToken(token)) {
+      parts.push('vezes');
+    }
+    parts.push(token);
+  }
+
   function latexToText(latex) {
     var input = latex.trim();
     var result = parseExpr(input, 0);
@@ -121,7 +156,12 @@ var MathA11y = (function () {
       if (ch === '\\') {
         var cmdResult = parseCommand(input, pos);
         if (cmdResult.text !== null) {
-          parts.push(cmdResult.text);
+          var cmdText = cmdResult.text;
+          if (isValueToken(cmdText)) {
+            pushWithImplicitMul(parts, cmdText);
+          } else {
+            parts.push(cmdText);
+          }
         }
         pos = cmdResult.pos;
         continue;
@@ -138,7 +178,7 @@ var MathA11y = (function () {
       // Superscript
       if (ch === '^') {
         var supResult = parseSuperscript(input, pos);
-        parts.push(supResult.text);
+        pushWithImplicitMul(parts, supResult.text);
         pos = supResult.pos;
         continue;
       }
@@ -146,7 +186,7 @@ var MathA11y = (function () {
       // Subscript
       if (ch === '_') {
         var subResult = parseSubscript(input, pos);
-        parts.push(subResult.text);
+        pushWithImplicitMul(parts, subResult.text);
         pos = subResult.pos;
         continue;
       }
@@ -221,9 +261,28 @@ var MathA11y = (function () {
             numStr += input[pos];
             pos++;
           }
-          parts.push(numStr);
+          pushWithImplicitMul(parts, numStr);
+        } else if (ch === 'd') {
+          // Detectar diferencial: d seguido de letra ou \comando
+          var nextPos = pos + 1;
+          if (nextPos < input.length && /[a-zA-Z]/.test(input[nextPos]) && input[nextPos] !== 'd') {
+            parts.push('d' + input[nextPos]);
+            pos += 2;
+          } else if (nextPos < input.length && input[nextPos] === '\\') {
+            var peek = parseCommand(input, nextPos);
+            if (peek.text) {
+              parts.push('d ' + peek.text);
+              pos = peek.pos;
+            } else {
+              pushWithImplicitMul(parts, ch);
+              pos++;
+            }
+          } else {
+            pushWithImplicitMul(parts, ch);
+            pos++;
+          }
         } else {
-          parts.push(ch);
+          pushWithImplicitMul(parts, ch);
           pos++;
         }
         continue;
@@ -297,6 +356,21 @@ var MathA11y = (function () {
       pos = skipSpaces(input, pos);
       var den = consumeArg(input, pos);
       pos = den.pos;
+
+      var numTrim = num.text.trim();
+      var denTrim = den.text.trim();
+
+      // Detectar derivada: \frac{d}{dx}
+      if (numTrim === 'd' && /^d\s*[a-zA-Z]/.test(denTrim)) {
+        var varName = denTrim.replace(/^d\s*/, '');
+        return { text: 'derivada em relação a ' + varName + ' de,', pos: pos };
+      }
+      // Derivada parcial: \frac{\partial}{\partial x}
+      if (numTrim === 'parcial' && /^parcial\s/.test(denTrim)) {
+        var pVarName = denTrim.replace(/^parcial\s*/, '');
+        return { text: 'derivada parcial em relação a ' + pVarName + ' de,', pos: pos };
+      }
+
       if (isSimpleToken(num.text) && isSimpleToken(den.text)) {
         return { text: num.text + ' sobre ' + den.text, pos: pos };
       }
@@ -346,10 +420,10 @@ var MathA11y = (function () {
       }
 
       if (lowerLim && upperLim) {
-        return { text: opName + ' de ' + lowerLim + ' até ' + upperLim + ' de', pos: pos };
+        return { text: opName + ' de ' + lowerLim + ' até ' + upperLim + ',', pos: pos };
       }
       if (lowerLim) {
-        return { text: opName + ' com ' + lowerLim + ' de', pos: pos };
+        return { text: opName + ' de ' + lowerLim + ',', pos: pos };
       }
       return { text: opName + ' de', pos: pos };
     }
@@ -433,7 +507,7 @@ var MathA11y = (function () {
     // Caractere simples
     var ch = input[pos];
     pos++;
-    if (ch === '-') return { text: 'menos', pos: pos };
+    if (ch === '-') return { text: 'negativo', pos: pos };
     if (ch === '+') return { text: 'mais', pos: pos };
     return { text: ch, pos: pos };
   }
