@@ -190,61 +190,61 @@ var MathA11y = (function () {
         continue;
       }
 
-      // Operadores (com vírgula antes para pausa semântica)
+      // Operadores
       if (ch === '+') {
         var prevPlus = parts.length > 0 ? parts[parts.length - 1] : '';
-        var isPlusSign = !prevPlus || prevPlus === ', igual a' || prevPlus === ', mais' ||
-                         prevPlus === ', menos' || prevPlus === 'menos' ||
+        var isPlusSign = !prevPlus || prevPlus === 'igual a' || prevPlus === 'mais' ||
+                         prevPlus === 'menos' ||
                          prevPlus.indexOf('abre') !== -1 || prevPlus.indexOf(' de') !== -1 ||
                          prevPlus.indexOf('sobre') !== -1;
-        parts.push(isPlusSign ? 'mais' : ', mais');
+        parts.push('mais');
         pos++;
         continue;
       }
       if (ch === '=') {
-        parts.push(', igual a');
+        parts.push('igual a');
         pos++;
         continue;
       }
       if (ch === '-') {
         var prev = parts.length > 0 ? parts[parts.length - 1] : '';
-        var isSign = !prev || prev === ', igual a' || prev === ', mais' ||
-                     prev === ', menos' || prev === 'menos' ||
+        var isSign = !prev || prev === 'igual a' || prev === 'mais' ||
+                     prev === 'menos' ||
                      prev.indexOf('abre') !== -1 || prev.indexOf(' de') !== -1 ||
                      prev.indexOf('sobre') !== -1;
-        parts.push(isSign ? 'menos' : ', menos');
+        parts.push('menos');
         pos++;
         continue;
       }
       if (ch === '<') {
-        parts.push(', menor que');
+        parts.push('menor que');
         pos++;
         continue;
       }
       if (ch === '>') {
-        parts.push(', maior que');
+        parts.push('maior que');
         pos++;
         continue;
       }
 
-      // Parênteses e colchetes (vírgula antes de abrir, vírgula depois de fechar)
+      // Parênteses e colchetes
       if (ch === '(') {
-        parts.push(', abre parênteses,');
+        parts.push('abre parênteses');
         pos++;
         continue;
       }
       if (ch === ')') {
-        parts.push('fecha parênteses,');
+        parts.push('fecha parênteses');
         pos++;
         continue;
       }
       if (ch === '[') {
-        parts.push(', abre colchetes,');
+        parts.push('abre colchetes');
         pos++;
         continue;
       }
       if (ch === ']') {
-        parts.push('fecha colchetes,');
+        parts.push('fecha colchetes');
         pos++;
         continue;
       }
@@ -329,13 +329,13 @@ var MathA11y = (function () {
       if (pos < input.length) {
         var delim = input[pos];
         pos++;
-        if (delim === '(') return { text: ', abre parênteses,', pos: pos };
-        if (delim === '[') return { text: ', abre colchetes,', pos: pos };
-        if (delim === '{' || delim === '\\') return { text: ', abre chaves,', pos: pos };
-        if (delim === '|') return { text: ', abre valor absoluto,', pos: pos };
+        if (delim === '(') return { text: 'abre parênteses', pos: pos };
+        if (delim === '[') return { text: 'abre colchetes', pos: pos };
+        if (delim === '{' || delim === '\\') return { text: 'abre chaves', pos: pos };
+        if (delim === '|') return { text: 'abre valor absoluto', pos: pos };
         if (delim === '.') return { text: '', pos: pos };
       }
-      return { text: ', abre parênteses,', pos: pos };
+      return { text: 'abre parênteses', pos: pos };
     }
 
     if (fullCmd === '\\right') {
@@ -343,13 +343,13 @@ var MathA11y = (function () {
       if (pos < input.length) {
         var rDelim = input[pos];
         pos++;
-        if (rDelim === ')') return { text: 'fecha parênteses,', pos: pos };
-        if (rDelim === ']') return { text: 'fecha colchetes,', pos: pos };
-        if (rDelim === '}' || rDelim === '\\') return { text: 'fecha chaves,', pos: pos };
-        if (rDelim === '|') return { text: 'fecha valor absoluto,', pos: pos };
+        if (rDelim === ')') return { text: 'fecha parênteses', pos: pos };
+        if (rDelim === ']') return { text: 'fecha colchetes', pos: pos };
+        if (rDelim === '}' || rDelim === '\\') return { text: 'fecha chaves', pos: pos };
+        if (rDelim === '|') return { text: 'fecha valor absoluto', pos: pos };
         if (rDelim === '.') return { text: '', pos: pos };
       }
-      return { text: 'fecha parênteses,', pos: pos };
+      return { text: 'fecha parênteses', pos: pos };
     }
 
     // \frac{num}{den}
@@ -367,18 +367,18 @@ var MathA11y = (function () {
       // Detectar derivada: \frac{d}{dx}
       if (numTrim === 'd' && /^d\s*[a-zA-Z]/.test(denTrim)) {
         var varName = denTrim.replace(/^d\s*/, '');
-        return { text: 'derivada em relação a ' + varName + ' de,', pos: pos };
+        return { text: 'derivada em relação a ' + varName + ' de', pos: pos };
       }
       // Derivada parcial: \frac{\partial}{\partial x}
       if (numTrim === 'parcial' && /^parcial\s/.test(denTrim)) {
         var pVarName = denTrim.replace(/^parcial\s*/, '');
-        return { text: 'derivada parcial em relação a ' + pVarName + ' de,', pos: pos };
+        return { text: 'derivada parcial em relação a ' + pVarName + ' de', pos: pos };
       }
 
       if (isSimpleToken(num.text) && isSimpleToken(den.text)) {
         return { text: num.text + ' sobre ' + den.text, pos: pos };
       }
-      return { text: 'início de fração, ' + num.text + ', sobre, ' + den.text + ', fim de fração', pos: pos };
+      return { text: 'início de fração ' + num.text + ' sobre ' + den.text + ' fim de fração', pos: pos };
     }
 
     // \sqrt[n]{x} ou \sqrt{x}
@@ -424,10 +424,10 @@ var MathA11y = (function () {
       }
 
       if (lowerLim && upperLim) {
-        return { text: opName + ' de ' + lowerLim + ' até ' + upperLim + ',', pos: pos };
+        return { text: opName + ' de ' + lowerLim + ' até ' + upperLim, pos: pos };
       }
       if (lowerLim) {
-        return { text: opName + ' de ' + lowerLim + ',', pos: pos };
+        return { text: opName + ' de ' + lowerLim, pos: pos };
       }
       return { text: opName + ' de', pos: pos };
     }
@@ -483,7 +483,7 @@ var MathA11y = (function () {
     if (isSimpleToken(text)) {
       return { text: 'elevado a ' + text, pos: arg.pos };
     }
-    return { text: 'elevado a, início do expoente, ' + text + ', fim do expoente', pos: arg.pos };
+    return { text: 'elevado a início do expoente ' + text + ' fim do expoente', pos: arg.pos };
   }
 
   function parseSubscript(input, pos) {
@@ -524,11 +524,7 @@ var MathA11y = (function () {
   }
 
   function cleanText(text) {
-    text = text.replace(/\s+/g, ' ').trim();
-    text = text.replace(/,\s*,/g, ',');
-    text = text.replace(/^\s*,\s*/, '');
-    text = text.replace(/\s*,\s*$/, '');
-    return text.trim();
+    return text.replace(/\s+/g, ' ').trim();
   }
 
 
@@ -716,9 +712,6 @@ var MathA11y = (function () {
 
   function createA11yElement(latex, display) {
     var label = latexToText(latex);
-    if (display) {
-      label = label + '.';
-    }
     var tag = display ? 'div' : 'span';
     var cssClass = display ? 'math-a11y math-a11y-display' : 'math-a11y math-a11y-inline';
 
