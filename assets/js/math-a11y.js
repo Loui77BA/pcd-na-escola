@@ -646,7 +646,6 @@ var MathA11y = (function () {
 
     var wrapper = document.createElement(tag);
     wrapper.className = cssClass;
-    wrapper.setAttribute('role', 'img');
     wrapper.setAttribute('aria-label', label);
 
     var visual = document.createElement('span');
