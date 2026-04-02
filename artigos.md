@@ -83,39 +83,37 @@ description: "Artigos sobre educação, tecnologia e acessibilidade no PcD na Es
     {% for post in sorted_posts %}
       <div class="col-md-6 col-lg-4 article-item"
            data-category="{% for cat in post.categories %}{{ cat | slugify }}{% unless forloop.last %} {% endunless %}{% endfor %}">
-        <article class="listing-card">
-          <div class="listing-card-top">
-            <div class="listing-card-badges">
-              {% for cat in post.categories %}
-              <span class="badge-tag">{{ cat }}</span>
-              {% endfor %}
+        <a href="{{ post.url | relative_url }}" class="listing-card-link" aria-label="{{ post.title }}">
+          <article class="listing-card">
+            <div class="listing-card-top">
+              <div class="listing-card-badges">
+                {% for cat in post.categories %}
+                <span class="badge-tag">{{ cat }}</span>
+                {% endfor %}
+              </div>
+              <time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="listing-card-date">
+                <i class="material-icons fs-6" aria-hidden="true">event</i>
+                {{ post.date | date: "%d/%m/%Y" }}
+              </time>
             </div>
-            <time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="listing-card-date">
-              <i class="material-icons fs-6" aria-hidden="true">event</i>
-              {{ post.date | date: "%d/%m/%Y" }}
-            </time>
-          </div>
 
-          <h3 class="listing-card-title">
-            <a href="{{ post.url | relative_url }}" class="stretched-link">
-              {{ post.title }}
-            </a>
-          </h3>
+            <h3 class="listing-card-title">{{ post.title }}</h3>
 
-          <p class="listing-card-excerpt">
-            {% if post.description %}
-              {{ post.description | truncatewords: 22 }}
-            {% else %}
-              {{ post.excerpt | strip_html | truncatewords: 22 }}
-            {% endif %}
-          </p>
+            <p class="listing-card-excerpt">
+              {% if post.description %}
+                {{ post.description | truncatewords: 22 }}
+              {% else %}
+                {{ post.excerpt | strip_html | truncatewords: 22 }}
+              {% endif %}
+            </p>
 
-          <div class="listing-card-footer">
-            <span class="listing-card-action" aria-hidden="true">
-              Ler artigo <i class="material-icons fs-6 ms-1">arrow_forward</i>
-            </span>
-          </div>
-        </article>
+            <div class="listing-card-footer">
+              <span class="listing-card-action" aria-hidden="true">
+                Ler artigo <i class="material-icons fs-6 ms-1">arrow_forward</i>
+              </span>
+            </div>
+          </article>
+        </a>
       </div>
     {% endfor %}
   </div>

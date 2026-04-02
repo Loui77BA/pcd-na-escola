@@ -469,8 +469,9 @@ h1, h2, h3, h4 {
   .nav-search-btn,
   .nav-dropdown-item,
   .home-card,
-  .home-card:hover,
+  .home-card-link:hover .home-card,
   .home-card-arrow,
+  .home-card-link:hover .home-card-arrow,
   .audience-card,
   .principle-card,
   .btn-hero-primary,
@@ -2019,6 +2020,27 @@ h1, h2, h3, h4 {
 }
 
 /* --- Listing card (compartilhado por artigos e cursos) --- */
+.listing-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.listing-card-link:hover .listing-card {
+  border-color: var(--primary);
+  background: var(--bg-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.listing-card-link:focus-visible {
+  outline: 3px solid var(--focus-color);
+  outline-offset: 3px;
+  border-radius: 16px;
+}
+
 .listing-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -2029,13 +2051,6 @@ h1, h2, h3, h4 {
   flex-direction: column;
   position: relative;
   transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.listing-card:hover {
-  border-color: var(--primary);
-  background: var(--bg-hover);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
 }
 
 .listing-card-top {
@@ -2071,11 +2086,7 @@ h1, h2, h3, h4 {
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 0.75rem;
-}
-
-.listing-card-title a {
   color: #fff;
-  text-decoration: none;
 }
 
 .listing-card-excerpt {
@@ -2101,15 +2112,15 @@ h1, h2, h3, h4 {
   transition: transform 0.2s ease;
 }
 
-.listing-card:hover .listing-card-action {
+.listing-card-link:hover .listing-card-action {
   transform: translateX(4px);
 }
 
 @media (prefers-reduced-motion: reduce) {
   .listing-card,
-  .listing-card:hover,
+  .listing-card-link:hover .listing-card,
   .listing-card-action,
-  .listing-card:hover .listing-card-action,
+  .listing-card-link:hover .listing-card-action,
   .filter-pill {
     transition: none !important;
     transform: none !important;
@@ -2136,6 +2147,11 @@ h1, h2, h3, h4 {
 .py-6 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-5-compact {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 /* --- Linha divisória entre seções (estilo Rocketseat) --- */
@@ -2258,6 +2274,8 @@ h1, h2, h3, h4 {
   line-height: 1.7;
   max-width: 540px;
   font-style: italic;
+  border-left: 3px solid var(--primary);
+  padding-left: 1.25rem;
 }
 
 @media (min-width: 992px) {
@@ -2339,7 +2357,7 @@ h1, h2, h3, h4 {
    =========================================================== */
 .impact-stat {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   padding: 1.5rem 0;
 }
 
@@ -2378,9 +2396,56 @@ h1, h2, h3, h4 {
   }
 }
 
+/* Animação de entrada dos números de impacto */
+@keyframes count-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.impact-number {
+  animation: count-in 0.6s ease-out both;
+}
+
+.col-6:nth-child(2) .impact-number { animation-delay: 0.1s; }
+.col-6:nth-child(3) .impact-number { animation-delay: 0.2s; }
+.col-6:nth-child(4) .impact-number { animation-delay: 0.3s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .impact-number {
+    animation: none !important;
+  }
+}
+
 /* ===========================================================
    HOME CARDS (Artigos & Cursos)
    =========================================================== */
+.home-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.home-card-link:hover .home-card {
+  border-color: var(--primary);
+  background-color: var(--bg-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.home-card-link:focus-visible {
+  outline: 3px solid var(--focus-color);
+  outline-offset: 3px;
+  border-radius: 16px;
+}
+
 .home-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -2391,13 +2456,6 @@ h1, h2, h3, h4 {
   flex-direction: column;
   position: relative;
   transition: var(--transition);
-}
-
-.home-card:hover {
-  border-color: var(--primary);
-  background-color: var(--bg-hover);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
 }
 
 .home-card-badge {
@@ -2425,14 +2483,6 @@ h1, h2, h3, h4 {
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 0.75rem;
-}
-
-.home-card-title a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.home-card-title a:hover {
   color: #fff;
 }
 
@@ -2473,8 +2523,9 @@ h1, h2, h3, h4 {
   transition: var(--transition);
 }
 
-.home-card:hover .home-card-arrow {
-  transform: translateX(4px);
+.home-card-link:hover .home-card-arrow {
+  transform: translateX(6px);
+  color: #996DFF;
 }
 
 /* Card horizontal (cursos na homepage) */
@@ -2533,7 +2584,6 @@ h1, h2, h3, h4 {
 }
 
 .audience-card:hover {
-  border-color: rgba(130, 87, 229, 0.4);
   background-color: var(--bg-hover);
 }
 
@@ -2629,6 +2679,7 @@ h1, h2, h3, h4 {
 .principle-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
+  border-top: 3px solid var(--primary);
   border-radius: 16px;
   padding: 2rem;
   height: 100%;
@@ -2639,6 +2690,7 @@ h1, h2, h3, h4 {
 
 .principle-card:hover {
   border-color: rgba(130, 87, 229, 0.4);
+  border-top-color: var(--primary);
   background-color: var(--bg-hover);
 }
 

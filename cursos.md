@@ -57,39 +57,37 @@ permalink: /cursos/
       {% assign sorted_courses = group.items | sort: 'date' %}
       {% for course in sorted_courses %}
       <div class="col-md-6 col-lg-4 course-item" data-category="{{ group.name | slugify }}">
-        <article class="listing-card">
-          <div class="listing-card-top">
-            <div class="listing-card-badges">
-              {% if course.category %}
-              <span class="badge-tag">{{ course.category }}</span>
+        <a href="{{ course.url | relative_url }}" class="listing-card-link" aria-label="{{ course.title }}">
+          <article class="listing-card">
+            <div class="listing-card-top">
+              <div class="listing-card-badges">
+                {% if course.category %}
+                <span class="badge-tag">{{ course.category }}</span>
+                {% endif %}
+              </div>
+              {% if course.date %}
+              <time datetime="{{ course.date | date: '%Y-%m-%d' }}" class="listing-card-date">
+                <i class="material-icons fs-6" aria-hidden="true">event</i>
+                {{ course.date | date: "%d/%m/%Y" }}
+              </time>
               {% endif %}
             </div>
-            {% if course.date %}
-            <time datetime="{{ course.date | date: '%Y-%m-%d' }}" class="listing-card-date">
-              <i class="material-icons fs-6" aria-hidden="true">event</i>
-              {{ course.date | date: "%d/%m/%Y" }}
-            </time>
+
+            <h3 class="listing-card-title">{{ course.title }}</h3>
+
+            {% if course.excerpt %}
+            <p class="listing-card-excerpt">
+              {{ course.excerpt | strip_html | truncate: 120 }}
+            </p>
             {% endif %}
-          </div>
 
-          <h3 class="listing-card-title">
-            <a href="{{ course.url | relative_url }}" class="stretched-link">
-              {{ course.title }}
-            </a>
-          </h3>
-
-          {% if course.excerpt %}
-          <p class="listing-card-excerpt">
-            {{ course.excerpt | strip_html | truncate: 120 }}
-          </p>
-          {% endif %}
-
-          <div class="listing-card-footer">
-            <span class="listing-card-action" aria-hidden="true">
-              Ver curso <i class="material-icons fs-6 ms-1">arrow_forward</i>
-            </span>
-          </div>
-        </article>
+            <div class="listing-card-footer">
+              <span class="listing-card-action" aria-hidden="true">
+                Ver curso <i class="material-icons fs-6 ms-1">arrow_forward</i>
+              </span>
+            </div>
+          </article>
+        </a>
       </div>
       {% endfor %}
     {% endfor %}

@@ -54,32 +54,32 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
 
 <!-- ========== NÚMEROS / IMPACTO ========== -->
 <section class="section-divider-line" aria-hidden="true"></section>
-<section class="py-5" aria-labelledby="impact-title">
+<section class="py-5-compact" aria-labelledby="impact-title">
     <div class="container px-4">
         <h2 id="impact-title" class="visually-hidden">Nosso impacto em números</h2>
         <dl class="row g-4 justify-content-center text-center mb-0">
             <div class="col-6 col-lg-3">
                 <div class="impact-stat">
-                    <dd class="impact-number">{{ site.posts | size }}+</dd>
                     <dt class="impact-label">artigos publicados</dt>
+                    <dd class="impact-number">{{ site.posts | size }}+</dd>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="impact-stat">
-                    <dd class="impact-number">{{ site.courses | size }}</dd>
                     <dt class="impact-label">cursos em vídeo</dt>
+                    <dd class="impact-number">{{ site.courses | size }}</dd>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="impact-stat">
-                    <dd class="impact-number">{{ site.categories | size }}</dd>
                     <dt class="impact-label">categorias de conteúdo</dt>
+                    <dd class="impact-number">{{ site.categories | size }}</dd>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="impact-stat">
-                    <dd class="impact-number">{{ site.ferramentas | size }}</dd>
                     <dt class="impact-label">{% if site.ferramentas.size == 1 %}ferramenta acessível{% else %}ferramentas acessíveis{% endif %}</dt>
+                    <dd class="impact-number">{{ site.ferramentas | size }}</dd>
                 </div>
             </div>
         </dl>
@@ -105,36 +105,34 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
             {% assign recent_posts = site.posts | slice: 0, 3 %}
             {% for post in recent_posts %}
             <div class="col-md-6 col-lg-4">
-                <article class="home-card">
-                    <div class="home-card-badge">
-                        {% for cat in post.categories %}
-                        <span class="badge-tag">{{ cat }}</span>
-                        {% endfor %}
-                    </div>
-                    <h3 class="home-card-title">
-                        <a href="{{ post.url | relative_url }}" class="stretched-link">
-                            {{ post.title }}
-                        </a>
-                    </h3>
-                    <p class="home-card-excerpt">
-                        {{ post.excerpt | strip_html | truncatewords: 22 }}
-                    </p>
-                    <div class="home-card-footer">
-                        <time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="home-card-date">
-                            <i class="material-icons fs-6 me-1" aria-hidden="true">event</i>
-                            {{ post.date | date: "%d/%m/%Y" }}
-                        </time>
-                        <span class="home-card-arrow" aria-hidden="true">
-                            <i class="material-icons">arrow_forward</i>
-                        </span>
-                    </div>
-                </article>
+                <a href="{{ post.url | relative_url }}" class="home-card-link" aria-label="{{ post.title }}">
+                    <article class="home-card">
+                        <div class="home-card-badge">
+                            {% for cat in post.categories %}
+                            <span class="badge-tag">{{ cat }}</span>
+                            {% endfor %}
+                        </div>
+                        <h3 class="home-card-title">{{ post.title }}</h3>
+                        <p class="home-card-excerpt">
+                            {{ post.excerpt | strip_html | truncatewords: 22 }}
+                        </p>
+                        <div class="home-card-footer">
+                            <time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="home-card-date">
+                                <i class="material-icons fs-6 me-1" aria-hidden="true">event</i>
+                                {{ post.date | date: "%d/%m/%Y" }}
+                            </time>
+                            <span class="home-card-arrow" aria-hidden="true">
+                                <i class="material-icons">arrow_forward</i>
+                            </span>
+                        </div>
+                    </article>
+                </a>
             </div>
             {% endfor %}
         </div>
 
-        <div class="text-center mt-4 d-md-none" aria-hidden="true">
-            <a href="{{ '/artigos' | relative_url }}" class="btn btn-outline-custom rounded-pill px-4" tabindex="-1">
+        <div class="text-center mt-4 d-md-none">
+            <a href="{{ '/artigos' | relative_url }}" class="btn btn-outline-custom rounded-pill px-4">
                 Ver todos os artigos
                 <i class="material-icons align-middle ms-1 fs-6" aria-hidden="true">arrow_forward</i>
             </a>
@@ -159,37 +157,35 @@ description: "O PcD na Escola é um projeto que visa promover a educação e tec
         <div class="row g-4 justify-content-center">
             {% for course in site.courses %}
             <div class="col-md-6">
-                <article class="home-card home-card-horizontal">
-                    <div class="home-card-icon" aria-hidden="true">
-                        <i class="material-icons">play_circle</i>
-                    </div>
-                    <div class="home-card-body">
-                        <div class="home-card-badge">
-                            {% if course.category %}
-                            <span class="badge-tag">{{ course.category }}</span>
-                            {% endif %}
+                <a href="{{ course.url | relative_url }}" class="home-card-link" aria-label="{{ course.title }}">
+                    <article class="home-card home-card-horizontal">
+                        <div class="home-card-icon" aria-hidden="true">
+                            <i class="material-icons">play_circle</i>
                         </div>
-                        <h3 class="home-card-title">
-                            <a href="{{ course.url | relative_url }}" class="stretched-link">
-                                {{ course.title }}
-                            </a>
-                        </h3>
-                        {% if course.excerpt %}
-                        <p class="home-card-excerpt">
-                            {{ course.excerpt | strip_html | truncate: 100 }}
-                        </p>
-                        {% endif %}
-                        <span class="home-card-arrow" aria-hidden="true">
-                            Ver curso <i class="material-icons fs-6 ms-1">arrow_forward</i>
-                        </span>
-                    </div>
-                </article>
+                        <div class="home-card-body">
+                            <div class="home-card-badge">
+                                {% if course.category %}
+                                <span class="badge-tag">{{ course.category }}</span>
+                                {% endif %}
+                            </div>
+                            <h3 class="home-card-title">{{ course.title }}</h3>
+                            {% if course.excerpt %}
+                            <p class="home-card-excerpt">
+                                {{ course.excerpt | strip_html | truncate: 100 }}
+                            </p>
+                            {% endif %}
+                            <span class="home-card-arrow" aria-hidden="true">
+                                Ver curso <i class="material-icons fs-6 ms-1">arrow_forward</i>
+                            </span>
+                        </div>
+                    </article>
+                </a>
             </div>
             {% endfor %}
         </div>
 
-        <div class="text-center mt-4 d-md-none" aria-hidden="true">
-            <a href="{{ '/cursos' | relative_url }}" class="btn btn-outline-custom rounded-pill px-4" tabindex="-1">
+        <div class="text-center mt-4 d-md-none">
+            <a href="{{ '/cursos' | relative_url }}" class="btn btn-outline-custom rounded-pill px-4">
                 Ver todos os cursos
                 <i class="material-icons align-middle ms-1 fs-6" aria-hidden="true">arrow_forward</i>
             </a>
