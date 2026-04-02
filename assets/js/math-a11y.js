@@ -105,7 +105,6 @@ var MathA11y = (function () {
         && t.indexOf('mais') === -1 && t.indexOf('menos') === -1 && t.indexOf('igual') === -1
         && t.indexOf('negativo') === -1 && t.indexOf('vezes') === -1 && t.indexOf('menor') === -1
         && t.indexOf('maior') === -1) return true;
-    if (t === 'ao quadrado' || t === 'ao cubo') return true;
     if (t.indexOf('fim d') === 0) return true;
     if (t === 'fecha parênteses' || t === 'fecha colchetes') return true;
     if (GREEKS.indexOf(t) !== -1) return true;
@@ -175,25 +174,30 @@ var MathA11y = (function () {
         continue;
       }
 
-      // Superscript
+      // Superscript (modificador do token anterior, sem multiplicação implícita)
       if (ch === '^') {
         var supResult = parseSuperscript(input, pos);
-        pushWithImplicitMul(parts, supResult.text);
+        parts.push(supResult.text);
         pos = supResult.pos;
         continue;
       }
 
-      // Subscript
+      // Subscript (modificador do token anterior, sem multiplicação implícita)
       if (ch === '_') {
         var subResult = parseSubscript(input, pos);
-        pushWithImplicitMul(parts, subResult.text);
+        parts.push(subResult.text);
         pos = subResult.pos;
         continue;
       }
 
       // Operadores (com vírgula antes para pausa semântica)
       if (ch === '+') {
-        parts.push(', mais');
+        var prevPlus = parts.length > 0 ? parts[parts.length - 1] : '';
+        var isPlusSign = !prevPlus || prevPlus === ', igual a' || prevPlus === ', mais' ||
+                         prevPlus === ', menos' || prevPlus === 'menos' ||
+                         prevPlus.indexOf('abre') !== -1 || prevPlus.indexOf(' de') !== -1 ||
+                         prevPlus.indexOf('sobre') !== -1;
+        parts.push(isPlusSign ? 'mais' : ', mais');
         pos++;
         continue;
       }
@@ -205,10 +209,10 @@ var MathA11y = (function () {
       if (ch === '-') {
         var prev = parts.length > 0 ? parts[parts.length - 1] : '';
         var isSign = !prev || prev === ', igual a' || prev === ', mais' ||
-                     prev === ', menos' || prev === 'negativo' ||
+                     prev === ', menos' || prev === 'menos' ||
                      prev.indexOf('abre') !== -1 || prev.indexOf(' de') !== -1 ||
                      prev.indexOf('sobre') !== -1;
-        parts.push(isSign ? 'negativo' : ', menos');
+        parts.push(isSign ? 'menos' : ', menos');
         pos++;
         continue;
       }
@@ -507,7 +511,7 @@ var MathA11y = (function () {
     // Caractere simples
     var ch = input[pos];
     pos++;
-    if (ch === '-') return { text: 'negativo', pos: pos };
+    if (ch === '-') return { text: 'menos', pos: pos };
     if (ch === '+') return { text: 'mais', pos: pos };
     return { text: ch, pos: pos };
   }
