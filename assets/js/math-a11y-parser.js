@@ -88,7 +88,7 @@ MathA11y._parser = (function () {
     if (isSimpleToken(num) && isSimpleToken(den)) {
       return num + ' sobre ' + den;
     }
-    return 'início de fração ' + num + ' sobre ' + den + ' fim de fração';
+    return 'fração ' + num + ' sobre ' + den;
   }
 
   /* =============================================================
@@ -200,7 +200,7 @@ MathA11y._parser = (function () {
           } else if (/^fecha /.test(cmdText) || /^fim de /.test(cmdText)) {
             depth = Math.max(0, depth - 1);
           }
-          if (cmdResult.bigOp || RELATIONAL_TEXTS.indexOf(cmdText) !== -1) {
+          if (cmdResult.bigOp || cmdResult.isFraction || RELATIONAL_TEXTS.indexOf(cmdText) !== -1) {
             flushSegment();
           }
           if (isValueToken(cmdText)) {
@@ -512,7 +512,7 @@ MathA11y._parser = (function () {
         return { text: pOrderLabel + 'derivada parcial em relação a ' + pVarName + ' de', pos: pos };
       }
 
-      return { text: formatFraction(num.text, den.text), pos: pos };
+      return { text: formatFraction(num.text, den.text), pos: pos, isFraction: true };
     }
 
     // \sqrt[n]{x} ou \sqrt{x}
@@ -558,6 +558,11 @@ MathA11y._parser = (function () {
         pos = up.pos;
       }
 
+      // Detectar padrão "var igual a valor" no limite inferior (ex: i=1)
+      var indexMatch = lowerLim.match(/^([a-zA-Z])\s+igual a\s+(.+)$/);
+      if (indexMatch && upperLim) {
+        return { text: opName + ' para ' + indexMatch[1] + ' de ' + indexMatch[2] + ' até ' + upperLim, pos: pos, bigOp: true };
+      }
       if (lowerLim && upperLim) {
         return { text: opName + ' de ' + lowerLim + ' até ' + upperLim, pos: pos, bigOp: true };
       }
@@ -623,7 +628,7 @@ MathA11y._parser = (function () {
       pos = skipSpaces(input, pos);
       var cfDen = consumeArg(input, pos);
       pos = cfDen.pos;
-      return { text: formatFraction(cfNum.text, cfDen.text), pos: pos };
+      return { text: formatFraction(cfNum.text, cfDen.text), pos: pos, isFraction: true };
     }
 
     // \begin{environment}
@@ -938,7 +943,7 @@ MathA11y._parser = (function () {
     if (isSimpleToken(text)) {
       return { text: 'elevado a ' + text, pos: arg.pos };
     }
-    return { text: 'elevado a início do expoente ' + text + ' fim do expoente', pos: arg.pos };
+    return { text: 'elevado a ' + text, pos: arg.pos };
   }
 
   function parseSubscript(input, pos) {
