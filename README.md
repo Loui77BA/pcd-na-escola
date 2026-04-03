@@ -2,64 +2,118 @@
 
 # PcD na Escola
 
-## Boas-vindas
-
-O PcD na Escola surge a partir das necessidades educacionais específicas de Louise Suelen (autora do projeto), visando alcançar pessoas com perfis semelhantes, incluindo:
+O PcD na Escola surge a partir das necessidades educacionais especificas de Louise Suelen (autora do projeto), visando alcançar pessoas com perfis semelhantes, incluindo:
 
 - Pessoas com deficiência, em especial deficiência visual
-- Pessoas que residem no interior do Brasil, afastadas dos grandes centros de seus estados
-- Em especial região Nordeste
+- Pessoas que residem no interior do Brasil, afastadas dos grandes centros de seus estados, em especial região Nordeste
 - Pessoas que gostam de ciência e tecnologia, mas encontram dificuldades de acesso a conteúdos adaptados
 
 O projeto atende comunidades acadêmicas e escolares, focando no ensino de ciências exatas e tecnológicas (CET) para pessoas com necessidades educacionais específicas (NEE). Promovemos um debate baseado na laicidade, acessibilidade e inclusão.
 
-Nosso objetivo é evitar que oportunidades de aprendizado sejam perdidas devido às características individuais de quem busca aprender. Acreditamos que a educação é fundamental para o acesso a direitos como:
-
-- Emprego
-- Saúde
-- Cultura
-- Lazer
-- Cidadania
+Nosso objetivo é evitar que oportunidades de aprendizado sejam perdidas devido às características individuais de quem busca aprender.
 
 ## Objetivos
 
-1. Disponibilizar artigos tanto informativos, quanto conteudistas, sobre ciência e tecnologia, com foco em acessibilidade e na pessoa com deficiência.
+1. Disponibilizar artigos informativos e conteudistas sobre ciência e tecnologia, com foco em acessibilidade e na pessoa com deficiência.
+2. Disponibilizar cursos, tutoriais e outros materiais educacionais no âmbito das ciências exatas e tecnológicas, acessíveis a pessoas com deficiência.
+3. Disponibilizar ferramentas que funcionem como tecnologias assistivas (calculadoras, conversores, tabelas interativas), acessíveis a leitores de tela e outras tecnologias assistivas.
 
-2. Disponibilizar cursos, tutoriais e outros materiais educacionais no âmbito das ciências exatas e tecnológicas, que sejam acessíveis a pessoas com deficiência.
+## Acessibilidade
 
-3. Disponibilizar ferramentas que funcionem como tecnologias assistivas, como calculadoras, conversores entre outras, que possam ser utilizadas por pessoas com deficiência, abrangendo inclusive as especificidades para softwares leitores de tela conseguirem ler os conteúdos.
+### Barra de acessibilidade
 
-## Como é feito
+O site possui uma barra de ferramentas de acessibilidade que permite:
 
-### Repositório Público
+- Ajuste de tamanho da fonte (0.75x a 2.0x)
+- Alto contraste (preto e branco)
+- Contraste negativo (cores invertidas)
+- Escala de cinza
+- Sublinhado de links
+- Fonte legível (sans-serif)
 
-O primeiro passo é manter o repositório do projeto no GitHub público, para que qualquer pessoa possa acessar o site e se sentir a necessidade de acessar os arquivos que isso seja possível.
+As preferências são salvas no navegador via localStorage.
 
-- Isso é particularmente útil para pessoas que usam leitores de tela, pois na dúvida sobre alguma informação, elas podem acessar o código fonte do site e verificar se o conteúdo é de fato o que elas entenderam que é.
-- Também é bom caso alguém queira personalizar para alguma atividade particular e precise de ideias.
+### MathA11y - Acessibilidade de expressões matemáticas
 
-### Hospedagem
+O projeto inclui a biblioteca `math-a11y.js`, desenvolvida especificamente para este projeto. Ela converte expressões LaTeX em descrições textuais em português para leitores de tela.
 
-O segundo passo é tornar o projeto disponível, para isso foi utilizado o GitHub Pages, que é uma ferramenta gratuita de hospedagem de sites estáticos oferecida pelo próprio GitHub.
+Recursos:
 
-#### Por que um site estático?
+- Conversão de 200+ símbolos LaTeX para português (letras gregas, operadores, relações, teoria de conjuntos, lógica, cálculo)
+- Reconhecimento de frações, raízes, expoentes, índices, matrizes, integrais, limites, derivadas e derivadas parciais
+- Segmentação automática de expressões longas em trechos navegáveis, permitindo que o usuário percorra a expressão parte a parte
+- Renderização visual via KaTeX com `aria-hidden`, mantendo o visual intacto enquanto o leitor de tela lê a descrição textual
 
-1. **Questões financeiras**: O projeto é mantido por uma única pessoa, Louise Suelen, e não há recursos financeiros para manter um serviço dinâmico.
-2. **Questões de desempenho**: O site é projetado para ser acessado em dispositivos com recursos limitados e conexões de internet das mais lentas.
+### Outras práticas de acessibilidade
 
-### Por que Jekyll?
+- HTML semântico com ARIA (landmarks, `aria-label`, `aria-expanded`, `aria-live`)
+- Links externos anunciam "(abre em nova janela)" para leitores de tela
+- Design dark mode com contraste mínimo WCAG AA (5.0:1)
+- Indicadores de foco visíveis (#ffd700)
+- Integração com VLibras (intérprete de Libras)
+- Dados estruturados JSON-LD (Article, Course, VideoObject, BreadcrumbList)
+- Busca estática via Pagefind
 
-- O site é construído com Jekyll, um gerador de sites estáticos que permite criar páginas HTML a partir de arquivos Markdown e que usa Ruby como linguagem de programação.
-- Jekyll é usado pelo GitHub Pages, o que facilita a publicação do site.
-- GitHub Pages é gratuito, o que significa que não há custos para manter o site no ar, casar isso com o Jekyll acaba sendo um grande benefício para o projeto.
-
-## Tecnologias usadas
+## Estrutura do projeto
 
 ```
-HTML | CSS | JavaScript | Ruby on Rails | Jekyll | GitHub | GitHub Pages | Markdown | Bootstrap | ARIA | LaTeX | KaTeX
+pcd-na-escola/
+  _posts/             # Artigos em Markdown
+  _courses/           # Cursos (metadados das videoaulas)
+  _ferramentas/       # Ferramentas interativas
+  _layouts/           # Templates Jekyll (home, post, course, lesson)
+  _includes/          # Componentes reutilizáveis (navbar, footer, scripts)
+  _plugins/           # Plugins Jekyll customizados
+    external_links.rb   # Anuncia links externos para leitores de tela
+    lesson_pages.rb     # Gera páginas de aulas a partir dos cursos
+  _data/              # Metadados de séries (YAML)
+  assets/
+    css/              # Estilos (site, custom, a11y-toolbar, courses, cf-player)
+    js/               # Scripts
+      math-a11y.js      # Biblioteca de acessibilidade matemática
+      a11y-init.js      # Barra de acessibilidade
+      search-init.js    # Integração com Pagefind
+      cf-player.js      # Player de vídeo acessível (Cloudflare Stream)
+      tabela-periodica.js  # Tabela periódica interativa
+  .github/workflows/  # CI/CD (deploy automático)
 ```
+
+## Tecnologias
+
+| Categoria | Tecnologias |
+|-----------|-------------|
+| Gerador de site | Jekyll 4.3.2 |
+| Hospedagem | GitHub Pages |
+| Linguagens | HTML, CSS, JavaScript, Ruby, Markdown |
+| CSS | Bootstrap 5.3.3, CSS customizado com variáveis |
+| Matemática | KaTeX 0.16.21, math-a11y.js (biblioteca própria) |
+| Busca | Pagefind |
+| Vídeos | Cloudflare Stream |
+| Acessibilidade | ARIA, VLibras, barra de acessibilidade própria |
+| Ícones | Material Symbols (Google) |
+| CI/CD | GitHub Actions |
+| SEO | jekyll-seo-tag, jekyll-sitemap, jekyll-feed, JSON-LD |
+
+## Como executar localmente
+
+```bash
+# Instalar dependências
+bundle install
+
+# Iniciar servidor de desenvolvimento
+bundle exec jekyll serve
+```
+
+O site estará disponível em `http://localhost:4000`.
+
+## Deploy
+
+O deploy é automático via GitHub Actions. A cada push na branch `main`:
+
+1. O Jekyll compila o site
+2. O Pagefind gera o índice de busca
+3. O site é publicado no GitHub Pages
 
 ## Acesso ao site
 
-O site do projeto PcD na Escola pode ser acessado através do seguinte link:
-[https://pcdnaescola.com.br/](https://pcdnaescola.com.br/)
+[https://pcdnaescola.com.br](https://pcdnaescola.com.br)
