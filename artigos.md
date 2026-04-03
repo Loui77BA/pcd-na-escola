@@ -83,7 +83,7 @@ description: "Artigos sobre educação, tecnologia e acessibilidade no PcD na Es
     {% for post in sorted_posts %}
       <div class="col-md-6 col-lg-4 article-item"
            data-category="{% for cat in post.categories %}{{ cat | slugify }}{% unless forloop.last %} {% endunless %}{% endfor %}">
-        <a href="{{ post.url | relative_url }}" class="listing-card-link" aria-label="{{ post.title }}">
+        <a href="{{ post.url | relative_url }}" class="listing-card-link" aria-label="{{ post.title }}, categoria {{ post.categories | join: ' e ' }}, {{ post.date | date: '%d/%m/%Y' }}">
           <article class="listing-card">
             <div class="listing-card-top">
               <div class="listing-card-badges">

@@ -57,7 +57,7 @@ permalink: /cursos/
       {% assign sorted_courses = group.items | sort: 'date' %}
       {% for course in sorted_courses %}
       <div class="col-md-6 col-lg-4 course-item" data-category="{{ group.name | slugify }}">
-        <a href="{{ course.url | relative_url }}" class="listing-card-link" aria-label="{{ course.title }}">
+        <a href="{{ course.url | relative_url }}" class="listing-card-link" aria-label="{{ course.title }}{% if course.category %}, categoria {{ course.category }}{% endif %}{% if course.date %}, {{ course.date | date: '%d/%m/%Y' }}{% endif %}">
           <article class="listing-card">
             <div class="listing-card-top">
               <div class="listing-card-badges">
