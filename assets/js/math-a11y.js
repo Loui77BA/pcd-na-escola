@@ -15,48 +15,182 @@ var MathA11y = (function () {
      ============================================================= */
 
   var SYMBOLS = {
-    '\\pi': 'pi',
-    '\\tau': 'tau',
+    // Letras gregas minúsculas
     '\\alpha': 'alfa',
     '\\beta': 'beta',
     '\\gamma': 'gama',
     '\\delta': 'delta',
     '\\epsilon': 'épsilon',
+    '\\varepsilon': 'épsilon',
+    '\\zeta': 'zeta',
+    '\\eta': 'eta',
     '\\theta': 'teta',
+    '\\vartheta': 'teta',
+    '\\iota': 'iota',
+    '\\kappa': 'capa',
     '\\lambda': 'lambda',
     '\\mu': 'mu',
+    '\\nu': 'nu',
+    '\\xi': 'csi',
+    '\\omicron': 'ômicron',
+    '\\pi': 'pi',
+    '\\varpi': 'pi',
+    '\\rho': 'rô',
+    '\\varrho': 'rô',
     '\\sigma': 'sigma',
-    '\\omega': 'ômega',
+    '\\varsigma': 'sigma',
+    '\\tau': 'tau',
+    '\\upsilon': 'úpsilon',
     '\\phi': 'fi',
+    '\\varphi': 'fi',
+    '\\chi': 'qui',
     '\\psi': 'psi',
+    '\\omega': 'ômega',
+    // Letras gregas maiúsculas
+    '\\Alpha': 'alfa maiúsculo',
+    '\\Beta': 'beta maiúsculo',
+    '\\Gamma': 'gama maiúsculo',
+    '\\Delta': 'delta maiúsculo',
+    '\\Epsilon': 'épsilon maiúsculo',
+    '\\Zeta': 'zeta maiúsculo',
+    '\\Eta': 'eta maiúsculo',
+    '\\Theta': 'teta maiúsculo',
+    '\\Iota': 'iota maiúsculo',
+    '\\Kappa': 'capa maiúsculo',
+    '\\Lambda': 'lambda maiúsculo',
+    '\\Mu': 'mu maiúsculo',
+    '\\Nu': 'nu maiúsculo',
+    '\\Xi': 'csi maiúsculo',
+    '\\Omicron': 'ômicron maiúsculo',
+    '\\Pi': 'pi maiúsculo',
+    '\\Rho': 'rô maiúsculo',
+    '\\Sigma': 'sigma maiúsculo',
+    '\\Tau': 'tau maiúsculo',
+    '\\Upsilon': 'úpsilon maiúsculo',
+    '\\Phi': 'fi maiúsculo',
+    '\\Chi': 'qui maiúsculo',
+    '\\Psi': 'psi maiúsculo',
+    '\\Omega': 'ômega maiúsculo',
+    // Infinito e cálculo
     '\\infty': 'infinito',
     '\\partial': 'parcial',
     '\\nabla': 'nabla',
-    '\\cdot': 'vezes',
+    '\\prime': 'linha',
+    '\\backprime': 'linha reversa',
+    '\\hbar': 'h barra',
+    // Operações aritméticas
+    '\\cdot': 'ponto',
     '\\times': 'vezes',
+    '\\div': 'dividido por',
     '\\pm': 'mais ou menos',
     '\\mp': 'menos ou mais',
+    '\\dagger': 'adaga',
+    '\\ddagger': 'dupla adaga',
+    // Comparação e relações
     '\\neq': 'diferente de',
+    '\\ne': 'diferente de',
     '\\leq': 'menor ou igual a',
+    '\\le': 'menor ou igual a',
     '\\geq': 'maior ou igual a',
+    '\\ge': 'maior ou igual a',
+    '\\ll': 'muito menor que',
+    '\\gg': 'muito maior que',
     '\\approx': 'aproximadamente igual a',
+    '\\simeq': 'aproximadamente igual a',
+    '\\sim': 'semelhante a',
+    '\\cong': 'congruente a',
     '\\equiv': 'equivalente a',
+    '\\propto': 'proporcional a',
+    '\\doteq': 'aproximadamente igual a',
+    '\\not\\equiv': 'não equivalente a',
+    '\\perp': 'perpendicular a',
+    '\\parallel': 'paralelo a',
+    // Teoria de conjuntos
     '\\in': 'pertence a',
     '\\notin': 'não pertence a',
+    '\\not\\in': 'não pertence a',
+    '\\ni': 'contém o elemento',
     '\\subset': 'contido em',
+    '\\supset': 'superconjunto de',
+    '\\subseteq': 'contido ou igual a',
+    '\\supseteq': 'contém ou igual a',
+    '\\cup': 'união',
+    '\\cap': 'interseção',
+    '\\setminus': 'diferença de conjuntos',
+    '\\emptyset': 'conjunto vazio',
+    '\\varnothing': 'conjunto vazio',
+    '\\nsubseteq': 'não contido ou igual a',
+    '\\sqsubseteq': 'contido ou igual a',
+    '\\nsupseteq': 'não contém ou igual a',
+    '\\preceq': 'precede ou igual a',
+    '\\succeq': 'sucede ou igual a',
+    // Operadores lógicos
+    '\\land': 'e',
+    '\\wedge': 'e',
+    '\\lor': 'ou',
+    '\\vee': 'ou',
+    '\\neg': 'não',
+    '\\lnot': 'não',
+    '\\iff': 'se e somente se',
+    // Quantificadores
     '\\forall': 'para todo',
     '\\exists': 'existe',
-    '\\to': 'tende a',
+    '\\nexists': 'não existe',
+    // Setas
+    '\\to': 'para',
     '\\rightarrow': 'seta para direita',
     '\\leftarrow': 'seta para esquerda',
+    '\\leftrightarrow': 'seta bidirecional',
+    '\\longleftarrow': 'seta para esquerda',
+    '\\longrightarrow': 'seta para direita',
+    '\\longmapsto': 'mapeia para',
     '\\Rightarrow': 'implica',
     '\\Leftarrow': 'é implicado por',
+    '\\Leftrightarrow': 'se e somente se',
+    '\\mapsto': 'mapeia para',
+    '\\uparrow': 'seta para cima',
+    '\\downarrow': 'seta para baixo',
+    '\\updownarrow': 'seta para cima e para baixo',
+    '\\nearrow': 'seta crescente',
+    '\\searrow': 'seta decrescente',
+    '\\swarrow': 'seta para baixo à esquerda',
+    '\\nwarrow': 'seta para cima à esquerda',
+    '\\rightleftharpoons': 'equilíbrio',
+    '\\leftrightharpoons': 'equilíbrio reverso',
+    '\\Uparrow': 'seta dupla para cima',
+    '\\Downarrow': 'seta dupla para baixo',
+    '\\Updownarrow': 'seta dupla para cima e para baixo',
+    // Álgebra abstrata e tensores
+    '\\otimes': 'produto tensorial',
+    '\\oplus': 'soma direta',
+    '\\circ': 'composição',
+    '\\star': 'estrela',
+    '\\bullet': 'ponto',
+    // Reticências
     '\\ldots': 'reticências',
     '\\cdots': 'reticências',
+    '\\vdots': 'reticências verticais',
+    '\\ddots': 'reticências diagonais',
+    // Diversos
+    '\\lfloor': 'abre piso',
+    '\\rfloor': 'fecha piso',
+    '\\lceil': 'abre teto',
+    '\\rceil': 'fecha teto',
+    '\\langle': 'abre ângulo',
+    '\\rangle': 'fecha ângulo',
+    '\\colon': 'dois pontos',
+    '\\mid': 'tal que',
+    '\\angle': 'ângulo',
+    '\\triangle': 'triângulo',
+    '\\therefore': 'portanto',
+    '\\because': 'porque',
+    '\\|': 'norma',
+    // Espaçamento
     '\\quad': ' ',
     '\\qquad': ' ',
     '\\,': ' ',
     '\\;': ' ',
+    '\\:': ' ',
     '\\!': '',
     '\\ ': ' '
   };
@@ -71,14 +205,36 @@ var MathA11y = (function () {
     '\\arccos': 'arco cosseno de',
     '\\arcsin': 'arco seno de',
     '\\arctan': 'arco tangente de',
+    '\\sinh': 'seno hiperbólico de',
+    '\\cosh': 'cosseno hiperbólico de',
+    '\\tanh': 'tangente hiperbólica de',
+    '\\coth': 'cotangente hiperbólica de',
+    '\\sech': 'secante hiperbólica de',
+    '\\csch': 'cossecante hiperbólica de',
     '\\log': 'logaritmo de',
     '\\ln': 'logaritmo natural de',
+    '\\lg': 'logaritmo decimal de',
     '\\exp': 'exponencial de',
-    '\\lim': 'limite de',
+    '\\lim': 'limite',
+    '\\limsup': 'limite superior de',
+    '\\liminf': 'limite inferior de',
+    '\\sup': 'supremo de',
+    '\\inf': 'ínfimo de',
     '\\max': 'máximo de',
     '\\min': 'mínimo de',
     '\\det': 'determinante de',
-    '\\dim': 'dimensão de'
+    '\\dim': 'dimensão de',
+    '\\ker': 'núcleo de',
+    '\\hom': 'homomorfismo de',
+    '\\gcd': 'máximo divisor comum de',
+    '\\lcm': 'mínimo múltiplo comum de',
+    '\\mod': 'módulo',
+    '\\bmod': 'módulo',
+    '\\deg': 'grau de',
+    '\\Pr': 'probabilidade de',
+    '\\arg': 'argumento de',
+    '\\Re': 'parte real de',
+    '\\Im': 'parte imaginária de'
   };
 
   var BIG_OPS = {
@@ -87,26 +243,114 @@ var MathA11y = (function () {
     '\\iiint': 'integral tripla',
     '\\oint': 'integral de contorno',
     '\\sum': 'somatório',
-    '\\prod': 'produtório'
+    '\\prod': 'produtório',
+    '\\coprod': 'coprodutório',
+    '\\bigcup': 'união',
+    '\\bigcap': 'intersecção'
   };
+
+  var ACCENT_CMDS = {
+    '\\hat': 'chapéu',
+    '\\widehat': 'chapéu',
+    '\\bar': 'barra',
+    '\\overline': 'barra sobre',
+    '\\vec': 'vetor',
+    '\\overrightarrow': 'vetor',
+    '\\tilde': 'til',
+    '\\widetilde': 'til',
+    '\\dot': 'ponto',
+    '\\ddot': 'dois pontos',
+    '\\acute': 'acento agudo',
+    '\\grave': 'acento grave',
+    '\\breve': 'breve',
+    '\\check': 'caron',
+    '\\overleftarrow': 'com seta para esquerda',
+    '\\underline': 'sublinhado'
+  };
+
+  var ENV_NAMES = {
+    'matrix': 'matriz',
+    'pmatrix': 'matriz',
+    'bmatrix': 'matriz',
+    'Bmatrix': 'matriz',
+    'vmatrix': 'determinante',
+    'Vmatrix': 'norma da matriz',
+    'cases': 'casos',
+    'align': '',
+    'aligned': '',
+    'gather': '',
+    'gathered': '',
+    'array': 'arranjo'
+  };
+
+  var BLACKBOARD = {
+    'R': 'reais',
+    'N': 'naturais',
+    'Z': 'inteiros',
+    'C': 'complexos',
+    'Q': 'racionais'
+  };
+
+  var ROOT_ORDINALS = {
+    '3': 'cúbica',
+    '4': 'quarta',
+    '5': 'quinta',
+    '6': 'sexta',
+    '7': 'sétima',
+    '8': 'oitava',
+    '9': 'nona',
+    '10': 'décima'
+  };
+
+  var GREEKS = [
+    '\\alpha', '\\beta', '\\gamma', '\\delta', '\\epsilon', '\\varepsilon',
+    '\\zeta', '\\eta', '\\theta', '\\vartheta', '\\iota', '\\kappa',
+    '\\lambda', '\\mu', '\\nu', '\\xi', '\\omicron', '\\pi', '\\rho',
+    '\\sigma', '\\tau', '\\upsilon', '\\phi', '\\varphi', '\\chi', '\\psi',
+    '\\omega', '\\Alpha', '\\Beta', '\\Gamma', '\\Delta', '\\Epsilon',
+    '\\Zeta', '\\Eta', '\\Theta', '\\Iota', '\\Kappa', '\\Lambda', '\\Mu',
+    '\\Nu', '\\Xi', '\\Omicron', '\\Pi', '\\Rho', '\\Sigma', '\\Tau',
+    '\\Upsilon', '\\Phi', '\\Chi', '\\Psi', '\\Omega'
+  ].map(function (k) { return SYMBOLS[k]; });
+
+  var OPERATOR_EXACT = ['e', 'ou', 'se', 'caso'];
+
+  var NON_VALUE_KEYWORDS = [
+    'abre', 'fecha', 'mais', 'menos', 'igual', 'negativo', 'positivo',
+    'vezes', 'menor', 'maior', 'início', 'fim', ' de', 'dividido',
+    'união', 'interseção', 'mapeia', 'implica', 'pertence', 'contido',
+    'contém', 'portanto', 'porque', 'norma', 'módulo', 'composição',
+    'perpendicular', 'paralelo', 'proporcional', 'aproximadamente',
+    'equivalente', 'diferente', 'semelhante', 'congruente', 'não', 'ou',
+    'ponto', 'dois pontos', 'parcial', 'somente', 'nabla', 'infinito',
+    'tende', 'para', 'seta', 'superconjunto', 'diferença de conjuntos',
+    'todo', 'existe', 'para todo', 'conjunto', 'equilíbrio', 'adaga',
+    'dupla adaga', 'estrela', 'ponto', 'precede', 'sucede', 'soma direta',
+    'produto tensorial', 'h barra', 'linha'
+  ];
+
+  function containsAnyKeyword(str, keywords) {
+    for (var i = 0; i < keywords.length; i++) {
+      if (str.indexOf(keywords[i]) !== -1) return true;
+    }
+    return false;
+  }
 
   function isSimpleToken(text) {
     var t = text.trim();
     return /^[a-zA-Z]$/.test(t) || /^\d+$/.test(t);
   }
 
-  var GREEKS = ['pi','tau','alfa','beta','gama','delta','épsilon','teta','lambda','mu','sigma','ômega','fi','psi'];
-
   function isValueToken(token) {
     if (!token) return false;
     var t = token.trim().replace(/,/g, '');
     if (!t) return false;
-    if (/^[a-zA-Z0-9]/.test(t) && t.indexOf('abre') === -1 && t.indexOf('fecha') === -1
-        && t.indexOf('mais') === -1 && t.indexOf('menos') === -1 && t.indexOf('igual') === -1
-        && t.indexOf('negativo') === -1 && t.indexOf('vezes') === -1 && t.indexOf('menor') === -1
-        && t.indexOf('maior') === -1) return true;
+    if (OPERATOR_EXACT.indexOf(t) !== -1) return false;
+    if (/\s/.test(t) && !/^(fim d|raiz )/.test(t) && GREEKS.indexOf(t) === -1)
+      return false;
+    if (/^[a-zA-Z0-9]/.test(t) && !containsAnyKeyword(t, NON_VALUE_KEYWORDS))
+      return true;
     if (t.indexOf('fim d') === 0) return true;
-    if (t === 'fecha parênteses' || t === 'fecha colchetes') return true;
     if (GREEKS.indexOf(t) !== -1) return true;
     return false;
   }
@@ -151,8 +395,44 @@ var MathA11y = (function () {
         continue;
       }
 
+      // Apóstrofos (notação de derivada: f', f'', f''')
+      if (ch === "'") {
+        var primeCount = 0;
+        while (pos < input.length && input[pos] === "'") {
+          primeCount++;
+          pos++;
+        }
+        if (primeCount === 1) {
+          parts.push('linha');
+        } else if (primeCount === 2) {
+          parts.push('duas linhas');
+        } else if (primeCount === 3) {
+          parts.push('três linhas');
+        } else {
+          parts.push(primeCount + ' linhas');
+        }
+        continue;
+      }
+
       // Comando LaTeX (\...)
       if (ch === '\\') {
+        // Detectar infix \choose
+        var peekInfixPos = pos + 1;
+        var peekInfixCmd = '';
+        while (peekInfixPos < input.length && /[a-zA-Z]/.test(input[peekInfixPos])) {
+          peekInfixCmd += input[peekInfixPos];
+          peekInfixPos++;
+        }
+        if (peekInfixCmd === 'choose') {
+          var chooseNum = cleanText(parts.join(' '));
+          parts.length = 0;
+          pos = peekInfixPos;
+          var chooseDen = parseExpr(input, pos);
+          parts.push('binomial de ' + chooseNum + ' sobre ' + cleanText(chooseDen.text));
+          pos = chooseDen.pos;
+          continue;
+        }
+
         var cmdResult = parseCommand(input, pos);
         if (cmdResult.text !== null) {
           var cmdText = cmdResult.text;
@@ -174,7 +454,7 @@ var MathA11y = (function () {
         continue;
       }
 
-      // Superscript (modificador do token anterior, sem multiplicação implícita)
+      // Superscript
       if (ch === '^') {
         var supResult = parseSuperscript(input, pos);
         parts.push(supResult.text);
@@ -182,7 +462,7 @@ var MathA11y = (function () {
         continue;
       }
 
-      // Subscript (modificador do token anterior, sem multiplicação implícita)
+      // Subscript
       if (ch === '_') {
         var subResult = parseSubscript(input, pos);
         parts.push(subResult.text);
@@ -190,13 +470,22 @@ var MathA11y = (function () {
         continue;
       }
 
+      // Fatorial
+      if (ch === '!') {
+        parts.push('fatorial');
+        pos++;
+        continue;
+      }
+
+      // Vírgula
+      if (ch === ',') {
+        parts.push(',');
+        pos++;
+        continue;
+      }
+
       // Operadores
       if (ch === '+') {
-        var prevPlus = parts.length > 0 ? parts[parts.length - 1] : '';
-        var isPlusSign = !prevPlus || prevPlus === 'igual a' || prevPlus === 'mais' ||
-                         prevPlus === 'menos' ||
-                         prevPlus.indexOf('abre') !== -1 || prevPlus.indexOf(' de') !== -1 ||
-                         prevPlus.indexOf('sobre') !== -1;
         parts.push('mais');
         pos++;
         continue;
@@ -207,11 +496,6 @@ var MathA11y = (function () {
         continue;
       }
       if (ch === '-') {
-        var prev = parts.length > 0 ? parts[parts.length - 1] : '';
-        var isSign = !prev || prev === 'igual a' || prev === 'mais' ||
-                     prev === 'menos' ||
-                     prev.indexOf('abre') !== -1 || prev.indexOf(' de') !== -1 ||
-                     prev.indexOf('sobre') !== -1;
         parts.push('menos');
         pos++;
         continue;
@@ -249,6 +533,13 @@ var MathA11y = (function () {
         continue;
       }
 
+      // Dois pontos (razão/proporção)
+      if (ch === ':') {
+        parts.push('para');
+        pos++;
+        continue;
+      }
+
       // Pipe (valor absoluto)
       if (ch === '|') {
         parts.push('barra vertical');
@@ -258,16 +549,19 @@ var MathA11y = (function () {
 
       // Dígitos e letras
       if (/[a-zA-Z0-9.]/.test(ch)) {
-        // Acumular sequências de dígitos
         if (/[0-9]/.test(ch)) {
           var numStr = '';
           while (pos < input.length && /[0-9.]/.test(input[pos])) {
             numStr += input[pos];
             pos++;
           }
+          // Converter ponto decimal para "vírgula" em português
+          if (numStr.indexOf('.') !== -1) {
+            var numParts = numStr.split('.');
+            numStr = numParts[0] + ' vírgula ' + numParts[1];
+          }
           pushWithImplicitMul(parts, numStr);
         } else if (ch === 'd') {
-          // Detectar diferencial: d seguido de letra ou \comando
           var nextPos = pos + 1;
           if (nextPos < input.length && /[a-zA-Z]/.test(input[nextPos]) && input[nextPos] !== 'd') {
             parts.push('d' + input[nextPos]);
@@ -300,11 +594,10 @@ var MathA11y = (function () {
   }
 
   function parseCommand(input, pos) {
-    // pos aponta para '\'
     var start = pos;
     pos++; // pular '\'
 
-    // Comandos de um caractere: \, \; \! \  etc.
+    // Comandos de um caractere
     if (pos < input.length && !/[a-zA-Z]/.test(input[pos])) {
       var shortCmd = '\\' + input[pos];
       pos++;
@@ -328,10 +621,17 @@ var MathA11y = (function () {
       pos = skipSpaces(input, pos);
       if (pos < input.length) {
         var delim = input[pos];
+        // \left\| → norma, \left\lfloor, \left\lceil, \left\langle
+        if (delim === '\\') {
+          var leftCmdResult = parseLeftRightDelim(input, pos);
+          if (leftCmdResult) return leftCmdResult;
+          pos++;
+          return { text: 'abre chaves', pos: pos };
+        }
         pos++;
         if (delim === '(') return { text: 'abre parênteses', pos: pos };
         if (delim === '[') return { text: 'abre colchetes', pos: pos };
-        if (delim === '{' || delim === '\\') return { text: 'abre chaves', pos: pos };
+        if (delim === '{') return { text: 'abre chaves', pos: pos };
         if (delim === '|') return { text: 'abre valor absoluto', pos: pos };
         if (delim === '.') return { text: '', pos: pos };
       }
@@ -342,10 +642,17 @@ var MathA11y = (function () {
       pos = skipSpaces(input, pos);
       if (pos < input.length) {
         var rDelim = input[pos];
+        // \right\| → norma, \right\rfloor, \right\rceil, \right\rangle
+        if (rDelim === '\\') {
+          var rightCmdResult = parseLeftRightDelim(input, pos);
+          if (rightCmdResult) return rightCmdResult;
+          pos++;
+          return { text: 'fecha chaves', pos: pos };
+        }
         pos++;
         if (rDelim === ')') return { text: 'fecha parênteses', pos: pos };
         if (rDelim === ']') return { text: 'fecha colchetes', pos: pos };
-        if (rDelim === '}' || rDelim === '\\') return { text: 'fecha chaves', pos: pos };
+        if (rDelim === '}') return { text: 'fecha chaves', pos: pos };
         if (rDelim === '|') return { text: 'fecha valor absoluto', pos: pos };
         if (rDelim === '.') return { text: '', pos: pos };
       }
@@ -364,15 +671,46 @@ var MathA11y = (function () {
       var numTrim = num.text.trim();
       var denTrim = den.text.trim();
 
-      // Detectar derivada: \frac{d}{dx}
-      if (numTrim === 'd' && /^d\s*[a-zA-Z]/.test(denTrim)) {
-        var varName = denTrim.replace(/^d\s*/, '');
-        return { text: 'derivada em relação a ' + varName + ' de', pos: pos };
+      // Derivada de ordem superior: \frac{d^2 y}{dx^2}
+      var derivMatch = numTrim.match(/^d (ao quadrado|ao cubo|elevado a \d+)\s*(.*)$/);
+      var denDerivMatch = denTrim.match(/^d([a-zA-Z])(\s+(ao quadrado|ao cubo|elevado a \d+))?$/);
+      if (derivMatch && denDerivMatch) {
+        var dOrder = derivMatch[1];
+        var dFunc = derivMatch[2] ? derivMatch[2].trim() : '';
+        var varName = denDerivMatch[1];
+        var orderLabel = '';
+        if (dOrder === 'ao quadrado') orderLabel = ' segunda';
+        else if (dOrder === 'ao cubo') orderLabel = ' terceira';
+        else if (dOrder && dOrder.indexOf('elevado a') === 0)
+          orderLabel = ' de ordem ' + dOrder.replace('elevado a ', '');
+        if (dFunc) {
+          return { text: 'derivada' + orderLabel + ' de ' + dFunc + ' em relação a ' + varName, pos: pos };
+        }
+        return { text: 'derivada' + orderLabel + ' em relação a ' + varName + ' de', pos: pos };
       }
-      // Derivada parcial: \frac{\partial}{\partial x}
-      if (numTrim === 'parcial' && /^parcial\s/.test(denTrim)) {
-        var pVarName = denTrim.replace(/^parcial\s*/, '');
-        return { text: 'derivada parcial em relação a ' + pVarName + ' de', pos: pos };
+
+      // Derivada simples: \frac{d}{dx}
+      if (numTrim === 'd' && /^d\s*[a-zA-Z]/.test(denTrim)) {
+        var dVarName = denTrim.replace(/^d\s*/, '');
+        return { text: 'derivada em relação a ' + dVarName + ' de', pos: pos };
+      }
+
+      // Derivada parcial de ordem superior
+      var partialNumMatch = numTrim.match(/^parcial\s*(ao quadrado|ao cubo|elevado a \d+)?\s*(.*)$/);
+      var partialDenMatch = denTrim.match(/^parcial\s*(.+)$/);
+      if (partialNumMatch && partialDenMatch) {
+        var pOrder = partialNumMatch[1];
+        var pFunc = partialNumMatch[2] || '';
+        var pVarName = partialDenMatch[1].replace(/\s*(ao quadrado|ao cubo|elevado a \d+)\s*$/, '');
+        var pOrderLabel = '';
+        if (pOrder === 'ao quadrado') pOrderLabel = ' segunda';
+        else if (pOrder === 'ao cubo') pOrderLabel = ' terceira';
+        else if (pOrder && pOrder.indexOf('elevado a') === 0)
+          pOrderLabel = ' de ordem ' + pOrder.replace('elevado a ', '');
+        if (pFunc) {
+          return { text: 'derivada parcial' + pOrderLabel + ' de ' + pFunc + ' em relação a ' + pVarName, pos: pos };
+        }
+        return { text: 'derivada parcial' + pOrderLabel + ' em relação a ' + pVarName + ' de', pos: pos };
       }
 
       if (isSimpleToken(num.text) && isSimpleToken(den.text)) {
@@ -385,17 +723,18 @@ var MathA11y = (function () {
     if (fullCmd === '\\sqrt') {
       pos = skipSpaces(input, pos);
       if (pos < input.length && input[pos] === '[') {
-        pos++; // pular '['
+        pos++;
         var nthStr = '';
         while (pos < input.length && input[pos] !== ']') {
           nthStr += input[pos];
           pos++;
         }
-        if (pos < input.length) pos++; // pular ']'
+        if (pos < input.length) pos++;
         var nthArg = consumeArg(input, pos);
         pos = nthArg.pos;
         var nthText = latexToText(nthStr);
-        return { text: 'raiz ' + nthText + '-ésima de ' + nthArg.text, pos: pos };
+        var rootLabel = ROOT_ORDINALS[nthText] || nthText + '-ésima';
+        return { text: 'raiz ' + rootLabel + ' de ' + nthArg.text, pos: pos };
       }
       var sqrtArg = consumeArg(input, pos);
       pos = sqrtArg.pos;
@@ -432,6 +771,206 @@ var MathA11y = (function () {
       return { text: opName + ' de', pos: pos };
     }
 
+    // \lim com subscrito "quando...tende a"
+    if (fullCmd === '\\lim' || fullCmd === '\\limsup' || fullCmd === '\\liminf') {
+      var limLabel = FUNCTIONS[fullCmd];
+      // Remover "de" final das labels de limsup/liminf para evitar "limite superior de quando"
+      limLabel = limLabel.replace(/ de$/, '');
+      var limPos = skipSpaces(input, pos);
+      if (limPos < input.length && input[limPos] === '_') {
+        limPos++;
+        var limSub = consumeArg(input, limPos);
+        var limText = limSub.text.trim();
+        limText = limText.replace(/\bpara\b/g, 'tende a');
+        return { text: limLabel + ' quando ' + limText + ' de', pos: limSub.pos };
+      }
+      return { text: limLabel + ' de', pos: pos };
+    }
+
+    // \log com base opcional
+    if (fullCmd === '\\log') {
+      var logPos = skipSpaces(input, pos);
+      if (logPos < input.length && input[logPos] === '_') {
+        logPos++;
+        var logBase = consumeArg(input, logPos);
+        return { text: 'logaritmo na base ' + logBase.text + ' de', pos: logBase.pos };
+      }
+      return { text: FUNCTIONS[fullCmd], pos: pos };
+    }
+
+    // \binom, \dbinom, \tbinom
+    if (fullCmd === '\\binom' || fullCmd === '\\dbinom' || fullCmd === '\\tbinom') {
+      pos = skipSpaces(input, pos);
+      var binomN = consumeArg(input, pos);
+      pos = binomN.pos;
+      pos = skipSpaces(input, pos);
+      var binomK = consumeArg(input, pos);
+      pos = binomK.pos;
+      return { text: 'binomial de ' + binomN.text + ' sobre ' + binomK.text, pos: pos };
+    }
+
+    // \pmod{n}
+    if (fullCmd === '\\pmod') {
+      pos = skipSpaces(input, pos);
+      var pmodArg = consumeArg(input, pos);
+      pos = pmodArg.pos;
+      return { text: 'módulo ' + pmodArg.text, pos: pos };
+    }
+
+    // \cfrac{num}{den} — fração contínua (mesmo tratamento de \frac)
+    if (fullCmd === '\\cfrac' || fullCmd === '\\dfrac' || fullCmd === '\\tfrac') {
+      pos = skipSpaces(input, pos);
+      var cfNum = consumeArg(input, pos);
+      pos = cfNum.pos;
+      pos = skipSpaces(input, pos);
+      var cfDen = consumeArg(input, pos);
+      pos = cfDen.pos;
+      if (isSimpleToken(cfNum.text) && isSimpleToken(cfDen.text)) {
+        return { text: cfNum.text + ' sobre ' + cfDen.text, pos: pos };
+      }
+      return { text: 'início de fração ' + cfNum.text + ' sobre ' + cfDen.text + ' fim de fração', pos: pos };
+    }
+
+    // \begin{environment}
+    if (fullCmd === '\\begin') {
+      return parseEnvironment(input, pos);
+    }
+
+    // \mathbb{R}, \mathbb{N}, etc.
+    if (fullCmd === '\\mathbb') {
+      pos = skipSpaces(input, pos);
+      if (pos < input.length && input[pos] === '{') {
+        var bbArg = consumeArg(input, pos);
+        var bbText = BLACKBOARD[bbArg.text.trim()] || bbArg.text;
+        return { text: bbText, pos: bbArg.pos };
+      }
+      return { text: '', pos: pos };
+    }
+
+    // Acentos: \hat, \vec, \bar, \tilde, etc.
+    if (ACCENT_CMDS[fullCmd]) {
+      var accentName = ACCENT_CMDS[fullCmd];
+      pos = skipSpaces(input, pos);
+      var accentArg;
+      if (pos < input.length && input[pos] === '{') {
+        accentArg = consumeArg(input, pos);
+      } else if (pos < input.length && /[a-zA-Z0-9]/.test(input[pos])) {
+        accentArg = { text: input[pos], pos: pos + 1 };
+      } else {
+        return { text: '', pos: pos };
+      }
+      if (fullCmd === '\\vec' || fullCmd === '\\overrightarrow') {
+        return { text: 'vetor ' + accentArg.text, pos: accentArg.pos };
+      }
+      return { text: accentArg.text + ' ' + accentName, pos: accentArg.pos };
+    }
+
+    // \overset{top}{base}
+    if (fullCmd === '\\overset') {
+      pos = skipSpaces(input, pos);
+      var overTopArg = consumeArg(input, pos);
+      pos = overTopArg.pos;
+      pos = skipSpaces(input, pos);
+      var overBaseArg = consumeArg(input, pos);
+      pos = overBaseArg.pos;
+      return { text: overBaseArg.text + ' com ' + overTopArg.text + ' acima', pos: pos };
+    }
+
+    // \underset{bottom}{base}
+    if (fullCmd === '\\underset') {
+      pos = skipSpaces(input, pos);
+      var underBottomArg = consumeArg(input, pos);
+      pos = underBottomArg.pos;
+      pos = skipSpaces(input, pos);
+      var underBaseArg = consumeArg(input, pos);
+      pos = underBaseArg.pos;
+      return { text: underBaseArg.text + ' com ' + underBottomArg.text + ' abaixo', pos: pos };
+    }
+
+    // \stackrel{top}{base}
+    if (fullCmd === '\\stackrel') {
+      pos = skipSpaces(input, pos);
+      var stackTop = consumeArg(input, pos);
+      pos = stackTop.pos;
+      pos = skipSpaces(input, pos);
+      var stackBase = consumeArg(input, pos);
+      pos = stackBase.pos;
+      return { text: stackBase.text + ' com ' + stackTop.text + ' acima', pos: pos };
+    }
+
+    // \xrightarrow[below]{above}
+    if (fullCmd === '\\xrightarrow') {
+      pos = skipSpaces(input, pos);
+      var xrBelow = '';
+      if (pos < input.length && input[pos] === '[') {
+        pos++;
+        var xrBelowStr = '';
+        while (pos < input.length && input[pos] !== ']') {
+          xrBelowStr += input[pos];
+          pos++;
+        }
+        if (pos < input.length) pos++;
+        xrBelow = latexToText(xrBelowStr);
+      }
+      var xrAbove = consumeArg(input, pos);
+      pos = xrAbove.pos;
+      var xrText = 'seta para direita';
+      if (xrAbove.text) xrText += ' com ' + xrAbove.text + ' acima';
+      if (xrBelow) xrText += ' e ' + xrBelow + ' abaixo';
+      return { text: xrText, pos: pos };
+    }
+
+    // \xleftarrow[below]{above}
+    if (fullCmd === '\\xleftarrow') {
+      pos = skipSpaces(input, pos);
+      var xlBelow = '';
+      if (pos < input.length && input[pos] === '[') {
+        pos++;
+        var xlBelowStr = '';
+        while (pos < input.length && input[pos] !== ']') {
+          xlBelowStr += input[pos];
+          pos++;
+        }
+        if (pos < input.length) pos++;
+        xlBelow = latexToText(xlBelowStr);
+      }
+      var xlAbove = consumeArg(input, pos);
+      pos = xlAbove.pos;
+      var xlText = 'seta para esquerda';
+      if (xlAbove.text) xlText += ' com ' + xlAbove.text + ' acima';
+      if (xlBelow) xlText += ' e ' + xlBelow + ' abaixo';
+      return { text: xlText, pos: pos };
+    }
+
+    // \not — negação prefixada genérica
+    if (fullCmd === '\\not') {
+      // Tentar combinar com próximo comando: \not\subset → "não contido em"
+      pos = skipSpaces(input, pos);
+      if (pos < input.length && input[pos] === '\\') {
+        var notMatch = input.substring(pos).match(/^\\[a-zA-Z]+/);
+        if (notMatch) {
+          var notPairKey = '\\not' + notMatch[0];
+          if (SYMBOLS[notPairKey] !== undefined) {
+            pos += notMatch[0].length;
+            return { text: SYMBOLS[notPairKey], pos: pos };
+          }
+        }
+        var nextCmd = parseCommand(input, pos);
+        return { text: 'não ' + nextCmd.text, pos: nextCmd.pos };
+      }
+      return { text: 'não', pos: pos };
+    }
+
+    // \phantom, \hphantom, \vphantom — espaçadores silenciosos
+    if (fullCmd === '\\phantom' || fullCmd === '\\hphantom' || fullCmd === '\\vphantom') {
+      pos = skipSpaces(input, pos);
+      if (pos < input.length && input[pos] === '{') {
+        var phantomArg = consumeArg(input, pos);
+        pos = phantomArg.pos;
+      }
+      return { text: '', pos: pos };
+    }
+
     // Funções trigonométricas etc.
     if (FUNCTIONS[fullCmd]) {
       return { text: FUNCTIONS[fullCmd], pos: pos };
@@ -442,11 +981,9 @@ var MathA11y = (function () {
       return { text: SYMBOLS[fullCmd], pos: pos };
     }
 
-    // Comandos de formatação que envolvem um argumento (ignorar o comando, manter o conteúdo)
-    var passthrough = ['\\text', '\\mathrm', '\\mathbf', '\\mathit', '\\mathbb',
-                       '\\mathcal', '\\textbf', '\\textit', '\\operatorname',
-                       '\\overline', '\\underline', '\\hat', '\\bar', '\\vec',
-                       '\\tilde', '\\dot', '\\ddot'];
+    // Comandos de formatação — manter conteúdo, ignorar comando
+    var passthrough = ['\\text', '\\mathrm', '\\mathbf', '\\mathit',
+                       '\\mathcal', '\\textbf', '\\textit', '\\operatorname'];
     if (passthrough.indexOf(fullCmd) !== -1) {
       pos = skipSpaces(input, pos);
       if (pos < input.length && input[pos] === '{') {
@@ -460,25 +997,154 @@ var MathA11y = (function () {
     return { text: cmdName, pos: pos };
   }
 
+  function parseEnvironment(input, pos) {
+    pos = skipSpaces(input, pos);
+    if (pos >= input.length || input[pos] !== '{') {
+      return { text: '', pos: pos };
+    }
+    pos++;
+    var envName = '';
+    while (pos < input.length && input[pos] !== '}') {
+      envName += input[pos];
+      pos++;
+    }
+    if (pos < input.length) pos++;
+    // Pular argumento opcional [...]
+    if (pos < input.length && input[pos] === '[') {
+      while (pos < input.length && input[pos] !== ']') pos++;
+      if (pos < input.length) pos++;
+    }
+    // Para array, pular argumento de alinhamento {ccc}
+    if (envName === 'array' && pos < input.length && input[pos] === '{') {
+      while (pos < input.length && input[pos] !== '}') pos++;
+      if (pos < input.length) pos++;
+    }
+    var endTag = '\\end{' + envName + '}';
+    var endIdx = input.indexOf(endTag, pos);
+    if (endIdx === -1) {
+      var fallback = parseExpr(input, pos);
+      return { text: fallback.text, pos: fallback.pos };
+    }
+    var body = input.substring(pos, endIdx);
+    var afterEnd = endIdx + endTag.length;
+    var envLabel = ENV_NAMES[envName];
+    if (envLabel === undefined) {
+      var unknownResult = parseExpr(body, 0);
+      return { text: unknownResult.text, pos: afterEnd };
+    }
+    if (envName === 'cases') {
+      return parseCasesEnv(body, afterEnd);
+    }
+    if (envLabel === 'matriz' || envLabel === 'determinante' ||
+        envLabel === 'norma da matriz' || envName === 'array') {
+      return parseMatrixEnv(body, envLabel || 'arranjo', afterEnd);
+    }
+    // align, gather, etc. — processar conteúdo sem wrapper
+    var alignResult = parseExpr(body, 0);
+    return { text: alignResult.text, pos: afterEnd };
+  }
+
+  function parseMatrixEnv(body, label, afterEnd) {
+    var rows = splitRows(body);
+    var parts = [];
+    parts.push('início de ' + label);
+    for (var r = 0; r < rows.length; r++) {
+      var cols = rows[r].split('&');
+      var colTexts = [];
+      for (var c = 0; c < cols.length; c++) {
+        var cellResult = latexToText(cols[c].trim());
+        if (cellResult) colTexts.push(cellResult);
+      }
+      if (colTexts.length > 0) {
+        parts.push('linha ' + (r + 1) + ': ' + colTexts.join(', '));
+      }
+    }
+    parts.push('fim de ' + label);
+    return { text: parts.join('; '), pos: afterEnd };
+  }
+
+  function parseCasesEnv(body, afterEnd) {
+    var rows = splitRows(body);
+    var parts = [];
+    parts.push('início de casos');
+    for (var r = 0; r < rows.length; r++) {
+      var cols = rows[r].split('&');
+      var value = latexToText(cols[0].trim());
+      var condition = cols.length > 1 ? latexToText(cols[1].trim()) : '';
+      if (value) {
+        if (condition) {
+          parts.push(value + ' se ' + condition);
+        } else {
+          parts.push(value);
+        }
+      }
+    }
+    parts.push('fim de casos');
+    return { text: parts.join('; '), pos: afterEnd };
+  }
+
+  function splitRows(body) {
+    var rows = body.split(/\\\\/);
+    var result = [];
+    for (var i = 0; i < rows.length; i++) {
+      var row = rows[i].trim();
+      row = row.replace(/^\[.*?\]/, '').trim();
+      if (row) result.push(row);
+    }
+    return result;
+  }
+
+  function parseLeftRightDelim(input, pos) {
+    // pos aponta para '\' dentro de \left ou \right
+    var dp = pos + 1;
+    var dCmd = '';
+    while (dp < input.length && /[a-zA-Z|]/.test(input[dp])) {
+      dCmd += input[dp];
+      dp++;
+    }
+    var DELIM_MAP = {
+      '|': 'norma',
+      'lfloor': 'abre piso', 'rfloor': 'fecha piso',
+      'lceil': 'abre teto', 'rceil': 'fecha teto',
+      'langle': 'abre ângulo', 'rangle': 'fecha ângulo',
+      'lVert': 'abre norma', 'rVert': 'fecha norma'
+    };
+    if (DELIM_MAP[dCmd] !== undefined) {
+      var label = DELIM_MAP[dCmd];
+      if (dCmd === '|') {
+        // Detectar se é abertura ou fechamento pelo contexto (não é possível, usar genérico)
+        label = 'norma';
+      }
+      return { text: label, pos: dp };
+    }
+    return null;
+  }
+
   function parseGroup(input, pos) {
-    // pos aponta para '{'
     pos++; // pular '{'
     var result = parseExpr(input, pos);
     if (result.pos < input.length && input[result.pos] === '}') {
-      result.pos++; // pular '}'
+      result.pos++;
     }
     return { text: result.text, pos: result.pos };
   }
 
   function parseSuperscript(input, pos) {
-    // pos aponta para '^'
     pos++; // pular '^'
     var arg = consumeArg(input, pos);
     var text = arg.text.trim();
 
-    // Casos especiais comuns
     if (text === '2') return { text: 'ao quadrado', pos: arg.pos };
     if (text === '3') return { text: 'ao cubo', pos: arg.pos };
+    if (text === 'negativo 1' || text === 'menos 1')
+      return { text: 'inverso', pos: arg.pos };
+    if (text === 'T' || text === 't')
+      return { text: 'transposto', pos: arg.pos };
+    if (text === 'composição')
+      return { text: 'graus', pos: arg.pos };
+    if (/^(linha|duas linhas|três linhas|\d+ linhas)$/.test(text)) {
+      return { text: text, pos: arg.pos };
+    }
 
     if (isSimpleToken(text)) {
       return { text: 'elevado a ' + text, pos: arg.pos };
@@ -487,7 +1153,6 @@ var MathA11y = (function () {
   }
 
   function parseSubscript(input, pos) {
-    // pos aponta para '_'
     pos++; // pular '_'
     var arg = consumeArg(input, pos);
     return { text: 'índice ' + arg.text, pos: arg.pos };
@@ -497,18 +1162,15 @@ var MathA11y = (function () {
     pos = skipSpaces(input, pos);
     if (pos >= input.length) return { text: '', pos: pos };
 
-    // Grupo entre chaves
     if (input[pos] === '{') {
       return parseGroup(input, pos);
     }
 
-    // Token único: comando ou caractere
     if (input[pos] === '\\') {
       var cmdResult = parseCommand(input, pos);
       return { text: cmdResult.text || '', pos: cmdResult.pos };
     }
 
-    // Caractere simples
     var ch = input[pos];
     pos++;
     if (ch === '-') return { text: 'menos', pos: pos };
@@ -535,6 +1197,7 @@ var MathA11y = (function () {
   var DELIMITERS = [
     { left: '\\[', right: '\\]', display: true },
     { left: '\\(', right: '\\)', display: false },
+    { left: '$$', right: '$$', display: true },
     { left: '$', right: '$', display: false }
   ];
 
@@ -574,8 +1237,8 @@ var MathA11y = (function () {
       for (var d = 0; d < DELIMITERS.length; d++) {
         var delim = DELIMITERS[d];
         if (text.substr(pos, delim.left.length) === delim.left) {
-          // Para $, garantir que não é $$ e não é precedido por \
-          if (delim.left === '$') {
+          // Para $, garantir que não é precedido por \
+          if (delim.left === '$' && delim.right === '$') {
             if (pos > 0 && text[pos - 1] === '\\') { pos++; found = true; break; }
           }
 
@@ -612,7 +1275,6 @@ var MathA11y = (function () {
     var pos = start;
     while (pos <= text.length - right.length) {
       if (text.substr(pos, right.length) === right) {
-        // Para $, evitar match vazio
         if (right === '$' && pos === start) {
           pos++;
           continue;
@@ -637,11 +1299,8 @@ var MathA11y = (function () {
       return;
     }
 
-    // Coletar todas as correspondências antes de modificar o DOM
     var allMatches = scanTextNodes(container);
 
-    // Processar de trás para frente para manter posições válidas
-    // Agrupar por nó de texto
     var nodeMap = new Map();
     for (var i = 0; i < allMatches.length; i++) {
       var m = allMatches[i];
@@ -652,36 +1311,30 @@ var MathA11y = (function () {
     }
 
     nodeMap.forEach(function (nodeMatches, textNode) {
-      // Ordenar de trás para frente dentro do mesmo nó
       nodeMatches.sort(function (a, b) { return b.start - a.start; });
 
       var content = textNode.nodeValue;
       var parent = textNode.parentNode;
       if (!parent) return;
 
-      // Construir fragmento com texto + equações
       var frag = document.createDocumentFragment();
       var lastEnd = 0;
 
-      // Reordenar para frente para construir o fragmento
       nodeMatches.sort(function (a, b) { return a.start - b.start; });
 
       for (var j = 0; j < nodeMatches.length; j++) {
         var match = nodeMatches[j];
 
-        // Texto antes da equação
         if (match.start > lastEnd) {
           frag.appendChild(document.createTextNode(content.substring(lastEnd, match.start)));
         }
 
-        // Criar elemento acessível
         var wrapper = createA11yElement(match.latex, match.display);
         frag.appendChild(wrapper);
 
         lastEnd = match.end;
       }
 
-      // Texto restante após a última equação
       if (lastEnd < content.length) {
         frag.appendChild(document.createTextNode(content.substring(lastEnd)));
       }
@@ -689,19 +1342,15 @@ var MathA11y = (function () {
       parent.replaceChild(frag, textNode);
     });
 
-    // Tratar equações display que são nós de texto diretamente no container
-    // (kramdown coloca \[...\] como texto solto entre tags)
     processDisplayBlocks(container);
   }
 
   function processDisplayBlocks(container) {
-    // Verificar se há divs .math-a11y-display que ficaram dentro de <p> — mover para fora
     var displayDivs = container.querySelectorAll('p > .math-a11y-display');
     for (var i = 0; i < displayDivs.length; i++) {
       var div = displayDivs[i];
       var p = div.parentNode;
       if (p && p.tagName === 'P') {
-        // Se o <p> só contém a equação (possivelmente com whitespace), substituir
         var textContent = p.textContent.replace(div.textContent, '').trim();
         if (!textContent) {
           p.parentNode.replaceChild(div, p);
@@ -718,6 +1367,8 @@ var MathA11y = (function () {
     var wrapper = document.createElement(tag);
     wrapper.className = cssClass;
     wrapper.setAttribute('aria-label', label);
+    wrapper.setAttribute('role', 'math');
+    wrapper.setAttribute('aria-roledescription', 'expressão matemática');
 
     var visual = document.createElement('span');
     visual.setAttribute('aria-hidden', 'true');
@@ -743,7 +1394,7 @@ var MathA11y = (function () {
 
   return {
     init: init,
-    latexToText: latexToText  // exposto para testes
+    latexToText: latexToText
   };
 
 })();
