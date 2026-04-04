@@ -321,7 +321,8 @@ MathA11y._data = (function () {
     'tende', 'para', 'seta', 'superconjunto', 'diferença de conjuntos',
     'todo', 'existe', 'para todo', 'conjunto', 'equilíbrio', 'adaga',
     'dupla adaga', 'estrela', 'ponto', 'precede', 'sucede', 'soma direta',
-    'produto tensorial', 'h barra', 'linha'
+    'produto tensorial', 'h barra', 'linha',
+    'triângulo', 'ângulo'
   ];
 
   var RELATIONAL_TEXTS = [
