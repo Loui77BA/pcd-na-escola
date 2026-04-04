@@ -39,6 +39,17 @@ MathA11y._parser = (function () {
     return /^[a-zA-Z]$/.test(t) || /^\d+$/.test(t);
   }
 
+  function isSimpleResult(parsedText) {
+    var t = parsedText.trim();
+    if (/^\d+$/.test(t)) return true;
+    if (/^[a-zA-Z]$/.test(t)) return true;
+    if (GREEKS.indexOf(t) !== -1) return true;
+    if (/^(ao quadrado|ao cubo|inverso|transposto|graus|linha|duas linhas|três linhas|\d+ linhas)$/.test(t)) return true;
+    return false;
+  }
+
+  var fracDepth = 0;
+
   function isValueToken(token) {
     if (!token) return false;
     var t = token.trim().replace(/,/g, '');
@@ -82,13 +93,25 @@ MathA11y._parser = (function () {
     return text.replace(/\s+/g, ' ').trim();
   }
 
-  function formatFraction(numText, denText) {
+  function formatFraction(numText, denText, depth) {
     var num = numText.trim() || 'vazio';
     var den = denText.trim() || 'vazio';
-    if (isSimpleToken(num) && isSimpleToken(den)) {
+    var d = (typeof depth === 'number') ? depth : 0;
+    if (d === 0 && isSimpleResult(num) && isSimpleResult(den)) {
       return num + ' sobre ' + den;
     }
-    return 'fração ' + num + ' sobre ' + den;
+    var prefix, suffix;
+    if (d === 0) {
+      prefix = 'início da fração';
+      suffix = 'fim da fração';
+    } else if (d === 1) {
+      prefix = 'início da fração interna';
+      suffix = 'fim da fração interna';
+    } else {
+      prefix = 'início da fração nível ' + (d + 1);
+      suffix = 'fim da fração nível ' + (d + 1);
+    }
+    return prefix + ', ' + num + ', sobre, ' + den + ', ' + suffix;
   }
 
   /* =============================================================
@@ -224,6 +247,9 @@ MathA11y._parser = (function () {
       // Superscript
       if (ch === '^') {
         var supResult = parseSuperscript(input, pos);
+        if (supResult.hasMarkers && parts.length > 0) {
+          parts[parts.length - 1] = parts[parts.length - 1] + ',';
+        }
         parts.push(supResult.text);
         pos = supResult.pos;
         continue;
@@ -231,7 +257,11 @@ MathA11y._parser = (function () {
 
       // Subscript
       if (ch === '_') {
-        var subResult = parseSubscript(input, pos);
+        var prevText = parts.length > 0 ? parts[parts.length - 1] : '';
+        var subResult = parseSubscript(input, pos, prevText);
+        if (subResult.hasMarkers && parts.length > 0) {
+          parts[parts.length - 1] = parts[parts.length - 1] + ',';
+        }
         parts.push(subResult.text);
         pos = subResult.pos;
         continue;
@@ -458,11 +488,14 @@ MathA11y._parser = (function () {
     // \frac{num}{den}
     if (fullCmd === '\\frac') {
       pos = skipSpaces(input, pos);
+      var currentFracDepth = fracDepth;
+      fracDepth++;
       var num = consumeArg(input, pos);
       pos = num.pos;
       pos = skipSpaces(input, pos);
       var den = consumeArg(input, pos);
       pos = den.pos;
+      fracDepth--;
 
       var numTrim = num.text.trim();
       var denTrim = den.text.trim();
@@ -512,7 +545,7 @@ MathA11y._parser = (function () {
         return { text: pOrderLabel + 'derivada parcial em relação a ' + pVarName + ' de', pos: pos };
       }
 
-      return { text: formatFraction(num.text, den.text), pos: pos, isFraction: true };
+      return { text: formatFraction(num.text, den.text, currentFracDepth), pos: pos, isFraction: true };
     }
 
     // \sqrt[n]{x} ou \sqrt{x}
@@ -530,11 +563,19 @@ MathA11y._parser = (function () {
         pos = nthArg.pos;
         var nthText = latexToText(nthStr);
         var rootLabel = ROOT_ORDINALS[nthText] || nthText + '-ésima';
-        return { text: 'raiz ' + rootLabel + ' de ' + (nthArg.text.trim() || 'vazio'), pos: pos };
+        var nthContent = nthArg.text.trim() || 'vazio';
+        if (isSimpleResult(nthContent)) {
+          return { text: 'raiz ' + rootLabel + ' de ' + nthContent, pos: pos };
+        }
+        return { text: 'raiz ' + rootLabel + ' de, início da raiz, ' + nthContent + ', fim da raiz', pos: pos };
       }
       var sqrtArg = consumeArg(input, pos);
       pos = sqrtArg.pos;
-      return { text: 'raiz quadrada de ' + (sqrtArg.text.trim() || 'vazio'), pos: pos };
+      var sqrtContent = sqrtArg.text.trim() || 'vazio';
+      if (isSimpleResult(sqrtContent)) {
+        return { text: 'raiz quadrada de ' + sqrtContent, pos: pos };
+      }
+      return { text: 'raiz quadrada de, início da raiz, ' + sqrtContent + ', fim da raiz', pos: pos };
     }
 
     // Operadores grandes: \int, \sum, \prod com limites opcionais
@@ -585,7 +626,8 @@ MathA11y._parser = (function () {
         // Ex: "x para 0" → "x tende a 0". Seguro porque subscritos de \lim são
         // tipicamente expressões simples como "x \to 0" ou "n \to \infty".
         limText = limText.replace(/\bpara\b/g, 'tende a');
-        return { text: limLabel + ' quando ' + limText + ' de', pos: limSub.pos, bigOp: true };
+        limText = limText.replace(/\btende a 0\b/, 'tende a zero');
+        return { text: limLabel + ' quando ' + limText, pos: limSub.pos, bigOp: true };
       }
       return { text: limLabel + ' de', pos: pos, bigOp: true };
     }
@@ -623,12 +665,15 @@ MathA11y._parser = (function () {
     // \cfrac, \dfrac, \tfrac
     if (fullCmd === '\\cfrac' || fullCmd === '\\dfrac' || fullCmd === '\\tfrac') {
       pos = skipSpaces(input, pos);
+      var cfDepth = fracDepth;
+      fracDepth++;
       var cfNum = consumeArg(input, pos);
       pos = cfNum.pos;
       pos = skipSpaces(input, pos);
       var cfDen = consumeArg(input, pos);
       pos = cfDen.pos;
-      return { text: formatFraction(cfNum.text, cfDen.text), pos: pos, isFraction: true };
+      fracDepth--;
+      return { text: formatFraction(cfNum.text, cfDen.text, cfDepth), pos: pos, isFraction: true };
     }
 
     // \begin{environment}
@@ -662,7 +707,11 @@ MathA11y._parser = (function () {
       if (fullCmd === '\\vec' || fullCmd === '\\overrightarrow') {
         return { text: 'vetor ' + accentArg.text, pos: accentArg.pos };
       }
-      return { text: accentArg.text + ' ' + accentName, pos: accentArg.pos };
+      var accentContent = accentArg.text.trim();
+      if (isSimpleResult(accentContent)) {
+        return { text: accentContent + ' ' + accentName, pos: accentArg.pos };
+      }
+      return { text: accentName + ' ' + accentContent, pos: accentArg.pos };
     }
 
     // \overset{top}{base}
@@ -684,6 +733,13 @@ MathA11y._parser = (function () {
       pos = skipSpaces(input, pos);
       var underBaseArg = consumeArg(input, pos);
       pos = underBaseArg.pos;
+      var underBase = underBaseArg.text.trim();
+      if (/^limite/.test(underBase)) {
+        var underLimLabel = underBase.replace(/ de$/, '');
+        var underLimText = underBottomArg.text.trim().replace(/\bpara\b/g, 'tende a');
+        underLimText = underLimText.replace(/\btende a 0\b/, 'tende a zero');
+        return { text: underLimLabel + ' quando ' + underLimText, pos: pos, bigOp: true };
+      }
       return { text: underBaseArg.text + ' com ' + underBottomArg.text + ' abaixo', pos: pos };
     }
 
@@ -732,6 +788,22 @@ MathA11y._parser = (function () {
         pos = phantomArg.pos;
       }
       return { text: '', pos: pos };
+    }
+
+    // Geometria: \triangle ABC, \angle ABC — consumir letras maiúsculas como nome
+    if (fullCmd === '\\triangle' || fullCmd === '\\angle') {
+      var geoLabel = SYMBOLS[fullCmd];
+      pos = skipSpaces(input, pos);
+      var geoName = '';
+      while (pos < input.length && /[A-Z]/.test(input[pos])) {
+        if (geoName) geoName += ' ';
+        geoName += input[pos];
+        pos++;
+      }
+      if (geoName) {
+        return { text: geoLabel + ' ' + geoName, pos: pos };
+      }
+      return { text: geoLabel, pos: pos };
     }
 
     // Funções trigonométricas etc.
@@ -863,7 +935,11 @@ MathA11y._parser = (function () {
       var condition = cols.length > 1 ? latexToText(cols[1].trim()) : '';
       if (value) {
         if (condition) {
-          parts.push(value + ' se ' + condition);
+          if (/^se\s/.test(condition)) {
+            parts.push(value + ' ' + condition);
+          } else {
+            parts.push(value + ' se ' + condition);
+          }
         } else {
           parts.push(value);
         }
@@ -879,6 +955,7 @@ MathA11y._parser = (function () {
     for (var i = 0; i < rows.length; i++) {
       var row = rows[i].trim();
       row = row.replace(/^\[.*?\]/, '').trim();
+      row = row.replace(/^\\hline\s*/, '').trim();
       if (row) result.push(row);
     }
     return result;
@@ -940,16 +1017,21 @@ MathA11y._parser = (function () {
       return { text: text, pos: arg.pos };
     }
 
-    if (isSimpleToken(text)) {
+    if (isSimpleResult(text)) {
       return { text: 'elevado a ' + text, pos: arg.pos };
     }
-    return { text: 'elevado a ' + text, pos: arg.pos };
+    return { text: 'início do expoente, ' + text + ', fim do expoente', pos: arg.pos, hasMarkers: true };
   }
 
-  function parseSubscript(input, pos) {
+  function parseSubscript(input, pos, prevText) {
     pos++; // pular '_'
     var arg = consumeArg(input, pos);
-    return { text: 'índice ' + arg.text, pos: arg.pos };
+    var text = arg.text.trim();
+
+    if (isSimpleResult(text)) {
+      return { text: 'sub ' + text, pos: arg.pos };
+    }
+    return { text: 'início do índice, ' + text + ', fim do índice', pos: arg.pos, hasMarkers: true };
   }
 
   function consumeArg(input, pos) {
