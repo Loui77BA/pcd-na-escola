@@ -39,7 +39,7 @@ Tudo isso deixa claro que acessibilidade digital não é um detalhe nem um gesto
 
 Por outro lado, quando a acessibilidade não é considerada, a autonomia diminui. Aparecem botões sem identificação, informações que dependem apenas de cor ou de imagem, conteúdos que mudam sem aviso e formulários difíceis de preencher usando apenas o teclado. Esses problemas são comuns e ajudam a explicar por que tantas pessoas com deficiência visual ainda enfrentam obstáculos em tarefas como comprar pela internet, acessar serviços públicos, estudar ou trabalhar.
 
-Diante disso, o objetivo deste artigo é apresentar o que é um leitor de telas, explicar seu papel no cotidiano e destacar as diferenças mais importantes entre a navegação visual e a navegação não visual, especialmente na internet e em aplicativos modernos. Ao longo do texto, também serão apresentados exemplos de práticas que ajudam ou atrapalham a usabilidade, além de uma visão geral das ferramentas mais utilizadas e das suas principais funcionalidades.
+Diante disso, busca-se apresentar o que é um leitor de telas, explicar seu papel no cotidiano e destacar as diferenças mais importantes entre a navegação visual e a navegação não visual, especialmente na internet e em aplicativos modernos. Ao longo do texto, também serão apresentados exemplos de práticas que ajudam ou atrapalham a usabilidade, além de uma visão geral das ferramentas mais utilizadas e das suas principais funcionalidades.
 
 ## Um pouco de história: do texto à interface com janelas {#um-pouco-de-historia-do-texto-a-interface-com-janelas}
 ---
@@ -48,23 +48,23 @@ A história dos leitores de tela está ligada, desde o início, à busca por aut
 
 Um exemplo claro dessa mudança foi a transição dos cartões perfurados para terminais de vídeo, que alterou profundamente a forma de interação com os computadores.
 
-O surgimento dessa tecnologia ganhou um marco importante em 1986, com o lançamento do IBM Screen Reader para MS-DOS. Era um software simples, mas muito relevante para a época. Ele captava o conteúdo textual exibido pelo computador e transformava esse texto em fala sintetizada, com controle feito pelo teclado. Como os computadores eram usados principalmente em modo texto, essa conversão era mais direta.
+O surgimento dessa tecnologia ganhou um marco importante em 1986, com o lançamento do **IBM Screen Reader** para MS-DOS. Era um software simples, mas muito relevante para a época. Ele captava o conteúdo textual exibido pelo computador e transformava esse texto em fala sintetizada, com controle feito pelo teclado.
 
-O que aparecia na tela era, em grande parte, uma representação textual estruturada, o que facilitava que o leitor de telas “acompanhasse” a informação apresentada.
+Como os computadores eram usados principalmente em modo texto, essa conversão era mais direta. O que aparecia na tela era, em grande parte, uma representação textual estruturada, o que facilitava que o leitor de telas “acompanhasse” a informação apresentada.
 
 Nos anos 1990, esse cenário começou a mudar rapidamente. Pesquisas e relatos da época passaram a descrever uma espécie de “crise de acessibilidade”, causada pela popularização das interfaces gráficas, como as do Windows e do Macintosh. Antes, no DOS e em outros sistemas baseados em texto, a informação era apresentada de forma linear e fácil de transformar em fala.
 
-Com as interfaces gráficas, a interação passou a depender muito mais de janelas, botões, ícones e imagens, que nem sempre tinham uma descrição textual clara para ser interpretada por tecnologias assistivas.
+Com as interfaces gráficas, a interação passou a depender muito mais de janelas, botões, ícones e imagens, que nem sempre tinham uma descrição textual clara para ser interpretada por tecnologias assistivas. Para lidar com esse novo contexto, leitores de tela precisaram evoluir.
 
-Para lidar com esse novo contexto, leitores de tela precisaram evoluir. Programas como o JAWS, criado em 1989 pela Henter-Joyce, avançaram para reconhecer componentes da interface, como menus, janelas e elementos mais complexos. Aos poucos, esses leitores passaram a organizar e interpretar a interface de um jeito que pudesse ser entendido por áudio, ajudando pessoas cegas e pessoas com baixa visão a compreender a lógica do sistema e a navegar com mais segurança.
+Programas como o <abbr title="Job Access With Speech">**JAWS**</abbr>, criado em 1989 pela Henter-Joyce, avançaram para reconhecer componentes da interface, como menus, janelas e elementos mais complexos. Aos poucos, esses leitores passaram a organizar e interpretar a interface de um jeito que pudesse ser entendido por áudio, auxiliando pessoas cegas e pessoas com baixa visão a compreender a lógica do sistema e a navegar com mais segurança.
 
-No fim dos anos 1990, a consolidação da web trouxe uma nova onda de desafios. A internet ampliou o acesso à informação, mas também aumentou a dependência de conteúdos visuais e de páginas com estruturas variadas. Em 1997, o W3C lançou a Iniciativa de Acessibilidade na Web (WAI), reforçando a ideia de que a força da web está em ser acessível para todas as pessoas.
+No fim dos anos 1990, a consolidação da web trouxe uma nova onda de desafios. A internet ampliou o acesso à informação, mas também aumentou a dependência de conteúdos visuais e de páginas com estruturas variadas. Em 1997, o <abbr title="World Wide Web Consortium">**W3C**</abbr> lançou a Iniciativa de Acessibilidade na Web (<abbr title="Web Accessibility Initiative">**WAI**</abbr>), reforçando a ideia de que a força da web está em ser acessível para todas as pessoas.
 
-Já nos anos 2000, leitores de tela de código aberto começaram a ganhar mais espaço. Um exemplo marcante é o NVDA, lançado em 2006, que ajudou a reduzir a barreira de custo que existia quando as principais opções eram ferramentas comerciais, muitas vezes com preços altos.
+A partir dos anos 2000, leitores de tela de código aberto passaram a se popularizar. Um exemplo importante é o <abbr title="NonVisual Desktop Access">**NVDA**</abbr>, lançado em 2006, que contribuiu para tornar essas ferramentas mais acessíveis, já que antes as opções principais eram pagas e tinham preços elevados. 
 
-A seguir, serão apresentados eventos e marcos que influenciaram essa trajetória, mostrando como a acessibilidade para pessoas com deficiência visual evoluiu junto com as mudanças tecnológicas e com a forma como a sociedade passou a usar computadores e internet.
+A seguir, serão destacados os principais eventos que impulsionaram a acessibilidade para pessoas com deficiência visual, acompanhando as transformações tecnológicas e o uso crescente de computadores e internet pela sociedade. 
 
-<p class="small text-light mb-2" id="tabela-1-ajuda">Observacao: em telas pequenas, deslize horizontalmente para ler todas as colunas da tabela.</p>
+<p class="small text-light mb-2" id="tabela-1-ajuda">Observação: em telas pequenas, deslize a tabela para o lado para visualizar todo o conteúdo.</p>
 <div class="table-responsive">
 <table class="table table-bordered table-striped table-hover table-dark text-white border-secondary" aria-describedby="tabela-1-ajuda"><thead>
     <tr>
@@ -115,19 +115,21 @@ A seguir, serão apresentados eventos e marcos que influenciaram essa trajetóri
     </table>
 </div>
 
-Esses são apenas alguns dos marcos mais importantes na história dos leitores de tela, claro que existem muitos outros eventos, lançamentos e avanços que contribuíram para a evolução dessa tecnologia.
+Esses são alguns dos marcos na história dos leitores de tela, embora existam outros avanços relevantes. Ao longo das décadas, esses dispositivos evoluíram para se adaptar às novas tecnologias e às necessidades de acessibilidade.
 
-O que fica evidente é que, ao longo das últimas décadas, os leitores de tela passaram por uma transformação significativa, acompanhando as mudanças tecnológicas e as demandas de acessibilidade. Hoje, eles são ferramentas essenciais para a inclusão digital de pessoas com deficiência visual, permitindo que elas acessem uma ampla variedade de conteúdos e serviços online com mais autonomia e independência.
+Hoje, os leitores de tela são fundamentais para a inclusão digital de pessoas com deficiência visual, proporcionando acesso autônomo a conteúdos e serviços online. Eles continuam a evoluir, incorporando recursos para melhorar a descrição de imagens e a compreensão de contextos, o que amplia ainda mais as possibilidades de acesso e participação na sociedade digital.
 
 ## Como o leitor de telas funciona por dentro {#como-o-leitor-de-telas-funciona-por-dentro}
 ---
 
-Um leitor de telas moderno faz muito mais do que “ler o que está escrito”. Ele precisa entender o que cada parte da tela significa e em que situação ela está. Por exemplo, ele precisa diferenciar um botão de um link, saber se uma caixa está marcada, identificar qual campo está com foco e avisar quando algo muda na tela. Depois disso, ele transforma essas informações em uma sequência que a pessoa pode acompanhar por voz e, em muitos casos, por uma linha Braille.
+Um leitor de telas moderno faz muito mais do que “ler o que está escrito”. Ele precisa entender o que cada parte da tela significa e em que situação ela está. Por exemplo, ele precisa diferenciar um botão de um link, saber se uma caixa de seleção está marcada ou desmarcada, identificar qual campo está com foco e avisar quando algo muda na tela.
+
+Depois disso, ele transforma essas informações em uma sequência que a pessoa pode acompanhar por áudio ou, em muitos casos, por uma linha Braille. O importante é saber que ele é muito mais complexo do que parece, e que a qualidade da experiência depende muito de como o conteúdo foi estruturado e marcado por quem o desenvolveu.
 
 ### O caminho da informação: do código à acessibilidade {#o-caminho-da-informacao-do-codigo-a-acessibilidade}
 ---
 
-Quando uma pessoa abre um site ou um aplicativo, o navegador ou o programa organiza o conteúdo internamente. No caso da web, o <abbr title="HyperText Markup Language em português: Linguagem de Marcação de Hipertexto">HTML</abbr> é transformado em uma estrutura chamada <abbr title="Document Object Model em português: Modelo de Objeto de Documento">DOM</abbr>, que é como um “mapa” do que existe na página.
+Quando uma pessoa abre um site ou um aplicativo, o navegador ou o programa organiza o conteúdo internamente. No caso da web, o <abbr title="HyperText Markup Language em português: Linguagem de Marcação de Hipertexto">**HTML**</abbr> é transformado em uma estrutura chamada <abbr title="Document Object Model em português: Modelo de Objeto de Documento">**DOM**</abbr>, que é como um “mapa” do que existe na página.
 
 <div class="text-center">
     {% include figure.html
@@ -143,7 +145,9 @@ Quando uma pessoa abre um site ou um aplicativo, o navegador ou o programa organ
     </figcaption>
 </div>
 
-O DOM, porém, não é o melhor formato para tecnologias assistivas, porque ele pode ter muita informação visual e detalhes de formatação que não ajudam na navegação com leitor de telas. Por isso, o navegador costuma criar uma estrutura paralela chamada árvore de acessibilidade. Essa árvore é uma versão mais “limpa” do conteúdo, que tenta manter o que realmente importa para a compreensão e a navegação.
+O DOM não é o formato ideal para tecnologias assistivas porque reúne muitos detalhes visuais e de formatação, o que pode tornar difícil a navegação por leitores de tela. Por isso, os navegadores costumam criar uma estrutura paralela chamada árvore de acessibilidade.
+
+Nessa árvore, o conteúdo é apresentado de maneira simplificada, destacando apenas os elementos fundamentais para garantir uma compreensão e navegação mais fáceis. Por exemplo, um botão é identificado como tal, com seu nome e função, enquanto elementos decorativos ou de formatação podem ser ignorados.
 
 <div class="text-center">
     {% include figure.html
@@ -172,19 +176,17 @@ O DOM, porém, não é o melhor formato para tecnologias assistivas, porque ele 
     </figcaption>
 </div>
 
-Em geral, a árvore de acessibilidade dá prioridade ao que tem significado. Elementos que são só decoração ou que não têm função clara podem ser ignorados.
+A árvore de acessibilidade foca no conteúdo relevante, ignorando elementos decorativos ou sem função. Quando uma página usa marcações genéricas e não define papéis claros para títulos, botões, links ou imagens, o leitor de telas não consegue organizar a informação corretamente.
 
-Isso acontece muito quando uma página usa várias marcações genéricas sem indicar o papel de cada parte. Ou seja, quando um site tem muitos elementos visuais, mas não usa as tags e atributos corretos para indicar o que é um título, um botão, um link ou uma imagem, o leitor de telas pode ter dificuldade para organizar a informação de forma clara.
+Para que o leitor de telas consiga apresentar um elemento corretamente, cada item dessa árvore de acessibilidade precisa ter informações básicas, como:
 
-Para que o leitor de telas consiga apresentar um elemento corretamente, cada item dessa árvore precisa ter informações básicas, como:
-
--  **Nome:** como o elemento deve ser chamado. Pode ser o texto de um botão, o rótulo de um campo ou a descrição de uma imagem.
+-  **Nome:** como o elemento deve ser chamado. Pode ser o texto de um botão, o rótulo de um campo ou a descrição de uma imagem. **Exemplos:** um botão de envio pode ter o nome “Enviar”, um campo de busca pode ser “Pesquisar produtos” e uma imagem de um gato pode ser “Foto de um gato preto com olhos verdes e orelhas pontudas”.
   
-- **Função:** que tipo de elemento é. Por exemplo: botão, link, caixa de seleção, cabeçalho.
+- **Função:** identifica o tipo de elemento, como botão, link, caixa de seleção ou cabeçalho. **Exemplos:** um botão de envio tem a função "botão", um campo de busca é um "campo de texto" e uma imagem corresponde à função "imagem".
 
-- **Estado:** em que condição ele está naquele momento. Por exemplo: focado, marcado, expandido, desabilitado.
+- **Estado:** em que condição ele está naquele momento. **Exemplos:** um botão pode estar “desabilitado” ou “habilitado”, uma caixa de seleção pode estar “marcada” ou “desmarcada”, e um menu pode estar “expandido” ou “recolhido”.
 
-- **Valor:** informação variável quando faz sentido. Por exemplo: o texto digitado em um campo, o nível de volume, a porcentagem de uma barra de progresso.
+- **Valor:** informação variável quando faz sentido. **Exemplos:** um campo de formulário pode ter o valor “João Silva”, um controle de volume pode estar em “50%” e um indicador de progresso pode mostrar “75% concluído”.
 
 ### <abbr title="Application Programming Interface em Português: Interface de Programação de Aplicações">APIs</abbr> de acessibilidade: a ponte entre o sistema e o leitor de telas {#apis-de-acessibilidade-a-ponte-entre-o-sistema-e-o-leitor-de-telas}
 ---
@@ -193,7 +195,7 @@ O leitor de telas não fica “lendo o código” da página o tempo todo. Na ma
 
 Na prática, os programas “avisam” coisas importantes, como qual botão está selecionado, qual campo está com foco, se uma opção está marcada, se um menu foi aberto ou se apareceu uma mensagem de erro. O leitor de telas consulta essas informações e transforma tudo em retorno para a pessoa, geralmente por voz e, em alguns casos, também por Braille.
 
-Cada sistema operacional tem suas próprias tecnologias para essa comunicação. No Windows, por exemplo, essas soluções foram mudando e melhorando com o tempo. Ferramentas mais modernas, como o UI Automation, ajudaram a tornar a troca de informações mais estável e mais completa, especialmente em programas e navegadores atuais.
+Cada sistema operacional tem suas próprias tecnologias para essa comunicação. No Windows, por exemplo, essas soluções foram mudando e melhorando com o tempo. Ferramentas mais modernas, como o **UI Automation** (que é uma API de acessibilidade do Windows), ajudaram a tornar a troca de informações mais estável e mais completa, especialmente em programas e navegadores atuais.
 
 No macOS também existe uma infraestrutura própria de acessibilidade, integrada ao sistema. No Linux, há um conjunto de tecnologias com o mesmo objetivo. Elas não são iguais entre si. Cada sistema tem suas particularidades e sua forma de expor informações para leitores de tela.
 
@@ -201,14 +203,22 @@ Isso tem um efeito direto no dia a dia. Quando uma interface é construída de u
 
 Já quando a interface é montada com elementos genéricos e “simulações”, fica mais difícil para o leitor de telas entender o que aquilo realmente é. O resultado costuma ser uma experiência frágil, com informações incompletas, confusas ou até silenciosas em momentos importantes.
 
+Por isso que em programação, componentes como botões, links e formulários devem ser construídos corretamente. Simulá-los apenas visualmente sem significado lógico prejudica a experiência de usuários de tecnologias assistivas, como leitores de tela.
+
 ### Saída por voz e por Braille {#saida-por-voz-e-por-braille}
 ---
 
 Depois de entender a interface, o leitor de telas precisa transformar tudo em uma forma de retorno que a pessoa consiga acompanhar.
 
-A forma mais comum é a síntese de voz, também chamada de TTS. Esses recursos evoluíram muito com o tempo. As vozes antigas eram mais robóticas e pouco naturais. Hoje, existem modelos bem mais fluentes, com melhor entonação e com opções de velocidade, tom e pronúncia.
+A forma mais comum é a síntese de voz, também chamada de <abbr title="Text-to-Speech em Português: Síntese de Texto para Fala">**TTS**</abbr>. Esses recursos evoluíram muito com o tempo. As vozes antigas eram mais robóticas e pouco naturais. Hoje, existem modelos bem mais fluentes, com melhor entonação e com opções de velocidade, tom e pronúncia.
 
 Outra forma muito importante é a linha Braille, um dispositivo que permite ler o conteúdo pelo tato. Nela, pequenos pinos sobem e descem para formar os caracteres em Braille, e esses caracteres mudam conforme a pessoa navega.
+
+{% include figure.html
+    src="https://imagedelivery.net/Ruw4waFkOelbXULIoE-oQg/565bfa8f-7969-40c8-5040-218b9caa7f00/public"
+    alt="Linha Braille retangular, com acabamento prateado nas laterais e preto no centro. Ele possui uma fileira de 40 células Braille com pinos táteis e botões de entrada na parte superior, organizados em dois grupos de quatro para as mãos esquerda e direita. Dois botões retangulares alongados estão localizados na borda inferior."
+    caption="Linha Braille Brailliant HumanWare com 40 células, botões de entrada e navegação."
+%}
 
 Esse recurso é especialmente útil quando é necessário alta precisão, como na programação, na revisão de textos, na leitura de símbolos e especificamente importante para a população surdocega.
 
@@ -219,7 +229,7 @@ Algumas linhas Braille usam células de 8 pontos, o que ajuda a representar letr
 
 Existem vários leitores de tela para diferentes sistemas operacionais, cada um com suas próprias funções. Alguns são nativos do sistema e outros exigem download.
 
-Abaixo está uma tabela com os principais leitores de tela por sistema:
+Abaixo está uma tabela com os principais leitores de tela organizados por sistema operacional:
 
 <div class="table-responsive mb-4">
     <table class="table table-bordered table-dark" aria-labelledby="leitores-de-tela-por-sistema-operacional" aria-describedby="leitores-de-tela-por-sistema-operacional-desc">
@@ -344,11 +354,11 @@ Por isso, é fundamental que pessoas desenvolvedoras de software e designers ten
 ## Uma camada adicional de complexidade {#uma-camada-adicional-de-complexidade}
 ---
 
-Cada sistema operacional transmite informações de acessibilidade de forma específica, assim como cada leitor de telas interpreta e repassa esses dados as pessoas usuárias de maneira própria. Além de entender o sistema operacional, é necessário dominar o leitor de telas, pois usar diferentes leitores pode alterar significativamente a experiência.
+Cada sistema operacional transmite informações de acessibilidade de forma única, e cada leitor de telas as interpreta de modo distinto. É fundamental conhecer tanto o sistema quanto o leitor de telas, já que diferentes leitores podem modificar bastante a experiência de uso.
 
-Três pessoas cegas utilizando o Windows 11 com NVDA, Jaws ou Narrador terão vivências diferentes, pois cada leitor de telas possui suas próprias formas de interação e comandos, exceto pelas teclas padrão do sistema e os atalhos universais dos aplicativos. Além disso, as configurações personalizadas de cada leitor de telas também podem alterar a maneira como as informações são apresentadas.
+Três pessoas cegas usando Windows 11 com NVDA, Jaws ou Narrador terão experiências distintas, pois cada leitor de telas possui comandos e configurações específicas que afetam a apresentação das informações. Além das teclas comuns do sistema operacional e dos atalhos universais nos aplicativos, cada leitor de tela utiliza comandos específicos e métodos próprios para organizar a experiência, que podem variar conforme o software escolhido. 
 
-Pequenas variações em comandos, navegação ou na interpretação de elementos gráficos podem afetar significativamente o acesso e a compreensão do conteúdo digital por pessoas com deficiência visual. Portanto, a realização de testes e a adaptação das aplicações para diferentes plataformas e ferramentas são essenciais para assegurar uma experiência digital inclusiva e eficiente.
+Pequenas alterações em comandos, na navegação ou na interpretação de elementos gráficos podem impactar consideravelmente o acesso e a compreensão de conteúdos digitais por indivíduos com deficiência visual. Dessa forma, é indispensável realizar testes e adaptar as aplicações para múltiplas plataformas e ferramentas, garantindo uma experiência digital eficiente e inclusiva.
 
 Da mesma forma, no contexto dos dispositivos móveis, a utilização do Google Talkback em sistemas Android pode apresentar variações conforme a marca do smartphone utilizado pela pessoa.
 
@@ -397,7 +407,7 @@ Mas ninguém consegue (e nem seria desejável) impor que todos os leitores de te
 
 Por fim, esse é o motivo pelo qual sem dominar bem o leitor de telas, pode ficar difícil saber se um problema é falta de acessibilidade ou falta de familiaridade com o próprio leitor. Como a experiência depende tanto da ferramenta e das configurações, uma pessoa pode “não encontrar” algo que está lá, ou pode achar que algo é inacessível quando, na verdade, é acessível, mas exige um modo de navegação diferente.
 
-Por isso testes em combinações diferentes (outro leitor, outro navegador, outro dispositivo) são tão valiosos: eles ajudam a separar “problema de construção da interface” de “diferença de uso da ferramenta”, e aumentam as chances de entregar uma experiência realmente boa para o maior número possível de pessoas.
+Testar diferentes combinações de leitores, navegadores e dispositivos permite identificar se o problema está na interface ou no uso das ferramentas, aumentando as chances de proporcionar uma boa experiência para mais pessoas.
 
 ## Algumas dicas para melhorar a experiência de uso das pessoas com deficiência visual {#algumas-dicas-para-melhorar-a-experiencia-de-uso-das-pessoas-com-deficiencia-visual}
 ---
@@ -409,26 +419,35 @@ A acessibilidade digital é um campo complexo, mas existem algumas práticas que
 
 Os leitores de tela utilizam a estrutura do conteúdo, independentemente do aspecto visual, para interpretar informações. Quando a estrutura é insuficiente ou inadequada, os dados tornam-se difíceis de identificar e a navegação pode ser inviabilizada ou significativamente comprometida.
 
-**Use títulos de verdade:** Em documentos, como os produzidos via Word, Google Docs ou LibreOffice, utilize os títulos nativos do programa, como "Título 1", "Título 2", etc ao invés de apenas aumentar o tamanho da fonte e colocar em negrito.
+#### Use títulos de verdade
+
+Em documentos, como os produzidos via Word, Google Docs ou LibreOffice, utilize os títulos nativos do programa, como "Título 1", "Título 2", etc ao invés de apenas aumentar o tamanho da fonte e colocar em negrito.
 
 No Word, a própria Microsoft recomenda usar estilos de título para facilitar navegação por estrutura.
 
-**Use listas de verdade:** Para criar listas, utilize os recursos nativos de formatação de lista (marcada ou numerada) em vez de usar símbolos manuais (como asteriscos, hífens ou números digitados).
+#### Use listas de verdade
 
-**Use um sumário automático:** Em documentos longos, utilize a funcionalidade de sumário automático, que cria links para os títulos e facilita a navegação.
+Para criar listas, utilize os recursos nativos de formatação de lista (marcada ou numerada) em vez de usar símbolos manuais (como asteriscos, hífens ou números digitados).
 
-**Quebra de página:** Em documentos, não use um monte de <kbd>Enter</kbd> para criar espaço entre seções. Por exemplo: Você acabou de escrever um capítulo e quer começar o próximo em uma nova página. Em vez de apertar <kbd>Enter</kbd> várias vezes, use a função de quebra de página do programa.
+#### Use um sumário automático
+
+Em documentos longos, utilize a funcionalidade de sumário automático, que cria links para os títulos e facilita a navegação.
+
+#### Quebra de página
+
+Em documentos, não use um monte de <kbd>Enter</kbd> para criar espaço entre seções. Por exemplo: Você acabou de escrever um capítulo e quer começar o próximo em uma nova página. Em vez de apertar <kbd>Enter</kbd> várias vezes, use a função de quebra de página do programa.
 
 No Word você consegue fazer essa quebra de página com o atalho <kbd>Ctrl</kbd> + <kbd>Enter</kbd>.
 
 No Google Docs, vá em "Inserir" → "Quebra" → "Quebra de página".
 
-**Não use caixas de texto para conteúdo importante:** Evite usar caixas de texto (text boxes) para colocar informações essenciais, pois elas podem ser ignoradas por leitores de tela. Se precisar usar uma caixa de texto, certifique-se de que ela esteja corretamente rotulada e seja acessível.
+#### Não use caixas de texto para conteúdo importante
+
+Evite usar caixas de texto (text boxes) para colocar informações essenciais, pois elas podem ser ignoradas por leitores de tela. Se precisar usar uma caixa de texto, certifique-se de que ela esteja corretamente rotulada e seja acessível.
 
 No PowerPoint, por exemplo, existe o recurso de "placeholder" que é uma caixa de texto pré-formatada e acessível, ideal para títulos e conteúdo principal. Evite criar caixas de texto personalizadas que não sejam reconhecidas como parte do fluxo de leitura.
 
-### Use descrições alternativas para imagens e gráficos {#use-descricoes-alternativas-para-imagens-e-graficos}
----
+#### Use descrições alternativas para imagens e gráficos
 
 De acordo com as diretrizes de acessibilidade do <abbr title="World Wide Web Consortium em português: Consórcio World Wide Web">W3C</abbr> e das <abbr title="Web Content Accessibility Guidelines em português: Diretrizes de Acessibilidade para Conteúdo Web">WCAG</abbr>, todas as imagens e gráficos devem ter descrições alternativas que transmitam a mesma informação que a imagem visualmente apresenta.
 
@@ -453,27 +472,25 @@ Claro que, o texto alternativo tem limites de tamanho de acordo com as próprias
 
 Quando a imagem for muito complexa, como um gráfico ou uma ilustração com muitos elementos, não é indicado apenas o texto alternativo, mas também uma descrição mais detalhada com o conteúdo completo da imagem.
 
-Se for uma página web, essa descrição pode ser colocada em uma &lt;figcaption&gt;, que é um elemento HTML usado para fornecer uma legenda ou descrição para uma figura que acompanha a imagem e que será reconhecida por leitores de tela como parte do conteúdo da imagem. Também é possível adicionar a descrição em um parágrafo de texto abaixo da imagem, desde que esteja claro que se trata de uma descrição da imagem e seja acessível para leitores de tela.
+Se for uma página web, essa descrição pode ser colocada em uma `<figcaption>`, que é um elemento HTML usado para fornecer uma legenda ou descrição para uma figura que acompanha a imagem e que será reconhecida por leitores de tela como parte do conteúdo da imagem. Também é possível adicionar a descrição em um parágrafo de texto abaixo da imagem, desde que esteja claro que se trata de uma descrição da imagem e seja acessível para leitores de tela.
 
 Em documentos de texto, slides e outros materiais, a descrição pode ser colocada em um parágrafo próximo à imagem, com uma indicação clara de que se trata de uma descrição detalhada da imagem. Isso é muito importante em contexto onde existem gráficos, mapas, organogramas e outros elementos visuais complexos.
 
 **Observação:** Em hipótese alguma use o campo de texto alternativo, seja no Word, no Google Docs, PowerPoint ou em qualquer outro programa, para colocar a <abbr title="Uniform Resource Locator em português: Localizador Uniforme de Recursos">URL</abbr> (endereço da imagem) ou informações irrelevantes, pois o leitor de telas irá ler exatamente o que está escrito ali.
 
-### Não use cores como única forma de transmitir informação {#nao-use-cores-como-unica-forma-de-transmitir-informacao}
----
+#### Não use cores como única forma de transmitir informação
 
 As cores podem ser usadas para destacar informações, mas não devem ser a única forma de transmitir uma mensagem importante. Portanto, é fundamental usar outros elementos visuais, como texto, ícones ou padrões, para garantir que a informação seja acessível.
 
 **Observação:** É muito comum em aulas, apresentações e afins frases como <strong>"os itens em vermelho são obrigatórios"</strong> ou <strong>"tudo que está em verde é o saldo positivo"</strong>. Essas formas de comunicação não são acessíveis, fatalmente pessoas impossibilitadas de perceber as cores não terão acesso a essas informações.
 
-### Tabelas: use-as para dados tabulares, não para layout {#tabelas-use-as-para-dados-tabulares-nao-para-layout}
----
+#### Tabelas: use-as para dados tabulares, não para layout
 
 As tabelas devem ser usadas apenas para apresentar dados tabulares, ou seja, informações organizadas em linhas e colunas que fazem sentido como um conjunto. Elas não devem ser usadas para criar layouts ou organizar o conteúdo visualmente, pois isso pode confundir os leitores de tela e dificultar a navegação.
 
 Se for necessário usar uma tabela para organizar dados, certifique-se de que ela esteja corretamente estruturada, com cabeçalhos de coluna e linha, e que seja acessível para leitores de tela. Evite usar tabelas para criar espaçamento ou para organizar elementos visuais, pois isso pode tornar a experiência de navegação confusa e frustrante para pessoas com deficiência visual.
 
-### Use links descritivos (não cole a URL inteira) {#use-links-descritivos-nao-cole-a-url-inteira}
+#### Use links descritivos (não cole a URL inteira)
 ---
 
 Ao invés de colocar a URL completa como texto do link, use uma descrição clara e informativa do destino do link.
@@ -482,87 +499,85 @@ Por exemplo, em vez de usar <code class="text-decoration-underline text-white">h
 
 Isso torna o link mais compreensível e fácil de navegar não somente para pessoas com deficiência visual, mas para todas as pessoas, pois fornece contexto sobre o que esperar ao clicar no link.
 
-### Evite inserir caixas de texto “soltas” no PowerPoint {#evite-inserir-caixas-de-texto-soltas-no-powerpoint}
----
+#### Evite inserir caixas de texto “soltas” no PowerPoint
 
 No PowerPoint, evite usar caixas de texto (text boxes) para inserir informações importantes, pois elas podem ser ignoradas por leitores de tela. Em vez disso, utilize os placeholders pré-formatados para títulos e conteúdo principal, que são reconhecidos como parte do fluxo de leitura. Se for necessário usar uma caixa de texto personalizada, certifique-se de que ela esteja corretamente rotulada e seja acessível para leitores de tela.
 
 Além disso, não se esqueça de marcar conteúdo decorativo como tal, para que o leitor de telas possa ignorá-lo. Por exemplo, se você usar uma caixa de texto apenas para criar um efeito visual, como um destaque ou um fundo colorido, certifique-se de marcar essa caixa como decorativa para que ela não seja lida pelo leitor de telas.
 
-### Verifique e ajuste a ordem de tabulação (ordem de leitura) {#verifique-e-ajuste-a-ordem-de-tabulacao-ordem-de-leitura}
----
+#### Verifique e ajuste a ordem de tabulação
 
 A ordem de tabulação, ou ordem de leitura, é a sequência em que os elementos de uma página ou aplicativo são acessados quando a pessoa navega usando o teclado (geralmente com a tecla <kbd>Tab</kbd>). É fundamental garantir que essa ordem seja lógica e intuitiva para que as pessoas com deficiência visual possam navegar de forma eficiente.
 
 Ajuste via painel/lista de seleção de elementos: Em muitos programas, como o Word, Google Docs, PowerPoint e outros, existe um painel ou lista de seleção de elementos que permite visualizar a estrutura do documento e ajustar a ordem de leitura. Certifique-se de que os elementos estejam organizados de forma lógica, seguindo a hierarquia e a sequência natural do conteúdo.
 
-### Excel (planilhas) {#excel-planilhas}
+### Dicas por formato de arquivo {#dicas-por-formato-de-arquivo}
 ---
+
+#### Excel (planilhas) {#excel-planilhas}
 
 Planilhas são muito usadas para organizar informações, acompanhar atividades e apresentar resultados. Para pessoas que usam leitores de tela, a clareza da estrutura (tabelas, cabeçalhos e nomes de abas) faz toda a diferença.
 
-**Descreva imagens/gráficos com texto alternativo:** Especialmente gráficos que transmitem informação. Se um gráfico for a principal forma de apresentar um resultado, considere também explicar os dados no próprio texto da planilha (por exemplo, em uma célula próxima) ou em um documento de apoio.
+- **Descreva imagens/gráficos com texto alternativo:** Especialmente gráficos que transmitem informação. Se um gráfico for a principal forma de apresentar um resultado, considere também explicar os dados no próprio texto da planilha (por exemplo, em uma célula próxima) ou em um documento de apoio.
 
-**Estruture tabelas de forma simples:** Evite células mescladas, divididas, aninhamento e muitas células em branco. Células em branco em sequência podem “parecer fim da tabela” para quem escuta a leitura, fazendo a pessoa perder contexto.
+- **Estruture tabelas de forma simples:** Evite células mescladas, divididas, aninhamento e muitas células em branco. Células em branco em sequência podem “parecer fim da tabela” para quem escuta a leitura, fazendo a pessoa perder contexto.
 
-**Defina cabeçalhos na tabela:** Cabeçalhos permitem ao leitor de telas associar corretamente coluna/linha com os dados. Sem isso, a leitura pode virar uma sequência de valores sem significado claro.
+- **Defina cabeçalhos na tabela:** Cabeçalhos permitem ao leitor de telas associar corretamente coluna/linha com os dados. Sem isso, a leitura pode virar uma sequência de valores sem significado claro.
 
-**Evite múltiplas tabelas na mesma planilha:** Quando possível, separe conteúdos diferentes em abas diferentes (ou até em arquivos diferentes) para reduzir confusão de contexto.
+- **Evite múltiplas tabelas na mesma planilha:** Quando possível, separe conteúdos diferentes em abas diferentes (ou até em arquivos diferentes) para reduzir confusão de contexto.
 
-**Renomeie as abas e remova planilhas vazias:** Nomes claros ajudam na navegação com leitor de telas, porque a pessoa consegue entender rapidamente onde está e o que cada aba contém.
+- **Renomeie as abas e remova planilhas vazias:** Nomes claros ajudam na navegação com leitor de telas, porque a pessoa consegue entender rapidamente onde está e o que cada aba contém.
 
-**Mantenha bom contraste:** Use combinações de fundo e texto que sejam legíveis.
+- **Mantenha bom contraste:** Use combinações de fundo e texto que sejam legíveis.
 
-**Não use cor como único significado:** Se algo está “em vermelho porque é crítico”, inclua também texto/indicador (por exemplo: “Crítico”, “Atrasado”, “Fora do prazo”, etc.).
+- **Não use cor como único significado:** Se algo está “em vermelho porque é crítico”, inclua também texto/indicador (por exemplo: “Crítico”, “Atrasado”, “Fora do prazo”, etc.).
 
-### PDF {#pdf}
----
+#### PDF {#pdf}
 
 Um <abbr title="Portable Document Format">PDF</abbr> pode ser acessível, mas isso depende de ele ter estrutura (tags/marcações). Na prática, “parecer certo visualmente” não garante que a leitura por leitor de telas será boa.
 
-**PDF acessível precisa de estrutura (tags/marcações):** O arquivo deve ter ordem lógica de leitura, texto real (não só imagem), descrições alternativas quando necessário, tabelas estruturadas e formulários acessíveis.
+- **PDF acessível precisa de estrutura (tags/marcações):** O arquivo deve ter ordem lógica de leitura, texto real (não só imagem), descrições alternativas quando necessário, tabelas estruturadas e formulários acessíveis.
 
-**Gere o PDF a partir de um documento Office já acessível:** Se o Word/Docs/LibreOffice estiverem bem estruturados (títulos, listas, tabelas), a exportação tende a preservar a semântica.
+- **Gere o PDF a partir de um documento Office já acessível:** Se o Word/Docs/LibreOffice estiverem bem estruturados (títulos, listas, tabelas), a exportação tende a preservar a semântica.
 
-**Ao salvar como PDF, habilite marcas estruturais para acessibilidade:** Procure opções do tipo “tags para acessibilidade”, “marcas estruturais” ou “estrutura do documento”, para preservar hierarquia de títulos, ordem de leitura e outras informações importantes.
+- **Ao salvar como PDF, habilite marcas estruturais para acessibilidade:** Procure opções do tipo “tags para acessibilidade”, “marcas estruturais” ou “estrutura do documento”, para preservar hierarquia de títulos, ordem de leitura e outras informações importantes.
 
-**Evite “imprimir para PDF” em ferramentas que perdem tags:** Alguns geradores por “impressora PDF” não preservam marcações e geram um PDF sem estrutura (ou seja, mais difícil de navegar com leitor de telas).
+- **Evite “imprimir para PDF” em ferramentas que perdem tags:** Alguns geradores por “impressora PDF” não preservam marcações e geram um PDF sem estrutura (ou seja, mais difícil de navegar com leitor de telas).
 
-**Para PDFs complexos, pode ser necessário editor especializado:** Especialmente para ajustar ordem de leitura, títulos, tabelas e formulários.
+- **Para PDFs complexos, pode ser necessário editor especializado:** Especialmente para ajustar ordem de leitura, títulos, tabelas e formulários.
 
-### Documento digitalizado (scanner) {#documento-digitalizado-scanner}
----
+#### Documento digitalizado (scanner) {#documento-digitalizado-scanner}
 
 Quando um documento é digitalizado, muitas vezes ele vira apenas uma imagem dentro de um PDF. Isso muda completamente a acessibilidade.
 
-**PDF digitalizado é imagem — leitor de telas não lê:** Se o conteúdo virou uma “foto”, não há texto real para o leitor de telas interpretar.
+- **PDF digitalizado é imagem — leitor de telas não lê:** Se o conteúdo virou uma "foto", não há texto real para o leitor de telas interpretar.
 
-**Use <abbr title="Optical Character Recognition em português: Reconhecimento Óptico de Caracteres">OCR</abbr> para converter imagem em texto:** Depois do OCR, revise o resultado. O OCR costuma errar mais quando há baixa resolução, fundo com ruído, fonte pequena, fonte cursiva/itálica/decorada, ou quando o documento está torto e com sombras.
+- **Use <abbr title="Optical Character Recognition em português: Reconhecimento Óptico de Caracteres">OCR</abbr> para converter imagem em texto:** Depois do OCR, revise o resultado. O OCR costuma errar mais quando há baixa resolução, fundo com ruído, fonte pequena, fonte cursiva/itálica/decorada, ou quando o documento está torto e com sombras.
 
-**Depois que virar texto, aplique as mesmas regras de acessibilidade:** Estrutura de títulos, descrições alternativas quando necessário, tabelas corretas, links descritivos, contraste adequado e assim por diante.
+- **Depois que virar texto, aplique as mesmas regras de acessibilidade:** Estrutura de títulos, descrições alternativas quando necessário, tabelas corretas, links descritivos, contraste adequado e assim por diante.
 
 ### Checklist {#checklist}
 ---
 
 Se você quiser priorizar o que mais costuma impactar a experiência, este checklist é um bom ponto de partida:
 
-**Títulos com estilos semânticos (não “na mão”):** Use os recursos de Título 1, Título 2, etc., para permitir navegação por estrutura.
+- **Títulos com estilos semânticos (não “na mão”):** Use os recursos de Título 1, Título 2, etc., para permitir navegação por estrutura.
 
-**Imagens sempre com descrição útil (e descrições longas no texto quando necessário):** Texto alternativo deve explicar o que importa na imagem, não o nome do arquivo.
+- **Imagens sempre com descrição útil (e descrições longas no texto quando necessário):** Texto alternativo deve explicar o que importa na imagem, não o nome do arquivo.
 
-**Nada essencial em caixa de texto / cabeçalho / rodapé:** Informações importantes precisam estar no fluxo principal de leitura.
+- **Nada essencial em caixa de texto / cabeçalho / rodapé:** Informações importantes precisam estar no fluxo principal de leitura.
 
-**Tabelas sem mesclagem e com cabeçalhos definidos:** Evite células mescladas e garanta que cabeçalhos estejam configurados.
+- **Tabelas sem mesclagem e com cabeçalhos definidos:** Evite células mescladas e garanta que cabeçalhos estejam configurados.
 
-**Documento longo com sumário linkável:** Um sumário automático facilita muito a navegação.
+- **Documento longo com sumário linkável:** Um sumário automático facilita muito a navegação.
 
-**Ordem de leitura correta (especialmente em slides):** Garanta que a tabulação e a sequência de leitura façam sentido.
+- **Ordem de leitura correta (especialmente em slides):** Garanta que a tabulação e a sequência de leitura façam sentido.
 
-**PDF com tags/estrutura (não “impresso” como imagem):** Prefira exportar preservando marcações.
+- **PDF com tags/estrutura (não “impresso” como imagem):** Prefira exportar preservando marcações.
 
-**Digitalizados sempre com OCR + revisão:** Sem OCR, vira imagem e deixa de ser lido.
+- **Digitalizados sempre com OCR + revisão:** Sem OCR, vira imagem e deixa de ser lido.
 
-**Nunca depender só de cor/efeito visual para transmitir informação:** Sempre inclua texto ou outro indicador além da cor.
+- **Nunca depender só de cor/efeito visual para transmitir informação:** Sempre inclua texto ou outro indicador além da cor.
 
 ## Conclusão {#conclusao}
 ---
