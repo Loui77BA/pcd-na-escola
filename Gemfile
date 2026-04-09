@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Gerenciador principal da versão do Jekyll
-gem "jekyll", "~> 4.3.2"
+gem "jekyll", "~> 4.4"
 
 # Tema padrão do Jekyll (você pode remover se estiver usando layout personalizado)
 gem "minima", "~> 2.5"
