@@ -185,6 +185,247 @@ assertEqual(
   '\\lim_{n \\to \\infty}'
 );
 
+// ─── Melhoria 2: Valor absoluto com pipes ───────────────────────────
+
+console.log('\n=== Valor Absoluto (pipes) ===');
+
+assertEqual(
+  latexToText('|x|'),
+  'valor absoluto de x',
+  '|x| (simples)'
+);
+
+assertEqual(
+  latexToText('|x+1|'),
+  'início do valor absoluto, x mais 1, fim do valor absoluto',
+  '|x+1| (composto)'
+);
+
+assertEqual(
+  latexToText('|a|+|b|'),
+  'valor absoluto de a mais valor absoluto de b',
+  '|a|+|b| (dois valores absolutos)'
+);
+
+// ─── Melhoria 3: Menos unário vs binário ────────────────────────────
+
+console.log('\n=== Menos Unário vs Binário ===');
+
+assertEqual(
+  latexToText('-x'),
+  'negativo de x',
+  '-x (unário no início)'
+);
+
+assertEqual(
+  latexToText('3-x'),
+  '3 menos x',
+  '3-x (binário)'
+);
+
+assertEqual(
+  latexToText('(-x)'),
+  'abre parênteses negativo de x fecha parênteses',
+  '(-x) (unário após abre parênteses)'
+);
+
+assertEqual(
+  latexToText('a + -b'),
+  'a mais negativo de b',
+  'a + -b (unário após operador)'
+);
+
+// ─── Melhoria 4: Verbalização posicional em matrizes ────────────────
+
+console.log('\n=== Matrizes Posicionais ===');
+
+assertEqual(
+  latexToText('\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}'),
+  'matriz 2 por 2; linha 1: coluna 1, a; coluna 2, b; linha 2: coluna 1, c; coluna 2, d; fim de matriz',
+  'pmatrix 2x2 com posições'
+);
+
+assertEqual(
+  latexToText('\\begin{bmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{bmatrix}'),
+  'matriz 2 por 3; linha 1: coluna 1, 1; coluna 2, 2; coluna 3, 3; linha 2: coluna 1, 4; coluna 2, 5; coluna 3, 6; fim de matriz',
+  'bmatrix 2x3 com posições'
+);
+
+// ─── Melhoria 5: Dígito a dígito após vírgula decimal ───────────────
+
+console.log('\n=== Decimais Dígito a Dígito ===');
+
+assertEqual(
+  latexToText('3.14'),
+  '3 vírgula 1 4',
+  '3.14 (dois dígitos após vírgula)'
+);
+
+assertEqual(
+  latexToText('0.001'),
+  '0 vírgula 0 0 1',
+  '0.001 (três dígitos após vírgula)'
+);
+
+assertEqual(
+  latexToText('2.5'),
+  '2 vírgula 5',
+  '2.5 (um dígito, sem separação)'
+);
+
+// ─── Melhoria 6: \cancel, \xcancel, \bcancel ────────────────────────
+
+console.log('\n=== Cancelamento ===');
+
+assertEqual(
+  latexToText('\\cancel{3x}'),
+  'cancelado, 3 vezes x',
+  '\\cancel{3x}'
+);
+
+assertEqual(
+  latexToText('\\xcancel{a+b}'),
+  'cancelado, a mais b',
+  '\\xcancel{a+b}'
+);
+
+assertEqual(
+  latexToText('\\bcancel{5}'),
+  'cancelado, 5',
+  '\\bcancel{5}'
+);
+
+// ─── Melhoria 7: \color e \textcolor ────────────────────────────────
+
+console.log('\n=== Cores ===');
+
+assertEqual(
+  latexToText('\\textcolor{red}{x+1}'),
+  'em vermelho, x mais 1',
+  '\\textcolor{red}{x+1}'
+);
+
+assertEqual(
+  latexToText('\\color{blue}{y}'),
+  'em azul, y',
+  '\\color{blue}{y}'
+);
+
+assertEqual(
+  latexToText('\\textcolor{teal}{z}'),
+  'em azul-petróleo, z',
+  '\\textcolor{teal}{z} (cor com tradução especial)'
+);
+
+assertEqual(
+  latexToText('\\textcolor{unknown}{a}'),
+  'em unknown, a',
+  '\\textcolor{unknown}{a} (cor sem tradução, usa original)'
+);
+
+// ─── Melhoria 8: Ambientes align/aligned/gather ─────────────────────
+
+console.log('\n=== Ambientes Align/Gather ===');
+
+assertEqual(
+  latexToText('\\begin{align} x &= 1 \\\\ y &= 2 \\end{align}'),
+  'equação 1: x igual a 1; equação 2: y igual a 2',
+  'align com duas equações'
+);
+
+assertEqual(
+  latexToText('\\begin{gather} a+b \\\\ c+d \\end{gather}'),
+  'equação 1: a mais b; equação 2: c mais d',
+  'gather com duas equações'
+);
+
+// ─── Melhoria 9: BLACKBOARD expandido ───────────────────────────────
+
+console.log('\n=== Blackboard Expandido ===');
+
+assertEqual(
+  latexToText('\\mathbb{P}'),
+  'primos',
+  '\\mathbb{P}'
+);
+
+assertEqual(
+  latexToText('\\mathbb{H}'),
+  'quaterniões',
+  '\\mathbb{H}'
+);
+
+assertEqual(
+  latexToText('\\mathbb{S}'),
+  'esfera',
+  '\\mathbb{S}'
+);
+
+// ─── Melhoria 10: Números grandes com agrupamento ───────────────────
+
+console.log('\n=== Números Grandes ===');
+
+assertEqual(
+  latexToText('1000'),
+  '1.000',
+  '1000 (4 dígitos)'
+);
+
+assertEqual(
+  latexToText('1000000'),
+  '1.000.000',
+  '1000000 (7 dígitos)'
+);
+
+assertEqual(
+  latexToText('42'),
+  '42',
+  '42 (sem alteração, < 4 dígitos)'
+);
+
+assertEqual(
+  latexToText('100'),
+  '100',
+  '100 (sem alteração, 3 dígitos)'
+);
+
+// ─── Melhoria 11: Verbosidade ───────────────────────────────────────
+
+console.log('\n=== Verbosidade ===');
+
+// Salvar e restaurar config
+var savedVerbosity = MathA11y._config.verbosity;
+
+MathA11y._config.verbosity = 'verbose';
+
+assertEqual(
+  latexToText('\\frac{1}{2}'),
+  'início da fração, 1, sobre, 2, fim da fração',
+  '\\frac{1}{2} verbose (com marcadores)'
+);
+
+assertEqual(
+  latexToText('x^2'),
+  'x, início do expoente, 2, fim do expoente',
+  'x^2 verbose (com marcadores)'
+);
+
+assertEqual(
+  latexToText('x_i'),
+  'x, início do índice, i, fim do índice',
+  'x_i verbose (com marcadores)'
+);
+
+MathA11y._config.verbosity = 'compact';
+
+assertEqual(
+  latexToText('\\frac{1}{2}'),
+  '1 sobre 2',
+  '\\frac{1}{2} compact (sem marcadores)'
+);
+
+MathA11y._config.verbosity = savedVerbosity;
+
 // ─── Resultado ──────────────────────────────────────────────────────
 
 console.log('\n─────────────────────────────────');

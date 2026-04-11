@@ -129,6 +129,11 @@ var MathA11y = MathA11y || {};
       return;
     }
 
+    // Configurar verbosidade (padrão: 'compact')
+    if (options && options.verbosity) {
+      MathA11y._config.verbosity = options.verbosity;
+    }
+
     var allMatches = scanTextNodes(container);
 
     var nodeMap = new Map();
@@ -195,11 +200,7 @@ var MathA11y = MathA11y || {};
 
     var wrapper = document.createElement(tag);
     wrapper.className = cssClass;
-
-    var multiSegment = segments.length > 1;
-    if (!multiSegment) {
-      wrapper.setAttribute('aria-label', label);
-    }
+    wrapper.setAttribute('role', 'math');
 
     var visual = document.createElement('span');
     visual.setAttribute('aria-hidden', 'true');
@@ -216,13 +217,20 @@ var MathA11y = MathA11y || {};
 
     wrapper.appendChild(visual);
 
-    if (multiSegment) {
+    // Sempre usar spans sr-only em vez de aria-label para permitir
+    // navegação por palavras no leitor de tela
+    if (segments.length > 1) {
       for (var i = 0; i < segments.length; i++) {
         var seg = document.createElement('span');
         seg.className = 'sr-only';
         seg.textContent = segments[i];
         wrapper.appendChild(seg);
       }
+    } else {
+      var srSpan = document.createElement('span');
+      srSpan.className = 'sr-only';
+      srSpan.textContent = label;
+      wrapper.appendChild(srSpan);
     }
 
     return wrapper;
@@ -233,7 +241,15 @@ var MathA11y = MathA11y || {};
      ============================================================= */
 
   MathA11y.init = init;
-  MathA11y.latexToText = latexToText;
+  MathA11y.latexToText = function (latex, options) {
+    var prev = MathA11y._config.verbosity;
+    if (options && options.verbosity) {
+      MathA11y._config.verbosity = options.verbosity;
+    }
+    var result = latexToText(latex);
+    MathA11y._config.verbosity = prev;
+    return result;
+  };
   MathA11y.latexToSegments = latexToSegments;
 
 })();

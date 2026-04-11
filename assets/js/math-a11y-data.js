@@ -282,7 +282,25 @@ MathA11y._data = (function () {
     'N': 'naturais',
     'Z': 'inteiros',
     'C': 'complexos',
-    'Q': 'racionais'
+    'Q': 'racionais',
+    'P': 'primos',
+    'H': 'quaterniões',
+    'F': 'corpo',
+    'K': 'corpo',
+    'S': 'esfera',
+    'T': 'toro',
+    'I': 'intervalo unitário'
+  };
+
+  /* === Mapa de nomes de cores inglês → português === */
+  var COLOR_NAMES = {
+    'red': 'vermelho', 'blue': 'azul', 'green': 'verde',
+    'black': 'preto', 'white': 'branco', 'yellow': 'amarelo',
+    'orange': 'laranja', 'purple': 'roxo', 'gray': 'cinza',
+    'grey': 'cinza', 'brown': 'marrom', 'pink': 'rosa',
+    'cyan': 'ciano', 'magenta': 'magenta', 'violet': 'violeta',
+    'teal': 'azul-petróleo', 'lime': 'verde-limão',
+    'olive': 'oliva', 'navy': 'azul-marinho'
   };
 
   var ROOT_ORDINALS = {
@@ -347,6 +365,7 @@ MathA11y._data = (function () {
     ACCENT_CMDS: ACCENT_CMDS,
     ENV_NAMES: ENV_NAMES,
     BLACKBOARD: BLACKBOARD,
+    COLOR_NAMES: COLOR_NAMES,
     ROOT_ORDINALS: ROOT_ORDINALS,
     GREEKS: GREEKS,
     OPERATOR_EXACT: OPERATOR_EXACT,
@@ -356,3 +375,6 @@ MathA11y._data = (function () {
   };
 
 })();
+
+/* === Configuração global de verbosidade === */
+MathA11y._config = { verbosity: 'compact' };

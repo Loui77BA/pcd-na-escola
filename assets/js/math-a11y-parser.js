@@ -22,6 +22,7 @@ MathA11y._parser = (function () {
   var NON_VALUE_KEYWORDS = D.NON_VALUE_KEYWORDS;
   var RELATIONAL_TEXTS = D.RELATIONAL_TEXTS;
   var OPERATOR_ONLY = D.OPERATOR_ONLY;
+  var COLOR_NAMES = D.COLOR_NAMES;
 
   /* =============================================================
      Funções auxiliares
@@ -70,6 +71,58 @@ MathA11y._parser = (function () {
     return /^d[a-zA-Z]$/.test(t) || /^d /.test(t);
   }
 
+  /* === Detecção de token de valor precedente (para menos unário) === */
+  function isPrecedingValue(parts) {
+    if (parts.length === 0) return false;
+    var last = parts[parts.length - 1].trim().replace(/,$/, '').trim();
+    if (!last) return false;
+    if (/^fecha /.test(last)) return true;
+    if (/^fim d/.test(last)) return true;
+    if (/^(ao quadrado|ao cubo|inverso|transposto|graus|linha|duas linhas|três linhas|\d+ linhas)$/.test(last)) return true;
+    if (/^elevado a /.test(last)) return true;
+    if (/^sub /.test(last)) return true;
+    if (/^valor absoluto de /.test(last)) return true;
+    if (isValueToken(last)) return true;
+    return false;
+  }
+
+  /* === Busca de pipe de fechamento para valor absoluto === */
+  function findMatchingPipe(input, startPos) {
+    var p = startPos;
+    var braceDepth = 0;
+    while (p < input.length) {
+      var c = input[p];
+      if (c === '{') { braceDepth++; }
+      else if (c === '}') {
+        if (braceDepth > 0) { braceDepth--; }
+        else { return -1; }
+      }
+      else if (c === '|' && braceDepth === 0) { return p; }
+      else if (c === '\\') {
+        p++;
+        while (p < input.length && /[a-zA-Z]/.test(input[p])) { p++; }
+        continue;
+      }
+      p++;
+    }
+    return -1;
+  }
+
+  /* === Formatação de inteiros grandes com agrupamento === */
+  function formatLargeInteger(numStr) {
+    if (numStr.length < 4) return numStr;
+    var result = '';
+    var count = 0;
+    for (var i = numStr.length - 1; i >= 0; i--) {
+      if (count > 0 && count % 3 === 0) {
+        result = '.' + result;
+      }
+      result = numStr[i] + result;
+      count++;
+    }
+    return result;
+  }
+
   function pushWithImplicitMul(parts, token) {
     if (isDifferential(token)) {
       parts.push(token);
@@ -97,7 +150,8 @@ MathA11y._parser = (function () {
     var num = numText.trim() || 'vazio';
     var den = denText.trim() || 'vazio';
     var d = (typeof depth === 'number') ? depth : 0;
-    if (d === 0 && isSimpleResult(num) && isSimpleResult(den)) {
+    var verbose = MathA11y._config && MathA11y._config.verbosity === 'verbose';
+    if (!verbose && d === 0 && isSimpleResult(num) && isSimpleResult(den)) {
       return num + ' sobre ' + den;
     }
     var prefix, suffix;
@@ -143,7 +197,7 @@ MathA11y._parser = (function () {
     segs = merged;
     if (segs.length <= 1) return segs;
     var totalLen = segs.reduce(function (a, b) { return a + b.length; }, 0);
-    if (totalLen < 80) return [segs.join(' ')];
+    if (totalLen < 50) return [segs.join(' ')];
     return segs;
   }
 
@@ -289,7 +343,11 @@ MathA11y._parser = (function () {
       }
       if (ch === '-') {
         flushSegment();
-        parts.push('menos');
+        if (isPrecedingValue(parts)) {
+          parts.push('menos');
+        } else {
+          parts.push('negativo de');
+        }
         pos++;
         continue;
       }
@@ -339,10 +397,23 @@ MathA11y._parser = (function () {
         continue;
       }
 
-      // Pipe (valor absoluto)
+      // Pipe — detectar pares |...| como valor absoluto
       if (ch === '|') {
-        parts.push('barra vertical');
-        pos++;
+        var pipeClosePos = findMatchingPipe(input, pos + 1);
+        if (pipeClosePos !== -1) {
+          var pipeContent = input.substring(pos + 1, pipeClosePos);
+          var pipeResult = parseExpr(pipeContent, 0);
+          var pipeParsed = cleanText(pipeResult.text);
+          pos = pipeClosePos + 1;
+          if (isSimpleResult(pipeParsed)) {
+            pushWithImplicitMul(parts, 'valor absoluto de ' + pipeParsed);
+          } else {
+            pushWithImplicitMul(parts, 'início do valor absoluto, ' + pipeParsed + ', fim do valor absoluto');
+          }
+        } else {
+          parts.push('barra vertical');
+          pos++;
+        }
         continue;
       }
 
@@ -355,9 +426,18 @@ MathA11y._parser = (function () {
             pos++;
           }
           // Converter ponto decimal para "vírgula" em português
+          // Dígitos após a vírgula são lidos individualmente (ex: 3.14 → "3 vírgula 1 4")
           if (numStr.indexOf('.') !== -1) {
             var numParts = numStr.split('.');
-            numStr = numParts[0] + ' vírgula ' + numParts[1];
+            var decPart = numParts[1];
+            if (decPart.length > 1) {
+              numStr = numParts[0] + ' vírgula ' + decPart.split('').join(' ');
+            } else {
+              numStr = numParts[0] + ' vírgula ' + decPart;
+            }
+          } else {
+            // Inteiros com 4+ dígitos: agrupamento com pontos (ex: 1000 → "1.000")
+            numStr = formatLargeInteger(numStr);
           }
           pushWithImplicitMul(parts, numStr);
         } else if (ch === 'd') {
@@ -662,6 +742,35 @@ MathA11y._parser = (function () {
       return { text: 'módulo ' + pmodArg.text, pos: pos };
     }
 
+    // \cancel, \xcancel, \bcancel — cancelamento visual
+    if (fullCmd === '\\cancel' || fullCmd === '\\xcancel' || fullCmd === '\\bcancel') {
+      pos = skipSpaces(input, pos);
+      var cancelArg = consumeArg(input, pos);
+      pos = cancelArg.pos;
+      return { text: 'cancelado, ' + cancelArg.text, pos: pos };
+    }
+
+    // \color{cor}{conteúdo} e \textcolor{cor}{conteúdo}
+    // O nome da cor é lido como texto bruto (não é expressão matemática)
+    if (fullCmd === '\\color' || fullCmd === '\\textcolor') {
+      pos = skipSpaces(input, pos);
+      var rawColor = '';
+      if (pos < input.length && input[pos] === '{') {
+        pos++;
+        while (pos < input.length && input[pos] !== '}') {
+          rawColor += input[pos];
+          pos++;
+        }
+        if (pos < input.length) pos++;
+      }
+      pos = skipSpaces(input, pos);
+      var colorContentArg = consumeArg(input, pos);
+      pos = colorContentArg.pos;
+      rawColor = rawColor.trim();
+      var translatedColor = COLOR_NAMES[rawColor] || rawColor;
+      return { text: 'em ' + translatedColor + ', ' + colorContentArg.text, pos: pos };
+    }
+
     // \cfrac, \dfrac, \tfrac
     if (fullCmd === '\\cfrac' || fullCmd === '\\dfrac' || fullCmd === '\\tfrac') {
       pos = skipSpaces(input, pos);
@@ -900,8 +1009,8 @@ MathA11y._parser = (function () {
         envLabel === 'norma da matriz' || envName === 'array') {
       return parseMatrixEnv(body, envLabel || 'arranjo', afterEnd);
     }
-    var alignResult = parseExpr(body, 0);
-    return { text: alignResult.text, pos: afterEnd };
+    // Ambientes align, aligned, gather, gathered — equações numeradas
+    return parseAlignEnv(body, afterEnd);
   }
 
   function parseMatrixEnv(body, label, afterEnd) {
@@ -915,13 +1024,29 @@ MathA11y._parser = (function () {
       var colTexts = [];
       for (var c = 0; c < cols.length; c++) {
         var cellResult = latexToText(cols[c].trim());
-        if (cellResult) colTexts.push(cellResult);
+        if (cellResult) {
+          colTexts.push('coluna ' + (c + 1) + ', ' + cellResult);
+        }
       }
       if (colTexts.length > 0) {
-        parts.push('linha ' + (r + 1) + ': ' + colTexts.join(', '));
+        parts.push('linha ' + (r + 1) + ': ' + colTexts.join('; '));
       }
     }
     parts.push('fim de ' + label);
+    return { text: parts.join('; '), pos: afterEnd };
+  }
+
+  /* === Ambientes align/aligned/gather/gathered === */
+  function parseAlignEnv(body, afterEnd) {
+    var rows = splitRows(body);
+    var parts = [];
+    for (var r = 0; r < rows.length; r++) {
+      var rowContent = rows[r].replace(/&/g, ' ');
+      var rowText = latexToText(rowContent);
+      if (rowText) {
+        parts.push('equação ' + (r + 1) + ': ' + rowText);
+      }
+    }
     return { text: parts.join('; '), pos: afterEnd };
   }
 
@@ -1004,10 +1129,10 @@ MathA11y._parser = (function () {
     pos++; // pular '^'
     var arg = consumeArg(input, pos);
     var text = arg.text.trim();
+    var verbose = MathA11y._config && MathA11y._config.verbosity === 'verbose';
 
-    if (text === '2') return { text: 'ao quadrado', pos: arg.pos };
-    if (text === '3') return { text: 'ao cubo', pos: arg.pos };
-    if (text === 'negativo 1' || text === 'menos 1')
+    // Semânticas especiais mantidas em qualquer modo
+    if (text === 'negativo de 1' || text === 'negativo 1' || text === 'menos 1')
       return { text: 'inverso', pos: arg.pos };
     if (text === 'T' || text === 't')
       return { text: 'transposto', pos: arg.pos };
@@ -1016,6 +1141,14 @@ MathA11y._parser = (function () {
     if (/^(linha|duas linhas|três linhas|\d+ linhas)$/.test(text)) {
       return { text: text, pos: arg.pos };
     }
+
+    // Modo verbose: sempre usar marcadores
+    if (verbose) {
+      return { text: 'início do expoente, ' + text + ', fim do expoente', pos: arg.pos, hasMarkers: true };
+    }
+
+    if (text === '2') return { text: 'ao quadrado', pos: arg.pos };
+    if (text === '3') return { text: 'ao cubo', pos: arg.pos };
 
     if (isSimpleResult(text)) {
       return { text: 'elevado a ' + text, pos: arg.pos };
@@ -1027,8 +1160,9 @@ MathA11y._parser = (function () {
     pos++; // pular '_'
     var arg = consumeArg(input, pos);
     var text = arg.text.trim();
+    var verbose = MathA11y._config && MathA11y._config.verbosity === 'verbose';
 
-    if (isSimpleResult(text)) {
+    if (!verbose && isSimpleResult(text)) {
       return { text: 'sub ' + text, pos: arg.pos };
     }
     return { text: 'início do índice, ' + text + ', fim do índice', pos: arg.pos, hasMarkers: true };
